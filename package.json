@@ -18,6 +18,7 @@
     "lottie-web": "^5.7.13"
   },
   "scripts": {
+    "prepare": "npm install",
     "start": "npm run prod",
     "build": "npm run build"
   },
