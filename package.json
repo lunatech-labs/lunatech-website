@@ -4,7 +4,7 @@
       "dev": "vite",
       "build": "vite build",
       "serve": "vite preview",
-      "start": "vite preview"
+      "start": "vite preview --host 0.0.0.0 --port 8080"
    },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
