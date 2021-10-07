@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://use.typekit.net/ybi8nib.css");
+
+@import './animation.css';
+@import './slick.min.css';
+@import './plyr.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-body: #FFFAED;
+    --color-body-300: #F8EFDD;
+    --white: #FFFFFF;
+    --white-300: #FFFAEE;
+    --dark-red: #9B0F17;
+    --color-primary-red: #EA212E;
+    --color-primary-red-05: rgba(234,33,46, 0.5);
+    --black-300: #252322;
+    --light-gray: #B0A29C;
+}
+
+
+/* Custom styles  */
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
+    cursor: none;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply w-full overflow-x-auto bg-body-color;
+    position: relative;  
+  }
+
+  a, button {
+    cursor: none;
+  }
+
+  .scroll {
+    scroll-margin-top: 150px;
+  }
+
+  .bg-sand {
+    background: rgba(37,35,34, .10);
+  }
+
+  .bg-blur {
+    background: rgba(37,35,34, .20);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  .bg-change {
+    @apply fixed bg-primary !important;
+    animation: navigationCircle .5s ease-in;
+  }
+
+  @media(max-width: 768px) {
+
+    .menu {
+      @apply fixed !important;
+    }
+
+    .menu .brand-logo svg {
+      display: none;
+    }
+
+    .menu .brand-logo::after{
+      content: '';
+      background: url('/images/lunatech-logo-white.svg') center center no-repeat;
+      @apply fixed w-32 h-12 -mt-1.5;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    html {
+      cursor: auto;
+    }
+
+    a, button {
+      cursor: auto;
+    }
+  }
+
+  .btn, .btn-small {
+    overflow:hidden;
+    position:relative;
+  }
+  
+  .btn::after, .btn-small::after {
+    position: absolute;
+    content: '';
+    top: -30px;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    transform-origin:left;
+    border-radius: 50%;
+  }
+
+  .btn::after {
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+    background-color: var(--color-primary-red);
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    transform: scale(5.1);
+  }
+
+  .btn-small::after {
+    transition: all 0.3s cubic-bezier(.17,.67,.83,.67);
+    background-color: var(--white-300);
+    z-index: 0;
+  }
+
+  .btn-small:hover svg g > g  {
+    fill: var(--color-primary-red);
+  }
+  
+  .btn-small:hover::after {
+    transform: scale(3.1);
+  }
+
+  @media(max-width: 768px) {
+    .btn:hover {
+      color: red;
+    }
+
+    .btn::after {
+      background-color: var(--color-body-300);
+    }
+
+    .btn:hover::after {
+      transform: scale(7.1);
+    }
+  }
+
+  .video-btn:hover svg g > g {
+    fill: var(--white-300);
+  }
+
+  .react-player__preview:hover .video-btn {
+    @apply bg-primary;
+  }
+
+  .react-player__preview:hover .video-btn svg g > g {
+    fill: var(--white-300);
+  }
+
+  .translation-menu::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -17px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid var(--color-primary-red);
+    clear: both;
+  }
+
+  @media (max-width: 768px) {
+    .translation-menu::after {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid white;
+    }
+  }
+
+  .quotation {
+    display: block;
+    position: absolute;
+    top: .5rem;
+    left: -10rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  @media(max-width: 768px) {
+    .quotation {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .btn:active, .btn:focus {
+    color: var(--black-300);
+    background: var(--color-primary-red);
+  }
+
+  @media(max-width: 768px) {
+    button:active span, button:focus span {
+      color: var(--black-300);
+    }
+  
+    button:active .globe, button:focus .globe {
+      fill: var(--black-300);
+      stroke: var(--black-300);
+    }
+
+    .globe {
+      stroke-width: 1;
+      stroke: var(--white);
+    }
+  }
+
+  .pagination-active {
+    @apply text-black-300 !important;
+  }
+
+  .bg-contact {
+    max-width: 100%;
+    height: 1369px;
+  }
+
+  @media(min-width: 1024px) and (max-width: 1415px) {
+    .bg-contact {
+      height: 1416px;
+    }
+  }
+
+  @media(min-width: 992px) {
+    header [aria-label="animation"] svg {
+      height: auto !important;
+      @apply absolute top-0;
+    }
+  }
+
+  @media(min-width: 1416px) {
+    header [aria-label="animation"] svg {
+      height: auto !important;
+      transform: translateY(-50%) !important;
+      @apply top-1/2;
+    }
+  }
+
+  @media(max-width: 767px) {
+    header [aria-label="animation"] svg {
+      width: auto !important;
+      max-height: auto;
+      transform: translate3d(-45%, 0, 0) !important;
+    }
+  }
+  
+  .custom-cursor {
+    z-index: 9999;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: rgba(234, 33, 46, 0.7);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out 0s, width 0.15s ease-in-out 0s, height 0.15s ease-in-out 0s;
+  }
+  .hover {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(234, 33, 46, 0.5);
+    transition: opacity 0.15s ease-in-out 0s, width 0.25s ease-in-out 0s, height 0.25s ease-in-out 0s;
+  }
+
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(234, 33, 46, 0.5);
+    transition: opacity 0.15s ease-in-out 0s, width 0.25s ease-in-out 0s, height 0.25s ease-in-out 0s;
+  }
+
+  #dutch-toggle.active, #france-toggle.active, #belgium-toggle.active {
+    @apply border-b-2 border-primary text-primary;
+  }
+
+  #logo-svg .logo-path {
+    @apply fill-white;
+  }
+
+  #logo-svg.active .logo-path {
+    @apply fill-black;
+  }
+
+  #menu-bg.active {
+    @apply fixed bg-white-300 md:animate-fade-in-down;
+  }
+}
+
+
+
+
+
+
+
+

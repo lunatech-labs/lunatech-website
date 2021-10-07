@@ -1,0 +1,9 @@
+/*-----------------------------------------
+            Animations
+------------------------------------------*/
+
+
+@keyframes navigationCircle {
+  0% { clip-path: circle(10% at 100% 0%); }
+  100% { clip-path: circle(75%); }
+}
