@@ -17,6 +17,10 @@
     "jquery": "^3.6.0",
     "lottie-web": "^5.7.13"
   },
+  "scripts": {
+    "start": "npm run prod",
+    "build": "npm run build"
+  },
   "browserslist": [
     ">0.3%",
     "not ie 11",
