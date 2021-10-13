@@ -36,7 +36,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
 
 
   def en() = Action { implicit request: Request[AnyContent] =>
-  
-    Ok(views.html.fr("en"))
+   
+    Ok(views.html.index("en"))
   }
 }
