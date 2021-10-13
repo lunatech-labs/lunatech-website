@@ -1,0 +1,328 @@
+@(lang: String)
+
+@main("Not found!", lang) {
+ 
+<body>
+  <div class="custom-cursor"></div>
+  <!-- Header -->
+  <header class="relative w-full mb-16 bg-black h-850 lg:mb-46">
+    <div style="background-image: url(/assets/images/noise-pattern.jpg)"
+      class="absolute top-0 left-0 z-10 w-full h-full opacity-10"></div>
+    <!-- Navigation -->
+    <div id="menu" class="absolute z-30 flex p-6 md:px-8 md:py-4">
+      <a href="/" id="logo" class="w-32 h-12 mt-3 md:h-24 md:w-64">
+        <svg id="logo-svg" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 38.48">
+          <defs>
+            <radialGradient id="a" cx="-0.43" cy="127.02" r="65.74" gradientTransform="translate(0 -61) scale(0.48)"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#ea212e"></stop>
+              <stop offset="0.5" stop-color="#ae151e"></stop>
+              <stop offset="1" stop-color="#9b0f17"></stop>
+            </radialGradient>
+          </defs>
+          <rect x="2.14" y="2.14" width="34.21" height="34.21" fill="#fff"></rect>
+          <rect x="15.23" y="15.73" width="6.7" height="7.02" fill="url(#a)"></rect>
+          <path
+            d="M38.48,0H0V38.48H38.48ZM29.25,15.73H25.79v9a2,2,0,0,1-1.93,2H13.3a2,2,0,0,1-1.93-2V13.71a2,2,0,0,1,1.93-2h16a2,2,0,0,1,0,4Z"
+            fill="url(#a)"></path>
+          <polygon points="57.59 17.34 54.69 17.34 54.69 7.51 51.63 7.51 51.63 20.2 57.59 20.2 57.59 17.34"
+            class="logo-path">
+          </polygon>
+          <path
+            d="M69.35,15.12V7.51H66.28v7.61c0,1.43-.69,2.44-2.14,2.44S62,16.57,62,15.14V7.51H58.89v7.63c0,3.17,1.63,5.3,5.21,5.3S69.35,18.18,69.35,15.12Z"
+            class="logo-path"></path>
+          <polygon
+            points="82.28 20.2 82.28 7.51 79.33 7.51 79.33 15.18 74.56 7.51 71.4 7.51 71.4 20.2 74.36 20.2 74.36 12.7 79.25 20.2 82.28 20.2"
+            class="logo-path"></polygon>
+          <path d="M87.86,7.51,83.42,20.2h3l1-3h4l1.06,3h3.25L91.08,7.51Zm.49,7.1,1.12-3.21,1.12,3.21Z"
+            class="logo-path">
+          </path>
+          <polygon
+            points="95.29 10.37 97.41 10.37 97.41 20.2 100.48 20.2 100.48 10.37 102.59 10.37 102.59 7.51 95.29 7.51 95.29 10.37"
+            class="logo-path"></polygon>
+          <polygon
+            points="110.36 10.37 110.36 7.51 104.35 7.51 104.35 20.2 110.42 20.2 110.42 17.34 107.41 17.34 107.41 15.16 110.27 15.16 110.27 12.33 107.41 12.33 107.41 10.37 110.36 10.37"
+            class="logo-path"></polygon>
+          <path
+            d="M118.8,10.13a3.64,3.64,0,0,1,2.44.95l1.82-2.31a6.25,6.25,0,0,0-4.29-1.5,6.42,6.42,0,0,0-6.7,6.6,6.33,6.33,0,0,0,6.75,6.57A5.85,5.85,0,0,0,123,18.79l-1.8-2.17a3.66,3.66,0,0,1-2.42,1,3.51,3.51,0,0,1-3.54-3.73A3.43,3.43,0,0,1,118.8,10.13Z"
+            class="logo-path"></path>
+          <polygon
+            points="124.47 7.51 124.47 20.2 127.53 20.2 127.53 15.19 131.94 15.19 131.94 20.2 135 20.2 135 7.51 131.94 7.51 131.94 12.28 127.53 12.28 127.53 7.51 124.47 7.51"
+            class="logo-path"></polygon>
+          <path
+            d="M53.43,30.52a1.18,1.18,0,0,1-1.16-.65l-.64.33a1.7,1.7,0,0,0,1.79,1c.92,0,1.73-.39,1.73-1.31s-.8-1.2-1.66-1.31c-.49-.06-.92-.16-.92-.51s.28-.55.86-.55a1.16,1.16,0,0,1,1,.46l.62-.32a1.68,1.68,0,0,0-1.62-.82c-.76,0-1.59.36-1.59,1.2s.78,1.15,1.62,1.25c.54.06,1,.21,1,.6S53.92,30.52,53.43,30.52Z"
+            class="logo-path"></path>
+          <rect x="57.87" y="26.99" width="0.77" height="4.11" class="logo-path"></rect>
+          <polygon
+            points="65.84 31.11 65.84 27 64.95 27 63.67 28.77 62.38 27 61.49 27 61.49 31.11 62.26 31.11 62.26 28.12 63.57 29.91 63.72 29.91 65.06 28.13 65.06 31.11 65.84 31.11"
+            class="logo-path"></polygon>
+          <path d="M69.46,29.9h1.16a1.46,1.46,0,1,0,0-2.91H68.68v4.12h.78Zm0-2.17h1.16a.73.73,0,1,1,0,1.46H69.46Z"
+            class="logo-path"></path>
+          <polygon points="74.77 26.99 74.77 31.11 77.66 31.11 77.66 30.39 75.55 30.39 75.55 26.99 74.77 26.99"
+            class="logo-path"></polygon>
+          <rect x="80.33" y="26.99" width="0.77" height="4.11" class="logo-path"></rect>
+          <polygon
+            points="86.89 27.75 86.89 27 83.94 27 83.94 31.11 84.72 31.11 84.72 29.59 86.78 29.59 86.78 28.87 84.72 28.87 84.72 27.75 86.89 27.75"
+            class="logo-path"></polygon>
+          <polygon
+            points="91.85 31.11 91.85 29.41 93.49 27.03 93.49 26.99 92.55 26.99 91.46 28.69 90.41 26.99 89.49 26.99 89.49 27.03 91.07 29.41 91.07 31.11 91.85 31.11"
+            class="logo-path"></polygon>
+          <polygon
+            points="101.37 31.11 101.37 29.41 103 27.03 103 26.99 102.07 26.99 100.98 28.69 99.93 26.99 99.01 26.99 99.01 27.03 100.59 29.41 100.59 31.11 101.37 31.11"
+            class="logo-path"></polygon>
+          <path
+            d="M105.28,29.08a2.11,2.11,0,1,0,4.22,0,2.11,2.11,0,1,0-4.22,0Zm3.46,0a1.35,1.35,0,1,1-2.7,0,1.35,1.35,0,1,1,2.7,0Z"
+            class="logo-path"></path>
+          <path
+            d="M112.19,27v2.36A1.71,1.71,0,0,0,114,31.2a1.67,1.67,0,0,0,1.78-1.84V27H115v2.36c0,.7-.36,1.13-1,1.13A1,1,0,0,1,113,29.36V27Z"
+            class="logo-path"></path>
+          <path
+            d="M122.11,28.36A1.37,1.37,0,0,0,120.63,27h-2v4.12h.78V29.73h.75l1.19,1.38h.93v-.06l-1.25-1.4A1.22,1.22,0,0,0,122.11,28.36Zm-1.48.67h-1.18V27.72h1.18a.66.66,0,1,1,0,1.31Z"
+            class="logo-path"></path>
+          <rect x="128.06" y="26.99" width="0.77" height="4.11" class="logo-path"></rect>
+          <path d="M131.62,27.7h1.3v3.41h.78V27.7H135V27h-3.38Z" class="logo-path"></path>
+        </svg>
+      </a>
+    </div>
+    <div id="menu-bg" class="absolute top-0 left-0 z-20 w-full p-6 md:p-8 md:bg-transparent">
+      <div class="relative flex flex-col justify-between flex-1 md:items-center md:flex-row">
+        <div class="flex flex-row justify-between ml-auto">
+          <button id="menu-toggle" class="w-8 h-8 p-1 my-3 outline-none md:hidden focus:outline-none" type="button">
+            <svg id="hamburger" width="16px" height="14px" viewBox="0 0 16 14" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="Menu---Burger" fill="#EA212E">
+                  <rect id="Rectangle-Copy" x="0" y="0" width="16" height="2"></rect>
+                  <rect id="Rectangle-Copy-2" x="0" y="6" width="16" height="2"></rect>
+                  <rect id="Rectangle-Copy-3" x="0" y="12" width="16" height="2"></rect>
+                </g>
+              </g>
+            </svg>
+            <svg id="close" class="hidden w-6 h-6 -ml-1" aria-hidden="true" focusable="false" data-prefix="fal"
+              data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="#f3ede0"
+                d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div id="navigation"
+          class="fixed hidden pb-0 md:relative bottom-8 md:bottom-auto md:block md:px-0 md:py-0 md:mx-0 bg-primary md:bg-transparent">
+          <ul class="flex flex-col md:space-x-4 md:flex-row">
+            <li class="relative flex-shrink-0 h-full">
+              <a href="https://blog.lunatech.com/" target="_blank"
+                class="flex items-center justify-between py-3 text-4xl font-bold uppercase text-white-300 md:font-light font-spacemono md:font-sans md:py-4 md:capitalize leading-5xl md:text-base md:leading-2xl md:px-3 md:text-primary md:justify-start">
+                <span class="md:border-b-2 md:border-transparent md:hover:border-primary">Blogs</span>
+              </a>
+            </li>
+            <li class="relative flex-shrink-0 h-full m-0.5">
+              <a href="https://recruitment.lunatech.com/" target="_blank"
+                class="z-10 inline-flex items-center justify-between px-8 py-3 my-6 text-4xl font-bold uppercase border border-2 rounded-lg rounded-tr-none border-white-300 text-white-300 md:font-light font-spacemono md:font-sans btn md:mx-2 md:my-0 md:flex md:capitalize leading-5xl md:text-base md:leading-2xl md:text-primary md:border-primary md:justify-start hover:text-primary md:hover:text-white-300 md:active:text-white-300">
+                Join us
+              </a>
+            </li>
+            <li class="fixed flex-shrink-0 h-full right-02 md:-right-6 top-28 md:top-auto md:relative">
+              <div class="flex items-center justify-between md:justify-start">
+                <!-- Metamenu -->
+                <nav
+                  class="absolute z-20 w-full py-8 md:py-0 md:relative right-8 md:right-12 sm:right-0 sm:py-0 sm:relative">
+                  <div class="container">
+                    <ul class="flex justify-end h-full space-x-4 align-center">
+                      <li class="relative flex-shrink-0">
+                        <button id="language-toggle" type="button"
+                          class="flex items-center justify-between py-4 mx-4 font-sans antialiased font-medium bg-transparent outline-none md:justify-start focus:outline-none">
+                          <span class="hidden text-white-300 sm:inline"></span> <span
+                            class="text-4xl font-bold uppercase text-white-300 md:font-light font-spacemono md:font-sans md:text-primary leading-5xl md:text-base md:leading-2xl md:border-b-2 md:border-transparent md:hover:border-primary">EN</span>
+                          <svg width="28px" height="28px" class="pl-1 mt-1 text-white md:mt-0 md:ml-1 md:text-primary"
+                            viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Molecules/Menu" transform="translate(-380.000000, -9.000000)" fill="currentColor">
+                                <g id="Fill-11" transform="translate(380.310987, 9.500062)">
+                                  <path class="globe" stroke="#EA212E" stroke-width=".1"
+                                    d="M24.8039556,20.6213778 C24.738,20.7271556 24.6244444,20.7903111 24.4996889,20.7903111 C24.4359111,20.7903111 24.3730667,20.7732 24.318,20.7405333 C23.5601333,20.2900444 22.6877778,19.8890222 21.7248889,19.5480444 C21.5519111,19.4867556 21.4536,19.306 21.4962222,19.1274222 C21.8375111,17.7128 22.0363111,16.212 22.0882667,14.6670222 C22.0944889,14.4732 22.2516,14.3213778 22.4460444,14.3213778 L26.3467556,14.3213778 C26.4450667,14.3213778 26.5405778,14.3624444 26.6080889,14.4346222 C26.6749778,14.5064889 26.7095111,14.6038667 26.7036,14.7015556 C26.5651556,16.7947111 25.9084,18.8415111 24.8039556,20.6213778 L24.8039556,20.6213778 Z M23.8015556,22.022 C22.5620889,23.5290222 20.9688889,24.7551111 19.1936889,25.5683556 C19.1476444,25.5898222 19.096,25.6010222 19.0446667,25.6010222 C18.9332889,25.6010222 18.83,25.5503111 18.7618667,25.4622667 C18.6595111,25.3306667 18.6616889,25.1474222 18.7668444,25.0176889 C19.7070222,23.8606667 20.4742222,22.4071556 21.0472889,20.6979111 C21.0774667,20.6070667 21.1440444,20.5311556 21.2305333,20.4894667 C21.3142222,20.4484 21.4162667,20.4424889 21.5071111,20.4745333 C22.3097778,20.7654222 23.0486667,21.1054667 23.7048,21.4853333 C23.7953333,21.5376 23.8584889,21.6272 23.8774667,21.7311111 C23.8961333,21.8353333 23.8681333,21.9414222 23.8015556,22.022 L23.8015556,22.022 Z M14.7588,26.628 C14.7323556,26.6339111 14.7056,26.6367111 14.6791556,26.6367111 C14.5982667,26.6367111 14.5189333,26.6090222 14.4560889,26.5586222 C14.3705333,26.4904889 14.3216889,26.3887556 14.3216889,26.2792444 L14.3216889,19.6158667 C14.3216889,19.5194222 14.3612,19.4260889 14.4299556,19.3588889 C14.4977778,19.2935556 14.5861333,19.2580889 14.6791556,19.2580889 L14.6965778,19.2587111 C16.5035111,19.3153333 18.2388889,19.5539556 19.8482667,19.9677333 C19.9450222,19.9926222 20.0271556,20.0573333 20.0744444,20.1447556 C20.1214222,20.2321778 20.1301333,20.3360889 20.0977778,20.4300444 C18.9373333,23.8146222 16.9412444,26.1314667 14.7588,26.628 L14.7588,26.628 Z M14.3216889,14.6788444 C14.3216889,14.4816 14.4819111,14.3213778 14.6791556,14.3213778 L20.7741333,14.3213778 C20.8708889,14.3213778 20.9648444,14.3612 21.0320444,14.4315111 C21.0992444,14.5005778 21.1356444,14.5964 21.1312889,14.6934667 C21.0768444,16.1074667 20.8883111,17.4897333 20.5716,18.8010667 C20.5488889,18.8937778 20.4891556,18.9749778 20.4073333,19.0238222 C20.3519556,19.0571111 20.2884889,19.0745333 20.2234667,19.0745333 C20.1929778,19.0745333 20.1624889,19.0708 20.1329333,19.0630222 C18.4196444,18.6168889 16.5806667,18.3614667 14.6685778,18.3042222 C14.4738222,18.298 14.3216889,18.1412 14.3216889,17.9464444 L14.3216889,14.6788444 Z M14.3216889,9.74244444 C14.3216889,9.54768889 14.4738222,9.39088889 14.6682667,9.38466667 C16.5816,9.32742222 18.4202667,9.072 20.1335556,8.62586667 C20.2234667,8.60222222 20.3255111,8.61622222 20.4076444,8.66506667 C20.4891556,8.71391111 20.5488889,8.79511111 20.5716,8.88782222 C20.8883111,10.1991556 21.0768444,11.5814222 21.1312889,12.9960444 C21.1356444,13.0921778 21.0992444,13.188 21.0314222,13.258 C20.9645333,13.3276889 20.8705778,13.3675111 20.7741333,13.3675111 L14.6791556,13.3675111 C14.4819111,13.3675111 14.3216889,13.2069778 14.3216889,13.0097333 L14.3216889,9.74244444 Z M14.3216889,1.40995556 C14.3216889,1.30013333 14.3705333,1.1984 14.4560889,1.13026667 C14.5397778,1.06337778 14.6530222,1.03693333 14.7581778,1.06088889 C16.9418667,1.55742222 18.9376444,3.87426667 20.0977778,7.25884444 C20.1301333,7.3528 20.1214222,7.45702222 20.0744444,7.54444444 C20.0271556,7.63186667 19.9450222,7.69626667 19.8485778,7.72115556 C18.2395111,8.13524444 16.5041333,8.37386667 14.6903556,8.43048889 C14.6900444,8.4308 14.6897333,8.4308 14.6894222,8.4308 C14.5855111,8.4308 14.4974667,8.39502222 14.4305778,8.33031111 C14.3612,8.2628 14.3216889,8.16946667 14.3216889,8.07333333 L14.3216889,1.40995556 Z M18.7618667,2.22662222 C18.8614222,2.09813333 19.0474667,2.0524 19.194,2.12053333 C20.9688889,2.93346667 22.5624,4.15986667 23.8015556,5.66688889 C23.8681333,5.74746667 23.8958222,5.85355556 23.8774667,5.95715556 C23.8588,6.06137778 23.7959556,6.15066667 23.7051111,6.20355556 C23.0505333,6.5828 22.3113333,6.92315556 21.5077333,7.21404444 C21.4679111,7.22804444 21.4271556,7.2352 21.3864,7.2352 C21.3322667,7.2352 21.2781333,7.22275556 21.2299111,7.19911111 C21.1440444,7.15773333 21.0774667,7.08182222 21.0472889,6.99128889 C20.4742222,5.28173333 19.7070222,3.82822222 18.7671556,2.67151111 C18.6616889,2.54146667 18.6595111,2.35853333 18.7618667,2.22662222 L18.7618667,2.22662222 Z M24.8039556,7.06782222 C25.9084,8.84737778 26.5651556,10.8941778 26.7036,12.9860889 C26.7095111,13.0850222 26.6749778,13.1824 26.6084,13.2539556 C26.5402667,13.3264444 26.4450667,13.3675111 26.3467556,13.3675111 L22.4460444,13.3675111 C22.2516,13.3675111 22.0944889,13.2153778 22.0882667,13.0212444 C22.0363111,11.4765778 21.8375111,9.97608889 21.4962222,8.56177778 C21.4536,8.38288889 21.5519111,8.20213333 21.7248889,8.14084444 C22.6884,7.79924444 23.5607556,7.39822222 24.3173778,6.94866667 C24.4825778,6.85128889 24.7050222,6.90791111 24.8039556,7.06782222 L24.8039556,7.06782222 Z M13.3675111,8.07333333 C13.3675111,8.16946667 13.328,8.26311111 13.2589333,8.33 C13.1917333,8.39502222 13.1033778,8.4308 13.0100444,8.4308 C11.186,8.37324444 9.45031111,8.13431111 7.84093333,7.72022222 C7.74448889,7.69564444 7.66204444,7.63124444 7.61506667,7.54351111 C7.56777778,7.45671111 7.55906667,7.35248889 7.59142222,7.25791111 C8.75217778,3.87395556 10.7482667,1.55742222 12.9307111,1.06088889 C13.0349333,1.03693333 13.1491111,1.06306667 13.2331111,1.13026667 C13.3186667,1.1984 13.3675111,1.30013333 13.3675111,1.40995556 L13.3675111,8.07333333 Z M13.3675111,13.0097333 C13.3675111,13.2069778 13.2072889,13.3675111 13.0100444,13.3675111 L6.91506667,13.3675111 C6.81831111,13.3675111 6.72435556,13.3276889 6.65746667,13.258 C6.59026667,13.188 6.55386667,13.0924889 6.55791111,12.9960444 C6.61235556,11.5801778 6.80088889,10.1979111 7.11822222,8.88688889 C7.14031111,8.7948 7.20004444,8.71328889 7.28217778,8.66413333 C7.36337778,8.6156 7.46075556,8.60066667 7.55502222,8.62462222 C9.2708,9.07168889 11.1094667,9.32742222 13.0206222,9.38466667 C13.2150667,9.39088889 13.3675111,9.54768889 13.3675111,9.74244444 L13.3675111,13.0097333 Z M13.3675111,17.9464444 C13.3675111,18.1412 13.2150667,18.298 13.0206222,18.3042222 C11.1094667,18.3614667 9.2708,18.6172 7.55626667,19.0639556 C7.52546667,19.0717333 7.49528889,19.0754667 7.46604444,19.0754667 C7.40133333,19.0754667 7.33817778,19.0580444 7.28248889,19.0250667 C7.20004444,18.9756 7.14031111,18.8940889 7.11822222,18.8013778 C6.80088889,17.4909778 6.61235556,16.1084 6.55791111,14.6925333 C6.55386667,14.5960889 6.59057778,14.5005778 6.65746667,14.4308889 C6.72435556,14.3612 6.818,14.3213778 6.91506667,14.3213778 L13.0100444,14.3213778 C13.2072889,14.3213778 13.3675111,14.4816 13.3675111,14.6788444 L13.3675111,17.9464444 Z M13.3675111,26.2792444 C13.3675111,26.3887556 13.3186667,26.4904889 13.2331111,26.5586222 C13.1699556,26.6090222 13.0906222,26.6367111 13.0100444,26.6367111 C12.9832889,26.6367111 12.9565333,26.6339111 12.9307111,26.628 C10.7479556,26.1314667 8.75217778,23.8149333 7.59142222,20.4309778 C7.55906667,20.3364 7.56777778,20.2324889 7.61506667,20.1447556 C7.66235556,20.0576444 7.7448,19.9932444 7.84093333,19.9686667 C9.44875556,19.5552 11.1828889,19.3162667 12.9951111,19.2587111 L13.0100444,19.2584 C13.1033778,19.2584 13.1917333,19.2941778 13.2589333,19.3588889 C13.328,19.4260889 13.3675111,19.5197333 13.3675111,19.6161778 L13.3675111,26.2792444 Z M8.92764444,25.4619556 C8.8592,25.5503111 8.75591111,25.6010222 8.64453333,25.6010222 C8.59257778,25.6010222 8.54217778,25.5901333 8.49551111,25.5683556 C6.72062222,24.7554222 5.1268,23.5290222 3.88702222,22.022 C3.82044444,21.9408 3.79275556,21.8350222 3.81111111,21.7314222 C3.8304,21.6268889 3.89355556,21.5372889 3.9844,21.4850222 C4.63493333,21.1082667 5.37444444,20.7691556 6.18208889,20.4770222 C6.26951111,20.4452889 6.37311111,20.4499556 6.45897778,20.4910222 C6.54546667,20.5330222 6.61235556,20.6089333 6.64284444,20.6994667 C7.2156,22.4090222 7.98248889,23.8619111 8.92204444,25.0173778 C9.0272,25.1471111 9.02937778,25.3300444 8.92764444,25.4619556 L8.92764444,25.4619556 Z M3.18857778,20.7896889 C3.06351111,20.7896889 2.94964444,20.7262222 2.88431111,20.6201333 C1.78048889,18.8408889 1.12373333,16.7944 0.9856,14.7028 C0.979066667,14.6044889 1.01391111,14.5068 1.08111111,14.4346222 C1.14893333,14.3624444 1.24382222,14.3213778 1.34244444,14.3213778 L5.24315556,14.3213778 C5.43728889,14.3213778 5.5944,14.4732 5.60062222,14.6670222 C5.65226667,16.2113778 5.85168889,17.7118667 6.19266667,19.1274222 C6.2356,19.306 6.13728889,19.4870667 5.96462222,19.5483556 C5.00048889,19.8893333 4.12813333,20.2903556 3.3712,20.7396 C3.31582222,20.7722667 3.25266667,20.7896889 3.18857778,20.7896889 L3.18857778,20.7896889 Z M2.88462222,7.06844444 C2.98293333,6.90853333 3.20786667,6.85315556 3.37088889,6.94928889 C4.1272,7.39853333 4.99986667,7.79924444 5.96431111,8.14053333 C6.13728889,8.20182222 6.2356,8.38288889 6.19297778,8.56146667 C5.85168889,9.97702222 5.65226667,11.4775111 5.60062222,13.0218667 C5.5944,13.2156889 5.43728889,13.3675111 5.24315556,13.3675111 L1.34244444,13.3675111 C1.24413333,13.3675111 1.14893333,13.3264444 1.08173333,13.2545778 C1.01391111,13.1820889 0.979066667,13.0844 0.9856,12.9860889 C1.12373333,10.8941778 1.78048889,8.848 2.88462222,7.06844444 L2.88462222,7.06844444 Z M3.88702222,5.6672 C5.1268,4.15986667 6.72062222,2.93346667 8.49582222,2.12053333 C8.64173333,2.0524 8.82684444,2.0972 8.92702222,2.22631111 C9.02937778,2.35884444 9.0272,2.54177778 8.92204444,2.6712 C7.98248889,3.82697778 7.2156,5.27986667 6.64284444,6.98942222 C6.61235556,7.07995556 6.54546667,7.15586667 6.45928889,7.19786667 C6.41044444,7.2212 6.35693333,7.23333333 6.30373333,7.23333333 C6.26173333,7.23333333 6.22097778,7.22617778 6.18146667,7.21186667 C5.37382222,6.91973333 4.63431111,6.58062222 3.98408889,6.20386667 C3.89355556,6.1516 3.8304,6.062 3.81111111,5.9584 C3.79275556,5.85386667 3.82044444,5.74777778 3.88702222,5.6672 L3.88702222,5.6672 Z M13.8444444,0 C6.21071111,0 -1.0658141e-14,6.21071111 -1.0658141e-14,13.8444444 C-1.0658141e-14,21.4784889 6.21071111,27.6888889 13.8444444,27.6888889 C21.4784889,27.6888889 27.6888889,21.4784889 27.6888889,13.8444444 C27.6888889,6.21071111 21.4784889,0 13.8444444,0 L13.8444444,0 Z">
+                                  </path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </button>
+                        <ul id="meta"
+                          class="absolute z-10 flex flex-col hidden w-full py-2 mt-2 origin-top-right border border-2 border-white rounded-lg rounded-tr-none shadow-lg right-4 bg-white-300 md:bg-primary text-primary md:text-white focus:outline-none md:border-primary translation-menu">
+                          <li
+                            class="relative flex-shrink-0 px-3 pt-1 pb-5 font-sans text-base font-normal md:pb-2 hover:text-black-300 hover:no-underline active:text-black-300 focus:text-black-300">
+                            <a href="/en/" class="border-b-2 border-transparent hover:border-black-300">
+                              English
+                            </a>
+                          </li>
+                          <li
+                            class="relative flex-shrink-0 px-3 pb-1 font-sans text-base font-normal md:pb-2 hover:text-black-300 hover:no-underline active:text-black-300 focus:text-black-300">
+                            <a href="/fr/" class="border-b-2 border-transparent hover:border-black-300">
+                              French
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- /Metamenu -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /Navigation -->
+  
+
+    <div
+      class="absolute z-10 flex items-center justify-center w-full h-full mx-auto right-5 pl-36 md:w-4/3 md:items-end md:justify-end md:absolute md:right-36 lg:right-52 md:bottom-60 lg:bottom-38 top-48 md:top-auto md:pl-auto">
+   
+    </div>
+    <div class="absolute top-0 left-0 right-0 h-full max-w-full mx-auto bg-black-300"></div>
+    <div class="relative w-full h-full m-0 overflow-hidden outline-none" title role="button"
+      aria-label="animation" tabinex="0">
+      <h1
+      class="w-full px-4 pl-6 text-4xl font-bold tracking-wider uppercase md:px-0 md:tracking-widest text-white-300 leading-4xl md:text-4xl lg:text-12xl md:w-4/5 font-spacemono md:leading-4xl lg:leading-14xl md:pl-10 lg:pl-8">
+      <span id="text-1"></span>
+      <span id="text-2" style="text-align: center; margin-right: auto;margin-left: auto;width: 13em;height: 5em; top: 3em; position: relative; display: block;" class="text-primary">Error</span>
+    </h1>
+    </div>
+  </header>
+  <!-- /Header -->
+ 
+  <!-- Footer -->
+  <section class="relative z-50 md:pt-14 bg-white-300">
+    <div class="container">
+      <footer class="px-8 pt-8 pb-5 border border-2 rounded-tr-none rounded-30 border-primary mb-14">
+        <div class="relative grid grid-cols-2 gap-4 md:grid-cols-6 place-content-end">
+          <div class="flex flex-row justify-between col-span-2 md:mt-3">
+            <img src="/assets//images/lunatech-logo-black.svg" width="215" height="62" />
+          </div>
+          <div class="flex-col flex-wrap hidden md:flex md:ml-auto">
+            <h3 class="mb-2 text-3xl font-bold uppercase md:mb-6 leading-4xl text-black-300 font-spacemono"></h3>
+            <ul>
+              <li class="mb-2">
+                <a href=""
+                  class="font-sans text-base font-light border-b-2 border-black-300 leading-3xl text-black-300 hover:no-underline hover:border-b-2 hover:border-primary hover:text-primary"></a>
+              </li>
+              <li class="mb-2">
+                <a href=""
+                  class="font-sans text-base font-light border-b-2 border-black-300 leading-3xl text-black-300 hover:no-underline hover:border-b-2 hover:border-primary hover:text-primary"></a>
+              </li>
+              <li class="mb-2">
+                <a href=""
+                  class="font-sans text-base font-light border-b-2 border-black-300 leading-3xl text-black-300 hover:no-underline hover:border-b-2 hover:border-primary hover:text-primary"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-wrap md:ml-10 lg:ml-24">
+            <h3 class="mb-2 text-3xl font-bold uppercase md:mb-6 leading-4xl text-black-300 font-spacemono">Insights
+            </h3>
+            <ul>
+              <li class="mb-2">
+                <a href="https://blog.lunatech.com/"
+                  class="font-sans text-base font-light border-b-2 border-black-300 leading-3xl text-black-300 hover:no-underline hover:border-b-2 hover:border-primary hover:text-primary">Blogs</a>
+              </li>
+              <li class="mb-2">
+                <a href="" target="_blank"
+                  class="font-sans text-base font-light border-b-2 border-black-300 leading-3xl text-black-300 hover:no-underline hover:border-b-2 hover:border-primary hover:text-primary"></a>
+              </li>
+              <li class="mb-2">
+                <a href="" class="invisible font-sans text-base font-light underline leading-3xl text-black-300">..</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-wrap md:ml-20 lg:ml-32">
+            <h3 class="mb-2 text-3xl font-bold uppercase md:mb-6 leading-4xl font-spacemono">Join</h3>
+            <ul>
+              <li class="mb-3">
+                <a href="https://recruitment.lunatech.com/" target="_blank"
+                  class="font-sans text-base font-light border-b-2 border-black-300 leading-3xl text-black-300 hover:no-underline hover:border-b-2 hover:border-primary hover:text-primary whitespace-nowrap">Careers
+                  at Lunatech</a>
+              </li>
+              <li>
+                <div class="flex mt-4 md:mt-0">
+                  <a href="https://twitter.com/lunatechlabs" class="w-6 h-6 mr-3" target="_blank">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square"
+                      class="svg-inline--fa fa-twitter-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/lunatech-labs" class="w-6 h-6 mr-3 mt-001" target="_blank">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <g>
+                        <path d="M448,48c0-26.5-21.5-48-48-48H48C21.5,0,0,21.5,0,48v352c0,26.5,21.5,48,48,48h101.8h0.1c9.5,0,12.9-6.8,12.9-12.5
+                            c0-6.2-0.3-40.4-0.3-61.4c0,0-70,15-84.7-29.8c0,0-11.4-29.1-27.8-36.6c0,0-22.9-15.7,1.6-15.4c0,0,24.9,2,38.6,25.8
+                            c21.9,38.6,58.6,27.5,72.9,20.9c2.3-16,8.8-27.1,16-33.7C123.2,299.1,66.8,291,66.8,194.8c0-27.5,7.6-41.3,23.6-58.9
+                            c-2.6-6.5-11.1-33.3,2.6-67.9c20.9-6.5,69,27,69,27c20-5.6,41.5-8.5,62.8-8.5s42.8,2.9,62.8,8.5c0,0,48.1-33.6,69-27
+                            c13.7,34.7,5.2,61.4,2.6,67.9c16,17.7,25.8,31.5,25.8,58.9c0,96.5-58.9,104.2-114.8,110.5c9.2,7.9,17,22.9,17,46.4
+                            c0,33.7-0.3,75.4-0.3,83.6c0,5.7,3.5,12.6,12.8,12.7h0.1h100.3c26.5,0,48-21.5,48-48L448,48z M148.1,447.9c-0.2,0-0.4,0-0.6,0
+                            C147.7,447.9,147.9,447.9,148.1,447.9z" />
+                        <path
+                          d="M136.3,350.2c-2.9,0-5.2,1.6-5.2,3.6c0,2.3,2.3,3.9,5.6,3.6c2.9,0,5.2-1.6,5.2-3.6C141.9,351.5,139.3,349.9,136.3,350.2z" />
+                        <path
+                          d="M110.8,349.3c-0.7,2,1.3,4.3,4.3,4.9c2.6,1,5.6,0,6.2-2c0.6-2-1.3-4.3-4.3-5.2C114.4,346.3,111.5,347.3,110.8,349.3z" />
+                        <path
+                          d="M155,347.6c-2.9,0.7-4.9,2.6-4.6,4.9c0.3,2,2.9,3.3,5.9,2.6c2.9-0.7,4.9-2.6,4.6-4.6C160.6,348.6,157.9,347.3,155,347.6z" />
+                        <path
+                          d="M94.8,336.8c-1.6,1.3-1,4.3,1.3,6.2c2.3,2.3,5.2,2.6,6.5,1c1.3-1.3,0.7-4.3-1.3-6.2C99.1,335.5,96.1,335.2,94.8,336.8z" />
+                        <path
+                          d="M62.4,301.2c-0.7,1.3,0.3,2.9,2.3,3.9c1.6,1,3.6,0.7,4.3-0.7c0.7-1.3-0.3-2.9-2.3-3.9C64.7,299.9,63.1,300.2,62.4,301.2z" />
+                        <path
+                          d="M73.2,309.3c-1.3,1-1,3.3,0.7,5.2c1.6,1.6,3.9,2.3,5.2,1c1.3-1,1-3.3-0.7-5.2C76.8,308.7,74.5,308,73.2,309.3z" />
+                        <path
+                          d="M83.4,322.1c-1.6,1-1.6,3.6,0,5.9c1.6,2.3,4.3,3.3,5.6,2.3c1.6-1.3,1.6-3.9,0-6.2C87.6,321.8,85,320.8,83.4,322.1z" />
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/lunatech_nl/" class="w-6 h-6 mr-3" target="_blank">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square"
+                      class="svg-inline--fa fa-instagram-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/company/lunatech-research" class="w-6 h-6" target="_blank">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin"
+                      class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="/" class="invisible font-sans text-base font-light underline leading-3xl text-black-300">..</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col mt-10 md:mt-32 md:flex-row">
+          <div class="pb-2 md:pb-0 md:pr-7">
+            <p class="font-sans text-base font-light leading-3xl text-light-gray">©<script>
+                document.write(new Date().getFullYear())
+              </script> Lunatech</p>
+          </div>
+          <div class="pb-2 md:pb-0 md:px-7">
+            <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf"
+              class="font-sans text-base font-light border-b-2 border-transparent leading-3xl text-light-gray hover:border-primary hover:text-primary"
+              target="_blank">Terms of service</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <!-- /Footer -->
+  
+</body>
+
+}
