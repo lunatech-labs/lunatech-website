@@ -15,3 +15,5 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0
 
 // Adds additional packages into conf/routes
 // play.sbt.routes.RoutesKeys.routesImport += "com.lunatech.binders._"
+
+Global / onChangedBuildSource := ReloadOnSourceChanges
