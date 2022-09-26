@@ -408,7 +408,6 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
     h2 {
         font-size: 152px;
         position: absolute;
@@ -418,17 +417,26 @@ body {
 }
 .testimonial-group {
     width: 400px;
-    background: #161618;
+    z-index: 1;
+    overflow-y: scroll;
+    height: 100%;
 }
 .testimonial {
+    background: #161618;
+    margin-bottom: 256px;
+    &:last-child {
+        margin-bottom: 0;
+    }
     &__text {
-
+        font-size: 32px;
+        margin-bottom: 32px;
     }
     &__author {
-
+        font-size: 24px;
+        opacity: .5;
     }
     &__job {
-
+        font-size: 32px;
     }
 }
 
