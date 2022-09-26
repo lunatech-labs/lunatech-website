@@ -94,23 +94,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.g_menu {
-    height: 32px;
-    width: 32px;
-    display: flex;
-    justify-content: space-around;
-}
-.g_menu div {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.g_menu span {
-    display: block;
-    height: 4px;
-    width: 4px;
-    background: #161618;
-}
 .g_section1-middle {
     display: flex;
     justify-content: center;

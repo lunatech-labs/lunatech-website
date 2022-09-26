@@ -3,40 +3,42 @@
 @main("Bienvenu a Lunatech", lang) {
 
 <body>
+	<!-- --------------------------------- INTRO --------------------------------- -->
+	<!--
 	<div class="intro">
 		<h1 class="logo-header">
 			<img class="logo" src="@routes.Assets.versioned("images/img-content/test1.svg")">
 			<img class="logo" src="@routes.Assets.versioned("images/img-content/test2.svg")">
 		</h1>
 	</div>
-
-
-
+	-->
 
     <!-- --------------------------------- CURSOR --------------------------------- -->
     <div class="cursor cursor--small"></div>
     <canvas class="cursor cursor--canvas" resize></canvas>
+
     <!-- --------------------------------- SECTION 1 --------------------------------- -->
     <div class="g_section1">
         <div class="g_section1-top">
 			<a href="/"><img src="@routes.Assets.versioned("images/img-content/logo-lunatech.svg")"></a>
-            <a class="g_menu" href="#">
-                <div>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                </div>
-                <div>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                </div>
-                <div>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                    <span class="square"></span>
-                </div>
-            </a>
+
+			<div class="menu">
+				<button class="menu__btn" id="menu-toggle">
+					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
+					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
+					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
+				</button>
+	
+				<div class="menu__overlay is-hidden" id="menu-content">
+					<div class="menu__list">
+						<a href="https://blog.lunatech.com/" target="_blank">Blog</a>
+						<a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
+					</div>
+					
+				</div>
+			</div>
+			
+
         </div>
         <div class="g_section1-middle">
             <h1>
@@ -47,9 +49,9 @@
         </div>
         <div class="g_section1-bottom">
             <div class="g_language">
-                <a href="#">En</a>
+                <a href="/en/">En</a>
                 <span></span>
-                <a href="#">Fr</a>
+                <a href="/fr/">Fr</a>
             </div>
             <a href="#">Scroll</p>
             <a href="#">Follow us</a>
