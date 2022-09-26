@@ -28,18 +28,15 @@
 					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
 					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
 				</button>
-	
 				<div class="menu__overlay is-hidden" id="menu-content">
 					<div class="menu__list">
 						<a href="https://blog.lunatech.com/" target="_blank">Blog</a>
 						<a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
 					</div>
-					
 				</div>
 			</div>
-			
-
         </div>
+
         <div class="g_section1-middle">
             <h1>
 				<img src="@routes.Assets.versioned("images/img-content/simplify.svg")">
@@ -48,13 +45,32 @@
             </h1>
         </div>
         <div class="g_section1-bottom">
-            <div class="g_language">
+            <div class="language">
                 <a href="/en/">En</a>
                 <span></span>
                 <a href="/fr/">Fr</a>
             </div>
-            <a href="#">Scroll</p>
-            <a href="#">Follow us</a>
+
+			<a class="mouse-scroll" href="#"> 
+				<span class="mouse">
+					<span class="mouse-movement"> </span>
+				</span>
+				<span class="mouse-message fadeIn">Scroll</span> 
+			</a>
+
+			<div class="social">
+				<button class="social__btn" id="social-toggle">Follow us</button>
+				<div class="social__overlay is-hidden" id="social-content">
+					<div class="social__list">
+						<a class="social__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")"></a>
+						<a class="social__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")"></a>
+						<a class="social__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")"></a>
+						<a class="social__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")"></a>
+					</div>
+				</div>
+			</div>
+
+			
         </div>
         <div class="lines">
 			<div class="line"></div>

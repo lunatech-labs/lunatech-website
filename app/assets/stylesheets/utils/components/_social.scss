@@ -1,0 +1,30 @@
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    &__btn {
+        text-transform: uppercase;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__link {
+        margin-bottom: 16px;
+        img {
+            width: 24px;
+        }
+    }
+}
+.social__overlay {
+    position: absolute;
+    top: -164px;
+    width: 128px; 
+}
+
+
+
+
+
