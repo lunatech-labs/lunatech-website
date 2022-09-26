@@ -2,6 +2,7 @@
 body {
     font-family: 'Cabin', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 16px;
 }
 
 
@@ -439,6 +440,51 @@ body {
         font-size: 32px;
     }
 }
+/* --------------------------------- SECTION 7 --------------------------------- */
+.city {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 1120px;
+    background: #272729;
+    color: white;
+    &__part {
+        grid-column: span 3;
+        border-right: 1px solid rgba(255, 255, 255, .25);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-size: cover;
+            background-repeat: none;
+        }
+        &:first-child:hover {
+            background-image: url("/assets/images/img-content/amsterdam.png");
+        }
+        &:nth-child(2):hover {
+            background-image: url("/assets/images/img-content/rotterdam.png");
+        }
+        &:nth-child(3):hover {
+            background-image: url("/assets/images/img-content/paris.png");
+        }
+        &:nth-child(4):hover {
+            background-image: url("/assets/images/img-content/bruxelles.png");
+        }
+    }
+    &__country {
+        opacity: .5;
+    }
+    &__place {
+        font-size: 48px;
+        line-height: 48px;
+
+    }
+}
+
+
+
+
+
 
 
 
