@@ -15,8 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    display: flex;
-    align-items: center;
+    @include flexbox;
     img:first-child {
         margin-right: 16px;
     }

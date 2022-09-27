@@ -1,6 +1,5 @@
 .language {
-    display: flex;
-    align-items: center;
+    @include flexbox;
     a:hover {
         border-bottom: 2px solid black;
     }

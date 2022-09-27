@@ -4,10 +4,11 @@ Files inside this folder should contain all styles relating to a reusable compon
 */
 
 //Import Component files
+@import "cursor";
+@import "footer";
 @import "intro";
 @import "language";
+@import "lines";
 @import "menu";
 @import "scroll";
 @import "social";
-@import "footer";
-@import "lines";

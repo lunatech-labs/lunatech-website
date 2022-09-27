@@ -3,8 +3,7 @@
     color: white;
     padding: 54px 128px;
     &__part {
-        display: flex;
-        align-items: center;
+        @include flexbox;
         justify-content: space-between;
         &:first-child {
             border-bottom: 1px solid #ffffff4D;
@@ -15,8 +14,7 @@
         }
     }
     &__social {
-        display: flex;
-        align-items: center;
+        @include flexbox;
     }
     &__link {
         margin-right: 16px;
