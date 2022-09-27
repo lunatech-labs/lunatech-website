@@ -14,4 +14,17 @@
             padding-top: 32px;
         }
     }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        margin-right: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            width: 20px;
+        }
+    }
 }
