@@ -1,0 +1,17 @@
+.footer {
+    background: black;
+    color: white;
+    padding: 54px 128px;
+    &__part {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:first-child {
+            border-bottom: 1px solid #ffffff4D;
+            padding-bottom: 32px;
+        }
+        &:last-child {
+            padding-top: 32px;
+        }
+    }
+}
