@@ -53,7 +53,10 @@
     }
 }
 .mouse-scroll {
-    
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .mouse-scroll .mouse {
     position: relative;

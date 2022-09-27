@@ -66,11 +66,11 @@ body {
     -webkit-animation-delay: 2.5s;
             animation-delay: 2.5s;
   }
-.line:nth-child(1) {margin-left: -40%;}
-.line:nth-child(2) {margin-left: -20%;}
-.line:nth-child(3) {margin-left: -3px;}
-.line:nth-child(4) {margin-left: 20%;}
-.line:nth-child(5) {margin-left: 40%;}
+.line:nth-child(1) {margin-left: -33.3333333333%;}
+.line:nth-child(2) {margin-left: -16.6666666667%;}
+.line:nth-child(3) {margin-left: 0;}
+.line:nth-child(4) {margin-left: 16.6666666667%;}
+.line:nth-child(5) {margin-left: 33.3333333333%;}
   @-webkit-keyframes drop {
     0% {
       top: -50%;
@@ -113,11 +113,12 @@ body {
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 14px;
+    position: relative;
 }
 /* --------------------------------- SECTION 2 --------------------------------- */
 .g_section2 {
     padding: 0 80px;
-    height: 100vh;
+    height: 1120px;
     background: #161618;
     color: white;
     display: flex;
@@ -128,7 +129,7 @@ body {
 .g_section2-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 360px 220px;
+    grid-template-rows: 40px 360px 340px;
     align-items: center;
 }
 .g_section2-subtitle {
@@ -143,7 +144,6 @@ body {
 .g_section2-text {
     font-size: 32px;
     grid-column: 7 / 11;
-    margin-top: 128px;
 }
 .g_section2-circles {
     position: absolute;
