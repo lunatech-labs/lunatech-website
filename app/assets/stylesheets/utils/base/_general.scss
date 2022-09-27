@@ -24,80 +24,6 @@ h2, h3, h4 {
     justify-content: space-between;
     color: #161618;
 }
-.lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.line {
-    position: absolute;
-    width: 1px;
-    height: 100vh;
-    top: 0;
-    left: 50%;
-    background: rgba(0, 0, 0, .1);
-    overflow: hidden;
-}
-.line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 15vh;
-    width: 100%;
-    top: -50%;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 75%, #000000 100%);
-    opacity: .4;
-    -webkit-animation: drop 7s 0s infinite;
-            animation: drop 7s 0s infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  }
-  .line:nth-child(1)::after {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-  }
-  .line:nth-child(2)::after {
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
-  }
-  .line:nth-child(3)::after {
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-  }
-  .line:nth-child(5)::after {
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
-  }
-.line:nth-child(1) {margin-left: -33.3333333333%;}
-.line:nth-child(2) {margin-left: -16.6666666667%;}
-.line:nth-child(3) {margin-left: 0;}
-.line:nth-child(4) {margin-left: 16.6666666667%;}
-.line:nth-child(5) {margin-left: 33.3333333333%;}
-  @-webkit-keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
-    }
-  }
-  
-  @keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
-    }
-  }
-
-
 .g_section1-top {
     display: flex;
     align-items: center;
@@ -134,12 +60,6 @@ h2, h3, h4 {
     position: relative;
     overflow: hidden;
 }
-.g_section2-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 360px 340px;
-    align-items: center;
-}
 .g_section2-subtitle {
     font-size: 32px;
     grid-column: 3 / 11;
@@ -148,6 +68,7 @@ h2, h3, h4 {
     font-size: 152px;
     grid-column: 3 / 11;
     line-height: 164px;
+    margin-bottom: 32px;
 }
 .g_section2-text {
     font-size: 32px;
@@ -199,16 +120,14 @@ h2, h3, h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    > div {
+        grid-gap: 32px;
+    }
 }
 .g_section3 h3 {
     font-size: 96px;
     color: white;
     margin-bottom: 128px;
-}
-.g_section3-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 32px;
 }
 .g_card {
     grid-column: span 3;
@@ -360,11 +279,6 @@ h2, h3, h4 {
     flex-direction: column;
     position: relative;
 }
-.g_section4-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
 .g_section4 svg {
     position: absolute;
     left: 0;
@@ -382,24 +296,21 @@ h2, h3, h4 {
 }
 /* --------------------------------- SECTION 5 --------------------------------- */
 .g_section5 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 560px);
+    height: 1120px;
     background: #272729;
     color: white;
 }
-.g_section5 > div {
+.g_section5 .g_section5-2, .g_section5 .g_section5-3, .g_section5 .g_section5-4, .g_section5 .g_section5-5, .g_section5 .g_section5-6, .g_section5 .g_section5-7 {
     padding: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 560px;
 }
 .g_section5 h2 {
     grid-column: 1 / 7;
     grid-row: 1 / 2;
     font-size: 96px;
-    display: flex;
-    align-items: center;
+    @include flexbox;
     justify-content: center;
     border-right: 1px solid rgba(255, 255, 255, .25);
     border-bottom: 1px solid rgba(255, 255, 255, .25);
@@ -484,8 +395,6 @@ h2, h3, h4 {
 }
 /* --------------------------------- SECTION 7 --------------------------------- */
 .city {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     height: 1120px;
     background: #272729;
     color: white;
@@ -496,6 +405,10 @@ h2, h3, h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 1120px;
+        &:last-child {
+            border-right: none;
+        }
         &:hover {
             background-size: cover;
             background-repeat: none;
