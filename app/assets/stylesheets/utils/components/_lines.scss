@@ -59,12 +59,23 @@
     @include tablet-portrait {
         margin-left: -25%;
     }
+    @include phone {
+        margin-left: -17%;
+    }
 }
-.line:nth-child(3) {margin-left: 0;}
+.line:nth-child(3) {
+    margin-left: 0;
+    @include phone {
+        display: none;
+    }
+}
 .line:nth-child(4) {
     margin-left: 16.6666666667%;
     @include tablet-portrait {
         margin-left: 25%;
+    }
+    @include phone {
+        margin-left: 17%;
     }
 }
 .line:nth-child(5) {

@@ -12,6 +12,9 @@
         grid-column: span 4;
         padding: 96px;
         color: white;
+        @include phone {
+            padding: 32px;
+        }
         &:first-child, &:nth-child(2) {
             border-right: 1px solid rgba(255,255,255,0.25);
             @include tablet-landscape {
@@ -20,6 +23,9 @@
         }
         @include tablet-landscape {
             grid-column: span 6;
+        }
+        @include phone {
+            grid-column: span 12;
         }
         &:first-child {
             @include tablet-landscape {
@@ -33,6 +39,9 @@
             }
             @include tablet-landscape {
                 border-right: 1px solid rgba(255,255,255,0.25);
+            }
+            @include phone {
+                border-bottom: 1px solid rgba(255,255,255,0.25);
             }
         }
     }
@@ -56,5 +65,13 @@
     &__flex {
         display: flex;
         justify-content: space-between;
+        @include phone {
+            flex-direction: column;
+        }
+        > div:first-child {
+            @include phone {
+                margin-bottom: 32px;
+            }
+        }
     }
 }

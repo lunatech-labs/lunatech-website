@@ -23,6 +23,9 @@ h2, h3, h4 {
     flex-direction: column;
     justify-content: space-between;
     color: #161618;
+    @include phone {
+        padding: 32px;
+    }
 }
 .g_section1-top {
     @include flexbox;
@@ -31,6 +34,10 @@ h2, h3, h4 {
 .g_section1-middle {
     display: flex;
     justify-content: center;
+    @include phone {
+        width: 72%;
+        margin: 0 auto;
+    }
 }
 .g_section1 h1 {
     display: flex;
@@ -57,6 +64,10 @@ h2, h3, h4 {
     @include flexbox;
     position: relative;
     overflow: hidden;
+    @include phone {
+        height: initial;
+        padding: 64px 32px;
+    }
 }
 .g_section2-subtitle {
     font-size: 32px;
@@ -66,6 +77,10 @@ h2, h3, h4 {
     }
     @include tablet-portrait {
         font-size: 26px;
+    }
+    @include phone {
+        font-size: 20px;
+        grid-column: span 12;
     }
 }
 .g_section2 h2 {
@@ -81,6 +96,11 @@ h2, h3, h4 {
         font-size: 76px;
         line-height: 88px;
     }
+    @include phone {
+        font-size: 40px;
+        line-height: 48px;
+        grid-column: span 12;
+    }
 }
 .g_section2-text {
     font-size: 32px;
@@ -91,6 +111,10 @@ h2, h3, h4 {
     }
     @include tablet-portrait {
         font-size: 28px;
+    }
+    @include phone {
+        grid-column: 3 / 13;
+        font-size: 24px;
     }
 }
 .g_section2-circles {
@@ -142,6 +166,9 @@ h2, h3, h4 {
         padding: 160px 80px;
         height: initial;
     }
+    @include phone {
+        padding: 64px 32px;
+    }
     > div {
         grid-gap: 32px;
     }
@@ -156,6 +183,11 @@ h2, h3, h4 {
     @include tablet-portrait {
         font-size: 72px;
     }
+    @include phone {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 64px;
+    }
 }
 .g_card {
     grid-column: span 3;
@@ -164,6 +196,10 @@ h2, h3, h4 {
     padding: 80px 40px;
     @include tablet-landscape {
         grid-column: span 6;
+    }
+    @include phone {
+        grid-column: span 12;
+        padding: 64px 32px;
     }
 }
 .g_card h4 {
@@ -306,6 +342,10 @@ h2, h3, h4 {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    @include phone {
+        padding: 64px 32px;
+        height: initial;
+    }
 }
 .g_section4 svg {
     position: absolute;
@@ -315,6 +355,9 @@ h2, h3, h4 {
     }
     @include tablet-portrait {
         left: -450px;
+    }
+    @include phone {
+        display: none;
     }
 }
 .g_section4-title {
@@ -329,12 +372,20 @@ h2, h3, h4 {
         font-size: 72px;
         line-height: 80px;
     }
+    @include phone {
+        font-size: 36px;
+        line-height: 48px;
+        grid-column: span 12;
+    }
 }
 .g_section4-text {
     grid-column: 8 / 13;
     font-size: 23px;
     opacity: .5;
     margin-top: 32px;
+    @include phone {
+        grid-column: 4 / 13;
+    }
 }
 /* --------------------------------- SECTION 5 --------------------------------- */
 .g_section5 {
@@ -348,6 +399,9 @@ h2, h3, h4 {
         grid-column: span 3;
         @include tablet-landscape {
             grid-column: span 6;
+        }
+        @include phone {
+            grid-column: span 12;
         }
     }
 }
@@ -374,6 +428,10 @@ h2, h3, h4 {
         grid-column: span 12;
         padding: 80px 0;
         border-right: none;
+    }
+    @include phone {
+        font-size: 40px;
+        line-height: 48px;
     }
 }
 .g_section5-2 {
@@ -402,6 +460,10 @@ h2, h3, h4 {
 .g_section5-6 {
     grid-row: 2 / 3;
     border-right: 1px solid rgba(255, 255, 255, .25);
+    @include phone {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+    }
 }
 .g_section5-7 {
     grid-row: 2 / 3;
@@ -422,6 +484,9 @@ h2, h3, h4 {
     @include flexbox;
     justify-content: space-between;
     position: relative;
+    @include phone {
+        padding: 0 32px;
+    }
     h2 {
         font-size: 152px;
         position: absolute;
@@ -435,6 +500,10 @@ h2, h3, h4 {
             font-size: 76px;
             line-height: 88px;
         }
+        @include phone {
+            font-size: 40px;
+            line-height: 48px;
+        }
     }
 }
 .testimonial-group {
@@ -442,6 +511,9 @@ h2, h3, h4 {
     z-index: 1;
     overflow-y: scroll;
     height: 100%;
+    @include phone {
+        width: initial;
+    }
 }
 .testimonial {
     background: #161618;
@@ -452,13 +524,22 @@ h2, h3, h4 {
     &__text {
         font-size: 32px;
         margin-bottom: 32px;
+        @include phone {
+            font-size: 16px;
+        }
     }
     &__author {
         font-size: 24px;
         opacity: .5;
+        @include phone {
+            font-size: 18px;
+        }
     }
     &__job {
         font-size: 32px;
+        @include phone {
+            font-size: 16px;
+        }
     }
 }
 /* --------------------------------- SECTION 7 --------------------------------- */
@@ -470,9 +551,15 @@ h2, h3, h4 {
         overflow-x: scroll;
         height: 960px;
     }
+    @include phone {
+        height: 620px;
+    }
     > .grid {
         @include tablet-landscape {
             width: 1680px;
+        }
+        @include phone {
+            width: 1290px;
         }
     }
     &__part {
@@ -485,6 +572,9 @@ h2, h3, h4 {
         height: 1120px;
         @include tablet-landscape {
             height: 960px;
+        }
+        @include phone {
+            height: 620px;
         }
         &:last-child {
             border-right: none;
@@ -527,6 +617,10 @@ h2, h3, h4 {
     @include tablet-portrait {
         padding: 0 80px;
     }
+    @include phone {
+        padding: 64px 32px;
+        height: initial;
+    }
     &__flex {
         @include flexbox;
         justify-content: space-between;
@@ -548,6 +642,10 @@ h2, h3, h4 {
             font-size: 76px;
             line-height: 88px;
         }
+        @include phone {
+            font-size: 40px;
+            line-height: 48px;
+        }
     }
     &__text {
         font-size: 32px;
@@ -555,6 +653,9 @@ h2, h3, h4 {
         width: 600px;
         @include tablet-landscape {
             margin-bottom: 64px;
+        }
+        @include phone {
+            width: 100%;
         }
     }
     &__group {
@@ -604,6 +705,9 @@ h2, h3, h4 {
         padding: 160px 80px;
         height: initial;
     }
+    @include phone {
+        padding: 64px 32px;
+    }
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -625,6 +729,14 @@ h2, h3, h4 {
             border-bottom-right-radius: 4em;
             position: initial;
             padding-right: 80px;
+        }
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            padding-right: 0;
+            padding: 0;
+            width: 100%;
+            align-items: center;
         }
     }
     &__title {
@@ -657,6 +769,10 @@ h2, h3, h4 {
 .hero {
     padding: 128px;
     background: #161618;
+    @include phone {
+        padding: 32px;
+        height: initial;
+    }
 }
 .hero__inner {
     display: flex;
@@ -712,6 +828,10 @@ h2, h3, h4 {
         @include tablet-portrait {
             font-size: 76px;
             line-height: 88px;
+        }
+        @include phone {
+            font-size: 40px;
+            line-height: 48px;
         }
     }
     .active & {
