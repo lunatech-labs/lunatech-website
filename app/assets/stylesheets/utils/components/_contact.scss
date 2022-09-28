@@ -1,0 +1,60 @@
+.contact {
+    background: #272729;
+    @include flexbox;
+    justify-content: center;
+    flex-direction: column;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 100%;
+    }
+    &__card {
+        grid-column: span 4;
+        padding: 96px;
+        color: white;
+        &:first-child, &:nth-child(2) {
+            border-right: 1px solid rgba(255,255,255,0.25);
+            @include tablet-landscape {
+                border-right: none;
+            }
+        }
+        @include tablet-landscape {
+            grid-column: span 6;
+        }
+        &:first-child {
+            @include tablet-landscape {
+                grid-column: span 12;
+                border-bottom: 1px solid rgba(255,255,255,0.25);
+            }
+        }
+        &:nth-child(2) {
+            @include tablet-landscape {
+                border-right: none;
+            }
+            @include tablet-landscape {
+                border-right: 1px solid rgba(255,255,255,0.25);
+            }
+        }
+    }
+    &__part {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__cat {
+        font-size: 24px;
+    }
+    &__text {
+        opacity: .5;
+        font-size: 20px;
+    }
+    &__link {
+        opacity: .5;
+        font-size: 20px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,7 +1,7 @@
 .footer {
     background: black;
     color: white;
-    padding: 54px 128px;
+    padding: 80px;
     &__part {
         @include flexbox;
         justify-content: space-between;
