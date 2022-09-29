@@ -126,6 +126,7 @@ h2, h3, h4 {
     height: 542px;
     bottom: -271px;
     left: -271px;
+    opacity: .3;
 }
 .g_section2-circles div {
     position: absolute;
@@ -134,8 +135,16 @@ h2, h3, h4 {
 .g_circle1 {
     width: 542px;
     height: 542px;
-    border: 1px solid white;
     opacity: .75;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%; 
+        width: 100%; 
+        border: 1px dashed white;
+        border-radius: inherit;
+        animation: spin 30s linear infinite;
+    }
 }
 .g_circle2 {
     width: 404px;
@@ -146,13 +155,26 @@ h2, h3, h4 {
 .g_circle3 {
     width: 284px;
     height: 284px;
-    border: 1px solid #EA212E;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%; 
+        width: 100%; 
+        border: 1px dashed #EA212E;
+        border-radius: inherit;
+        animation: spin 30s linear infinite;
+    }
 }
 .g_circle4 {
     width: 174px;
     height: 174px;
     border: 1px solid white;
     opacity: .25;
+}
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg); 
+    }
 }
 /* --------------------------------- SECTION 3 --------------------------------- */
 .g_section3 {
@@ -487,6 +509,7 @@ h2, h3, h4 {
     @include flexbox;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
     @include phone {
         padding: 0 32px;
     }
@@ -535,7 +558,6 @@ h2, h3, h4 {
 }
 .testimonial {
     background: #161618;
-    margin-bottom: 256px;
     @include tablet-landscape {
         text-align: center;
     }
@@ -561,6 +583,65 @@ h2, h3, h4 {
         @include phone {
             font-size: 16px;
         }
+    }
+}
+.g_section6-circles {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 542px;
+    height: 542px;
+    bottom: -271px;
+    right: -271px;
+    opacity: .3;
+}
+.g_section6-circles div {
+    position: absolute;
+    border-radius: 25em;
+}
+.g_circle5 {
+    width: 542px;
+    height: 542px;
+    opacity: .75;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%; 
+        width: 100%; 
+        border: 1px dashed white;
+        border-radius: inherit;
+        animation: spin 30s linear infinite;
+    }
+}
+.g_circle6 {
+    width: 404px;
+    height: 404px;
+    border: 1px solid white;
+    opacity: .50;
+}
+.g_circle7 {
+    width: 284px;
+    height: 284px;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%; 
+        width: 100%; 
+        border: 1px dashed #EA212E;
+        border-radius: inherit;
+        animation: spin 30s linear infinite;
+    }
+}
+.g_circle8 {
+    width: 174px;
+    height: 174px;
+    border: 1px solid white;
+    opacity: .25;
+}
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg); 
     }
 }
 /* --------------------------------- SECTION 7 --------------------------------- */
