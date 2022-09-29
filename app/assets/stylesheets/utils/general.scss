@@ -22,7 +22,6 @@ body {
 	background-color: var(--color-bg);
 }
 
-<<<<<<<< HEAD:app/assets/stylesheets/utils/general.scss
 
 /* --------------------------------- SECTION 1 --------------------------------- */
 .g_section1 {
@@ -456,34 +455,6 @@ body {
 /* --------------------------------- UTILS --------------------------------- */
 .mgb32 {
     margin-bottom: 32px;
-========
-/* Page Loader */
-.js .loading::before {
-	content: '';
-	position: fixed;
-	z-index: 100000;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: var(--color-bg);
-}
-
-.js .loading::after {
-	content: '';
-	position: fixed;
-	z-index: 100000;
-	top: 50%;
-	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
-	pointer-events: none;
-	border-radius: 50%;
-	opacity: 0.4;
-	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
->>>>>>>> 5c76b27 (add scss & testi block and font):public/stylesheets/geoff.css
 }
 
 @keyframes loaderAnim {
@@ -609,33 +580,6 @@ body, body a {
   .link:hover .settings-icon__group--3 .settings-icon__rect {
     transform: translateY(25px);
   } 
-========
-/* Header */
-.codrops-header {
-	position: relative;
-	z-index: 100;
-	text-align: center;
-	font-size: 1rem;
-}
-
-.codrops-header__title {
-	font-size: 1rem;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
-}
-
-.info {
-	margin: 0 0 0 1.25em;
-	color: var(--color-info);
-}
-
-.github {
-	display: block;
-	margin: 0.15em 0.15em 0.15em 0.5em;
-	padding: 0.25em;
-}
->>>>>>>> 5c76b27 (add scss & testi block and font):public/stylesheets/geoff.css
 
 .title {
 	text-align: center;
