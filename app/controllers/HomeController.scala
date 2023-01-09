@@ -1,9 +1,8 @@
 package controllers
 
-import javax.inject._
-import play.api._
 import play.api.mvc._
-import play.api.i18n._
+
+import javax.inject._
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -23,20 +22,17 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     val host: String = request.host
     val lang: String = request.headers.get("Accept-Language").getOrElse("en") 
     (host, lang) match { 
-      case h if host.endsWith("lunatech.fr") => Redirect(routes.HomeController.fr())
-      case l if lang.startsWith("fr") => Redirect(routes.HomeController.fr())
+      case (h, _) if h.endsWith("lunatech.fr") => Redirect(routes.HomeController.fr())
+      case (_, l) if l.startsWith("fr") => Redirect(routes.HomeController.fr())
       case _ => Ok(views.html.index("en"))
     }
   }
 
   def fr() = Action { implicit request: Request[AnyContent] =>
-  
     Ok(views.html.fr("fr"))
   }
 
-
   def en() = Action { implicit request: Request[AnyContent] =>
-   
     Ok(views.html.index("en"))
   }
 }

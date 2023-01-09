@@ -1,3 +1,5 @@
+package controllers
+
 import javax.inject._
 
 import play.api.http.DefaultHttpErrorHandler
@@ -21,5 +23,4 @@ class ErrorHandler @Inject() (
   override def onServerError(request: RequestHeader, exception: Throwable): Future[Result] = {
     Future.successful(Ok(views.html.error("en")))
   }
-
 }
