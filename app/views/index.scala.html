@@ -3,7 +3,6 @@
 @main("Welcome to Lunatech", lang) {
 
 <body>
-    <!-- --------------------------------- INTRO --------------------------------- -->
 	<div class="intro">
 		<h1 class="logo-header">
 			<img class="logo" src="@routes.Assets.versioned("images/img-content/test1.svg")">
@@ -11,11 +10,6 @@
 		</h1>
 	</div>
 
-    <!-- --------------------------------- CURSOR --------------------------------- -->
-    <div class="cursor cursor--small"></div>
-    <canvas class="cursor cursor--canvas" resize></canvas>
-
-    <!-- --------------------------------- SECTION 1 --------------------------------- -->
     <div class="g_section1">
         <div class="g_section1-top">
 			<a href="/"><img src="@routes.Assets.versioned("images/img-content/logo-lunatech.svg")"></a>
@@ -77,369 +71,337 @@
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 2 --------------------------------- -->
     <div class="g_section2">
-        <div class="grid">
-            <p class="g_section2-subtitle">About</p>
-            <h2>We believe<br />in simplicity.</h2>
-            <p class="g_section2-text">It leads to simpler code and more maintainable systems that stand up to the times. This way, we can best help our customers to achieve their goals. Our coding is simple, elegant and smart.</p>
-        </div> 
-        <div class="g_section2-circles">
-            <div class="g_circle1"></div>
-            <div class="g_circle2"></div>
-            <div class="g_circle3"></div>
-            <div class="g_circle4"></div>
+        <div class="container">
+            <div class="grid">
+                <h2>We believe<br />in simplicity.</h2>
+                <p class="g_section2-text">It leads to simpler code and more maintainable systems that stand up to the times. This way, we can best help our customers to achieve their goals. Our coding is simple, elegant and smart.</p>
+            </div> 
+            <div class="g_section2-circles">
+                <div class="g_circle1"></div>
+                <div class="g_circle2"></div>
+                <div class="g_circle3"></div>
+                <div class="g_circle4"></div>
+            </div>
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 3 --------------------------------- -->
     <div class="g_section3">
-        <h3>Our culture</h3>
-        <div class="grid">
-            <div class="g_card">
-                <div class="g_graph1">
-                    <div class="g_gline">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+        <div class="container">
+            <h3>Our culture</h3>
+            <div class="grid">
+                <div class="g_card">
+                    <div class="g_graph1">
+                        <div class="g_gline">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="g_ground">
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
-                    <div class="g_ground">
-                        <div></div>
-                        <div></div>
-                    </div>
+                    <h4>Respect</h4>
+                    <p>It is only if we respect each other that we can feel safe to experiment, make mistakes and learn from each other.</p>
                 </div>
-                <h4>Respect</h4>
-                <p>It is only if we respect each other that we can feel safe to experiment, make mistakes and learn from each other.</p>
-            </div>
-            <div class="g_card">
-                <div class="g_graph2">
-                    <div class="g_square">
-                        <div></div>
+                <div class="g_card">
+                    <div class="g_graph2">
+                        <div class="g_square">
+                            <div></div>
+                        </div>
+                        <div class="g_square">
+                            <div></div>
+                        </div>
+                        <div class="g_square">
+                            <div></div>
+                        </div>
                     </div>
-                    <div class="g_square">
-                        <div></div>
-                    </div>
-                    <div class="g_square">
-                        <div></div>
-                    </div>
+                    <h4>Responsibility</h4>
+                    <p>We’re all adults and, therefore, we own our mistakes. We work diligently and we’re proactive if we see things aren’t going well.</p>
                 </div>
-                <h4>Responsibility</h4>
-                <p>We’re all adults and, therefore, we own our mistakes. We work diligently and we’re proactive if we see things aren’t going well.</p>
-            </div>
-            <div class="g_card">
-                <div class="g_graph3">
-                    <div class="g_gcircle">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="g_card">
+                    <div class="g_graph3">
+                        <div class="g_gcircle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
+                    <h4>Openness</h4>
+                    <p>We share information. We are honest. We help others to be successful.</p>
                 </div>
-                <h4>Openness</h4>
-                <p>We share information. We are honest. We help others to be successful.</p>
-            </div>
-            <div class="g_card">
-                <div class="g_graph4">
-                    <div class="g_gline">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="g_card">
+                    <div class="g_graph4">
+                        <div class="g_gline">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="g_ground2">
+                            <div class="g_gsquareL"></div>
+                            <div class="g_gsquareB"></div>
+                        </div>
                     </div>
-                    <div class="g_ground2">
-                        <div class="g_gsquareL"></div>
-                        <div class="g_gsquareB"></div>
-                    </div>
-                </div>
-                <h4>Personal growth</h4>
-                <p>We strive to be more than just good coders. We expand our horizons by reading, studying, experimenting and interacting with others.</p>
+                    <h4>Personal growth</h4>
+                    <p>We strive to be more than just good coders. We expand our horizons by reading, studying, experimenting and interacting with others.</p>
+                </div>        
             </div>
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 4 --------------------------------- -->
     <div class="g_section4">
-        <div class="grid">
-            <p class="g_section4-title">From<br />100k to 15k<br />lines of code.</p>
-            <p class="g_section4-text">Our focus on what we must achieve and a profound understanding of your business guarantees a smarter and more efficient code. That's what we call codemanship.</p>
+        <div class="container">
+            <svg width="767" height="640" viewBox="0 0 767 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-184.58 46.0134C-184.58 22.6372 -165.606 3.69482 -142.192 3.69482H660.216C683.606 3.69482 702.604 22.6372 702.604 46.0134V547.628H-184.604V46.0134H-184.58Z" fill="#FFFFFD" stroke="#444444" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M-245.299 547.628V565.955C-245.299 616.944 -203.898 636.305 -152.801 636.305H670.801C721.873 636.305 763.299 616.944 763.299 565.955V547.628H-245.299Z" fill="#FFFFFD" stroke="#444444" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M651.951 71.6558H-123.49V517.675H651.951V71.6558Z" stroke="#444444" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M622.319 125.847H-93.8823V488.092H622.319V125.847Z" fill="#FFFFFD"/>
+                <path d="M66.17 161.022H-60.0312V171.368H66.17V161.022Z" fill="#F0777E"/>
+                <path d="M263.281 296.87H33.1577V307.216H263.281V296.87Z" fill="#F0777E"/>
+                <path d="M355.828 296.87H279.787V307.216H355.828V296.87Z" fill="#F0777E"/>
+                <path d="M548.794 296.87H377.343V307.216H548.794V296.87Z" fill="#F0777E"/>
+                <path d="M32.7628 228.934H-30.3501V239.279H32.7628V228.934Z" fill="#F0777E"/>
+                <path d="M63.0861 330.838H-0.0268555V341.184H63.0861V330.838Z" fill="black"/>
+                <path d="M4.16715 398.75H-58.9458V409.096H4.16715V398.75Z" fill="black"/>
+                <path d="M4.16715 194.99H-58.9458V205.336H4.16715V194.99Z" fill="black"/>
+                <path d="M193.185 194.99H22.4497V205.336H193.185V194.99Z" fill="#424242"/>
+                <path d="M346.379 194.99H213.836V205.336H346.379V194.99Z" fill="#424242"/>
+                <path d="M63.0861 262.902H-0.0268555V273.248H63.0861V262.902Z" fill="black"/>
+                <path d="M152.55 262.902H89.4614V273.248H152.55V262.902Z" fill="black"/>
+                <path d="M384.572 262.902H281.021V273.248H384.572V262.902Z" fill="black"/>
+                <path d="M261.233 262.902H173.398V273.248H261.233V262.902Z" fill="#424242"/>
+                <path d="M76.6804 432.718H40.8062V443.064H76.6804V432.718Z" fill="#F0777E"/>
+                <path d="M17.7126 432.718H-27.2412V443.064H17.7126V432.718Z" fill="black"/>
+                <path d="M149.687 432.718H99.7744V443.064H149.687V432.718Z" fill="#424242"/>
+                <path d="M588.246 364.806H30.4932V375.152H588.246V364.806Z" fill="#424242"/>
+            </svg>
+            <div class="g_section4-part">
+                <p class="g_section4-title">From<br />100k to 15k<br />lines of code.</p>
+                <p class="g_section4-text">Our focus on what we must achieve and a profound understanding of your business guarantees a smarter and more efficient code. That's what we call codemanship.</p>
+            </div>
         </div>
-        <svg width="767" height="640" viewBox="0 0 767 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-184.58 46.0134C-184.58 22.6372 -165.606 3.69482 -142.192 3.69482H660.216C683.606 3.69482 702.604 22.6372 702.604 46.0134V547.628H-184.604V46.0134H-184.58Z" fill="#FFFFFD" stroke="#444444" stroke-width="3" stroke-miterlimit="10"/>
-            <path d="M-245.299 547.628V565.955C-245.299 616.944 -203.898 636.305 -152.801 636.305H670.801C721.873 636.305 763.299 616.944 763.299 565.955V547.628H-245.299Z" fill="#FFFFFD" stroke="#444444" stroke-width="3" stroke-miterlimit="10"/>
-            <path d="M651.951 71.6558H-123.49V517.675H651.951V71.6558Z" stroke="#444444" stroke-width="3" stroke-miterlimit="10"/>
-            <path d="M622.319 125.847H-93.8823V488.092H622.319V125.847Z" fill="#FFFFFD"/>
-            <path d="M66.17 161.022H-60.0312V171.368H66.17V161.022Z" fill="#F0777E"/>
-            <path d="M263.281 296.87H33.1577V307.216H263.281V296.87Z" fill="#F0777E"/>
-            <path d="M355.828 296.87H279.787V307.216H355.828V296.87Z" fill="#F0777E"/>
-            <path d="M548.794 296.87H377.343V307.216H548.794V296.87Z" fill="#F0777E"/>
-            <path d="M32.7628 228.934H-30.3501V239.279H32.7628V228.934Z" fill="#F0777E"/>
-            <path d="M63.0861 330.838H-0.0268555V341.184H63.0861V330.838Z" fill="black"/>
-            <path d="M4.16715 398.75H-58.9458V409.096H4.16715V398.75Z" fill="black"/>
-            <path d="M4.16715 194.99H-58.9458V205.336H4.16715V194.99Z" fill="black"/>
-            <path d="M193.185 194.99H22.4497V205.336H193.185V194.99Z" fill="#424242"/>
-            <path d="M346.379 194.99H213.836V205.336H346.379V194.99Z" fill="#424242"/>
-            <path d="M63.0861 262.902H-0.0268555V273.248H63.0861V262.902Z" fill="black"/>
-            <path d="M152.55 262.902H89.4614V273.248H152.55V262.902Z" fill="black"/>
-            <path d="M384.572 262.902H281.021V273.248H384.572V262.902Z" fill="black"/>
-            <path d="M261.233 262.902H173.398V273.248H261.233V262.902Z" fill="#424242"/>
-            <path d="M76.6804 432.718H40.8062V443.064H76.6804V432.718Z" fill="#F0777E"/>
-            <path d="M17.7126 432.718H-27.2412V443.064H17.7126V432.718Z" fill="black"/>
-            <path d="M149.687 432.718H99.7744V443.064H149.687V432.718Z" fill="#424242"/>
-            <path d="M588.246 364.806H30.4932V375.152H588.246V364.806Z" fill="#424242"/>
-        </svg>
     </div>
 
-    <!-- --------------------------------- SECTION 5 --------------------------------- -->
     <div class="services">
-        <div class="grid">
-            <h2 class="services__title">Expertise<br />& services</h2>
-            <div class="services__part">
-                <p class="services__subtitle">Java, Kotlin & Scala</p>
-                <p class="services__text">With 30 years of experience in IT consulting, we offer diverse technologies to meet your immediate needs and foster future growth.</p>
-            </div>
-    
-            <div class="services__part">
-                <p class="services__subtitle">Devops</p>
-                <p class="services__text">The DevOps movement bridges the gap between developers and operations. Our experts will support you with implementing, auditing and improving this mindset throughout your organisation.</p>
-            </div>
-    
-            <div class="services__part">
-                <p class="services__subtitle">Front-end</p>
-                <p class="services__text">We build custom dashboards, websites and responsive web applications to get an insight into the large systems you run, provide business intelligence and improve communication.</p>
-            </div>
-    
-            <div class="services__part">
-                <p class="services__subtitle">Big data</p>
-                <p class="services__text">We have the expertise to provide an architecture for Big Data. We also use machine learning and artificial intelligence frameworks to help create value.</p>
-            </div>
-    
-            <div class="services__part">
-                <p class="services__subtitle">Machine learning</p>
-                <p class="services__text mgb32">We design and implement intelligent systems that learn and improve over time.</p>
-                <p class="services__subtitle">Test automation</p>
-                <p class="services__text">We automate testing and make sure test are running prior to deployment. We also take care of writing test scenarios.</p>
-            </div>
-    
-            <div class="services__part">
-                <p class="services__subtitle">System integration</p>
-                <p class="services__text">We help you transform your IT landscape, bridging the gap between your legacy and new applications. Together, we make your IT systems sustainable, cutting edge, communicative and cost effective.</p>
+        <div class="container">
+            <div class="grid gg0">
+                <h2 class="services__title">Expertise<br />& services</h2>
+                <div class="services__part">
+                    <p class="services__subtitle">Java, Kotlin & Scala</p>
+                    <p class="services__text">With 30 years of experience in IT consulting, we offer diverse technologies to meet your immediate needs and foster future growth.</p>
+                </div>
+        
+                <div class="services__part">
+                    <p class="services__subtitle">Devops</p>
+                    <p class="services__text">The DevOps movement bridges the gap between developers and operations. Our experts will support you with implementing, auditing and improving this mindset throughout your organisation.</p>
+                </div>
+        
+                <div class="services__part">
+                    <p class="services__subtitle">Front-end</p>
+                    <p class="services__text">We build custom dashboards, websites and responsive web applications to get an insight into the large systems you run, provide business intelligence and improve communication.</p>
+                </div>
+        
+                <div class="services__part">
+                    <p class="services__subtitle">Big data</p>
+                    <p class="services__text">We have the expertise to provide an architecture for Big Data. We also use machine learning and artificial intelligence frameworks to help create value.</p>
+                </div>
+        
+                <div class="services__part">
+                    <p class="services__subtitle">Machine learning</p>
+                    <p class="services__text mgb32">We design and implement intelligent systems that learn and improve over time.</p>
+                    <p class="services__subtitle">Test automation</p>
+                    <p class="services__text">We automate testing and make sure test are running prior to deployment. We also take care of writing test scenarios.</p>
+                </div>
+        
+                <div class="services__part">
+                    <p class="services__subtitle">System integration</p>
+                    <p class="services__text">We help you transform your IT landscape, bridging the gap between your legacy and new applications. Together, we make your IT systems sustainable, cutting edge, communicative and cost effective.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 6 --------------------------------- -->
     <div class="g_section6">
-		<h2>Testimonials</h2>
-        <div class="testimonial">
-            <p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-            <p class="testimonial__author">Kateryna Olenkovska</p>
-            <p class="testimonial__job">Quality Assurance Engineer</p>
-        </div>
-        <div class="g_section6-circles">
-            <div class="g_circle5"></div>
-            <div class="g_circle6"></div>
-            <div class="g_circle7"></div>
-            <div class="g_circle8"></div>
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
+                <p class="testimonial__author">Kateryna Olenkovska</p>
+                <p class="testimonial__job">Quality Assurance Engineer</p>
+            </div>
+            <div class="g_section6-circles">
+                <div class="g_circle5"></div>
+                <div class="g_circle6"></div>
+                <div class="g_circle7"></div>
+                <div class="g_circle8"></div>
+            </div>
         </div>
     </div>
-    <!--
-	<div class="g_section6">
-		<h2>Testimonials</h2>
-		<div class="testimonial-group">
-			<div class="testimonial">
-				<p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-				<p class="testimonial__author">Kateryna Olenkovska</p>
-				<p class="testimonial__job">Quality Assurance Engineer</p>
-			</div>
-			<div class="testimonial">
-				<p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-				<p class="testimonial__author">Kateryna Olenkovska</p>
-				<p class="testimonial__job">Quality Assurance Engineer</p>
-			</div>
-            <div class="testimonial">
-				<p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-				<p class="testimonial__author">Kateryna Olenkovska</p>
-				<p class="testimonial__job">Quality Assurance Engineer</p>
-			</div>
-		</div>
-		<div class="testimonial-group">
-			<div class="testimonial">
-				<p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-				<p class="testimonial__author">Kateryna Olenkovska</p>
-				<p class="testimonial__job">Quality Assurance Engineer</p>
-			</div>
-			<div class="testimonial">
-				<p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-				<p class="testimonial__author">Kateryna Olenkovska</p>
-				<p class="testimonial__job">Quality Assurance Engineer</p>
-			</div>
-            <div class="testimonial">
-				<p class="testimonial__text">High-quality software for me means not only that it works, but also that it is readable and easily maintainable.</p>
-				<p class="testimonial__author">Kateryna Olenkovska</p>
-				<p class="testimonial__job">Quality Assurance Engineer</p>
-			</div>
-		</div>
-    </div>
-    -->
 
-    <!-- --------------------------------- SECTION 7 --------------------------------- -->
 	<div class="city">
-        <div class="grid">
-            <div class="city__part">
-                <div>
-                    <p class="city__country">Netherlands</p>
-                    <p class="city__place">Amsterdam</p>
+        <div class="container">
+            <div class="grid gg0">
+                <div class="city__part">
+                    <div>
+                        <p class="city__country">Netherlands</p>
+                        <p class="city__place">Amsterdam</p>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="city__part">
-                <div>
-                    <p class="city__country">Netherlands</p>
-                    <p class="city__place">Rotterdam</p>
+                <div class="city__part">
+                    <div>
+                        <p class="city__country">Netherlands</p>
+                        <p class="city__place">Rotterdam</p>
+                    </div>
                 </div>
-            </div>
-            <div class="city__part">
-                <div>
-                    <p class="city__country">France</p>
-                    <p class="city__place">Paris</p>
+                <div class="city__part">
+                    <div>
+                        <p class="city__country">France</p>
+                        <p class="city__place">Paris</p>
+                    </div>
                 </div>
-            </div>
-            <div class="city__part">
-                <div>
-                    <p class="city__country">Belgium</p>
-                    <p class="city__place">Brussels</p>
+                <div class="city__part">
+                    <div>
+                        <p class="city__country">Belgium</p>
+                        <p class="city__place">Brussels</p>
+                    </div>
                 </div>
             </div>
         </div>
 	</div>
 
-    <!-- --------------------------------- SECTION 8 --------------------------------- -->
 	<div class="client">
-        <h2 class="client__title">Trusted by global businesses</h2>
-        <div class="client__flex">
-            <p class="client__text">We work with the best minds from groundbreaking companies. Our software engineering expertise gives them the space to experiment and conduct research, dream, grow and excel.</p>
-            <div class="client__group">
-                <div class="client__card">
-                    <img class="client__logo" src="/assets/images/customers/UPS-Logo.png"/>
-                </div>
-                <div class="client__card">
-                    <img class="client__logo" src="/assets/images/customers/Audi-Logo.png"/>
-                </div>
-                <div class="client__card">
-                    <img class="client__logo" src="/assets/images/customers/DHL-Logo.png"/>
-                </div>
-                <div class="client__card">
-                    <img class="client__logo" src="/assets/images/customers/MS-Amlin-Logo.png"/>
-                </div>
-                <div class="client__card">
-                    <img class="client__logo" src="/assets/images/customers/ING-Logo.png"/>
+        <div class="container">
+            <h2 class="client__title">Trusted by global businesses</h2>
+            <div class="client__flex">
+                <p class="client__text">We work with the best minds from groundbreaking companies. Our software engineering expertise gives them the space to experiment and conduct research, dream, grow and excel.</p>
+                <div class="client__group">
+                    <div class="client__card">
+                        <img class="client__logo" src="/assets/images/customers/UPS-Logo.png"/>
+                    </div>
+                    <div class="client__card">
+                        <img class="client__logo" src="/assets/images/customers/Audi-Logo.png"/>
+                    </div>
+                    <div class="client__card">
+                        <img class="client__logo" src="/assets/images/customers/DHL-Logo.png"/>
+                    </div>
+                    <div class="client__card">
+                        <img class="client__logo" src="/assets/images/customers/MS-Amlin-Logo.png"/>
+                    </div>
+                    <div class="client__card">
+                        <img class="client__logo" src="/assets/images/customers/ING-Logo.png"/>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 9 --------------------------------- -->
     <div class="partner">
-        <h2 class="partner__title">Our<br />partners</h2>
-        <div class="partner__grid">
-            <div class="partner__card">
-                <img class="partner__logo" src="/assets/images/img-content/partners/partners1.png" alt="logo" />
+        <div class="container">
+            <h2 class="partner__title">Our<br />partners</h2>
+            <div class="partner__grid">
+                <div class="partner__card">
+                    <img class="partner__logo" src="/assets/images/img-content/partners/partners1.png" alt="logo" />
+                </div>
+                <div class="partner__card">
+                    <img class="partner__logo" src="/assets/images/img-content/partners/partners2.png" alt="logo" />
+                </div>
+                <div class="partner__card">
+                    <img class="partner__logo" src="/assets/images/img-content/partners/partners3.png" alt="logo" />
+                </div>
+                <div class="partner__card">
+                    <img class="partner__logo" src="/assets/images/img-content/partners/partners4.png" alt="logo" />
+                </div>
+                <div class="partner__card">
+                    <img class="partner__logo" src="/assets/images/img-content/partners/partners5.png" alt="logo" />
+                </div>
+                <div class="partner__card">
+                    <img class="partner__logo" src="/assets/images/img-content/partners/partners6.png" alt="logo" />
+                </div> 
             </div>
-            <div class="partner__card">
-                <img class="partner__logo" src="/assets/images/img-content/partners/partners2.png" alt="logo" />
-            </div>
-            <div class="partner__card">
-                <img class="partner__logo" src="/assets/images/img-content/partners/partners3.png" alt="logo" />
-            </div>
-            <div class="partner__card">
-                <img class="partner__logo" src="/assets/images/img-content/partners/partners4.png" alt="logo" />
-            </div>
-            <div class="partner__card">
-                <img class="partner__logo" src="/assets/images/img-content/partners/partners5.png" alt="logo" />
-            </div>
-            <div class="partner__card">
-                <img class="partner__logo" src="/assets/images/img-content/partners/partners6.png" alt="logo" />
-            </div> 
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 10 --------------------------------- -->
     <div class="hero">
-        <div class="hero__inner">
-            <div class="hero__images">
-                <img class="hero__image" src="/assets/images/img-content/contact.jpg"/>
-            </div>
-           
-            <div class="hero__headline">
-                <p>Be competitive Now and in the Future</p>
-                <!--<p>Together, we make your IT systems sustainable, evolutive, communicative and cost effective.</p>-->
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__images">
+                    <img class="hero__image" src="/assets/images/img-content/contact.jpg"/>
+                </div>
+               
+                <div class="hero__headline">
+                    <p>Be competitive Now and in the Future</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- --------------------------------- SECTION 11 --------------------------------- -->
     <div class="contact">
-        <div class="contact__grid">
-            <div class="contact__card">
-                <div class="contact__part">
-                    <p class="contact__cat">Business development</p>
-                    <a class="contact__link" href="mailto:info@@lunatech.nl">info@@lunatech.nl</a>
-                    <a class="contact__link" href="tel:+31107502600">+31 10 750 2600</a>
-                </div>
-                <div class="contact__part">
-                    <p class="contact__cat">Careers</p>
-                    <a class="contact__link" href="mailto:employment@@lunatech.nl">employment@@lunatech.nl</a>
-                </div>
-                <div class="contact__part">
-                    <p class="contact__cat">Netherlands</p>
-                    <div class="contact__flex">
-                        <div>
-                            <p class="contact__text">Rotterdam</p>
-                            <p class="contact__text">Hofplein 20<br />3032 AC</p>
-                        </div>
-                        <div>
-                            <p class="contact__text">Amsterdam</p>
-                            <p class="contact__text">Van Leijenberghlaan 197A<br />1082 GG</p>
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__card">
+                    <div class="contact__part">
+                        <p class="contact__cat">Business development</p>
+                        <a class="contact__link" href="mailto:info@@lunatech.nl">info@@lunatech.nl</a>
+                        <a class="contact__link" href="tel:+31107502600">+31 10 750 2600</a>
+                    </div>
+                    <div class="contact__part">
+                        <p class="contact__cat">Careers</p>
+                        <a class="contact__link" href="mailto:employment@@lunatech.nl">employment@@lunatech.nl</a>
+                    </div>
+                    <div class="contact__part">
+                        <p class="contact__cat">Netherlands</p>
+                        <div class="contact__flex">
+                            <div>
+                                <p class="contact__text">Rotterdam</p>
+                                <p class="contact__text">Hofplein 20<br />3032 AC</p>
+                            </div>
+                            <div>
+                                <p class="contact__text">Amsterdam</p>
+                                <p class="contact__text">Van Leijenberghlaan 197A<br />1082 GG</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="contact__card">
-                <div class="contact__part">
-                    <p class="contact__cat">Business development</p>
-                    <a class="contact__link" href="mailto:info@@lunatech.fr">info@@lunatech.fr</a>
-                    <a class="contact__link" href="tel:+33182885664">+ 33 1 82 88 56 64</a>
-                </div>
-                <div class="contact__part">
-                    <p class="contact__cat">Careers</p>
-                    <a class="contact__link" href="mailto:employment@@lunatech.fr">employment@@lunatech.fr</a>
-                </div>
-                <div class="contact__part">
-                    <p class="contact__cat">France</p>
-                    <div>
-                        <p class="contact__text">Chessy</p>
-                        <p class="contact__text">3 Rue de la Galmy<br />77700</p>
+                <div class="contact__card">
+                    <div class="contact__part">
+                        <p class="contact__cat">Business development</p>
+                        <a class="contact__link" href="mailto:info@@lunatech.fr">info@@lunatech.fr</a>
+                        <a class="contact__link" href="tel:+33182885664">+ 33 1 82 88 56 64</a>
+                    </div>
+                    <div class="contact__part">
+                        <p class="contact__cat">Careers</p>
+                        <a class="contact__link" href="mailto:employment@@lunatech.fr">employment@@lunatech.fr</a>
+                    </div>
+                    <div class="contact__part">
+                        <p class="contact__cat">France</p>
+                        <div>
+                            <p class="contact__text">Chessy</p>
+                            <p class="contact__text">3 Rue de la Galmy<br />77700</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="contact__card">
-                <div class="contact__part">
-                    <p class="contact__cat">Business development</p>
-                    <a class="contact__link" href="mailto:info@@lunatech.be">info@@lunatech.be</a>
-                    <a class="contact__link" href="tel:+3228085713">+ 32 2 808 57 13</a>
-                </div>
-                <div class="contact__part">
-                    <p class="contact__cat">Careers</p>
-                    <a class="contact__link" href="mailto:employment@@lunatech.be">employment@@lunatech.be</a>
-                </div>
-                <div class="contact__part">
-                    <p class="contact__cat">Belgium</p>
-                    <div>
-                        <p class="contact__text">Brussels</p>
-                        <p class="contact__text">55 Rue d'Arlon<br />1040</p>
+                <div class="contact__card">
+                    <div class="contact__part">
+                        <p class="contact__cat">Business development</p>
+                        <a class="contact__link" href="mailto:info@@lunatech.be">info@@lunatech.be</a>
+                        <a class="contact__link" href="tel:+3228085713">+ 32 2 808 57 13</a>
+                    </div>
+                    <div class="contact__part">
+                        <p class="contact__cat">Careers</p>
+                        <a class="contact__link" href="mailto:employment@@lunatech.be">employment@@lunatech.be</a>
+                    </div>
+                    <div class="contact__part">
+                        <p class="contact__cat">Belgium</p>
+                        <div>
+                            <p class="contact__text">Brussels</p>
+                            <p class="contact__text">55 Rue d'Arlon<br />1040</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -447,20 +409,22 @@
     </div>
 
     <footer class="footer">
-        <div class="footer__part">
-            <a class="logo-visual" href="/"><img src="@routes.Assets.versioned("images/img-content/logo-lunatech-visual.svg")"></a>
-            <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
-            <a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
-            <div class="footer__social">
-                <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin-f.svg")"></a>
-                <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter-f.svg")"></a>
-                <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github-f.svg")"></a>
-                <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram-f.svg")"></a>
+        <div class="container">
+            <div class="footer__part">
+                <a class="logo-visual" href="/"><img src="@routes.Assets.versioned("images/img-content/logo-lunatech-visual.svg")"></a>
+                <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
+                <a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
+                <div class="footer__social">
+                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin-f.svg")"></a>
+                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter-f.svg")"></a>
+                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github-f.svg")"></a>
+                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram-f.svg")"></a>
+                </div>
             </div>
-        </div>
-        <div class="footer__part">
-            <p>© 2022 Lunatech. All rights reserved.</p>
-            <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of service</a>
+            <div class="footer__part">
+                <p>© 2022 Lunatech. All rights reserved.</p>
+                <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of service</a>
+            </div>
         </div>
     </footer>
 </body>

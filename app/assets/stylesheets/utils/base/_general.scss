@@ -12,18 +12,26 @@ a {
 h2, h3, h4 {
     font-weight: 500;
 }
-
+.container {
+    max-width: 1740px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* --------------------------------- SECTION 1 --------------------------------- */
 .g_section1 {
-    height: 100vh;
     background: white;
     padding: 80px;
+    color: #161618;
+    width: 100%;
+    height: 965px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #161618;
-    @include phone {
+    max-width: 1620px;
+    margin-right: auto;
+    margin-left: auto;
+    @include phone-landscape {
         padding: 32px;
     }
 }
@@ -34,7 +42,7 @@ h2, h3, h4 {
 .g_section1-middle {
     display: flex;
     justify-content: center;
-    @include phone {
+    @include phone-landscape {
         width: 72%;
         margin: 0 auto;
     }
@@ -43,6 +51,7 @@ h2, h3, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 .g_section1 h1 img:first-child, .g_section1 h1 img:nth-child(2) {
     margin-bottom: 40px;
@@ -64,23 +73,9 @@ h2, h3, h4 {
     @include flexbox;
     position: relative;
     overflow: hidden;
-    @include phone {
+    @include phone-landscape {
         height: initial;
-        padding: 64px 32px;
-    }
-}
-.g_section2-subtitle {
-    font-size: 32px;
-    grid-column: 3 / 11;
-    @include tablet-landscape {
-        font-size: 28px;
-    }
-    @include tablet-portrait {
-        font-size: 26px;
-    }
-    @include phone {
-        font-size: 20px;
-        grid-column: span 12;
+        padding: 192px 32px;
     }
 }
 .g_section2 h2 {
@@ -88,15 +83,15 @@ h2, h3, h4 {
     grid-column: 3 / 11;
     line-height: 164px;
     margin-bottom: 32px;
-    @include tablet-landscape {
+    @include desktop {
         font-size: 96px;
-        line-height: 116px;
+        line-height: 128px;
     }
-    @include tablet-portrait {
-        font-size: 76px;
+    @include tablet {
+        font-size: 72px;
         line-height: 88px;
     }
-    @include phone {
+    @include phone-landscape {
         font-size: 40px;
         line-height: 48px;
         grid-column: span 12;
@@ -105,14 +100,14 @@ h2, h3, h4 {
 .g_section2-text {
     font-size: 32px;
     grid-column: 7 / 11;
-    @include tablet-landscape {
+    @include desktop {
+        grid-column: 5 / 11;
+    }
+    @include tablet {
         grid-column: 5 / 12;
-        font-size: 30px;
+        font-size: 24px;
     }
-    @include tablet-portrait {
-        font-size: 28px;
-    }
-    @include phone {
+    @include phone-landscape {
         grid-column: 3 / 13;
         font-size: 24px;
     }
@@ -126,7 +121,6 @@ h2, h3, h4 {
     height: 542px;
     bottom: -271px;
     left: -271px;
-    opacity: .3;
 }
 .g_section2-circles div {
     position: absolute;
@@ -178,34 +172,32 @@ h2, h3, h4 {
 }
 /* --------------------------------- SECTION 3 --------------------------------- */
 .g_section3 {
-    padding: 0 80px;
-    height: 1120px;
+    padding: 80px;
+    min-height: 1120px;
     background: #272729;
     @include flexbox;
     justify-content: center;
     flex-direction: column;
-    @include tablet-landscape {
+    @include tablet {
         padding: 160px 80px;
-        height: initial;
+        min-height: initial;
     }
-    @include phone {
+    @include phone-landscape {
         padding: 64px 32px;
-    }
-    > div {
-        grid-gap: 32px;
     }
 }
 .g_section3 h3 {
     font-size: 96px;
     color: white;
     margin-bottom: 128px;
-    @include tablet-landscape {
+    text-align: center;
+    @include tablet {
         font-size: 80px;
     }
-    @include tablet-portrait {
+    @include phone-landscape {
         font-size: 72px;
     }
-    @include phone {
+    @include phone-landscape {
         font-size: 40px;
         line-height: 48px;
         margin-bottom: 64px;
@@ -216,10 +208,10 @@ h2, h3, h4 {
     background: #1F1F21;
     border-radius: 16px;
     padding: 80px 40px;
-    @include tablet-landscape {
+    @include desktop {
         grid-column: span 6;
     }
-    @include phone {
+    @include phone-landscape {
         grid-column: span 12;
         padding: 64px 32px;
     }
@@ -276,9 +268,9 @@ h2, h3, h4 {
 .g_square {
     border: 1px solid white;
     height: 144px;
-    display: flex;
-    align-items: center;
-    padding: 0px 12px;
+    @include flexbox;
+    justify-content: center;
+    width: 30%;
 }
 .g_square div {
     width: 60px;
@@ -364,48 +356,59 @@ h2, h3, h4 {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    @include phone {
+    @include phone-landscape {
         padding: 64px 32px;
         height: initial;
     }
-}
-.g_section4 svg {
-    position: absolute;
-    left: 0;
-    @include tablet-landscape {
-        left: -330px;
+    > div {
+        @include flexbox;
+        justify-content: space-between;
     }
-    @include tablet-portrait {
-        left: -450px;
+    svg {
+        width: 50%;
+        margin-left: -80px;
     }
-    @include phone {
-        display: none;
+    .g_section4-part {
+        width: 40%;
+        @include desktop {
+            width: 50%;
+        }
     }
 }
 .g_section4-title {
-    grid-column: 7 / 13;
     font-size: 96px;
     line-height: 108px;
-    @include tablet-landscape {
-        font-size: 80px;
-        line-height: 88px;
+    @include desktop {
+        font-size: 56px;
+        line-height: 68px;
     }
-    @include tablet-portrait {
+    @include tablet {
+        font-size: 56px;
+        line-height: 72px;
+    }
+    @include phone-landscape {
         font-size: 72px;
         line-height: 80px;
     }
-    @include phone {
+    @include phone-landscape {
         font-size: 36px;
         line-height: 48px;
         grid-column: span 12;
     }
 }
 .g_section4-text {
-    grid-column: 8 / 13;
     font-size: 23px;
     opacity: .5;
     margin-top: 32px;
-    @include phone {
+    padding-left: 160px;
+    @include desktop {
+        padding-left: 80px;
+    }
+    @include tablet {
+        padding-left: 32px;
+        font-size: 20px;
+    }
+    @include phone-landscape {
         grid-column: 4 / 13;
     }
 }
@@ -414,15 +417,15 @@ h2, h3, h4 {
     height: 1120px;
     background: #272729;
     color: white;
-    @include tablet-landscape {
+    @include tablet {
         height: initial;
     }
     &__part {
         grid-column: span 3;
-        @include tablet-landscape {
+        @include tablet {
             grid-column: span 6;
         }
-        @include phone {
+        @include phone-landscape {
             grid-column: span 12;
         }
     }
@@ -432,11 +435,11 @@ h2, h3, h4 {
     display: flex;
     flex-direction: column;
     height: 560px;
-    @include tablet-landscape {
+    @include tablet {
         grid-row: initial;
         height: initial;
     }
-    @include phone {
+    @include phone-landscape {
         border-right: none;
     }
 }
@@ -448,13 +451,13 @@ h2, h3, h4 {
     justify-content: center;
     border-right: 1px solid rgba(255, 255, 255, .25);
     border-bottom: 1px solid rgba(255, 255, 255, .25);
-    @include tablet-landscape {
+    @include tablet {
         grid-row: initial;
         grid-column: span 12;
         padding: 80px 0;
         border-right: none;
     }
-    @include phone {
+    @include phone-landscape {
         font-size: 40px;
         line-height: 48px;
     }
@@ -471,21 +474,21 @@ h2, h3, h4 {
 .g_section5-4 {
     grid-row: 2 / 3;
     border-right: 1px solid rgba(255, 255, 255, .25);
-    @include tablet-landscape {
+    @include tablet {
         border-bottom: 1px solid rgba(255, 255, 255, .25);
     }
 }
 .g_section5-5 {
     grid-row: 2 / 3;
     border-right: 1px solid rgba(255, 255, 255, .25);
-    @include tablet-landscape {
+    @include tablet {
         border-bottom: 1px solid rgba(255, 255, 255, .25);
     }
 }
 .g_section5-6 {
     grid-row: 2 / 3;
     border-right: 1px solid rgba(255, 255, 255, .25);
-    @include phone {
+    @include phone-landscape {
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, .25);
     }
@@ -510,38 +513,43 @@ h2, h3, h4 {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    @include phone {
-        padding: 0 32px;
+    @include desktop {
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    h2 {
-        font-size: 152px;
-        @include tablet-landscape {
-            font-size: 96px;
-            line-height: 116px;
-        }
-    }
-    @include tablet-landscape {
+    @include tablet {
         flex-direction: column;
         justify-content: center;
     }
-    @include phone {
+    @include phone-landscape {
         padding: 0 32px;
         height: 640px;
+    }
+    > div {
+        @include flexbox;
+        @include desktop {
+            flex-direction: column;
+        }
     }
     h2 {
         font-size: 152px;
         margin-right: 64px;
-        @include tablet-landscape {
-            font-size: 96px;
+        @include desktop {
+            font-size: 116px;
+            margin-right: 0;
+        }
+        @include tablet {
+            font-size: 80px;
             line-height: 116px;
             margin-right: 0;
             margin-bottom: 64px;
         }
-        @include tablet-portrait {
+        @include phone-landscape {
             font-size: 76px;
             line-height: 88px;
         }
-        @include phone {
+        @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
         }
@@ -552,14 +560,14 @@ h2, h3, h4 {
     z-index: 1;
     overflow-y: scroll;
     height: 100%;
-    @include phone {
+    @include phone-landscape {
         width: initial;
     }
 }
 .testimonial {
     background: #161618;
-    @include tablet-landscape {
-        text-align: center;
+    @include desktop {
+        margin-top: 64px;
     }
     &:last-child {
         margin-bottom: 0;
@@ -567,20 +575,20 @@ h2, h3, h4 {
     &__text {
         font-size: 32px;
         margin-bottom: 32px;
-        @include phone {
+        @include phone-landscape {
             font-size: 16px;
         }
     }
     &__author {
         font-size: 24px;
         opacity: .5;
-        @include phone {
+        @include phone-landscape {
             font-size: 18px;
         }
     }
     &__job {
         font-size: 32px;
-        @include phone {
+        @include phone-landscape {
             font-size: 16px;
         }
     }
@@ -646,21 +654,21 @@ h2, h3, h4 {
 }
 /* --------------------------------- SECTION 7 --------------------------------- */
 .city {
-    height: 1120px;
+    min-height: 1120px;
     background: #272729;
     color: white;
-    @include tablet-landscape {
+    @include tablet {
         overflow-x: scroll;
         height: 960px;
     }
-    @include phone {
+    @include phone-landscape {
         height: 620px;
     }
     > .grid {
-        @include tablet-landscape {
+        @include tablet {
             width: 1680px;
         }
-        @include phone {
+        @include phone-landscape {
             width: 1290px;
         }
     }
@@ -672,14 +680,29 @@ h2, h3, h4 {
         justify-content: center;
         align-items: center;
         height: 1120px;
-        @include tablet-landscape {
+        @include desktop {
+            grid-column: span 6;
+            height: 890px;
+        }
+        @include tablet {
             height: 960px;
         }
-        @include phone {
-            height: 620px;
+        &:first-child {
+            border-left: 1px solid rgba(255,255,255,0.25);
+            @include desktop {border-bottom: 1px solid rgba(255,255,255,0.25);}
+            @include phone-landscape {
+                border-left: none;
+            }
         }
-        &:last-child {
-            border-right: none;
+        &:nth-child(2) {
+            @include desktop {border-bottom: 1px solid rgba(255,255,255,0.25);}
+        }
+        &:nth-child(3) {
+            @include desktop {border-left: 1px solid rgba(255,255,255,0.25);}
+            @include phone-landscape {
+                border-left: none;
+                border-bottom: 1px solid rgba(255,255,255,0.25);
+            }
         }
         &:hover {
             background-size: cover;
@@ -715,17 +738,20 @@ h2, h3, h4 {
     padding: 0 160px;
     height: 1120px;
     color: #161618;
-    @include tablet-portrait {
+    @include phone-landscape {
         padding: 0 80px;
     }
-    @include phone {
+    @include phone-landscape {
         padding: 64px 32px;
         height: initial;
     }
     &__flex {
         @include flexbox;
         justify-content: space-between;
-        @include tablet-landscape {
+        @include desktop {
+            display: block;
+        }
+        @include tablet {
             flex-direction: column;
             align-items: flex-start;
         }
@@ -735,15 +761,15 @@ h2, h3, h4 {
         line-height: 164px;
         grid-column: span 12;
         margin-bottom: 64px;
-        @include tablet-landscape {
-            font-size: 96px;
-            line-height: 116px;
+        @include desktop {
+            font-size: 88px;
+            line-height: 108px;
         }
-        @include tablet-portrait {
+        @include phone-landscape {
             font-size: 76px;
             line-height: 88px;
         }
-        @include phone {
+        @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
         }
@@ -752,10 +778,14 @@ h2, h3, h4 {
         font-size: 32px;
         grid-column: span 6;
         width: 600px;
-        @include tablet-landscape {
+        @include desktop {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        @include tablet {
             margin-bottom: 64px;
         }
-        @include phone {
+        @include phone-landscape {
             width: 100%;
         }
     }
@@ -780,7 +810,7 @@ h2, h3, h4 {
         &:last-child {
             margin-right: 0;
         }
-        @include tablet-portrait {
+        @include phone-landscape {
             margin-bottom: 16px;
         }
        
@@ -798,16 +828,24 @@ h2, h3, h4 {
     background: #272729;
     @include flexbox;
     position: relative;
-    @include tablet-landscape {
+    @include tablet {
         height: 860px;
     }
-    @include tablet-portrait {
+    @include phone-landscape {
         flex-direction: column;
         padding: 160px 80px;
         height: initial;
     }
-    @include phone {
+    @include phone-landscape {
         padding: 64px 32px;
+    }
+    > div {
+        @include flexbox;
+        justify-content: space-between;
+        width: 100%;
+        @include desktop {
+            flex-direction: column;
+        }
     }
     &__grid {
         display: grid;
@@ -815,23 +853,20 @@ h2, h3, h4 {
         background: white;
         border-radius: 4rem;
         width: 780px;
-        position: absolute;
-        right: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
         padding: 80px;
         padding-right: 0px;
-        @include tablet-landscape {
+        @include desktop {margin-top: 64px;}
+        @include tablet {
             width: 590px;
         }
-        @include tablet-portrait {
+        @include phone-landscape {
             width: initial;
             border-top-right-radius: 4em;
             border-bottom-right-radius: 4em;
             position: initial;
             padding-right: 80px;
         }
-        @include phone {
+        @include phone-landscape {
             display: flex;
             flex-direction: column;
             padding-right: 0;
@@ -843,11 +878,11 @@ h2, h3, h4 {
     &__title {
         font-size: 96px;
         color: white;
-        @include tablet-landscape {
+        @include tablet {
             font-size: 56px;
             line-height: 66px;
         }
-        @include tablet-portrait {
+        @include phone-landscape {
             margin-bottom: 80px;
         }
     }
@@ -870,7 +905,7 @@ h2, h3, h4 {
 .hero {
     padding: 128px;
     background: #161618;
-    @include phone {
+    @include phone-landscape {
         padding: 32px;
         height: initial;
     }
@@ -922,15 +957,15 @@ h2, h3, h4 {
         display: block;
         transform: translateY(130%);
         transition: transform var(--duration) var(--ease);
-        @include tablet-landscape {
+        @include desktop {
             font-size: 96px;
-            line-height: 116px;
+            line-height: 100px;
         }
-        @include tablet-portrait {
+        @include phone-landscape {
             font-size: 76px;
             line-height: 88px;
         }
-        @include phone {
+        @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
         }

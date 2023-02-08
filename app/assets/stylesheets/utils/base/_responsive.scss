@@ -1,18 +1,26 @@
 // Desktop first responsive
 
-// applies to large devices (desktop)
-@mixin desktop-up {
-    @media (max-width: 1200px) {@content;}
+// `xxl` returns only a ruleset and no media query
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+// @media (max-width: 1399.98px) { ... }
+// ... { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@mixin desktop {
+    @media (max-width: 1199.98px) {@content;}
 }
-// applies to medium devices (tablets -> landscape)
-@mixin tablet-landscape {
-    @media (max-width: 1024px) {@content;}
+// `lg` applies to medium devices (tablets, less than 992px)
+@mixin tablet {
+    @media (max-width: 991.98px) {@content;}
 }
-// applies to medium devices (tablets -> portrait)
-@mixin tablet-portrait {
-    @media (max-width: 768px) {@content;}
+// `md` applies to small devices (landscape phone, less than 768px)
+@mixin phone-landscape {
+    @media (max-width: 767.98px) {@content;}
 }
-// applies to medium devices (tablets -> portrait)
-@mixin phone {
-    @media (max-width: 576px) {@content;}
+// `sm` applies to x-small devices (portrait phone, less than 576px)
+@mixin phone-portrait {
+    @media (max-width: 575.98px) {@content;}
 }
+
+// `xs`
+// ... { ... }
