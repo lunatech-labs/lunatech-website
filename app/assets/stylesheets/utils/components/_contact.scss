@@ -3,6 +3,9 @@
     @include flexbox;
     justify-content: center;
     flex-direction: column;
+    @include desktop {
+        display: block;
+    }
     &__grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -12,37 +15,30 @@
         grid-column: span 4;
         padding: 96px;
         color: white;
-        @include phone {
-            padding: 32px;
-        }
-        &:first-child, &:nth-child(2) {
-            border-right: 1px solid rgba(255,255,255,0.25);
-            @include tablet-landscape {
-                border-right: none;
-            }
-        }
-        @include tablet-landscape {
-            grid-column: span 6;
-        }
-        @include phone {
-            grid-column: span 12;
-        }
         &:first-child {
-            @include tablet-landscape {
+            border-right: 1px solid rgba(255,255,255,0.25);
+            @include desktop {
                 grid-column: span 12;
+                border-right: none;
                 border-bottom: 1px solid rgba(255,255,255,0.25);
             }
         }
         &:nth-child(2) {
-            @include tablet-landscape {
-                border-right: none;
+            border-right: 1px solid rgba(255,255,255,0.25);
+            @include desktop {
+                grid-column: span 6;
             }
-            @include tablet-landscape {
-                border-right: 1px solid rgba(255,255,255,0.25);
-            }
-            @include phone {
+            @include phone-landscape {
+                grid-column: span 12;
                 border-bottom: 1px solid rgba(255,255,255,0.25);
-                border-right: none;
+            }
+        }
+        &:nth-child(3) {
+            @include desktop {
+                grid-column: span 6;
+            }
+            @include phone-landscape {
+                grid-column: span 12;
             }
         }
     }
@@ -66,11 +62,11 @@
     &__flex {
         display: flex;
         justify-content: space-between;
-        @include phone {
+        @include phone-landscape {
             flex-direction: column;
         }
         > div:first-child {
-            @include phone {
+            @include phone-landscape {
                 margin-bottom: 32px;
             }
         }

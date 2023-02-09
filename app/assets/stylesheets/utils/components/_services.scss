@@ -1,8 +1,8 @@
 .services {
-    height: 1120px;
+    min-height: 1120px;
     background: #272729;
     color: white;
-    @include tablet-landscape {
+    @include tablet {
         height: initial;
     }
     &__title {
@@ -13,23 +13,27 @@
         justify-content: center;
         border-right: 1px solid rgba(255, 255, 255, .25);
         border-bottom: 1px solid rgba(255, 255, 255, .25);
-        @include tablet-landscape {
-            grid-row: initial;
+        border-left: 1px solid rgba(255, 255, 255, .25);
+        @include desktop {
             grid-column: span 12;
-            padding: 80px 0;
-            border-right: none;
+            padding: 80px;
         }
-        @include phone {
+        @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
+            border-left: none;
         }
     }
     &__part {
         grid-column: span 3;
         padding: 80px;
         height: 560px;
-        @include tablet-landscape {
+        @include desktop {
             grid-column: span 6;
+        }
+        @include phone-landscape {
+            grid-column: span 12;
+            border-right: none;
         }
         &:first-child {
             border-right: 1px solid rgba(255, 255, 255, .25);
@@ -38,49 +42,41 @@
         &:nth-child(2) {
             border-right: 1px solid rgba(255, 255, 255, .25);
             border-bottom: 1px solid rgba(255, 255, 255, .25);
-            @include phone {
+            @include desktop {border-left: 1px solid rgba(255, 255, 255, .25);}
+            @include phone-landscape {
+                border-left: none;
                 border-right: none;
             }
         }
         &:nth-child(3) {
             border-bottom: 1px solid rgba(255, 255, 255, .25);
+            border-right: 1px solid rgba(255, 255, 255, .25);
         }
         &:nth-child(4) {
             border-right: 1px solid rgba(255, 255, 255, .25);
-            @include tablet-landscape {
-                border-bottom: 1px solid rgba(255, 255, 255, .25);
-            }
-            @include phone {
+            border-left: 1px solid rgba(255, 255, 255, .25);
+            @include desktop {border-bottom: 1px solid rgba(255, 255, 255, .25);}
+            @include phone-landscape {
+                border-left: none;
                 border-right: none;
             }
         }
         &:nth-child(5) {
             border-right: 1px solid rgba(255, 255, 255, .25);
-            @include tablet-landscape {
-                border-right: none;
-                border-bottom: 1px solid rgba(255, 255, 255, .25);
-            }
+            @include desktop {border-bottom: 1px solid rgba(255, 255, 255, .25);}
         }
         &:nth-child(6) {
             border-right: 1px solid rgba(255, 255, 255, .25);
-            @include phone {
+            @include desktop {border-left: 1px solid rgba(255, 255, 255, .25);}
+            @include phone-landscape {
+                border-left: none;
                 border-right: none;
                 border-bottom: 1px solid rgba(255, 255, 255, .25);
             }
         }
         &:nth-child(7) {
-            @include phone {
-                border-bottom: none;
-            }
-        }
-        @include tablet-landscape {
-            grid-column: span 6;
-            grid-row: initial;
-            height: initial;
-        }
-        @include phone {
-            grid-column: span 12;
-            border-right: none;
+            border-right: 1px solid rgba(255, 255, 255, .25);
+            @include phone-landscape {border-bottom: none;}
         }
     }
     &__subtitle {
