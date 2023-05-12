@@ -1,0 +1,38 @@
+@(lang: String)
+@main("Welcome to Lunatech", lang) {
+
+<body class="webinar">
+    <header class="webinar__header">
+        <div class="webinar__headerLeft">
+            <a href="https://lunatech.com/"><img class="webinar__logo" src="@routes.Assets.versioned("images/img-layout/logo_lunatech.svg")"></a>
+            <a class="webinar__link" href="https://lunatech.com/">Home</a>
+        </div>
+        <a class="webinar__joinUs" href="https://recruitment.lunatech.com/" target="_blank">Doe mee</a>
+    </header>
+
+    <section class="webinar__body">
+       <p class="webinar__title2">We kijken uit naar je komst!</p>
+       <p class="webinar__text2">Bedankt voor uw inschrijving voor dit Lunatech webinar. We hebben u zojuist een bevestigingsmail gestuurd met de inloggegevens. Als u vragen heeft over de sessie, neem dan gerust <a class="webinar__linkText" href="#">contact met</a> ons op.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__part">
+                <a class="logo-visual" href="/"><img src="@routes.Assets.versioned("images/img-content/logo-lunatech-visual.svg")"></a>
+                <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
+                <a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
+                <div class="footer__social">
+                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin-f.svg")"></a>
+                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter-f.svg")"></a>
+                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github-f.svg")"></a>
+                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram-f.svg")"></a>
+                </div>
+            </div>
+            <div class="footer__part">
+                <p>© 2023 Lunatech. All rights reserved.</p>
+                <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+}

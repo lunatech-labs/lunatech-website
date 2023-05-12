@@ -1,0 +1,143 @@
+@(lang: String)
+@main("Welcome to Lunatech", lang) {
+
+<body class="webinar">
+    <header class="webinar__header">
+        <div class="webinar__headerLeft">
+            <a href="https://lunatech.com/"><img class="webinar__logo" src="@routes.Assets.versioned("images/img-layout/logo_lunatech.svg")"></a>
+            <a class="webinar__link" href="https://lunatech.com/">Home</a>
+        </div>
+        <a class="webinar__joinUs" href="https://recruitment.lunatech.com/" target="_blank">Doe mee</a>
+    </header>
+
+    <section class="webinar__body">
+        <div class="webinar__content">
+            <p class="webinar__subtitle">Webinar</p>
+            <p class="webinar__title">Belangrijke inzichten aangepaste software voor energiemarkt</p>
+            <p class="webinar__date">Maandag 12 juni 2023 om 13:00 tot 14:00</p>
+            <p class="webinar__text">We nodigen u graag uit voor een webinar waarin Willem Jan Glerum en Daan Hoogenboezem van Lunatech hun inzichten over maatwerksoftware voor de energiemarkt delen. Dit zullen ze doen aan de hand van een voor Sloecentrale uitgevoerd project.</p>
+            <br />
+            <p class="webinar__text">Tijdens het webinar:</p>
+            <ul class="webinar__list">
+                <li>Staan we stil bij de problemen waar veel energiecentrales tegenaan lopen en dragen hier oplossingen voor aan.</li>
+                <li>Behandelen we de mogelijkheden tot het toesnijden van software op veranderende behoeftes.</li>
+                <li>Krijgt u een demonstratie van de voor Sloecentrale ontwikkelde software.</li>
+            </ul>
+            <br />
+            <p class="webinar__text">We zijn verheugd om samen te mogen werken met Sloecentrale om dit webinar mogelijk te maken en we hebben er alle vertrouwen in dat het relevant zal zijn voor deelnemers.<br />We kijken er naar uit om u te verwelkomen.</p>
+        </div>
+        <div class="webinar__form">
+            
+            
+            <p class="webinar__formTitle">Registreer nu</p>
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeffbTnMGnI_pLgeIeu8Y-g_cR9Ag588awAupRB6psxkEUTRw/formResponse?embedded=true" id="contactForm" method="post">
+                <input class="webinar__input" type="email" id="businessEmail" name="entry.374199302" placeholder="Your Business Email*" required>
+                <input class="webinar__input" type="text" id="firstName" name="entry.489735107" placeholder="Your First Name*" required>
+                <input class="webinar__input" type="text" id="lastName" name="entry.1845055775" placeholder="Your Last Name*" required>
+                <input class="webinar__input" type="text" id="company" name="entry.1144628791" placeholder="Your company*" required>
+                <input class="webinar__input" type="text" id="businessPhone" name="entry.691812427" placeholder="Your business phone">
+                <input class="webinar__submit" type="submit">
+            </form>
+            <div id="formError"></div>
+            <div id="success-msg"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__part">
+                <a class="logo-visual" href="/"><img src="@routes.Assets.versioned("images/img-content/logo-lunatech-visual.svg")"></a>
+                <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
+                <a href="https://recruitment.lunatech.com/" target="_blank">Doe mee</a>
+                <div class="footer__social">
+                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin-f.svg")"></a>
+                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter-f.svg")"></a>
+                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github-f.svg")"></a>
+                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram-f.svg")"></a>
+                </div>
+            </div>
+            <div class="footer__part">
+                <p>© 2023 Lunatech. Alle rechten voorbehouden.</p>
+                <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Algemene voorwaarden</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const businessEmail = document.getElementById('email');
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+        const company = document.getElementById('company');
+        const businessPhone = document.getElementById('businessPhone');
+        const submitBtn = document.getElementById('submit');
+        const errorElement = document.getElementById('formError');
+        const successMsg = document.getElementById('success-msg');
+
+        const validate = (e) => {
+            e.preventDefault();
+
+            if (!(businessEmail.value.includes('.') && (businessEmail.value.includes('@@')))) {
+                errorElement.innerHTML = 'Please enter a valid email address.';
+                return false;
+            }
+            if (!businessEmailIsValid(businessEmail.value)) {
+                errorElement.innerHTML = 'Please enter a valid email address.';
+                return false;
+            }
+            if (firstName.value.length < 3) {
+                errorElement.innerHTML = 'Your firstName should be at least 3 characters long.';
+                return false;
+            }
+            if (lastName.value.length < 3) {
+                errorElement.innerHTML = 'Your lastName should be at least 3 characters long.';
+                return false;
+            }
+            if (company.value.length < 3) {
+                errorElement.innerHTML = 'Your company should be at least 3 characters long.';
+                return false;
+            }
+            if (businessPhone.value.length < 10) {
+                errorElement.innerHTML = 'Your businessPhone should be at least 10 characters long.';
+                return false;
+            }
+            errorElement.innerHTML = '';
+            successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.';
+
+            e.preventDefault();
+            setTimeout(function () {
+                successMsg.innerHTML = '';
+                document.getElementById('contactForm').reset();
+            }, 6000);
+
+            return true;
+        }
+
+        const emailIsValid = email => {
+            return /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/.test(email);
+        }
+
+        submitBtn.addEventListener('click', validate);
+
+
+
+
+        async function logJSONData() {
+            const response = await fetch("http://example.com/movies.json");
+            const jsonData = await response.json();
+            console.log(jsonData);
+        }
+
+
+
+        document.getElementById('contactForm').onload = function(){
+            if(submitted){
+                /*Second reload is a submit*/
+                document.location = "https://www.google.com/search?q=thanks&tbm=isch";
+            }
+        }
+    </script>
+
+
+</body>
+}
