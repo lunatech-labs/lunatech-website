@@ -27,6 +27,11 @@
         padding: 0 24px;
         display: flex;
         align-items: center;
+        transition: .8s;
+        &:hover {
+            border-color: #C80028;
+            color: #C80028
+        }
     }
     &__body {
         padding: 80px 224px;
@@ -89,6 +94,10 @@
         border-radius: 8px;
         border: none;
         cursor: pointer;
+        transition: .8s;
+        &:hover {
+            background: #C80028;
+        }
     }
     &__title2 {
         font-size: 48px;
@@ -105,8 +114,10 @@
     }
     &__linkText {
         color: #EA212E;
+        transition: .8s;
         &:hover {
             text-decoration: underline;
+            color: #C80028;
         }
     }
 }
@@ -118,4 +129,10 @@
     text-transform: uppercase;
     font-family: 'Jost';
     color: var(--secondary-color);
+}
+#contactForm {
+    input:focus {
+        border-color: #aaaaaa;
+        outline: 0 none;
+    }
 }
