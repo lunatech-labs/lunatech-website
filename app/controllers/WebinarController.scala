@@ -10,8 +10,7 @@ import javax.inject._
  */
 @Singleton
 class WebinarController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
-   
-  
+    
     def index() = Action { implicit request: Request[AnyContent] =>
         Ok(views.html.webinar("nl"))
     }
@@ -19,6 +18,4 @@ class WebinarController @Inject()(val controllerComponents: ControllerComponents
     def thankyou() = Action { implicit request: Request[AnyContent] =>
         Ok(views.html.thankyou("nl"))
     }
-
-
 }
