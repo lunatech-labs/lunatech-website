@@ -8,8 +8,8 @@ GET     /                           controllers.HomeController.index()
 GET     /fr/                        controllers.HomeController.fr()
 GET     /en/                        controllers.HomeController.en()
 
-GET     /nl/webinar/belangrijke-inzichten-aangepaste-software-voor-energiemarkt-juni-2023               controllers.WebinarController.index()
-GET     /nl/webinar/thank-you                                                                           controllers.WebinarController.thankyou()
+GET     /nl/webinar                 controllers.WebinarController.index()
+GET     /nl/webinar/thank-you       controllers.WebinarController.thankyou()
 
 GET   /sitemap.xml    controllers.Assets.at(path="/public", file = "sitemap.xml")
 # Map static resources from the /public folder to the /assets URL path
