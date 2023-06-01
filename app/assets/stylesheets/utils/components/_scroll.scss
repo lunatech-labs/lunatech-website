@@ -55,9 +55,10 @@
 .mouse-scroll {
     position: absolute;
     top: -18px;
-    left: 50%;
+    left: 50.06%;
     transform: translate(-50%, -50%);
     cursor: auto;
+    z-index: 1;
 }
 .mouse-scroll .mouse {
     position: relative;

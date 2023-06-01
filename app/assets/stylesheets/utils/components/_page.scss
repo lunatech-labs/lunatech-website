@@ -1,0 +1,755 @@
+/* --------------------------------- SECTION 1 --------------------------------- */
+.section1 {
+    padding: 80px;
+    color: #161618;
+    height: 965px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include phone-landscape {
+        padding: 32px;
+    }
+}
+.iframe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+
+    &__logo {
+        height: 480px;
+        margin-bottom: 48px;
+    }
+
+    &__baseline {
+        height: 24px;
+    }
+}
+.section1-top {
+    @include flexbox;
+    justify-content: space-between;
+}
+.section1__iframe {
+
+    img {
+        height: 32px;
+    }
+
+    @include phone-landscape {
+        width: 72%;
+        margin: 0 auto;
+    }
+}
+.section1 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.section1 h1 img:first-child,
+.section1 h1 img:nth-child(2) {
+    margin-bottom: 40px;
+}
+.section1-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+
+/* --------------------------------- SECTION 2 --------------------------------- */
+.section2 {
+    padding: 256px 0;
+    background: #F8F8F8;
+    @include flexbox;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    @include phone-landscape {
+        height: initial;
+        padding: 192px 32px;
+    }
+    &__img {
+        position: absolute;
+        bottom: 256px;
+    }
+    &__summary {
+        font-size: 32px;
+        grid-column: 3 / 11;
+        color: var(--secondary-color);
+    }
+    &__title {
+        font-size: 152px;
+        grid-column: 3 / 11;
+        line-height: 160px;
+        margin-bottom: 128px;
+        @include desktop {
+            font-size: 96px;
+            line-height: 128px;
+        }
+
+        @include tablet {
+            font-size: 72px;
+            line-height: 88px;
+        }
+
+        @include phone-landscape {
+            font-size: 40px;
+            line-height: 48px;
+            grid-column: span 12;
+        }
+    }
+    &__subtitle {
+        font-size: 56px;
+        margin-bottom: 32px;
+    }
+    &__content {
+        grid-column: 6 / 12;
+    }
+    &__text {
+        font-size: 32px;
+        color: var(--secondary-color);
+        @include desktop {
+            grid-column: 5 / 11;
+        }
+    
+        @include tablet {
+            grid-column: 5 / 12;
+            font-size: 24px;
+        }
+    
+        @include phone-landscape {
+            grid-column: 3 / 13;
+            font-size: 24px;
+        }
+        &:first-child {margin-bottom: 96px;}
+        &:nth-child(3) {padding-left: 64px;}
+    }
+}
+.section2-circles {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 542px;
+    height: 542px;
+    bottom: -271px;
+    right: -271px;
+}
+.section2-circles div {
+    position: absolute;
+    border-radius: 25em;
+}
+.circle1 {
+    width: 542px;
+    height: 542px;
+    opacity: .75;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        border: 1px dashed var(--primary-color);
+        border-radius: inherit;
+        animation: spin 30s linear infinite;
+    }
+}
+.circle2 {
+    width: 404px;
+    height: 404px;
+    border: 1px solid var(--primary-color);
+    opacity: .5;
+}
+.circle3 {
+    width: 284px;
+    height: 284px;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        border: 1px dashed #EA212E;
+        border-radius: inherit;
+        animation: spin 30s linear infinite;
+    }
+}
+.circle4 {
+    width: 174px;
+    height: 174px;
+    border: 1px solid var(--primary-color);
+    opacity: .25;
+}
+@keyframes spin {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* --------------------------------- SECTION 4 --------------------------------- */
+.section4 {
+    padding: 0 80px;
+    height: 1120px;
+    background: white;
+    @include flexbox;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    @include phone-landscape {
+        padding: 64px 32px;
+        height: initial;
+    }
+
+    >div {
+        @include flexbox;
+        justify-content: space-between;
+    }
+
+    svg {
+        width: 50%;
+        margin-left: -80px;
+    }
+
+    .section4-part {
+        width: 40%;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+}
+.section4-title {
+    font-size: 96px;
+    line-height: 108px;
+
+    @include desktop {
+        font-size: 56px;
+        line-height: 68px;
+    }
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    @include phone-landscape {
+        font-size: 72px;
+        line-height: 80px;
+    }
+
+    @include phone-landscape {
+        font-size: 36px;
+        line-height: 48px;
+        grid-column: span 12;
+    }
+}
+.section4-text {
+    font-size: 23px;
+    opacity: .5;
+    margin-top: 32px;
+    padding-left: 160px;
+
+    @include desktop {
+        padding-left: 80px;
+    }
+
+    @include tablet {
+        padding-left: 32px;
+        font-size: 20px;
+    }
+
+    @include phone-landscape {
+        grid-column: 4 / 13;
+    }
+}
+
+/* --------------------------------- SECTION 5 --------------------------------- */
+.section5 {
+    height: 1120px;
+    background: #272729;
+    color: white;
+
+    @include tablet {
+        height: initial;
+    }
+
+    &__part {
+        grid-column: span 3;
+
+        @include tablet {
+            grid-column: span 6;
+        }
+
+        @include phone-landscape {
+            grid-column: span 12;
+        }
+    }
+}
+.section5 .section5-2,
+.section5 .section5-3,
+.section5 .section5-4,
+.section5 .section5-5,
+.section5 .section5-6,
+.section5 .section5-7 {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+
+    @include tablet {
+        grid-row: initial;
+        height: initial;
+    }
+
+    @include phone-landscape {
+        border-right: none;
+    }
+}
+
+.section5 h2 {
+    grid-column: span 6;
+    grid-row: 1 / 2;
+    font-size: 96px;
+    @include flexbox;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+
+    @include tablet {
+        grid-row: initial;
+        grid-column: span 12;
+        padding: 80px 0;
+        border-right: none;
+    }
+
+    @include phone-landscape {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+.section5-2 {
+    grid-row: 1 / 2;
+    border-right: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.section5-3 {
+    grid-row: 1 / 2;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.section5-4 {
+    grid-row: 2 / 3;
+    border-right: 1px solid rgba(255, 255, 255, .25);
+
+    @include tablet {
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+    }
+}
+
+.section5-5 {
+    grid-row: 2 / 3;
+    border-right: 1px solid rgba(255, 255, 255, .25);
+
+    @include tablet {
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+    }
+}
+
+.section5-6 {
+    grid-row: 2 / 3;
+    border-right: 1px solid rgba(255, 255, 255, .25);
+
+    @include phone-landscape {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+    }
+}
+
+.section5-7 {
+    grid-row: 2 / 3;
+}
+
+.section5-title {
+    font-size: 24px;
+}
+
+.section5-text {
+    opacity: .5;
+    font-size: 20px;
+}
+
+/* --------------------------------- SECTION 7 --------------------------------- */
+.city {
+    min-height: 1120px;
+    background: #272729;
+    color: white;
+
+    @include tablet {
+        overflow-x: scroll;
+        height: 960px;
+    }
+
+    @include phone-landscape {
+        height: 620px;
+    }
+
+    >.grid {
+        @include tablet {
+            width: 1680px;
+        }
+
+        @include phone-landscape {
+            width: 1290px;
+        }
+    }
+    &__part {
+        grid-column: span 3;
+        border-right: 1px solid rgba(255, 255, 255, .25);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1120px;
+
+        @include desktop {
+            grid-column: span 6;
+            height: 890px;
+        }
+        @include tablet {
+            height: 960px;
+        }
+        &:first-child {
+            border-left: 1px solid rgba(255, 255, 255, 0.25);
+
+            @include desktop {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+
+            @include phone-landscape {
+                border-left: none;
+            }
+        }
+        &:nth-child(2) {
+            @include desktop {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+        &:nth-child(3) {
+            @include desktop {
+                border-left: 1px solid rgba(255, 255, 255, 0.25);
+            }
+
+            @include phone-landscape {
+                border-left: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+        &:hover {
+            background-size: cover;
+            background-repeat: none;
+        }
+        &:first-child:hover {
+            background-image: url("/assets/images/img-content/amsterdam.jpg");
+        }
+        &:nth-child(2):hover {
+            background-image: url("/assets/images/img-content/rotterdam.jpg");
+        }
+        &:nth-child(3):hover {
+            background-image: url("/assets/images/img-content/paris.jpg");
+        }
+        &:nth-child(4):hover {
+            background-image: url("/assets/images/img-content/bruxelles.jpg");
+        }
+    }
+    &__country {
+        opacity: .5;
+    }
+    &__place {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+/* --------------------------------- SECTION 8 --------------------------------- */
+.client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 160px;
+    height: 1120px;
+    color: #161618;
+
+    @include phone-landscape {
+        padding: 0 80px;
+    }
+
+    @include phone-landscape {
+        padding: 64px 32px;
+        height: initial;
+    }
+
+    &__flex {
+        @include flexbox;
+        justify-content: space-between;
+
+        @include desktop {
+            display: block;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        font-size: 152px;
+        line-height: 164px;
+        grid-column: span 12;
+        margin-bottom: 64px;
+
+        @include desktop {
+            font-size: 88px;
+            line-height: 108px;
+        }
+
+        @include phone-landscape {
+            font-size: 76px;
+            line-height: 88px;
+        }
+
+        @include phone-landscape {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+
+    &__text {
+        font-size: 32px;
+        grid-column: span 6;
+        width: 600px;
+
+        @include desktop {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        @include tablet {
+            margin-bottom: 64px;
+        }
+
+        @include phone-landscape {
+            width: 100%;
+        }
+    }
+
+    &__group {
+        @include flexbox;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        border: 1px solid #c9c9c9;
+        width: 130px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        margin-right: 16px;
+
+        &:first-child {
+            .client__logo {
+                height: 40%;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include phone-landscape {
+            margin-bottom: 16px;
+        }
+
+    }
+
+    &__logo {
+        width: auto;
+        height: 20%;
+    }
+}
+
+/* --------------------------------- SECTION 9 --------------------------------- */
+.partner {
+    padding: 0 160px;
+    height: 1120px;
+    background: #272729;
+    @include flexbox;
+    position: relative;
+
+    @include tablet {
+        height: 860px;
+    }
+
+    @include phone-landscape {
+        flex-direction: column;
+        padding: 160px 80px;
+        height: initial;
+    }
+
+    @include phone-landscape {
+        padding: 64px 32px;
+    }
+
+    >div {
+        @include flexbox;
+        justify-content: space-between;
+        width: 100%;
+
+        @include desktop {
+            flex-direction: column;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: white;
+        border-radius: 4rem;
+        width: 780px;
+        padding: 80px;
+        padding-right: 0px;
+
+        @include desktop {
+            margin-top: 64px;
+        }
+
+        @include tablet {
+            width: 590px;
+        }
+
+        @include phone-landscape {
+            width: initial;
+            border-top-right-radius: 4em;
+            border-bottom-right-radius: 4em;
+            position: initial;
+            padding-right: 80px;
+        }
+
+        @include phone-landscape {
+            display: flex;
+            flex-direction: column;
+            padding-right: 0;
+            padding: 0;
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 96px;
+        color: white;
+
+        @include tablet {
+            font-size: 56px;
+            line-height: 66px;
+        }
+
+        @include phone-landscape {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__card {
+        @include flexbox;
+        justify-content: center;
+        width: 220px;
+        height: 140px;
+
+        &:first-child .partner__logo {
+            height: 130px;
+        }
+
+        &:nth-child(2) .partner__logo {
+            height: 40px;
+        }
+
+        &:nth-child(5) .partner__logo {
+            height: 50px;
+        }
+
+        &:nth-child(6) .partner__logo {
+            height: 100px;
+        }
+    }
+
+    &__logo {
+        height: 60px;
+    }
+}
+
+/* --------------------------------- UTILS --------------------------------- */
+.mgb32 {
+    margin-bottom: 32px;
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link {
+    @include flexbox;
+    width: 75px;
+    height: 75px;
+    margin: 0 5px;
+    justify-content: center;
+}
+
+.settings-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.settings-icon__line {
+    stroke: var(--color-text);
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+}
+
+.settings-icon__rect {
+    stroke: var(--color-text);
+    fill: var(--color-bg);
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+}
+
+.link:hover .settings-icon__line,
+.link:hover .settings-icon__rect {
+    stroke: var(--color-link);
+    transition: all 0.2s ease 0.05s;
+}
+
+.link:hover .settings-icon__group--1 .settings-icon__rect {
+    transform: translateY(20px);
+}
+
+.link:hover .settings-icon__group--2 .settings-icon__rect {
+    transform: translateY(-20px);
+}
+
+.link:hover .settings-icon__group--3 .settings-icon__rect {
+    transform: translateY(25px);
+}
