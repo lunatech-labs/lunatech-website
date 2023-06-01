@@ -11,6 +11,9 @@
         padding: 0;
         color: #161618;
         cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__list {
         display: flex;

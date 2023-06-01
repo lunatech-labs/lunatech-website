@@ -4,7 +4,7 @@ Files inside this folder should contain all styles relating to a reusable compon
 */
 
 //Import Component files
-@import "contact";
+@import "page";
 @import "footer";
 @import "intro";
 @import "language";
@@ -12,7 +12,11 @@ Files inside this folder should contain all styles relating to a reusable compon
 @import "menu";
 @import "scroll";
 @import "services";
+@import "office";
+@import "client";
 @import "social";
-@import "webinar";
+@import "contact";
 @import "switch";
-@import "page";
+@import "webinar";
+
+

@@ -43,16 +43,6 @@
         margin: 0 auto;
     }
 }
-.section1 h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-}
-.section1 h1 img:first-child,
-.section1 h1 img:nth-child(2) {
-    margin-bottom: 40px;
-}
 .section1-bottom {
     display: flex;
     align-items: flex-end;
@@ -65,7 +55,7 @@
 /* --------------------------------- SECTION 2 --------------------------------- */
 .section2 {
     padding: 256px 0;
-    background: #F8F8F8;
+    background: var(--bg-color2);
     @include flexbox;
     position: relative;
     overflow: hidden;
@@ -76,7 +66,7 @@
     }
     &__img {
         position: absolute;
-        bottom: 256px;
+        bottom: 178px;
     }
     &__summary {
         font-size: 32px;
@@ -84,10 +74,9 @@
         color: var(--secondary-color);
     }
     &__title {
-        font-size: 152px;
+        font-size: 128px;
         grid-column: 3 / 11;
-        line-height: 160px;
-        margin-bottom: 128px;
+        margin-bottom: 160px;
         @include desktop {
             font-size: 96px;
             line-height: 128px;
@@ -105,15 +94,16 @@
         }
     }
     &__subtitle {
-        font-size: 56px;
-        margin-bottom: 32px;
+        font-size: 64px;
+        margin-bottom: 64px;
     }
     &__content {
         grid-column: 6 / 12;
     }
     &__text {
-        font-size: 32px;
+        font-size: 24px;
         color: var(--secondary-color);
+        line-height: 36px;
         @include desktop {
             grid-column: 5 / 11;
         }
@@ -127,14 +117,13 @@
             grid-column: 3 / 13;
             font-size: 24px;
         }
-        &:first-child {margin-bottom: 96px;}
+        &:first-child {margin-bottom: 64px;}
         &:nth-child(3) {padding-left: 64px;}
     }
 }
 .section2-circles {
     position: absolute;
-    display: flex;
-    align-items: center;
+    @include flexbox;
     justify-content: center;
     width: 542px;
     height: 542px;
@@ -385,208 +374,6 @@
     font-size: 20px;
 }
 
-/* --------------------------------- SECTION 7 --------------------------------- */
-.city {
-    min-height: 1120px;
-    background: #272729;
-    color: white;
-
-    @include tablet {
-        overflow-x: scroll;
-        height: 960px;
-    }
-
-    @include phone-landscape {
-        height: 620px;
-    }
-
-    >.grid {
-        @include tablet {
-            width: 1680px;
-        }
-
-        @include phone-landscape {
-            width: 1290px;
-        }
-    }
-    &__part {
-        grid-column: span 3;
-        border-right: 1px solid rgba(255, 255, 255, .25);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 1120px;
-
-        @include desktop {
-            grid-column: span 6;
-            height: 890px;
-        }
-        @include tablet {
-            height: 960px;
-        }
-        &:first-child {
-            border-left: 1px solid rgba(255, 255, 255, 0.25);
-
-            @include desktop {
-                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-            }
-
-            @include phone-landscape {
-                border-left: none;
-            }
-        }
-        &:nth-child(2) {
-            @include desktop {
-                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-            }
-        }
-        &:nth-child(3) {
-            @include desktop {
-                border-left: 1px solid rgba(255, 255, 255, 0.25);
-            }
-
-            @include phone-landscape {
-                border-left: none;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-            }
-        }
-        &:hover {
-            background-size: cover;
-            background-repeat: none;
-        }
-        &:first-child:hover {
-            background-image: url("/assets/images/img-content/amsterdam.jpg");
-        }
-        &:nth-child(2):hover {
-            background-image: url("/assets/images/img-content/rotterdam.jpg");
-        }
-        &:nth-child(3):hover {
-            background-image: url("/assets/images/img-content/paris.jpg");
-        }
-        &:nth-child(4):hover {
-            background-image: url("/assets/images/img-content/bruxelles.jpg");
-        }
-    }
-    &__country {
-        opacity: .5;
-    }
-    &__place {
-        font-size: 48px;
-        line-height: 48px;
-    }
-}
-
-/* --------------------------------- SECTION 8 --------------------------------- */
-.client {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 160px;
-    height: 1120px;
-    color: #161618;
-
-    @include phone-landscape {
-        padding: 0 80px;
-    }
-
-    @include phone-landscape {
-        padding: 64px 32px;
-        height: initial;
-    }
-
-    &__flex {
-        @include flexbox;
-        justify-content: space-between;
-
-        @include desktop {
-            display: block;
-        }
-
-        @include tablet {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
-    &__title {
-        font-size: 152px;
-        line-height: 164px;
-        grid-column: span 12;
-        margin-bottom: 64px;
-
-        @include desktop {
-            font-size: 88px;
-            line-height: 108px;
-        }
-
-        @include phone-landscape {
-            font-size: 76px;
-            line-height: 88px;
-        }
-
-        @include phone-landscape {
-            font-size: 40px;
-            line-height: 48px;
-        }
-    }
-
-    &__text {
-        font-size: 32px;
-        grid-column: span 6;
-        width: 600px;
-
-        @include desktop {
-            width: 100%;
-            margin-bottom: 32px;
-        }
-
-        @include tablet {
-            margin-bottom: 64px;
-        }
-
-        @include phone-landscape {
-            width: 100%;
-        }
-    }
-
-    &__group {
-        @include flexbox;
-        flex-wrap: wrap;
-    }
-
-    &__card {
-        border: 1px solid #c9c9c9;
-        width: 130px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 16px;
-        margin-right: 16px;
-
-        &:first-child {
-            .client__logo {
-                height: 40%;
-            }
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        @include phone-landscape {
-            margin-bottom: 16px;
-        }
-
-    }
-
-    &__logo {
-        width: auto;
-        height: 20%;
-    }
-}
-
 /* --------------------------------- SECTION 9 --------------------------------- */
 .partner {
     padding: 0 160px;
@@ -645,12 +432,11 @@
         }
 
         @include phone-landscape {
-            display: flex;
+            @include flexbox;
             flex-direction: column;
             padding-right: 0;
             padding: 0;
             width: 100%;
-            align-items: center;
         }
     }
 

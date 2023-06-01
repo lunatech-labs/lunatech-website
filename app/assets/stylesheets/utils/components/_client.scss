@@ -1,0 +1,105 @@
+.client {
+    @include flexbox;
+    flex-direction: column;
+    padding: 0 160px;
+    height: 1120px;
+    color: #161618;
+    @include phone-landscape {
+        padding: 0 80px;
+    }
+
+    @include phone-landscape {
+        padding: 64px 32px;
+        height: initial;
+    }
+
+    &__flex {
+        @include flexbox;
+        justify-content: space-between;
+
+        @include desktop {
+            display: block;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        font-size: 152px;
+        line-height: 164px;
+        grid-column: span 12;
+        margin-bottom: 64px;
+
+        @include desktop {
+            font-size: 88px;
+            line-height: 108px;
+        }
+
+        @include phone-landscape {
+            font-size: 76px;
+            line-height: 88px;
+        }
+
+        @include phone-landscape {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+
+    &__text {
+        font-size: 32px;
+        grid-column: span 6;
+        width: 600px;
+
+        @include desktop {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        @include tablet {
+            margin-bottom: 64px;
+        }
+
+        @include phone-landscape {
+            width: 100%;
+        }
+    }
+
+    &__group {
+        @include flexbox;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        @include flexbox;
+        border: 1px solid #c9c9c9;
+        width: 130px;
+        height: 100px;
+        justify-content: center;
+        border-radius: 16px;
+        margin-right: 16px;
+
+        &:first-child {
+            .client__logo {
+                height: 40%;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include phone-landscape {
+            margin-bottom: 16px;
+        }
+
+    }
+
+    &__logo {
+        width: auto;
+        height: 20%;
+    }
+}

@@ -1,15 +1,14 @@
 .services {
     min-height: 1120px;
-    background: var(--bg-color2);
-    color: white;
+    background: var(--bg-color);
     @include tablet {
         height: initial;
     }
     &__title {
+        @include flexbox;
         grid-column: span 6;
         grid-row: 1 / 2;
         font-size: 96px;
-        @include flexbox;
         justify-content: center;
         border-right: $border;
         border-bottom: $border;
@@ -80,10 +79,12 @@
     }
     &__subtitle {
         font-size: 24px;
+        margin-bottom: 8px;
     }
     &__text {
-        opacity: .5;
         font-size: 20px;
+        line-height: 32px;
+        color: var(--secondary-color);
     }
 }
 .section5 .section5-2, .section5 .section5-3, .section5 .section5-4, .section5 .section5-5, .section5 .section5-6, .section5 .section5-7 {

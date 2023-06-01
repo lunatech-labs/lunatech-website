@@ -1,6 +1,6 @@
 body {
     font-family: 'Cabin', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
     font-size: 16px;
     background: var(--bg-color);
     color: var(--primary-color);
@@ -10,7 +10,7 @@ a {
     color: inherit;
 }
 h2, h3, h4 {
-    font-weight: 500;
+    font-weight: 400;
 }
 .container {
     max-width: 1568px;

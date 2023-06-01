@@ -1,6 +1,5 @@
 .theme-switch-wrapper {
-    display: flex;
-    align-items: center;
+    @include flexbox;
     text-align: center;
     width: 160px;
     position: absolute;
