@@ -22,3 +22,20 @@ h2, h3, h4 {
     margin-right: auto;
     margin-left: auto;
 }
+.separate {
+    border-top: $border;
+}
+.nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.link {
+    @include flexbox;
+    width: 75px;
+    height: 75px;
+    margin: 0 5px;
+    justify-content: center;
+}

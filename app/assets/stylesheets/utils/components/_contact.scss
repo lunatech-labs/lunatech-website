@@ -1,46 +1,13 @@
 .contact {
-    background: #272729;
-    @include flexbox;
-    justify-content: center;
-    flex-direction: column;
-    @include desktop {
-        display: block;
-    }
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        width: 100%;
-    }
+    background: var(--bg-color2);
+    padding: 80px 0;
     &__card {
-        grid-column: span 4;
-        padding: 96px;
-        color: white;
-        &:first-child {
-            border-right: 1px solid rgba(255,255,255,0.25);
-            @include desktop {
-                grid-column: span 12;
-                border-right: none;
-                border-bottom: 1px solid rgba(255,255,255,0.25);
-            }
-        }
-        &:nth-child(2) {
-            border-right: 1px solid rgba(255,255,255,0.25);
-            @include desktop {
-                grid-column: span 6;
-            }
-            @include phone-landscape {
-                grid-column: span 12;
-                border-bottom: 1px solid rgba(255,255,255,0.25);
-            }
-        }
-        &:nth-child(3) {
-            @include desktop {
-                grid-column: span 6;
-            }
-            @include phone-landscape {
-                grid-column: span 12;
-            }
-        }
+        grid-column: span 3;
+    }
+    &__title {
+        color: var(--primary-color);
+        font-size: 24px;
+        margin-bottom: 32px;
     }
     &__part {
         margin-bottom: 32px;
@@ -48,27 +15,30 @@
             margin-bottom: 0;
         }
     }
-    &__cat {
-        font-size: 24px;
+    &__subtitle {
+        color: var(--primary-color);
+        font-size: 20px;
+        line-height: 36px;
+    }
+    &__join {
+        @include flexbox;
+        span {
+            margin: 0 16px;
+            display: flex;
+            height: 24px;
+            width: 1px;
+            background: var(--border-color);
+        }
     }
     &__text {
-        opacity: .5;
+        color: var(--secondary-color);
         font-size: 20px;
+        line-height: 36px;
     }
     &__link {
-        opacity: .5;
+        color: var(--secondary-color);
         font-size: 20px;
+        line-height: 36px;
     }
-    &__flex {
-        display: flex;
-        justify-content: space-between;
-        @include phone-landscape {
-            flex-direction: column;
-        }
-        > div:first-child {
-            @include phone-landscape {
-                margin-bottom: 32px;
-            }
-        }
-    }
+   
 }

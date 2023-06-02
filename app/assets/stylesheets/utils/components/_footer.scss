@@ -1,6 +1,6 @@
 .footer {
-    background: black;
-    color: white;
+    background: var(--bg-color3);
+    color: var(--primary-color);
     padding: 80px;
     @include phone-landscape {
         padding: 32px;
@@ -9,7 +9,7 @@
         @include flexbox;
         justify-content: space-between;
         &:first-child {
-            border-bottom: 1px solid #ffffff4D;
+            border-bottom: $border;
             padding-bottom: 32px;
         }
         &:last-child {
@@ -20,16 +20,19 @@
             }
         }
     }
-    &__social {
-        @include flexbox;
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__link {
         margin-right: 16px;
-        &:last-child {
-            margin-right: 0;
-        }
+        &:last-child {margin-right: 0;}
         img {
             width: 20px;
+        }
+        svg {
+            fill: blue;
         }
     }
 }

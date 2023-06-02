@@ -47,6 +47,7 @@
         }
         &:hover {
             background-size: cover;
+            background-position: 50%;
             background-repeat: none;
         }
         &:first-child:hover {
@@ -59,7 +60,7 @@
             background-image: url("/assets/images/img-content/paris.jpg");
         }
         &:nth-child(4):hover {
-            background-image: url("/assets/images/img-content/bruxelles.jpg");
+            background-image: url("/assets/images/img-content/brussels.jpg");
         }
         &:nth-child(5):hover {
             background-image: url("/assets/images/img-content/newcastle.jpg");
