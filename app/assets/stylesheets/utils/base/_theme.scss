@@ -9,13 +9,13 @@
 	--light-text-secondary: #A1A1A1;
 	
 	// dark theme
-	--light-surface: #090909;
-    --light-bg: #1F1F21;
-    --light-bottom-bg: #EFEFEF;
-	--light-border: #4E4E4E;
-    --light-primary: #EA212E;
-	--light-text-primary: #FFFFFF;
-	--light-text-secondary: #AFAFAF;
+	--dark-surface: #090909;
+    --dark-bg: #1F1F21;
+    --dark-bottom-bg: #EFEFEF;
+	--dark-border: #4E4E4E;
+    --dark-primary: #EA212E;
+	--dark-text-primary: #FFFFFF;
+	--dark-text-secondary: #AFAFAF;
 	
 	// neon theme
 	--neon-surface: #090909;
@@ -25,17 +25,4 @@
     --neon-primary: #EA212E;
 	--neon-text-primary: #FFFFFF;
 	--neon-text-secondary: #AFAFAF;
-
-    // rendered theme
-    --surface: var(--light-surface);
-	--bg: var(--light-bg);
-    --bottom-bg: var(--light-bottom-bg);
-	--border: var(--light-border);
-	--primary: var(--light-primary);
-	--text-primary: var(--light-text-primary);
-	--text-secondary: var(--light-text-secondary);
 }
-
-
-
-

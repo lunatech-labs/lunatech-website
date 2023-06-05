@@ -7,7 +7,6 @@ const themeList = document.getElementById('themeGrid');
 
 // Change the CSS variables on the root element, depending on the curent theme
 const changeTheme = (theme) => {
-	
 	if(count < 2) {
 		count += 1;
 	} else {
@@ -16,7 +15,7 @@ const changeTheme = (theme) => {
 	
     document.documentElement.style.setProperty('--surface', `var(--${theme}-surface)`);
 	document.documentElement.style.setProperty('--bg', `var(--${theme}-bg)`);
-    document/documentElement.style.setProperty('--bottom-bg', `var(--${theme}-bottom-bg)`);
+    document.documentElement.style.setProperty('--bottom-bg', `var(--${theme}-bottom-bg)`);
     document.documentElement.style.setProperty('--border', `var(--${theme}-border)`);
     document.documentElement.style.setProperty('--primary', `var(--${theme}-primary)`);
 	document.documentElement.style.setProperty('--text-primary', `var(--${theme}-text-primary)`);
@@ -36,13 +35,13 @@ const changeTheme = (theme) => {
 	
 	switch(theme) {
         case theme = 'light':
-			themeGrid.style.top = '0'
+			themeGrid.style.top = '13px'
 			break;
 		case theme = 'dark':
-			themeGrid.style.top = '-3.6rem'
+			themeGrid.style.top = '-23px'
 			break;
 		case theme = 'neon':
-			themeGrid.style.top = '-7.1rem'
+			themeGrid.style.top = '-59px'
 			break;
 	}
 }
@@ -64,10 +63,6 @@ themePicker.innerHTML = `
 
 themePicker.onclick = () => {
 	changeTheme(themes[count])
-}
-
-const capitalized = (word) => {
-	return word.charAt(0).toUpperCase() + word.slice(1)
 }
 
 changeTheme(themes[0])

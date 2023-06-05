@@ -1,56 +1,44 @@
 
 .c-theme {
-	width: 32px;
-	height: 32px;
+	width: 48px;
+	height: 48px;
 	cursor: pointer;
-	display: inline-block;
+	display: flex;
+    justify-content: center;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
-	background: transparent;
-	color: var(--text-primary);
-	border: 1px solid transparent;
-	border-radius: 0.8rem;
+	color: #4E4E4E;
+	border: none;
+	border-radius: 50%;
 	transition: all 120ms ease-out;
+    margin-right: 16px;
+    background: none;
 	&:hover, &:focus {
-		border-color: var(--border);
-	}
-	&:after, &:before {
-		content: '';
-		position: absolute;
-		z-index: 10;
-	}
-	&:after {
-		top: 0;
-		left: 0;
-		right: 0;
-		height: .8rem;
-		background: linear-gradient(to bottom, var(--surface), transparent);
-	}
-	&:before {
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: .8rem;
-		background: linear-gradient(to top, var(--surface), transparent);
+		background: #f3f3f3;
 	}
 	&:focus {
 		outline: none;
 	}
 	&__grid {
 		position: relative;
-		width: 32px;
 		transition: all 240ms ease-out;
 	}
 	svg {
-		width: 3.2rem;
-		height: 3.2rem;
+		width: 24px;
+		height: 24px;
+        margin-bottom: 12px;
+        &:last-child {margin-bottom: 0;}
 		&:focus {
 			outline: none;
 		}
 	}
 }
-
+.c-theme-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.6rem;
+}
 .c-box {
 	display: flex;
 	width: 100%;
@@ -101,18 +89,3 @@
 	}
 }
 
-.c-swatch {
-	width: 2rem;
-	height: 2rem;
-	display: inline-block;
-	border-radius: 999px;
-	border: 1px solid var(--border);
-	margin-right: -.8rem;
-	box-shadow: 0px 1px 1px rgba(black, 0.12), 0px 0px 0px 1px rgba(black, 0.08);
-}
-
-.c-theme-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1.6rem;
-}
