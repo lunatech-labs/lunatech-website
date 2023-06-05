@@ -13,25 +13,23 @@
     <div class="section1">
         <div class="section1-top">
 			<a href="/"><img src="@routes.Assets.versioned("images/img-layout/lunatech_logo.svg")" alt="Lunatech Logo"></a>
-			<div class="menu">
-				<button class="menu__btn" id="menu-toggle">
-					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
-					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
-					<div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
-				</button>
-				<div class="menu__overlay is-hidden" id="menu-content">
-					<div class="menu__list">
-						<a href="https://blog.lunatech.com/" target="_blank">Blog</a>
-						<a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
-                                <div class="slider round"></div>
-                          </label>
-                          <div class="description">Dark Mode</div>
-                        </div>            
-					</div>
-				</div>
+            <div class="dflex">
+                <button class="c-theme" id="themePicker"></button>
+                <div class="c-theme-grid" id="themeGrid"></div>
+			    <div class="menu">
+                    <button class="menu__btn" id="menu-toggle">
+                        <div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
+                        <div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
+                        <div class="menu__col"><span class="menu__square"></span><span class="menu__square"></span><span class="menu__square"></span></div>
+                    </button>
+
+                    <div class="menu__overlay is-hidden" id="menu-content">
+                        <div class="menu__list">
+                            <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
+                            <a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>    
+                        </div>
+                    </div>
+                </div>
 			</div>
         </div>
         <div class="iframe">

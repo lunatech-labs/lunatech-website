@@ -1,6 +1,6 @@
 .footer {
-    background: var(--bg-color3);
-    color: var(--primary-color);
+    background: var(--bg3);
+    color: var(--text-primary);
     padding: 80px;
     @include phone-landscape {
         padding: 32px;

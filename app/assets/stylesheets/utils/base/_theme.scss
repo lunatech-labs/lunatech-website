@@ -1,32 +1,41 @@
 :root {
-    --primary-color: #1D1D1F;
-    --secondary-color: #A1A1A1;
-    --bg-color: #FFFFFF;
-    --bg-color2: #FBFBFB;
-    --bg-color3: #EFEFEF;
-    --border-color: #CACACA;
+	// light theme
+    --light-surface: #FFFFFF;
+    --light-bg: #FBFBFB;
+    --light-bottom-bg: #EFEFEF;
+	--light-border: #CACACA;
+    --light-primary: #EA212E;
+	--light-text-primary: #1D1D1F;
+	--light-text-secondary: #A1A1A1;
+	
+	// dark theme
+	--light-surface: #090909;
+    --light-bg: #1F1F21;
+    --light-bottom-bg: #EFEFEF;
+	--light-border: #4E4E4E;
+    --light-primary: #EA212E;
+	--light-text-primary: #FFFFFF;
+	--light-text-secondary: #AFAFAF;
+	
+	// neon theme
+	--neon-surface: #090909;
+    --neon-bg: #1F1F21;
+    --neon-bottom-bg: #EFEFEF;
+	--neon-border: #4E4E4E;
+    --neon-primary: #EA212E;
+	--neon-text-primary: #FFFFFF;
+	--neon-text-secondary: #AFAFAF;
 
-
-
-
-    --tag-color: #EEEEEE;
-    --header-color: #F8F8F8;
-    --body-color: #EDEDED;
-    --button-color: #3B3636;
+    // rendered theme
+    --surface: var(--light-surface);
+	--bg: var(--light-bg);
+    --bottom-bg: var(--light-bottom-bg);
+	--border: var(--light-border);
+	--primary: var(--light-primary);
+	--text-primary: var(--light-text-primary);
+	--text-secondary: var(--light-text-secondary);
 }
 
-[data-theme="dark"] {
-    --primary-color: #FFFFFF;
-    --secondary-color: #AFAFAF;
-    --bg-color: #090909;
-    --bg-color2: #1F1F21;
-    --border-color: #4E4E4E;
 
 
 
-
-    --tag-color: #1E1E21;
-    --header-color: #36373A;
-    --body-color: #1F1F22;
-    --button-color: #818386;
-}

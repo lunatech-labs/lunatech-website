@@ -1,11 +1,11 @@
 .contact {
-    background: var(--bg-color2);
+    background: var(--bg2);
     padding: 80px 0;
     &__card {
         grid-column: span 3;
     }
     &__title {
-        color: var(--primary-color);
+        color: var(--text-primary);
         font-size: 24px;
         margin-bottom: 32px;
     }
@@ -16,7 +16,7 @@
         }
     }
     &__subtitle {
-        color: var(--primary-color);
+        color: var(--text-primary);
         font-size: 20px;
         line-height: 36px;
     }
@@ -31,12 +31,12 @@
         }
     }
     &__text {
-        color: var(--secondary-color);
+        color: var(--text-secondary);
         font-size: 20px;
         line-height: 36px;
     }
     &__link {
-        color: var(--secondary-color);
+        color: var(--text-secondary);
         font-size: 20px;
         line-height: 36px;
     }

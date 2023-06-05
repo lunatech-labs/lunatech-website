@@ -1,6 +1,6 @@
 .services {
     min-height: 1120px;
-    background: var(--bg-color);
+    background: var(--bg);
     @include tablet {
         height: initial;
     }
@@ -84,7 +84,7 @@
     &__text {
         font-size: 20px;
         line-height: 32px;
-        color: var(--secondary-color);
+        color: var(--text-secondary);
     }
 }
 .section5 .section5-2, .section5 .section5-3, .section5 .section5-4, .section5 .section5-5, .section5 .section5-6, .section5 .section5-7 {
