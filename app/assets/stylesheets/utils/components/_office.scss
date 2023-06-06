@@ -1,6 +1,6 @@
 .office {
     min-height: 1120px;
-    background: var(--bg2);
+    background: var(--bg);
     @include tablet {
         overflow-x: scroll;
         height: 960px;

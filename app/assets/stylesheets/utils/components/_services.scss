@@ -1,6 +1,5 @@
 .services {
     min-height: 1120px;
-    background: var(--bg);
     @include tablet {
         height: initial;
     }

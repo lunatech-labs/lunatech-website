@@ -1,6 +1,5 @@
 .partner {
     padding: 128px 0;
-    background: var(--bg);
     @include flexbox;
     flex-direction: column;
     &__title {

@@ -1,5 +1,5 @@
 .contact {
-    background: var(--bg2);
+    background: var(--bg);
     padding: 80px 0;
     &__card {
         grid-column: span 3;
@@ -27,7 +27,7 @@
             display: flex;
             height: 24px;
             width: 1px;
-            background: var(--border-color);
+            background: var(--border);
         }
     }
     &__text {

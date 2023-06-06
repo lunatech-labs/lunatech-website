@@ -9,7 +9,7 @@
         background: none;
         border: none;
         padding: 0;
-        color: #161618;
+        color: var(--text-primary);
         cursor: pointer;
         &:hover {
             text-decoration: underline;
