@@ -169,7 +169,7 @@
     height: 542px;
     bottom: -271px;
     right: -271px;
-    @include tablet {
+    @include desktop {
         display: none;
     }
 }
