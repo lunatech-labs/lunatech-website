@@ -9,8 +9,11 @@
         background: none;
         border: none;
         padding: 0;
-        color: #161618;
+        color: var(--text-primary);
         cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__list {
         display: flex;
@@ -19,10 +22,12 @@
     }
     &__link {
         margin-bottom: 24px;
-        img {
+        svg {
             width: 24px;
+            path {fill: var(--text-primary);}
         }
     }
+
 }
 .social__overlay {
     position: absolute;

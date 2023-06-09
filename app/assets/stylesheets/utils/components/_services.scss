@@ -1,27 +1,27 @@
 .services {
     min-height: 1120px;
-    background: #272729;
-    color: white;
     @include tablet {
         height: initial;
     }
     &__title {
+        @include flexbox;
         grid-column: span 6;
         grid-row: 1 / 2;
         font-size: 96px;
-        @include flexbox;
         justify-content: center;
-        border-right: 1px solid rgba(255, 255, 255, .25);
-        border-bottom: 1px solid rgba(255, 255, 255, .25);
-        border-left: 1px solid rgba(255, 255, 255, .25);
+        border-right: $border;
+        border-bottom: $border;
         @include desktop {
             grid-column: span 12;
-            padding: 80px;
+            padding: 64px;
+            font-size: 80px;
         }
         @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
             border-left: none;
+            justify-content: left;
+            padding: 32px;
         }
     }
     &__part {
@@ -30,64 +30,70 @@
         height: 560px;
         @include desktop {
             grid-column: span 6;
+            padding: 64px;
+            height: 500px;
         }
         @include phone-landscape {
             grid-column: span 12;
             border-right: none;
+            height: initial;
+            padding: 32px;
         }
         &:first-child {
-            border-right: 1px solid rgba(255, 255, 255, .25);
-            border-bottom: 1px solid rgba(255, 255, 255, .25);
+            border-right: $border;
+            border-bottom: $border;
         }
         &:nth-child(2) {
-            border-right: 1px solid rgba(255, 255, 255, .25);
-            border-bottom: 1px solid rgba(255, 255, 255, .25);
-            @include desktop {border-left: 1px solid rgba(255, 255, 255, .25);}
+            border-right: $border;
+            border-bottom: $border;
+            @include desktop {border-left: $border;}
             @include phone-landscape {
                 border-left: none;
                 border-right: none;
             }
         }
         &:nth-child(3) {
-            border-bottom: 1px solid rgba(255, 255, 255, .25);
-            border-right: 1px solid rgba(255, 255, 255, .25);
+            border-bottom: $border;
+            border-right: $border;
         }
         &:nth-child(4) {
-            border-right: 1px solid rgba(255, 255, 255, .25);
-            border-left: 1px solid rgba(255, 255, 255, .25);
-            @include desktop {border-bottom: 1px solid rgba(255, 255, 255, .25);}
+            border-right: $border;
+            border-left: $border;
+            @include desktop {border-bottom: $border;}
             @include phone-landscape {
                 border-left: none;
                 border-right: none;
             }
         }
         &:nth-child(5) {
-            border-right: 1px solid rgba(255, 255, 255, .25);
-            @include desktop {border-bottom: 1px solid rgba(255, 255, 255, .25);}
+            border-right: $border;
+            @include desktop {border-bottom: $border;}
         }
         &:nth-child(6) {
-            border-right: 1px solid rgba(255, 255, 255, .25);
-            @include desktop {border-left: 1px solid rgba(255, 255, 255, .25);}
+            border-right: $border;
+            @include desktop {border-left: $border;}
             @include phone-landscape {
                 border-left: none;
                 border-right: none;
-                border-bottom: 1px solid rgba(255, 255, 255, .25);
+                border-bottom: $border;
             }
         }
         &:nth-child(7) {
-            border-right: 1px solid rgba(255, 255, 255, .25);
+            border-right: $border;
             @include phone-landscape {border-bottom: none;}
         }
     }
     &__subtitle {
         font-size: 24px;
+        margin-bottom: 8px;
     }
     &__text {
-        opacity: .5;
         font-size: 20px;
+        line-height: 32px;
+        color: var(--text-secondary);
     }
 }
-.g_section5 .g_section5-2, .g_section5 .g_section5-3, .g_section5 .g_section5-4, .g_section5 .g_section5-5, .g_section5 .g_section5-6, .g_section5 .g_section5-7 {
+.section5 .section5-2, .section5 .section5-3, .section5 .section5-4, .section5 .section5-5, .section5 .section5-6, .section5 .section5-7 {
     padding: 80px;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,73 @@
+.client {
+    @include flexbox;
+    flex-direction: column;
+    padding: 128px 0;
+    @include desktop {
+        padding: 128px 64px;
+    }
+    @include phone-landscape {
+        padding: 64px 32px;
+        height: initial;
+    }
+    &__content {
+        grid-column: 2/12;
+        @include desktop {
+            grid-column: span 12;
+        }
+    }
+    &__title {
+        font-size: 128px;
+        margin-bottom: 96px;
+        @include desktop {
+            font-size: 96px;
+            line-height: 108px;
+        }
+        @include tablet {
+            font-size: 76px;
+            line-height: 88px;
+        }
+        @include phone-landscape {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+    }
+    &__text {
+        font-size: 24px;
+        margin-bottom: 32px;
+        line-height: 32px;
+        color: var(--text-secondary);
+        @include phone-landscape {
+            font-size: 20px;
+        }
+    }
+    &__group {
+        @include flexbox;
+        flex-wrap: wrap;
+    }
+    &__card {
+        @include flexbox;
+        border: 1px solid var(--border);
+        width: 130px;
+        height: 100px;
+        justify-content: center;
+        border-radius: 16px;
+        margin-right: 16px;
+        background: white;
+        &:first-child {
+            .client__logo {
+                height: 40%;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        @include phone-landscape {
+            margin-bottom: 16px;
+        }
+    }
+    &__logo {
+        width: auto;
+        height: 20%;
+    }
+}

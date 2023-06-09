@@ -1,0 +1,66 @@
+.office {
+    min-height: 1120px;
+    background: var(--bg);
+    @include desktop {
+        min-height: initial;
+    }
+    @include tablet {
+        overflow-x: scroll;
+        height: 960px;
+    }
+    @include phone-landscape {
+        height: initial;
+    }
+    &__part {
+        width: 20%;
+        @include flexbox;
+        border-right: $border;
+        flex-direction: column;
+        justify-content: center;
+        height: 1120px;
+        @include desktop {
+            width: 50%;
+            height: 740px;
+        }
+        @include tablet {
+            height: 960px;
+            min-width: 260px;
+        }
+        @include phone-landscape {
+            height: 460px;
+        }
+        &:first-child {
+            border-left: $border;
+        }
+        &:hover {
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: none;
+        }
+        &:first-child:hover {
+            background-image: url("/assets/images/img-content/amsterdam.jpg");
+        }
+        &:nth-child(2):hover {
+            background-image: url("/assets/images/img-content/rotterdam.jpg");
+        }
+        &:nth-child(3):hover {
+            background-image: url("/assets/images/img-content/paris.jpg");
+        }
+        &:nth-child(4):hover {
+            background-image: url("/assets/images/img-content/brussels.jpg");
+        }
+        &:nth-child(5):hover {
+            background-image: url("/assets/images/img-content/newcastle.jpg");
+        }
+    }
+    &__country {
+        color: var(--text-secondary)
+    }
+    &__city {
+        font-size: 48px;
+        line-height: 48px;
+        @include desktop {
+            font-size: 32px;
+        }
+    }
+}

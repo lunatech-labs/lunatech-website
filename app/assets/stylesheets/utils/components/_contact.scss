@@ -1,46 +1,29 @@
 .contact {
-    background: #272729;
-    @include flexbox;
-    justify-content: center;
-    flex-direction: column;
-    @include desktop {
-        display: block;
-    }
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        width: 100%;
+    background: var(--bg);
+    padding: 80px;
+    @include phone-landscape {
+        padding: 64px 32px;
     }
     &__card {
-        grid-column: span 4;
-        padding: 96px;
-        color: white;
+        grid-column: span 3;
+        @include desktop {
+            grid-column: span 6;
+        }
         &:first-child {
-            border-right: 1px solid rgba(255,255,255,0.25);
             @include desktop {
-                grid-column: span 12;
-                border-right: none;
-                border-bottom: 1px solid rgba(255,255,255,0.25);
+                margin-bottom: 64px;
             }
         }
         &:nth-child(2) {
-            border-right: 1px solid rgba(255,255,255,0.25);
             @include desktop {
-                grid-column: span 6;
-            }
-            @include phone-landscape {
-                grid-column: span 12;
-                border-bottom: 1px solid rgba(255,255,255,0.25);
+                margin-bottom: 64px;
             }
         }
-        &:nth-child(3) {
-            @include desktop {
-                grid-column: span 6;
-            }
-            @include phone-landscape {
-                grid-column: span 12;
-            }
-        }
+    }
+    &__title {
+        color: var(--text-primary);
+        font-size: 24px;
+        margin-bottom: 32px;
     }
     &__part {
         margin-bottom: 32px;
@@ -48,27 +31,38 @@
             margin-bottom: 0;
         }
     }
-    &__cat {
-        font-size: 24px;
-    }
-    &__text {
-        opacity: .5;
+    &__subtitle {
+        color: var(--text-primary);
         font-size: 20px;
+        line-height: 36px;
     }
-    &__link {
-        opacity: .5;
-        font-size: 20px;
-    }
-    &__flex {
-        display: flex;
-        justify-content: space-between;
-        @include phone-landscape {
+    &__join {
+        @include flexbox;
+        @include tablet {
+            display: flex;
+            align-items: initial;
             flex-direction: column;
         }
-        > div:first-child {
-            @include phone-landscape {
-                margin-bottom: 32px;
+        span {
+            margin: 0 16px;
+            display: flex;
+            height: 24px;
+            width: 1px;
+            background: var(--border);
+            @include tablet {
+                display: none;
             }
         }
     }
+    &__text {
+        color: var(--text-secondary);
+        font-size: 20px;
+        line-height: 36px;
+    }
+    &__link {
+        color: var(--text-secondary);
+        font-size: 20px;
+        line-height: 36px;
+    }
+   
 }

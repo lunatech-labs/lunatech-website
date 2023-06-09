@@ -1,10 +1,11 @@
 .language {
     @include flexbox;
+    color: var(--text-primary);
     a:hover {
-        border-bottom: 2px solid black;
+        text-decoration: underline;
     }
     span {
-        border-bottom: 1px solid #161618;
+        border-bottom: 1px solid var(--border);
         width: 24px;
         display: block;
         margin: 0 8px;

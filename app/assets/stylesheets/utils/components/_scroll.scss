@@ -54,10 +54,14 @@
 }
 .mouse-scroll {
     position: absolute;
-    top: -18px;
-    left: 50%;
+    top: -20px;
+    left: 50.06%;
     transform: translate(-50%, -50%);
     cursor: auto;
+    z-index: 1;
+    @include phone-landscape {
+        display: none;
+    }
 }
 .mouse-scroll .mouse {
     position: relative;
@@ -68,10 +72,10 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #959595;
+    border: 1px solid var(--border);
     border-radius: 24px;
     z-index: 1;
-    background: white;
+    background: var(--surface);
 }
 .mouse-scroll .mouse .mouse-movement {
     position: absolute;
@@ -81,9 +85,12 @@
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
-    background: black;
+    background: var(--text-primary);
     border-radius: 50%;
     -webkit-animation: scroll-ani 4s linear infinite;
     -moz-animation: scroll-ani 4s linear infinite;
     animation: scroll-ani 4s linear infinite;
+}
+.mouse-message {
+    color: var(--text-primary);
 }
