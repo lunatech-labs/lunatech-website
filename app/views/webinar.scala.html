@@ -41,21 +41,21 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer footer-bg">
         <div class="container">
-            <div class="footer__part">
+            <div class="footer__part footer-part-bg">
                 <img src="@routes.Assets.versioned("images/img-layout/lunatech_logo.svg")" alt="Lunatech Logo">
                 <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
                 <a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
                 <div class="dflex">
-                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")" alt="github logo"></a>
-                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")" alt="instagram logo"></a>
-                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")" alt="linkedin logo"></a>
-                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")" alt="twitter logo"></a>
+                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")" onload="SVGInject(this)"></a>
+                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")" onload="SVGInject(this)"></a>
+                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")" onload="SVGInject(this)"></a>
+                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")" onload="SVGInject(this)"></a>
                 </div>
             </div>
             <div class="footer__part">
-                <p>© 2023 Lunatech. All rights reserved.</p>
+                <p>© <script>document.write(new Date().getFullYear())</script> Lunatech. All rights reserved.</p>
                 <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of service</a>
             </div>
         </div>
@@ -117,5 +117,6 @@
 
         submitBtn.addEventListener('click', validate);
     </script>
+    <script src="/assets/javascripts/theme.js"></script>
 </body>
 }

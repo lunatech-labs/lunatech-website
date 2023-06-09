@@ -194,3 +194,14 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.footer-bg {
+    background: #EFEFEF;
+}
+.footer-part-bg {
+    border-bottom: 1px solid #DDDDDD!important;
+    > div {
+        .footer__link svg path {
+            fill: #1D1D1F;
+        }
+    }
+}
