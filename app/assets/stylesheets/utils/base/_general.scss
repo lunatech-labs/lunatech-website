@@ -24,6 +24,12 @@ h2, h3, h4 {
 }
 .separate {
     border-top: $border;
+    @include desktop {
+        margin: 0 64px;
+    }
+    @include phone-landscape {
+        margin: 0 32px;
+    }
 }
 .nav {
     display: flex;
@@ -39,3 +45,6 @@ h2, h3, h4 {
     margin: 0 5px;
     justify-content: center;
 }
+
+
+

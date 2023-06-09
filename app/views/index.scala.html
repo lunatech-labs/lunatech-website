@@ -12,7 +12,7 @@
 
     <div class="section1">
         <div class="section1-top">
-			<a href="/"><img src="@routes.Assets.versioned("images/img-layout/lunatech_logo.svg")" alt="Lunatech Logo"></a>
+            <a href="/"><img src="@routes.Assets.versioned("images/img-layout/lunatech_logo.svg")" onload="SVGInject(this)"></a>
             <div class="dflex">
                 <button class="c-theme" id="themePicker">
                     <div class="c-theme-grid" id="themeGrid"></div>
@@ -34,8 +34,8 @@
 			</div>
         </div>
         <div class="iframe">
-            <img class="iframe__logo" src="@routes.Assets.versioned("images/img-layout/lunatech_logo_draw.svg")" alt="Lunatech Logo Draw">
-            <img class="iframe__baseline" src="@routes.Assets.versioned("images/img-layout/lunatech_baseline.svg")" alt="Lunatech Logo Baseline">
+            <img src="@routes.Assets.versioned("images/img-layout/lunatech_logo_draw.svg")" onload="SVGInject(this)">
+            <img src="@routes.Assets.versioned("images/img-layout/lunatech_baseline.svg")" onload="SVGInject(this)">
         </div>
         <div class="section1-bottom">
             <div class="language">
@@ -53,10 +53,10 @@
 				<button class="social__btn" id="social-toggle">Follow us</button>
 				<div class="social__overlay is-hidden" id="social-content">
 					<div class="social__list">
-                        <a class="social__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")" alt="Github Logo"></a>
-                        <a class="social__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")" alt="Instagram Logo"></a>
-						<a class="social__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")" alt="Linkedin Logo"></a>
-						<a class="social__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")" alt="Twitter Logo"></a>
+                        <a class="social__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")" onload="SVGInject(this)"></a>
+                        <a class="social__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")" onload="SVGInject(this)"></a>
+						<a class="social__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")" onload="SVGInject(this)"></a>
+						<a class="social__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")" onload="SVGInject(this)"></a>
 					</div>
 				</div>
 			</div>
@@ -173,7 +173,7 @@
             <div class="grid">
                 <div class="client__content">
                     <h2 class="client__title">Trusted by global businesses</h2>
-                    <p class="client__text">We work with the best minds from groundbreaking companies. Our software engineering expertise gives them the space to experiment and conduct research, dream, grow and excel.</p>
+                    <p class="client__text">We work with the best minds from groundbreaking companies.<br />Our software engineering expertise gives them the space to experiment and conduct research, dream, grow and excel.</p>
                     <div class="client__group">
                         <div class="client__card">
                             <img class="client__logo" src="/assets/images/customers/UPS-Logo.png" alt="UPS Logo"/>
@@ -203,8 +203,6 @@
                 <img class="partner__logo" src="/assets/images/img-content/partners/partners4.png" alt="AWS Logo"/>
                 <img class="partner__logo" src="/assets/images/img-content/partners/partners5.png" alt="Clever Cloud Logo"/>
                 <img class="partner__logo" src="/assets/images/img-content/partners/partners6.png" alt="Google Cloud Logo"/>
-            </div>
-            <div class="partner__part">
                 <img class="partner__logo" src="/assets/images/img-content/partners/partners2.png" alt="Lightbend Logo"/>
                 <img class="partner__logo" src="/assets/images/img-content/partners/partners3.png" alt="Redhat Logo"/>
                 <img class="partner__logo" src="/assets/images/img-content/partners/partners1.png" alt="Scala Center Logo"/>
@@ -302,14 +300,14 @@
                 <a href="https://blog.lunatech.com/" target="_blank">Blog</a>
                 <a href="https://recruitment.lunatech.com/" target="_blank">Join us</a>
                 <div class="dflex">
-                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")" alt="github logo"></a>
-                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")" alt="instagram logo"></a>
-                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")" alt="linkedin logo"></a>
-                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")" alt="twitter logo"></a>
+                    <a class="footer__link" href="https://github.com/lunatech-labs"><img src="@routes.Assets.versioned("images/img-content/github.svg")" onload="SVGInject(this)"></a>
+                    <a class="footer__link" href="https://www.instagram.com/lunatech_nl"><img src="@routes.Assets.versioned("images/img-content/instagram.svg")" onload="SVGInject(this)"></a>
+                    <a class="footer__link" href="https://www.linkedin.com/company/lunatech-research"><img src="@routes.Assets.versioned("images/img-content/linkedin.svg")" onload="SVGInject(this)"></a>
+                    <a class="footer__link" href="https://twitter.com/lunatechlabs"><img src="@routes.Assets.versioned("images/img-content/twitter.svg")" onload="SVGInject(this)"></a>
                 </div>
             </div>
             <div class="footer__part">
-                <p>© 2023 Lunatech. All rights reserved.</p>
+                <p>© <script>document.write(new Date().getFullYear())</script> Lunatech. All rights reserved.</p>
                 <a href="/assets/docs/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of service</a>
             </div>
         </div>

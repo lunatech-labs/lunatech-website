@@ -13,12 +13,15 @@
         border-bottom: $border;
         @include desktop {
             grid-column: span 12;
-            padding: 80px;
+            padding: 64px;
+            font-size: 80px;
         }
         @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
             border-left: none;
+            justify-content: left;
+            padding: 32px;
         }
     }
     &__part {
@@ -27,10 +30,14 @@
         height: 560px;
         @include desktop {
             grid-column: span 6;
+            padding: 64px;
+            height: 500px;
         }
         @include phone-landscape {
             grid-column: span 12;
             border-right: none;
+            height: initial;
+            padding: 32px;
         }
         &:first-child {
             border-right: $border;

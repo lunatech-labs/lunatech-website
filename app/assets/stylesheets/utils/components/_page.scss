@@ -7,29 +7,43 @@
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-
+    @include desktop {
+        padding: 64px;
+    }
     @include phone-landscape {
         padding: 32px;
+        height: 100vh;
     }
 }
 .iframe {
-    display: flex;
-    justify-content: center;
+    @include flexbox;
     flex-direction: column;
     z-index: 1;
-
     &__logo {
         height: 480px;
         margin-bottom: 48px;
+        path {fill: var(--draw-bg);}
+        @include phone-landscape {
+            height: 240px;
+        }
     }
-
     &__baseline {
         height: 24px;
+        path {fill: var(--text-primary);}
+        @include phone-landscape {
+            width: 80%;
+        }
     }
 }
 .section1-top {
     @include flexbox;
     justify-content: space-between;
+    z-index: 1;
+    a:first-child {
+        path:nth-child(2), path:nth-child(3), path:nth-child(4), path:nth-child(5), path:nth-child(6), path:nth-child(7), path:nth-child(8), path:nth-child(9) {
+            fill: var(--text-primary);
+        }
+    }
 }
 .section1__iframe {
 
@@ -59,18 +73,35 @@
     position: relative;
     overflow: hidden;
     position: relative;
+    @include desktop {
+        padding: 128px 0;
+    }
     @include phone-landscape {
         height: initial;
-        padding: 192px 32px;
+        padding: 64px 32px;
     }
     &__img {
         position: absolute;
         bottom: 178px;
+        @include desktop {
+            width: 40%;
+            bottom: 170px;
+        }
+        @include phone-landscape {
+            display: none;
+        }
     }
     &__summary {
         font-size: 32px;
         grid-column: 3 / 11;
         color: var(--text-secondary);
+        @include desktop {
+            font-size: 24px;
+        }
+        @include phone-landscape {
+            font-size: 20px;
+            margin-bottom: -20px;
+        }
     }
     &__title {
         font-size: 128px;
@@ -78,23 +109,29 @@
         margin-bottom: 160px;
         @include desktop {
             font-size: 96px;
-            line-height: 128px;
+            margin-bottom: 32px;
         }
-
         @include tablet {
             font-size: 72px;
             line-height: 88px;
         }
-
         @include phone-landscape {
             font-size: 40px;
             line-height: 48px;
             grid-column: span 12;
+            margin-bottom: 0;
         }
     }
     &__subtitle {
         font-size: 64px;
         margin-bottom: 64px;
+        @include desktop {
+            font-size: 48px;
+            margin-bottom: 32px;
+        }
+        @include phone-landscape {
+            font-size: 28px;
+        }
     }
     &__content {
         grid-column: 6 / 12;
@@ -103,21 +140,25 @@
         font-size: 24px;
         color: var(--text-secondary);
         line-height: 36px;
-        @include desktop {
-            grid-column: 5 / 11;
-        }
-    
         @include tablet {
-            grid-column: 5 / 12;
             font-size: 24px;
         }
-    
+        &:first-child {
+            margin-bottom: 64px;
+            @include desktop {
+                margin-bottom: 32px;
+            }
+        }
+        &:nth-child(3) {
+            padding-left: 64px;
+            @include phone-landscape {
+                padding-left: 0;
+            }
+        }
         @include phone-landscape {
-            grid-column: 3 / 13;
-            font-size: 24px;
+            font-size: 20px;
+            line-height: 32px;
         }
-        &:first-child {margin-bottom: 64px;}
-        &:nth-child(3) {padding-left: 64px;}
     }
 }
 .section2-circles {
@@ -128,6 +169,9 @@
     height: 542px;
     bottom: -271px;
     right: -271px;
+    @include tablet {
+        display: none;
+    }
 }
 .section2-circles div {
     position: absolute;
@@ -214,7 +258,6 @@
 .section4-title {
     font-size: 96px;
     line-height: 108px;
-
     @include desktop {
         font-size: 56px;
         line-height: 68px;

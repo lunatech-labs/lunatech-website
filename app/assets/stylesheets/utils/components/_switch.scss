@@ -1,7 +1,7 @@
 
 .c-theme {
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
 	display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     margin-right: 16px;
     background: none;
 	&:hover, &:focus {
-		background: #f3f3f3;
+		background: #c2c2c22f;
 	}
 	&:focus {
 		outline: none;
@@ -28,6 +28,7 @@
 		width: 24px;
 		height: 24px;
         margin-bottom: 12px;
+		path {fill: var(--text-primary);}
         &:last-child {margin-bottom: 0;}
 		&:focus {
 			outline: none;

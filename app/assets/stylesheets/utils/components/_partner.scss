@@ -2,6 +2,13 @@
     padding: 128px 0;
     @include flexbox;
     flex-direction: column;
+    @include desktop {
+        padding: 128px 80px;
+    }
+    @include phone-landscape {
+        padding: 64px 32px;
+        align-items: flex-start;
+    }
     &__title {
         font-size: 64px;
         color: var(--text-primary);
@@ -12,10 +19,20 @@
         }
         @include phone-landscape {
             margin-bottom: 80px;
+            font-size: 40px;
         }
     }
     &__part {
         @include flexbox;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 322px;
+        @include desktop {
+            padding: 0;
+        }
+        @include phone-landscape {
+            justify-content: flex-start;
+        }
     }
     &__logo {
         margin-right: 80px;
@@ -24,9 +41,11 @@
         }
     }
 }
-.partner__part:nth-child(2) .partner__logo:first-child {height: 45px;}
-.partner__part:nth-child(2) .partner__logo:nth-child(2) {height: 57px;}
-.partner__part:nth-child(2) .partner__logo:nth-child(3) {height: 124px;}
-.partner__part:nth-child(3) .partner__logo:first-child {height: 47px;}
-.partner__part:nth-child(3) .partner__logo:nth-child(2) {height: 70px;}
-.partner__part:nth-child(3) .partner__logo:nth-child(3) {height: 135px;}
+.partner__part .partner__logo:first-child {height: 45px;}
+.partner__part .partner__logo:nth-child(2) {
+    height: 57px;
+}
+.partner__part .partner__logo:nth-child(3) {height: 124px;}
+.partner__part .partner__logo:nth-child(4) {height: 47px;}
+.partner__part .partner__logo:nth-child(5) {height: 70px;}
+.partner__part .partner__logo:nth-child(6) {height: 135px;}

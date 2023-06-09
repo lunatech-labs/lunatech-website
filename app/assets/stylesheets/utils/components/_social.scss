@@ -22,10 +22,12 @@
     }
     &__link {
         margin-bottom: 24px;
-        img {
+        svg {
             width: 24px;
+            path {fill: var(--text-primary);}
         }
     }
+
 }
 .social__overlay {
     position: absolute;

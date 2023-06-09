@@ -54,11 +54,14 @@
 }
 .mouse-scroll {
     position: absolute;
-    top: -18px;
+    top: -20px;
     left: 50.06%;
     transform: translate(-50%, -50%);
     cursor: auto;
     z-index: 1;
+    @include phone-landscape {
+        display: none;
+    }
 }
 .mouse-scroll .mouse {
     position: relative;

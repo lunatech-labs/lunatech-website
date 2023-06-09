@@ -3,6 +3,7 @@
     --light-surface: #FFFFFF;
     --light-bg: #FBFBFB;
     --light-bottom-bg: #EFEFEF;
+	--light-draw-bg: #35353A;
 	--light-border: #DDDDDD;
     --light-primary: #EA212E;
 	--light-text-primary: #1D1D1F;
@@ -11,18 +12,10 @@
 	// dark theme
 	--dark-surface: #090909;
     --dark-bg: #1F1F21;
-    --dark-bottom-bg: #EFEFEF;
-	--dark-border: #4E4E4E;
+    --dark-bottom-bg: #000000;
+	--dark-draw-bg: #3E3E3E;
+	--dark-border: #2C2C2C;
     --dark-primary: #EA212E;
 	--dark-text-primary: #FFFFFF;
 	--dark-text-secondary: #AFAFAF;
-	
-	// neon theme
-	--neon-surface: #161a3a;
-    --neon-bg: #121531;
-    --neon-bottom-bg: #000421;
-	--neon-border: #1f254a;
-    --neon-primary: #ff346d;
-	--neon-text-primary: #FFFFFF;
-	--neon-text-secondary: #657cb1;
 }
