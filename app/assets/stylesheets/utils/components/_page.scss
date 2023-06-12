@@ -19,7 +19,7 @@
     @include flexbox;
     flex-direction: column;
     z-index: 1;
-    &__logo {
+    svg:first-child {
         height: 480px;
         margin-bottom: 48px;
         path {fill: var(--draw-bg);}
@@ -27,7 +27,7 @@
             height: 240px;
         }
     }
-    &__baseline {
+    svg:nth-child(2) {
         height: 24px;
         path {fill: var(--text-primary);}
         @include phone-landscape {
