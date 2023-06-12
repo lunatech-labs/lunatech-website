@@ -42,10 +42,10 @@
     }
 }
 .partner__part .partner__logo:first-child {height: 45px;}
-.partner__part .partner__logo:nth-child(2) {
-    height: 57px;
+.partner__part .partner__logo:nth-child(2) {height: 50px;}
+.partner__part .partner__logo:nth-child(5) {
+    path:nth-child(4) {
+        fill: var(--text-primary);
+    }
 }
-.partner__part .partner__logo:nth-child(3) {height: 124px;}
-.partner__part .partner__logo:nth-child(4) {height: 47px;}
-.partner__part .partner__logo:nth-child(5) {height: 70px;}
 .partner__part .partner__logo:nth-child(6) {height: 135px;}
