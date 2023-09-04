@@ -5,6 +5,10 @@
 // @media (max-width: 1399.98px) { ... }
 // ... { ... }
 
+// `xxl` applies to large devices (desktops, less than 1200px)
+@mixin desktop-up {
+    @media (max-width: 1499.98px) {@content;}
+}
 // `xl` applies to large devices (desktops, less than 1200px)
 @mixin desktop {
     @media (max-width: 1199.98px) {@content;}

@@ -27,11 +27,12 @@
     &__part {
         grid-column: span 3;
         padding: 80px;
-        height: 560px;
+        min-height: 560px;
         @include desktop {
             grid-column: span 6;
             padding: 64px;
             height: 500px;
+            min-height: initial;
         }
         @include phone-landscape {
             grid-column: span 12;
