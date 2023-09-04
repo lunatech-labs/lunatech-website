@@ -72,7 +72,7 @@
     @include flexbox;
     position: relative;
     overflow: hidden;
-    position: relative;
+    flex-direction: column;
     @include desktop {
         padding: 128px 0;
     }
@@ -82,10 +82,11 @@
     }
     &__img {
         position: absolute;
-        bottom: 178px;
-        @include desktop {
+        left: 0;
+        top: 50%;
+        transform: translate(0%, -50%);
+        @include desktop-up {
             width: 40%;
-            bottom: 170px;
         }
         @include phone-landscape {
             display: none;

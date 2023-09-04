@@ -18,6 +18,8 @@
         flex-direction: column;
         justify-content: center;
         height: 1120px;
+        transition: 1s;
+        background-position: 60%;
         @include desktop {
             width: 50%;
             height: 740px;
@@ -33,9 +35,17 @@
             border-left: $border;
         }
         &:hover {
-            background-size: cover;
             background-position: 50%;
-            background-repeat: none;
+            background-size: cover;
+        }
+        &:hover .office__country {
+            color: rgba(255, 255, 255, 0.828);
+        }
+        &:hover .office__city {
+            color: white;
+        }
+        &:hover > div {
+            background: black;
         }
         &:first-child:hover {
             background-image: url("/assets/images/img-content/amsterdam.jpg");
@@ -51,6 +61,10 @@
         }
         &:nth-child(5):hover {
             background-image: url("/assets/images/img-content/newcastle.jpg");
+        }
+        > div {
+            padding: 8px 16px;
+            
         }
     }
     &__country {
