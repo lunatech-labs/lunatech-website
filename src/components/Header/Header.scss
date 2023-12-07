@@ -1,0 +1,13 @@
+@import "/src/styles/Mixins.scss";
+
+.header {
+    @include flexbox;
+    justify-content: space-between;
+    padding: 64px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    &__logo {
+        height: 40px;
+    }
+}

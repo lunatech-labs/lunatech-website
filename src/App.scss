@@ -1,0 +1,88 @@
+// ----------------------- Imports -----------------------
+@import "./styles/Reset.scss";
+@import "./styles/Responsive.scss";
+@import "./styles/Fonts.scss";
+@import "./styles/Variables.scss";
+@import "./styles/Mixins.scss";
+@import "./styles/Utils.scss";
+
+// ----------------------- General -----------------------
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: #071F4D;
+}
+
+/* ------------- HERO ------------- */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(#061C45, #062149, #063256, #064E6C, #06748A, #068A9C);
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: calc(var(--index) * -4.5);
+    width: 100%;
+    height: calc(var(--index) * 10);
+    background-image: url(../img/ground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 77;
+}
+
+.landscape__clouds {
+    background-image: url("../public/clouds.svg");
+    @include illustration;
+    z-index: 2;
+}
+.landscape__mountains {
+    background-image: url("../public/mountains.svg");
+    @include illustration;
+    z-index: 3;
+}
+.landscape__grass {
+    background-image: url("../public/grass.svg");
+    @include illustration;
+    z-index: 4;
+}
+.layers__front {
+    background-image: url("../img/layer-front2.png");
+    @include illustration;
+    transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    z-index: 5;
+}
+.main-article {
+    --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+    top: -1px;
+    color: var(--text);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    z-index: 7;
+    background: red;
+}
+.main-article__header {
+    text-transform: uppercase;
+    font-size: calc(var(--index) * 1.8);
+    letter-spacing: calc(var(--index) / 8);
+    transform: var(--main-article-transform);
+    transition: var(--transition);
+    will-change: transform;
+}
+.main-article__paragraph {
+    max-width: calc(var(--index) * 30);
+    font-size: calc(var(--index) * 0.85);
+    margin-top: calc(var(--index) / 1.1);
+    transform: var(--main-article-transform);
+    transition: var(--transition);
+    will-change: transform;
+}
+  

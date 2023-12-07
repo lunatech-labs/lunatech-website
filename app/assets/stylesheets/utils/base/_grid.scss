@@ -1,9 +1,0 @@
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 32px;
-    @include phone-landscape {
-        display: flex;
-        flex-direction: column;
-    }
-}
