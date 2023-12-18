@@ -4,18 +4,14 @@ import Grid from '../components/Grid/Grid';
 import Category from '../components/Category/Category';
 import Title from '../components/Title/Title';
 import Text from '../components/Text/Text';
+import Client from '../components/Client/Client';
 import planet from '/planet.png';
-import ServiceCard from '../components/Card/ServiceCard';
-import serviceCardData from '../components/Card/serviceCardData';
-import OfficeCard from '../components/Card/OfficeCard';
-import officeCardData from '../components/Card/officeCardData';
-
-import dhlLogo from '/dhl-logo.svg';
-import ingLogo from '/ing-logo.svg';
-import msAmlinLogo from '/ms-amlin-logo.svg';
-import audiLogo from '/audi-logo.svg';
-import upsLogo from '/ups-logo.svg';
-import enecogenLogo from '/enecogen-logo.svg';
+import ServiceCard from '../components/ServiceCard/ServiceCard';
+import serviceCardData from '../components/ServiceCard/serviceCardData';
+import OfficeCard from '../components/OfficeCard/OfficeCard';
+import officeCardData from '../components/OfficeCard/officeCardData';
+import TestimonialCard from '../components/TestimonialCard/TestimonialCard';
+import testimonialCardData from '../components/TestimonialCard/testimonialCardData';
 
 const Home = () => {
     const [toggle, setToggle] = useState(1);
@@ -36,6 +32,15 @@ const Home = () => {
     const officeCard = officeCardData.map((data)=> {
         return (
             <OfficeCard
+                key={data.id}
+                {...data}
+            />
+        )
+    })
+
+    const testimonialCard = testimonialCardData.map((data)=> {
+        return (
+            <TestimonialCard
                 key={data.id}
                 {...data}
             />
@@ -100,14 +105,19 @@ const Home = () => {
                 </Container>
             </section>
 
-            <section className="client">
+            <Client />
+
+            <section className="testimonial">
                 <Container>
-                    <img src={dhlLogo} className="client__logo" alt="DHL logo" />
-                    <img src={ingLogo} className="client__logo" alt="ING logo" />
-                    <img src={msAmlinLogo} className="client__logo" alt="MS Amlin logo" />
-                    <img src={audiLogo} className="client__logo" alt="Audi logo" />
-                    <img src={upsLogo} className="client__logo" alt="UPS logo" />
-                    <img src={enecogenLogo} className="client__logo" alt="Enecogen logo" />
+                    <Grid>
+                        <div className="testimonial__left">
+                            <Category content="Testimonial" />
+                            <Title content="See what our employees have to say." />
+                        </div>
+                    </Grid>
+                    <div className="testimonial__content">
+                        {testimonialCard}
+                    </div>
                 </Container>
             </section>
 

@@ -1,26 +1,14 @@
-import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Home from "./pages/Home";
-import Services from './pages/Services';
-import Works from './pages/Works';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-
+import Footer from './components/Footer/Footer';
+import RoutesMap from './RoutesMap';
 import "./App.scss";
 
 function App() {
     return (
         <>
             <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/works" element={<Works />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
+            <RoutesMap />
+            <Footer />
         </>
     );
 }

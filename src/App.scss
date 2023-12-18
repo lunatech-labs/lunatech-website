@@ -180,21 +180,17 @@ body {
         grid-column: 7/13;
     }
 }
-.client {
-    background: linear-gradient(#0A1E50, #081A47);
-    border-top: 1px solid #78B4D7;
-    border-bottom: 1px solid #78B4D7;
-    padding: 54px 0;
-    > div {
+.testimonial {
+    padding: 128px 0;
+    &__left {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        grid-column: span 4;
     }
-    &__logo {
-        
+    &__content {
+        display: flex;
     }
 }
-
 
 
 
