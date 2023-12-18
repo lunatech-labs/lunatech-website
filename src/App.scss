@@ -10,7 +10,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    background: #071F4D;
+    background: linear-gradient(150deg, #154C98, #081639);
+    background-attachment: fixed;
 }
 
 /* ------------- HERO ------------- */
@@ -19,6 +20,9 @@ body {
     position: relative;
     height: 100vh;
     background: linear-gradient(#061C45, #062149, #063256, #064E6C, #06748A, #068A9C);
+    &__stars {
+        background-size: 100%;
+    }
 }
 .hero::after {
     content: '';
@@ -71,11 +75,7 @@ body {
 }
 .landscape__mist {
     background-image: url("../public/mist.svg");
-    background-repeat: no-repeat;
-    background-position: 0 96px;
-    background-size: 100%;
-    height: 100%;
-    opacity: .16;
+    @include illustration;
 }
 .landscape__clouds {
     background-image: url("../public/clouds.svg");
@@ -126,6 +126,74 @@ body {
 }
   
 
+/* ------------- SERVICES ------------- */
+.services {
+    padding: 128px 0;
+    &__img {
+        grid-column: 1/6;
+        width: 100%;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        grid-column: 7/13;
+    }
+}
+.works {
+    padding: 128px 0;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 6;
+    }
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: linear-gradient(#0A1E50, #081A47);
+    border-radius: 16px;
+    border: 1px solid #78B4D7;
+    padding: 8px;
+    &__entry {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 64px;
+        padding: 0 32px;
+    }
+}
+
+.tab-entry {
+    display: none;
+}
+.show-tab-entry {
+    display: block;
+    margin-top: 64px;
+}
+.about {
+    padding: 128px 0;
+    &__right {
+        display: flex;
+        flex-direction: column;
+        grid-column: 7/13;
+    }
+}
+.client {
+    background: linear-gradient(#0A1E50, #081A47);
+    border-top: 1px solid #78B4D7;
+    border-bottom: 1px solid #78B4D7;
+    padding: 54px 0;
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        
+    }
+}
 
 
 
@@ -220,7 +288,7 @@ body {
   }
   
   #artback {
-
+    background: red;
   }
   #mist {
     background-image: url("../public/mist.svg");
