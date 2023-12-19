@@ -10,7 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    background: linear-gradient(150deg, #154C98, #081639);
+    background: linear-gradient(135deg, #113e7d, #081639);
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -26,6 +26,7 @@ body {
             position: absolute;
             bottom: 0;
             z-index: 2;
+            width: 100%;
         }
     }
     &__content {
