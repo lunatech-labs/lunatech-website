@@ -29,6 +29,7 @@ import Wallet from '/wallet.svg';
 import Skyscraper from '/skyscraper.svg';
 import Buildings from '/buildings.svg';
 import Office from '/office.svg';
+import Star from '/stars.png';
 
 
 const Home = () => {
@@ -110,17 +111,17 @@ const Home = () => {
                             </ServiceCard>
                         </Grid>
                     </div>
-
                     <div className={toggle === 2 ? "show-tab-entry" : "tab-entry"}>
                         <p>Content 2</p>
                     </div>
-
                 </Container>
+                <img className="works__moon" src={Moon} alt="Moon" />
             </section>
 
             <section className="about">
                 <Container>
                     <Grid>
+                        <img className="about__moon" src={Moon} alt="Moon" />
                         <div className="about__right">
                             <Category content="About" />
                             <Title content={<>Our <span>culture</span>.</>} />
@@ -160,6 +161,7 @@ const Home = () => {
                         {testimonialCard}
                     </div>
                 </Container>
+                <img className="testimonial__moon" src={Moon} alt="Moon" />
             </section>
 
             <section className="contact">
@@ -175,6 +177,63 @@ const Home = () => {
                         <ContactCard title="Rejoignez-nous" text="Consultez nos différentes offres d’emploi.">
                             <Icon imageUrl={Wallet} size="large" />
                         </ContactCard>
+                    </Grid>
+                </Container>
+                <img className="contact__star" src={Star} alt="Stars" />
+            </section>
+
+            <section className="address">
+                <Container>
+                    <Grid>
+                        <div className="address__card">
+                            <p className="address__title">Netherlands</p>
+                            <div className="address__part">
+                                <p className="address__subtitle">Business development</p>
+                                <div className="address__join">
+                                    <a className="address__link" href="mailto:info@@lunatech.nl">info@@lunatech.nl</a>
+                                    <span></span>
+                                    <a className="address__link" href="tel:+31107502600">+31 10 750 2600</a>
+                                </div>
+                            </div>
+                            <div className="address__part">
+                                <p className="address__subtitle">Careers</p>
+                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@@lunatech.nl</a>
+                            </div>
+                            <div className="address__part">
+                                <p className="address__subtitle">Address</p>
+                                <p className="address__text">Hofplein 20</p>
+                                <p className="address__text">3032 AC Rotterdam</p>
+                            </div>
+                        </div>
+                        <div className="address__card">
+                            <p className="address__title">France</p>
+                            <div className="address__part">
+                                <p className="address__subtitle">Business development</p>
+                                <div className="address__join">
+                                    <a className="address__link" href="mailto:info@@lunatech.fr">info@@lunatech.fr</a>
+                                    <span></span>
+                                    <a className="address__link" href="tel:+33182885664">+33 1 82 88 56 64</a>
+                                </div>
+                            </div>
+                            <div className="address__part">
+                                <p className="address__subtitle">Careers</p>
+                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@@lunatech.fr</a>
+                            </div>
+                            <div className="address__part">
+                                <p className="address__subtitle">Address</p>
+                                <p className="address__text">3 rue de la Galmy</p>
+                                <p className="address__text">77700 Chessy</p>
+                            </div>
+                        </div>
+                        <div className="address__card">
+                            <p className="address__title">Royaume-Uni</p>
+                            <div className="address__part">
+                                <p className="address__subtitle">Business development</p>
+                                <div className="address__join">
+                                    <a className="address__link" href="tel:+3228085713">+44 (0) 7875 695 964</a>
+                                </div>
+                            </div>
+                        </div>
                     </Grid>
                 </Container>
             </section>

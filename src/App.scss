@@ -12,6 +12,7 @@ body {
     font-weight: 400;
     background: linear-gradient(150deg, #154C98, #081639);
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /* ------------- HERO ------------- */
@@ -66,43 +67,6 @@ body {
     }
 }
 
-
-
-
-
-.main-article {
-    --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
-    top: -1px;
-    color: var(--text);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    z-index: 7;
-    background: red;
-}
-.main-article__header {
-    text-transform: uppercase;
-    font-size: calc(var(--index) * 1.8);
-    letter-spacing: calc(var(--index) / 8);
-    transform: var(--main-article-transform);
-    transition: var(--transition);
-    will-change: transform;
-}
-.main-article__paragraph {
-    max-width: calc(var(--index) * 30);
-    font-size: calc(var(--index) * 0.85);
-    margin-top: calc(var(--index) / 1.1);
-    transform: var(--main-article-transform);
-    transition: var(--transition);
-    will-change: transform;
-}
-  
-
 /* ------------- SERVICES ------------- */
 .services {
     padding: 128px 0;
@@ -118,10 +82,17 @@ body {
 }
 .works {
     padding: 128px 0;
+    position: relative;
     &__left {
         display: flex;
         flex-direction: column;
         grid-column: span 6;
+    }
+    &__moon {
+        position: absolute;
+        top: -360px;
+        right: -370px;
+        z-index: -1;
     }
 }
 
@@ -151,6 +122,10 @@ body {
 }
 .about {
     padding: 128px 0;
+    &__moon {
+        grid-column: span 5;
+        width: 100%;
+    }
     &__right {
         display: flex;
         flex-direction: column;
@@ -159,6 +134,7 @@ body {
 }
 .testimonial {
     padding: 128px 0;
+    position: relative;
     &__left {
         display: flex;
         flex-direction: column;
@@ -170,6 +146,68 @@ body {
         justify-content: space-between;
         margin-top: 96px;
     }
+    &__moon {
+        position: absolute;
+        top: -280px;
+        z-index: -1;
+        width: 1150px;
+        right: 180px;
+    }
+}
+
+.contact {
+    position: relative;
+    &__star {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        width: 100%;
+    }
+}
+.address {
+    background: var(--bg);
+    padding: 128px 0;
+    color: white;
+    &__card {
+        grid-column: span 4;
+    }
+    &__title {
+        font-size: 24px;
+        margin-bottom: 32px;
+        opacity: .5
+    }
+    &__part {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__subtitle {
+        font-size: 20px;
+        line-height: 36px;
+        opacity: .5;
+    }
+    &__join {
+        @include flexbox;
+        span {
+            margin: 0 16px;
+            display: flex;
+            height: 24px;
+            width: 1px;
+            background: var(--border);
+        }
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 36px;
+        opacity: .5
+    }
+    &__link {
+        font-size: 20px;
+        line-height: 36px;
+    }
+   
 }
 
 

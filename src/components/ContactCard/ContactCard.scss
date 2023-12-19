@@ -8,6 +8,7 @@
     grid-column: span 6;
     @include dark-gradient;
     position: relative;
+    margin-top: 128px;
     .icon {
         position: absolute;
         top: -64px;

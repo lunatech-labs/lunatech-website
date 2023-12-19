@@ -8,6 +8,7 @@
         position: relative;
         padding: 48px;
         width: 472px;
+        margin-bottom: 90px;
         &:nth-child(odd) {@include light-gradient;}
         &:nth-child(even) {@include dark-gradient;}
         &:nth-child(2) {
