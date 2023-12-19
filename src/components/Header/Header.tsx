@@ -1,5 +1,5 @@
 import Menu from '../Menu/Menu';
-import lunatechLogo from '/lunatech-logo.svg'
+import lunatechLogo from '/lunatech-logo.svg';
 import "./Header.scss";
 
 const Header = () => {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Container from '../components/Container/Container';
 import Grid from '../components/Grid/Grid';
+import Stars from '../components/Stars/Stars';
 import Category from '../components/Category/Category';
 import Title from '../components/Title/Title';
 import Text from '../components/Text/Text';
@@ -12,6 +13,12 @@ import OfficeCard from '../components/OfficeCard/OfficeCard';
 import officeCardData from '../components/OfficeCard/officeCardData';
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard';
 import testimonialCardData from '../components/TestimonialCard/testimonialCardData';
+
+import Mist from '/mist.svg';
+import Clouds from '/clouds.svg';
+import Mountains from '/mountains.svg';
+import Grass from '/grass.svg';
+import Telescope from '/telescope.svg';
 
 const Home = () => {
     const [toggle, setToggle] = useState(1);
@@ -49,6 +56,26 @@ const Home = () => {
 
     return (
         <>
+            <section className="hero">
+                <div className="hero__background">
+                    <img src={Mist} className="" alt="Mist" />
+                    <img src={Clouds} className="" alt="Clouds" />
+                    <img src={Mountains} className="" alt="Mountains" />
+                    <img src={Grass} className="" alt="Grass" />
+                    <img src={Telescope} className="" alt="Telescope" />
+                    <Stars />
+                </div>
+                
+                <Container>
+                    <Grid>
+                        <div className="hero__content">
+                            <h1>Create and Modernize your <span>digital products</span> for tomorrow's future.</h1>
+                            <p>We think and design unique experiences<br />for tomorrow's innovative digital products.</p>
+                            <a href="#">Let's talk</a>
+                        </div>
+                    </Grid>
+                </Container>
+            </section>
             <section className="services">
                 <Container>
                     <Grid>

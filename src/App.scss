@@ -20,28 +20,21 @@ body {
     position: relative;
     height: 100vh;
     background: linear-gradient(#061C45, #062149, #063256, #064E6C, #06748A, #068A9C);
-    &__stars {
-        background-size: 100%;
+    &__background {
+        img {
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+        }
     }
 }
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: calc(var(--index) * -4.5);
-    width: 100%;
-    height: calc(var(--index) * 10);
-    background-image: url(../img/ground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 77;
-}
-.hero-content {
-    padding: 64px;
+.hero__content {
     height: 100vh;
-    display: inline-flex;
+    grid-column: span 8;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 3;
     h1 {
         font-family: "OffBitTrial";
         font-weight: 400;
@@ -73,6 +66,10 @@ body {
         margin-top: 24px;
     }
 }
+
+
+
+
 .landscape__mist {
     background-image: url("../public/mist.svg");
     @include illustration;
