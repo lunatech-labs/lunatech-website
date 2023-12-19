@@ -1,19 +1,17 @@
+@import "/src/styles/Mixins.scss";
+
 .office-card {
+    padding: 48px 0;
+    @include dark-gradient;
+    grid-column: span 4;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#0A1E50, #081A47);
-    border: 1px solid #78B4D7;
-    border-radius: 16px;
-    padding: 48px 36px;
-    grid-column: span 4;
     &__icon {
         color: #78B4D7;
         margin-bottom: 32px;
         padding: 24px;
-        background: linear-gradient(#0A3269, #0a32696d);
-        border: 1px solid #78B4D7;
-        border-radius: 16px;
+        @include light-gradient;
     }
     &__title {
         font-family: "OffBitTrial";
@@ -21,5 +19,6 @@
         color: white;
         margin-bottom: 16px;
         font-size: 24px;
+        text-align: center;
     }
 }

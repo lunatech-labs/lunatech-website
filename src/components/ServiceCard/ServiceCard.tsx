@@ -1,15 +1,15 @@
 import "./ServiceCard.scss";
 
 interface CardProps {
-    icon: any;
     title: string;
     text: string;
+    children: JSX.Element;
 }
 
 const ServiceCard = (props: CardProps) => {
     return (
         <div className="service-card">
-            <img src={props.icon} className="service-card__icon" alt="Car" />
+            {props.children}
             <h3 className="service-card__title">{props.title}</h3>
             <p className="service-card__text">{props.text}</p>
         </div>

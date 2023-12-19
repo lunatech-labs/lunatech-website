@@ -10,7 +10,7 @@ interface TestimonialProps {
 const Testimonial = (props: TestimonialProps) => {
     return (
         <div className="testimonial__card">
-            <img src={quote} className="testimonial__icon" alt="Quote" />
+            <img className="testimonial__icon" src={quote} alt="Quote" />
             <p className="testimonial__text">{props.text}</p>
             <div className="testimonial__user">
                 <img src={props.picture} className="testimonial__picture" alt="User picture" />

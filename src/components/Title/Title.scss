@@ -1,6 +1,11 @@
+@import "/src/styles/Mixins.scss";
+
 .title {
     font-family: "OffBitTrial";
     font-size: 64px;
     color: white;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    span {
+        @include red-title;
+    }
 }

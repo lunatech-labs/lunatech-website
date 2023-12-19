@@ -27,34 +27,33 @@ body {
             z-index: 2;
         }
     }
-}
-.hero__content {
-    height: 100vh;
-    grid-column: span 8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 3;
-    h1 {
+    &__content {
+        height: 100vh;
+        grid-column: span 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 3;
+    }
+    &__moon {
+        grid-column: span 4;
+        width: 100%;
+    }
+    &__title {
         font-family: "OffBitTrial";
         font-weight: 400;
         font-size: 80px;
         color: white;
         span {
-            font-family: "OffBitTrial";
-            font-weight: 700;
-            background: -webkit-linear-gradient(180deg,#E62631, #AE1920, #9B1919);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include red-title;
         }
     }
-    p {
+    &__text {
         font-size: 24px;
         opacity: .5;
         color: white;
     }
-    a {
+    &__button {
         font-weight: 700;
         color: white;
         border: 1px solid white;
@@ -70,26 +69,7 @@ body {
 
 
 
-.landscape__mist {
-    background-image: url("../public/mist.svg");
-    @include illustration;
-}
-.landscape__clouds {
-    background-image: url("../public/clouds.svg");
-    @include illustration;
-}
-.landscape__mountains {
-    background-image: url("../public/mountains.svg");
-    @include illustration;
-}
-.landscape__grass {
-    background-image: url("../public/grass.svg");
-    @include illustration;
-}
-.landscape__telescope {
-    background-image: url("../public/telescope.svg");
-    @include illustration;
-}
+
 .main-article {
     --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
     top: -1px;
@@ -186,6 +166,9 @@ body {
     }
     &__content {
         display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-top: 96px;
     }
 }
 

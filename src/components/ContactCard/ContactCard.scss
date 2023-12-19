@@ -1,0 +1,27 @@
+@import "/src/styles/Mixins.scss";
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 48px 48px 48px;
+    grid-column: span 6;
+    @include dark-gradient;
+    position: relative;
+    .icon {
+        position: absolute;
+        top: -64px;
+    }
+    &__title {
+        font-family: "OffBitTrial";
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 8px;
+        color: white;
+    }
+    &__text {
+        font-size: 24px;
+        opacity: .5;
+        color: white;
+    }
+}

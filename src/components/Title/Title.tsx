@@ -1,7 +1,7 @@
 import "./Title.scss";
 
 interface TitleProps {
-    content: string;
+    content: JSX.Element;
 }
 
 const Title = (props: TitleProps) => {

@@ -1,14 +1,22 @@
+@import "/src/styles/Mixins.scss";
+
 .testimonial {
     &__card {
         display: flex;
         align-items: center;
         flex-direction: column;
         position: relative;
-        background: linear-gradient(#0A3269, #0a32696d);
-        border: 1px solid #78B4D7;
-        border-radius: 16px;
         padding: 48px;
         width: 472px;
+        &:nth-child(odd) {@include light-gradient;}
+        &:nth-child(even) {@include dark-gradient;}
+        &:nth-child(2) {
+            position: absolute;
+            top: -96px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 1;
+        }
     }
     &__icon {
         margin-bottom: 32px;

@@ -1,19 +1,17 @@
+@import "/src/styles/Mixins.scss";
+
 .service-card {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#0A1E50, #081A47);
-    border: 1px solid #78B4D7;
-    border-radius: 16px;
+    @include dark-gradient;
     padding: 48px 24px;
     grid-column: span 3;
     &__icon {
         color: #78B4D7;
         margin-bottom: 32px;
         padding: 24px;
-        background: linear-gradient(#0A3269, #0a32696d);
-        border: 1px solid #78B4D7;
-        border-radius: 16px;
+        @include light-gradient;
     }
     &__title {
         font-family: "OffBitTrial";

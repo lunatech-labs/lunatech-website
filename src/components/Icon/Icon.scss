@@ -1,0 +1,28 @@
+@import "/src/styles/Mixins.scss";
+
+.icon {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include light-gradient;
+}
+.icon-small {
+    width: 96px;
+    height: 96px;
+}
+.icon-small .icon__img {
+    width: 48px;
+    height:48px;
+}
+
+
+
+.icon-large {
+    width: 128px;
+    height: 128px;
+}
+.icon-large .icon__img {
+    width: 64px;
+    height: 64px;
+}
