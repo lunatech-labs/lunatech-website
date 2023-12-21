@@ -190,14 +190,14 @@ const Home = () => {
                             <div className="address__part">
                                 <p className="address__subtitle">Business development</p>
                                 <div className="address__join">
-                                    <a className="address__link" href="mailto:info@@lunatech.nl">info@@lunatech.nl</a>
-                                    <span></span>
+                                    <a className="address__link" href="mailto:info@@lunatech.nl">info@lunatech.nl</a>
+                                    <span className="address__separate"></span>
                                     <a className="address__link" href="tel:+31107502600">+31 10 750 2600</a>
                                 </div>
                             </div>
                             <div className="address__part">
                                 <p className="address__subtitle">Careers</p>
-                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@@lunatech.nl</a>
+                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.nl</a>
                             </div>
                             <div className="address__part">
                                 <p className="address__subtitle">Address</p>
@@ -210,14 +210,14 @@ const Home = () => {
                             <div className="address__part">
                                 <p className="address__subtitle">Business development</p>
                                 <div className="address__join">
-                                    <a className="address__link" href="mailto:info@@lunatech.fr">info@@lunatech.fr</a>
-                                    <span></span>
+                                    <a className="address__link" href="mailto:info@@lunatech.fr">info@lunatech.fr</a>
+                                    <span className="address__separate"></span>
                                     <a className="address__link" href="tel:+33182885664">+33 1 82 88 56 64</a>
                                 </div>
                             </div>
                             <div className="address__part">
                                 <p className="address__subtitle">Careers</p>
-                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@@lunatech.fr</a>
+                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.fr</a>
                             </div>
                             <div className="address__part">
                                 <p className="address__subtitle">Address</p>

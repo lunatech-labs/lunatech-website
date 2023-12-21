@@ -1,0 +1,42 @@
+@import "/src/styles/Mixins.scss";
+
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    transition: transform .3s .1s ease-in-out;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    &__box {
+        width: 35px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+        margin-left: 12px;
+    }
+    &__inner {
+        @include hamburger-line;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color .1s .2s ease-in-out;
+        &::before, &::after {
+            content: '';
+            left: 0;
+            @include hamburger-line;
+            transition: transform .2s .2s ease-in-out;
+        }
+        &::before {top: -10px;}
+        &::after {top: 10px;}
+    }
+}
+.hamburger--active .hamburger__inner {background-color: transparent;}
+.hamburger--active .hamburger__inner:before {transform: translateY(10px) rotate(45deg);}
+.hamburger--active .hamburger__inner:after {transform: translateY(-10px) rotate(-45deg);}

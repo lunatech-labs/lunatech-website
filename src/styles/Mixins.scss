@@ -21,3 +21,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@mixin hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+}

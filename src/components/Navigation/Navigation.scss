@@ -1,0 +1,103 @@
+.navigation {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #113e7d, #081639);
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform .3s .1s ease-in-out;
+    &--active {
+        transform: translateX(0px);
+    }
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: calc(100% - 96px);
+    }
+    &__social {
+        padding: 64px;
+        border-right: 1px solid (rgb(255 255 255 / 25%));
+        height: 100%;
+        width: 384px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__social-item {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        img {
+            margin-right: 16px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+    }
+    &__menu {
+        padding: 64px;
+        width: calc(100% - 384px);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    &__menu-item {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        a {
+            font-family: "OffBitTrial";
+            font-size: 80px;
+            color: white;
+        }
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid (rgb(255 255 255 / 25%));
+        color: white;
+        height: 96px;
+    }
+    &__language {
+        border-right: 1px solid (rgb(255 255 255 / 25%));
+        width: 384px;
+        padding: 0 64px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__right {
+        padding: 0 64px;
+        height: 100%;
+        width: calc(100% - 384px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__border {
+        height: 1px;
+        width: 24px;
+        background: white;
+        opacity: .5;
+        margin: 0 8px;
+    }
+    &__way {
+        display: flex;
+        align-items: center;
+        > p:first-child {
+            opacity: .5;
+        }
+    }
+    &__red {
+        background: -webkit-linear-gradient(180deg,#9B1919, #AE1920, #E62631);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

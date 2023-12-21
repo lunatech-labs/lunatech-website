@@ -176,7 +176,6 @@ body {
     &__title {
         font-size: 24px;
         margin-bottom: 32px;
-        opacity: .5
     }
     &__part {
         margin-bottom: 32px;
@@ -191,22 +190,22 @@ body {
     }
     &__join {
         @include flexbox;
-        span {
-            margin: 0 16px;
-            display: flex;
-            height: 24px;
-            width: 1px;
-            background: var(--border);
-        }
     }
     &__text {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 36px;
-        opacity: .5
     }
     &__link {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 36px;
+    }
+    &__separate {
+        opacity: .5;
+        margin: 0 16px;
+        display: flex;
+        height: 24px;
+        width: 1px;
+        background: white;
     }
    
 }

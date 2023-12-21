@@ -8,6 +8,9 @@
     width: 100%;
     z-index: 10;
     &__logo {
+        z-index: 1;
+    }
+    &__img {
         height: 40px;
     }
 }
