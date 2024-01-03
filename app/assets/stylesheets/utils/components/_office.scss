@@ -12,7 +12,7 @@
         height: initial;
     }
     &__part {
-        width: 20%;
+        width: 25%;
         @include flexbox;
         border-right: $border;
         flex-direction: column;
@@ -48,18 +48,15 @@
             background: black;
         }
         &:first-child:hover {
-            background-image: url("/assets/images/img-content/amsterdam.jpg");
-        }
-        &:nth-child(2):hover {
             background-image: url("/assets/images/img-content/rotterdam.jpg");
         }
-        &:nth-child(3):hover {
+        &:nth-child(2):hover {
             background-image: url("/assets/images/img-content/paris.jpg");
         }
-        &:nth-child(4):hover {
+        &:nth-child(3):hover {
             background-image: url("/assets/images/img-content/brussels.jpg");
         }
-        &:nth-child(5):hover {
+        &:nth-child(4):hover {
             background-image: url("/assets/images/img-content/newcastle.jpg");
         }
         > div {
