@@ -14,13 +14,14 @@ import ContactCard from '../components/ContactCard/ContactCard';
 import Icon from '../components/Icon/Icon';
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
+import Sphere from '../components/Sphere/Sphere';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
 import Mountains from '/mountains.svg';
 import Grass from '/grass.svg';
 import Telescope from '/telescope.svg';
-import Moon from '/moon.png';
+import Moon from '/moon.svg';
 import Car from '/car.svg';
 import Shield from '/shield.svg';
 import Zap from '/zap.svg';
@@ -77,6 +78,7 @@ const Home = () => {
                         <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
                 </Container>
+                <Sphere />
             </section>
             <section className="services">
                 <Container>

@@ -27,6 +27,9 @@ body {
             bottom: 0;
             z-index: 2;
             width: 100%;
+            &:first-child {
+                top: 120px;
+            }
         }
     }
     &__content {
@@ -38,8 +41,10 @@ body {
         z-index: 3;
     }
     &__moon {
-        grid-column: span 4;
-        width: 100%;
+        position: absolute;
+        width: 220px;
+        right: 295px;
+        top: 92px;
     }
     &__title {
         font-size: 80px;
