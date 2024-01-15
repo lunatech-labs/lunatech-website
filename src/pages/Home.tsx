@@ -12,6 +12,8 @@ import TestimonialCard from '../components/TestimonialCard/TestimonialCard';
 import testimonialCardData from '../components/TestimonialCard/testimonialCardData';
 import ContactCard from '../components/ContactCard/ContactCard';
 import Icon from '../components/Icon/Icon';
+import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
+import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -19,7 +21,6 @@ import Mountains from '/mountains.svg';
 import Grass from '/grass.svg';
 import Telescope from '/telescope.svg';
 import Moon from '/moon.png';
-
 import Car from '/car.svg';
 import Shield from '/shield.svg';
 import Zap from '/zap.svg';
@@ -60,9 +61,18 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="hero__content">
-                            <h1 className="hero__title">Create and Modernize your <span>digital products</span> for tomorrow's future.</h1>
+                            <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
                             <Text content="We think and design unique experiences for tomorrow's innovative digital products." />
-                            <a className="hero__button" href="#">Let's talk</a>
+                            <div className="dflex">
+                                <ButtonPrimary
+                                    onClick={() => console.log("You clicked on the pink circle!")}
+                                    children = "Let's talk"
+                                />
+                                <ButtonSecondary
+                                    onClick={() => console.log("You clicked on the pink circle!")}
+                                    children = "About us"
+                                />
+                            </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
@@ -74,8 +84,8 @@ const Home = () => {
                         <img className="services__img" src={Moon} alt="Moon" />
                         <div className="services__right">
                             <Category content="Services" />
-                            <Title content={<>What is <span>lunatech</span> and what is its purpose?</>} />
-                            <Text content="Fort d’une expérience depuis plus de 30 ans dans le développement de systèmes logiciels sur mesure, Lunatech compte plus de 100 collaborateurs avec des bureaux à paris, rotterdam et new-castle. Lunatech a la capacité de prendre des décisions éclairées et avant-gardistes dans la création et l’évolution de logiciels sur mesure ainsi que la transformation de vos legacy system." />
+                            <Title content={<>Meet your needs with our <span>services</span></>} />
+                            <Text content="Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :" />
                         </div>
                     </Grid>
                 </Container>
