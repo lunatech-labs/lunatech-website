@@ -8,22 +8,28 @@ class Hamburger extends React.Component {
     }
       
     handleClick() {
-        const hamburger = document.querySelector('.hamburger');
+        const hamburger = document.querySelector('.hamburger__icon');
         const nav = document.querySelector('.navigation');
-        hamburger.classList.toggle('hamburger--active');
+        hamburger.classList.toggle('active');
         nav.classList.toggle('navigation--active');
     }
 
     render() {
         return (
-            <button className="hamburger" onClick={this.handleClick}>
-                menu
-                <span className="hamburger__box">
-                    <span className="hamburger__inner"></span>
-                </span>
-            </button>
+            <div className="hamburger">
+                <p className="hamburger__text">menu</p>
+                <button className="hamburger__icon" onClick={this.handleClick}>
+                    <span className="hamburger__dot"> </span>
+                    <span className="hamburger__dot"> </span>
+                    <span className="hamburger__dot"> </span>
+                </button>
+            </div>
         );
     }
 }
 
 export default Hamburger;
+
+
+
+
