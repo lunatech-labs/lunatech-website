@@ -1,0 +1,14 @@
+{
+    "title": "Bienvenue",
+    "hero": {
+        "button1": "Test fr",
+        "button2": "A propos"
+    },
+    "address": {
+        "careers": "Carrières"
+    },
+    "description": {
+      "part1": "Pour commencer",
+      "part2": "Ceci est une description"
+    }
+}

@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import '../i18n';
+
 import Container from '../components/Container/Container';
 import Grid from '../components/Grid/Grid';
 import Stars from '../components/Stars/Stars';
@@ -35,6 +38,11 @@ import Star from '/stars.png';
 
 
 const Home = () => {
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     const [toggle, setToggle] = useState(1);
 
     function updateToggle(id) {
@@ -68,12 +76,14 @@ const Home = () => {
                                 <ButtonPrimary
                                     className="mgr16"
                                     onClick={() => console.log("You clicked on the pink circle!")}
-                                    children = "Let's talk"
-                                />
+                                >
+                                    <Trans i18nKey="hero.button1" />
+                                </ButtonPrimary>
                                 <ButtonSecondary
                                     onClick={() => console.log("You clicked on the pink circle!")}
-                                    children = "About us"
-                                />
+                                >
+                                    <Trans i18nKey="hero.button2" />
+                                </ButtonSecondary>
                             </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
@@ -209,7 +219,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="address__part">
-                                <p className="address__subtitle">Careers</p>
+                                <p className="address__subtitle">{t('address.careers')}</p>
                                 <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.nl</a>
                             </div>
                             <div className="address__part">

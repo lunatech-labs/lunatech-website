@@ -1,0 +1,14 @@
+{
+    "title": "Welcome",
+    "hero": {
+        "button1": "Let's talk",
+        "button2": "About us"
+    },
+    "address": {
+        "careers": "Careers"
+    },
+    "description": {
+      "part1": "To get started, save to reload.",
+      "part2": "Switch language between english and german using buttons above."
+    }
+}
