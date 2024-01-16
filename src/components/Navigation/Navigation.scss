@@ -1,3 +1,7 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+
 .navigation {
     height: 100vh;
     width: 100%;
@@ -48,12 +52,17 @@
         align-items: end;
     }
     &__menu-item {
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
         a {
             font-size: 80px;
-            color: white;
+            color: $lightGray;
+            line-height: 96px;
+            font-weight: 700;
+            &.active {
+                @include red-title;
+            }
+            &:hover {
+                color: white;
+            }
         }
     }
     &__footer {
