@@ -63,9 +63,10 @@ const Home = () => {
                     <Grid>
                         <div className="hero__content">
                             <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
-                            <Text content="We think and design unique experiences for tomorrow's innovative digital products." />
+                            <Text className="mgb32" content={<>We think and design unique experiences<br />for tomorrow's innovative digital products.</>} />
                             <div className="dflex">
                                 <ButtonPrimary
+                                    className="mgr16"
                                     onClick={() => console.log("You clicked on the pink circle!")}
                                     children = "Let's talk"
                                 />
