@@ -2,12 +2,14 @@ import "./Text.scss";
 
 interface TextProps {
     className: string;
-    content: JSX.Element;
+    children?: React.ReactNode;
 }
 
 const Text = (props: TextProps) => {
     return (
-        <p className={`text ${props.className}`}>{props.content}</p>
+        <p className={`text ${props.className}`}>
+            {props.children}
+        </p>
     );
 };
 

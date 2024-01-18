@@ -4,11 +4,15 @@
         "button1": "Test fr",
         "button2": "A propos"
     },
-    "address": {
-        "careers": "Carrières"
+    "service": {
+        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :"
     },
-    "description": {
-      "part1": "Pour commencer",
-      "part2": "Ceci est une description"
+    "address": {
+        "countryNL": "Pays-Bas",
+        "countryFR": "France",
+        "countryEN": "Royaume-Uni",
+        "subtitle1": "Développement de l'activité",
+        "subtitle2": "Carrières",
+        "subtitle3": "Adresse"
     }
 }

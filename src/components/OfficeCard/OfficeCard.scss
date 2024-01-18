@@ -1,3 +1,4 @@
+@import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
 
 .office-card {
@@ -17,5 +18,16 @@
         margin-bottom: 16px;
         font-size: 24px;
         text-align: center;
+    }
+    &__button {
+        width: 32px;
+        height: 32px;
+        background: $blue;
+        border-radius: 5rem;
+        @include flexbox;
+        justify-content: center;
+        img {
+            fill: white;
+        }
     }
 }
