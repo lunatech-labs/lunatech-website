@@ -160,6 +160,105 @@ body {
         width: 100%;
     }
 }
+
+/* ----------------------- Contact Page ----------------------- */
+
+.contact {
+    &__main {
+        position: relative;
+        padding-block-start: 15em;
+        // width: 100px;
+        width: 100%;
+        padding-bottom: 5em;
+        overflow: hidden;
+    }
+    &__title {
+        width: 80%;
+        padding-left: 15%;
+    }
+
+    &__content {
+        padding-left: 15%;
+        width: 80%;
+        margin-block-end: 200px;
+        button{
+            background-color: #E53E3E;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+            margin-left: 20%;
+            &:hover {
+            background-color: darken(#E53E3E, 10%);
+            }
+        
+            &:active {
+            background-color: darken(#E53E3E, 20%);
+            }
+        }
+        .Input {
+            margin-block-end: 50px;
+        }
+    }
+    &__moon{
+        // display: none;
+        position: absolute;
+        top: 50%;
+        right: -30vw;
+        transform: translate(5%, -80%);
+        width: 80vw;
+        height: auto;
+        z-index: -1;
+    }
+    &__form {
+        margin-bottom: 10em;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contact {
+        &__main {
+            overflow: visible;
+            padding-block-start: 30em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        &__title {
+            width: 100%;
+            padding-left: 178px;
+        }
+        &__content {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+            padding-left: 178px;
+            button{
+                margin-left: 0;
+            }
+        }
+        &__moon{
+            top: 50%;
+            right: -30vw;
+            transform: translate(-150%, -40%);
+            width: 35vw;
+            height: auto;
+            z-index: -1;
+        }
+        &__form {
+            margin-bottom: 0;
+            width: 80%;
+        }
+    }
+}
+
 .address {
     background: var(--bg);
     padding: 128px 0;

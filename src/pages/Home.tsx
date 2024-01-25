@@ -112,7 +112,7 @@ const Home = () => {
                         <div className="works__left">
                             <Category content="Works" />
                             <Title content={<>Business sectors and <span>case studies</span>.</>} />
-                            <Text content="Lunatech intervient dans plusieurs secteurs d'activités, notemment l'industrie de l'automobile, les assurances, le transport et l'energie." />
+                            <Text>Lunatech intervient dans plusieurs secteurs d'activités, notemment l'industrie de l'automobile, les assurances, le transport et l'energie.</Text>
                         </div>
 
                         <ul className="tab">
@@ -150,7 +150,7 @@ const Home = () => {
                         <div className="about__right">
                             <Category content="About" />
                             <Title content={<>Our <span>company</span>.</>} />
-                            <Text content="Afin d’être réactif et d’apporter des solutions rapides, nos bureaux sont basés non loin de nos clients. Ceci nous permet de réagir rapidement et d’assurer un suivi et une coordination des équipes plus facilement." />
+                            <Text>Afin d’être réactif et d’apporter des solutions rapides, nos bureaux sont basés non loin de nos clients. Ceci nous permet de réagir rapidement et d’assurer un suivi et une coordination des équipes plus facilement.</Text>
                             <div className="mgt32 mgb128">
                                 <Grid>
                                     <OfficeCard title="Rotterdam">
@@ -167,7 +167,7 @@ const Home = () => {
                         </div>
                     </Grid>
                     <div className="ta-c">
-                        <Text content="Nous travaillons avec les esprits les plus brillants de sociétés innovatrices et pionnières. Notre expertise d’ingénieurs logiciels leur donne l’espace pour expérimenter et faire de la recherche, de l’espace pour rêver, croître et exceller." />
+                        <Text>Nous travaillons avec les esprits les plus brillants de sociétés innovatrices et pionnières. Notre expertise d’ingénieurs logiciels leur donne l’espace pour expérimenter et faire de la recherche, de l’espace pour rêver, croître et exceller.</Text>
                     </div>
                 </Container>
             </section>
