@@ -2,7 +2,7 @@ import Text from '../components/Text/Text';
 import Category from '../components/Category/Category';
 import Input from '../components/Input/Input';
 import Address from '../components/Adress/Adress';
-import Moon from '/moon.png';
+import Moon from '/moon.svg';
 
 const Contact = () => {
     const options = [
@@ -19,7 +19,7 @@ const Contact = () => {
                 <div className="contact__title">
                     <Category content="Index / Contact" />
                     <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
-                    <Text content="Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours." />
+                    <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
                 </div>
                 <img className='contact__moon' src={Moon} alt="" />
             </section>

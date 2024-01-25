@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import Github from '/github.svg';
 import Instagram from '/instagram.svg';
@@ -17,11 +17,13 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
                     <li className="navigation__social-item"><Link to="/"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
                 </ul>
                 <ul className="navigation__menu">
-                    <li onClick={onClick} className="navigation__menu-item"><Link to="/">Home</Link></li>
-                    <li onClick={onClick} className="navigation__menu-item"><Link to="/services">Services</Link></li>
-                    <li onClick={onClick} className="navigation__menu-item"><Link to="/works">Works</Link></li>
-                    <li onClick={onClick} className="navigation__menu-item"><Link to="/about">About us</Link></li>
-                    <li onClick={onClick} className="navigation__menu-item"><Link to="/contact">Contact</Link></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Home</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/services">Services</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/works">Works</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://recruitment.lunatech.com/" target="_blank">Careers</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://blog.lunatech.com/" target="_blank">Blog</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about">About us</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/contact">Contact</NavLink></li>
                 </ul>
             </div>
             <div className="navigation__footer">

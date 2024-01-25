@@ -21,7 +21,7 @@ class Header extends Component {
         return (
             <header className="header">
                 <a className="header__logo" href="#" target="_blank">
-                    <img src={lunatechLogo} className="header__image" alt="Lunatech logo" />
+                    <img src={lunatechLogo} className="header__img" alt="Lunatech logo" />
                 </a>
                 <div>
                     <Hamburger onClick={this.handleClick} />

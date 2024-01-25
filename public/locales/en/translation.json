@@ -1,0 +1,18 @@
+{
+    "title": "Welcome",
+    "hero": {
+        "button1": "Let's talk",
+        "button2": "About us"
+    },
+    "service": {
+        "text": "Lunatech provides innovative solutions for the creation and modernization of your digital products through the following services:"
+    },
+    "address": {
+        "countryNL": "Netherlands",
+        "countryFR": "France",
+        "countryEN": "United Kingdom",
+        "subtitle1": "Business development",
+        "subtitle2": "Careers",
+        "subtitle3": "Address"
+    }
+}

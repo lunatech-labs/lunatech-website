@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import '../i18n';
+
 import Container from '../components/Container/Container';
 import Grid from '../components/Grid/Grid';
 import Stars from '../components/Stars/Stars';
@@ -12,14 +15,16 @@ import TestimonialCard from '../components/TestimonialCard/TestimonialCard';
 import testimonialCardData from '../components/TestimonialCard/testimonialCardData';
 import ContactCard from '../components/ContactCard/ContactCard';
 import Icon from '../components/Icon/Icon';
+import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
+import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
+import Sphere from '../components/Sphere/Sphere';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
 import Mountains from '/mountains.svg';
 import Grass from '/grass.svg';
 import Telescope from '/telescope.svg';
-import Moon from '/moon.png';
-
+import Moon from '/moon.svg';
 import Car from '/car.svg';
 import Shield from '/shield.svg';
 import Zap from '/zap.svg';
@@ -33,6 +38,11 @@ import Star from '/stars.png';
 
 
 const Home = () => {
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     const [toggle, setToggle] = useState(1);
 
     function updateToggle(id) {
@@ -60,16 +70,26 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="hero__content">
-                            <h1 className="hero__title">Create and Modernize your <span>digital products</span> for tomorrow's future.</h1>
-                            <Text content="We think and design unique experiences for tomorrow's innovative digital products." />
-                            <div>
-                                <a className="hero__button homeBtn" href="#">Let's talk</a>
-                                <a className="hero__button" href="#">About us</a>
+                            <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
+                            <Text className="mgb32" content={<>We think and design unique experiences<br />for tomorrow's innovative digital products.</>} />
+                            <div className="dflex">
+                                <ButtonPrimary
+                                    className="mgr16"
+                                    onClick={() => console.log("You clicked on the pink circle!")}
+                                >
+                                    <Trans i18nKey="hero.button1" />
+                                </ButtonPrimary>
+                                <ButtonSecondary
+                                    onClick={() => console.log("You clicked on the pink circle!")}
+                                >
+                                    <Trans i18nKey="hero.button2" />
+                                </ButtonSecondary>
                             </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
                 </Container>
+                <Sphere />
             </section>
             <section className="services">
                 <Container>
@@ -77,8 +97,10 @@ const Home = () => {
                         <img className="services__img" src={Moon} alt="Moon" />
                         <div className="services__right">
                             <Category content="Services" />
-                            <Title content={<>What is <span>lunatech</span> and what is its purpose?</>} />
-                            <Text content="Fort d’une expérience depuis plus de 30 ans dans le développement de systèmes logiciels sur mesure, Lunatech compte plus de 100 collaborateurs avec des bureaux à paris, rotterdam et new-castle. Lunatech a la capacité de prendre des décisions éclairées et avant-gardistes dans la création et l’évolution de logiciels sur mesure ainsi que la transformation de vos legacy system." />
+                            <Title content={<>Meet your needs with our <span>services</span></>} />
+                            <Text>
+                                <Trans i18nKey="service.text" />
+                            </Text>
                         </div>
                     </Grid>
                 </Container>
@@ -90,7 +112,7 @@ const Home = () => {
                         <div className="works__left">
                             <Category content="Works" />
                             <Title content={<>Business sectors and <span>case studies</span>.</>} />
-                            <Text content="Lunatech intervient dans plusieurs secteurs d'activités, notemment l'industrie de l'automobile, les assurances, le transport et l'energie." />
+                            <Text>Lunatech intervient dans plusieurs secteurs d'activités, notemment l'industrie de l'automobile, les assurances, le transport et l'energie.</Text>
                         </div>
 
                         <ul className="tab">
@@ -127,8 +149,8 @@ const Home = () => {
                         <img className="about__moon" src={Moon} alt="Moon" />
                         <div className="about__right">
                             <Category content="About" />
-                            <Title content={<>Our <span>culture</span>.</>} />
-                            <Text content="Nous voulons donner à nos collaborateurs la liberté de mener à bien leurs missions comme ils l'entendent, dans le respect des contraintes fixées par la mission et/ou le client. Cette liberté s'accompagne de la responsabilité pour chacun de donner le meilleur de lui-même." />
+                            <Title content={<>Our <span>company</span>.</>} />
+                            <Text>Afin d’être réactif et d’apporter des solutions rapides, nos bureaux sont basés non loin de nos clients. Ceci nous permet de réagir rapidement et d’assurer un suivi et une coordination des équipes plus facilement.</Text>
                             <div className="mgt32 mgb128">
                                 <Grid>
                                     <OfficeCard title="Rotterdam">
@@ -145,7 +167,7 @@ const Home = () => {
                         </div>
                     </Grid>
                     <div className="ta-c">
-                        <Text content="Nous travaillons avec les esprits les plus brillants de sociétés innovatrices et pionnières. Notre expertise d’ingénieurs logiciels leur donne l’espace pour expérimenter et faire de la recherche, de l’espace pour rêver, croître et exceller." />
+                        <Text>Nous travaillons avec les esprits les plus brillants de sociétés innovatrices et pionnières. Notre expertise d’ingénieurs logiciels leur donne l’espace pour expérimenter et faire de la recherche, de l’espace pour rêver, croître et exceller.</Text>
                     </div>
                 </Container>
             </section>
@@ -189,9 +211,9 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="address__card">
-                            <p className="address__title">Netherlands</p>
+                            <p className="address__title">{t('address.countryNL')}</p>
                             <div className="address__part">
-                                <p className="address__subtitle">Business development</p>
+                                <p className="address__subtitle">{t('address.subtitle1')}</p>
                                 <div className="address__join">
                                     <a className="address__link" href="mailto:info@@lunatech.nl">info@lunatech.nl</a>
                                     <span className="address__separate"></span>
@@ -199,19 +221,19 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="address__part">
-                                <p className="address__subtitle">Careers</p>
+                                <p className="address__subtitle">{t('address.subtitle2')}</p>
                                 <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.nl</a>
                             </div>
                             <div className="address__part">
-                                <p className="address__subtitle">Address</p>
+                                <p className="address__subtitle">{t('address.subtitle3')}</p>
                                 <p className="address__text">Hofplein 20</p>
                                 <p className="address__text">3032 AC Rotterdam</p>
                             </div>
                         </div>
                         <div className="address__card">
-                            <p className="address__title">France</p>
+                            <p className="address__title">{t('address.countryFR')}</p>
                             <div className="address__part">
-                                <p className="address__subtitle">Business development</p>
+                                <p className="address__subtitle">{t('address.subtitle1')}</p>
                                 <div className="address__join">
                                     <a className="address__link" href="mailto:info@@lunatech.fr">info@lunatech.fr</a>
                                     <span className="address__separate"></span>
@@ -219,19 +241,19 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="address__part">
-                                <p className="address__subtitle">Careers</p>
+                                <p className="address__subtitle">{t('address.subtitle2')}</p>
                                 <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.fr</a>
                             </div>
                             <div className="address__part">
-                                <p className="address__subtitle">Address</p>
+                                <p className="address__subtitle">{t('address.subtitle3')}</p>
                                 <p className="address__text">3 rue de la Galmy</p>
                                 <p className="address__text">77700 Chessy</p>
                             </div>
                         </div>
                         <div className="address__card">
-                            <p className="address__title">Royaume-Uni</p>
+                            <p className="address__title">{t('address.countryEN')}</p>
                             <div className="address__part">
-                                <p className="address__subtitle">Business development</p>
+                                <p className="address__subtitle">{t('address.subtitle1')}</p>
                                 <div className="address__join">
                                     <a className="address__link" href="tel:+3228085713">+44 (0) 7875 695 964</a>
                                 </div>

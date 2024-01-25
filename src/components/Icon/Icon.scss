@@ -1,3 +1,4 @@
+@import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
 
 .icon {
@@ -5,7 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include light-gradient;
+    background: $blue;
+    background: linear-gradient(to bottom, $blue, $blue) padding-box,
+                linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
+    border: 1px solid transparent;
+    border-radius: 16px;
 }
 .icon-small {
     width: 96px;
