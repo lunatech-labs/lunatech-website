@@ -6,7 +6,7 @@ import Linkedin from '/linkedin.svg';
 import Twitter from '/twitter.svg';
 import "./Navigation.scss";
 
-const Navigation = () => {
+const Navigation = ({ onClick }: { onClick: () => void }) => {
     return (
         <div className="navigation">
             <div className="navigation__main">
@@ -17,11 +17,11 @@ const Navigation = () => {
                     <li className="navigation__social-item"><Link to="/"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
                 </ul>
                 <ul className="navigation__menu">
-                    <li className="navigation__menu-item"><Link to="/">Home</Link></li>
-                    <li className="navigation__menu-item"><Link to="/services">Services</Link></li>
-                    <li className="navigation__menu-item"><Link to="/works">Works</Link></li>
-                    <li className="navigation__menu-item"><Link to="/about">About us</Link></li>
-                    <li className="navigation__menu-item"><Link to="/contact">Contact</Link></li>
+                    <li onClick={onClick} className="navigation__menu-item"><Link to="/">Home</Link></li>
+                    <li onClick={onClick} className="navigation__menu-item"><Link to="/services">Services</Link></li>
+                    <li onClick={onClick} className="navigation__menu-item"><Link to="/works">Works</Link></li>
+                    <li onClick={onClick} className="navigation__menu-item"><Link to="/about">About us</Link></li>
+                    <li onClick={onClick} className="navigation__menu-item"><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
             <div className="navigation__footer">

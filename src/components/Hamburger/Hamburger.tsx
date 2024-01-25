@@ -2,21 +2,10 @@ import React from 'react';
 import "./Hamburger.scss";
 
 class Hamburger extends React.Component {
-    constructor (props) {
-        super (props);
-        this.handleClick = this.handleClick.bind(this); 
-    }
-      
-    handleClick() {
-        const hamburger = document.querySelector('.hamburger');
-        const nav = document.querySelector('.navigation');
-        hamburger.classList.toggle('hamburger--active');
-        nav.classList.toggle('navigation--active');
-    }
-
     render() {
+        const { onClick } = this.props;
         return (
-            <button className="hamburger" onClick={this.handleClick}>
+            <button className="hamburger" onClick={onClick}>
                 menu
                 <span className="hamburger__box">
                     <span className="hamburger__inner"></span>

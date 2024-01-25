@@ -13,7 +13,7 @@ const Footer = () => {
             <Container>
                 <div className="footer__top">
                     <Grid>
-                        <div className="footer__part">
+                        <div className="footer__part first">
                             <a href="https://vitejs.dev" target="_blank"><img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" /></a>
                             <p className="footer__text">Managed by Lunatech Labs.</p>
                             <div className="footer__social">
@@ -24,7 +24,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="footer__part">
+                        <div className="footer__part second">
                             <div className="footer__category">
                                 <p className="footer__title">Works</p>
                                 <ul className="footer__list">
@@ -41,7 +41,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="footer__part">
+                        <div className="footer__part third">
                             <div className="footer__category">
                                 <p className="footer__title">Services</p>
                                 <ul className="footer__list">
@@ -55,7 +55,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="footer__part">
+                        <div className="footer__part fourth">
                             <div className="footer__category">
                                 <p className="footer__title">Careers</p>
                                 <ul className="footer__list">

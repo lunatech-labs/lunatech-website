@@ -62,7 +62,10 @@ const Home = () => {
                         <div className="hero__content">
                             <h1 className="hero__title">Create and Modernize your <span>digital products</span> for tomorrow's future.</h1>
                             <Text content="We think and design unique experiences for tomorrow's innovative digital products." />
-                            <a className="hero__button" href="#">Let's talk</a>
+                            <div>
+                                <a className="hero__button homeBtn" href="#">Let's talk</a>
+                                <a className="hero__button" href="#">About us</a>
+                            </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
