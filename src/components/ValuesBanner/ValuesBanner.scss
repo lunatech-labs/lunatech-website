@@ -1,0 +1,11 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.values-banner {
+    background: $mediumBlue;
+    padding: 64px 0;
+    > div {
+        @include flexbox;
+        justify-content: space-between;
+    }
+}
