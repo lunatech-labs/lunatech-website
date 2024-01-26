@@ -1,0 +1,20 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.value {
+    @include flexbox;
+    &__number {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    &__pink {
+        color: $pink;
+    }
+    &__text {
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 22px;
+        opacity: .5;
+        margin-left: 16px;
+    }
+}
