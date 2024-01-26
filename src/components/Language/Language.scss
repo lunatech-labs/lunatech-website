@@ -1,0 +1,14 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.language {
+    @include flexbox;
+    &__text {
+
+    }
+    &__split {
+        border: 1px solid $lightGray;
+        width: 24px;
+        margin: 0 8px;
+    }
+}

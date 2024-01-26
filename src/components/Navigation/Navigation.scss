@@ -71,7 +71,7 @@
         border-top: 1px solid (rgb(255 255 255 / 25%));
         height: 96px;
     }
-    &__language {
+    &__left {
         border-right: 1px solid (rgb(255 255 255 / 25%));
         width: 384px;
         padding: 0 64px;
@@ -85,14 +85,7 @@
         width: calc(100% - 384px);
         display: flex;
         align-items: center;
-        justify-content: space-between;
-    }
-    &__border {
-        height: 1px;
-        width: 24px;
-        background: white;
-        opacity: .5;
-        margin: 0 8px;
+        justify-content: flex-end;
     }
     &__way {
         display: flex;

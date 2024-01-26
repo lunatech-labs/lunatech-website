@@ -5,6 +5,7 @@ import Instagram from '/instagram.svg';
 import Linkedin from '/linkedin.svg';
 import Twitter from '/twitter.svg';
 import "./Navigation.scss";
+import Language from '../Language/Language';
 
 const Navigation = ({ onClick }: { onClick: () => void }) => {
     return (
@@ -27,15 +28,10 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
                 </ul>
             </div>
             <div className="navigation__footer">
-                <div className="navigation__language">
-                    <Link to="/">en</Link>
-                    <span className="navigation__border"></span>
-                    <Link to="/">fr</Link>
+                <div className="navigation__left">
+                    <Language />
                 </div>
                 <div className="navigation__right">
-                    <div className="navigation__sound">
-                        <Link to="/">sound off</Link>
-                    </div>
                     <div className="navigation__way">
                         <p>/Case studies</p>
                         <span className="navigation__border"></span>
