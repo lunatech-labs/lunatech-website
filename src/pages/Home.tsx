@@ -18,6 +18,8 @@ import Icon from '../components/Icon/Icon';
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
 import Sphere from '../components/Sphere/Sphere';
+import MouseScroll from '../components/MouseScroll/MouseScroll';
+import ValuesBanner from '../components/ValuesBanner/ValuesBanner';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -90,7 +92,11 @@ const Home = () => {
                     </Grid>
                 </Container>
                 <Sphere />
+                <MouseScroll />
             </section>
+
+            <ValuesBanner />
+
             <section className="services">
                 <Container>
                     <Grid>
