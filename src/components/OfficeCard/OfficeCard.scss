@@ -3,6 +3,7 @@
 
 .office-card {
     padding: 48px 0;
+    margin: 20px 0;
     @include dark-gradient;
     grid-column: span 4;
     display: flex;

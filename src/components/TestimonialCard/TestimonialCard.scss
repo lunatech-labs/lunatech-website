@@ -7,16 +7,11 @@
         flex-direction: column;
         position: relative;
         padding: 48px;
-        width: 472px;
         margin-bottom: 90px;
         &:nth-child(odd) {@include light-gradient;}
         &:nth-child(even) {@include dark-gradient;}
         &:nth-child(2) {
-            position: absolute;
-            top: -96px;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            z-index: 1;
+            position: relative;
         }
     }
     &__icon {
@@ -46,5 +41,20 @@
     }
     &__job {
         opacity: .5;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .testimonial {
+        &__card {
+            width: 472px;
+            &:nth-child(2) {
+                position: absolute;
+                top: -96px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                z-index: 1;
+            }
+        } 
     }
 }

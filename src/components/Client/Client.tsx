@@ -10,14 +10,14 @@ import "./Client.scss";
 const Client = () => {
     return (
         <section className="client">
-            <Container>
+            {/* <Container> */}
                 <img src={dhlLogo} className="client__logo" alt="DHL logo" />
                 <img src={ingLogo} className="client__logo" alt="ING logo" />
                 <img src={msAmlinLogo} className="client__logo" alt="MS Amlin logo" />
                 <img src={audiLogo} className="client__logo" alt="Audi logo" />
                 <img src={upsLogo} className="client__logo" alt="UPS logo" />
                 <img src={enecogenLogo} className="client__logo" alt="Enecogen logo" />
-            </Container>
+            {/* </Container> */}
         </section>
     );
 };

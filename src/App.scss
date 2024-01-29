@@ -43,15 +43,15 @@ body {
     }
     &__moon {
         position: absolute;
-        width: 220px;
-        right: 295px;
+        width: 150px;
+        right: 20px;
         top: 92px;
     }
     &__title {
-        font-size: 80px;
+        font-size: 40px;
         font-weight: 700;
-        line-height: 96px;
-        margin-bottom: 32px;
+        line-height: 48px;
+        margin-bottom: 16px;
         span {
             @include red-title;
         }
@@ -72,7 +72,7 @@ body {
     &__right {
         display: flex;
         flex-direction: column;
-        grid-column: 7/13;
+        grid-column: 1/13;
     }
 }
 .works {
@@ -85,9 +85,13 @@ body {
     }
     &__moon {
         position: absolute;
+        width: 200px;
         top: -360px;
-        right: -370px;
+        right: 0px;
         z-index: -1;
+    }
+    &__left {
+        grid-column: 1/13;
     }
 }
 
@@ -99,6 +103,7 @@ body {
     border-radius: 16px;
     border: 1px solid #78B4D7;
     padding: 8px;
+    margin-top: 20px;
     &__entry {
         display: flex;
         align-items: center;
@@ -124,7 +129,7 @@ body {
     &__right {
         display: flex;
         flex-direction: column;
-        grid-column: 7/13;
+        grid-column: 1/13;
     }
 }
 .testimonial {
@@ -137,6 +142,7 @@ body {
     }
     &__content {
         display: flex;
+        flex-direction: column;
         position: relative;
         justify-content: space-between;
         margin-top: 96px;
@@ -158,6 +164,56 @@ body {
         transform: translate(-50%, -50%);
         z-index: -1;
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .works {
+        &__moon {
+            top: -360px;
+            right: -370px;
+        }
+        &__left {
+            grid-column: span 6;
+        }
+    }
+    .tab {
+        margin-top: 0;
+    }
+    .about {
+        &__right {
+            display: flex;
+            flex-direction: column;
+            grid-column: 7/13;
+        }
+    }
+    .hero {
+        &__title {
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 96px;
+            margin-bottom: 32px;
+        }
+        &__text {
+            font-size: 24px;
+            opacity: .5;
+        }
+        &__moon {
+            position: absolute;
+            width: 220px;
+            right: 295px;
+            top: 92px;
+        }
+    }
+    .services {
+        &__right {
+            grid-column: 7/13;
+        }
+    }
+    .testimonial {
+        &__content {
+            flex-direction: row;
+        }
     }
 }
 

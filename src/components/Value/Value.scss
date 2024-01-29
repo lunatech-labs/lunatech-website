@@ -2,6 +2,7 @@
 @import "/src/styles/Mixins.scss";
 
 .value {
+    flex-direction: column; 
     @include flexbox;
     &__number {
         font-size: 40px;
@@ -15,6 +16,12 @@
         text-transform: uppercase;
         line-height: 22px;
         opacity: .5;
-        margin-left: 16px;
+        margin-inline-start: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .value {
+        flex-direction: row;
     }
 }
