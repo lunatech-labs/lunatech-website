@@ -1,14 +1,15 @@
 import "./ButtonPrimary.scss";
 
 interface ButtonProps {
-    className: string;
-    children?: React.ReactNode;
+    children: JSX.Element;
+    iconUrl: string;
 }
 
 const ButtonPrimary = (props: ButtonProps) => {
     return (
-        <a className={`button-primary ${props.className}`} href="">
+        <a className="button-primary" href="">
             {props.children}
+            <img className="button-primary__img" src={props.iconUrl} />
         </a>
     )
 }

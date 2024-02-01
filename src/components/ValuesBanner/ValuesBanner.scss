@@ -1,26 +1,12 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
 
-.values {
-    &__banner{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background: $mediumBlue;
-        padding: 64px 20px;
-        
-        > div {
-            @include flexbox;
-            justify-content: space-between;
-        }
+.values__banner {
+    background: $mediumBlue;
+    padding: 64px 20px;
+    > div {
+        @include flexbox;
+        justify-content: space-between;
     }
 }
 
-@media only screen and (min-width: 768px){
-    .values {
-        &__banner{
-            display: flex;
-            justify-content: space-between;
-            padding: 64px 50px;
-        }
-    }
-}

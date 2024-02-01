@@ -8,19 +8,13 @@
     grid-gap: 24px;
     width: 100%;
 }
-@mixin light-gradient {
-    background: linear-gradient(to bottom, #0A3269, rgb(10 50 105 / 65%)) padding-box,
-                linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
-    border: 1px solid transparent;
-    border-radius: 16px;
-}
 @mixin dark-gradient {
     background: linear-gradient(to bottom, #0A1E50, #081A47) padding-box,
                 linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
     border: 1px solid transparent;
     border-radius: 16px;
 }
-@mixin button-border-gradient {
+@mixin border-gradient {
     background: linear-gradient(to bottom, #0A1E50, #0A1E50) padding-box,
                 linear-gradient(to bottom, rgb(255 255 255 / 24%), rgb(84 145 179 / 24%)) border-box;
     border: 1px solid transparent;

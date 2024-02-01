@@ -2,7 +2,7 @@
 @import "/src/styles/Mixins.scss";
 
 .value {
-    flex-direction: column; 
+    grid-column: span 3;
     @include flexbox;
     &__number {
         font-size: 40px;

@@ -7,9 +7,9 @@ interface SectionProps {
 
 const Section = (props: SectionProps) => {
   return (
-    <div className={`section ${props.className}`}>
+    <section className={`section ${props.className}`}>
         {props.children}
-    </div>
+    </section>
   )
 }
 

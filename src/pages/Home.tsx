@@ -8,12 +8,7 @@ import Stars from '../components/Stars/Stars';
 import Category from '../components/Category/Category';
 import Title from '../components/Title/Title';
 import Text from '../components/Text/Text';
-import Client from '../components/Client/Client';
-import ServiceCard from '../components/ServiceCard/ServiceCard';
 import OfficeCard from '../components/OfficeCard/OfficeCard';
-import TestimonialCard from '../components/TestimonialCard/TestimonialCard';
-import testimonialCardData from '../components/TestimonialCard/testimonialCardData';
-import ContactCard from '../components/ContactCard/ContactCard';
 import Icon from '../components/Icon/Icon';
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
@@ -21,6 +16,8 @@ import Sphere from '../components/Sphere/Sphere';
 import MouseScroll from '../components/MouseScroll/MouseScroll';
 import ValuesBanner from '../components/ValuesBanner/ValuesBanner';
 import Section from '../components/Section/Section';
+import Collapse from '../components/Collapse/Collapse';
+import Address from '../components/Address/Address';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -28,18 +25,16 @@ import Mountains from '/mountains.svg';
 import Grass from '/grass.svg';
 import Telescope from '/telescope.svg';
 import Moon from '/moon.svg';
-import Car from '/car.svg';
-import Shield from '/shield.svg';
-import Zap from '/zap.svg';
-import Archive from '/archive.svg';
-import Chat from '/chat.svg';
-import Wallet from '/wallet.svg';
 import Skyscraper from '/skyscraper.svg';
 import Buildings from '/buildings.svg';
 import Office from '/office.svg';
-import Star from '/stars.png';
+
 import ArrowRight from '/arrow-right.svg';
+import Message from '/message.svg';
+
 import Building from '/virtual_land.png';
+import CollapseImg from '/collapse.png';
+import BlogImg from '/blog.png';
 
 
 const Home = () => {
@@ -53,12 +48,6 @@ const Home = () => {
     function updateToggle(id) {
         setToggle(id);
     }
-
-    const testimonialCard = testimonialCardData.map((data)=> {
-        return (
-            <TestimonialCard key={data.id} {...data} />
-        )
-    })
 
     return (
         <>
@@ -76,14 +65,12 @@ const Home = () => {
                     <Grid>
                         <div className="hero__content">
                             <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
-                            <Text className="mgb32" content={<>We think and design unique experiences<br />for tomorrow's innovative digital products.</>} />
+                            <Text className="mgb32">We think and design unique experiences<br />for tomorrow's innovative digital products.</Text>
                             <div className="dflex">
-                                <ButtonPrimary className="mgr16">
+                                <ButtonPrimary iconUrl={Message}>
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
-                                <ButtonSecondary text>
-                                    <Trans i18nKey="hero.button2" />
-                                </ButtonSecondary>
+                                <a className="hero__link" href="#">About us<img src={ArrowRight} alt="Arrow" /></a>
                             </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
@@ -103,7 +90,7 @@ const Home = () => {
                             <Category content="About us" />
                             <Title content={<>Custom software systems for over <span>30 years</span></>} />
                             <Text className="mgb32">Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.</Text>
-                            <ButtonSecondary text="More Details" iconUrl={ArrowRight} />
+                            <ButtonSecondary iconUrl={ArrowRight} size="large">More Details</ButtonSecondary>
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam">
@@ -122,168 +109,100 @@ const Home = () => {
                 </Container>
             </Section>
 
+            <div className="bb-g"></div>
+
             <Section>
                 <Container>
                     <div className="services">
-                        <img className="services__img" src={Moon} alt="Moon" />
-                        <div className="services__right">
+                        <div className="services__content">
                             <Category content="Services" />
                             <Title content={<>Meet your needs with our <span>services</span></>} />
                             <Text>
                                 <Trans i18nKey="service.text" />
                             </Text>
                         </div>
+                        <ButtonSecondary iconUrl={ArrowRight} size="large">More Details</ButtonSecondary>
                     </div>
                 </Container>
             </Section>
-            
-                
-            
 
-            <section className="works">
+            <Section className="bg-blue">
                 <Container>
-                    <Grid>
-                        <div className="works__left">
-                            <Category content="Works" />
-                            <Title content={<>Business sectors and <span>case studies</span>.</>} />
-                            <Text>Lunatech intervient dans plusieurs secteurs d'activités, notemment l'industrie de l'automobile, les assurances, le transport et l'energie.</Text>
+                    <div className="works">
+                        <div className="works__top">
+                            <div>
+                                <Category content="Works" />
+                                <Title content={<>Browse our <span>case studies</span>.</>} />
+                            </div>
+                            <ButtonSecondary iconUrl={ArrowRight} size="large">More Case Studies</ButtonSecondary>
                         </div>
-
-                        <ul className="tab">
-                            <li className="tab__entry" onClick={()=>updateToggle(1)}>Business sectors</li>
-                            <li className="tab__entry" onClick={()=>updateToggle(2)}>Case studies</li>
-                        </ul>
-                    </Grid>
-                    <div className={toggle === 1 ? "show-tab-entry" : "tab-entry"}>
-                        <Grid>
-                            <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                <Icon imageUrl={Car} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Insurance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                <Icon imageUrl={Shield} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                <Icon imageUrl={Zap} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Logistic" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                <Icon imageUrl={Archive} size="small" />
-                            </ServiceCard>
-                        </Grid>
-                    </div>
-                    <div className={toggle === 2 ? "show-tab-entry" : "tab-entry"}>
-                        <p>Content 2</p>
-                    </div>
-                </Container>
-                <img className="works__moon" src={Moon} alt="Moon" />
-            </section>
-
-            <section className="about">
-                <Container>
-                    <Grid>
-                        <img className="about__moon" src={Moon} alt="Moon" />
-                        <div className="about__right">
-                            <Category content="About" />
-                            <Title content={<>Our <span>company</span>.</>} />
-                            <Text>Afin d’être réactif et d’apporter des solutions rapides, nos bureaux sont basés non loin de nos clients. Ceci nous permet de réagir rapidement et d’assurer un suivi et une coordination des équipes plus facilement.</Text>
-                            
+                        <div className="works__content">
+                            <div className="works__left">
+                                <Collapse title="Titre du Collapse"><p>Contenu du Collapse</p></Collapse>
+                                <Collapse title="Titre du Collapse"><p>Contenu du Collapse</p></Collapse>
+                                <Collapse title="Titre du Collapse"><p>Contenu du Collapse</p></Collapse>
+                            </div>
+                            <div className="works__right">
+                                <img className="works__img" src={CollapseImg} alt="Collapse image" />
+                            </div>
                         </div>
-                    </Grid>
-                    <div className="ta-c">
-                        <Text>Nous travaillons avec les esprits les plus brillants de sociétés innovatrices et pionnières. Notre expertise d’ingénieurs logiciels leur donne l’espace pour expérimenter et faire de la recherche, de l’espace pour rêver, croître et exceller.</Text>
                     </div>
                 </Container>
-            </section>
+            </Section>
 
-            <Client />
-
-            <section className="testimonial">
+            <Section>
                 <Container>
-                    <Grid>
-                        <div className="testimonial__left">
-                            <Category content="Testimonial" />
-                            <Title content={<>See what <span>our employees</span> have to say.</>} />
+                    <div className="blog">
+                        <div className="blog__top">
+                            <Category content="Articles" />
+                            <Title content={<>Read the content from our <span>experts</span>.</>} />
                         </div>
-                    </Grid>
-                    <div className="testimonial__content">
-                        {testimonialCard}
-                    </div>
-                </Container>
-                <img className="testimonial__moon" src={Moon} alt="Moon" />
-            </section>
-
-            <section className="contact">
-                <Container>
-                    <div className="ta-c">
-                        <Category content="Contact" />
-                        <Title content={<>Let's talk <span>together</span>.</>} />
-                    </div>
-                    <Grid>
-                        <ContactCard title="Briefez-nous" text="Have a question? Speak to our expert.">
-                            <Icon imageUrl={Chat} size="large" />
-                        </ContactCard>
-                        <ContactCard title="Rejoignez-nous" text="Consultez nos différentes offres d’emploi.">
-                            <Icon imageUrl={Wallet} size="large" />
-                        </ContactCard>
-                    </Grid>
-                </Container>
-                <img className="contact__star" src={Star} alt="Stars" />
-            </section>
-
-            <section className="address">
-                <Container>
-                    <Grid>
-                        <div className="address__card">
-                            <p className="address__title">{t('address.countryNL')}</p>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle1')}</p>
-                                <div className="address__join">
-                                    <a className="address__link" href="mailto:info@@lunatech.nl">info@lunatech.nl</a>
-                                    <span className="address__separate"></span>
-                                    <a className="address__link" href="tel:+31107502600">+31 10 750 2600</a>
+                        <div className="blog__articles">
+                            <div className="blog__content">
+                                <div className="blog__left">
+                                    <div className="dflex">
+                                        <p className="blog__category">Marketing</p>
+                                        <p className="blog__date">September 1, 2022</p>
+                                    </div>
+                                    <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
+                                    <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
+                                    <ButtonSecondary iconUrl={ArrowRight} size="large">Read More</ButtonSecondary>
                                 </div>
+                                <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle2')}</p>
-                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.nl</a>
-                            </div>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle3')}</p>
-                                <p className="address__text">Hofplein 20</p>
-                                <p className="address__text">3032 AC Rotterdam</p>
-                            </div>
-                        </div>
-                        <div className="address__card">
-                            <p className="address__title">{t('address.countryFR')}</p>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle1')}</p>
-                                <div className="address__join">
-                                    <a className="address__link" href="mailto:info@@lunatech.fr">info@lunatech.fr</a>
-                                    <span className="address__separate"></span>
-                                    <a className="address__link" href="tel:+33182885664">+33 1 82 88 56 64</a>
+                            <div className="blog__content">
+                                <div className="blog__left">
+                                    <div className="dflex">
+                                        <p className="blog__category">Marketing</p>
+                                        <p className="blog__date">September 1, 2022</p>
+                                    </div>
+                                    <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
+                                    <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
+                                    <ButtonSecondary iconUrl={ArrowRight} size="large">Read More</ButtonSecondary>
                                 </div>
-                            </div>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle2')}</p>
-                                <a className="address__link" href="mailto:employment@@lunatech.nl">employment@lunatech.fr</a>
-                            </div>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle3')}</p>
-                                <p className="address__text">3 rue de la Galmy</p>
-                                <p className="address__text">77700 Chessy</p>
+                                <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
                         </div>
-                        <div className="address__card">
-                            <p className="address__title">{t('address.countryEN')}</p>
-                            <div className="address__part">
-                                <p className="address__subtitle">{t('address.subtitle1')}</p>
-                                <div className="address__join">
-                                    <a className="address__link" href="tel:+3228085713">+44 (0) 7875 695 964</a>
-                                </div>
-                            </div>
+                        <div className="blog__action">
+                            <ButtonSecondary iconUrl={ArrowRight} size="large">More articles</ButtonSecondary>
                         </div>
-                    </Grid>
+                    </div>
                 </Container>
-            </section>
+            </Section>
+
+            <Section className="section-gradient">
+                <Container>
+                    <div className="contact">
+                        <div>
+                            <Category content="Contact" />
+                            <Title content={<>Let's talk <span>together</span>.</>} />
+                        </div>
+                        <ButtonPrimary iconUrl={Message}>Contact Us</ButtonPrimary>
+                    </div>
+
+                    <Address />
+                </Container>
+            </Section>
         </>
     );
 };
