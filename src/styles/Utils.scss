@@ -1,12 +1,16 @@
+/* --------------- Flexbox --------------- */
 .dflex {@include flexbox;}
 .jc-c {justify-content: center;}
 .jc-sb {justify-content: space-between;}
 .jc-sa {justify-content: space-around;}
 .fd-c {flex-direction: column;}
-.mgb270 {margin-bottom: 270px;}
 .ta-c {text-align: center;}
 .ai-c {align-items: center;}
 
+/* --------------- Divers --------------- */
+.section-gradient {background: linear-gradient(to bottom, #0A3269, rgb(12 52 105 / 0%)) border-box;}
+
+/* --------------- Space --------------- */
 .mgt8 {margin-top: 8px}
 .mgr8 {margin-right: 8px}
 .mgb8 {margin-bottom: 8px}

@@ -1,3 +1,9 @@
+.country {
+    margin-bottom: 64px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
 .countryName {
     font-size: 24px;
     margin-bottom: 0.5em;
@@ -5,7 +11,7 @@
   }
 
 .kind {
-    font-size: 1.5em;
+    font-size: 20px;
     color: #ffffff80;
 }
 
