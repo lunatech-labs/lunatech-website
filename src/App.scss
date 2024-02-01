@@ -11,8 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: white;
-    background: linear-gradient(135deg, #113e7d, #081639);
-    background-attachment: fixed;
+    background: $mediumBlue;
     overflow-x: hidden;
 }
 
@@ -61,10 +60,21 @@ body {
         opacity: .5;
     }
 }
-
+/* ------------- ABOUT US ------------- */
+.about {
+    @include grid;
+    align-items: center;
+    &__img {
+        grid-column: span 5;
+        width: 100%;
+    }
+    &__content {
+        grid-column: 7 / 13;
+    }
+}
 /* ------------- SERVICES ------------- */
 .services {
-    padding: 128px 0;
+    @include grid;
     &__img {
         grid-column: 1/6;
         width: 100%;
@@ -129,7 +139,7 @@ body {
     &__right {
         display: flex;
         flex-direction: column;
-        grid-column: 1/13;
+        grid-column: 7/13;
     }
 }
 .testimonial {
@@ -228,15 +238,8 @@ body {
         padding-bottom: 5em;
         overflow: hidden;
     }
-    &__title {
-        width: 80%;
-        padding-left: 15%;
-    }
 
     &__content {
-        padding-left: 15%;
-        width: 80%;
-        margin-block-end: 200px;
         button{
             background-color: #E53E3E;
             color: white;
@@ -251,11 +254,10 @@ body {
             transition: background-color 0.3s;
             margin-left: 20%;
             &:hover {
-            background-color: darken(#E53E3E, 10%);
+                background-color: darken(#E53E3E, 10%);
             }
-        
             &:active {
-            background-color: darken(#E53E3E, 20%);
+                background-color: darken(#E53E3E, 20%);
             }
         }
         .Input {
@@ -273,7 +275,11 @@ body {
         z-index: -1;
     }
     &__form {
+        grid-column: 1/9;
         margin-bottom: 10em;
+    }
+    &__infos {
+        grid-column: 10/13;
     }
 }
 
@@ -286,16 +292,7 @@ body {
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
         }
-        &__title {
-            width: 100%;
-            padding-left: 178px;
-        }
         &__content {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-gap: 20px;
-            padding-left: 178px;
             button{
                 margin-left: 0;
             }
@@ -310,7 +307,6 @@ body {
         }
         &__form {
             margin-bottom: 0;
-            width: 80%;
         }
     }
 }

@@ -1,7 +1,14 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
 .category {
-    color: #FFFFFF;
-    opacity: .5;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 8px;
+    opacity: .5;
+    &__slash {
+        color: $pink;
+        opacity: 1;
+    }
 }

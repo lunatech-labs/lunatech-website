@@ -1,10 +1,10 @@
 @import "/src/styles/Mixins.scss";
 
 .title {
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 24px;
-    line-height: 72px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    margin-bottom: 16px;
     span {
         @include red-title;
     }

@@ -1,16 +1,17 @@
 import "./ButtonSecondary.scss";
 
 interface ButtonProps {
-    children?: React.ReactNode;
-    onClick: () => void;
+    text: string;
+    iconUrl: string;
 }
 
 const ButtonSecondary = (props: ButtonProps) => {
     return (
-        <a className="button-secondary" onClick={props.onClick} href="">
-            {props.children}
+        <a className="button-secondary" href="">
+            {props.text}
+            <img src={props.iconUrl} />
         </a>
     )
 }
 
-export default ButtonSecondary
+export default ButtonSecondary;
