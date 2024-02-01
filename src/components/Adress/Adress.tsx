@@ -1,4 +1,4 @@
-import "./Address.scss";
+import "./Adress.scss";
 
 interface AddressProps {
   country: string;

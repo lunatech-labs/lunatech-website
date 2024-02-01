@@ -1,9 +1,8 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
 .footer {
-    // a {
-    //     font-size: 14px;
-    // }
-    // padding: 0 128px;
-    background: #0A1428;
+    background: $darkBlue;
     &__top {
         padding: 64px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.16);
@@ -11,9 +10,6 @@
             width: 70%;
             grid-column: 1 / -1;
             margin: auto;
-            img {
-                margin: auto;
-            }
         }
         .second{
             grid-column: 1 / -1;

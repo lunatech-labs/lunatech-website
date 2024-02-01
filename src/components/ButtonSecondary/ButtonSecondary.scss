@@ -2,14 +2,29 @@
 @import "/src/styles/Mixins.scss";
 
 .button-secondary {
-    @include button-border-gradient;
-    height: 64px;
-    padding: 0 32px;
+    @include border-gradient;
     @include flexbox;
     justify-content: center;
-    width: fit-content;
-    img {
+    width: max-content;
+    &__img {
         margin-left: 16px;
         color: $pink;
     }
+}
+.button-secondary-large {
+    padding: 0 32px;
+    height: 64px;
+}
+.button-secondary-large .button-secondary__img {
+    width: 24px;
+    height: 24px;
+}
+.button-secondary-small {
+    font-size: 12px;
+    padding: 0 16px;
+    height: 40px;
+}
+.button-secondary-small .button-secondary__img {
+    width: 16px;
+    height: 16px;
 }

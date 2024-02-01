@@ -15,8 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ------------- HERO ------------- */
-
+/* ------------- HERO BLOCK ------------- */
 .hero {
     position: relative;
     height: 100vh;
@@ -46,6 +45,14 @@ body {
         right: 20px;
         top: 92px;
     }
+    &__link {
+        @include flexbox;
+        margin-left: 24px;
+        img {
+            margin-left: 8px;
+            transform: rotate(-45deg);
+        }
+    }
     &__title {
         font-size: 40px;
         font-weight: 700;
@@ -60,7 +67,8 @@ body {
         opacity: .5;
     }
 }
-/* ------------- ABOUT US ------------- */
+
+/* ------------- ABOUT US BLOCK ------------- */
 .about {
     @include grid;
     align-items: center;
@@ -72,110 +80,63 @@ body {
         grid-column: 7 / 13;
     }
 }
-/* ------------- SERVICES ------------- */
+
+/* ------------- SERVICES BLOCK ------------- */
 .services {
-    @include grid;
-    &__img {
-        grid-column: 1/6;
-        width: 100%;
-    }
-    &__right {
-        display: flex;
-        flex-direction: column;
-        grid-column: 1/13;
-    }
-}
-.works {
-    padding: 128px 0;
-    position: relative;
-    &__left {
-        display: flex;
-        flex-direction: column;
-        grid-column: span 6;
-    }
-    &__moon {
-        position: absolute;
-        width: 200px;
-        top: -360px;
-        right: 0px;
-        z-index: -1;
-    }
-    &__left {
-        grid-column: 1/13;
-    }
-}
-
-.tab {
     display: flex;
-    align-items: center;
-    height: 80px;
-    background: linear-gradient(#0A1E50, #081A47);
-    border-radius: 16px;
-    border: 1px solid #78B4D7;
-    padding: 8px;
-    margin-top: 20px;
-    &__entry {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        height: 64px;
-        padding: 0 32px;
-    }
-}
-
-.tab-entry {
-    display: none;
-}
-.show-tab-entry {
-    display: block;
-    margin-top: 64px;
-}
-.about {
-    padding: 128px 0;
-    &__moon {
-        grid-column: span 5;
-        width: 100%;
-    }
-    &__right {
-        display: flex;
-        flex-direction: column;
-        grid-column: 7/13;
-    }
-}
-.testimonial {
-    padding: 128px 0;
-    position: relative;
-    &__left {
-        display: flex;
-        flex-direction: column;
-        grid-column: span 4;
-    }
+    align-items: flex-end;
+    justify-content: space-between;
     &__content {
         display: flex;
         flex-direction: column;
-        position: relative;
-        justify-content: space-between;
-        margin-top: 96px;
-    }
-    &__moon {
-        position: absolute;
-        top: -280px;
-        z-index: -1;
-        width: 1150px;
-        right: 180px;
+        grid-column: span 8;
+        h2 {
+            width: 430px;
+        }
+        p:nth-child(3) {
+            width: 750px;
+        }
     }
 }
 
-.contact {
-    position: relative;
-    &__star {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
+/* ------------- WORKS BLOCK ------------- */
+.works {
+    &__top {
+        @include flexbox;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+    &__content {
+        @include grid;
+    }
+    &__left {
+        grid-column: span 6;
+    }
+    &__right {
+        @include flexbox;
+        padding: 80px;
+        grid-column: span 6;
+        background: linear-gradient(317deg, #FFDA57 -11.19%, #F56BCF 20.41%, #5956E8 71.73%, #5956E8 110.15%);
+        border-radius: 24px;
+    }
+    &__img {
         width: 100%;
     }
 }
+
+/* ------------- CONTACT BLOCK ------------- */
+.contact {
+   @include flexbox;
+   justify-content: space-between;
+   padding: 128px 80px;
+   @include dark-gradient;
+   margin-bottom: 128px;
+}
+
+
+
+
+
 
 @media only screen and (min-width: 768px){
     .works {
@@ -186,9 +147,6 @@ body {
         &__left {
             grid-column: span 6;
         }
-    }
-    .tab {
-        margin-top: 0;
     }
     .about {
         &__right {
@@ -220,15 +178,13 @@ body {
             grid-column: 7/13;
         }
     }
-    .testimonial {
-        &__content {
-            flex-direction: row;
-        }
-    }
 }
 
-/* ----------------------- Contact Page ----------------------- */
 
+
+
+
+/* ----------------------- Contact Page ----------------------- */
 .contact {
     &__main {
         position: relative;
@@ -309,47 +265,4 @@ body {
             margin-bottom: 0;
         }
     }
-}
-
-.address {
-    background: var(--bg);
-    padding: 128px 0;
-    &__card {
-        grid-column: span 4;
-    }
-    &__title {
-        font-size: 24px;
-        margin-bottom: 32px;
-    }
-    &__part {
-        margin-bottom: 32px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &__subtitle {
-        font-size: 20px;
-        line-height: 36px;
-        opacity: .5;
-    }
-    &__join {
-        @include flexbox;
-    }
-    &__text {
-        font-size: 16px;
-        line-height: 36px;
-    }
-    &__link {
-        font-size: 16px;
-        line-height: 36px;
-    }
-    &__separate {
-        opacity: .5;
-        margin: 0 16px;
-        display: flex;
-        height: 24px;
-        width: 1px;
-        background: white;
-    }
-   
 }
