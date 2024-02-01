@@ -40,7 +40,7 @@ const Input = (props: InputProps) => {
   }, [dropdownRef]);
 
   return (
-    <div className="container">
+    <div className="question-content">
       <div className="question-number">{number}</div>
       <div className="question">
         <label htmlFor={name}>{label}</label>

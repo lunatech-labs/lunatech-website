@@ -1,11 +1,15 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
 .button-secondary {
-    font-weight: 700;
-    border-radius: 32px;
-    border: 1px solid white;
+    @include button-border-gradient;
     height: 64px;
-    padding: 0 48px;
-    display: flex;
-    align-items: center;
+    padding: 0 32px;
+    @include flexbox;
     justify-content: center;
     width: fit-content;
+    img {
+        margin-left: 16px;
+        color: $pink;
+    }
 }

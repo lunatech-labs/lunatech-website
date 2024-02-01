@@ -6,6 +6,7 @@
     flex-direction: column;
     @include dark-gradient;
     padding: 48px 24px;
+    margin: 20px 0;
     grid-column: span 3;
     &__icon {
         color: #78B4D7;

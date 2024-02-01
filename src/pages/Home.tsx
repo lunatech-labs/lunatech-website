@@ -20,6 +20,7 @@ import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
 import Sphere from '../components/Sphere/Sphere';
 import MouseScroll from '../components/MouseScroll/MouseScroll';
 import ValuesBanner from '../components/ValuesBanner/ValuesBanner';
+import Section from '../components/Section/Section';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -37,6 +38,8 @@ import Skyscraper from '/skyscraper.svg';
 import Buildings from '/buildings.svg';
 import Office from '/office.svg';
 import Star from '/stars.png';
+import ArrowRight from '/arrow-right.svg';
+import Building from '/virtual_land.png';
 
 
 const Home = () => {
@@ -75,15 +78,10 @@ const Home = () => {
                             <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
                             <Text className="mgb32" content={<>We think and design unique experiences<br />for tomorrow's innovative digital products.</>} />
                             <div className="dflex">
-                                <ButtonPrimary
-                                    className="mgr16"
-                                    onClick={() => console.log("You clicked on the pink circle!")}
-                                >
+                                <ButtonPrimary className="mgr16">
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
-                                <ButtonSecondary
-                                    onClick={() => console.log("You clicked on the pink circle!")}
-                                >
+                                <ButtonSecondary text>
                                     <Trans i18nKey="hero.button2" />
                                 </ButtonSecondary>
                             </div>
@@ -97,9 +95,36 @@ const Home = () => {
 
             <ValuesBanner />
 
-            <section className="services">
+            <Section className="section-gradient">
                 <Container>
-                    <Grid>
+                    <div className="about">
+                        <img className="about__img" src={Building} alt="Building" />
+                        <div className="about__content">
+                            <Category content="About us" />
+                            <Title content={<>Custom software systems for over <span>30 years</span></>} />
+                            <Text className="mgb32">Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.</Text>
+                            <ButtonSecondary text="More Details" iconUrl={ArrowRight} />
+                            <div className="mgt64">
+                                <Grid>
+                                    <OfficeCard title="Rotterdam">
+                                        <Icon imageUrl={Skyscraper} size="large" />
+                                    </OfficeCard>
+                                    <OfficeCard title="Paris">
+                                        <Icon imageUrl={Buildings} size="large" />
+                                    </OfficeCard>
+                                    <OfficeCard title="Newcastle">
+                                        <Icon imageUrl={Office} size="large" />
+                                    </OfficeCard>
+                                </Grid>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </Section>
+
+            <Section>
+                <Container>
+                    <div className="services">
                         <img className="services__img" src={Moon} alt="Moon" />
                         <div className="services__right">
                             <Category content="Services" />
@@ -108,9 +133,12 @@ const Home = () => {
                                 <Trans i18nKey="service.text" />
                             </Text>
                         </div>
-                    </Grid>
+                    </div>
                 </Container>
-            </section>
+            </Section>
+            
+                
+            
 
             <section className="works">
                 <Container>
@@ -157,19 +185,7 @@ const Home = () => {
                             <Category content="About" />
                             <Title content={<>Our <span>company</span>.</>} />
                             <Text>Afin d’être réactif et d’apporter des solutions rapides, nos bureaux sont basés non loin de nos clients. Ceci nous permet de réagir rapidement et d’assurer un suivi et une coordination des équipes plus facilement.</Text>
-                            <div className="mgt32 mgb128">
-                                <Grid>
-                                    <OfficeCard title="Rotterdam">
-                                        <Icon imageUrl={Skyscraper} size="large" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Paris">
-                                        <Icon imageUrl={Buildings} size="large" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Newcastle">
-                                        <Icon imageUrl={Office} size="large" />
-                                    </OfficeCard>
-                                </Grid>
-                            </div>
+                            
                         </div>
                     </Grid>
                     <div className="ta-c">
