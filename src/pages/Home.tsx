@@ -197,7 +197,7 @@ const Home = () => {
                             <Category content="Contact" />
                             <Title content={<>Let's talk <span>together</span>.</>} />
                         </div>
-                        <ButtonPrimary iconUrl={ArrowRight}>Contact Us</ButtonPrimary>
+                        <ButtonPrimary iconUrl={Message}>Contact Us</ButtonPrimary>
                     </div>
 
                     <Address />
