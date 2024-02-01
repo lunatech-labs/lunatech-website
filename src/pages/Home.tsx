@@ -34,6 +34,7 @@ import Message from '/message.svg';
 
 import Building from '/virtual_land.png';
 import CollapseImg from '/collapse.png';
+import BlogImg from '/blog.png';
 
 
 const Home = () => {
@@ -145,13 +146,51 @@ const Home = () => {
                                 <img className="works__img" src={CollapseImg} alt="Collapse image" />
                             </div>
                         </div>
-                        
-                        
                     </div>
                 </Container>
             </Section>
 
             <Section>
+                <Container>
+                    <div className="blog">
+                        <div className="blog__top">
+                            <Category content="Articles" />
+                            <Title content={<>Read the content from our <span>experts</span>.</>} />
+                        </div>
+                        <div className="blog__articles">
+                            <div className="blog__content">
+                                <div className="blog__left">
+                                    <div className="dflex">
+                                        <p className="blog__category">Marketing</p>
+                                        <p className="blog__date">September 1, 2022</p>
+                                    </div>
+                                    <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
+                                    <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
+                                    <ButtonSecondary iconUrl={ArrowRight} size="large">Read More</ButtonSecondary>
+                                </div>
+                                <img className="blog__img" src={BlogImg} alt="Blog img" />
+                            </div>
+                            <div className="blog__content">
+                                <div className="blog__left">
+                                    <div className="dflex">
+                                        <p className="blog__category">Marketing</p>
+                                        <p className="blog__date">September 1, 2022</p>
+                                    </div>
+                                    <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
+                                    <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
+                                    <ButtonSecondary iconUrl={ArrowRight} size="large">Read More</ButtonSecondary>
+                                </div>
+                                <img className="blog__img" src={BlogImg} alt="Blog img" />
+                            </div>
+                        </div>
+                        <div className="blog__action">
+                            <ButtonSecondary iconUrl={ArrowRight} size="large">More articles</ButtonSecondary>
+                        </div>
+                    </div>
+                </Container>
+            </Section>
+
+            <Section className="section-gradient">
                 <Container>
                     <div className="contact">
                         <div>
