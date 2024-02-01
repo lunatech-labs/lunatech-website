@@ -6,41 +6,20 @@
     &__top {
         padding: 64px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-        .first{
-            width: 70%;
-            grid-column: 1 / -1;
-            margin: auto;
-        }
-        .second{
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            .footer__category {
-                margin: auto;
-            }
-        }
-        .third{
-            grid-column: 1 / -1;
-            margin: auto;
-        }
-        .fourth{
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            .footer__category {
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
     }
     &__bottom {
         padding: 32px 0;
-        display: flex;
-        align-items: center;
+        @include flexbox;
         justify-content: space-between;
     }
     &__part {
-        grid-column: span 3;
+        grid-column: span 2;
+        &:first-child {grid-column: span 6;}
+        &:last-child {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
     }
     &__category {
         &:not(:last-child) {
@@ -56,14 +35,19 @@
         margin-bottom: 64px;
     }
     &__social {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flexbox;
         a {
-            border: 1px solid rgb(26,42,62);
-            border-width: 1px;
-            padding: 15px;
-            border-radius: 15%;
+            background: linear-gradient(to bottom, $darkBlue, $darkBlue) padding-box,
+                        linear-gradient(to bottom, rgb(255 255 255 / 24%), rgb(84 145 179 / 24%)) border-box;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            height: 64px;
+            width: 64px;
+            @include flexbox;
+            justify-content: center;
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
         }
     }
     &__title {
@@ -75,8 +59,14 @@
 
     }
     &__item {
+        a {
+            transition-duration: .3s;
+            &:hover {
+                color: $pink;
+            }
+        }
         &:not(:last-child) {
-            margin-bottom: 8px;
+            margin-bottom: 16px;
         }
     }
 }

@@ -126,11 +126,12 @@ body {
 
 /* ------------- CONTACT BLOCK ------------- */
 .contact {
-   @include flexbox;
-   justify-content: space-between;
-   padding: 128px 80px;
-   @include dark-gradient;
-   margin-bottom: 128px;
+    @include flexbox;
+    justify-content: space-between;
+    padding: 128px 80px;
+    margin-bottom: 128px;
+    background: linear-gradient(to bottom, #0A1E50, #081A47);
+    border-radius: 16px;
 }
 
 /* ------------- BLOG BLOCK ------------- */

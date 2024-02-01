@@ -31,6 +31,10 @@
     &__link {
         font-size: 16px;
         line-height: 36px;
+        transition-duration: .3s;
+        &:hover {
+            color: $pink;
+        }
     }
     &__separate {
         opacity: .5;
