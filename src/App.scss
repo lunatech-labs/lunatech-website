@@ -83,6 +83,48 @@ body {
 
 /* ------------- SERVICES BLOCK ------------- */
 .services {
+    &__title {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        ServiceCard {
+            margin: auto;
+        }
+    }
+    &__desc {
+        margin: auto;
+    }
+    ButtonSecondary {
+        margin: auto;
+    }
+}
+.works {
+    padding: 128px 0;
+    position: relative;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 6;
+    }
+    &__moon {
+        position: absolute;
+        width: 200px;
+        top: -360px;
+        right: 0px;
+        z-index: -1;
+    }
+    &__left {
+        grid-column: 1/13;
+    }
+}
+
+.tab {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -228,8 +270,24 @@ body {
         }
     }
     .services {
-        &__right {
-            grid-column: 7/13;
+        &__title {
+            display: grid;
+            grid-column: 2/12;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: end;
+            align-items: end;
+        }
+        &__content {
+            grid-column: 2/12;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            ServiceCard {
+                margin: auto;
+            }
+        }
+        &__desc {
+            grid-column: 1/3;
         }
     }
 }
