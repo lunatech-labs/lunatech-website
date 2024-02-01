@@ -11,12 +11,6 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
     return (
         <div className="navigation">
             <div className="navigation__main">
-                <ul className="navigation__social">
-                    <li className="navigation__social-item"><Link to="/"><img src={Github} alt="Github logo" />Github</Link></li>
-                    <li className="navigation__social-item"><Link to="/"><img src={Instagram} alt="Instagram logo" />Instagram</Link></li>
-                    <li className="navigation__social-item"><Link to="/"><img src={Linkedin} alt="Linkedin logo" />Linkedin</Link></li>
-                    <li className="navigation__social-item"><Link to="/"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
-                </ul>
                 <ul className="navigation__menu">
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Home</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/services">Services</NavLink></li>
@@ -25,6 +19,12 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
                     <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://blog.lunatech.com/" target="_blank">Blog</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about">About us</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/contact">Contact</NavLink></li>
+                </ul>
+                <ul className="navigation__social">
+                    <li className="navigation__social-item"><Link to="/"><img src={Github} alt="Github logo" />Github</Link></li>
+                    <li className="navigation__social-item"><Link to="/"><img src={Instagram} alt="Instagram logo" />Instagram</Link></li>
+                    <li className="navigation__social-item"><Link to="/"><img src={Linkedin} alt="Linkedin logo" />Linkedin</Link></li>
+                    <li className="navigation__social-item"><Link to="/"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
                 </ul>
             </div>
             <div className="navigation__footer">
