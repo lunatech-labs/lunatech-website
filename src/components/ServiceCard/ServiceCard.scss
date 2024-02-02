@@ -7,7 +7,7 @@
     @include dark-gradient;
     padding: 48px 24px;
     margin: 20px 0;
-    grid-column: span 3;
+    gap: 16px;
     &__icon {
         background: $blue;
         color: #78B4D7;
@@ -15,11 +15,14 @@
         padding: 24px;
     }
     &__title {
-        margin-bottom: 16px;
         font-size: 24px;
     }
     &__text {
         opacity: .5;
-        text-align: center;
+    }
+}
+@media only screen and (min-width: 768px){
+    .service-card {
+        
     }
 }

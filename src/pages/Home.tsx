@@ -35,7 +35,9 @@ import Message from '/message.svg';
 import Building from '/virtual_land.png';
 import CollapseImg from '/collapse.png';
 import BlogImg from '/blog.png';
+import ServiceCard from '../components/ServiceCard/ServiceCard';
 
+import Example from '/github.svg';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -114,14 +116,38 @@ const Home = () => {
             <Section>
                 <Container>
                     <div className="services">
-                        <div className="services__content">
-                            <Category content="Services" />
-                            <Title content={<>Meet your needs with our <span>services</span></>} />
-                            <Text>
-                                <Trans i18nKey="service.text" />
-                            </Text>
+                        <div className="services__title">
+                            <div className='services__desc'>
+                                <Category content="Services" />
+                                <Title content={<>Meet your needs with our <span>services</span></>} />
+                                <Text>
+                                    <Trans i18nKey="service.text" />
+                                </Text>
+                            </div>
+                            <ButtonSecondary iconUrl={ArrowRight} size='large'>
+                                <span>More Details</span>
+                            </ButtonSecondary>
                         </div>
-                        <ButtonSecondary iconUrl={ArrowRight} size="large">More Details</ButtonSecondary>
+                        <div className='services__content'>
+                            <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                <Icon imageUrl={Example} size="small" />
+                            </ServiceCard>
+                            <ServiceCard title="Insurance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                <Icon imageUrl={Example} size="small" />
+                            </ServiceCard>
+                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                <Icon imageUrl={Example} size="small" />
+                            </ServiceCard>
+                            <ServiceCard title="Logistic" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='archive'>
+                                <Icon imageUrl={Example} size="small" />
+                            </ServiceCard>
+                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                <Icon imageUrl={Example} size="small" />
+                            </ServiceCard>
+                            <ServiceCard title="Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                <Icon imageUrl={Example} size="small" />
+                            </ServiceCard>
+                        </div>
                     </div>
                 </Container>
             </Section>
