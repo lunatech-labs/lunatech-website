@@ -27,8 +27,8 @@ const Services = () => {
                     </div>
                     <img className='contact__moon' src={Moon} alt="" />
             </section>
-            <div className="services">
-                <div className='services__content'>
+            <div className="services__page">
+                <div className='services__page__content'>
                     <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>

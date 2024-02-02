@@ -6,7 +6,7 @@ interface CategoryProps {
 
 const Category = (props: CategoryProps) => {
     return (
-        <p className="category"><span className="category__slash">//</span>{props.content}</p>
+        <p className="category"><span className="category__slash">// </span>{props.content}</p>
     );
 };
 

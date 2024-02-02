@@ -9,7 +9,7 @@ import Example from '/github.svg';
 
 const Works = () => {
     return (
-        <>
+        <section className="works__page">
             <Container>
                 <section className='contact__main'>
                         <div className="contact__title">
@@ -19,8 +19,8 @@ const Works = () => {
                         </div>
                         <img className='contact__moon' src={Moon} alt="" />
                 </section>
-                <div className="works">
-                    <div className="works__content">
+                <div className="works__page">
+                    <div className="works__page__content">
                         <WorkCard title="Automotive" desc="Scala Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='blog'>
                             <Icon imageUrl={Example} size="small" />
                         </WorkCard>
@@ -33,7 +33,7 @@ const Works = () => {
                     </div>
                 </div>
             </Container>
-        </>
+        </ section>
     );
 };
 
