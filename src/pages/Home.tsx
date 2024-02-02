@@ -25,10 +25,10 @@ import Mountains from '/mountains.svg';
 import Grass from '/grass.svg';
 import Telescope from '/telescope.svg';
 import Moon from '/moon.svg';
-import Skyscraper from '/skyscraper.svg';
-import Buildings from '/buildings.svg';
-import Office from '/office.svg';
 
+import Buildings1 from '/buildings1.svg';
+import Buildings2 from '/buildings2.svg';
+import Buildings3 from '/buildings3.svg';
 import ArrowRight from '/arrow-right.svg';
 import Message from '/message.svg';
 
@@ -72,7 +72,7 @@ const Home = () => {
                                 <ButtonPrimary iconUrl={Message}>
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
-                                <a className="hero__link" href="#">About us<img src={ArrowRight} alt="Arrow" /></a>
+                                <a className="hero__link" href="/about">About us<img src={ArrowRight} alt="Arrow" /></a>
                             </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
@@ -96,13 +96,13 @@ const Home = () => {
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam">
-                                        <Icon imageUrl={Skyscraper} size="large" />
+                                        <Icon imageUrl={Buildings1} size="small" />
                                     </OfficeCard>
                                     <OfficeCard title="Paris">
-                                        <Icon imageUrl={Buildings} size="large" />
+                                        <Icon imageUrl={Buildings2} size="small" />
                                     </OfficeCard>
                                     <OfficeCard title="Newcastle">
-                                        <Icon imageUrl={Office} size="large" />
+                                        <Icon imageUrl={Buildings3} size="small" />
                                     </OfficeCard>
                                 </Grid>
                             </div>
@@ -221,7 +221,7 @@ const Home = () => {
                     <div className="contact">
                         <div>
                             <Category content="Contact" />
-                            <Title content={<>Let's talk <span>together</span>.</>} />
+                            <Title content={<>Let's talk <span>together!</span></>} />
                         </div>
                         <ButtonPrimary iconUrl={Message}>Contact Us</ButtonPrimary>
                     </div>
