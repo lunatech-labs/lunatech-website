@@ -1,0 +1,38 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.work-card {
+    @include dark-gradient;
+    @include flexbox;
+    flex-direction: column;
+    padding: 48px 24px;
+    margin: 20px 0;
+    gap: 24px;
+    &__title {
+        font-size: 24px;
+    }
+    &__desc {
+        color: rgb(209, 0, 90);
+    }
+    &__text {
+        opacity: .5;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/2;
+        row-gap: 5px;
+        justify-content: center;
+    }
+    img {
+        grid-column: 1/1;
+        width: 100%;
+        border-radius: 5%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .work-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
