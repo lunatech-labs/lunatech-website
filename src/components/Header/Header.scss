@@ -7,15 +7,10 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    pointer-events: none;
     &__logo {
         z-index: 1;
-        pointer-events: initial;
     }
     &__img {
         height: 40px;
-    }
-    > div {
-        pointer-events: initial;
     }
 }
