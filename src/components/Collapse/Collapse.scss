@@ -1,0 +1,18 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.collapse {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    &__top {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 40px;
+        @include dark-gradient;
+    }
+    &__body {
+        @include dark-gradient;
+        padding: 40px;
+    }
+}

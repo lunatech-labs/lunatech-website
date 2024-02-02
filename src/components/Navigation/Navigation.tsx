@@ -13,18 +13,18 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
             <div className="navigation__main">
                 <ul className="navigation__menu">
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Home</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about">About Us</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/services">Services</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/works">Works</NavLink></li>
-                    <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://recruitment.lunatech.com/" target="_blank">Careers</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://blog.lunatech.com/" target="_blank">Blog</NavLink></li>
-                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about">About us</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://recruitment.lunatech.com/" target="_blank">Careers</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/contact">Contact</NavLink></li>
                 </ul>
                 <ul className="navigation__social">
-                    <li className="navigation__social-item"><Link to="/"><img src={Github} alt="Github logo" />Github</Link></li>
-                    <li className="navigation__social-item"><Link to="/"><img src={Instagram} alt="Instagram logo" />Instagram</Link></li>
-                    <li className="navigation__social-item"><Link to="/"><img src={Linkedin} alt="Linkedin logo" />Linkedin</Link></li>
-                    <li className="navigation__social-item"><Link to="/"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
+                    <li className="navigation__social-item"><Link to="https://github.com/lunatech-labs" target="_blank"><img src={Github} alt="Github logo" />Github</Link></li>
+                    <li className="navigation__social-item"><Link to="https://www.instagram.com/lunatech_nl/" target="_blank"><img src={Instagram} alt="Instagram logo" />Instagram</Link></li>
+                    <li className="navigation__social-item"><Link to="https://www.linkedin.com/company/lunatech-research" target="_blank"><img src={Linkedin} alt="Linkedin logo" />Linkedin</Link></li>
+                    <li className="navigation__social-item"><Link to="https://twitter.com/lunatechlabs" target="_blank"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
                 </ul>
             </div>
             <div className="navigation__footer">

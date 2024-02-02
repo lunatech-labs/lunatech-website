@@ -7,6 +7,15 @@
     "service": {
         "text": "Lunatech provides innovative solutions for the creation and modernization of your digital products through the following services:"
     },
+    "services": {
+        "title": "Meet your needs with ",
+        "titleColor": "our services",
+        "text": "We provide a wide range of services to help you meet your needs. We are experts in the following areas:"
+    },
+    "integration": {
+        "title": "Integration",
+        "text": "We help you to integrate your applications and data, whether they are on-premise or in the cloud, using the best open source technologies."
+    },
     "address": {
         "countryNL": "Netherlands",
         "countryFR": "France",

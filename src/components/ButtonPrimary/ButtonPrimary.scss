@@ -1,11 +1,16 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
 .button-primary {
-    font-weight: 700;
-    border-radius: 32px;
-    height: 64px;
-    padding: 0 48px;
-    display: flex;
-    align-items: center;
+    @include flexbox;
     justify-content: center;
     background: -webkit-linear-gradient(180deg, #DB2777, #E11D48);
-    width: fit-content;
+    border-radius: 12px;
+    height: 64px;
+    padding: 0 48px;
+    width: max-content;
+    &__img {
+        margin-left: 16px;
+        color: $pink;
+    }
 }

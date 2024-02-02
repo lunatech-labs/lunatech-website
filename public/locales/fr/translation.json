@@ -1,11 +1,20 @@
 {
     "title": "Bienvenue",
     "hero": {
-        "button1": "Test fr",
+        "button1": "Contact",
         "button2": "A propos"
     },
     "service": {
         "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :"
+    },
+    "services": {
+        "title":"Répondre à vos besoins grâce à ",
+        "titleColor":"nos services",
+        "text": "Nous proposons une large gamme de services pour vous aider à répondre à vos besoins. Nous sommes experts dans les domaines suivants :"
+    },
+    "integration": {
+        "title": "Intégration",
+        "text": "Nous intégrons des systèmes existants et des applications tierces dans votre écosystème digital. Nous utilisons des technologies open source et des standards ouverts pour garantir la pérennité de vos solutions."
     },
     "address": {
         "countryNL": "Pays-Bas",

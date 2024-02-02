@@ -1,0 +1,47 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.address {
+    @include grid;
+    &__card {
+        grid-column: span 4;
+    }
+    &__title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    &__part {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__subtitle {
+        font-size: 20px;
+        line-height: 36px;
+        opacity: .5;
+    }
+    &__join {
+        @include flexbox;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 36px;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 36px;
+        transition-duration: .3s;
+        &:hover {
+            color: $pink;
+        }
+    }
+    &__separate {
+        opacity: .5;
+        margin: 0 16px;
+        display: flex;
+        height: 24px;
+        width: 1px;
+        background: white;
+    }
+}

@@ -91,8 +91,14 @@
             opacity: .5;
         }
     }
+    &__border {
+        border: 1px solid white;
+        width: 24px;
+        margin: 0 8px;
+        opacity: .5;
+    }
     &__red {
-        background: -webkit-linear-gradient(180deg,#9B1919, #AE1920, #E62631);
+        background: -webkit-linear-gradient(#DB2777, #E11D48);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
