@@ -2,10 +2,10 @@ import Container from '../components/Container/Container';
 import { Trans } from 'react-i18next';
 import Category from '../components/Category/Category';
 import Text from '../components/Text/Text';
-import Moon from '/moon.svg';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 import Icon from '../components/Icon/Icon';
 
+import Moon from '/moon.svg';
 import Example from '/github.svg';
 
 const Services = () => {
@@ -29,22 +29,22 @@ const Services = () => {
             </section>
             <div className="services">
                 <div className='services__content'>
-                    <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                    <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>
-                    <ServiceCard title="Insurance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                    <ServiceCard title="Insurance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>
-                    <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                    <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>
-                    <ServiceCard title="Logistic" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='archive'>
+                    <ServiceCard title="Logistic" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>
-                    <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                    <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>
-                    <ServiceCard title="Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                    <ServiceCard title="Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                         <Icon imageUrl={Example} size="small" />
                     </ServiceCard>
                 </div>
