@@ -6,7 +6,6 @@ interface CardProps {
     title: string;
     text: string;
     children: JSX.Element;
-    image: string;
 }
 
 const ServiceCard = (props: CardProps) => {
