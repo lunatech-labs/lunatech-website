@@ -52,7 +52,7 @@
         a {
             font-size: $font-size-900;
             color: $lightGray;
-            line-height: 88px;
+            line-height: 5.5rem;
             font-weight: 700;
             &.active {
                 @include red-title;

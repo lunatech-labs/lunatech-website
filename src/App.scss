@@ -7,9 +7,11 @@
 @import "./styles/Utils.scss";
 
 // ----------------------- General -----------------------
+html {
+    font-size: calc(9.25px + 0.390625vw);
+}
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: $font-size-400;
     font-weight: 400;
     color: white;
     background: $mediumBlue;
@@ -57,7 +59,7 @@ body {
     &__title {
         font-size: $font-size-900;
         font-weight: 700;
-        line-height: 88px;
+        line-height: 5.5rem;
         margin-bottom: 16px;
 
         span {

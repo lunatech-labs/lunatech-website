@@ -18,17 +18,17 @@
     }
     &__subtitle {
         font-size: $font-size-500;
-        line-height: 36px;
+        line-height: 2.25rem;
         opacity: .5;
     }
     &__join {
         @include flexbox;
     }
     &__text {
-        line-height: 36px;
+        line-height: 2.25rem;
     }
     &__link {
-        line-height: 36px;
+        line-height: 2.25rem;
         transition-duration: .3s;
         &:hover {
             color: $pink;
