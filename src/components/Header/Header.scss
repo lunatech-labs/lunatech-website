@@ -1,4 +1,5 @@
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .header {
     @include flexbox;
@@ -12,5 +13,8 @@
     }
     &__img {
         height: 40px;
+        @include desktop {
+            height: 32px;
+        }
     }
 }

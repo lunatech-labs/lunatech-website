@@ -13,13 +13,12 @@ $darkGray: #4A4A4A;
 $border: #E7E7E7;
 
 // Fonts
-// Warning : 1rem = 10px on this project (Html font-size = 16px, 1 rem = 16px base)
-// 10px / 16px for a ratio 1:1 px/rem (without calculation) = 0,625
-// Font-size of html element = 62,5% and not 100%
-
-$fs-16: 1.6rem; /* 16px */
-$fs-24: 2.4rem; /* 24px */
-$fs-32: 3.2rem; /* 32px */
-$fs-64: 6.4rem; /* 64px */
-$fs-72: 7.2rem; /* 72px */
+$font-size-300: 0.75rem;    /* 12px */
+$font-size-400: 1rem;       /* 16px, base */
+$font-size-500: 1.25rem;    /* 20px */
+$font-size-600: 1.5rem;     /* 24px */
+$font-size-700: 2rem;       /* 32px */
+$font-size-710: 2.5rem;     /* 40px */
+$font-size-800: 3rem;       /* 48px */
+$font-size-900: 4.5rem;     /* 72px */
 

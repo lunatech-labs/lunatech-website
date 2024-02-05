@@ -5,14 +5,13 @@
     grid-column: span 3;
     @include flexbox;
     &__number {
-        font-size: 40px;
+        font-size: $font-size-710;
         font-weight: 500;
     }
     &__pink {
         color: $pink;
     }
     &__text {
-        font-size: 16px;
         text-transform: uppercase;
         line-height: 22px;
         opacity: .5;

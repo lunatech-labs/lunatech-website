@@ -39,7 +39,7 @@
         a {
             display: flex;
             align-items: center;
-            font-size: 24px;
+            font-size: $font-size-600;
             color: white;
         }
     }
@@ -50,9 +50,9 @@
     }
     &__menu-item {
         a {
-            font-size: 40px;
+            font-size: $font-size-900;
             color: $lightGray;
-            line-height: 80px;
+            line-height: 88px;
             font-weight: 700;
             &.active {
                 @include red-title;
@@ -114,11 +114,6 @@
             padding: 64px;
             width: calc(100% - 384px);
             align-items: end;
-        }
-        &__menu-item {
-            a {
-                font-size: 64px;
-            }
         }
         &__social {
             border-right: 1px solid (rgb(255 255 255 / 25%));

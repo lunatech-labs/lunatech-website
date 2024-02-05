@@ -1,7 +1,8 @@
+@import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
 
 .title {
-    font-size: 48px;
+    font-size: $font-size-800;
     font-weight: 600;
     line-height: 64px;
     margin-bottom: 16px;

@@ -6,7 +6,7 @@
         margin-bottom: 24px;
     }
     &__top {
-        font-size: 24px;
+        font-size: $font-size-600;
         font-weight: 600;
         padding: 40px;
         @include dark-gradient;
