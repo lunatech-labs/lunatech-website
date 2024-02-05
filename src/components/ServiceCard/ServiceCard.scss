@@ -2,12 +2,24 @@
 @import "/src/styles/Mixins.scss";
 
 .service-card {
-    @include flexbox;
+    display: flex;
     flex-direction: column;
     @include dark-gradient;
-    padding: 48px 24px;
-    margin: 20px 0;
-    gap: 16px;
+    padding: 48px;
+    &:before {
+        background: radial-gradient(550px circle at var(--centerX) var(--centerY),rgba(29,32,75,.7),transparent 40%);
+        z-index: 3;
+        opacity: 0;
+        transition: opacity .5s;
+        border-radius: inherit;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        position: absolute;
+    }
     &__icon {
         background: $blue;
         color: #78B4D7;
@@ -16,13 +28,10 @@
     }
     &__title {
         font-size: $font-size-600;
+        margin-bottom: 16px;
     }
     &__text {
         opacity: .5;
-    }
-}
-@media only screen and (min-width: 768px){
-    .service-card {
-        
+        margin-bottom: 16px;
     }
 }

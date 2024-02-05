@@ -18,6 +18,7 @@ import ValuesBanner from '../components/ValuesBanner/ValuesBanner';
 import Section from '../components/Section/Section';
 import Collapse from '../components/Collapse/Collapse';
 import Address from '../components/Address/Address';
+import Spotlight, { SpotlightCard } from '../components/Spotlight/Spotlight';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -38,6 +39,10 @@ import BlogImg from '/blog.png';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
 import Example from '/github.svg';
+
+import Card01 from '/card-01.png';
+import Card02 from '/card-02.png';
+import Card03 from '/card-03.png';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -116,8 +121,8 @@ const Home = () => {
             <Section>
                 <Container>
                     <div className="services">
-                        <div className="services__title">
-                            <div className='services__desc'>
+                        <div className="services__top">
+                            <div className="services__desc">
                                 <Category content="Services" />
                                 <Title content={<>Meet your needs with our <span>services</span></>} />
                                 <Text>
@@ -149,6 +154,47 @@ const Home = () => {
                             </ServiceCard>
                         </div>
                     </div>
+                </Container>
+            </Section>
+
+            <div className="bb-g"></div>
+            <Section>
+                <Container>
+                    <Spotlight className="spotlight__layout">
+                        <SpotlightCard>
+                            <div className="spotlight__card">
+                                <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
+                                <div className="spotlight__content">
+                                    <div className="spotlight__image">
+                                        <div aria-hidden="true"></div>
+                                        <img src={Card01} width={200} height={200} alt="Card 01" />
+                                    </div>
+                                </div>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard>
+                            <div className="spotlight__card">
+                                <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
+                                <div className="spotlight__content">
+                                    <div className="spotlight__image">
+                                        <div aria-hidden="true"></div>
+                                        <img src={Card01} width={200} height={200} alt="Card 01" />
+                                    </div>
+                                </div>
+                            </div>
+                        </SpotlightCard>
+                        <SpotlightCard>
+                            <div className="spotlight__card">
+                                <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
+                                <div className="spotlight__content">
+                                    <div className="spotlight__image">
+                                        <div aria-hidden="true"></div>
+                                        <img src={Card01} width={200} height={200} alt="Card 01" />
+                                    </div>
+                                </div>
+                            </div>
+                        </SpotlightCard>
+                    </Spotlight>
                 </Container>
             </Section>
 

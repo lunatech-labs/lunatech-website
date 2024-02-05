@@ -2,6 +2,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import RoutesMap from './RoutesMap';
 import "./App.scss";
+import "./index.css";
 
 function App() {
     return (
