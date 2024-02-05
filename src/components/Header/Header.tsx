@@ -20,7 +20,7 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
-                <a className="header__logo" href="#" target="_blank">
+                <a className="header__logo" href="/" target="_blank">
                     <img src={lunatechLogo} className="header__img" alt="Lunatech logo" />
                 </a>
                 <div>

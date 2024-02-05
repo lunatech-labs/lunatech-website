@@ -12,7 +12,6 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
         <div className="navigation">
             <div className="navigation__main">
                 <ul className="navigation__menu">
-                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Home</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about">About Us</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/services">Services</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/works">Works</NavLink></li>
