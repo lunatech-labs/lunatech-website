@@ -250,3 +250,22 @@ body {
         grid-column: 10/13;
     }
 }
+
+
+
+
+nav {
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    top: 0;
+    line-height: 4em;
+    text-align: center;
+    
+    transition: transform .3s .1s ease-in-out;
+  }
+  
+  nav.nav-bar--hidden {
+    transform: translateY(-200%);
+  }

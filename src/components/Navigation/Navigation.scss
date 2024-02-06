@@ -11,7 +11,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     transition: transform .3s .1s ease-in-out;
     &--active {
         transform: translateX(0px);

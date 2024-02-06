@@ -5,12 +5,8 @@
     @include flexbox;
     justify-content: space-between;
     padding: 64px;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    @include tablet {
-        padding: 32px;
-    }
+    @include tablet {padding: 32px;}
+    @include phone-landscape {padding: 24px;}
     &__logo {
         z-index: 1;
     }

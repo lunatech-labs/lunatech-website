@@ -18,6 +18,9 @@
     @include desktop {
         grid-column: span 6;
     }
+    @include phone-portrait {
+        grid-column: span 12;
+    }
     &:before {
         @include spotlight;
         transform: translate(var(--mouse-x), var(--mouse-y)) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
