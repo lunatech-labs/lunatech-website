@@ -12,7 +12,7 @@ const ServiceCard = (props: CardProps) => {
     const toPath = (title: string) => `/services/${title.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
-        <div className="service-card">
+        <div>
             {props.children}
             <h3 className="service-card__title">{props.title}</h3>
             <p className="service-card__text">{props.text}</p>

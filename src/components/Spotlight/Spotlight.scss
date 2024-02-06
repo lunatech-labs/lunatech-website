@@ -2,26 +2,18 @@
 @import "/src/styles/Mixins.scss";
 
 .spotlight__layout {
-    display: grid;
-    gap: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: flex-start;
+    @include grid;
 }
-.spotlight__layout:hover .spotlight:before {
-    opacity: 1;
-}
-.spotlight__layout:hover .spotlight:after {
-    opacity: .1;
-}
+.spotlight__layout:hover .spotlight:before {opacity: 1;}
+.spotlight__layout:hover .spotlight:after {opacity: .1;}
 .spotlight {
-    background-color: #1E293B;
+    background: linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%));
     height: 100%;
     position: relative;
     border-radius: 16px;
     padding: 1px;
     overflow: hidden;
+    grid-column: span 4;
     &:before {
         @include spotlight;
         transform: translate(var(--mouse-x), var(--mouse-y)) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
@@ -43,7 +35,6 @@
         left: -12rem;
         top: -12rem;
         z-index: 30;
-
     }
     &__card {
         position: relative;
@@ -52,7 +43,7 @@
         border-radius: inherit;
         z-index: 20;
         overflow: hidden;
-        background-color: #0F172A;
+        background: linear-gradient(to bottom, #0A1E50, #081A47);
     }
     &__gradient {
         position: absolute;
@@ -68,14 +59,13 @@
             inset: 0;
             border-radius: 9999px;
             filter: blur(80px);
-            background-color: #1E293B;
+            background-color: #081A47;
         }
     }
     &__content {
         @include flexbox;
         flex-direction: column;
         height: 100%;
-        text-align: center;
     }
     &__image {
         position: relative;
@@ -89,15 +79,9 @@
             filter: blur(64px);
             border-radius: 9999px;
             z-index: -10;
-            background-color: #4F46E5;
+            background-color: $lightBlue;
             transform: translate(0, -10%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
         }
-        > img {
-            display: inline-flex;
-        }
+        > img {display: inline-flex;}
     }
 }
-
-
-
-

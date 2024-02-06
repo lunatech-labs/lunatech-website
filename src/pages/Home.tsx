@@ -133,26 +133,39 @@ const Home = () => {
                                 <span>More Details</span>
                             </ButtonSecondary>
                         </div>
-                        <div className='services__content'>
-                            <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Insurance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Logistic" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='archive'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                        </div>
+                        
+                        <Spotlight className="spotlight__layout">
+                            <SpotlightCard>
+                                <ServiceCard title="Scala expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <Icon imageUrl={Example} size="small" />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Java Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <Icon imageUrl={Example} size="small" />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <Icon imageUrl={Example} size="small" />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <Icon imageUrl={Example} size="small" />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <Icon imageUrl={Example} size="small" />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <Icon imageUrl={Example} size="small" />
+                                </ServiceCard>
+                            </SpotlightCard>
+                        </Spotlight>
                     </div>
                 </Container>
             </Section>
@@ -162,36 +175,21 @@ const Home = () => {
                 <Container>
                     <Spotlight className="spotlight__layout">
                         <SpotlightCard>
-                            <div className="spotlight__card">
-                                <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
-                                <div className="spotlight__content">
-                                    <div className="spotlight__image">
-                                        <div aria-hidden="true"></div>
-                                        <img src={Card01} width={200} height={200} alt="Card 01" />
-                                    </div>
-                                </div>
+                            <div className="spotlight__image">
+                                <div aria-hidden="true"></div>
+                                <img src={Card01} width={200} height={200} alt="Card 01" />
                             </div>
                         </SpotlightCard>
                         <SpotlightCard>
-                            <div className="spotlight__card">
-                                <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
-                                <div className="spotlight__content">
-                                    <div className="spotlight__image">
-                                        <div aria-hidden="true"></div>
-                                        <img src={Card01} width={200} height={200} alt="Card 01" />
-                                    </div>
-                                </div>
+                            <div className="spotlight__image">
+                                <div aria-hidden="true"></div>
+                                <img src={Card01} width={200} height={200} alt="Card 01" />
                             </div>
                         </SpotlightCard>
                         <SpotlightCard>
-                            <div className="spotlight__card">
-                                <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
-                                <div className="spotlight__content">
-                                    <div className="spotlight__image">
-                                        <div aria-hidden="true"></div>
-                                        <img src={Card01} width={200} height={200} alt="Card 01" />
-                                    </div>
-                                </div>
+                            <div className="spotlight__image">
+                                <div aria-hidden="true"></div>
+                                <img src={Card01} width={200} height={200} alt="Card 01" />
                             </div>
                         </SpotlightCard>
                     </Spotlight>

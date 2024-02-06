@@ -85,28 +85,6 @@ body {
     }
 }
 
-.services {
-    &__title {
-        display: grid;
-        grid-column: 2/12;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: end;
-        align-items: end;
-    }
-    &__content {
-        grid-column: 2/12;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        ServiceCard {
-            margin: auto;
-        }
-    }
-    &__desc {
-        grid-column: 1/3;
-    }
-}
-
 /* ------------- SERVICES BLOCK ------------- */
 .services {
     &__top {
@@ -118,6 +96,9 @@ body {
     &__desc {
         h2 {width: 430px;}
         p:nth-child(3) {width: 750px;}
+    }
+    &__content {
+        @include grid;
     }
 }
 
