@@ -8,6 +8,9 @@
     position: fixed;
     width: 100%;
     z-index: 10;
+    @include tablet {
+        padding: 32px;
+    }
     &__logo {
         z-index: 1;
     }

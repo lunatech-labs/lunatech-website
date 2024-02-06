@@ -118,7 +118,10 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <div className="bb-g"></div>
+            <Container>
+                <div className="bb-g"></div>
+            </Container>
+            
 
             <Section>
                 <Container>

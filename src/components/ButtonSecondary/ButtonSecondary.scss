@@ -6,6 +6,7 @@
     @include flexbox;
     justify-content: center;
     width: max-content;
+    text-wrap: nowrap;
     transition: .5s ease;
     &__img {
         margin-left: 16px;

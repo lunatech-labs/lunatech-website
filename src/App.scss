@@ -44,8 +44,8 @@ body {
     }
     &__moon {
         position: absolute;
-        width: 150px;
-        right: 20px;
+        width: 220px;
+        right: 295px;
         top: 92px;
     }
     &__link {
@@ -94,8 +94,14 @@ body {
         margin-bottom: 64px;
     }
     &__desc {
-        h2 {width: 430px;}
-        p:nth-child(3) {width: 750px;}
+        h2 {
+            width: 50%;
+            @include desktop {width: 55%;}
+        }
+        p:nth-child(3) {
+            width: 68%;
+            @include desktop {width: 90%;}
+        }
     }
     &__content {
         @include grid;
@@ -192,33 +198,6 @@ body {
     }
 }
 
-
-
-
-
-@media only screen and (min-width: 768px){
-    .about {
-        &__right {
-            display: flex;
-            flex-direction: column;
-            grid-column: 7/13;
-        }
-    }
-    .hero {
-        &__moon {
-            position: absolute;
-            width: 220px;
-            right: 295px;
-            top: 92px;
-        }
-    }
-    
-}
-
-
-
-
-
 /* ----------------------- Contact Page ----------------------- */
 .contact {
     &__main {
@@ -255,7 +234,6 @@ body {
         }
     }
     &__moon{
-        // display: none;
         position: absolute;
         top: 50%;
         right: -30vw;
@@ -270,33 +248,5 @@ body {
     }
     &__infos {
         grid-column: 10/13;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .contact {
-        &__main {
-            overflow: visible;
-            padding-block-start: 30em;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-        }
-        &__content {
-            button{
-                margin-left: 0;
-            }
-        }
-        &__moon{
-            top: 50%;
-            right: -30vw;
-            transform: translate(-150%, -40%);
-            width: 35vw;
-            height: auto;
-            z-index: -1;
-        }
-        &__form {
-            margin-bottom: 0;
-        }
     }
 }

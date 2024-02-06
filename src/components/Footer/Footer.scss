@@ -70,26 +70,3 @@
         }
     }
 }
-
-@media only screen and (min-width: 768px){
-.footer{
-        &__top {
-            .first{
-                grid-column: 1 / 3;
-                display: inline;
-                width: 100%;
-            }
-            .second{
-                grid-column: 4 / 5;
-                display: inline;
-            }
-            .third{
-                grid-column: 6 / 8;
-            }
-            .fourth{
-                grid-column: 9 / 11;
-                display: inline;
-            }
-        }
-    }
-}
