@@ -37,6 +37,9 @@
         z-index: 30;
     }
     &__card {
+        @include flexbox;
+        flex-direction: column;
+        text-align: center;
         position: relative;
         height: 100%;
         padding: 48px;

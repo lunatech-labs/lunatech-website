@@ -6,8 +6,13 @@
     @include flexbox;
     justify-content: center;
     width: max-content;
+    transition: .5s ease;
     &__img {
         margin-left: 16px;
+        color: $pink;
+    }
+    &:hover {
+        border: 1px solid $pink;
         color: $pink;
     }
 }
@@ -23,12 +28,9 @@
     font-size: $font-size-300;
     padding: 0 16px;
     height: 40px;
+    border-radius: 8px;
 }
 .button-secondary-small .button-secondary__img {
     width: 16px;
     height: 16px;
-}
-.button-secondary:hover {
-    background: linear-gradient(to right, rgb(215,0,56), rgb(208,1,100));
-    border: none;
 }

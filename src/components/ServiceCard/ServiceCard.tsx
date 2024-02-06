@@ -12,14 +12,14 @@ const ServiceCard = (props: CardProps) => {
     const toPath = (title: string) => `/services/${title.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
-        <div>
+        <>
             {props.children}
             <h3 className="service-card__title">{props.title}</h3>
             <p className="service-card__text">{props.text}</p>
-            <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="large">
+            <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small">
                 <span>Read More</span>
             </ButtonSecondary>
-        </div>
+        </>
     );
 };
 

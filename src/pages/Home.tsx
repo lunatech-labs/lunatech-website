@@ -10,6 +10,7 @@ import Title from '../components/Title/Title';
 import Text from '../components/Text/Text';
 import OfficeCard from '../components/OfficeCard/OfficeCard';
 import Icon from '../components/Icon/Icon';
+import IconRounded from '../components/IconRounded/IconRounded';
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
 import Sphere from '../components/Sphere/Sphere';
@@ -38,11 +39,12 @@ import CollapseImg from '/collapse.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
-import Example from '/github.svg';
-
-import Card01 from '/card-01.png';
-import Card02 from '/card-02.png';
-import Card03 from '/card-03.png';
+import Scala from '/scala-logo.svg';
+import Java from '/java-logo.svg';
+import CustomSoftware from '/custom-software.svg';
+import SystemIntegration from '/system-integration.svg';
+import LegacyTransformation from '/legacy-transformation.svg';
+import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -137,62 +139,36 @@ const Home = () => {
                         <Spotlight className="spotlight__layout">
                             <SpotlightCard>
                                 <ServiceCard title="Scala expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                    <Icon imageUrl={Example} size="small" />
+                                    <IconRounded imageUrl={Scala} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
                                 <ServiceCard title="Java Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                    <Icon imageUrl={Example} size="small" />
+                                    <IconRounded imageUrl={Java} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
                                 <ServiceCard title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                    <Icon imageUrl={Example} size="small" />
+                                    <IconRounded imageUrl={CustomSoftware} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
                                 <ServiceCard title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                    <Icon imageUrl={Example} size="small" />
+                                    <IconRounded imageUrl={SystemIntegration} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
                                 <ServiceCard title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                    <Icon imageUrl={Example} size="small" />
+                                    <IconRounded imageUrl={LegacyTransformation} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
                                 <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                    <Icon imageUrl={Example} size="small" />
+                                    <IconRounded imageUrl={EvolutiveMaintenance} />
                                 </ServiceCard>
                             </SpotlightCard>
                         </Spotlight>
                     </div>
-                </Container>
-            </Section>
-
-            <div className="bb-g"></div>
-            <Section>
-                <Container>
-                    <Spotlight className="spotlight__layout">
-                        <SpotlightCard>
-                            <div className="spotlight__image">
-                                <div aria-hidden="true"></div>
-                                <img src={Card01} width={200} height={200} alt="Card 01" />
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard>
-                            <div className="spotlight__image">
-                                <div aria-hidden="true"></div>
-                                <img src={Card01} width={200} height={200} alt="Card 01" />
-                            </div>
-                        </SpotlightCard>
-                        <SpotlightCard>
-                            <div className="spotlight__image">
-                                <div aria-hidden="true"></div>
-                                <img src={Card01} width={200} height={200} alt="Card 01" />
-                            </div>
-                        </SpotlightCard>
-                    </Spotlight>
                 </Container>
             </Section>
 
