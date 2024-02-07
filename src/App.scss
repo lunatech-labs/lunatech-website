@@ -7,6 +7,9 @@
 @import "./styles/Utils.scss";
 
 // ----------------------- General -----------------------
+html {
+    font-size: calc(9.25px + 0.390625vw);
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -41,8 +44,8 @@ body {
     }
     &__moon {
         position: absolute;
-        width: 150px;
-        right: 20px;
+        width: 220px;
+        right: 295px;
         top: 92px;
     }
     &__link {
@@ -54,16 +57,17 @@ body {
         }
     }
     &__title {
-        font-size: 40px;
+        font-size: $font-size-900;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 5.5rem;
         margin-bottom: 16px;
+
         span {
             @include red-title;
         }
     }
     &__text {
-        font-size: 24px;
+        font-size: $font-size-600;
         opacity: .5;
     }
 }
@@ -84,61 +88,24 @@ body {
 
 /* ------------- SERVICES BLOCK ------------- */
 .services {
-    &__title {
+    &__top {
         display: flex;
-        justify-items: center;
-        flex-direction: column;
-        gap: 24px;
-    }
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        ServiceCard {
-            margin: auto;
-        }
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 64px;
     }
     &__desc {
-        margin: auto;
-    }
-    ButtonSecondary {
-        margin: auto;
-    }
-}
-.works {
-    padding: 128px 0;
-    position: relative;
-    &__left {
-        display: flex;
-        flex-direction: column;
-        grid-column: span 6;
-    }
-    &__moon {
-        position: absolute;
-        width: 200px;
-        top: -360px;
-        right: 0px;
-        z-index: -1;
-    }
-    &__left {
-        grid-column: 1/13;
-    }
-}
-
-.tab {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    &__content {
-        display: flex;
-        flex-direction: column;
-        grid-column: span 8;
         h2 {
-            width: 430px;
+            width: 50%;
+            @include desktop {width: 55%;}
         }
         p:nth-child(3) {
-            width: 750px;
+            width: 68%;
+            @include desktop {width: 90%;}
         }
+    }
+    &__content {
+        @include grid;
     }
 }
 
@@ -219,7 +186,7 @@ body {
     &__title {
         margin-top: 24px;
         font-weight: 600;
-        font-size: 24px;
+        font-size: $font-size-600;
         margin-bottom: 8px;
     }
     &__img {
@@ -310,7 +277,6 @@ body {
             background-color: #E53E3E;
             color: white;
             padding: 10px 20px;
-            font-size: 16px;
             border: none;
             border-radius: 20px;
             cursor: pointer;
@@ -331,7 +297,6 @@ body {
         }
     }
     &__moon{
-        // display: none;
         position: absolute;
         top: 50%;
         right: -30vw;
@@ -413,3 +378,21 @@ body {
         }
     }
 }
+
+
+
+nav {
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    top: 0;
+    line-height: 4em;
+    text-align: center;
+    
+    transition: transform .3s .1s ease-in-out;
+  }
+  
+  nav.nav-bar--hidden {
+    transform: translateY(-200%);
+  }

@@ -7,7 +7,7 @@
         grid-column: span 4;
     }
     &__title {
-        font-size: 24px;
+        font-size: $font-size-600;
         margin-bottom: 32px;
     }
     &__part {
@@ -17,20 +17,18 @@
         }
     }
     &__subtitle {
-        font-size: 20px;
-        line-height: 36px;
+        font-size: $font-size-500;
+        line-height: 2.25rem;
         opacity: .5;
     }
     &__join {
         @include flexbox;
     }
     &__text {
-        font-size: 16px;
-        line-height: 36px;
+        line-height: 2.25rem;
     }
     &__link {
-        font-size: 16px;
-        line-height: 36px;
+        line-height: 2.25rem;
         transition-duration: .3s;
         &:hover {
             color: $pink;

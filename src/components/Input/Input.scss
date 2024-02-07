@@ -1,3 +1,5 @@
+@import "/src/styles/Variables.scss";
+
 .question-content {
     display: flex;
     align-items: flex-start;
@@ -8,7 +10,6 @@
     }
 }
 .question-number {
-    font-size: 0.8em;
     color: #8892b0;
     width: 24px;
     margin-right: 32px;
@@ -18,14 +19,13 @@
     label {
         display: block;
         margin-block-end: 0.5em;
-        font-size: 24px;
+        font-size: $font-size-600;
         color: #ffffff;
     }
     input, textarea {
         display: block;
         width: 100%;
         padding: 0.5em;
-        font-size: 1em;
         border: none;
         border-bottom: 1px solid #5691B3;
         background-color: transparent;

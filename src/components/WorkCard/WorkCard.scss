@@ -9,7 +9,7 @@
     margin: 20px 0;
     gap: 24px;
     &__title {
-        font-size: 24px;
+        font-size: $font-size-600;
     }
     &__desc {
         color: rgb(209, 0, 90);
@@ -28,11 +28,5 @@
         grid-column: 1/1;
         width: 100%;
         border-radius: 5%;
-    }
-}
-@media only screen and (min-width: 768px){
-    .work-card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
 }

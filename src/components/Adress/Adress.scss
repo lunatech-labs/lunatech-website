@@ -1,3 +1,5 @@
+@import "/src/styles/Variables.scss";
+
 .country {
     margin-bottom: 64px;
     &:last-child {
@@ -5,17 +7,16 @@
     }
 }
 .countryName {
-    font-size: 24px;
+    font-size: $font-size-600;
     margin-bottom: 0.5em;
     color: #ffffff;
   }
 
 .kind {
-    font-size: 20px;
+    font-size: $font-size-500;
     color: #ffffff80;
 }
 
 .infos {
-    font-size: 0.9em;
     color: #ffffff;
 }

@@ -1,5 +1,7 @@
+@import "/src/styles/Variables.scss";
+
 .text {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: $font-size-500;
+    line-height: 2rem;
     opacity: .5;
 }

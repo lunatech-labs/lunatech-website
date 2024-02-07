@@ -1,16 +1,19 @@
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .header {
     @include flexbox;
     justify-content: space-between;
     padding: 64px;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+    @include tablet {padding: 32px;}
+    @include phone-landscape {padding: 24px;}
     &__logo {
         z-index: 1;
     }
     &__img {
         height: 40px;
+        @include desktop {
+            height: 32px;
+        }
     }
 }

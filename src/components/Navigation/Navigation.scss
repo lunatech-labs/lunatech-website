@@ -1,5 +1,6 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 
 .navigation {
@@ -10,24 +11,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     transition: transform .3s .1s ease-in-out;
     &--active {
         transform: translateX(0px);
     }
     &__main {
-        display: flex;
-        align-items: center;
+        @include flexbox;
         justify-content: space-between;
         height: calc(100% - 96px);
-        flex-direction: column;
     }
     &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 64px;
+        border-right: 1px solid (rgb(255 255 255 / 25%));
         height: 100%;
         width: 384px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
     }
     &__social-item {
         &:not(:last-child) {
@@ -37,22 +38,23 @@
             margin-right: 16px;
         }
         a {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
+            @include flexbox;
+            font-size: $font-size-600;
             color: white;
         }
     }
     &__menu {
-        padding: 110px 0 0 0;
+        padding: 64px;
+        width: calc(100% - 384px);
         display: flex;
         flex-direction: column;
+        align-items: end;
     }
     &__menu-item {
         a {
-            font-size: 40px;
+            font-size: $font-size-900;
             color: $lightGray;
-            line-height: 80px;
+            line-height: 5.5rem;
             font-weight: 700;
             &.active {
                 @include red-title;
@@ -63,8 +65,7 @@
         }
     }
     &__footer {
-        display: flex;
-        align-items: center;
+        @include flexbox;
         border-top: 1px solid (rgb(255 255 255 / 25%));
         height: 96px;
     }
@@ -73,20 +74,17 @@
         width: 384px;
         padding: 0 64px;
         height: 100%;
-        display: flex;
-        align-items: center;
+        @include flexbox;
     }
     &__right {
         padding: 0 64px;
         height: 100%;
         width: calc(100% - 384px);
-        display: flex;
-        align-items: center;
+        @include flexbox;
         justify-content: flex-end;
     }
     &__way {
-        display: flex;
-        align-items: center;
+        @include flexbox;
         > p:first-child {
             opacity: .5;
         }
@@ -105,27 +103,3 @@
     }
 }
 
-@media only screen and (min-width: 768px){
-    .navigation {
-        &__main {
-            flex-direction: row-reverse;
-        }
-        &__menu {
-            padding: 64px;
-            width: calc(100% - 384px);
-            align-items: end;
-        }
-        &__menu-item {
-            a {
-                font-size: 64px;
-            }
-        }
-        &__social {
-            border-right: 1px solid (rgb(255 255 255 / 25%));
-            padding: 64px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-}

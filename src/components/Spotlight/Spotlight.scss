@@ -1,0 +1,97 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+.spotlight__layout {
+    @include grid;
+}
+.spotlight__layout:hover .spotlight:before {opacity: 1;}
+.spotlight__layout:hover .spotlight:after {opacity: .1;}
+.spotlight {
+    background: linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%));
+    height: 100%;
+    position: relative;
+    border-radius: 16px;
+    padding: 1px;
+    overflow: hidden;
+    grid-column: span 4;
+    @include desktop {
+        grid-column: span 6;
+    }
+    @include phone-portrait {
+        grid-column: span 12;
+    }
+    &:before {
+        @include spotlight;
+        transform: translate(var(--mouse-x), var(--mouse-y)) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        background-color: #94A3B8;
+        filter: blur(100px);
+        width: 20rem;
+        height: 20rem;
+        left: -10rem;
+        top: -10rem;
+        z-index: 7;
+    }
+    &:after {
+        @include spotlight;
+        transform: translate(var(--mouse-x), var(--mouse-y)) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        background-color: #6366F1;
+        filter: blur(100px);
+        width: 24rem;
+        height: 24rem;
+        left: -12rem;
+        top: -12rem;
+        z-index: 9;
+    }
+    &__card {
+        @include flexbox;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        height: 100%;
+        padding: 48px;
+        border-radius: inherit;
+        z-index: 8;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #0A1E50, #081A47);
+    }
+    &__gradient {
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        bottom: 0;
+        pointer-events: none;
+        z-index: -10;
+        aspect-ratio: 1 / 1;
+        transform: translate(-50%, 50%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        > div {
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            filter: blur(80px);
+            background-color: #081A47;
+        }
+    }
+    &__content {
+        @include flexbox;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__image {
+        position: relative;
+        display: inline-flex;
+        > div {
+            position: absolute;
+            inset: 0;
+            width: 40%;
+            height: 40%;
+            margin: auto;
+            filter: blur(64px);
+            border-radius: 9999px;
+            z-index: -10;
+            background-color: $lightBlue;
+            transform: translate(0, -10%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        }
+        > img {display: inline-flex;}
+    }
+}

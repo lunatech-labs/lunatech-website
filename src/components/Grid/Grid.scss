@@ -1,19 +1,6 @@
 .grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 24px;
     width: 100%;
-}
-
-@media only screen and (min-width: 768px){
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 24px;
-    }
-}
-
-.homeBtn{
-    margin-inline-end: 40px;
-    background-color: rgb(221, 15, 38);
-    border-color: rgb(221, 15, 38);
 }

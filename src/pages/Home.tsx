@@ -10,6 +10,7 @@ import Title from '../components/Title/Title';
 import Text from '../components/Text/Text';
 import OfficeCard from '../components/OfficeCard/OfficeCard';
 import Icon from '../components/Icon/Icon';
+import IconRounded from '../components/IconRounded/IconRounded';
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 import ButtonSecondary from '../components/ButtonSecondary/ButtonSecondary';
 import Sphere from '../components/Sphere/Sphere';
@@ -18,6 +19,7 @@ import ValuesBanner from '../components/ValuesBanner/ValuesBanner';
 import Section from '../components/Section/Section';
 import Collapse from '../components/Collapse/Collapse';
 import Address from '../components/Address/Address';
+import Spotlight, { SpotlightCard } from '../components/Spotlight/Spotlight';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -37,7 +39,12 @@ import CollapseImg from '/collapse.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
-import Example from '/github.svg';
+import Scala from '/scala-logo.svg';
+import Java from '/java-logo.svg';
+import CustomSoftware from '/custom-software.svg';
+import SystemIntegration from '/system-integration.svg';
+import LegacyTransformation from '/legacy-transformation.svg';
+import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -111,13 +118,16 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <div className="bb-g"></div>
+            <Container>
+                <div className="bb-g"></div>
+            </Container>
+            
 
             <Section>
                 <Container>
                     <div className="services">
-                        <div className="services__title">
-                            <div className='services__desc'>
+                        <div className="services__top">
+                            <div className="services__desc">
                                 <Category content="Services" />
                                 <Title content={<>Meet your needs with our <span>services</span></>} />
                                 <Text>
@@ -128,26 +138,39 @@ const Home = () => {
                                 <span>More Details</span>
                             </ButtonSecondary>
                         </div>
-                        <div className='services__content'>
-                            <ServiceCard title="Automotive" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Insurance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Logistic" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='archive'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Energy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                            <ServiceCard title="Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
-                                <Icon imageUrl={Example} size="small" />
-                            </ServiceCard>
-                        </div>
+                        
+                        <Spotlight className="spotlight__layout">
+                            <SpotlightCard>
+                                <ServiceCard title="Scala expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <IconRounded imageUrl={Scala} />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Java Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <IconRounded imageUrl={Java} />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <IconRounded imageUrl={CustomSoftware} />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <IconRounded imageUrl={SystemIntegration} />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <IconRounded imageUrl={LegacyTransformation} />
+                                </ServiceCard>
+                            </SpotlightCard>
+                            <SpotlightCard>
+                                <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                                    <IconRounded imageUrl={EvolutiveMaintenance} />
+                                </ServiceCard>
+                            </SpotlightCard>
+                        </Spotlight>
                     </div>
                 </Container>
             </Section>
