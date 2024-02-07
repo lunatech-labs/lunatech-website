@@ -1,7 +1,17 @@
+@import "/src/styles/Responsive.scss";
+
 .sphere {
     position: absolute;
     width: 400px;
     height: 400px;
     top: 0;
     right: 204px;
+    @include phone-portrait {
+        top: initial;
+        right: 24px;
+        bottom: -89px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: none;
+    }
 }

@@ -1,3 +1,6 @@
+@import "/src/styles/Responsive.scss";
+
 .section {
     padding: 128px 0;
+    @include phone-portrait {padding: 64px 0;}
 }

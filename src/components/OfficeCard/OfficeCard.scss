@@ -1,14 +1,17 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .office-card {
-    padding: 48px 0;
-    margin: 20px 0;
+    @include flexbox;
     @include dark-gradient;
+    padding: 48px 0;
     grid-column: span 4;
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    @include phone-portrait {
+        grid-column: span 12;
+        padding: 24px 0;
+    }
     &__icon {
         background: $blue;
         color: #78B4D7;

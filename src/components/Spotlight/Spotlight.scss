@@ -54,6 +54,9 @@
         z-index: 8;
         overflow: hidden;
         background: linear-gradient(to bottom, #0A1E50, #081A47);
+        @include phone-portrait {
+            padding: 24px;
+        }
     }
     &__gradient {
         position: absolute;

@@ -1,9 +1,13 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .values__banner {
     background: $mediumBlue;
     padding: 64px 20px;
+    @include phone-portrait {
+        padding: 32px 20px;
+    }
     > div {
         @include flexbox;
         justify-content: space-between;

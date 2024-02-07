@@ -1,19 +1,28 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .address {
     @include grid;
     &__card {
         grid-column: span 4;
+        @include phone-portrait {
+            grid-column: span 12;
+        }
     }
     &__title {
         font-size: $font-size-600;
         margin-bottom: 32px;
+        @include phone-portrait {
+            margin-bottom: 16px;
+        }
     }
     &__part {
-        margin-bottom: 32px;
-        &:last-child {
-            margin-bottom: 0;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+            @include phone-portrait {
+                margin-bottom: 16px;
+            }
         }
     }
     &__subtitle {
@@ -41,5 +50,9 @@
         height: 24px;
         width: 1px;
         background: white;
+        @include phone-portrait {
+            margin: 0 8px;
+            height: 16px;
+        }
     }
 }

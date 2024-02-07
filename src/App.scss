@@ -29,6 +29,9 @@ body {
             bottom: 0;
             z-index: 2;
             width: 100%;
+            @include phone-portrait {
+                bottom: -1px;
+            }
             &:first-child {
                 top: 120px;
             }
@@ -41,16 +44,28 @@ body {
         flex-direction: column;
         justify-content: center;
         z-index: 3;
+        @include phone-portrait {
+            grid-column: span 12;
+        }
     }
     &__moon {
         position: absolute;
         width: 220px;
         right: 295px;
         top: 92px;
+        @include phone-portrait {
+            top: initial;
+            right: 24px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: none;
+        }
     }
     &__link {
         @include flexbox;
         margin-left: 24px;
+        text-wrap: nowrap;
         img {
             margin-left: 8px;
             transform: rotate(-45deg);
@@ -61,7 +76,10 @@ body {
         font-weight: 700;
         line-height: 5.5rem;
         margin-bottom: 16px;
-
+        @include phone-portrait {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+        }
         span {
             @include red-title;
         }
@@ -79,9 +97,15 @@ body {
     &__img {
         grid-column: span 5;
         width: 100%;
+        @include phone-portrait {
+            grid-column: span 12;
+        }
     }
     &__content {
         grid-column: 7 / 13;
+        @include phone-portrait {
+            grid-column: span 12;
+        }
     }
 }
 
@@ -92,15 +116,22 @@ body {
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 64px;
+        @include phone-portrait {
+            flex-direction: column;
+        }
+        align-items: flex-start;
     }
     &__desc {
         h2 {
             width: 50%;
             @include desktop {width: 55%;}
+            @include phone-portrait {width: 100%;}
         }
         p:nth-child(3) {
             width: 68%;
             @include desktop {width: 90%;}
+            @include phone-portrait {width: 100%;}
+            margin-bottom: 24px;
         }
     }
     &__content {
@@ -114,6 +145,10 @@ body {
         @include flexbox;
         justify-content: space-between;
         margin-bottom: 64px;
+        @include phone-portrait {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__content {
         @include grid;
@@ -141,6 +176,12 @@ body {
     margin-bottom: 128px;
     background: linear-gradient(to bottom, #0A1E50, #081A47);
     border-radius: 16px;
+    @include phone-portrait {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        margin-bottom: 64px;
+    }
 }
 
 /* ------------- BLOG BLOCK ------------- */
@@ -156,8 +197,18 @@ body {
         @include grid;
         @include dark-gradient;
         padding: 80px;
+        @include phone-portrait {
+            padding: 24px;
+        }
         &:not(:last-child) {
             margin-bottom: 24px;
+        }
+        &:first-child {
+            .blog__left {
+                @include phone-portrait {
+                    order: 1;
+                }
+            }
         }
         &:last-child {
             .blog__left {
@@ -167,6 +218,9 @@ body {
     }
     &__left {
         grid-column: span 6;
+        @include phone-portrait {
+            grid-column: span 12;
+        }
     }
     &__category {
         @include flexbox;
@@ -191,6 +245,9 @@ body {
     &__img {
         grid-column: span 5;
         width: 100%;
+        @include phone-portrait {
+            grid-column: span 12;
+        }
     }
     &__action {
         @include flexbox;

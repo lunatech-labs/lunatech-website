@@ -1,9 +1,13 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .value {
     grid-column: span 3;
     @include flexbox;
+    @include phone-portrait {
+        grid-column: span 6;
+    }
     &__number {
         font-size: $font-size-710;
         font-weight: 500;

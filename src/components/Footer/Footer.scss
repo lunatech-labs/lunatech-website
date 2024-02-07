@@ -1,11 +1,15 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .footer {
     background: $darkBlue;
     &__top {
         padding: 64px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+        @include phone-portrait {
+            padding: 32px 0;
+        }
     }
     &__bottom {
         padding: 32px 0;
@@ -14,11 +18,28 @@
     }
     &__part {
         grid-column: span 2;
-        &:first-child {grid-column: span 6;}
+        &:first-child {
+            grid-column: span 6;
+            @include phone-portrait {
+                grid-column: span 12;
+            }
+        }
         &:last-child {
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
+            @include phone-portrait {
+                justify-content: flex-start;
+            }
+        }
+        @include phone-portrait {
+            grid-column: span 6;
+        }
+    }
+    &__brand {
+        margin-bottom: 64px;
+        @include phone-portrait {
+            margin-bottom: 32px;
         }
     }
     &__category {
@@ -32,7 +53,6 @@
     }
     &__text {
         opacity: .5;
-        margin-bottom: 64px;
     }
     &__social {
         @include flexbox;
@@ -67,6 +87,16 @@
         }
         &:not(:last-child) {
             margin-bottom: 16px;
+        }
+    }
+    &__link {
+        a {
+            &:not(:last-child) {
+                margin-right: 24px;
+                @include phone-landscape {
+                    margin-right: 16px;
+                }
+            }
         }
     }
 }
