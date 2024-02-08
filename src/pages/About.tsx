@@ -1,7 +1,7 @@
-import Container from '../components/Container/Container';
+import Container from '@components/Container/Container';
 import { Trans, useTranslation } from 'react-i18next';
-import Category from '../components/Category/Category';
-import Text from '../components/Text/Text';
+import Category from '@components/Category/Category';
+import Text from '@components/Text/Text';
 
 const About = () => {
     return (

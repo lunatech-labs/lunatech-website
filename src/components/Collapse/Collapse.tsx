@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ButtonSecondary from '../ButtonSecondary/ButtonSecondary';
+import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import Arrow from '/collapse-arrow.svg';
 import ArrowRight from '/arrow-right.svg';
 
