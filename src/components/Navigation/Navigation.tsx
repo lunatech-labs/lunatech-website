@@ -5,7 +5,7 @@ import Instagram from '/instagram.svg';
 import Linkedin from '/linkedin.svg';
 import Twitter from '/twitter.svg';
 import "./Navigation.scss";
-import Language from '../Language/Language';
+import Language from '@components/Language/Language';
 
 const Navigation = ({ onClick }: { onClick: () => void }) => {
     return (

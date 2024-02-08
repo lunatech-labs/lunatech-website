@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Hamburger from '../Hamburger/Hamburger';
-import Navigation from '../Navigation/Navigation';
+import Hamburger from '@components/Hamburger/Hamburger';
+import Navigation from '@components/Navigation/Navigation';
 import lunatechLogo from '/lunatech-logo.svg';
 import "./Header.scss";
 

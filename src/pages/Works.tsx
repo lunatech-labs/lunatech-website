@@ -1,8 +1,8 @@
-import Category from "../components/Category/Category";
-import Container from "../components/Container/Container";
-import Icon from "../components/Icon/Icon";
-import Text from '../components/Text/Text';
-import WorkCard from "../components/WorkCard/WorkCard";
+import Category from "@components/Category/Category";
+import Container from "@components/Container/Container";
+import Icon from "@components/Icon/Icon";
+import Text from '@components/Text/Text';
+import WorkCard from "@components/WorkCard/WorkCard";
 
 import Example from '/github.svg';
 

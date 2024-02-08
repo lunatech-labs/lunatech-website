@@ -1,9 +1,10 @@
-import Text from '../components/Text/Text';
-import Category from '../components/Category/Category';
-import Input from '../components/Input/Input';
-import Address from '../components/Adress/Adress';
-import Container from '../components/Container/Container';
-import Grid from '../components/Grid/Grid';
+import Text from '@components/Text/Text';
+import Category from '@components/Category/Category';
+import Input from '@components/Input/Input';
+import Address from '@components/Adress/Adress';
+import Container from '@components/Container/Container';
+import Grid from '@components/Grid/Grid';
+import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 
 const Contact = () => {
     const options = [
