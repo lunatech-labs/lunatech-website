@@ -35,7 +35,6 @@ import ArrowRight from '/arrow-right.svg';
 import Message from '/message.svg';
 
 import Building from '/virtual_land.png';
-import CollapseImg from '/collapse.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
@@ -85,7 +84,7 @@ const Home = () => {
                             <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
                             <Text className="mgb32">We think and design unique experiences<br />for tomorrow's innovative digital products.</Text>
                             <div className="dflex">
-                                <ButtonPrimary iconUrl={Message}>
+                                <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
                                 <a className="hero__link" href="/about">About us<img src={ArrowRight} alt="Arrow" /></a>

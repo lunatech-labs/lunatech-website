@@ -2,9 +2,9 @@ import Text from '../components/Text/Text';
 import Category from '../components/Category/Category';
 import Input from '../components/Input/Input';
 import Address from '../components/Adress/Adress';
-import Moon from '/moon.svg';
 import Container from '../components/Container/Container';
 import Grid from '../components/Grid/Grid';
+import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 
 const Contact = () => {
     const options = [
@@ -16,16 +16,14 @@ const Contact = () => {
         "Other"
     ];
     return (
-        <section className="contact">
+        <div className="page">
             <Container>
-                <section className='contact__main'>
-                    <div className="contact__title">
-                        <Category content="Index / Contact" />
-                        <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
-                        <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
-                    </div>
-                    <img className='contact__moon' src={Moon} alt="" />
-                </section>
+                <div className="mgb128">
+                    <Category content="Index / Contact" />
+                    <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
+                    <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
+                </div>
+
                 <section className='contact__content'>
                     <Grid>
                         <div className='contact__form'>
@@ -53,7 +51,7 @@ const Contact = () => {
                     </Grid>
                 </section>
             </Container>
-        </section>
+        </div>
     );
 };
 

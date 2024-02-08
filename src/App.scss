@@ -18,6 +18,27 @@ body {
     overflow-x: hidden;
 }
 
+/* ------------- HEADER BLOCK ------------- */
+nav {
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    top: 0;
+    line-height: 4em;
+    text-align: center;
+    transition: transform .3s .1s ease-in-out;
+}
+nav.nav-bar--hidden {
+    transform: translateY(-200%);
+}
+
+/* ------------- PAGE TEMPLATE ------------- */
+.page {
+    padding: 256px 0;
+    @include phone-portrait {padding: 64px 0;}
+}
+
 /* ------------- HERO BLOCK ------------- */
 .hero {
     position: relative;
@@ -265,15 +286,6 @@ body {
 
 /* ----------------------- Contact Page ----------------------- */
 .contact {
-    &__main {
-        position: relative;
-        padding-block-start: 15em;
-        // width: 100px;
-        width: 100%;
-        padding-bottom: 5em;
-        overflow: hidden;
-    }
-
     &__content {
         button{
             background-color: #E53E3E;
@@ -298,39 +310,68 @@ body {
             margin-block-end: 50px;
         }
     }
-    &__moon{
-        position: absolute;
-        top: 50%;
-        right: -30vw;
-        transform: translate(5%, -80%);
-        width: 80vw;
-        height: auto;
-        z-index: -1;
-    }
     &__form {
         grid-column: 1/9;
-        margin-bottom: 10em;
     }
     &__infos {
         grid-column: 10/13;
     }
 }
 
-
-
-
-nav {
-    height: 4em;
-    position: fixed;
-    width: 100%;
-    z-index: 30;
-    top: 0;
-    line-height: 4em;
+/* ----------------------- NotFound Page ----------------------- */
+.not-found {
+    @include flexbox;
+    flex-direction: column;
     text-align: center;
-    
-    transition: transform .3s .1s ease-in-out;
-  }
-  
-  nav.nav-bar--hidden {
-    transform: translateY(-200%);
-  }
+    &__title {
+        font-size: 164px;
+        font-weight: 600;
+        margin-bottom: 64px;
+
+    }
+}
+.circle {
+    @include flexbox;
+    justify-content: center;
+    @include absolute-center;
+    z-index: -1;
+    &__single {
+        @include absolute-center;
+        background: linear-gradient(to bottom, $mediumBlue, $mediumBlue) padding-box,
+                    linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
+        border: 1px solid transparent;
+        border-radius: 100rem;
+        height: $size-circle;
+        width: $size-circle;
+        &:last-child {
+            background: linear-gradient(to bottom, $blue, $blue) padding-box,
+                        linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
+            border: 1px solid transparent;
+            filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, .16));
+        }
+        &:nth-child(2) {
+            height: calc($size-circle * 7);
+            width: calc($size-circle * 7);
+        }
+        &:nth-child(3) {
+            height: calc($size-circle * 6);
+            width: calc($size-circle * 6);
+        }
+        &:nth-child(4) {
+            height: calc($size-circle * 5);
+            width: calc($size-circle * 5);
+        }
+        &:nth-child(5) {
+            height: calc($size-circle * 4);
+            width: calc($size-circle * 4);
+        }
+        &:nth-child(6) {
+            height: calc($size-circle * 3);
+            width: calc($size-circle * 3);
+        }
+        &:nth-child(7) {
+            height: calc($size-circle * 2);
+            width: calc($size-circle * 2);
+        }
+    }
+}

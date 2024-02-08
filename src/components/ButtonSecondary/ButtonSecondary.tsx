@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./ButtonSecondary.scss";
 
 interface ButtonProps {
-    children: JSX.Element;
+    children: string;
     iconUrl: string;
     size: "small" | "large";
     to: string;
@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const ButtonSecondary = (props: ButtonProps) => {
     return (
-        <Link to={props.to} className={`button-secondary button-secondary-${props.size}`} href="">
+        <Link to={props.to} className={`button-secondary button-secondary-${props.size}`}>
             {props.children}
             <img className="button-secondary__img" src={props.iconUrl} alt="" />
         </Link>
