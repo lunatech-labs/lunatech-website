@@ -8,6 +8,11 @@
     grid-gap: 24px;
     width: 100%;
 }
+@mixin light-gradient {
+    background: linear-gradient(to bottom, #0A3269, rgb(18,35,85)) padding-box,
+                linear-gradient(to bottom, rgb(255 255 255 / 24%), rgb(120 180 215 / 24%)) border-box;
+    border-radius: 16px;
+}
 @mixin dark-gradient {
     background: linear-gradient(to bottom, #0A1E50, #081A47) padding-box,
                 linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;

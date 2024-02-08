@@ -152,6 +152,10 @@ body {
     }
     &__content {
         @include grid;
+        @include phone-portrait {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__left {
         grid-column: span 6;
@@ -159,12 +163,16 @@ body {
     &__right {
         @include flexbox;
         padding: 80px;
+        @include phone-portrait {
+            padding: 24px;
+        }
         grid-column: span 6;
         background: linear-gradient(317deg, #FFDA57 -11.19%, #F56BCF 20.41%, #5956E8 71.73%, #5956E8 110.15%);
         border-radius: 24px;
     }
     &__img {
         width: 100%;
+        border-radius: 16px;
     }
 }
 
