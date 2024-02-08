@@ -4,7 +4,6 @@ import Input from '../components/Input/Input';
 import Address from '../components/Adress/Adress';
 import Container from '../components/Container/Container';
 import Grid from '../components/Grid/Grid';
-import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary';
 
 const Contact = () => {
     const options = [

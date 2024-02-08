@@ -36,7 +36,7 @@ nav.nav-bar--hidden {
 /* ------------- PAGE TEMPLATE ------------- */
 .page {
     padding: 256px 0;
-    @include phone-portrait {padding: 64px 0;}
+    @include phone-portrait {padding: 128px 0;}
 }
 
 /* ------------- HERO BLOCK ------------- */
@@ -312,9 +312,15 @@ nav.nav-bar--hidden {
     }
     &__form {
         grid-column: 1/9;
+        @include phone-landscape {
+            grid-column: span 12;
+        }
     }
     &__infos {
         grid-column: 10/13;
+        @include phone-landscape {
+            grid-column: span 12;
+        }
     }
 }
 
