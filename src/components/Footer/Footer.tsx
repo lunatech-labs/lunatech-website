@@ -16,7 +16,7 @@ const Footer = () => {
                     <Grid>
                         <div className="footer__part">
                             <div className="footer__brand">
-                                <a href="https://vitejs.dev" target="_blank"><img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" /></a>
+                                <a href="/" target="_blank"><img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" /></a>
                                 <p className="footer__text">Managed by Lunatech Labs.</p>
                             </div>
                             <div className="footer__social">
