@@ -58,6 +58,15 @@ const Home = () => {
         setToggle(id);
     }
 
+    const [currentImg, setCurrentImg] = useState<string>('/blog.png');
+
+    const handleCollapseClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        const dataImg = e.currentTarget.getAttribute('data-img');
+        if (dataImg) {
+            setCurrentImg(dataImg);
+        }
+    };
+
     return (
         <>
             <section className="hero">
@@ -187,12 +196,12 @@ const Home = () => {
                         </div>
                         <div className="works__content">
                             <div className="works__left">
-                                <Collapse title="Titre du Collapse"><p>Contenu du Collapse</p></Collapse>
-                                <Collapse title="Titre du Collapse"><p>Contenu du Collapse</p></Collapse>
-                                <Collapse title="Titre du Collapse"><p>Contenu du Collapse</p></Collapse>
+                            <Collapse title="Collapse Title 1" data-img="/collapse.png" onClick={handleCollapseClick}>Content 1</Collapse>
+                            <Collapse title="Collapse Title 2" data-img="/blog.png" onClick={handleCollapseClick}>Content 2</Collapse>
+                            <Collapse title="Titre du Collapse" data-img="/collapse.png" onClick={handleCollapseClick}><p>Contenu du Collapse</p></Collapse>
                             </div>
                             <div className="works__right">
-                                <img className="works__img" src={CollapseImg} alt="Collapse image" />
+                                <img className="works__img" src={currentImg} alt="Collapse image" />
                             </div>
                         </div>
                     </div>
