@@ -18,7 +18,7 @@ const Services = () => {
     return (
         <div className="page">
             <Container>
-                <div className="mgb128">
+                <div className="page__header">
                     <Category content="Index / Services" />
                     <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
                     <Text><Trans i18nKey="services.text" /></Text>

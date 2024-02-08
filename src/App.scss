@@ -37,6 +37,10 @@ nav.nav-bar--hidden {
 .page {
     padding: 256px 0;
     @include phone-portrait {padding: 128px 0;}
+    &__header {
+        margin-bottom: 128px;
+        @include phone-portrait {margin-bottom: 64px;}
+    }
 }
 
 /* ------------- HERO BLOCK ------------- */

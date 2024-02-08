@@ -12,7 +12,7 @@ const Works = () => {
     return (
         <div className="page">
             <Container>
-                <div className="mgb128">
+                <div className="page__header">
                     <Category content={`Index / Works / ${t(`${workName}.title`)}`} />
                     <h1 className="hero__title"><Trans i18nKey={`${workName}.title`} /></h1>
                     <Text><Trans i18nKey={`${workName}.text`} /></Text>

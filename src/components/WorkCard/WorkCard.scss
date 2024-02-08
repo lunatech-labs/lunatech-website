@@ -6,7 +6,6 @@
     @include flexbox;
     flex-direction: column;
     padding: 48px 24px;
-    margin: 20px 0;
     gap: 24px;
     &__title {
         font-size: $font-size-600;
