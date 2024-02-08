@@ -15,6 +15,10 @@
         padding: 32px 0;
         @include flexbox;
         justify-content: space-between;
+        a {
+            transition-duration: .3s;
+            &:hover {color: $pink;}
+        }
     }
     &__part {
         grid-column: span 2;
@@ -75,28 +79,13 @@
         font-size: $font-size-600;
         margin-bottom: 16px;
     }
-    &__list {
-
-    }
     &__item {
         a {
             transition-duration: .3s;
-            &:hover {
-                color: $pink;
-            }
+            &:hover {color: $pink;}
         }
         &:not(:last-child) {
             margin-bottom: 16px;
-        }
-    }
-    &__link {
-        a {
-            &:not(:last-child) {
-                margin-right: 24px;
-                @include phone-landscape {
-                    margin-right: 16px;
-                }
-            }
         }
     }
 }

@@ -57,10 +57,7 @@ const Footer = () => {
                 
                 <div className="footer__bottom">
                     <p>© 2023 Lunatech. All rights reserved.</p>
-                    <div className="footer__link">
-                        <a href="#">Terms</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
+                    <a href="/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of Services</a>
                 </div>
             </Container>
         </footer>
