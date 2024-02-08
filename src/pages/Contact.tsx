@@ -18,7 +18,7 @@ const Contact = () => {
     return (
         <div className="page">
             <Container>
-                <div className="mgb128">
+                <div className="page__header">
                     <Category content="Index / Contact" />
                     <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
                     <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
