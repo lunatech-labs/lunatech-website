@@ -25,32 +25,32 @@ const Services = () => {
                 </div>
                 <Spotlight className="spotlight__layout">
                     <SpotlightCard>
-                        <ServiceCard title="Scala expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                        <ServiceCard title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                             <IconRounded imageUrl={Scala} />
                         </ServiceCard>
                     </SpotlightCard>
                     <SpotlightCard>
-                        <ServiceCard title="Java Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                        <ServiceCard title="Open Source" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                             <IconRounded imageUrl={Java} />
                         </ServiceCard>
                     </SpotlightCard>
                     <SpotlightCard>
-                        <ServiceCard title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                        <ServiceCard title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                             <IconRounded imageUrl={CustomSoftware} />
                         </ServiceCard>
                     </SpotlightCard>
                     <SpotlightCard>
-                        <ServiceCard title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                        <ServiceCard title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                             <IconRounded imageUrl={SystemIntegration} />
                         </ServiceCard>
                     </SpotlightCard>
                     <SpotlightCard>
-                        <ServiceCard title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                        <ServiceCard title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                             <IconRounded imageUrl={LegacyTransformation} />
                         </ServiceCard>
                     </SpotlightCard>
                     <SpotlightCard>
-                        <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='zap'>
+                        <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                             <IconRounded imageUrl={EvolutiveMaintenance} />
                         </ServiceCard>
                     </SpotlightCard>
