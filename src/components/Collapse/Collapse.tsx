@@ -10,10 +10,10 @@ interface CollapseProps {
     children: JSX.Element;
 }
 
-const Collapse = (props: CollapseProps & { onClick: (dataImg: string) => void, 'data-img': string }) => {
+const Collapse = (props: CollapseProps & { onClick: (e: React.MouseEvent<HTMLDivElement>) => void, 'data-img': string }) => {
     const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
 
-    const toggleCollapse = (e) => {
+    const toggleCollapse = (e: React.MouseEvent<HTMLDivElement>) => {
         setIsCollapsed(!isCollapsed);
         if(props.onClick) {
             props.onClick(e);
