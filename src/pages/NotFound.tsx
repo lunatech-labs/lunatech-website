@@ -1,6 +1,6 @@
-import Container from "../components/Container/Container";
-import Text from "../components/Text/Text";
-import ButtonPrimary from "../components/ButtonPrimary/ButtonPrimary";
+import Container from "@components/Container/Container";
+import Text from "@components/Text/Text";
+import ButtonPrimary from "@components/ButtonPrimary/ButtonPrimary";
 
 import HomeIcon from '/home.svg';
 

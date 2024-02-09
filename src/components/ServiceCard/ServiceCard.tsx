@@ -1,4 +1,4 @@
-import ButtonSecondary from "../ButtonSecondary/ButtonSecondary";
+import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import "./ServiceCard.scss";
 import ArrowRight from '/arrow-right.svg';
 

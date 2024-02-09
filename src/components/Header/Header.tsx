@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Hamburger from '../Hamburger/Hamburger';
-import Navigation from '../Navigation/Navigation';
+import Hamburger from '@components/Hamburger/Hamburger';
+import Navigation from '@components/Navigation/Navigation';
 import lunatechLogo from '/lunatech-logo.svg';
 import "./Header.scss";
 
@@ -20,7 +20,7 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
-                <a className="header__logo" href="/" target="_blank">
+                <a className="header__logo" href="/">
                     <img src={lunatechLogo} className="header__img" alt="Lunatech logo" />
                 </a>
                 <div>

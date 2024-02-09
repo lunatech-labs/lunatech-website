@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import useScrollListener from "./components/Header/useScrollListener";
+import useScrollListener from "@components/Header/useScrollListener";
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from "@components/Header/Header";
+import Footer from '@components/Footer/Footer';
 import RoutesMap from './RoutesMap';
 import "./App.scss";
 

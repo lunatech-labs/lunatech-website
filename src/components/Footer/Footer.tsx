@@ -1,6 +1,6 @@
-import Container from "../Container/Container";
-import Grid from "../Grid/Grid";
-import Language from "../Language/Language";
+import Container from "@components/Container/Container";
+import Grid from "@components/Grid/Grid";
+import Language from "@components/Language/Language";
 import lunatechLogo from '/lunatech-logo.svg';
 import Github from '/github.svg';
 import Instagram from '/instagram.svg';
@@ -16,7 +16,7 @@ const Footer = () => {
                     <Grid>
                         <div className="footer__part">
                             <div className="footer__brand">
-                                <a href="https://vitejs.dev" target="_blank"><img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" /></a>
+                                <a href="/" target="_blank"><img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" /></a>
                                 <p className="footer__text">Managed by Lunatech Labs.</p>
                             </div>
                             <div className="footer__social">
@@ -57,10 +57,7 @@ const Footer = () => {
                 
                 <div className="footer__bottom">
                     <p>© 2023 Lunatech. All rights reserved.</p>
-                    <div className="footer__link">
-                        <a href="#">Terms</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
+                    <a href="/Lunatech-General_Terms_and_Conditions.pdf" target="_blank">Terms of Services</a>
                 </div>
             </Container>
         </footer>

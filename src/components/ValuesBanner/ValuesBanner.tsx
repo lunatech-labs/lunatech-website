@@ -1,7 +1,7 @@
 import "./ValuesBanner.scss";
-import Value from "../Value/Value";
-import Container from "../Container/Container";
-import Grid from "../Grid/Grid";
+import Value from "@components/Value/Value";
+import Container from "@components/Container/Container";
+import Grid from "@components/Grid/Grid";
 
 const ValuesBanner = () => {
     return (
