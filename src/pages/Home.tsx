@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import '../i18n';
 
 import Container from '@/components/Container/Container';
@@ -46,18 +46,13 @@ import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
+import Articles from '../components/Articles/Articles';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
-
-    const [toggle, setToggle] = useState(1);
-
-    function updateToggle(id) {
-        setToggle(id);
-    }
 
     const [currentImg, setCurrentImg] = useState<string>('/blog.png');
 
@@ -109,7 +104,7 @@ const Home = () => {
                             <Category content="About us" />
                             <Title content={<>Custom software systems for over <span>30 years</span></>} />
                             <Text className="mgb32">Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.</Text>
-                            <ButtonSecondary iconUrl={ArrowRight} size="large">More Details</ButtonSecondary>
+                            <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'>More Details</ButtonSecondary>
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam">
@@ -144,8 +139,8 @@ const Home = () => {
                                     <Trans i18nKey="service.text" />
                                 </Text>
                             </div>
-                            <ButtonSecondary iconUrl={ArrowRight} size='large'>
-                                <span>More Details</span>
+                            <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>
+                                More Details
                             </ButtonSecondary>
                         </div>
                         
@@ -193,13 +188,25 @@ const Home = () => {
                                 <Category content="Works" />
                                 <Title content={<>Browse our <span>case studies</span>.</>} />
                             </div>
-                            <ButtonSecondary iconUrl={ArrowRight} size="large">More Case Studies</ButtonSecondary>
+                            <ButtonSecondary iconUrl={ArrowRight} size="large" to='/works'>More Case Studies</ButtonSecondary>
                         </div>
                         <div className="works__content">
                             <div className="works__left">
-                            <Collapse title="Collapse Title 1" data-img="/collapse.png" onClick={handleCollapseClick}>Content 1</Collapse>
-                            <Collapse title="Collapse Title 2" data-img="/blog.png" onClick={handleCollapseClick}>Content 2</Collapse>
-                            <Collapse title="Titre du Collapse" data-img="/collapse.png" onClick={handleCollapseClick}><p>Contenu du Collapse</p></Collapse>
+                            <Collapse title="Collapse Title 1" data-img="/collapse.png" onClick={handleCollapseClick}>
+                                <p>
+                                    Content 1
+                                </p>
+                            </Collapse>
+                            <Collapse title="Collapse Title 2" data-img="/blog.png" onClick={handleCollapseClick}>
+                                <p>
+                                    Content 2
+                                </p>
+                            </Collapse>
+                            <Collapse title="Titre du Collapse" data-img="/collapse.png" onClick={handleCollapseClick}>
+                                <p>
+                                    Contenu du Collapse
+                                </p>
+                            </Collapse>
                             </div>
                             <div className="works__right">
                                 <img className="works__img" src={currentImg} alt="Collapse image" />
@@ -242,6 +249,7 @@ const Home = () => {
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
                         </div>
+                        <Articles />
                         <div className="blog__action">
                             <ButtonSecondary iconUrl={ArrowRight} size="large">More articles</ButtonSecondary>
                         </div>
@@ -256,7 +264,11 @@ const Home = () => {
                             <Category content="Contact" />
                             <Title content={<>Let's talk <span>together!</span></>} />
                         </div>
-                        <ButtonPrimary iconUrl={Message}>Contact Us</ButtonPrimary>
+                        <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
+                            <span>
+                                Contact Us
+                            </span>
+                        </ButtonPrimary>
                     </div>
 
                     <Address />
