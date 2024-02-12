@@ -38,15 +38,12 @@ import Building from '/virtual_land.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
-import Scala from '/scala-logo.svg';
-import Java from '/java-logo.svg';
 import SdvIcon from '/cpu-setting.svg';
 import SettingIcon from '/setting.svg';
 import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
-import Articles from '../components/Articles/Articles';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
