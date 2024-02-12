@@ -236,16 +236,16 @@ nav.nav-bar--hidden {
         &:not(:last-child) {
             margin-bottom: 24px;
         }
+        .blog__left {
+            &.image-left {
+                order: 2;
+            }
+        }
         &:first-child {
             .blog__left {
                 @include phone-portrait {
                     order: 1;
                 }
-            }
-        }
-        &:last-child {
-            .blog__left {
-                order: 2;
             }
         }
     }

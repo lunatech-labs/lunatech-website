@@ -249,7 +249,6 @@ const Home = () => {
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
                         </div>
-                        <Articles />
                         <div className="blog__action">
                             <ButtonSecondary iconUrl={ArrowRight} size="large">More articles</ButtonSecondary>
                         </div>
