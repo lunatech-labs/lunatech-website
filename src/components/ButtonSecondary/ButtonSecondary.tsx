@@ -6,11 +6,14 @@ interface ButtonProps {
     iconUrl: string;
     size: "small" | "large";
     to: string;
+    newPage?: boolean;
 }
 
 const ButtonSecondary = (props: ButtonProps) => {
+const target = props.newPage ? "__blank" : "_self";
+
     return (
-        <Link to={props.to} className={`button-secondary button-secondary-${props.size}`}>
+        <Link to={props.to} target={target} className={`button-secondary button-secondary-${props.size}`}>
             {props.children}
             <img className="button-secondary__img" src={props.iconUrl} alt="" />
         </Link>

@@ -4,6 +4,14 @@
         "button1": "Contact",
         "button2": "A propos"
     },
+    "navigation":{
+        "about": "A propos de nous",
+        "services": "Services",
+        "works": "Travaux",
+        "blog": "Blog",
+        "careers": "Carrières",
+        "contact": "Contact"
+    },
     "service": {
         "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :"
     },

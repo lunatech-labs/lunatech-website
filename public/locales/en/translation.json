@@ -4,6 +4,14 @@
         "button1": "Let's talk",
         "button2": "About us"
     },
+    "navigation": {
+        "about": "About us",
+        "services": "Services",
+        "works": "Works",
+        "blog": "Blog",
+        "careers": "Carreers",
+        "contact": "Contact"
+    },
     "service": {
         "text": "Lunatech provides innovative solutions for the creation and modernization of your digital products through the following services:"
     },

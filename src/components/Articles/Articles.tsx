@@ -1,11 +1,13 @@
+import "./Articles.scss";
 import { useEffect, useState } from "react";
 import ArrowRight from '/arrow-right.svg';
-import ButtonSecondary from "../ButtonSecondary/ButtonSecondary";
+import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
+import Text from '@components/Text/Text';
 
 interface BlogArticle {
-    id: number;
     title: string;
     publication_date: string;
+    tags: string[];
     excerpt: string;
     slug: string;
     image_url: string;
@@ -13,7 +15,7 @@ interface BlogArticle {
 }
 
 async function fetchBlogArticles(): Promise<BlogArticle[]> {
-    const response = await fetch('https://blog.lunatech.com/posts/');
+    const response = await fetch('http://localhost:9000/posts/');
     if (!response.ok) {
       throw new Error('Failed to fetch blog articles');
     }
@@ -30,20 +32,29 @@ const Articles = () => {
           .catch((error) => console.error("Failed to load blog articles", error));
       }, []);
 
+    function truncateText(text: string, maxWords: number) {
+        const wordsArray = text.split(' ');
+        if (wordsArray.length > maxWords) {
+            return wordsArray.slice(0, maxWords).join(' ') + '...';
+        }
+        return text;
+    }
+    
+
     return (
     <div>
         <ul>
-            {articles.map((article) => (
-                <li key={article.id}>
+            {articles.map((article, index) => (
+                <li key={article.slug} className="article">
                     <div className="blog__content">
-                        <div className="blog__left">
+                        <div className={`blog__left ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
                             <div className="dflex">
-                                <p className="blog__category">Marketing</p>
+                                <p className="blog__category">{article.tags.length > 0 ? article.tags[0].charAt(0).toUpperCase() + article.tags[0].slice(1).toLowerCase() : ''}</p>
                                 <p className="blog__date">{article.publication_date}</p>
                             </div>
                             <p className="blog__title">{article.title}</p>
-                            <Text className="mgb24">{article.excerpt}</Text>
-                            <ButtonSecondary iconUrl={ArrowRight} size="large" to={"https://blog.lunatech.com" + article.slug}>Read More</ButtonSecondary>
+                            <Text className="mgb24">{truncateText(article.excerpt, 25)}</Text>
+                            <ButtonSecondary iconUrl={ArrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}>Read More</ButtonSecondary>
                         </div>
                         <img className="blog__img" src={article.image_url} alt="Blog img" />
                     </div>

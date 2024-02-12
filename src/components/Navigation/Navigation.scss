@@ -39,6 +39,9 @@
             border-right: none;
             width: 100%;
         }
+        @include phone-landscape {
+            width: 290px;
+        }
     }
     &__social-item {
         &:not(:last-child) {
@@ -96,7 +99,7 @@
         width: calc(100% - 384px);
         @include flexbox;
         justify-content: flex-end;
-        @include phone-portrait {
+        @include phone-landscape {
             padding: 0;
             width: 100%;
             justify-content: center;
@@ -107,7 +110,7 @@
         > p:first-child {
             opacity: .5;
         }
-        @include phone-portrait {
+        @include phone-landscape {
             flex-direction: column;
         }
     }
