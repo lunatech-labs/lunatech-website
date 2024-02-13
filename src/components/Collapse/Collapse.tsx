@@ -20,6 +20,8 @@ const Collapse = (props: CollapseProps & { onClick: (e: React.MouseEvent<HTMLDiv
         }
     };
 
+    const toPath = (title: string) => `/works/${title.toLowerCase().replace(/\s+/g, '-')}`;
+
     return (
         <div className={`collapse ${isCollapsed ? '' : 'is-collapsed'}`} data-img={props['data-img']} onClick={toggleCollapse}>
             <div className="collapse__top">
@@ -30,7 +32,7 @@ const Collapse = (props: CollapseProps & { onClick: (e: React.MouseEvent<HTMLDiv
             </div>
             <div className="collapse__body">
                 {props.children}
-                <ButtonSecondary text="Read More" iconUrl={ArrowRight} size="small" />
+                <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small" >Read More</ButtonSecondary>
             </div>
         </div>
     );

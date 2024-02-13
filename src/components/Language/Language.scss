@@ -6,6 +6,7 @@
     &__text {
         transition-duration: .3s;
         &:hover {color: $pink;}
+        &__active {color: $pink;}
     }
     &__split {
         border: 1px solid $lightGray;

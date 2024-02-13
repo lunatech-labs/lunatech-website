@@ -16,9 +16,7 @@ const ServiceCard = (props: CardProps) => {
             {props.children}
             <h3 className="service-card__title">{props.title}</h3>
             <p className="service-card__text">{props.text}</p>
-            <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small">
-                <span>Read More</span>
-            </ButtonSecondary>
+            <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small">Read More</ButtonSecondary>
         </>
     );
 };

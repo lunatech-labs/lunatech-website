@@ -247,7 +247,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="blog__action">
-                            <ButtonSecondary iconUrl={ArrowRight} size="large">More articles</ButtonSecondary>
+                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={ArrowRight} size="large">
+                                More articles
+                            </ButtonSecondary>
                         </div>
                     </div>
                 </Container>

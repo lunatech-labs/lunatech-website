@@ -3,6 +3,7 @@ import Hamburger from '@components/Hamburger/Hamburger';
 import Navigation from '@components/Navigation/Navigation';
 import lunatechLogo from '/lunatech-logo.svg';
 import "./Header.scss";
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -13,16 +14,16 @@ class Header extends Component {
     handleClick() {
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.navigation');
-        hamburger.classList.toggle('hamburger--active');
-        nav.classList.toggle('navigation--active');
+        hamburger?.classList.toggle('hamburger--active');
+        nav?.classList.toggle('navigation--active');
     }
 
     render() {
         return (
             <header className="header">
-                <a className="header__logo" href="/">
+                <Link className="header__logo" to="/">
                     <img src={lunatechLogo} className="header__img" alt="Lunatech logo" />
-                </a>
+                </Link>
                 <div>
                     <Hamburger onClick={this.handleClick} />
                     <Navigation onClick={this.handleClick} />

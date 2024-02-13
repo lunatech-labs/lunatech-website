@@ -1,7 +1,6 @@
 import Container from '@components/Container/Container';
 import { Trans } from 'react-i18next';
 import Category from '@components/Category/Category';
-import Section from '@components/Section/Section';
 import Text from '@components/Text/Text';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 import Spotlight from '@components/Spotlight/Spotlight';
