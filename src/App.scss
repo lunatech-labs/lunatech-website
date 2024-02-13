@@ -291,25 +291,6 @@ nav.nav-bar--hidden {
 /* ----------------------- Contact Page ----------------------- */
 .contact {
     &__content {
-        button{
-            background-color: #E53E3E;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-            margin-left: 20%;
-            &:hover {
-                background-color: darken(#E53E3E, 10%);
-            }
-            &:active {
-                background-color: darken(#E53E3E, 20%);
-            }
-        }
         .Input {
             margin-block-end: 50px;
         }
@@ -318,6 +299,9 @@ nav.nav-bar--hidden {
         grid-column: 1/9;
         @include phone-landscape {
             grid-column: span 12;
+        }
+        a {
+            margin: 55px 55px;
         }
     }
     &__infos {
