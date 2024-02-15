@@ -1,0 +1,30 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.breadcrumb {
+    display: flex;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    &__slash--double {
+        color: $pink;
+        opacity: 1;
+    }
+    &__link {
+        &__current {
+            span {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+        &:hover {
+            color: $pink;
+            text-decoration: underline;
+        }
+        &:focus {
+            color: $pink;
+            text-decoration: underline;
+        }
+    }
+}
