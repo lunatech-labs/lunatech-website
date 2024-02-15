@@ -1,6 +1,5 @@
 import Container from '@components/Container/Container';
 import { Trans } from 'react-i18next';
-import Category from '@components/Category/Category';
 import Text from '@components/Text/Text';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 import Spotlight from '@components/Spotlight/Spotlight';
@@ -12,13 +11,14 @@ import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
+import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
 
 const Services = () => {
     return (
         <div className="page">
             <Container>
                 <div className="page__header">
-                    <Category content="Index / Services" />
+                    <Breadcrumbs />
                     <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
                     <Text><Trans i18nKey="services.text" /></Text>
                 </div>

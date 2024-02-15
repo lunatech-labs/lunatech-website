@@ -24,6 +24,36 @@
         "title": "Integration",
         "text": "We help you to integrate your applications and data, whether they are on-premise or in the cloud, using the best open source technologies."
     },
+    "contact": {
+        "title": "Let's work ",
+        "titleColor": "together",
+        "text": "Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.",
+        "label":
+        {
+            "fullName": "What's your name?",
+            "email": "What's your email address?",
+            "phone": "What's your phone number?",
+            "company": "What's your company/organization name?",
+            "services": "What's services are you looking for?",
+            "project": "Tell us about your project"
+        },
+        "placeHolder":
+        {
+            "fullName": "Type your full name",
+            "company": "Type your company/organization name",
+            "services": "Choose from the list here",
+            "project": "Please type your project description"
+        },
+        "options": {
+            "webDesign": "Web design",
+            "webDevelopment": "Web development",
+            "appDevelopment": "App development",
+            "uxDesign": "UX design",
+            "seo": "SEO",
+            "marketing": "Marketing",
+            "other": "Other"
+        }
+    },
     "address": {
         "countryNL": "Netherlands",
         "countryFR": "France",

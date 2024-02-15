@@ -24,6 +24,35 @@
         "title": "Intégration",
         "text": "Nous intégrons des systèmes existants et des applications tierces dans votre écosystème digital. Nous utilisons des technologies open source et des standards ouverts pour garantir la pérennité de vos solutions."
     },
+    "contact": {
+        "title": "Travaillons ",
+        "titleColor": "ensemble",
+        "text": "Laissez-nous vous aider à devenir encore plus performant dans ce que vous faites. Remplissez le formulaire suivant et nous vous répondrons dans les 24 heures.",
+        "label":
+        {
+            "fullName": "Quel est votre nom complet ?",
+            "email": "Quel est votre adresse e-mail ?",
+            "phone": "Quel est votre numéro de téléphone ?",
+            "company": "Quel est le nom de votre entreprise/organisation ?",
+            "services": "Quels services vous intéressent ?",
+            "project": "Parlez-nous de votre projet"
+        },
+        "placeHolder": {
+            "fullName": "Écrivez votre nom complet",
+            "company": "Écrivez le nom de votre entreprise/organisation",
+            "services": "Sélectionnez le service qui vous intéresse",
+            "project": "Parlez-nous de votre projet"
+        },
+        "options": {
+            "webDesign": "Web design",
+            "webDevelopment": "Web development",
+            "appDevelopment": "App development",
+            "uxDesign": "UX design",
+            "seo": "SEO",
+            "marketing": "Marketing",
+            "other": "Autre"
+        }
+    },
     "address": {
         "countryNL": "Pays-Bas",
         "countryFR": "France",

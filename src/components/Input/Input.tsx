@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./Input.scss";
+import { useTranslation } from 'react-i18next';
 
 interface InputProps {
   number?: string;
@@ -12,6 +13,8 @@ interface InputProps {
 }
 
 const Input = (props: InputProps) => {
+  const { t } = useTranslation();
+
   const { number, label, placeHolder, name, type } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(props.placeHolder);
@@ -46,7 +49,7 @@ const Input = (props: InputProps) => {
         <label htmlFor={name}>{label}</label>
         {type === "options" && props.options ? (    
           <div className="dropdown" ref={dropdownRef}>
-            <div className={`dropdown-header ${selectedOption === "Choose from the list here" ? "default-prompt" : "selected-prompt"}`} onClick={toggling}>
+            <div className={`dropdown-header ${selectedOption === t('contact.placeHolder.services') ? "default-prompt" : "selected-prompt"}`} onClick={toggling}>
               {selectedOption}
               <span className={`arrow ${isOpen && "open"}`}></span>
             </div>

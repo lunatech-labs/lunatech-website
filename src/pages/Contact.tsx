@@ -1,46 +1,46 @@
 import Text from '@components/Text/Text';
-import Category from '@components/Category/Category';
 import Input from '@components/Input/Input';
 import Address from '@components/Adress/Adress';
 import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
 import ArrowSend from '/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
+import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
+import { Trans, useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     const options = [
-        "Web Design",
-        "Web Development",
-        "App Development",
-        "SEO",
-        "Marketing",
-        "Other"
+        t("contact.options.webDesign"),
+        t("contact.options.webDevelopment"),
+        t("contact.options.appDevelopment"),
+        t("contact.options.seo"),
+        t("contact.options.marketing"),
+        t("contact.options.other")
     ];
+
     return (
         <div className="page">
             <Container>
                 <div className="page__header">
-                    <Category content="Index / Contact" />
-                    <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
-                    <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
+                    <Breadcrumbs />
+                    <h1 className="hero__title"><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</h1>
+                    <Text>
+                        <Trans i18nKey="contact.text" />
+                    </Text>
                 </div>
 
                 <section className='contact__content'>
                     <Grid>
                         <div className='contact__form'>
                             <form>
-                                <Input number='01' type='text' label='What&apos;s your name?' placeHolder='Type your full name' name='fullName'>
-                                </Input>
-                                <Input number='02' type='email' label='What&apos;s your email address?' placeHolder='example@email.com' name='email'>
-                                </Input>
-                                <Input number='03' type='text' label='What&apos;s your phone number?' placeHolder='+11 2222 333344' name='phoneNumber'>
-                                </Input>
-                                <Input number='04' type='text' label='What&apos;s your company/organization name?' placeHolder='Type your company/organisation name' name='company'>
-                                </Input>
-                                <Input number='05' type='options' options={options} label='What&apos;s services are you looking for?' placeHolder='Choose from the list here' name='services'>
-                                </Input>
-                                <Input number='06' type='textarea' label='Tell us about your project' placeHolder='Please type your project description' name='projectDescription'>
-                                </Input>
+                                <Input number='01' type='text' label={t('contact.label.fullName')} placeHolder={t('contact.placeHolder.fullName')} name='fullName' />
+                                <Input number='02' type='email' label={t('contact.label.email')} placeHolder='example@email.com' name='email' />
+                                <Input number='03' type='text' label={t('contact.label.phone')} placeHolder='+11 2222 333344' name='phoneNumber' />
+                                <Input number='04' type='text' label={t('contact.label.company')} placeHolder={t('contact.placeHolder.company')} name='company' />
+                                <Input number='05' type='options' options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' />
+                                <Input number='06' type='textarea' label={t('contact.label.project')} placeHolder={t('contact.placeHolder.project')} name='projectDescription' />
                             </form>
                             <ButtonPrimary iconUrl={ArrowSend} size="large" to="/">
                                 <span>Send message</span>
