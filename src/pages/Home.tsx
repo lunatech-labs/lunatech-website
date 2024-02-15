@@ -44,6 +44,7 @@ import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -81,7 +82,7 @@ const Home = () => {
                                 <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
-                                <a className="hero__link" href="/about">About us<img src={ArrowRight} alt="Arrow" /></a>
+                                <Link className="hero__link" to="/about">About us<img src={ArrowRight} alt="Arrow" /></Link>
                             </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
