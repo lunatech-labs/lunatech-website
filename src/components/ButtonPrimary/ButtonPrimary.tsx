@@ -5,16 +5,28 @@ interface ButtonProps {
     children: JSX.Element;
     iconUrl: string;
     size: "small" | "large";
+    type?: "link" | "submit";
     to: string;
 }
 
 const ButtonPrimary = (props: ButtonProps) => {
+    const { type } = props;
+
     return (
-        <Link to={props.to} className={`button-primary button-primary-${props.size}`}>
-            {props.children}
-            <img className="button-primary__img" src={props.iconUrl} alt="" />
-        </Link>
-    )
+        <>
+            {type === 'submit' ? (
+                <button className={`button-primary button-primary-${props.size}`} type="submit">
+                    {props.children}
+                    <img className="button-primary__img" src={props.iconUrl} alt="" />
+                </button>
+            ) : (
+                <Link to={props.to} className={`button-primary button-primary-${props.size}`}>
+                    {props.children}
+                    <img className="button-primary__img" src={props.iconUrl} alt="" />
+                </Link>
+            )}
+        </>
+    );
 }
 
 export default ButtonPrimary;
