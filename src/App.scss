@@ -300,7 +300,7 @@ nav.nav-bar--hidden {
         @include phone-landscape {
             grid-column: span 12;
         }
-        a {
+        a, button {
             margin: 55px 55px;
         }
     }

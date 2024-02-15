@@ -42,7 +42,7 @@ const Contact = () => {
                                 <Input number='05' type='options' options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' />
                                 <Input number='06' type='textarea' label={t('contact.label.project')} placeHolder={t('contact.placeHolder.project')} name='projectDescription' />
                             </form>
-                            <ButtonPrimary iconUrl={ArrowSend} size="large" to="/">
+                            <ButtonPrimary iconUrl={ArrowSend} type='submit' size="large" to="/">
                                 <span>Send message</span>
                             </ButtonPrimary>
                         </div>
