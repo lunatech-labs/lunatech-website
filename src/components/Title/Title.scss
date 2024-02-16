@@ -1,5 +1,6 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .title {
     font-size: $font-size-800;
@@ -8,5 +9,9 @@
     margin-bottom: 16px;
     span {
         @include red-title;
+    }
+    @include phone-portrait {
+        font-size: $font-size-700;
+        line-height: 3.5rem;
     }
 }

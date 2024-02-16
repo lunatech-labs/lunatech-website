@@ -12,6 +12,10 @@
         "careers": "Carrières",
         "contact": "Contact"
     },
+    "modal": {
+        "category": "Our offices",
+        "contactUsBtn": "Contactez-nous"
+    },
     "service": {
         "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :"
     },

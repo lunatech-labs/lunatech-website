@@ -12,6 +12,10 @@
         "careers": "Carreers",
         "contact": "Contact"
     },
+    "modal": {
+        "category": "Nos bureaux",
+        "contactUsBtn": "Contact us"
+    },
     "service": {
         "text": "Lunatech provides innovative solutions for the creation and modernization of your digital products through the following services:"
     },
