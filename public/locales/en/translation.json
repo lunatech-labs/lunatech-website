@@ -81,5 +81,12 @@
         "subtitle1": "Business development",
         "subtitle2": "Careers",
         "subtitle3": "Address"
+    },
+    "footer": {
+        "managed": "Managed by Lunatech Labs.",
+        "copyright": "All rights reserved.",
+        "terms": "Terms of Services",
+        "title1": "Plan",
+        "title2": "Get connected"
     }
 }

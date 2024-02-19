@@ -80,5 +80,12 @@
         "subtitle1": "Développement de l'activité",
         "subtitle2": "Carrières",
         "subtitle3": "Adresse"
+    },
+    "footer": {
+        "managed": "Dirigé par Lunatech Labs.",
+        "copyright": "Tous droits réservés.",
+        "terms": "Conditions de service",
+        "title1": "Plan",
+        "title2": "Get Connected"
     }
 }
