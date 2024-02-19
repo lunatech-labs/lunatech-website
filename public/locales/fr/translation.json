@@ -1,16 +1,34 @@
 {
     "title": "Bienvenue",
+    "buttonDetails": "Plus de détails",
+    "buttonReadMore": "Lire la suite",
     "hero": {
+        "title1": "Modernisez vos",
+        "titleImp": "produits numériques",
+        "title2": "pour l'avenir de demain.",
+        "text": "Nous pensons et concevons des expériences uniques <br /> pour les produits numériques innovants de demain.",
         "button1": "Contact",
         "button2": "A propos"
     },
     "navigation":{
-        "about": "A propos de nous",
+        "about": "A propos",
         "services": "Services",
         "works": "Travaux",
         "blog": "Blog",
         "careers": "Carrières",
         "contact": "Contact"
+    },
+    "banner": {
+        "first": "Années d'experience",
+        "second": "Projets achevés",
+        "third": "Chefs d'équipe & employés",
+        "fourth": "Nationalités différentes"
+    },
+    "about": {
+        "category": "A propos",
+        "title": "Systèmes logiciels personnalisés depuis plus de",
+        "titleImp": "30 ans",
+        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants."
     },
     "modal": {
         "category": "Our offices",

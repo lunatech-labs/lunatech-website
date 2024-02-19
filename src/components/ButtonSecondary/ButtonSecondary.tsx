@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./ButtonSecondary.scss";
 
 interface ButtonProps {
-    children: string;
+    children: JSX.Element;
     iconUrl: string;
     size: "small" | "large";
     to: string;

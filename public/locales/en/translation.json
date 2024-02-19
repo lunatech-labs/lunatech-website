@@ -1,6 +1,12 @@
 {
     "title": "Welcome",
+    "buttonDetails": "More Details",
+    "buttonReadMore": "Read More",
     "hero": {
+        "title1": "Modernize your",
+        "titleImp": "digital products",
+        "title2": "for tomorrow's future.",
+        "text": "We think and design unique experiences <br /> for tomorrow's innovative digital products.",
         "button1": "Let's talk",
         "button2": "About us"
     },
@@ -11,6 +17,18 @@
         "blog": "Blog",
         "careers": "Carreers",
         "contact": "Contact"
+    },
+    "banner": {
+        "first": "Years of experience",
+        "second": "Projects completed",
+        "third": "Team leads & employees",
+        "fourth": "Different nationalities"
+    },
+    "about": {
+        "category": "About us",
+        "title": "Custom software systems for over",
+        "titleImp": "30 years",
+        "text": "Lunatech provides innovative solutions for the creation and modernisation of your digital products through the following services."
     },
     "modal": {
         "category": "Nos bureaux",

@@ -76,13 +76,13 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="hero__content">
-                            <h1 className="hero__title">Modernize your <br /><span>digital products</span><br />for tomorrow's future.</h1>
-                            <Text className="mgb32">We think and design unique experiences<br />for tomorrow's innovative digital products.</Text>
+                            <h1 className="hero__title"><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></h1>
+                            <Text className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
                                 <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
-                                <Link className="hero__link" to="/about">About us<img src={ArrowRight} alt="Arrow" /></Link>
+                                <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={ArrowRight} alt="Arrow" /></Link>
                             </div>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
@@ -99,10 +99,10 @@ const Home = () => {
                     <div className="about">
                         <img className="about__img" src={Building} alt="Building" />
                         <div className="about__content">
-                            <Category content="About us" />
-                            <Title content={<>Custom software systems for over <span>30 years</span></>} />
-                            <Text className="mgb32">Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.</Text>
-                            <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'>More Details</ButtonSecondary>
+                            <Category content={<Trans i18nKey="about.category" />} />
+                            <Title content={<><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></>} />
+                            <Text className="mgb32"><Trans i18nKey="about.text" /></Text>
+                            <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
@@ -124,7 +124,6 @@ const Home = () => {
             <Container>
                 <div className="bb-g"></div>
             </Container>
-            
 
             <Section>
                 <Container>
@@ -230,7 +229,7 @@ const Home = () => {
                                     </div>
                                     <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
                                     <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary iconUrl={ArrowRight} size="large">Read More</ButtonSecondary>
+                                    <ButtonSecondary iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
@@ -242,7 +241,7 @@ const Home = () => {
                                     </div>
                                     <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
                                     <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary iconUrl={ArrowRight} size="large">Read More</ButtonSecondary>
+                                    <ButtonSecondary iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
@@ -256,7 +255,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section className="section-gradient">
+            <Section className="bg-mediumBlue">
                 <Container>
                     <div className="contact">
                         <div>

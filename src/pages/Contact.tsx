@@ -7,6 +7,7 @@ import ArrowSend from '/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
 import { Trans, useTranslation } from 'react-i18next';
+import Section from '@/components/Section/Section';
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -21,17 +22,23 @@ const Contact = () => {
     ];
 
     return (
-        <div className="page">
-            <Container>
-                <div className="page__header">
-                    <Breadcrumbs />
-                    <h1 className="hero__title"><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</h1>
-                    <Text>
-                        <Trans i18nKey="contact.text" />
-                    </Text>
-                </div>
+        <>
+            <Section className="pdt256">
+                <Container>
+                    <Grid>
+                        <div className="col-lg-6">
+                            <Breadcrumbs />
+                            <h1 className="hero__title"><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</h1>
+                            <Text>
+                                <Trans i18nKey="contact.text" />
+                            </Text>
+                        </div>
+                    </Grid>
+                </Container>
+            </Section>
 
-                <section className='contact__content'>
+            <Section>
+                <Container>
                     <Grid>
                         <div className='contact__form'>
                             <form>
@@ -52,9 +59,9 @@ const Contact = () => {
                             <Address country='United Kingdom' kind='Business development' mail='info@lunatech.uk'/>
                         </div>
                     </Grid>
-                </section>
-            </Container>
-        </div>
+                </Container>
+            </Section>
+        </>
     );
 };
 

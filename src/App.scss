@@ -33,16 +33,6 @@ nav.nav-bar--hidden {
     transform: translateY(-200%);
 }
 
-/* ------------- PAGE TEMPLATE ------------- */
-.page {
-    padding: 256px 0;
-    @include phone-portrait {padding: 128px 0;}
-    &__header {
-        margin-bottom: 128px;
-        @include phone-portrait {margin-bottom: 64px;}
-    }
-}
-
 /* ------------- HERO BLOCK ------------- */
 .hero {
     position: relative;
@@ -207,7 +197,7 @@ nav.nav-bar--hidden {
     justify-content: space-between;
     padding: 128px 80px;
     margin-bottom: 128px;
-    background: linear-gradient(to bottom, #0A1E50, #081A47);
+    background: $backgroundBlue;
     border-radius: 16px;
     @include phone-portrait {
         flex-direction: column;
@@ -290,11 +280,6 @@ nav.nav-bar--hidden {
 
 /* ----------------------- Contact Page ----------------------- */
 .contact {
-    &__content {
-        .Input {
-            margin-block-end: 50px;
-        }
-    }
     &__form {
         grid-column: 1/9;
         @include phone-landscape {

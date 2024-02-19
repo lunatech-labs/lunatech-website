@@ -1,17 +1,21 @@
-import "./ValuesBanner.scss";
+import { Trans, useTranslation } from 'react-i18next';
 import Value from "@components/Value/Value";
 import Container from "@components/Container/Container";
 import Grid from "@components/Grid/Grid";
 
+import "./ValuesBanner.scss";
+
 const ValuesBanner = () => {
+    useTranslation();
+
     return (
         <div className="values__banner">
             <Container>
                 <Grid>
-                    <Value number={30} content={<>Years of<br />Experience</>} />
-                    <Value number={32} content={<>Projects<br />Completed</>} />
-                    <Value number={80} content={<>Team Leads<br />& Employees</>} />
-                    <Value number={25} content={<>Different<br />Nationalities</>} />
+                    <Value number={30} content={<Trans i18nKey="banner.first" />} />
+                    <Value number={32} content={<Trans i18nKey="banner.second" />} />
+                    <Value number={80} content={<Trans i18nKey="banner.third" />} />
+                    <Value number={25} content={<Trans i18nKey="banner.fourth" />} />
                 </Grid>
             </Container>
         </div>

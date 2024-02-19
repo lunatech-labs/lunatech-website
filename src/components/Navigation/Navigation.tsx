@@ -1,12 +1,12 @@
 import { NavLink, Link } from 'react-router-dom';
-
+import { Trans, useTranslation } from 'react-i18next';
+import Language from '@components/Language/Language';
 import Github from '/github.svg';
 import Instagram from '/instagram.svg';
 import Linkedin from '/linkedin.svg';
 import Twitter from '/twitter.svg';
+
 import "./Navigation.scss";
-import Language from '@components/Language/Language';
-import { Trans, useTranslation } from 'react-i18next';
 
 const Navigation = ({ onClick }: { onClick: () => void }) => {
     useTranslation();
@@ -21,9 +21,10 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
                     <li className="navigation__social-item"><Link to="https://twitter.com/lunatechlabs" target="_blank"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
                 </ul>
                 <ul className="navigation__menu">
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Home</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about"><Trans i18nKey="navigation.about" /></NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/services">Services</NavLink></li>
-                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/works">Works</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/vision">Vision</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://blog.lunatech.com/" target="_blank">Blog</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://recruitment.lunatech.com/" target="_blank">Careers</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/contact">Contact</NavLink></li>

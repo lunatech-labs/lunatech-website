@@ -1,7 +1,7 @@
 import "./Category.scss";
 
 interface CategoryProps {
-    content: string;
+    content: JSX.Element;
 }
 
 const Category = (props: CategoryProps) => {

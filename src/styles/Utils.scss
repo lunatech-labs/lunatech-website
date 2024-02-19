@@ -9,6 +9,8 @@
 
 /* --------------- Colors --------------- */
 .bg-blue {background: $blue;}
+.bg-mediumBlue {background: $mediumBlue;}
+.bg-bgBlue {background: $backgroundBlue;}
 
 /* --------------- Divers --------------- */
 .section-gradient {background: linear-gradient(to bottom, #0A3269, rgb(12 52 105 / 0%)) border-box;}
@@ -17,6 +19,9 @@
     border-image: linear-gradient(to bottom, rgb(255 255 255 / 24%), rgb(84 145 179 / 24%));
     border-image-slice: 1;
 }
+
+/* --------------- Grid --------------- */
+.col-lg-6 {grid-column: span 6;}
 
 /* --------------- Space --------------- */
 .mgt8 {margin-top: 8px}
@@ -48,3 +53,5 @@
 .mgr128 {margin-right: 128px}
 .mgb128 {margin-bottom: 128px}
 .mgl128 {margin-left: 128px}
+
+.pdt256 {padding-top: 256px;}
