@@ -1,3 +1,4 @@
+import { useTranslation, Trans } from 'react-i18next';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import "./WorkCard.scss";
 import ArrowRight from '/arrow-right.svg';
@@ -11,6 +12,8 @@ interface CardProps {
 }
 
 const WorkCard = (props: CardProps) => {
+    useTranslation();
+    
     const toPath = (title: string) => `/works/${title.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
@@ -22,7 +25,7 @@ const WorkCard = (props: CardProps) => {
                 <p className="work-card__desc">{props.desc}</p>
                 <p className="work-card__text">{props.text}</p>
                 <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="large">
-                    <span>Read More</span>
+                    <span><Trans i18nKey="buttonReadMore" /></span>
                 </ButtonSecondary>
             </div>
         </div>

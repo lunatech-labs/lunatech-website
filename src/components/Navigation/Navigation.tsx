@@ -21,12 +21,12 @@ const Navigation = ({ onClick }: { onClick: () => void }) => {
                     <li className="navigation__social-item"><Link to="https://twitter.com/lunatechlabs" target="_blank"><img src={Twitter} alt="Twitter logo" />X / Twitter</Link></li>
                 </ul>
                 <ul className="navigation__menu">
-                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Home</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/"><Trans i18nKey="navigation.home" /></NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about"><Trans i18nKey="navigation.about" /></NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/services">Services</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/vision">Vision</NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://blog.lunatech.com/" target="_blank">Blog</NavLink></li>
-                    <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://recruitment.lunatech.com/" target="_blank">Careers</NavLink></li>
+                    <li onClick={onClick} className="navigation__menu-item"><NavLink to="https://recruitment.lunatech.com/" target="_blank"><Trans i18nKey="navigation.careers" /></NavLink></li>
                     <li onClick={onClick} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/contact">Contact</NavLink></li>
                 </ul>
             </div>

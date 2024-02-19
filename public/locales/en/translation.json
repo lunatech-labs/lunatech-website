@@ -11,12 +11,10 @@
         "button2": "About us"
     },
     "navigation": {
+        "home": "Home",
         "about": "About us",
-        "services": "Services",
         "works": "Works",
-        "blog": "Blog",
-        "careers": "Carreers",
-        "contact": "Contact"
+        "careers": "Carreers"
     },
     "banner": {
         "first": "Years of experience",

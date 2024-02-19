@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import Arrow from '/collapse-arrow.svg';
 import ArrowRight from '/arrow-right.svg';
@@ -11,6 +12,8 @@ interface CollapseProps {
 }
 
 const Collapse = (props: CollapseProps & { onClick: (e: React.MouseEvent<HTMLDivElement>) => void, 'data-img': string }) => {
+    useTranslation();
+    
     const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
 
     const toggleCollapse = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -32,7 +35,7 @@ const Collapse = (props: CollapseProps & { onClick: (e: React.MouseEvent<HTMLDiv
             </div>
             <div className="collapse__body">
                 {props.children}
-                <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small" >Read More</ButtonSecondary>
+                <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small" ><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 {
     "title": "Bienvenue",
     "buttonDetails": "Plus de détails",
-    "buttonReadMore": "Lire la suite",
+    "buttonReadMore": "En savoir plus",
     "hero": {
         "title1": "Modernisez vos",
         "titleImp": "produits numériques",
@@ -11,12 +11,10 @@
         "button2": "A propos"
     },
     "navigation":{
+        "home": "Accueil",
         "about": "A propos",
-        "services": "Services",
         "works": "Travaux",
-        "blog": "Blog",
-        "careers": "Carrières",
-        "contact": "Contact"
+        "careers": "Carrières"
     },
     "banner": {
         "first": "Années d'experience",
