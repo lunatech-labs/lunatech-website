@@ -45,6 +45,7 @@ import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 import { Link } from 'react-router-dom';
+import ServiceCarousel from '@/components/ServiceCarousel/ServiceCarousel';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -174,6 +175,7 @@ const Home = () => {
                             </SpotlightCard>
                         </Spotlight>
                     </div>
+                    <ServiceCarousel></ServiceCarousel>
                 </Container>
             </Section>
 

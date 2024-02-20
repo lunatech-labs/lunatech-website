@@ -126,15 +126,18 @@ nav.nav-bar--hidden {
 
 /* ------------- SERVICES BLOCK ------------- */
 .services {
+    margin: -100px;
+    padding: 100px;
+    background: $backgroundBlue;
+    border-radius: 64px;
+    margin-bottom: 200px;
     &__top {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
         margin-bottom: 64px;
         @include phone-portrait {
             flex-direction: column;
         }
-        align-items: flex-start;
     }
     &__desc {
         h2 {
@@ -146,11 +149,18 @@ nav.nav-bar--hidden {
             width: 68%;
             @include desktop {width: 90%;}
             @include phone-portrait {width: 100%;}
-            margin-bottom: 24px;
         }
     }
     &__content {
         @include grid;
+    }
+    @include phone-portrait {
+        padding: 40px;
+        .spotlight__layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 }
 
