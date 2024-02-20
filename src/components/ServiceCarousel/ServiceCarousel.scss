@@ -1,0 +1,49 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+.service-carousel {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 40px;
+    &__buttons {
+        display: flex;
+        margin-left: 60%;
+        gap: 20px;
+        button {
+            width: 64px;
+            height: 64px;
+            background: $blue;
+            border-radius: 5rem;
+            @include flexbox;
+            justify-content: center;
+        }
+        .disabled {
+            opacity: .5;
+        }
+        @include phone-portrait {
+            display: none;
+        }
+    }
+    @include phone-portrait {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+    &__slider {
+        position: relative;
+        right: 0;
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        margin-bottom: 40px;
+        scrollbar-width: none;
+        @include phone-portrait {
+            flex-direction: column;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+      }
+    }  
+}

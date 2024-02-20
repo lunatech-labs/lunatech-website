@@ -1,0 +1,31 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+.service-card-carousel {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%));
+    min-width: 424px;
+    min-height: 420px;
+    @include dark-gradient;
+    padding: 48px;
+    &__icon {
+        background: $blue;
+        color: #78B4D7;
+        margin-bottom: 32px;
+        padding: 24px;
+    }
+    &__title {
+        font-size: $font-size-500;
+        margin-bottom: 8px;
+    }
+    &__text {
+        opacity: .5;
+        margin-bottom: 16px;
+    }
+    @include phone-portrait {
+        min-width: 50%;
+        min-height: 50%;
+    }
+}
