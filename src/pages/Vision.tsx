@@ -24,7 +24,7 @@ const Vision = () => {
                 </Container>
             </Section>
 
-            <Section className="bg-bgBlue">
+            <Section className="bg-bgMediumBlue">
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
@@ -54,7 +54,7 @@ const Vision = () => {
                 </Container>
             </Section>
 
-            <Section className="bg-bgBlue">
+            <Section className="bg-bgMediumBlue">
                 <Container>
                     <Grid>
                         <div className="col-lg-6">

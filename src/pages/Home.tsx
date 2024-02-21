@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import '../i18n';
 
@@ -17,7 +16,6 @@ import Sphere from '@components/Sphere/Sphere';
 import MouseScroll from '@components/MouseScroll/MouseScroll';
 import ValuesBanner from '@components/ValuesBanner/ValuesBanner';
 import Section from '@components/Section/Section';
-import Collapse from '@components/Collapse/Collapse';
 import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 
@@ -54,15 +52,6 @@ const Home = () => {
         i18n.changeLanguage(lng);
     };
 
-    const [currentImg, setCurrentImg] = useState<string>('/blog.png');
-
-    const handleCollapseClick = (e: React.MouseEvent<HTMLDivElement>) => {
-        const dataImg = e.currentTarget.getAttribute('data-img');
-        if (dataImg) {
-            setCurrentImg(dataImg);
-        }
-    };
-
     return (
         <>
             <section className="hero">
@@ -96,7 +85,7 @@ const Home = () => {
 
             <ValuesBanner />
 
-            <Section className="section-gradient">
+            <Section className="bg-bgDarkBlue pdb384">
                 <Container>
                     <div className="about">
                         <img className="about__img" src={Building} alt="Building" />
@@ -123,13 +112,9 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Container>
-                <div className="bb-g"></div>
-            </Container>
-
             <Section>
-                <Container>
-                    <div className="services">
+                <div className="services">
+                    <div className="services__container">
                         <div className="services__top">
                             <div className="services__desc">
                                 <Category content="Services" />
@@ -138,9 +123,7 @@ const Home = () => {
                                     <Trans i18nKey="service.text" />
                                 </Text>
                             </div>
-                            <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>
-                                More Details
-                            </ButtonSecondary>
+                            <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                         </div>
                         
                         <Spotlight className="spotlight__layout">
@@ -176,47 +159,16 @@ const Home = () => {
                             </SpotlightCard>
                         </Spotlight>
                     </div>
+                </div>
+            </Section>
+
+            <Section>
+                <Container>
                     <ServiceCarousel></ServiceCarousel>
                 </Container>
             </Section>
 
-            <Section className="bg-blue">
-                <Container>
-                    <div className="works">
-                        <div className="works__top">
-                            <div>
-                                <Category content="Works" />
-                                <Title content={<>Browse our <span>case studies</span>.</>} />
-                            </div>
-                            <ButtonSecondary iconUrl={ArrowRight} size="large" to='/works'>More Case Studies</ButtonSecondary>
-                        </div>
-                        <div className="works__content">
-                            <div className="works__left">
-                            <Collapse title="Collapse Title 1" data-img="/collapse.png" onClick={handleCollapseClick}>
-                                <p>
-                                    Content 1
-                                </p>
-                            </Collapse>
-                            <Collapse title="Collapse Title 2" data-img="/blog.png" onClick={handleCollapseClick}>
-                                <p>
-                                    Content 2
-                                </p>
-                            </Collapse>
-                            <Collapse title="Titre du Collapse" data-img="/collapse.png" onClick={handleCollapseClick}>
-                                <p>
-                                    Contenu du Collapse
-                                </p>
-                            </Collapse>
-                            </div>
-                            <div className="works__right">
-                                <img className="works__img" src={currentImg} alt="Collapse image" />
-                            </div>
-                        </div>
-                    </div>
-                </Container>
-            </Section>
-
-            <Section>
+            <Section className="bg-bgMediumBlue">
                 <Container>
                     <div className="blog">
                         <div className="blog__top">
@@ -250,9 +202,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="blog__action">
-                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={ArrowRight} size="large">
-                                More articles
-                            </ButtonSecondary>
+                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonMoreArticles" /></ButtonSecondary>
                         </div>
                     </div>
                     <div className='blogFinal'>
@@ -261,7 +211,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section className="bg-mediumBlue">
+            <Section>
                 <Container>
                     <div className="contact">
                         <div>
@@ -274,7 +224,6 @@ const Home = () => {
                             </span>
                         </ButtonPrimary>
                     </div>
-
                     <Address />
                 </Container>
             </Section>
