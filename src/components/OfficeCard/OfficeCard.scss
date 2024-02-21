@@ -4,8 +4,7 @@
 
 .office-card {
     @include dark-gradient;
-    width: 200px;
-    padding: 40px 20px 10px 20px;
+    padding: 48px 16px 16px 16px;
     grid-column: span 4;
     flex-direction: column;
     @include phone-portrait {
@@ -20,7 +19,7 @@
         padding: 24px;
     }
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         font-size: $font-size-600;
         text-align: center;
     }
@@ -35,6 +34,10 @@
         border-radius: 5rem;
         @include flexbox;
         justify-content: center;
+        transition: .5s ease;
+        &:hover {
+            background: $pink;
+        }
     }
     button:hover {
         cursor: pointer;
