@@ -3,26 +3,30 @@
 @import "/src/styles/Responsive.scss";
 
 .office-card {
-    @include flexbox;
     @include dark-gradient;
-    padding: 48px 0;
+    width: 200px;
+    padding: 40px 20px 10px 20px;
     grid-column: span 4;
     flex-direction: column;
     @include phone-portrait {
+        width: auto;
         grid-column: span 12;
-        padding: 24px 0;
+        padding: 24px 20px 10px 20px;
     }
     &__icon {
         background: $blue;
         color: #78B4D7;
         margin-bottom: 32px;
         padding: 24px;
-        
     }
     &__title {
         margin-bottom: 16px;
         font-size: $font-size-600;
         text-align: center;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
     }
     &__button {
         width: 32px;
@@ -31,5 +35,8 @@
         border-radius: 5rem;
         @include flexbox;
         justify-content: center;
+    }
+    button:hover {
+        cursor: pointer;
     }
 }
