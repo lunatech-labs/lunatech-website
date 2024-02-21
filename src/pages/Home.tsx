@@ -106,13 +106,13 @@ const Home = () => {
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                        <Icon imageUrl={Buildings1} size="small" />
+                                        <Icon imageUrl={Buildings1} size="medium" />
                                     </OfficeCard>
                                     <OfficeCard title="Paris" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                        <Icon imageUrl={Buildings2} size="small" />
+                                        <Icon imageUrl={Buildings2} size="medium" />
                                     </OfficeCard>
                                     <OfficeCard title="Newcastle" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                        <Icon imageUrl={Buildings3} size="small" />
+                                        <Icon imageUrl={Buildings3} size="medium" />
                                     </OfficeCard>
                                 </Grid>
                             </div>

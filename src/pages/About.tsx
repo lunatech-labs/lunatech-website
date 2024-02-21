@@ -10,6 +10,7 @@ import OfficeCard from '@/components/OfficeCard/OfficeCard';
 import ButtonPrimary from '@/components/ButtonPrimary/ButtonPrimary';
 import Address from '@/components/Address/Address';
 import Icon from '@/components/Icon/Icon';
+import Timeline from '@/components/Timeline/Timeline';
 
 import Buildings1 from '/buildings1.svg';
 import Buildings2 from '/buildings2.svg';
@@ -64,13 +65,13 @@ const About = () => {
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                        <Icon imageUrl={Buildings1} size="small" />
+                                        <Icon imageUrl={Buildings1} size="medium" />
                                     </OfficeCard>
                                     <OfficeCard title="Paris" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                        <Icon imageUrl={Buildings2} size="small" />
+                                        <Icon imageUrl={Buildings2} size="medium" />
                                     </OfficeCard>
                                     <OfficeCard title="Newcastle" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                        <Icon imageUrl={Buildings3} size="small" />
+                                        <Icon imageUrl={Buildings3} size="medium" />
                                     </OfficeCard>
                                 </Grid>
                             </div>
@@ -82,10 +83,13 @@ const About = () => {
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="bg-bgBlue">
                 <Container>
-                    <p>Timeline</p>
-                        
+                    <div className="ta-c mgb128">
+                        <Category content="Our development" />
+                        <Title content={<>Over <span>30 years</span> of development</>} />
+                    </div>
+                    <Timeline />     
                 </Container>
             </Section>
 

@@ -2,7 +2,7 @@ import "./Icon.scss";
 
 interface IconProps {
     imageUrl: string;
-    size: "small" | "large";
+    size: "small" | "medium" | "large";
 }
 
 const Icon = (props: IconProps) => {

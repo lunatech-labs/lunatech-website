@@ -19,13 +19,13 @@ const Works = () => {
                 <div className="works">
                     <div className="works__content">
                         <WorkCard title="Automotive" desc="Scala Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='blog'>
-                            <Icon imageUrl={Example} size="small" />
+                            <Icon imageUrl={Example} size="medium" />
                         </WorkCard>
                         <WorkCard title="Insurance" desc="Custom software development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='blog'>
-                            <Icon imageUrl={Example} size="small" />
+                            <Icon imageUrl={Example} size="medium" />
                         </WorkCard>
                         <WorkCard title="Energy" desc="Java Expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image='blog'>
-                            <Icon imageUrl={Example} size="small" />
+                            <Icon imageUrl={Example} size="medium" />
                         </WorkCard>
                     </div>
                 </div>

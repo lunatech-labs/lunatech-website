@@ -1,0 +1,65 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+
+.timeline {
+    position: relative;
+    overflow-x: scroll;
+    &__body {
+        display: flex;
+        width: 4000px;
+    }
+    &__lt-event {
+        margin-right: 32px;
+        &:last-child {margin-right: 0}
+    }
+    &__event {
+        padding-top: 211px;
+        margin-right: 32px;
+        &:last-child {margin-right: 0}
+        div {
+            width: 32px;
+            height: 32px;
+            border-radius: 25rem;
+            background: $lightBlue;
+        }
+        p:nth-child(2) {
+            font-size: 16px;
+            color: white;
+            margin-top: 32px;
+        }
+        p:nth-child(3) {
+            font-size: 16px;
+            font-weight: 600;
+            color: $lightGray;
+        }
+    }
+    &__date {
+        font-size: 16px;
+        color: white;
+        margin-top: 24px;
+    }
+    &__title {
+        font-size: 24px;
+        color: $pink;
+    }
+    &__text {
+        font-size: 16px;
+        color: $lightGray;
+        margin-bottom: 32px;
+    }
+    &__round {
+        width: 32px;
+        height: 32px;
+        border-radius: 25rem;
+        background: $lightBlue;
+    }
+    &__line {
+        position: absolute;
+        height: 3px;
+        background: $lightBlue;
+        width: 4000px;
+        top: 226px;
+    }
+}
