@@ -46,6 +46,7 @@ import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 import { Link } from 'react-router-dom';
 import ServiceCarousel from '@/components/ServiceCarousel/ServiceCarousel';
+import Articles from '@/components/Articles/Articles';
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -253,6 +254,9 @@ const Home = () => {
                                 More articles
                             </ButtonSecondary>
                         </div>
+                    </div>
+                    <div className='blogFinal'>
+                        <Articles></Articles>
                     </div>
                 </Container>
             </Section>
