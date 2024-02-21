@@ -34,9 +34,11 @@ const OfficeCard = (props: CardProps) => {
                     {props.children}
                     <h3 className="office-card__title">{props.title}</h3>
                 </div>
-                <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
-                    <img src={Add} alt="Add" />
-                </button>
+                <div className='office-card__bottom'>
+                    <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
+                        <img src={Add} alt="Add" />
+                    </button>
+                </div>
             </div>
             {showModal && <OfficeModal {...props} handleClose={handleClose} />}
         </>
