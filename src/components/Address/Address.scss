@@ -28,7 +28,7 @@
     &__subtitle {
         font-size: $font-size-500;
         line-height: 2.25rem;
-        opacity: .5;
+        color: $lightGray;;
     }
     &__join {
         @include flexbox;

@@ -17,6 +17,14 @@
     }
 }
 .icon-small {
+    width: 64px;
+    height: 64px;
+}
+.icon-small .icon__img {
+    width: 24px;
+    height:24px;
+}
+.icon-medium {
     width: 96px;
     height: 96px;
     @include phone-portrait {
@@ -24,7 +32,7 @@
         height: 64px;
     }
 }
-.icon-small .icon__img {
+.icon-medium .icon__img {
     width: 48px;
     height:48px;
     @include phone-portrait {
@@ -32,6 +40,10 @@
         height: 32px;
     }
 }
+
+
+
+
 
 
 
