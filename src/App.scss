@@ -218,6 +218,20 @@ nav.nav-bar--hidden {
 }
 
 /* ------------- BLOG BLOCK ------------- */
+.blogFinal {
+    .spotlight {
+        &__layout {
+            display: flex;
+            margin-bottom: 24px;
+        }
+        &__card {
+            padding: 0;
+            text-align: start;
+        }
+    }
+    
+}
+
 .blog {
     &__top {
         text-align: center;

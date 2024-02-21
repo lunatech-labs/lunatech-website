@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import ArrowRight from '/arrow-right.svg';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Text from '@components/Text/Text';
+import { SpotLight } from '@react-three/drei';
+import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 
 interface BlogArticle {
     title: string;
@@ -48,22 +50,26 @@ const Articles = () => {
     <div>
         <ul>
             {articles.map((article, index) => (
-                <li key={article.slug} className="article">
-                    <div className="blog__content">
-                        <div className={`blog__left ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
-                            <div className="dflex">
-                                <p className="blog__category">{article.tags.length > 0 ? article.tags[0].charAt(0).toUpperCase() + article.tags[0].slice(1).toLowerCase() : ''}</p>
-                                <p className="blog__date">{article.publication_date}</p>
+                <Spotlight className="spotlight__layout">
+                    <SpotlightCard>
+                        <li key={article.slug} className="article">
+                            <div className="blog__content">
+                                <div className={`blog__left ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
+                                    <div className="dflex">
+                                        <p className="blog__category">{article.tags.length > 0 ? article.tags[0].charAt(0).toUpperCase() + article.tags[0].slice(1).toLowerCase() : ''}</p>
+                                        <p className="blog__date">{article.publication_date}</p>
+                                    </div>
+                                    <p className="blog__title">{article.title}</p>
+                                    <Text className="mgb24">{truncateText(article.excerpt, 25)}</Text>
+                                    <ButtonSecondary iconUrl={ArrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+                                </div>
+                                <img className="blog__img" src={article.image_url} alt="Blog img" />
                             </div>
-                            <p className="blog__title">{article.title}</p>
-                            <Text className="mgb24">{truncateText(article.excerpt, 25)}</Text>
-                            <ButtonSecondary iconUrl={ArrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
-                        </div>
-                        <img className="blog__img" src={article.image_url} alt="Blog img" />
-                    </div>
-                </li>
+                        </li>
+                    </SpotlightCard>
+                </Spotlight>
             ))}
-        </ul>
+        </ul>  
     </div>
     );
 }
