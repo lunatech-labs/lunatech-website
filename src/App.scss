@@ -101,7 +101,7 @@ nav.nav-bar--hidden {
     }
     &__text {
         font-size: $font-size-600;
-        opacity: .5;
+        color: $lightGray;
     }
 }
 
@@ -274,15 +274,15 @@ nav.nav-bar--hidden {
     &__category {
         @include flexbox;
         height: 48px;
-        border: 1px solid white;
+        border: 1px solid $lightGray;
         border-radius: 48px;
         margin-right: 32px;
         padding: 0 24px;
-        opacity: .5;
+        color: $lightGray;
     }
     &__date {
         text-transform: uppercase;
-        opacity: .5;
+        color: $lightGray;
         letter-spacing: 4px;
     }
     &__title {
