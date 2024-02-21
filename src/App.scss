@@ -126,15 +126,18 @@ nav.nav-bar--hidden {
 
 /* ------------- SERVICES BLOCK ------------- */
 .services {
+    margin: -2%;
+    padding: 5%;
+    background: $backgroundBlue;
+    border-radius: 64px;
+    margin-bottom: 200px;
     &__top {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
         margin-bottom: 64px;
         @include phone-portrait {
             flex-direction: column;
         }
-        align-items: flex-start;
     }
     &__desc {
         h2 {
@@ -146,11 +149,20 @@ nav.nav-bar--hidden {
             width: 68%;
             @include desktop {width: 90%;}
             @include phone-portrait {width: 100%;}
-            margin-bottom: 24px;
         }
     }
     &__content {
         @include grid;
+    }
+    @include phone-portrait {
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 40px;
+        .spotlight__layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 }
 
@@ -208,6 +220,20 @@ nav.nav-bar--hidden {
 }
 
 /* ------------- BLOG BLOCK ------------- */
+.blogFinal {
+    .spotlight {
+        &__layout {
+            display: flex;
+            margin-bottom: 24px;
+        }
+        &__card {
+            padding: 0;
+            text-align: start;
+        }
+    }
+    
+}
+
 .blog {
     &__top {
         text-align: center;
