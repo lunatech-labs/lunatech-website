@@ -1,3 +1,23 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
 .article {
-    margin-bottom: 24px;
+    .blog {
+        &__content {
+            @include phone-portrait {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        &__img {
+            height: 100%;
+            background-size: cover;
+            border-radius: 10px;
+            grid-column: span 6;
+            @include phone-portrait {
+                grid-column: span 12;
+            }
+        }
+    }
 }
