@@ -8,22 +8,13 @@
 .ai-c {align-items: center;}
 
 /* --------------- Colors --------------- */
-.bg-blue {background: $blue;}
-.bg-mediumBlue {background: $mediumBlue;}
-.bg-bgBlue {background: $backgroundBlue;}
-
-/* --------------- Divers --------------- */
-.section-gradient {background: linear-gradient(to bottom, #0A3269, rgb(12 52 105 / 0%)) border-box;}
-.bb-g {
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to bottom, rgb(255 255 255 / 24%), rgb(84 145 179 / 24%));
-    border-image-slice: 1;
-}
+.bg-bgMediumBlue {background: $bgMediumBlue;}
+.bg-bgDarkBlue {background: $bgDarkBlue;}
 
 /* --------------- Grid --------------- */
 .col-lg-6 {grid-column: span 6;}
 
-/* --------------- Space --------------- */
+/* --------------- Margin --------------- */
 .mgt8 {margin-top: 8px}
 .mgr8 {margin-right: 8px}
 .mgb8 {margin-bottom: 8px}
@@ -54,4 +45,6 @@
 .mgb128 {margin-bottom: 128px}
 .mgl128 {margin-left: 128px}
 
+/* --------------- Padding --------------- */
 .pdt256 {padding-top: 256px;}
+.pdb384 {padding-bottom: 384px;}

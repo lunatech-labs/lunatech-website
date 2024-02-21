@@ -83,7 +83,7 @@ const About = () => {
                 </Container>
             </Section>
 
-            <Section className="bg-bgBlue">
+            <Section className="bg-bgMediumBlue">
                 <Container>
                     <div className="ta-c mgb128">
                         <Category content="Our development" />

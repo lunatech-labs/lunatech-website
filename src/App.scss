@@ -126,11 +126,16 @@ nav.nav-bar--hidden {
 
 /* ------------- SERVICES BLOCK ------------- */
 .services {
-    margin: -2%;
-    padding: 5%;
-    background: $backgroundBlue;
-    border-radius: 64px;
-    margin-bottom: 200px;
+    &__container {
+        background: #081840;
+        border-radius: 64px;
+        max-width: calc(1320px + 256px);
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 128px;
+        margin-top: -384px;
+    }
     &__top {
         display: flex;
         align-items: flex-end;
@@ -166,50 +171,13 @@ nav.nav-bar--hidden {
     }
 }
 
-/* ------------- WORKS BLOCK ------------- */
-.works {
-    &__top {
-        @include flexbox;
-        justify-content: space-between;
-        margin-bottom: 64px;
-        @include phone-portrait {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-    &__content {
-        @include grid;
-        @include phone-portrait {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    &__left {
-        grid-column: span 6;
-    }
-    &__right {
-        @include flexbox;
-        padding: 80px;
-        @include phone-portrait {
-            padding: 24px;
-        }
-        grid-column: span 6;
-        background: linear-gradient(317deg, #FFDA57 -11.19%, #F56BCF 20.41%, #5956E8 71.73%, #5956E8 110.15%);
-        border-radius: 24px;
-    }
-    &__img {
-        width: 100%;
-        border-radius: 16px;
-    }
-}
-
 /* ------------- CONTACT BLOCK ------------- */
 .contact {
     @include flexbox;
     justify-content: space-between;
     padding: 128px 80px;
     margin-bottom: 128px;
-    background: $backgroundBlue;
+    background: $bgMediumBlue;
     border-radius: 16px;
     @include phone-portrait {
         flex-direction: column;

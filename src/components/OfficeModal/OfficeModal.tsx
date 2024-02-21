@@ -1,6 +1,6 @@
 import "./OfficeModal.scss";
 import NewCastleOffice from '/newcastle-office.jpg';
-import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
+import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Message from '/message.svg';
 import Text from '@components/Text/Text';
 import Category from "@components/Category/Category";
