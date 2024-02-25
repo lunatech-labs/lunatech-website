@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    pointer-events: auto;
     z-index: 1;
     &__text {
         font-weight: 500;
