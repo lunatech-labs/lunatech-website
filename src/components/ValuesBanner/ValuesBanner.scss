@@ -3,7 +3,7 @@
 @import "/src/styles/Responsive.scss";
 
 .values__banner {
-    background: $mediumBlue;
+    background: $bgDarkBlue;
     padding: 64px 20px;
     @include phone-portrait {
         padding: 32px 20px;

@@ -18,6 +18,7 @@ import ValuesBanner from '@components/ValuesBanner/ValuesBanner';
 import Section from '@components/Section/Section';
 import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
+import Border from '@/components/BorderEffect/BorderEffect';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -32,7 +33,7 @@ import Buildings3 from '/buildings3.svg';
 import ArrowRight from '/arrow-right.svg';
 import Message from '/message.svg';
 
-import Building from '/virtual_land.png';
+import AboutUs from '/about-us-illustration.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
@@ -85,10 +86,12 @@ const Home = () => {
 
             <ValuesBanner />
 
-            <Section className="bg-bgDarkBlue pdb384">
+            <Container><Border /></Container>
+
+            <Section>
                 <Container>
                     <div className="about">
-                        <img className="about__img" src={Building} alt="Building" />
+                        <img className="about__img" src={AboutUs} alt="Building" />
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.category" />} />
                             <Title content={<><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></>} />
@@ -112,9 +115,11 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Section>
-                <div className="services">
-                    <div className="services__container">
+            <Container><Border /></Container>
+
+            <Section className="bg-bgMediumBlue">
+                <Container>
+                    <div className="services">
                         <div className="services__top">
                             <div className="services__desc">
                                 <Category content="Services" />
@@ -125,7 +130,7 @@ const Home = () => {
                             </div>
                             <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                         </div>
-                        
+                            
                         <Spotlight className="spotlight__layout">
                             <SpotlightCard>
                                 <ServiceCard title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
@@ -159,14 +164,18 @@ const Home = () => {
                             </SpotlightCard>
                         </Spotlight>
                     </div>
-                </div>
+                </Container>
             </Section>
+
+            <Container><Border /></Container>
 
             <Section>
                 <Container>
                     <ServiceCarousel></ServiceCarousel>
                 </Container>
             </Section>
+
+            <Container><Border /></Container>
 
             <Section className="bg-bgMediumBlue">
                 <Container>
@@ -210,6 +219,8 @@ const Home = () => {
                     </div>
                 </Container>
             </Section>
+
+            <Container><Border /></Container>
 
             <Section>
                 <Container>
