@@ -6,6 +6,8 @@ import Text from '@components/Text/Text';
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import CloseIcon from '/close-icon.svg';
+import PeopleIcon from '/people.svg';
+import ProfileIcon from '/profile.svg';
 import EmailIcon from '/email-icon.svg';
 import FlagIcon from '/flag-icon.svg';
 import HomeIcon from '/home-icon.svg';
@@ -16,6 +18,8 @@ interface ModalProps {
     title: string;
     email?: string;
     phone?: string;
+    developers?: number;
+    otherJobs?: number;
     careersEmail?: string;
     address?: string;
     country?: string;
@@ -30,27 +34,36 @@ const OfficeModal = (props: ModalProps) => {
     <div className='office-modal'>
         <div onClick={props.handleClose} className="overlay"></div>
         <div className='office-modal__content'>
-            <div className='office-modal__close-btn'>
-                <button type="button" onClick={props.handleClose}><img src={CloseIcon} className="" alt="Add" /></button>
+            <button className="office-modal__close-btn" type="button" onClick={props.handleClose}><img src={CloseIcon} alt="Add" /></button>
+       
+            <div className="office-modal__image">
+                <img src={NewCastleOffice} alt="" />
             </div>
-            <div className='office-modal__body'>
+
+            <div className="office-modal__body">
                 <div className='office-modal__header'>
                     {props.children}
-                    <div>
+                    <div className="mgl24">
                         <Category content="Our offices"/>
                         <Title content={<><span>{props.title}</span> office</>} />
                     </div>
                 </div>
-                <div className="office-modal__image">
-                    <img className="officeImg" src={NewCastleOffice} alt="" />
+
+                <div className="office-modal__image-sp">
+                    <img src={NewCastleOffice} alt="" />
                 </div>
-                <Text className="mgb64">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit, vero veniam consequatur ad perferendis ipsam debitis! Quia quas, mollitia dolores voluptatem voluptates vel voluptatibus fugiat? Modi minus illo explicabo!</Text>
+            
                 <div className='office-modal__info'>
-                    <div className="office-modal__contact-details">
+                    <div>
+                        <div className="office-modal__category">
+                                <Text className="mgb8">Employees</Text>
+                                <p className="office-modal__entry"><img src={PeopleIcon} alt="" />{props.developers} Software Developers</p>
+                                <p className="office-modal__entry"><img src={ProfileIcon} alt="" />{props.otherJobs} Other Jobs</p>
+                            </div>  
                         {(props.email && props.phone) && (
-                            <div className="office-modal__business-contact">
-                                <Text>Business development</Text>
-                                <p>
+                            <div className="office-modal__category">
+                                <Text className="mgb8">Business development</Text>
+                                <p className="office-modal__entry">
                                     <img src={EmailIcon} alt="" />{props.email}
                                     <span>|</span>
                                     <img src={PhoneIcon} alt="" />{props.phone}
@@ -58,16 +71,16 @@ const OfficeModal = (props: ModalProps) => {
                             </div>
                         )}
                         {(props.careersEmail) && (
-                            <div className="office-modal__careers-contact">
-                                <Text>Careers</Text>
-                                <p><img src={EmailIcon} alt="" />{props.careersEmail}</p>
+                            <div className="office-modal__category">
+                                <Text className="mgb8">Careers</Text>
+                                <p className="office-modal__entry"><img src={EmailIcon} alt="" />{props.careersEmail}</p>
                             </div>  
                         )}
                         {(props.address && props.country) && (
-                            <div className='office-modal__address'>
-                                <Text>Address</Text>
-                                <p><img src={HomeIcon} alt="" />{props.address}</p>
-                                <p><img src={FlagIcon} alt="" />{props.country}</p>
+                            <div className="office-modal__category">
+                                <Text className="mgb8">Address</Text>
+                                <p className="office-modal__entry"><img src={HomeIcon} alt="" />{props.address}</p>
+                                <p className="office-modal__entry"><img src={FlagIcon} alt="" />{props.country}</p>
                             </div>
                         )}
                     </div>
