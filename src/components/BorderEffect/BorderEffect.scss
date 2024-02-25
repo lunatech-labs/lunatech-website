@@ -1,0 +1,9 @@
+@import "/src/styles/Variables.scss";
+
+.border {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to left, $mediumBlue, $lightBlue, $mediumBlue);
+    opacity: 24%;
+}
+
