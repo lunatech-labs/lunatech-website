@@ -96,13 +96,13 @@ const Home = () => {
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Grid>
-                                    <OfficeCard title="Rotterdam" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
+                                    <OfficeCard title="Rotterdam" email='info@lunatech.nl' developers="55" otherJobs="6" phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
                                         <Icon imageUrl={Buildings1} size="medium" />
                                     </OfficeCard>
-                                    <OfficeCard title="Paris" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
+                                    <OfficeCard title="Paris" email='info@lunatech.nl' developers="32" otherJobs="2" phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
                                         <Icon imageUrl={Buildings2} size="medium" />
                                     </OfficeCard>
-                                    <OfficeCard title="Newcastle" email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
+                                    <OfficeCard title="Newcastle" email='info@lunatech.nl' developers="2" otherJobs="0" phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
                                         <Icon imageUrl={Buildings3} size="medium" />
                                     </OfficeCard>
                                 </Grid>

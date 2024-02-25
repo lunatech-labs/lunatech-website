@@ -7,6 +7,7 @@
     padding: 48px 16px 16px 16px;
     grid-column: span 4;
     flex-direction: column;
+    position: relative;
     @include phone-portrait {
         width: auto;
         grid-column: span 12;
@@ -26,6 +27,12 @@
     &__bottom {
         display: flex;
         justify-content: flex-end;
+        @include phone-portrait {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+        }
+
     }
     &__button {
         width: 32px;
