@@ -1,86 +1,89 @@
+import React, { useState } from 'react';
 import Icon from "@components/Icon/Icon";
 import "./Timeline.scss";
 import Buildings1 from '/buildings1.svg';
+import ArrowChevronLeft from '/arrow-chevron-left.svg';
+import ArrowChevronRight from '/arrow-chevron-right.svg';
 
-
-const Timeline = () => {
-  return (
-    <div className="timeline">
-        <div className="timeline__body">
-            <div className="timeline__event">
-                <div></div>
-                <p>1980</p>
-                <p>IBM PC</p>
-            </div>
-            <div className="timeline__event">
-                <div></div>
-                <p>1981</p>
-                <p>MS DOS Client Apps</p>
-            </div>
-            <div className="timeline__event">
-                <div></div>
-                <p>1982</p>
-                <p>Windows 3</p>
-            </div>
-            <div className="timeline__event">
-                <div></div>
-                <p>1983</p>
-                <p>Desktop Apps</p>
-            </div>
-            <div className="timeline__event">
-                <div></div>
-                <p>1988</p>
-                <p>World Wide Web</p>
-            </div>
-            <div className="timeline__lt-event">
-                <Icon imageUrl={Buildings1} size="small" />
-                <p className="timeline__date">1980</p>
-                <p className="timeline__title">Lunatech is born</p>
-                <p className="timeline__text">Opening of the first office in Rotterdam</p>
-                <div className="timeline__round"></div>
-            </div>
-            <div className="timeline__lt-event">
-                <Icon imageUrl={Buildings1} size="small" />
-                <p className="timeline__date">1993</p>
-                <p className="timeline__title">Lunatech is born</p>
-                <p className="timeline__text">Opening of the first office in Rotterdam</p>
-                <div className="timeline__round"></div>
-            </div>
-            <div className="timeline__lt-event">
-                <Icon imageUrl={Buildings1} size="small" />
-                <p className="timeline__date">1993</p>
-                <p className="timeline__title">Lunatech is born</p>
-                <p className="timeline__text">Opening of the first office in Rotterdam</p>
-                <div className="timeline__round"></div>
-            </div>
-            <div className="timeline__event">
-                <div></div>
-                <p>1993</p>
-                <p>Lunatech is born</p>
-            </div>
-            <div className="timeline__event">
-                <div></div>
-                <p>1993</p>
-                <p>Lunatech is born<br /> fjefihe fjeo fejo fezhfz </p>
-            </div>
-            <div className="timeline__lt-event">
-                <Icon imageUrl={Buildings1} size="small" />
-                <p className="timeline__date">1993</p>
-                <p className="timeline__title">Lunatech is born</p>
-                <p className="timeline__text">Opening of the first office in Rotterdam</p>
-                <div className="timeline__round"></div>
-            </div>
-            <div className="timeline__lt-event">
-                <Icon imageUrl={Buildings1} size="small" />
-                <p className="timeline__date">1993</p>
-                <p className="timeline__title">Lunatech is born</p>
-                <p className="timeline__text">Opening of the first office in Rotterdam</p>
-                <div className="timeline__round"></div>
-            </div>
-        </div>
-        <div className="timeline__line"></div>
-    </div>
-  )
+interface TimelineEvent {
+  year: number;
+  title: string;
+  text?: string;
+  icon?: string
+  lt?: boolean;
 }
 
-export default Timeline
+const eventsData: TimelineEvent[] = [
+    { year: 1980, title: "IBM PC"},
+    { year: 1981, title: "MS DOS Client Apps"},
+    { year: 1982, title: "Windows 3"},
+    { year: 1983, title: "Desktop Apps"},
+    { year: 1988, title: "World Wide Web"},
+    { year: 1990, title: "Lunatech is born", text: "Opening of the first office in Rotterdam", icon: Buildings1, lt: true},
+    { year: 1993, title: "Lunatech is born", text: "Opening of the first office in Paris", icon: Buildings1, lt: true },
+    { year: 1995, title: "Lunatech conf"},
+    { year: 1997, title: "Lunatech is born", text: "Opening of the first office in Amsterdam", icon: Buildings1, lt: true },
+];
+
+const Timeline = () => {
+  const [activeIndex, setActiveIndex] = useState(-1);
+  const [minMaxBtn, setMinMaxBtn] = useState('min')
+
+  const handleArrowClick = (direction: 'left' | 'right') => {
+    setActiveIndex((prevIndex) => {
+      let newIndex;
+      if (direction === 'right') {
+        newIndex = Math.min(prevIndex + 1, eventsData.length - 1);
+      } else {
+        newIndex = Math.max(prevIndex - 1, -1);
+      }
+
+      if (newIndex === -1) {
+        setMinMaxBtn('min');
+      } else if (newIndex === eventsData.length - 1) {
+        setMinMaxBtn('max');
+      } else {
+        setMinMaxBtn('');
+      }
+
+      return newIndex;
+    });
+  }
+
+  return (
+    <div>
+        <div className="timeline">
+            <div className="timeline__body">
+                {eventsData.map((event, index) => (
+                    <div>
+                        <div className={`${event.lt ? 'timeline__lt-event' : 'timeline__event'}`} key={event.year}>
+                                <p className={`timeline__icon ${index <= activeIndex ? 'active' : ''}`}>
+                                    {event.icon && (<Icon   imageUrl={event.icon} size="small" />)}
+                                </p>
+                                <div className={`${index <= activeIndex ? 'active' : ''}`}></div>
+                                <p className={`timeline__date ${index <= activeIndex ? 'active' : ''}`}>{event.year}</p>
+                                {eventsData[index].lt ? (
+                                    <p className={`timeline__title ${index <= activeIndex ? 'active' : ''}`}>{event.title}</p>
+                                ): (
+                                    <p className={`timeline__subTitle ${index <= activeIndex ? 'active' : ''}`}>{event.title}</p>
+                                )} 
+                                {event.text && <p className={`timeline__text ${index <= activeIndex ? 'active' : ''}`}>{event.text}</p>}
+                            {event.icon && (<div className={`timeline__round ${index <= activeIndex ? 'active' : ''}`}></div>)}
+                        </div>
+                        {index !== eventsData.length - 1 && (
+                            <div className={`timeline__line ${index < activeIndex ? 'active' : ''}`} />
+                        )}
+                    </div>
+                ))}
+            </div>
+        </div>
+        <div className='timeline__buttons'>
+            <button className={`${minMaxBtn == 'min' ? 'min' : ''}`} onClick={() => handleArrowClick('left')}><img src={ArrowChevronLeft} alt="Scroll Left" /></button>
+            <button className={`${minMaxBtn == 'max' ? 'max' : ''}`} onClick={() => handleArrowClick('right')}><img src={ArrowChevronRight} alt="Scroll Right" /></button>
+        </div>
+    </div>
+
+  );
+};
+
+export default Timeline;

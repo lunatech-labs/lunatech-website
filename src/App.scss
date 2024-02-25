@@ -168,6 +168,9 @@ nav.nav-bar--hidden {
             flex-direction: column;
             gap: 20px;
         }
+        &__container {
+            padding: 30px;
+        }
     }
 }
 

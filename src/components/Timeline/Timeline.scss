@@ -9,20 +9,41 @@
     &__body {
         display: flex;
         width: 4000px;
+        padding-bottom: 40px;
     }
     &__lt-event {
         margin-right: 32px;
+        width: 400px;
         &:last-child {margin-right: 0}
+        @include phone-portrait {
+            padding-top: 8px;
+        }
+    }
+    &__icon {
+        visibility: hidden;
+        &.active {
+            visibility: visible;
+        }
     }
     &__event {
+        width: 150px;
         padding-top: 211px;
         margin-right: 32px;
         &:last-child {margin-right: 0}
         div {
             width: 32px;
             height: 32px;
-            border-radius: 25rem;
-            background: $lightBlue;
+            border-radius: 50%;
+            border: 1px solid $lightBlue;
+            background-color: $lightBlue;
+            background-image: linear-gradient(to right, $lightBlue 50%, $mediumBlue 50%);
+            background-size: 200% 100%;
+            background-position: 100% 0; // Start with the active color hidden to the left
+            transition: background-position 0.5s ease;
+        
+            &.active {
+              background-position: 0 0; // End with the active color filling the circle
+            }
         }
         p:nth-child(2) {
             font-size: 16px;
@@ -36,24 +57,52 @@
         }
     }
     &__date {
+        visibility: hidden;
         font-size: 16px;
         color: white;
         margin-top: 24px;
+        &.active {
+            visibility: visible;
+        }
     }
     &__title {
+        visibility: hidden;
         font-size: 24px;
         color: $pink;
+        &.active {
+            visibility: visible;
+        }
+    }
+    &__subTitle {
+        visibility: hidden;
+        &.active {
+            visibility: visible;
+        }  
     }
     &__text {
         font-size: 16px;
         color: $lightGray;
         margin-bottom: 32px;
+        visibility: hidden;
+        &.active {
+            visibility: visible;
+        }
     }
     &__round {
+        position: sticky;
         width: 32px;
         height: 32px;
-        border-radius: 25rem;
-        background: $lightBlue;
+        border-radius: 50%;
+        border: 1px solid $lightBlue;
+        background-color: $lightBlue;
+        background-image: linear-gradient(to right, $lightBlue 50%, $mediumBlue 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        transition: background-position 0.5s ease;
+    
+        &.active {
+          background-position: 0 0;
+        }
     }
     &__line {
         position: absolute;
@@ -61,5 +110,21 @@
         background: $lightBlue;
         width: 4000px;
         top: 226px;
+    }
+    &__buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        button {
+            width: 64px;
+            height: 64px;
+            background: $blue;
+            border-radius: 5rem;
+            @include flexbox;
+            justify-content: center;
+        }
+        .min, .max {
+            opacity: .5;
+        }
     }
 }
