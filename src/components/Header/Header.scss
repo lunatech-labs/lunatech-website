@@ -5,9 +5,11 @@
     @include flexbox;
     justify-content: space-between;
     padding: 64px;
+    pointer-events: none;
     @include tablet {padding: 32px;}
     @include phone-landscape {padding: 24px;}
     &__logo {
+        pointer-events: auto;
         z-index: 1;
     }
     &__img {
