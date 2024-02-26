@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Icon from "@components/Icon/Icon";
 import "./Timeline.scss";
 import Buildings1 from '/buildings1.svg';
