@@ -8,7 +8,7 @@ import Text from "@components/Text/Text";
 import Title from "@components/Title/Title";
 import ArrowChevronLeft from '/arrow-chevron-left.svg';
 import ArrowChevronRight from '/arrow-chevron-right.svg';
-import ArrowRight from '/arrow-right.svg';
+import ArrowRight from 'src/assets/arrow-right.svg';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import "./ServiceCarousel.scss";
 
@@ -54,10 +54,10 @@ const ServiceCarousel = () => {
             <div className='service-carousel__content'>
                 <div className="service-carousel__slider" ref={wrapperRef}>
                     <ServiceCardCarousel title="Java expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
-                    <ServiceCardCarousel title="Frontend Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
+                    <ServiceCardCarousel title="Frontend Development" text="Lorm ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Backend Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Mobile Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
-                    <ServiceCardCarousel title="Cloud Services" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
+                    <ServiceCardCarousel title="Cloud Services" text="Lore ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                 </div>
                 <div className='service-carousel__buttons'>
                     <button className={`${isAtStart ? 'disabled' : ''}`} onClick={scrollLeft}><img src={ArrowChevronLeft} alt="Scroll Left" /></button>
