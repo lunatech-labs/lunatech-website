@@ -1,4 +1,4 @@
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 import Container from '@components/Container/Container';
 import Title from '@/components/Title/Title';
 import Text from '@components/Text/Text';
@@ -19,11 +19,6 @@ import Message from '/message.svg';
 
 
 const About = () => {
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-    };
-    
     return (
         <>
             <Section className="pdt256">
