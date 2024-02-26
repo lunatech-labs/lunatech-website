@@ -30,13 +30,12 @@ class Header extends Component<object, HeaderState> {
             }
         });
     }
-    
 
     handleClick(event: React.MouseEvent<HTMLLIElement | HTMLAnchorElement | HTMLButtonElement, MouseEvent>) {
         const isLogoClick = event.currentTarget.closest('.header__logo');
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.navigation');
-    
+
         if (isLogoClick && nav?.classList.contains('navigation--active')) {
             nav?.classList.remove('navigation--active');
             hamburger?.classList.remove('hamburger--active');
@@ -44,9 +43,9 @@ class Header extends Component<object, HeaderState> {
             hamburger?.classList.toggle('hamburger--active');
             nav?.classList.toggle('navigation--active');
         }
-    
+
         this.toggleScroll();
-    }    
+    }
 
     render() {
         return (
