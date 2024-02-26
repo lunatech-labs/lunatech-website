@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 import ServiceCardCarousel from "@components/ServiceCardCarousel/ServiceCardCarousel";
 import Icon from "@components/Icon/Icon";
 import Buildings1 from '/buildings1.svg';
@@ -13,8 +13,6 @@ import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import "./ServiceCarousel.scss";
 
 const ServiceCarousel = () => {
-    const { t, i18n } = useTranslation();
-
     const wrapperRef = useRef(null);
     const [isAtStart, setIsAtStart] = useState(true);
     const [isAtEnd, setIsAtEnd] = useState(false);

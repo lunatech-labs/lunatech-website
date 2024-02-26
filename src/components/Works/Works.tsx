@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
@@ -10,8 +10,6 @@ import ArrowRight from '/arrow-right.svg';
 import "./Timeline.scss";
 
 const Works = () => {
-    const { t, i18n } = useTranslation();
-
     const [currentImg, setCurrentImg] = useState<string>('/blog.png');
 
     const handleCollapseClick = (e: React.MouseEvent<HTMLDivElement>) => {
