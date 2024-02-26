@@ -16,10 +16,10 @@ import "./OfficeModal.scss";
 
 interface ModalProps {
     title: string;
-    email?: string;
-    phone?: string;
     developers?: number;
     otherJobs?: number;
+    email?: string;
+    phone?: string;
     careersEmail?: string;
     address?: string;
     country?: string;

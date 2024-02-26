@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation, Trans } from "react-i18next";
 import ServiceCardCarousel from "@components/ServiceCardCarousel/ServiceCardCarousel";
 import Icon from "@components/Icon/Icon";
