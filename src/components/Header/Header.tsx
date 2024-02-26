@@ -30,12 +30,13 @@ class Header extends Component<object, HeaderState> {
             }
         });
     }
+    
 
-    handleClick(event) {
-        const isLogoClick = event.target.closest('.header__logo');
+    handleClick(event: React.MouseEvent<HTMLLIElement | HTMLAnchorElement | HTMLButtonElement, MouseEvent>) {
+        const isLogoClick = event.currentTarget.closest('.header__logo');
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.navigation');
-
+    
         if (isLogoClick && nav?.classList.contains('navigation--active')) {
             nav?.classList.remove('navigation--active');
             hamburger?.classList.remove('hamburger--active');
@@ -43,9 +44,9 @@ class Header extends Component<object, HeaderState> {
             hamburger?.classList.toggle('hamburger--active');
             nav?.classList.toggle('navigation--active');
         }
-
+    
         this.toggleScroll();
-    }
+    }    
 
     render() {
         return (
@@ -55,7 +56,7 @@ class Header extends Component<object, HeaderState> {
                 </Link>
                 <div>
                     <Hamburger onClick={this.handleClick} />
-                    <Navigation onClick={this.handleClick} />
+                    <Navigation onClick={(event: React.MouseEvent<HTMLLIElement>) => this.handleClick(event)} />
                 </div>
             </header>
         );

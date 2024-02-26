@@ -1,5 +1,4 @@
 import Container from '@components/Container/Container';
-import { Trans, useTranslation } from 'react-i18next';
 import Title from '@/components/Title/Title';
 import Text from '@components/Text/Text';
 import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
