@@ -1,13 +1,10 @@
+import { Trans } from 'react-i18next';
 import Container from "@components/Container/Container";
 import Text from "@components/Text/Text";
 import ButtonPrimary from "@components/ButtonPrimary/ButtonPrimary";
 import HomeIcon from '/home.svg';
 
 const NotFound = () => {
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-    };
-    
     return (
         <div className="page">
             <Container>
