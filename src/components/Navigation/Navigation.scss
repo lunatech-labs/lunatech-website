@@ -13,6 +13,7 @@
     left: 0;
     transform: translateY(-110%);
     transition: transform .3s .1s ease-in-out;
+    pointer-events: auto;
     &--active {
         transform: translateX(0px);
     }

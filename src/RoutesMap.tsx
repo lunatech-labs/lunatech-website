@@ -6,7 +6,7 @@ import Works from './pages/Works';
 import WorkDetail from './pages/WorkDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Vision from './pages/Vision';
+import Technologies from './pages/Technologies';
 import NotFound from './pages/NotFound';
 
 const routesMap = () => {
@@ -14,7 +14,7 @@ const routesMap = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/vision" element={<Vision />} />
+            <Route path="/technologies" element={<Technologies />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:serviceName" element={<ServiceDetail />} />
             <Route path="/works" element={<Works />} />
