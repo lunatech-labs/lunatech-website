@@ -11,13 +11,13 @@ import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
-import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
-import ButtonPrimary from '@/components/ButtonPrimary/ButtonPrimary';
-import Title from '@/components/Title/Title';
-import Category from '@/components/Category/Category';
-import Address from '@/components/Address/Address';
-import Section from '@/components/Section/Section';
-import Grid from '@/components/Grid/Grid';
+import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
+import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
+import Title from '@components/Title/Title';
+import Category from '@components/Category/Category';
+import Address from '@components/Address/Address';
+import Section from '@components/Section/Section';
+import Grid from '@components/Grid/Grid';
 import Message from '/message.svg';
 
 const Services = () => {

@@ -1,7 +1,7 @@
 import { Trans } from 'react-i18next';
 import '../i18n';
 
-import Container from '@/components/Container/Container';
+import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
 import Stars from '@components/Stars/Stars';
 import Category from '@components/Category/Category';
@@ -18,7 +18,7 @@ import ValuesBanner from '@components/ValuesBanner/ValuesBanner';
 import Section from '@components/Section/Section';
 import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
-import Border from '@/components/BorderEffect/BorderEffect';
+import BorderEffect from '@components/BorderEffect/BorderEffect';
 
 import Mist from '/mist.svg';
 import Clouds from '/clouds.svg';
@@ -44,8 +44,9 @@ import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 import { Link } from 'react-router-dom';
-import ServiceCarousel from '@/components/ServiceCarousel/ServiceCarousel';
-import Articles from '@/components/Articles/Articles';
+import ServiceCarousel from '@components/ServiceCarousel/ServiceCarousel';
+import Articles from '@components/Articles/Articles';
+
 
 const Home = () => {
     return (
@@ -81,7 +82,7 @@ const Home = () => {
 
             <ValuesBanner />
 
-            <Container><Border /></Container>
+            <Container><BorderEffect /></Container>
 
             <Section className="">
                 <Container>
@@ -110,7 +111,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Container><Border /></Container>
+            <Container><BorderEffect /></Container>
 
             <Section className="bg-bgMediumBlue">
                 <Container>
@@ -118,7 +119,7 @@ const Home = () => {
                         <div className="services__top">
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey="services.subtitle" />} />
-                                <Title content={<>Meet your needs with our <span>services</span></>} />
+                                <Title content={<>An <span>evolution</span>, not a revolution</>} />
                                 <Text className="">
                                     <Trans i18nKey="service.text" />
                                 </Text>
@@ -162,7 +163,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Container><Border /></Container>
+            <Container><BorderEffect /></Container>
 
             <Section className="">
                 <Container>
@@ -170,7 +171,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Container><Border /></Container>
+            <Container><BorderEffect /></Container>
 
             <Section className="bg-bgMediumBlue">
                 <Container>
@@ -215,7 +216,7 @@ const Home = () => {
                 </Container>
             </Section>
 
-            <Container><Border /></Container>
+            <Container><BorderEffect /></Container>
 
             <Section className="">
                 <Container>

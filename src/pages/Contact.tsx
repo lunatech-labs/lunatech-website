@@ -5,9 +5,9 @@ import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
 import ArrowSend from '/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
-import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
+import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
+import Section from '@components/Section/Section';
 import { Trans, useTranslation } from 'react-i18next';
-import Section from '@/components/Section/Section';
 
 const Contact = () => {
     const { t } = useTranslation();

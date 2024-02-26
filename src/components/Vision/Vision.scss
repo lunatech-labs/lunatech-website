@@ -1,0 +1,13 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.vision {
+    position: relative;
+    &__card {
+        width: 312px;
+    }
+    &__image {
+        width: 500px;
+        @include absolute-center;
+    }
+}

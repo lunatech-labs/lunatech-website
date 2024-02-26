@@ -21,18 +21,19 @@
     },
     "banner": {
         "first": "Years of experience",
-        "second": "Projects completed",
-        "third": "Team leads & employees",
+        "second": "Software developers",
+        "third": "Other jobs",
         "fourth": "Different nationalities"
     },
     "about": {
         "subtitle1": "Our story",
         "subtitle2": "Our offices",
         "subtitle3": "Our development",
+        "subtitle4": "Our product",
         "category": "About us",
         "title": "Custom software systems for over",
         "titleImp": "30 years",
-        "text": "Lunatech provides innovative solutions for the creation and modernisation of your digital products through the following services."
+        "text": "Lunatech specialises in the design, development, deployment and ongoing operation of customised software."
     },
     "modal": {
         "category": "Nos bureaux",

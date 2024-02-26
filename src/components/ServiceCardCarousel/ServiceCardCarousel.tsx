@@ -17,7 +17,6 @@ const ServiceCardCarousel = (props: CardProps) => {
             {props.children}
             <h3 className="service-card-carousel__title">{props.title}</h3>
             <p className="service-card-carousel__text">{props.text}</p>
-            <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
         </div>
     );
 };

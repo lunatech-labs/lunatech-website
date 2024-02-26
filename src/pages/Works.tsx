@@ -2,9 +2,10 @@ import Container from "@components/Container/Container";
 import Icon from "@components/Icon/Icon";
 import Text from '@components/Text/Text';
 import WorkCard from "@components/WorkCard/WorkCard";
+import Breadcrumbs from "@components/Breacrumb/Breadcrumb";
 
 import Example from '/github.svg';
-import Breadcrumbs from "@/components/Breacrumb/Breadcrumb";
+
 
 const Works = () => {
     return (

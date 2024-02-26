@@ -21,14 +21,15 @@
     },
     "banner": {
         "first": "Années d'experience",
-        "second": "Projets achevés",
-        "third": "Chefs d'équipe & employés",
+        "second": "Développeurs logiciel",
+        "third": "Autres métiers",
         "fourth": "Nationalités différentes"
     },
     "about": {
         "subtitle1": "Notre histoire",
         "subtitle2": "Nos bureaux",
         "subtitle3": "Notre parcours",
+        "subtitle4": "Notre produit",
         "category": "A propos",
         "title": "Systèmes logiciels personnalisés depuis plus de",
         "titleImp": "30 ans",
