@@ -153,7 +153,7 @@ const Home = () => {
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard title="Evolutive Maintenance" text="Lore ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={EvolutiveMaintenance} />
                                 </ServiceCard>
                             </SpotlightCard>
