@@ -5,6 +5,8 @@ import OfficeModal from '@components/OfficeModal/OfficeModal';
 
 interface CardProps {
     title: string;
+    developers?: number;
+    otherJobs?: number;
     email?: string;
     phone?: string;
     careersEmail?: string;
