@@ -18,7 +18,7 @@ const Vision = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title">Notre vision, nos valeurs</h1>
-                            <Text>Une agence engagée pour créer vos expériences sur-mesure</Text>
+                            <Text className="">Une agence engagée pour créer vos expériences sur-mesure</Text>
                         </div>
                     </Grid>
                 </Container>
@@ -30,7 +30,7 @@ const Vision = () => {
                         <div className="col-lg-6">
                             <Category content="Services" />
                             <Title content={<>Notre vision, nos valeurs</>} />
-                            <Text>Nous concevons des produits et services en cherchant systématiquement à atteindre l'excellence.<br />Nous travaillons dur pour dépasser vos attentes et vous offrir des résultats singuliers.<br />Notre rigueur et souci du détail nous permettent de maintenir des standards élevés et de garantir votre pleine satisfaction.</Text>
+                            <Text className="">Nous concevons des produits et services en cherchant systématiquement à atteindre l'excellence.<br />Nous travaillons dur pour dépasser vos attentes et vous offrir des résultats singuliers.<br />Notre rigueur et souci du détail nous permettent de maintenir des standards élevés et de garantir votre pleine satisfaction.</Text>
                         </div>
                         <div className="col-lg-6">
                             
@@ -39,7 +39,7 @@ const Vision = () => {
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
@@ -48,7 +48,7 @@ const Vision = () => {
                         <div className="col-lg-6">
                             <Category content="Humain focus" />
                             <Title content={<>Nous mettons l'humain au cœur de notre approche</>} />
-                            <Text>Nous mettons l'humain au cœur de notre approche. Nous pensons que l'écoute et l'empathie sont essentielles pour obtenir d'excellents résultats. Nous sélectionnons nos talents en fonction de vos besoins et de leurs différentes sensibilités. À chaque projet son équipe sur-mesure, liée par la volonté profonde d'offrir la meilleure expérience possible.</Text>
+                            <Text className="">Nous mettons l'humain au cœur de notre approche. Nous pensons que l'écoute et l'empathie sont essentielles pour obtenir d'excellents résultats. Nous sélectionnons nos talents en fonction de vos besoins et de leurs différentes sensibilités. À chaque projet son équipe sur-mesure, liée par la volonté profonde d'offrir la meilleure expérience possible.</Text>
                         </div>
                     </Grid>
                 </Container>
@@ -60,7 +60,7 @@ const Vision = () => {
                         <div className="col-lg-6">
                             <Category content="Vision produit" />
                             <Title content={<>Notre vision produit est l'une de nos plus grandes forces</>} />
-                            <Text>Nous nous efforçons d'apporter une vision claire et précise de votre produit avant même de démarrer sa conception. Poser des questions, réfléchir et cadrer en amont afin de limiter les risques et créer un produit pertinent qui répondra parfaitement aux besoins de vos utilisateurs.</Text>
+                            <Text className="">Nous nous efforçons d'apporter une vision claire et précise de votre produit avant même de démarrer sa conception. Poser des questions, réfléchir et cadrer en amont afin de limiter les risques et créer un produit pertinent qui répondra parfaitement aux besoins de vos utilisateurs.</Text>
                         </div>
                         <div className="col-lg-6">
 
@@ -69,7 +69,7 @@ const Vision = () => {
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <div className="contact">
                         <div>

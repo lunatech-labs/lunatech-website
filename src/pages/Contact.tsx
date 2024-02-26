@@ -29,7 +29,7 @@ const Contact = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</h1>
-                            <Text>
+                            <Text className="">
                                 <Trans i18nKey="contact.text" />
                             </Text>
                         </div>
@@ -37,7 +37,7 @@ const Contact = () => {
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <Grid>
                         <div className='contact__form'>

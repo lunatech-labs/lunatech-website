@@ -47,7 +47,7 @@ const ServiceCarousel = () => {
             <div className='service-carousel__desc'>
                 <Category content="Services" />
                 <Title content={<>Meet your needs with our <span>services</span></>} />
-                <Text>Test</Text>
+                <Text className="">Test</Text>
                 <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>More Details</ButtonSecondary>
             </div>
             <div className='service-carousel__content'>

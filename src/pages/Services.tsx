@@ -29,13 +29,13 @@ const Services = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
-                            <Text><Trans i18nKey="services.text" /></Text>
+                            <Text className=""><Trans i18nKey="services.text" /></Text>
                         </div>
                     </Grid>
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <Spotlight className="spotlight__layout">
                         <SpotlightCard>
@@ -72,7 +72,7 @@ const Services = () => {
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <div className="contact">
                         <div>

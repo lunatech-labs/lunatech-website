@@ -27,19 +27,19 @@ const About = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title">About Us</h1>
-                            <Text>About Us Text</Text>
+                            <Text className="">About Us Text</Text>
                         </div>
                     </Grid>
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
                             <Category content="Our story" />
                             <Title content={<>Custom software systems for over 30 years</>} />
-                            <Text>Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Amsterdam, Paris et, à partir de 2023, à Newcastle-upon-Tyne au Royaume-Uni.<br /><br />Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes. Chaque application est méticuleusement conçue pour répondre aux besoins spécifiques de nos clients.</Text>
+                            <Text className="">Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Amsterdam, Paris et, à partir de 2023, à Newcastle-upon-Tyne au Royaume-Uni.<br /><br />Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes. Chaque application est méticuleusement conçue pour répondre aux besoins spécifiques de nos clients.</Text>
                         </div>
                         <div className="col-lg-6">
                             
@@ -48,19 +48,19 @@ const About = () => {
 
                         </div>
                         <div className="col-lg-6">
-                            <Text>Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels.Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme.<br /><br />Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues. Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité.</Text>
+                            <Text className="">Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels.Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme.<br /><br />Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues. Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité.</Text>
                         </div>
                     </Grid>
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
                             <Category content="Our officies" />
                             <Title content={<>Various offices across Europe</>} />
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ornare ligula. Pellentesque et hendrerit lorem. In hac habitasse platea dictumst.</Text>
+                            <Text className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ornare ligula. Pellentesque et hendrerit lorem. In hac habitasse platea dictumst.</Text>
                             <Text className="mgb32">Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.</Text>
                             <div className="mgt64">
                                 <Grid>
@@ -93,7 +93,7 @@ const About = () => {
                 </Container>
             </Section>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <div className="contact">
                         <div>

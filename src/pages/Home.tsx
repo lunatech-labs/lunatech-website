@@ -88,7 +88,7 @@ const Home = () => {
 
             <Container><Border /></Container>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <div className="about">
                         <img className="about__img" src={AboutUs} alt="Building" />
@@ -124,7 +124,7 @@ const Home = () => {
                             <div className="services__desc">
                                 <Category content="Services" />
                                 <Title content={<>Meet your needs with our <span>services</span></>} />
-                                <Text>
+                                <Text className="">
                                     <Trans i18nKey="service.text" />
                                 </Text>
                             </div>
@@ -169,7 +169,7 @@ const Home = () => {
 
             <Container><Border /></Container>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <ServiceCarousel></ServiceCarousel>
                 </Container>

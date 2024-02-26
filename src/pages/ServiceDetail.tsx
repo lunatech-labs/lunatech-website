@@ -15,7 +15,7 @@ const Services = () => {
                 <div className="page__header">
                     <Breadcrumbs />
                     <h1 className="hero__title"><Trans i18nKey={`${serviceName}.title`} /></h1>
-                    <Text><Trans i18nKey={`${serviceName}.text`} /></Text>
+                    <Text className=""><Trans i18nKey={`${serviceName}.text`} /></Text>
                 </div>
             </Container>
         </div>
