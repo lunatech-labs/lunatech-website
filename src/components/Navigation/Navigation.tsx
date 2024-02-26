@@ -9,7 +9,12 @@ import Twitter from '/twitter.svg';
 import "./Navigation.scss";
 import { useState } from 'react';
 
-const Navigation = ({ onClick }: { onClick: () => void }) => {
+interface NavigationProps {
+    onClick: (event: React.MouseEvent<HTMLLIElement>) => void;
+}
+
+
+const Navigation: React.FC<NavigationProps> = ({ onClick }) => {
     useTranslation();
     const [pathTitle, setPathTitle] = useState('Case studies');
     const [pathDesc, setPathDesc] = useState('Selected projects by Lunatech.')

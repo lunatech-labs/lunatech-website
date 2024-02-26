@@ -31,8 +31,8 @@ class Header extends Component<object, HeaderState> {
         });
     }
 
-    handleClick(event) {
-        const isLogoClick = event.target.closest('.header__logo');
+    handleClick(event: React.MouseEvent<HTMLLIElement | HTMLAnchorElement | HTMLButtonElement, MouseEvent>) {
+        const isLogoClick = event.currentTarget.closest('.header__logo');
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.navigation');
 
@@ -55,7 +55,7 @@ class Header extends Component<object, HeaderState> {
                 </Link>
                 <div>
                     <Hamburger onClick={this.handleClick} />
-                    <Navigation onClick={this.handleClick} />
+                    <Navigation onClick={(event: React.MouseEvent<HTMLLIElement>) => this.handleClick(event)} />
                 </div>
             </header>
         );

@@ -3,11 +3,14 @@ import { Canvas } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import * as THREE from "three";
 import './Sphere.scss';
+import { Points } from 'three';
 
+interface CustomGeometryParticlesProps {
+  count: number;
+  shape: 'box' | 'sphere';
+}
 
-const CustomGeometryParticles = (props) => {
-  const { count, shape } = props;
-
+const CustomGeometryParticles = ({ count, shape }: CustomGeometryParticlesProps) => {
   const points = useRef<Points>(null);
 
   const particlesPosition = useMemo(() => {

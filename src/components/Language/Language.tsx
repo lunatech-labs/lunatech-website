@@ -3,7 +3,7 @@ import '../../i18n';
 import "./Language.scss";
 
 const Language = () => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const changeLanguage = (lng: string | undefined) => {
         i18n.changeLanguage(lng);
     };
