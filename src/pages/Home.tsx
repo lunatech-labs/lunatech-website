@@ -122,7 +122,7 @@ const Home = () => {
                     <div className="services">
                         <div className="services__top">
                             <div className="services__desc">
-                                <Category content="Services" />
+                                <Category content={<Trans i18nKey="services.subtitle" />} />
                                 <Title content={<>Meet your needs with our <span>services</span></>} />
                                 <Text className="">
                                     <Trans i18nKey="service.text" />
@@ -181,7 +181,7 @@ const Home = () => {
                 <Container>
                     <div className="blog">
                         <div className="blog__top">
-                            <Category content="Articles" />
+                            <Category content={<Trans i18nKey="articles.subtitle" />} />
                             <Title content={<>Read the content from our <span>experts</span>.</>} />
                         </div>
                         <div className="blog__articles">
@@ -193,7 +193,7 @@ const Home = () => {
                                     </div>
                                     <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
                                     <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+                                    <ButtonSecondary to={""} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
@@ -205,7 +205,7 @@ const Home = () => {
                                     </div>
                                     <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
                                     <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+                                    <ButtonSecondary to={""} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
@@ -222,11 +222,11 @@ const Home = () => {
 
             <Container><Border /></Container>
 
-            <Section>
+            <Section className="">
                 <Container>
                     <div className="contact">
                         <div>
-                            <Category content="Contact" />
+                            <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title content={<>Let's talk <span>together!</span></>} />
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>

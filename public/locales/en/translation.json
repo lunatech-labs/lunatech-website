@@ -3,6 +3,7 @@
     "buttonDetails": "More Details",
     "buttonReadMore": "Read More",
     "buttonMoreArticles": "More articles",
+    "buttonMoreCaseStudies": "More case studies",
     "hero": {
         "title1": "Modernize your",
         "titleImp": "digital products",
@@ -24,6 +25,9 @@
         "fourth": "Different nationalities"
     },
     "about": {
+        "subtitle1": "Our story",
+        "subtitle2": "Our offices",
+        "subtitle3": "Our development",
         "category": "About us",
         "title": "Custom software systems for over",
         "titleImp": "30 years",
@@ -34,6 +38,7 @@
         "contactUsBtn": "Contact us"
     },
     "service": {
+        "subtitle": "Services",
         "text": "Lunatech provides innovative solutions for the creation and modernization of your digital products through the following services:"
     },
     "services": {
@@ -41,11 +46,18 @@
         "titleColor": "our services",
         "text": "We provide a wide range of services to help you meet your needs. We are experts in the following areas:"
     },
+    "articles": {
+        "subtitle": "Articles"
+    },
     "integration": {
         "title": "Integration",
         "text": "We help you to integrate your applications and data, whether they are on-premise or in the cloud, using the best open source technologies."
     },
+    "officeModal": {
+        "subtitle": "Our offices"
+    },
     "contact": {
+        "subtitle": "Contact",
         "title": "Let's work ",
         "titleColor": "together",
         "text": "Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.",

@@ -76,7 +76,7 @@ const Services = () => {
                 <Container>
                     <div className="contact">
                         <div>
-                            <Category content="Contact" />
+                            <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title content={<>Let's talk <span>together!</span></>} />
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>

@@ -1,4 +1,4 @@
-import "./OfficeModal.scss";
+import { useTranslation, Trans } from "react-i18next";
 import NewCastleOffice from '/newcastle-office.jpg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Message from '/message.svg';
@@ -12,7 +12,7 @@ import EmailIcon from '/email-icon.svg';
 import FlagIcon from '/flag-icon.svg';
 import HomeIcon from '/home-icon.svg';
 import PhoneIcon from '/phone-icon.svg';
-import { useTranslation } from "react-i18next";
+import "./OfficeModal.scss";
 
 interface ModalProps {
     title: string;
@@ -44,7 +44,7 @@ const OfficeModal = (props: ModalProps) => {
                 <div className='office-modal__header'>
                     {props.children}
                     <div className="mgl24">
-                        <Category content="Our offices"/>
+                        <Category content={<Trans i18nKey="officeModal.subtitle" />} />
                         <Title content={<><span>{props.title}</span> office</>} />
                     </div>
                 </div>

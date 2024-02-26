@@ -3,6 +3,7 @@
     "buttonDetails": "Plus de détails",
     "buttonReadMore": "En savoir plus",
     "buttonMoreArticles": "Plus d'articles",
+    "buttonMoreCaseStudies": "Plus d'études de cas",
     "hero": {
         "title1": "Modernisez vos",
         "titleImp": "produits numériques",
@@ -24,16 +25,20 @@
         "fourth": "Nationalités différentes"
     },
     "about": {
+        "subtitle1": "Notre histoire",
+        "subtitle2": "Nos bureaux",
+        "subtitle3": "Notre parcours",
         "category": "A propos",
         "title": "Systèmes logiciels personnalisés depuis plus de",
         "titleImp": "30 ans",
         "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants."
     },
     "modal": {
-        "category": "Our offices",
+        "category": "Nos bureaux",
         "contactUsBtn": "Contactez-nous"
     },
     "service": {
+        "subtitle": "Services",
         "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :"
     },
     "services": {
@@ -41,11 +46,18 @@
         "titleColor":"nos services",
         "text": "Nous proposons une large gamme de services pour vous aider à répondre à vos besoins. Nous sommes experts dans les domaines suivants :"
     },
+    "articles": {
+        "subtitle": "Articles"
+    },
     "integration": {
         "title": "Intégration",
         "text": "Nous intégrons des systèmes existants et des applications tierces dans votre écosystème digital. Nous utilisons des technologies open source et des standards ouverts pour garantir la pérennité de vos solutions."
     },
+    "officeModal": {
+        "subtitle": "Nos bureaux"
+    },
     "contact": {
+        "subtitle": "Contact",
         "title": "Travaillons ",
         "titleColor": "ensemble",
         "text": "Laissez-nous vous aider à devenir encore plus performant dans ce que vous faites. Remplissez le formulaire suivant et nous vous répondrons dans les 24 heures.",

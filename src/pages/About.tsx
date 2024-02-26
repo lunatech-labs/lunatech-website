@@ -1,3 +1,4 @@
+import { useTranslation, Trans } from "react-i18next";
 import Container from '@components/Container/Container';
 import Title from '@/components/Title/Title';
 import Text from '@components/Text/Text';
@@ -18,6 +19,11 @@ import Message from '/message.svg';
 
 
 const About = () => {
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+    
     return (
         <>
             <Section className="pdt256">
@@ -36,7 +42,7 @@ const About = () => {
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
-                            <Category content="Our story" />
+                            <Category content={<Trans i18nKey="about.subtitle1" />} />
                             <Title content={<>Custom software systems for over 30 years</>} />
                             <Text className="">Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Amsterdam, Paris et, à partir de 2023, à Newcastle-upon-Tyne au Royaume-Uni.<br /><br />Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes. Chaque application est méticuleusement conçue pour répondre aux besoins spécifiques de nos clients.</Text>
                         </div>
@@ -57,7 +63,7 @@ const About = () => {
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
-                            <Category content="Our officies" />
+                            <Category content={<Trans i18nKey="about.subtitle2" />} />
                             <Title content={<>Various offices across Europe</>} />
                             <Text className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ornare ligula. Pellentesque et hendrerit lorem. In hac habitasse platea dictumst.</Text>
                             <Text className="mgb32">Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.</Text>
@@ -85,7 +91,7 @@ const About = () => {
             <Section className="bg-bgMediumBlue">
                 <Container>
                     <div className="ta-c mgb128">
-                        <Category content="Our development" />
+                        <Category content={<Trans i18nKey="about.subtitle3" />} />
                         <Title content={<>Over <span>30 years</span> of development</>} />
                     </div>
                     <Timeline />     
@@ -96,7 +102,7 @@ const About = () => {
                 <Container>
                     <div className="contact">
                         <div>
-                            <Category content="Contact" />
+                            <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title content={<>Let's talk <span>together!</span></>} />
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>

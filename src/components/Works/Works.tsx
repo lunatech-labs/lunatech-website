@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation, Trans } from "react-i18next";
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
@@ -9,6 +10,8 @@ import ArrowRight from '/arrow-right.svg';
 import "./Timeline.scss";
 
 const Works = () => {
+    const { t, i18n } = useTranslation();
+
     const [currentImg, setCurrentImg] = useState<string>('/blog.png');
 
     const handleCollapseClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -22,10 +25,10 @@ const Works = () => {
         <div className="works">
             <div className="works__top">
                 <div>
-                    <Category content="Works" />
+                    <Category content={<Trans i18nKey="navigation.works" />} />
                     <Title content={<>Browse our <span>case studies</span>.</>} />
                 </div>
-                <ButtonSecondary iconUrl={ArrowRight} size="large" to='/works'>More Case Studies</ButtonSecondary>
+                <ButtonSecondary iconUrl={ArrowRight} size="large" to='/works'><Trans i18nKey="buttonMoreCaseStudies" /></ButtonSecondary>
             </div>
             <div className="works__content">
                 <div className="works__left">

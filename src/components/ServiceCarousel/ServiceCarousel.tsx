@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import "./ServiceCarousel.scss";
+import { useTranslation, Trans } from "react-i18next";
 import ServiceCardCarousel from "@components/ServiceCardCarousel/ServiceCardCarousel";
 import Icon from "@components/Icon/Icon";
 import Buildings1 from '/buildings1.svg';
@@ -10,8 +10,11 @@ import ArrowChevronLeft from '/arrow-chevron-left.svg';
 import ArrowChevronRight from '/arrow-chevron-right.svg';
 import ArrowRight from '/arrow-right.svg';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
+import "./ServiceCarousel.scss";
 
 const ServiceCarousel = () => {
+    const { t, i18n } = useTranslation();
+
     const wrapperRef = useRef(null);
     const [isAtStart, setIsAtStart] = useState(true);
     const [isAtEnd, setIsAtEnd] = useState(false);
@@ -45,10 +48,10 @@ const ServiceCarousel = () => {
     return (
         <div className="service-carousel">
             <div className='service-carousel__desc'>
-                <Category content="Services" />
+                <Category content={<Trans i18nKey="service.subtitle" />} />
                 <Title content={<>Meet your needs with our <span>services</span></>} />
                 <Text className="">Test</Text>
-                <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>More Details</ButtonSecondary>
+                <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
             <div className='service-carousel__content'>
                 <div className="service-carousel__slider" ref={wrapperRef}>
