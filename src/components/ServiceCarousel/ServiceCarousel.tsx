@@ -8,7 +8,7 @@ import Text from "@components/Text/Text";
 import Title from "@components/Title/Title";
 import ArrowChevronLeft from '/arrow-chevron-left.svg';
 import ArrowChevronRight from '/arrow-chevron-right.svg';
-import ArrowRight from './public/arrow-right.svg';
+import ArrowRight from 'src/assets/arrow-right.svg';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import "./ServiceCarousel.scss";
 
