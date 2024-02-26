@@ -1,12 +1,9 @@
-import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import "./Address.scss";
 
 const Address = () => {
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-    };
+    const { t } = useTranslation();
 
     return (
         <div className="address">

@@ -1,6 +1,11 @@
+import React from "react"; // Import React
 import "./Container.scss";
 
-const Container = (props) => {
+interface ContainerProps {
+    children: React.ReactNode;
+}
+
+const Container: React.FC<ContainerProps> = (props) => {
     return (
         <div className="container">
             {props.children}

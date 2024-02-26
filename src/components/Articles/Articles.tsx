@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import ArrowRight from '/arrow-right.svg';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Text from '@components/Text/Text';
-import { SpotLight } from '@react-three/drei';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 
 interface BlogArticle {

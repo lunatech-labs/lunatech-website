@@ -11,7 +11,6 @@ function App() {
     const [navClassList, setNavClassList] = useState([]);
     const scroll = useScrollListener();
 
-    // update classList of nav on scroll
     useEffect(() => {
         const _classList = [];
 
