@@ -57,7 +57,7 @@ const ServiceCarousel = () => {
                     <ServiceCardCarousel title="Frontend Development" text="Lorm ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Backend Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Mobile Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
-                    <ServiceCardCarousel title="Cloud Services" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
+                    <ServiceCardCarousel title="Cloud Services" text="Lore ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                 </div>
                 <div className='service-carousel__buttons'>
                     <button className={`${isAtStart ? 'disabled' : ''}`} onClick={scrollLeft}><img src={ArrowChevronLeft} alt="Scroll Left" /></button>
