@@ -1,4 +1,4 @@
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import "./ServiceCardCarousel.scss";
 import ArrowRight from '/arrow-right.svg';
@@ -9,9 +9,7 @@ interface CardProps {
     children: JSX.Element;
 }
 
-const ServiceCardCarousel = (props: CardProps) => {
-    const { t, i18n } = useTranslation();
-    
+const ServiceCardCarousel = (props: CardProps) => {    
     const toPath = (title: string) => `/services/${title.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (

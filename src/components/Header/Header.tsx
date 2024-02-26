@@ -5,12 +5,16 @@ import lunatechLogo from '/lunatech-logo.svg';
 import "./Header.scss";
 import { Link } from 'react-router-dom';
 
+interface HeaderProps {
+    changeLanguage: (lng: string) => void;
+}
+
 interface HeaderState {
     isScrollBlocked: boolean;
 }
 
-class Header extends Component<object, HeaderState> {
-    constructor(props: object) {
+class Header extends Component<HeaderProps, HeaderState> {
+    constructor(props: HeaderProps) {
         super(props);
         this.state = {
             isScrollBlocked: false,
@@ -55,7 +59,7 @@ class Header extends Component<object, HeaderState> {
                 </Link>
                 <div>
                     <Hamburger onClick={this.handleClick} />
-                    <Navigation onClick={(event: React.MouseEvent<HTMLLIElement>) => this.handleClick(event)} />
+                    <Navigation changeLanguage={this.props.changeLanguage} onClick={(event: React.MouseEvent<HTMLLIElement>) => this.handleClick(event)} />
                 </div>
             </header>
         );

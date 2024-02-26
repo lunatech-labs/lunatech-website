@@ -11,10 +11,11 @@ import { useState } from 'react';
 
 interface NavigationProps {
     onClick: (event: React.MouseEvent<HTMLLIElement>) => void;
+    changeLanguage: (lng: string) => void;
 }
 
 
-const Navigation: React.FC<NavigationProps> = ({ onClick }) => {
+const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
     useTranslation();
     const [pathTitle, setPathTitle] = useState('Case studies');
     const [pathDesc, setPathDesc] = useState('Selected projects by Lunatech.')
@@ -53,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ onClick }) => {
             </div>
             <div className="navigation__footer">
                 <div className="navigation__left">
-                    <Language />
+                    <Language changeLanguage={changeLanguage} />
                 </div>
                 <div className="navigation__right">
                     <div className="navigation__way">

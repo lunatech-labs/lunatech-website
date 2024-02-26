@@ -2,11 +2,12 @@ import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import "./Language.scss";
 
-const Language = () => {
+interface LanguageProps {
+    changeLanguage: (lng: string) => void;
+}
+
+const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
     const { i18n } = useTranslation();
-    const changeLanguage = (lng: string | undefined) => {
-        i18n.changeLanguage(lng);
-    };
 
     const isActiveLanguage = (lng: string) => {
         return i18n.language.startsWith(lng);

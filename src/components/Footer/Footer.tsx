@@ -9,7 +9,11 @@ import Linkedin from '/linkedin.svg';
 import Twitter from '/twitter.svg';
 import "./Footer.scss";
 
-const Footer = () => {
+interface FooterProps {
+    changeLanguage: (lng: string) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
     useTranslation();
 
     return (
@@ -53,7 +57,7 @@ const Footer = () => {
                         </div>
 
                         <div className="footer__part">
-                            <Language />
+                            <Language changeLanguage={changeLanguage} />
                         </div>
                     </Grid>
                 </div>
