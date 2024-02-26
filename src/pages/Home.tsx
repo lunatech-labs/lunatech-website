@@ -48,11 +48,6 @@ import ServiceCarousel from '@/components/ServiceCarousel/ServiceCarousel';
 import Articles from '@/components/Articles/Articles';
 
 const Home = () => {
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-    };
-
     return (
         <>
             <section className="hero">
@@ -158,7 +153,7 @@ const Home = () => {
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard title="Evolutive Maintenance" text="Lore ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={EvolutiveMaintenance} />
                                 </ServiceCard>
                             </SpotlightCard>
