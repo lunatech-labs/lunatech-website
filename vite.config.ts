@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://app-0599f051-6e90-4b30-9222-a7ef86ae231e.cleverapps.io/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
