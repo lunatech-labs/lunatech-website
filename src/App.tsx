@@ -13,11 +13,11 @@ function App() {
         i18n.changeLanguage(lng);
     };
 
-    const [navClassList, setNavClassList] = useState([]);
+    const [navClassList, setNavClassList] = useState<string[]>([]);
     const scroll = useScrollListener();
 
     useEffect(() => {
-        const _classList = [];
+        const _classList: string[] = [];
 
         if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
             _classList.push("nav-bar--hidden");
