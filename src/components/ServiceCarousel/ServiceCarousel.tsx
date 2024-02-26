@@ -54,7 +54,7 @@ const ServiceCarousel = () => {
             <div className='service-carousel__content'>
                 <div className="service-carousel__slider" ref={wrapperRef}>
                     <ServiceCardCarousel title="Java expertise & Consultancy" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
-                    <ServiceCardCarousel title="Frontend Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
+                    <ServiceCardCarousel title="Frontend Development" text="Lorm ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Backend Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Mobile Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
                     <ServiceCardCarousel title="Cloud Services" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><Icon imageUrl={Buildings1} size="small" /></ServiceCardCarousel>
