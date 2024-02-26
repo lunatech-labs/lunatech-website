@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: './dist',
   plugins: [react()],
   server: {
     host: '0.0.0.0',
