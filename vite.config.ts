@@ -6,6 +6,9 @@ import path from 'path';
 export default defineConfig({
   base: '/',
   plugins: [react()],
+  build: {
+    outDir: '/var/www/bas/site/public/',
+  },
   server: {
     host: '0.0.0.0',
     port: 8080,
