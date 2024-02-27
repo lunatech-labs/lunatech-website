@@ -129,32 +129,32 @@ const Home = () => {
                             
                         <Spotlight className="spotlight__layout">
                             <SpotlightCard>
-                                <ServiceCard title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard to='/services/software-defined-vehicle' title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={SdvIcon} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="Open Source" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard to='/services/open-source' title="Open Source" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={SettingIcon} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard to='/services/custom-software-development' title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={CustomSoftware} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard to='/services/system-integration' title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={SystemIntegration} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard to='/services/legacy-transformation' title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={LegacyTransformation} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
-                                <ServiceCard title="Evolutive Maintenance" text="Lore ipsum dolor sit amet, consectetur adipiscing elit.">
+                                <ServiceCard to='/services/evolutive-maintenance' title="Evolutive Maintenance" text="Lore ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={EvolutiveMaintenance} />
                                 </ServiceCard>
                             </SpotlightCard>
