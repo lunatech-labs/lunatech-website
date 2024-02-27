@@ -5,7 +5,7 @@ import Title from "@components/Title/Title";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Collapse from "@components/Collapse/Collapse";
 
-import ArrowRight from '/arrow-right.svg';
+import ArrowRight from '@assets/images/arrow-right.svg';
 
 import "./Timeline.scss";
 

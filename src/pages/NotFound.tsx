@@ -2,7 +2,7 @@ import { Trans } from 'react-i18next';
 import Container from "@components/Container/Container";
 import Text from "@components/Text/Text";
 import ButtonPrimary from "@components/ButtonPrimary/ButtonPrimary";
-import HomeIcon from '/home.svg';
+import HomeIcon from '@assets/images/home.svg';
 
 const NotFound = () => {
     return (

@@ -14,12 +14,12 @@ import Timeline from '@components/Timeline/Timeline';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Vision from '@components/Vision/Vision';
 
-import AboutUs from '/about-us-illustration.png';
-import AboutUs2 from '/about-us-illustration2.png';
-import Buildings1 from '/buildings1.svg';
-import Buildings2 from '/buildings2.svg';
-import Buildings3 from '/buildings3.svg';
-import Message from '/message.svg';
+import AboutUs from '@assets/images/about-us-illustration.png';
+import AboutUs2 from '@assets/images/about-us-illustration2.png';
+import Buildings1 from '@assets/images/buildings1.svg';
+import Buildings2 from '@assets/images/buildings2.svg';
+import Buildings3 from '@assets/images/buildings3.svg';
+import Message from '@assets/images/message.svg';
 
 
 const About = () => {

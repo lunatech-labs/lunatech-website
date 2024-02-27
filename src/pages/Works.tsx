@@ -4,7 +4,7 @@ import Text from '@components/Text/Text';
 import WorkCard from "@components/WorkCard/WorkCard";
 import Breadcrumbs from "@components/Breacrumb/Breadcrumb";
 
-import Example from '/github.svg';
+import Example from '@assets/images/github.svg';
 
 
 const Works = () => {

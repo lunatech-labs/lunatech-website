@@ -1,17 +1,17 @@
 import { useTranslation, Trans } from "react-i18next";
-import NewCastleOffice from '/newcastle-office.jpg';
+import NewCastleOffice from '@assets/images/newcastle-office.jpg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
-import Message from '/message.svg';
+import Message from '@assets/images/message.svg';
 import Text from '@components/Text/Text';
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
-import CloseIcon from '/close-icon.svg';
-import PeopleIcon from '/people.svg';
-import ProfileIcon from '/profile.svg';
-import EmailIcon from '/email-icon.svg';
-import FlagIcon from '/flag-icon.svg';
-import HomeIcon from '/home-icon.svg';
-import PhoneIcon from '/phone-icon.svg';
+import CloseIcon from '@assets/images/close-icon.svg';
+import PeopleIcon from '@assets/images/people.svg';
+import ProfileIcon from '@assets/images/profile.svg';
+import EmailIcon from '@assets/images/email-icon.svg';
+import FlagIcon from '@assets/images/flag-icon.svg';
+import HomeIcon from '@assets/images/home-icon.svg';
+import PhoneIcon from '@assets/images/phone-icon.svg';
 import "./OfficeModal.scss";
 
 interface ModalProps {

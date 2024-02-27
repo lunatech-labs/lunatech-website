@@ -20,29 +20,29 @@ import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 
-import Mist from '/mist.svg';
-import Clouds from '/clouds.svg';
-import Mountains from '/mountains.svg';
-import Grass from '/grass.svg';
-import Telescope from '/telescope.svg';
-import Moon from '/moon.svg';
+import Mist from '@assets/images/mist.svg';
+import Clouds from '@assets/images/clouds.svg';
+import Mountains from '@assets/images/mountains.svg';
+import Grass from '@assets/images/grass.svg';
+import Telescope from '@assets/images/telescope.svg';
+import Moon from '@assets/images/moon.svg';
 
-import Buildings1 from '/buildings1.svg';
-import Buildings2 from '/buildings2.svg';
-import Buildings3 from '/buildings3.svg';
-import ArrowRight from '/arrow-right.svg';
-import Message from '/message.svg';
+import Buildings1 from '@assets/images/buildings1.svg';
+import Buildings2 from '@assets/images/buildings2.svg';
+import Buildings3 from '@assets/images/buildings3.svg';
+import ArrowRight from '@assets/images/arrow-right.svg';
+import Message from '@assets/images/message.svg';
 
-import AboutUs from '/about-us-illustration.png';
-import BlogImg from '/blog.png';
+import AboutUs from '@assets/images/about-us-illustration.png';
+import BlogImg from '@assets/images/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
-import SdvIcon from '/cpu-setting.svg';
-import SettingIcon from '/setting.svg';
-import CustomSoftware from '/custom-software.svg';
-import SystemIntegration from '/system-integration.svg';
-import LegacyTransformation from '/legacy-transformation.svg';
-import EvolutiveMaintenance from '/evolutive-maintenance.svg';
+import SdvIcon from '@assets/images/cpu-setting.svg';
+import SettingIcon from '@assets/images/setting.svg';
+import CustomSoftware from '@assets/images/custom-software.svg';
+import SystemIntegration from '@assets/images/system-integration.svg';
+import LegacyTransformation from '@assets/images/legacy-transformation.svg';
+import EvolutiveMaintenance from '@assets/images/evolutive-maintenance.svg';
 import { Link } from 'react-router-dom';
 import ServiceCarousel from '@components/ServiceCarousel/ServiceCarousel';
 import Articles from '@components/Articles/Articles';

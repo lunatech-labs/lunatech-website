@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
-import Arrow from '/collapse-arrow.svg';
-import ArrowRight from '/arrow-right.svg';
+import Arrow from '@assets/images/collapse-arrow.svg';
+import ArrowRight from '@assets/images/arrow-right.svg';
 
 import "./Collapse.scss";
 

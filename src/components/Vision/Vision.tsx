@@ -1,7 +1,7 @@
 import {useState} from "react";
-import DotIcon from '/dot-icon.svg';
-import VisionIllustration from '/vision-illustration.png';
-import VisionIllustration2 from '/services_illustration_open.png';
+import DotIcon from '@assets/images/dot-icon.svg';
+import VisionIllustration from '@assets/images/vision-illustration.png';
+import VisionIllustration2 from '@assets/images/services_illustration_open.png';
 import "./Vision.scss";
 
 const Vision = () => {

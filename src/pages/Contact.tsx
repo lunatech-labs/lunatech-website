@@ -3,7 +3,7 @@ import Input from '@components/Input/Input';
 import Address from '@components/Adress/Adress';
 import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
-import ArrowSend from '/arrow-send.svg';
+import ArrowSend from '@assets/images/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Section from '@components/Section/Section';

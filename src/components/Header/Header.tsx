@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Hamburger from '@components/Hamburger/Hamburger';
 import Navigation from '@components/Navigation/Navigation';
-import lunatechLogo from '/lunatech-logo.svg';
+import lunatechLogo from '@assets/images/lunatech-logo.svg';
 import "./Header.scss";
 import { Link } from 'react-router-dom';
 

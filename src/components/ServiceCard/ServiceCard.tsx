@@ -1,7 +1,7 @@
 import { useTranslation, Trans } from 'react-i18next';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import "./ServiceCard.scss";
-import ArrowRight from '/arrow-right.svg';
+import ArrowRight from '@assets/images/arrow-right.svg';
 
 interface CardProps {
     title: string;

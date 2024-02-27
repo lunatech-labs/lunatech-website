@@ -5,12 +5,12 @@ import ServiceCard from '@components/ServiceCard/ServiceCard';
 import Spotlight from '@components/Spotlight/Spotlight';
 import { SpotlightCard } from '@components/Spotlight/Spotlight';
 import IconRounded from '@components/IconRounded/IconRounded';
-import Scala from '/scala-logo.svg';
-import Java from '/java-logo.svg';
-import CustomSoftware from '/custom-software.svg';
-import SystemIntegration from '/system-integration.svg';
-import LegacyTransformation from '/legacy-transformation.svg';
-import EvolutiveMaintenance from '/evolutive-maintenance.svg';
+import Scala from '@assets/images/scala-logo.svg';
+import Java from '@assets/images/java-logo.svg';
+import CustomSoftware from '@assets/images/custom-software.svg';
+import SystemIntegration from '@assets/images/system-integration.svg';
+import LegacyTransformation from '@assets/images/legacy-transformation.svg';
+import EvolutiveMaintenance from '@assets/images/evolutive-maintenance.svg';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Title from '@components/Title/Title';
@@ -18,7 +18,7 @@ import Category from '@components/Category/Category';
 import Address from '@components/Address/Address';
 import Section from '@components/Section/Section';
 import Grid from '@components/Grid/Grid';
-import Message from '/message.svg';
+import Message from '@assets/images/message.svg';
 
 const Services = () => {
     return (

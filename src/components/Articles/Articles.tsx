@@ -1,7 +1,7 @@
 import { useTranslation, Trans } from 'react-i18next';
 import "./Articles.scss";
 import { useEffect, useState } from "react";
-import ArrowRight from '/arrow-right.svg';
+import ArrowRight from '@assets/images/arrow-right.svg';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Text from '@components/Text/Text';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';

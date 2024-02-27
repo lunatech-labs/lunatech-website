@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Icon from "@components/Icon/Icon";
 import "./Timeline.scss";
-import Buildings1 from '/buildings1.svg';
-import ArrowChevronLeft from '/arrow-chevron-left.svg';
-import ArrowChevronRight from '/arrow-chevron-right.svg';
+import Buildings1 from '@assets/images/buildings1.svg';
+import ArrowChevronLeft from '@assets/images/arrow-chevron-left.svg';
+import ArrowChevronRight from '@assets/images/arrow-chevron-right.svg';
 
 interface TimelineEvent {
   year: number;

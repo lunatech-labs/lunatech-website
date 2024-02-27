@@ -2,11 +2,11 @@ import { useTranslation, Trans } from 'react-i18next';
 import Container from "@components/Container/Container";
 import Grid from "@components/Grid/Grid";
 import Language from "@components/Language/Language";
-import lunatechLogo from '/lunatech-logo.svg';
-import Github from '/github.svg';
-import Instagram from '/instagram.svg';
-import Linkedin from '/linkedin.svg';
-import Twitter from '/twitter.svg';
+import lunatechLogo from '@assets/images/lunatech-logo.svg';
+import Github from '@assets/images/github.svg';
+import Instagram from '@assets/images/instagram.svg';
+import Linkedin from '@assets/images/linkedin.svg';
+import Twitter from '@assets/images/twitter.svg';
 import "./Footer.scss";
 
 interface FooterProps {

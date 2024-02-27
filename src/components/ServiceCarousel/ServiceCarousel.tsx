@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import { Trans } from "react-i18next";
 import ServiceCardCarousel from "@components/ServiceCardCarousel/ServiceCardCarousel";
 import Icon from "@components/Icon/Icon";
-import Buildings1 from '/buildings1.svg';
+import Buildings1 from '@assets/images/buildings1.svg';
 import Category from "@components/Category/Category";
 import Text from "@components/Text/Text";
 import Title from "@components/Title/Title";
-import ArrowChevronLeft from '/arrow-chevron-left.svg';
-import ArrowChevronRight from '/arrow-chevron-right.svg';
-import ArrowRight from '/arrow-right.svg';
+import ArrowChevronLeft from '@assets/images/arrow-chevron-left.svg';
+import ArrowChevronRight from '@assets/images/arrow-chevron-right.svg';
+import ArrowRight from '@assets/images/arrow-right.svg';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import "./ServiceCarousel.scss";
 

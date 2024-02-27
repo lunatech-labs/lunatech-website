@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Add from '/pixelarticons_add.svg';
+import Add from '@assets/images/pixelarticons_add.svg';
 import "./OfficeCard.scss";
 import OfficeModal from '@components/OfficeModal/OfficeModal';
 
