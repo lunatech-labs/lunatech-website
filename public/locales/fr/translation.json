@@ -46,12 +46,22 @@
     },
     "service": {
         "subtitle": "Services",
-        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :"
+        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :",
+        "text2": "Lunatech apporte des solutions novatrices dans la création et la modernisation<br /> de vos produits digitaux grâce aux services suivants :"
     },
     "services": {
         "title":"Répondre à vos besoins grâce à ",
         "titleColor":"nos services",
-        "text": "Nous proposons une large gamme de services pour vous aider à répondre à vos besoins. Nous sommes experts dans les domaines suivants :"
+        "subtitle1": "Nos services",
+        "text": "Nous proposons une large gamme de services pour vous aider à répondre à vos besoins. Nous sommes experts dans les domaines suivants :",
+        "category": "Conseils stratégiques"
+    },
+    "technologies": {
+        "title": "Nos",
+        "titleColor": "technologies",
+        "title2": "pour répondre à vos besoins",
+        "category1": "Secteurs d'activité",
+        "category2": "Expertises techniques"
     },
     "articles": {
         "subtitle": "Articles"
