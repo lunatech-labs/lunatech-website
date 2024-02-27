@@ -6,4 +6,4 @@ RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
 RewriteRule ^ - [L]
 
 # If the requested resource doesn't exist, use index.html
-RewriteRule ^ /index.html
+RewriteRule ^ /dist/index.html

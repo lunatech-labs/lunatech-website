@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "app_id": "app_0599f051-6e90-4b30-9222-a7ef86ae231e",
+      "org_id": "orga_ecf3612b-543b-4e2e-b709-d2013df2fee9",
+      "deploy_url": "https://github.com/lunatech-labs/lunatech-website.git",
+      "git_ssh_url": "https://github.com/lunatech-labs/lunatech-website.git",
+      "name": "lunatech-website-2024",
+      "alias": "lunatech-website-2024"
+    }
+  ]
+}
