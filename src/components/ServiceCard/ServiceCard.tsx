@@ -7,19 +7,18 @@ interface CardProps {
     title: string;
     text: string;
     children: JSX.Element;
+    to: string;
 }
 
 const ServiceCard = (props: CardProps) => {
     useTranslation();
-    
-    const toPath = (title: string) => `/services/${title.toLowerCase().replace(/\s+/g, '-')}`;
 
     return (
         <>
             {props.children}
             <h3 className="service-card__title">{props.title}</h3>
             <p className="service-card__text">{props.text}</p>
-            <ButtonSecondary iconUrl={ArrowRight} to={toPath(props.title)} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+            <ButtonSecondary iconUrl={ArrowRight} to={props.to} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
         </>
     );
 };
