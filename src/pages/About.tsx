@@ -30,7 +30,6 @@ const About = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Breadcrumbs />
-                            
                             <h1 className="hero__title"><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></h1>
                         </div>
                     </Grid>

@@ -10,15 +10,6 @@ import ArrowRight from '/arrow-right.svg';
 import "./Timeline.scss";
 
 const Works = () => {
-    const [currentImg, setCurrentImg] = useState<string>('/blog.png');
-
-    const handleCollapseClick = (e: React.MouseEvent<HTMLDivElement>) => {
-        const dataImg = e.currentTarget.getAttribute('data-img');
-        if (dataImg) {
-            setCurrentImg(dataImg);
-        }
-    };
-
     return (
         <div className="works">
             <div className="works__top">
@@ -30,7 +21,7 @@ const Works = () => {
             </div>
             <div className="works__content">
                 <div className="works__left">
-                <Collapse title="Collapse Title 1" data-img="/collapse.png" onClick={handleCollapseClick}>
+                <Collapse title="Collapse Title 1">
                     <p>
                         Content 1
                     </p>
