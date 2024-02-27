@@ -20,6 +20,7 @@ import Buildings1 from '/buildings1.svg';
 import Buildings2 from '/buildings2.svg';
 import Buildings3 from '/buildings3.svg';
 import Message from '/message.svg';
+import Moon from '/moon.svg';
 
 
 const About = () => {
@@ -31,6 +32,9 @@ const About = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></h1>
+                        </div>
+                        <div className="col-lg-6">
+                            <img className="hero__moon" src={Moon} alt="Moon" />
                         </div>
                     </Grid>
                 </Container>

@@ -6,10 +6,10 @@
     "buttonMoreCaseStudies": "More case studies",
     "buttonHomePage": "Go to Homepage",
     "hero": {
-        "title1": "Modernize your",
-        "titleImp": "digital products",
+        "title1": "Modernise your",
+        "titleImp": "digital enterprise services",
         "title2": "for tomorrow's future.",
-        "text": "We think and design unique experiences <br /> for tomorrow's innovative digital products.",
+        "text": "We think and design unique experiences <br /> for tomorrow's innovative digital enterprise services.",
         "button1": "Let's talk",
         "button2": "About us"
     },
@@ -36,7 +36,7 @@
         "titleImp": "30 years",
         "title2": "Customised products to meet your",
         "title2Imp": "requirements",
-        "text": "Lunatech specialises in the design, development, deployment and ongoing operation of customised software.",
+        "text": "Lunatech provides innovative solutions for the creation and modernisation of your digital enterprise services through the following services.",
         "text2": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris and Newcastle.",
         "text3": "Lunatech specialises in the design, development, deployment and ongoing operation of customised software solutions to complex challenges.<br /><br />Each application is meticulously designed to meet the specific requirements of our customers."
     },
@@ -46,12 +46,12 @@
     },
     "service": {
         "subtitle": "Services",
-        "text": "Lunatech provides innovative solutions for the creation and modernization of your digital products through the following services:",
-        "text2": "Lunatech provides innovative solutions for the creation and modernization<br /> of your digital products through the following services:"
+        "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
+        "text2": "Lunatech provides innovative solutions for the creation and/or modernisation <br />of your digital enterprise services through the following services."
     },
     "services": {
         "title": "Meet your needs with",
-        "titleColor": "our services",
+        "titleColor": "enterprise services",
         "subtitle1": "Our services",
         "text": "We provide a wide range of services to help you meet your needs. We are experts in the following areas:",
         "category": "Strategic Advice"
@@ -77,7 +77,7 @@
         "subtitle": "Contact",
         "title": "Let's work ",
         "titleColor": "together",
-        "text": "Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.",
+        "text": "Let us help you become even greater at what you do.  Fill out the following form and we will get back to you.",
         "label":
         {
             "fullName": "What's your name?",
@@ -95,12 +95,10 @@
             "project": "Please type your project description"
         },
         "options": {
-            "webDesign": "Web design",
-            "webDevelopment": "Web development",
-            "appDevelopment": "App development",
-            "uxDesign": "UX design",
-            "seo": "SEO",
-            "marketing": "Marketing",
+            "softwareDefinedVehicle": "Software Defined Vehicle",
+            "customSoftwareDevelopment": "Custom Software Development",
+            "systemIntegration": "System Integration",
+            "legacyTransformation": "Legacy Transformation",
             "other": "Other"
         }
     },

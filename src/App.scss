@@ -151,31 +151,21 @@ nav.nav-bar--hidden {
     }
     &__desc {
         h2 {
-            width: 50%;
-            @include desktop {width: 55%;}
-            @include phone-portrait {width: 100%;}
+            width: 60%;
+            @include desktop-up {width: 55%;}
+            @include desktop {width: 65%;}
+            @include tablet {width: 88%;}
+            @include phone-landscape {width: 100%;}
         }
         p:nth-child(3) {
-            width: 68%;
-            @include desktop {width: 90%;}
-            @include phone-portrait {width: 100%;}
+            width: 70%;
+            @include desktop-up {width: 72%;}
+            @include desktop {width: 87%;}
+            @include phone-landscape {width: 100%;}
         }
     }
     &__content {
         @include grid;
-    }
-    @include phone-portrait {
-        margin: 0;
-        margin-bottom: 50px;
-        padding: 40px;
-        .spotlight__layout {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        &__container {
-            padding: 30px;
-        }
     }
 }
 
