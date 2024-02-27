@@ -4,17 +4,10 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-<<<<<<< HEAD
   base: '/',
   plugins: [react()],
   build: {
     outDir: '/var/www/bas/site/public/',
-=======
-  base: './',
-  plugins: [react()],
-  build: {
-    outDir: 'dist',
->>>>>>> 5ddc631 (Fix: deploy clever cloud)
   },
   server: {
     host: '0.0.0.0',
