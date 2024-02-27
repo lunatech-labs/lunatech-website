@@ -56,6 +56,13 @@
         "text": "Nous proposons une large gamme de services pour vous aider à répondre à vos besoins. Nous sommes experts dans les domaines suivants :",
         "category": "Conseils stratégiques"
     },
+    "technologies": {
+        "title": "Nos",
+        "titleColor": "technologies",
+        "title2": "pour répondre à vos besoins",
+        "category1": "Secteurs d'activité",
+        "category2": "Expertises techniques"
+    },
     "articles": {
         "subtitle": "Articles"
     },

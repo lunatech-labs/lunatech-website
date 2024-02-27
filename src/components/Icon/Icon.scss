@@ -4,10 +4,8 @@
 
 .icon {
     margin-bottom: 32px;
-    display: flex;
-    align-items: center;
+    @include flexbox;
     justify-content: center;
-    background: $blue;
     background: linear-gradient(to bottom, $blue, $blue) padding-box,
                 linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
     border: 1px solid transparent;

@@ -12,13 +12,23 @@
     grid-column: span 6;
     @include phone-landscape {grid-column: span 12;}
 }
-
+.col-lg-4 {
+    grid-column: span 4;
+    @include phone-landscape {grid-column: span 12;}
+}
+@include tablet {
+    .col-md-6 {
+        grid-column: span 6;
+        @include phone-landscape {grid-column: span 12;}
+    }
+}
 /* --------------- Colors --------------- */
 .bg-bgMediumBlue {background: $bgMediumBlue;}
 .bg-bgDarkBlue {background: $bgDarkBlue;}
 
 /* --------------- Others --------------- */
 .w100 {width: 100%;}
+.mwidthI {min-width: initial;}
 
 
 /* --------------- Margin --------------- */
