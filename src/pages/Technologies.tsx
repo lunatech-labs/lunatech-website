@@ -13,7 +13,7 @@ const Vision = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title">Notre vision, nos valeurs</h1>
-                            <Text className="">Une agence engagée pour créer vos expériences sur-mesure</Text>
+                            <Text>Une agence engagée pour créer vos expériences sur-mesure</Text>
                         </div>
                     </Grid>
                 </Container>

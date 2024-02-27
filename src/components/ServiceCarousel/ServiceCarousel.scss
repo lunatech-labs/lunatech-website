@@ -5,7 +5,7 @@
 .service-carousel {
     display: grid;
     grid-template-columns: 30% 70%;
-    gap: 40px;
+    gap: 24px;
     &__buttons {
         display: flex;
         justify-content: flex-end;

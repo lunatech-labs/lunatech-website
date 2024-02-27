@@ -11,13 +11,13 @@ import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
-import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
-import ButtonPrimary from '@/components/ButtonPrimary/ButtonPrimary';
-import Title from '@/components/Title/Title';
-import Category from '@/components/Category/Category';
-import Address from '@/components/Address/Address';
-import Section from '@/components/Section/Section';
-import Grid from '@/components/Grid/Grid';
+import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
+import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
+import Title from '@components/Title/Title';
+import Category from '@components/Category/Category';
+import Address from '@components/Address/Address';
+import Section from '@components/Section/Section';
+import Grid from '@components/Grid/Grid';
 import Message from '/message.svg';
 
 const Services = () => {
@@ -29,13 +29,13 @@ const Services = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
-                            <Text className=""><Trans i18nKey="services.text" /></Text>
+                            <Text><Trans i18nKey="services.text" /></Text>
                         </div>
                     </Grid>
                 </Container>
             </Section>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <Spotlight className="spotlight__layout">
                         <SpotlightCard>
@@ -72,7 +72,7 @@ const Services = () => {
                 </Container>
             </Section>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <div className="contact">
                         <div>

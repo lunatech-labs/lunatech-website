@@ -2,9 +2,10 @@ import Container from "@components/Container/Container";
 import Icon from "@components/Icon/Icon";
 import Text from '@components/Text/Text';
 import WorkCard from "@components/WorkCard/WorkCard";
+import Breadcrumbs from "@components/Breacrumb/Breadcrumb";
 
 import Example from '/github.svg';
-import Breadcrumbs from "@/components/Breacrumb/Breadcrumb";
+
 
 const Works = () => {
     return (
@@ -13,7 +14,7 @@ const Works = () => {
                 <div className="page__header">
                     <Breadcrumbs />
                     <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
-                    <Text className="">Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
+                    <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
                 </div>
 
                 <div className="works">
