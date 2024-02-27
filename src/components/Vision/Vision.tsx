@@ -15,8 +15,8 @@ const Vision = () => {
             <div className="vision__part">
                 <div className="vision__card">
                     <div className="vision__icon"
-                        onMouseEnter={e => {setStyle({display: 'block'});}}
-                        onMouseLeave={e => {setStyle({display: 'none'})}}
+                        onMouseEnter={() => {setStyle({display: 'block'});}}
+                        onMouseLeave={() => {setStyle({display: 'none'})}}
                     >
                         <img src={DotIcon} alt="" />
                     </div>
@@ -24,8 +24,8 @@ const Vision = () => {
                 </div>
                 <div className="vision__card">
                     <div className="vision__icon"
-                        onMouseEnter={e => {setStyle2({display: 'block'});}}
-                        onMouseLeave={e => {setStyle2({display: 'none'})}}
+                        onMouseEnter={() => {setStyle2({display: 'block'});}}
+                        onMouseLeave={() => {setStyle2({display: 'none'})}}
                     >
                         <img src={DotIcon} alt="" />
                     </div>
@@ -35,8 +35,8 @@ const Vision = () => {
             <div className="vision__part">
                 <div className="vision__card">
                     <div className="vision__icon"
-                        onMouseEnter={e => {setStyle3({display: 'block'});}}
-                        onMouseLeave={e => {setStyle3({display: 'none'})}}
+                        onMouseEnter={() => {setStyle3({display: 'block'});}}
+                        onMouseLeave={() => {setStyle3({display: 'none'})}}
                     >
                         <img src={DotIcon} alt="" />
                     </div>
@@ -44,8 +44,8 @@ const Vision = () => {
                 </div>
                 <div className="vision__card">
                     <div className="vision__icon"
-                        onMouseEnter={e => {setStyle4({display: 'block'});}}
-                        onMouseLeave={e => {setStyle4({display: 'none'})}}
+                        onMouseEnter={() => {setStyle4({display: 'block'});}}
+                        onMouseLeave={() => {setStyle4({display: 'none'})}}
                     >
                         <img src={DotIcon} alt="" />
                     </div>
@@ -61,9 +61,7 @@ const Vision = () => {
                     <img style={style3} className="vision__light" src={VisionIllustration2} alt="" />
                 </div>
             </div>
-            
         </div>
-    
     )
 }
 
