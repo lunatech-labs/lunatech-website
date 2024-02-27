@@ -13,11 +13,10 @@ const Contact = () => {
     const { t } = useTranslation();
 
     const options = [
-        t("contact.options.webDesign"),
-        t("contact.options.webDevelopment"),
-        t("contact.options.appDevelopment"),
-        t("contact.options.seo"),
-        t("contact.options.marketing"),
+        t("contact.options.softwareDefinedVehicle"),
+        t("contact.options.customSoftwareDevelopment"),
+        t("contact.options.systemIntegration"),
+        t("contact.options.legacyTransformation"),
         t("contact.options.other")
     ];
 

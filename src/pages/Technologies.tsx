@@ -6,7 +6,7 @@ import Grid from '@components/Grid/Grid';
 import Category from '@components/Category/Category';
 import Title from '@components/Title/Title';
 import BusinessCard from '@components/BusinessCard/BusinessCard';
-import ServiceCardCarousel from '@components/ServiceCardCarousel/ServiceCardCarousel';
+import TechnologieCardCarousel from '@/components/TechnologieCardCarousel/TechnologieCardCarousel';
 import Icon from '@components/Icon/Icon';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
@@ -18,6 +18,7 @@ import Entertainment from '/entertainment.svg';
 import Financial from '/financial.svg';
 import Insurance from '/insurance.svg';
 import Message from '/message.svg';
+import Moon from '/moon.svg';
 
 const Vision = () => {
     return (
@@ -28,6 +29,9 @@ const Vision = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="technologies.title" /> <span><Trans i18nKey="technologies.titleColor" /></span> <Trans i18nKey="technologies.title2" /></h1>
+                        </div>
+                        <div className="col-lg-6">
+                            <img className="hero__moon" src={Moon} alt="Moon" />
                         </div>
                     </Grid>
                 </Container>
@@ -60,15 +64,15 @@ const Vision = () => {
                         <Title className="ta-c" content={<>Our <span>technologies</span> at the service of your product</>} />
                     </div>
                     <Grid>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Devops" text="We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Scala" text="We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Java" text="We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Frontend" text="Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Big Data" text="We’re experts in handling large amounts of data. From processing, to storage and beyond."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Machine Learning" text="We design and implement intelligent systems that learn and improve over time."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="UX / UI" text="To Do Text"><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Test Automation" text="From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible."><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
-                        <ServiceCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Agile Methodology" text="We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products"><Icon imageUrl={Insurance} size="small" /></ServiceCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Devops" text="We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Scala" text="We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Java" text="We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Frontend" text="Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Big Data" text="We’re experts in handling large amounts of data. From processing, to storage and beyond."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Machine Learning" text="We design and implement intelligent systems that learn and improve over time."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="UX / UI" text="To Do Text"><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Test Automation" text="From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
+                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Agile Methodology" text="We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products"><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
                     </Grid>
                 </Container>
             </Section>

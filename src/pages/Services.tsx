@@ -7,11 +7,9 @@ import Spotlight from '@components/Spotlight/Spotlight';
 import Text from '@components/Text/Text';
 import IconRounded from '@components/IconRounded/IconRounded';
 import Scala from '/scala-logo.svg';
-import Java from '/java-logo.svg';
 import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
-import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import BorderEffect from '@/components/BorderEffect/BorderEffect';
@@ -22,8 +20,7 @@ import Section from '@components/Section/Section';
 import Grid from '@components/Grid/Grid';
 import Message from '/message.svg';
 import ServiceIllustration from '/services_illustration.png';
-
-
+import Moon from '/moon.svg';
 
 const Services = () => {
     return (
@@ -34,6 +31,9 @@ const Services = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
+                        </div>
+                        <div className="col-lg-6">
+                            <img className="hero__moon" src={Moon} alt="Moon" />
                         </div>
                     </Grid>
                 </Container>
@@ -79,11 +79,6 @@ const Services = () => {
                             </ServiceCard>
                         </SpotlightCard>
                         <SpotlightCard>
-                            <ServiceCard to='/services/open-source' title="Open Source" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                <IconRounded imageUrl={Java} />
-                            </ServiceCard>
-                        </SpotlightCard>
-                        <SpotlightCard>
                             <ServiceCard to='/services/custom-software-development' title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={CustomSoftware} />
                             </ServiceCard>
@@ -96,11 +91,6 @@ const Services = () => {
                         <SpotlightCard>
                             <ServiceCard to='/services/legacy-transformation' title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={LegacyTransformation} />
-                            </ServiceCard>
-                        </SpotlightCard>
-                        <SpotlightCard>
-                            <ServiceCard to='/services/evolutive-maintenance' title="Evolutive Maintenance" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                <IconRounded imageUrl={EvolutiveMaintenance} />
                             </ServiceCard>
                         </SpotlightCard>
                     </Spotlight>

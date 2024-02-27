@@ -14,10 +14,7 @@
     border-radius: 16px;
     padding: 1px;
     overflow: hidden;
-    grid-column: span 4;
-    @include desktop {
-        grid-column: span 6;
-    }
+    grid-column: span 6;
     @include phone-portrait {
         grid-column: span 12;
     }
@@ -49,13 +46,13 @@
         text-align: center;
         position: relative;
         height: 100%;
-        padding: 48px;
+        padding: 96px;
         border-radius: inherit;
         z-index: 8;
         overflow: hidden;
         background: linear-gradient(to bottom, #0A1E50, #081A47);
         @include phone-portrait {
-            padding: 24px;
+            padding: 48px;
         }
     }
     &__gradient {

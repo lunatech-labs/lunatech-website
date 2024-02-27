@@ -38,13 +38,11 @@ import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
 import SdvIcon from '/cpu-setting.svg';
-import SettingIcon from '/setting.svg';
 import CustomSoftware from '/custom-software.svg';
 import SystemIntegration from '/system-integration.svg';
 import LegacyTransformation from '/legacy-transformation.svg';
-import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 import { Link } from 'react-router-dom';
-import ServiceCarousel from '@components/ServiceCarousel/ServiceCarousel';
+import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
 import Articles from '@components/Articles/Articles';
 
 
@@ -118,8 +116,8 @@ const Home = () => {
                     <div className="services">
                         <div className="services__top">
                             <div className="services__desc">
-                                <Category content={<Trans i18nKey="services.subtitle" />} />
-                                <Title content={<>An <span>evolution</span>, not a revolution</>} />
+                                <Category content={<Trans i18nKey="service.subtitle" />} />
+                                <Title content={<>Meet your needs with our <span>enterprise services</span></>} />
                                 <Text>
                                     <Trans i18nKey="service.text" />
                                 </Text>
@@ -131,11 +129,6 @@ const Home = () => {
                             <SpotlightCard>
                                 <ServiceCard to='/services/software-defined-vehicle' title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={SdvIcon} />
-                                </ServiceCard>
-                            </SpotlightCard>
-                            <SpotlightCard>
-                                <ServiceCard to='/services/open-source' title="Open Source" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                    <IconRounded imageUrl={SettingIcon} />
                                 </ServiceCard>
                             </SpotlightCard>
                             <SpotlightCard>
@@ -153,11 +146,6 @@ const Home = () => {
                                     <IconRounded imageUrl={LegacyTransformation} />
                                 </ServiceCard>
                             </SpotlightCard>
-                            <SpotlightCard>
-                                <ServiceCard to='/services/evolutive-maintenance' title="Evolutive Maintenance" text="Lore ipsum dolor sit amet, consectetur adipiscing elit.">
-                                    <IconRounded imageUrl={EvolutiveMaintenance} />
-                                </ServiceCard>
-                            </SpotlightCard>
                         </Spotlight>
                     </div>
                 </Container>
@@ -167,7 +155,7 @@ const Home = () => {
 
             <Section>
                 <Container>
-                    <ServiceCarousel></ServiceCarousel>
+                    <TechnologiesCarousel></TechnologiesCarousel>
                 </Container>
             </Section>
 

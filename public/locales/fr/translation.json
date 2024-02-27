@@ -7,9 +7,9 @@
     "buttonHomePage": "Retour à l'accueil",
     "hero": {
         "title1": "Modernisez vos",
-        "titleImp": "produits numériques",
+        "titleImp": "services d'entreprise numérique",
         "title2": "pour l'avenir de demain.",
-        "text": "Nous pensons et concevons des expériences uniques <br /> pour les produits numériques innovants de demain.",
+        "text": "Nous pensons et concevons des expériences uniques<br />pour les services numériques innovants de l'entreprise de demain.",
         "button1": "Contact",
         "button2": "A propos"
     },
@@ -36,7 +36,7 @@
         "titleImp": "30 ans",
         "title2": "Des produits personnalisés pour répondre à",
         "title2Imp": "vos besoins",
-        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.",
+        "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
         "text2": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle.",
         "text3": "Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes.<br /><br />Chaque application est méticuleusement conçue pour répondre aux exigences spécifiques de nos clients."
     },
@@ -46,8 +46,8 @@
     },
     "service": {
         "subtitle": "Services",
-        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants :",
-        "text2": "Lunatech apporte des solutions novatrices dans la création et la modernisation<br /> de vos produits digitaux grâce aux services suivants :"
+        "text": "Lunatech fournit des solutions innovantes pour la création et/ou la modernisation de vos services numériques d'entreprise à travers les services suivants.",
+        "text2": "Lunatech fournit des solutions innovantes pour la création et/ou la modernisation <br />de vos services numériques d'entreprise à travers les services suivants."
     },
     "services": {
         "title":"Répondre à vos besoins grâce à ",
@@ -77,7 +77,7 @@
         "subtitle": "Contact",
         "title": "Travaillons ",
         "titleColor": "ensemble",
-        "text": "Laissez-nous vous aider à devenir encore plus performant dans ce que vous faites. Remplissez le formulaire suivant et nous vous répondrons dans les 24 heures.",
+        "text": "Laissez-nous vous aider à devenir encore plus performant dans ce que vous faites. Remplissez le formulaire suivant et nous vous contacterons.",
         "label":
         {
             "fullName": "Quel est votre nom complet ?",
@@ -94,13 +94,11 @@
             "project": "Parlez-nous de votre projet"
         },
         "options": {
-            "webDesign": "Web design",
-            "webDevelopment": "Web development",
-            "appDevelopment": "App development",
-            "uxDesign": "UX design",
-            "seo": "SEO",
-            "marketing": "Marketing",
-            "other": "Autre"
+            "softwareDefinedVehicle": "Véhicules définis par logiciel",
+            "customSoftwareDevelopment": "Développement de logiciels sur mesure",
+            "systemIntegration": "Intégration des systèmes",
+            "legacyTransformation": "Transformation de l'héritage",
+            "other": "Autres"
         }
     },
     "address": {
@@ -121,9 +119,6 @@
     "serviceSoftwareDefinedVehicle": {
         "title": "Véhicules définis par logiciel"
     },
-    "serviceOpenSource": {
-        "title": "Open Source"
-    },
     "serviceCustomSoftwareDevelopment": {
         "title": "Développement de logiciels sur mesure"
     },
@@ -132,8 +127,5 @@
     },
     "serviceLegacyTransformation": {
         "title": "Transformation de l'héritage"
-    },
-    "serviceEvolutiveMaintenance": {
-        "title": "Maintenance évolutive"
     }
 }
