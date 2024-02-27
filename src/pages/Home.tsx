@@ -84,7 +84,7 @@ const Home = () => {
 
             <Container><BorderEffect /></Container>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <div className="about">
                         <img className="about__img" src={AboutUs} alt="Building" />
@@ -120,7 +120,7 @@ const Home = () => {
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey="services.subtitle" />} />
                                 <Title content={<>An <span>evolution</span>, not a revolution</>} />
-                                <Text className="">
+                                <Text>
                                     <Trans i18nKey="service.text" />
                                 </Text>
                             </div>
@@ -165,7 +165,7 @@ const Home = () => {
 
             <Container><BorderEffect /></Container>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <ServiceCarousel></ServiceCarousel>
                 </Container>
@@ -218,7 +218,7 @@ const Home = () => {
 
             <Container><BorderEffect /></Container>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <div className="contact">
                         <div>

@@ -30,34 +30,14 @@ const About = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Breadcrumbs />
-                            <h1 className="hero__title">Custom software systems for over <span>30 years</span></h1>
-                        </div>
-                    </Grid>
-                </Container>
-            </Section>
-
-            <Section className="">
-                <Container>
-                    <Grid>
-                        <div className="col-lg-6">
-                            <Category content={<Trans i18nKey="about.subtitle1" />} />
-                            <Title content={<>Custom software systems for over 30 years</>} />
-                            <Text className="">Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Amsterdam, Paris et, à partir de 2023, à Newcastle-upon-Tyne au Royaume-Uni.<br /><br />Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes. Chaque application est méticuleusement conçue pour répondre aux besoins spécifiques de nos clients.</Text>
-                        </div>
-                        <div className="col-lg-6">
                             
-                        </div>
-                        <div className="col-lg-6">
-
-                        </div>
-                        <div className="col-lg-6">
-                            <Text className="">Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels.Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme.<br /><br />Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues. Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité.</Text>
+                            <h1 className="hero__title"><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></h1>
                         </div>
                     </Grid>
                 </Container>
             </Section>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
@@ -66,7 +46,7 @@ const About = () => {
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="about.subtitle2" />} />
                             <Title content={<>Close to customers across <span>Europe</span></>} />
-                            <Text className="mgb32">Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle.</Text>
+                            <Text className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
@@ -92,8 +72,8 @@ const About = () => {
                     <Grid className="ai-c">
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="about.subtitle2" />} />
-                            <Title content={<>Close to customers across <span>Europe</span></>} />
-                            <Text className="mgb32">Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle.</Text>
+                            <Title content={<><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></>} />
+                            <Text className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
                         </div>
                         <div className="col-lg-6">
                             <img className="w100" src={AboutUs2} alt="" />
@@ -104,7 +84,7 @@ const About = () => {
 
             <Container><BorderEffect /></Container>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <div className="ta-c">
                         <Category content={<Trans i18nKey="about.subtitle4" />} />
@@ -124,7 +104,7 @@ const About = () => {
                 </Container>
             </Section>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <div className="contact">
                         <div>

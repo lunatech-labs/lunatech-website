@@ -33,7 +33,11 @@
         "category": "A propos",
         "title": "Systèmes logiciels personnalisés depuis plus de",
         "titleImp": "30 ans",
-        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants."
+        "title2": "Des produits personnalisés pour répondre à",
+        "title2Imp": "vos besoins",
+        "text": "Lunatech apporte des solutions novatrices dans la création et la modernisation de vos produits digitaux grâce aux services suivants.",
+        "text2": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle.",
+        "text3": "Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes.<br /><br />Chaque application est méticuleusement conçue pour répondre aux exigences spécifiques de nos clients."
     },
     "modal": {
         "category": "Nos bureaux",

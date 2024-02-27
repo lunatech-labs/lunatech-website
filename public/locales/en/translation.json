@@ -33,7 +33,11 @@
         "category": "About us",
         "title": "Custom software systems for over",
         "titleImp": "30 years",
-        "text": "Lunatech specialises in the design, development, deployment and ongoing operation of customised software."
+        "title2": "Customised products to meet your",
+        "title2Imp": "requirements",
+        "text": "Lunatech specialises in the design, development, deployment and ongoing operation of customised software.",
+        "text2": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris and Newcastle.",
+        "text3": "Lunatech specialises in the design, development, deployment and ongoing operation of customised software solutions to complex challenges.<br /><br />Each application is meticulously designed to meet the specific requirements of our customers."
     },
     "modal": {
         "category": "Nos bureaux",

@@ -14,7 +14,7 @@ const Works = () => {
                 <div className="page__header">
                     <Breadcrumbs />
                     <h1 className="hero__title">Let&apos;s work <span>together</span>!</h1>
-                    <Text className="">Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
+                    <Text>Let us help you become even greater at what you do. Fill out the following form and we will get back to you in the next 24 hours.</Text>
                 </div>
 
                 <div className="works">

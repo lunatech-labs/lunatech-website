@@ -13,7 +13,7 @@ const Works = () => {
                 <div className="page__header">
                     <Breadcrumbs />
                     <h1 className="hero__title"><Trans i18nKey={`${workName}.title`} /></h1>
-                    <Text className=""><Trans i18nKey={`${workName}.text`} /></Text>
+                    <Text><Trans i18nKey={`${workName}.text`} /></Text>
                 </div>
             </Container>
         </div>

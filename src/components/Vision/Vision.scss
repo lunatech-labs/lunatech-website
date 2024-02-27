@@ -1,13 +1,71 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .vision {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 96px;
+    &__part {
+        display: flex;
+        justify-content: space-between;
+        &:first-child {margin-bottom: 192px;}
+        .vision__card:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .vision__text {text-align: right;}
+        }
+    }
     &__card {
         width: 312px;
+        height: 320px;
+        p {
+            display: none;
+        }
     }
-    &__image {
-        width: 500px;
+    &__icon {
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $blue;
+        background: linear-gradient(to bottom, $blue, $blue) padding-box,
+                    linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
+        border: 1px solid transparent;
+        border-radius: 16px;
+        width: 96px;
+        height: 96px;
+        cursor: pointer;
+        @include phone-portrait {
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &__text {
+        font-size: $font-size-500;
+        line-height: 2rem;
+        color: $lightGray;
+    }
+    &__illustration {
         @include absolute-center;
     }
+    &__image {
+        width: 500px; 
+    }
+    &__open {
+        @include absolute-center;
+        display: flex;
+    }
+    &__light {
+        width: 184px;
+        position: absolute;
+        &:first-child {top: -359px; left: -94px;}
+        &:nth-child(2) {top: -286px; left: 33px;}
+        &:nth-child(3) {top: -213px; left: -94px;}
+        &:nth-child(4) {top: -286px; left: -221px;}
+    }
 }
+

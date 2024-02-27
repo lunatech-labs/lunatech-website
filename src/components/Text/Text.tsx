@@ -1,7 +1,7 @@
 import "./Text.scss";
 
 interface TextProps {
-    className: string;
+    className?: string;
     children?: React.ReactNode;
 }
 
