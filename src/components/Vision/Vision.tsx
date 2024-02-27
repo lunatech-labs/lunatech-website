@@ -15,9 +15,7 @@ const Vision = () => {
             <div className="vision__part">
                 <div className="vision__card">
                     <div className="vision__icon"
-                        onMouseEnter={e => {
-                            setStyle({display: 'block'});
-                        }}
+                        onMouseEnter={e => {setStyle({display: 'block'});}}
                         onMouseLeave={e => {setStyle({display: 'none'})}}
                     >
                         <img src={DotIcon} alt="" />
