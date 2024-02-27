@@ -4,7 +4,8 @@ import "./Collapse.scss";
 
 interface CollapseProps {
   title: string;
-  text: string;
+  text: JSX.Element;
+  onClick?: () => void;
 }
 
 const Collapse = (props: CollapseProps) => {
