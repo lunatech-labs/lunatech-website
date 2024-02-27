@@ -117,5 +117,23 @@
         "terms": "Conditions de service",
         "title1": "Plan",
         "title2": "Get Connected"
+    },
+    "serviceSoftwareDefinedVehicle": {
+        "title": "Véhicules définis par logiciel"
+    },
+    "serviceOpenSource": {
+        "title": "Open Source"
+    },
+    "serviceCustomSoftwareDevelopment": {
+        "title": "Développement de logiciels sur mesure"
+    },
+    "serviceSystemIntegration": {
+        "title": "Intégration des systèmes"
+    },
+    "serviceLegacyTransformation": {
+        "title": "Transformation de l'héritage"
+    },
+    "serviceEvolutiveMaintenance": {
+        "title": "Maintenance évolutive"
     }
 }

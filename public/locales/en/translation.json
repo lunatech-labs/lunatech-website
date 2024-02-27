@@ -118,5 +118,23 @@
         "terms": "Terms of Services",
         "title1": "Plan",
         "title2": "Get connected"
+    },
+    "serviceSoftwareDefinedVehicle": {
+        "title": "Software Defined Vehicle"
+    },
+    "serviceOpenSource": {
+        "title": "Open Source"
+    },
+    "serviceCustomSoftwareDevelopment": {
+        "title": "Custom Software Development"
+    },
+    "serviceSystemIntegration": {
+        "title": "System Integration"
+    },
+    "serviceLegacyTransformation": {
+        "title": "Legacy Transformation"
+    },
+    "serviceEvolutiveMaintenance": {
+        "title": "Evolutive Maintenance"
     }
 }
