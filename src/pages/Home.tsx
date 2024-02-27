@@ -62,7 +62,7 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="hero__content">
-                            <h1 className="hero__title"><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></h1>
+                            <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
                             <Text className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
                                 <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
@@ -88,7 +88,7 @@ const Home = () => {
                         <img className="about__img" src={AboutUs} alt="Building" />
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.category" />} />
-                            <Title content={<><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></>} />
+                            <Title level={2}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
                             <Text className="mgb32"><Trans i18nKey="about.text" /></Text>
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
@@ -117,7 +117,7 @@ const Home = () => {
                         <div className="services__top">
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey="service.subtitle" />} />
-                                <Title content={<>Meet your needs with our <span>enterprise services</span></>} />
+                                <Title level={2}>Meet your needs with our <span>enterprise services</span></Title>
                                 <Text>
                                     <Trans i18nKey="service.text" />
                                 </Text>
@@ -166,7 +166,7 @@ const Home = () => {
                     <div className="blog">
                         <div className="blog__top">
                             <Category content={<Trans i18nKey="articles.subtitle" />} />
-                            <Title content={<>Read the content from our <span>experts</span>.</>} />
+                            <Title level={2}>Read the content from our <span>experts</span>.</Title>
                         </div>
                         <div className="blog__articles">
                             <div className="blog__content">
@@ -211,7 +211,7 @@ const Home = () => {
                     <div className="contact">
                         <div>
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title content={<>Let's talk <span>together!</span></>} />
+                            <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
                             <span>

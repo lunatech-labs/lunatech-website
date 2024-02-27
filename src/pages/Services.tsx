@@ -44,7 +44,7 @@ const Services = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="services.category" />} />
-                            <Title content={<><span>Lunatech</span> can help you with the following</>} />
+                            <Title level={2}><span>Lunatech</span> can help you with the following</Title>
                         </div>
                     </Grid>
                     <Grid className="mgt64 ai-c">
@@ -69,7 +69,7 @@ const Services = () => {
                 <Container>
                     <div className="mgb64 dflex fd-c">
                         <Category content={<Trans i18nKey="services.subtitle1" />} />
-                        <Title className="ta-c" content={<><span>Lunatech</span> can help you with the following</>} />
+                        <Title className="ta-c" level={2}><span>Lunatech</span> can help you with the following</Title>
                         <Text className="ta-c">{<Trans i18nKey="service.text2" />}</Text>
                     </div>
                     <Spotlight className="spotlight__layout">
@@ -104,7 +104,7 @@ const Services = () => {
                     <div className="contact">
                         <div>
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title content={<>Let's talk <span>together!</span></>} />
+                            <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
                             <span>

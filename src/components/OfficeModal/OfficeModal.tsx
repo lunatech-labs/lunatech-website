@@ -45,7 +45,7 @@ const OfficeModal = (props: ModalProps) => {
                     {props.children}
                     <div className="mgl24">
                         <Category content={<Trans i18nKey="officeModal.subtitle" />} />
-                        <Title content={<><span>{props.title}</span> office</>} />
+                        <Title level={2}><span>{props.title}</span> office</Title>
                     </div>
                 </div>
 

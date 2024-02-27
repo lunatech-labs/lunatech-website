@@ -42,7 +42,7 @@ const Vision = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="technologies.category1" />} />
-                            <Title content={<>The sectors in which we <span>specialise</span></>} />
+                            <Title level={2}>The sectors in which we <span>specialise</span></Title>
                             <img className="w100" src={TechnologiesIllustration} alt="" />
                         </div>
                         <div className="col-lg-6">
@@ -61,7 +61,7 @@ const Vision = () => {
                 <Container>
                     <div className="mgb64 dflex fd-c">
                     <Category content={<Trans i18nKey="technologies.category2" />} />
-                        <Title className="ta-c" content={<>Our <span>technologies</span> at the service of your product</>} />
+                        <Title className="ta-c" level={2}>Our <span>technologies</span> at the service of your product</Title>
                     </div>
                     <Grid>
                         <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Devops" text="We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
@@ -84,7 +84,7 @@ const Vision = () => {
                     <div className="contact">
                         <div>
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title content={<>Let's talk <span>together!</span></>} />
+                            <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
                             <span>

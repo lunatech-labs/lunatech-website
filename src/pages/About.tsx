@@ -48,7 +48,7 @@ const About = () => {
                         </div>
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="about.subtitle2" />} />
-                            <Title content={<>Close to customers across <span>Europe</span></>} />
+                            <Title level={2}>Close to customers across <span>Europe</span></Title>
                             <Text className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
                             <div className="mgt64">
                                 <Grid>
@@ -75,7 +75,7 @@ const About = () => {
                     <Grid className="ai-c">
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="about.subtitle4" />} />
-                            <Title content={<><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></>} />
+                            <Title level={2}><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></Title>
                             <Text className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
                         </div>
                         <div className="col-lg-6">
@@ -91,7 +91,7 @@ const About = () => {
                 <Container>
                     <div className="ta-c">
                         <Category content={<Trans i18nKey="about.subtitle4" />} />
-                        <Title content={<>An <span>evolution</span>, not a revolution</>} />
+                        <Title level={2}>An <span>evolution</span>, not a revolution</Title>
                     </div>
                     <Vision />
                 </Container>
@@ -101,7 +101,7 @@ const About = () => {
                 <Container>
                     <div className="mgb128">
                         <Category content={<Trans i18nKey="about.subtitle3" />} />
-                        <Title content={<>Lunatech's <span>evolution</span> over time</>} />
+                        <Title level={2}>Lunatech's <span>evolution</span> over time</Title>
                     </div>
                     <Timeline />     
                 </Container>
@@ -112,7 +112,7 @@ const About = () => {
                     <div className="contact">
                         <div>
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title content={<>Let's talk <span>together!</span></>} />
+                            <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
                             <span>
