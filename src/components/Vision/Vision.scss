@@ -7,24 +7,39 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 96px;
+    margin-top: 128px;
+    height: 870px;
+    @include desktop {height: 940px;}
+    @include phone-landscape {height: 1020px;}
+    @include phone-portrait {height: 900px;}
     &__part {
         display: flex;
         justify-content: space-between;
-        &:first-child {margin-bottom: 192px;}
         .vision__card:first-child {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            .vision__text {text-align: right;}
+            @include tablet {align-items: initial;}
+            .vision__text {
+                text-align: right;
+                @include tablet {text-align: initial;}
+            }
+        }
+        .vision__card:last-child {
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            .vision__text {
+                @include tablet {text-align: right;}
+            }
+            
         }
     }
     &__card {
         width: 312px;
         height: 320px;
-        p {
-            display: none;
-        }
     }
     &__icon {
         margin-bottom: 32px;
@@ -39,10 +54,6 @@
         width: 96px;
         height: 96px;
         cursor: pointer;
-        @include phone-portrait {
-            width: 64px;
-            height: 64px;
-        }
     }
     &__text {
         font-size: $font-size-500;
@@ -51,9 +62,14 @@
     }
     &__illustration {
         @include absolute-center;
+        top: 36%;
+        @include desktop {top: 38%;}
+        @include phone-landscape {top: 39%;}
     }
     &__image {
         width: 500px; 
+        @include desktop {width: 420px;}
+        @include phone-portrait {width: 280px;}
     }
     &__open {
         @include absolute-center;
@@ -62,10 +78,56 @@
     &__light {
         width: 184px;
         position: absolute;
-        &:first-child {top: -359px; left: -94px;}
-        &:nth-child(2) {top: -286px; left: 33px;}
-        &:nth-child(3) {top: -213px; left: -94px;}
-        &:nth-child(4) {top: -286px; left: -221px;}
+        @include desktop {width: 154px;}
+        @include phone-portrait {width: 103px;}
+        &:first-child {
+            top: -359px;
+            left: -94px;
+            @include desktop {
+                top: -300px;
+                left: -79px;
+            }
+            @include phone-portrait {
+                top: -201px;
+                left: -53px;
+            }
+        }
+        &:nth-child(2) {
+            top: -286px;
+            left: 33px;
+            @include desktop {
+                top: -239px;
+                left: 28px;
+            }
+            @include phone-portrait {
+                top: -160px;
+                left: 19px;
+            }
+        }
+        &:nth-child(3) {
+            top: -213px;
+            left: -94px;
+            @include desktop {
+                top: -177px;
+                left: -79px;
+            }
+            @include phone-portrait {
+                top: -119px;
+                left: -53px;
+            }
+        }
+        &:nth-child(4) {
+            top: -286px;
+            left: -221px;
+            @include desktop {
+                top: -239px;
+                left: -185px;
+            }
+            @include phone-portrait {
+                top: -160px;
+                left: -124px;
+            }
+        }
     }
 }
 

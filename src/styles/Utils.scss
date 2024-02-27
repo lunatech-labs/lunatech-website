@@ -8,7 +8,10 @@
 .ai-c {align-items: center;}
 
 /* --------------- Grid --------------- */
-.col-lg-6 {grid-column: span 6;}
+.col-lg-6 {
+    grid-column: span 6;
+    @include phone-landscape {grid-column: span 12;}
+}
 
 /* --------------- Colors --------------- */
 .bg-bgMediumBlue {background: $bgMediumBlue;}

@@ -8,11 +8,6 @@
     grid-column: span 4;
     flex-direction: column;
     position: relative;
-    @include phone-portrait {
-        width: auto;
-        grid-column: span 12;
-        padding: 24px 20px 10px 20px;
-    }
     &__icon {
         background: $blue;
         color: #78B4D7;
@@ -27,12 +22,6 @@
     &__bottom {
         display: flex;
         justify-content: flex-end;
-        @include phone-portrait {
-            position: absolute;
-            right: 16px;
-            bottom: 16px;
-        }
-
     }
     &__button {
         width: 32px;
