@@ -71,7 +71,7 @@ const About = () => {
                 <Container>
                     <Grid className="ai-c">
                         <div className="col-lg-6">
-                            <Category content={<Trans i18nKey="about.subtitle2" />} />
+                            <Category content={<Trans i18nKey="about.subtitle4" />} />
                             <Title content={<><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></>} />
                             <Text className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
                         </div>
