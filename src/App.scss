@@ -17,6 +17,11 @@ body {
     background: $mediumBlue;
     overflow-x: hidden;
 }
+br {
+    @include phone-landscape {
+        display: none;
+    }
+}
 
 /* ------------- HEADER BLOCK ------------- */
 nav {

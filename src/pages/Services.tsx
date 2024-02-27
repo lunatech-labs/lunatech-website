@@ -1,9 +1,10 @@
-import Container from '@components/Container/Container';
 import { Trans } from 'react-i18next';
-import Text from '@components/Text/Text';
+import { SpotlightCard } from '@components/Spotlight/Spotlight';
+import Container from '@components/Container/Container';
+import Collapse from '@components/Collapse/Collapse';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 import Spotlight from '@components/Spotlight/Spotlight';
-import { SpotlightCard } from '@components/Spotlight/Spotlight';
+import Text from '@components/Text/Text';
 import IconRounded from '@components/IconRounded/IconRounded';
 import Scala from '/scala-logo.svg';
 import Java from '/java-logo.svg';
@@ -13,12 +14,16 @@ import LegacyTransformation from '/legacy-transformation.svg';
 import EvolutiveMaintenance from '/evolutive-maintenance.svg';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
+import BorderEffect from '@/components/BorderEffect/BorderEffect';
 import Title from '@components/Title/Title';
 import Category from '@components/Category/Category';
 import Address from '@components/Address/Address';
 import Section from '@components/Section/Section';
 import Grid from '@components/Grid/Grid';
 import Message from '/message.svg';
+import ServiceIllustration from '/services_illustration.png';
+
+
 
 const Services = () => {
     return (
@@ -29,7 +34,6 @@ const Services = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
-                            <Text><Trans i18nKey="services.text" /></Text>
                         </div>
                     </Grid>
                 </Container>
@@ -37,6 +41,37 @@ const Services = () => {
 
             <Section>
                 <Container>
+                    <Grid>
+                        <div className="col-lg-6">
+                            <Category content={<Trans i18nKey="services.category" />} />
+                            <Title content={<><span>Lunatech</span> can help you with the following</>} />
+                        </div>
+                    </Grid>
+                    <Grid className="mgt64 ai-c">
+                        <div className="col-lg-6">
+                            <Collapse title="Technology Planning" text="Developing long-term IT strategies and roadmaps that support business goals." />
+                            <Collapse title="Risk management" text="Identifying and mitigating IT-related risks, such as security threats and data breaches." />
+                            <Collapse title="Innovation" text="Keeping abreast of emerging technologies and assessing their potential impact on the organization." />
+                            <Collapse title="Data Management" text="Ensuring data is handled securely, compliantly, and used strategically." />
+                            <Collapse title="Change Management" text="Implementing IT changes smoothly to minimize disruption." />
+                            <Collapse title="Digital Transformation" text="Leading efforts to transform traditional processes with digital technologies." />
+                        </div>
+                        <div className="col-lg-6">
+                            <img className="w100" src={ServiceIllustration} alt="" />
+                        </div>
+                    </Grid>
+                </Container>
+            </Section>
+
+            <Container><BorderEffect /></Container>
+
+            <Section className="bg-bgMediumBlue">
+                <Container>
+                    <div className="mgb64 dflex fd-c">
+                        <Category content={<Trans i18nKey="services.subtitle1" />} />
+                        <Title className="ta-c" content={<><span>Lunatech</span> can help you with the following</>} />
+                        <Text className="ta-c">{<Trans i18nKey="service.text2" />}</Text>
+                    </div>
                     <Spotlight className="spotlight__layout">
                         <SpotlightCard>
                             <ServiceCard title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
@@ -71,6 +106,8 @@ const Services = () => {
                     </Spotlight>
                 </Container>
             </Section>
+
+            <Container><BorderEffect /></Container>
 
             <Section>
                 <Container>
