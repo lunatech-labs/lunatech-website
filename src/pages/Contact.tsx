@@ -5,9 +5,9 @@ import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
 import ArrowSend from '/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
-import Breadcrumbs from '@/components/Breacrumb/Breadcrumb';
+import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
+import Section from '@components/Section/Section';
 import { Trans, useTranslation } from 'react-i18next';
-import Section from '@/components/Section/Section';
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -29,7 +29,7 @@ const Contact = () => {
                         <div className="col-lg-6">
                             <Breadcrumbs />
                             <h1 className="hero__title"><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</h1>
-                            <Text className="">
+                            <Text>
                                 <Trans i18nKey="contact.text" />
                             </Text>
                         </div>
@@ -37,7 +37,7 @@ const Contact = () => {
                 </Container>
             </Section>
 
-            <Section className="">
+            <Section>
                 <Container>
                     <Grid>
                         <div className='contact__form'>

@@ -7,12 +7,19 @@
 .ta-c {text-align: center;}
 .ai-c {align-items: center;}
 
+/* --------------- Grid --------------- */
+.col-lg-6 {
+    grid-column: span 6;
+    @include phone-landscape {grid-column: span 12;}
+}
+
 /* --------------- Colors --------------- */
 .bg-bgMediumBlue {background: $bgMediumBlue;}
 .bg-bgDarkBlue {background: $bgDarkBlue;}
 
-/* --------------- Grid --------------- */
-.col-lg-6 {grid-column: span 6;}
+/* --------------- Others --------------- */
+.w100 {width: 100%;}
+
 
 /* --------------- Margin --------------- */
 .mgt8 {margin-top: 8px}

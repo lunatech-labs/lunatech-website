@@ -1,7 +1,7 @@
 import "./Section.scss";
 
 interface SectionProps {
-    className: string;
+    className?: string;
     children?: React.ReactNode;
 }
 

@@ -6,10 +6,9 @@
     justify-content: center;
     background: -webkit-linear-gradient(180deg, #DB2777, #E11D48);
     border-radius: 12px;
-    height: 64px;
-    padding: 0 48px;
     width: max-content;
     text-wrap: nowrap;
+    cursor: pointer;
     &__img {
         margin-left: 16px;
         color: $pink;
