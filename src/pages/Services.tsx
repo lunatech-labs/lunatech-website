@@ -49,12 +49,12 @@ const Services = () => {
                     </Grid>
                     <Grid className="mgt64 ai-c">
                         <div className="col-lg-6">
-                            <Collapse title="Technology Planning" text="Developing long-term IT strategies and roadmaps that support business goals." />
-                            <Collapse title="Risk management" text="Identifying and mitigating IT-related risks, such as security threats and data breaches." />
-                            <Collapse title="Innovation" text="Keeping abreast of emerging technologies and assessing their potential impact on the organization." />
-                            <Collapse title="Data Management" text="Ensuring data is handled securely, compliantly, and used strategically." />
-                            <Collapse title="Change Management" text="Implementing IT changes smoothly to minimize disruption." />
-                            <Collapse title="Digital Transformation" text="Leading efforts to transform traditional processes with digital technologies." />
+                            <Collapse title="Technology Planning" text={<p>Developing long-term IT strategies and roadmaps that support business goals.</p>} />
+                            <Collapse title="Risk management" text={<p>Identifying and mitigating IT-related risks, such as security threats and data breaches.</p>} />
+                            <Collapse title="Innovation" text={<p>Keeping abreast of emerging technologies and assessing their potential impact on the organization.</p>} />
+                            <Collapse title="Data Management" text={<p>Ensuring data is handled securely, compliantly, and used strategically.</p>} />
+                            <Collapse title="Change Management" text={<p>Implementing IT changes smoothly to minimize disruption.</p>} />
+                            <Collapse title="Digital Transformation" text={<p>Leading efforts to transform traditional processes with digital technologies.</p>} />
                         </div>
                         <div className="col-lg-6">
                             <img className="w100" src={ServiceIllustration} alt="" />
