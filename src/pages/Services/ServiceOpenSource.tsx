@@ -32,7 +32,7 @@ const ServiceOpenSource = () => {
                     <div className="contact">
                         <div>
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title content={<>Let's talk <span>together!</span></>} />
+                            <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>
                         <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
                             <span>

@@ -6,21 +6,21 @@
     @include grid;
     &__card {
         grid-column: span 4;
-        @include phone-portrait {
+        @include phone-landscape {
             grid-column: span 12;
         }
     }
     &__title {
         font-size: $font-size-600;
         margin-bottom: 32px;
-        @include phone-portrait {
+        @include phone-landscape {
             margin-bottom: 16px;
         }
     }
     &__part {
         &:not(:last-child) {
             margin-bottom: 32px;
-            @include phone-portrait {
+            @include phone-landscape {
                 margin-bottom: 16px;
             }
         }
@@ -50,7 +50,7 @@
         height: 24px;
         width: 1px;
         background: white;
-        @include phone-portrait {
+        @include phone-landscape {
             margin: 0 8px;
             height: 16px;
         }

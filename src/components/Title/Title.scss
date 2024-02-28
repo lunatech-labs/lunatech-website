@@ -2,16 +2,25 @@
 @import "/src/styles/Mixins.scss";
 @import "/src/styles/Responsive.scss";
 
-.title {
+h1.titleh1 {
+    font-size: $font-size-900;
+    font-weight: 700;
+    line-height: 5.5rem;
+    span {@include red-title;}
+}
+h2.titleh2 {
     font-size: $font-size-800;
     font-weight: 600;
     line-height: 4rem;
-    margin-bottom: 16px;
-    span {
-        @include red-title;
-    }
-    @include phone-portrait {
-        font-size: $font-size-700;
-        line-height: 3.5rem;
-    }
+    span {@include red-title;}
+}
+h3.titleh3 {
+    font-size: $font-size-600;
+    font-weight: 600;
+    line-height: 2rem;
+}
+h4.titleh4 {
+    font-size: $font-size-500;
+    font-weight: 600;
+    line-height: 1.75rem;
 }

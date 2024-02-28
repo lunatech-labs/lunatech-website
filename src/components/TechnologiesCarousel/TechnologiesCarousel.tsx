@@ -47,7 +47,7 @@ const TechnologiesCarousel = () => {
         <div className="technologies-carousel">
             <div className='technologies-carousel__desc'>
                 <Category content={<Trans i18nKey="technologies.category2" />} />
-                <Title content={<>Browse our <span>tech services</span></>} />
+                <Title level={2}>Browse our <span>tech services</span></Title>
                 <Text className="mgb32">With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.</Text>
                 <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
