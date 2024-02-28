@@ -8,7 +8,7 @@ interface HamburgerProps {
 const Hamburger: React.FC<HamburgerProps> = ({onClick}) => {
     return (
         <button className="hamburger" onClick={onClick}>
-            <p className="hamburger__text">MENU</p>
+            <p className="hamburger__text">menu</p>
             <div className="hamburger__icon">
                 <span className="hamburger__dot"> </span>
                 <span className="hamburger__dot"> </span>

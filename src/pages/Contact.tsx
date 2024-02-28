@@ -1,3 +1,4 @@
+import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
 import Input from '@components/Input/Input';
 import Address from '@components/Adress/Adress';
@@ -27,10 +28,8 @@ const Contact = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Breadcrumbs />
-                            <h1 className="hero__title"><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</h1>
-                            <Text>
-                                <Trans i18nKey="contact.text" />
-                            </Text>
+                            <Title level={1}><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</Title>
+                            <Text size="large"><Trans i18nKey="contact.text" /></Text>
                         </div>
                     </Grid>
                 </Container>

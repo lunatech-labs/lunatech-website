@@ -63,7 +63,7 @@ const Home = () => {
                     <Grid>
                         <div className="hero__content">
                             <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
-                            <Text className="mgb32"><Trans i18nKey="hero.text" /></Text>
+                            <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
                                 <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
                                     <Trans i18nKey="hero.button1" />
@@ -89,7 +89,7 @@ const Home = () => {
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.category" />} />
                             <Title level={2}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
-                            <Text className="mgb32"><Trans i18nKey="about.text" /></Text>
+                            <Text size="large" className="mgb32"><Trans i18nKey="about.text" /></Text>
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Grid>
@@ -118,7 +118,7 @@ const Home = () => {
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey="service.subtitle" />} />
                                 <Title level={2}>Meet your needs with our <span>enterprise services</span></Title>
-                                <Text>
+                                <Text size="large">
                                     <Trans i18nKey="service.text" />
                                 </Text>
                             </div>
@@ -171,24 +171,24 @@ const Home = () => {
                         <div className="blog__articles">
                             <div className="blog__content">
                                 <div className="blog__left">
-                                    <div className="dflex">
+                                    <div className="dflex mgb24">
                                         <p className="blog__category">Marketing</p>
                                         <p className="blog__date">September 1, 2022</p>
                                     </div>
-                                    <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
-                                    <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
+                                    <Title level={3}>Semantic Kernel SDK and Quarkus</Title>
+                                    <Text size="medium" className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
                                     <ButtonSecondary to={""} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
                             <div className="blog__content">
                                 <div className="blog__left">
-                                    <div className="dflex">
+                                    <div className="dflex mgb24">
                                         <p className="blog__category">Marketing</p>
                                         <p className="blog__date">September 1, 2022</p>
                                     </div>
-                                    <p className="blog__title">Semantic Kernel SDK and Quarkus</p>
-                                    <Text className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
+                                    <Title level={3}>Semantic Kernel SDK and Quarkus</Title>
+                                    <Text size="medium" className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
                                     <ButtonSecondary to={""} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />

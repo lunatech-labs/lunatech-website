@@ -11,7 +11,7 @@
         }
     }
     &__title {
-        font-size: $font-size-600;
+        font-size: $font-size-24;
         margin-bottom: 32px;
         @include phone-landscape {
             margin-bottom: 16px;
@@ -26,7 +26,7 @@
         }
     }
     &__subtitle {
-        font-size: $font-size-500;
+        font-size: $font-size-20;
         line-height: 2.25rem;
         color: $lightGray;;
     }

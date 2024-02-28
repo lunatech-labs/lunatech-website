@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import Title from '@components/Title/Title';
+import OfficeModal from '@components/OfficeModal/OfficeModal';
 import Add from '/pixelarticons_add.svg';
 import "./OfficeCard.scss";
-import OfficeModal from '@components/OfficeModal/OfficeModal';
 
 interface CardProps {
     title: string;
@@ -34,7 +35,7 @@ const OfficeCard = (props: CardProps) => {
             <div className="office-card">
                 <div className="dflex fd-c">
                     {props.children}
-                    <h3 className="office-card__title">{props.title}</h3>
+                    <Title level={4}>{props.title}</Title>
                 </div>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>

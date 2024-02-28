@@ -93,23 +93,6 @@ nav.nav-bar--hidden {
             transform: rotate(-45deg);
         }
     }
-    &__title {
-        font-size: $font-size-900;
-        font-weight: 700;
-        line-height: 5.5rem;
-        margin-bottom: 16px;
-        @include phone-portrait {
-            font-size: 3.5rem;
-            line-height: 4.5rem;
-        }
-        span {
-            @include red-title;
-        }
-    }
-    &__text {
-        font-size: $font-size-600;
-        color: $lightGray;
-    }
 }
 
 /* ------------- ABOUT US BLOCK ------------- */
@@ -253,12 +236,6 @@ nav.nav-bar--hidden {
         text-transform: uppercase;
         color: $lightGray;
         letter-spacing: 4px;
-    }
-    &__title {
-        margin-top: 24px;
-        font-weight: 600;
-        font-size: $font-size-600;
-        margin-bottom: 8px;
     }
     &__img {
         grid-column: span 5;

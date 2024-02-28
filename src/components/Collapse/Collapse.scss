@@ -13,7 +13,7 @@
         margin-bottom: 24px;
     }
     &__top {
-        font-size: $font-size-600;
+        font-size: $font-size-24;
         font-weight: 600;
         display: flex;
         justify-content: space-between;
@@ -30,12 +30,6 @@
             width: 16px;
             transition: all 0.3s ease-in-out;
         }
-    }
-    &__text {
-        font-size: $font-size-500;
-        line-height: 2rem;
-        color: $lightGray;
-        margin-top: 24px;
     }
     &.is-collapsed {
         @include border-gradient;

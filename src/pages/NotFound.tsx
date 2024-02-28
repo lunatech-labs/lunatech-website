@@ -11,7 +11,7 @@ const NotFound = () => {
                 <div className="not-found">
                     <p className="not-found__title">404</p>
                     <h1 className="hero__title">Look like you're lost in <span>space!</span></h1>
-                    <Text className="mgb64">Oops the spaceship left without you...<br />The page you requested could not be found.</Text>
+                    <Text size="large" className="mgb64">Oops the spaceship left without you...<br />The page you requested could not be found.</Text>
                     <ButtonPrimary to={"/"} iconUrl={HomeIcon} size="large"><Trans i18nKey="buttonHomePage" /></ButtonPrimary>
                 </div>
             </Container>

@@ -1,3 +1,5 @@
+import Title from "@components/Title/Title";
+import Text from "@components/Text/Text";
 import "./BusinessCard.scss";
 
 interface BusinessProps {
@@ -13,8 +15,8 @@ const BusinessCard = (props: BusinessProps) => {
                 <img className="icon__img" src={props.imageUrl} alt="" />
             </div>
             <div className="businessCard__content">
-                <p className="businessCard__title">{props.title}</p>
-                <p className="businessCard__text">{props.text}</p>
+                <Title level={4}>{props.title}</Title>
+                <Text size="small">{props.text}</Text>
             </div>
         </div>
 

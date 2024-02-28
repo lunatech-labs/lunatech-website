@@ -53,7 +53,7 @@
         }
         a {
             @include flexbox;
-            font-size: $font-size-600;
+            font-size: $font-size-24;
             color: white;
         }
     }
@@ -73,7 +73,7 @@
     }
     &__menu-item {
         a {
-            font-size: $font-size-900;
+            font-size: $font-size-64;
             color: $lightGray;
             line-height: 5.5rem;
             font-weight: 700;
@@ -84,12 +84,12 @@
                 color: white;
             }
             @include phone-portrait {
-                font-size: $font-size-800;
+                font-size: $font-size-40;
                 line-height: 4.5rem;
             }
 
             @include custom-height {
-                font-size: $font-size-700;
+                font-size: $font-size-24;
                 line-height: 0;
             }
         }

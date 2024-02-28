@@ -19,7 +19,7 @@ const ServiceLegacyTransformation = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Breadcrumbs />
-                            <h1 className="hero__title"><Trans i18nKey="serviceLegacyTransformation.title" /></h1>
+                            <Title level={1}><Trans i18nKey="serviceLegacyTransformation.title" /></Title>
                         </div>
                     </Grid>
                 </Container>

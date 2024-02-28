@@ -59,7 +59,7 @@ const Articles = () => {
                                         <p className="blog__date">{article.publication_date}</p>
                                     </div>
                                     <p className="blog__title">{article.title}</p>
-                                    <Text className="mgb24">{truncateText(article.excerpt, 25)}</Text>
+                                    <Text size="medium" className="mgb24">{truncateText(article.excerpt, 25)}</Text>
                                     <ButtonSecondary iconUrl={ArrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={article.image_url} alt="Blog img" />

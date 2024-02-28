@@ -1,3 +1,5 @@
+import Title from "@components/Title/Title";
+import Text from "@components/Text/Text";
 import "./TechnologieCardCarousel.scss";
 
 interface CardProps {
@@ -11,8 +13,8 @@ const TechnologieCardCarousel = (props: CardProps) => {
     return (
         <div className={`technologie-card-carousel ${props.className}`}>
             {props.children}
-            <h3 className="technologie-card-carousel__title">{props.title}</h3>
-            <p className="technologie-card-carousel__text">{props.text}</p>
+            <Title level={3}>{props.title}</Title>
+            <Text size="medium" className="mgb16">{props.text}</Text>
         </div>
     );
 };

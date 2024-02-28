@@ -1,4 +1,6 @@
 import { useTranslation, Trans } from 'react-i18next';
+import Title from "@components/Title/Title";
+import Text from '@components/Text/Text';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import "./ServiceCard.scss";
 import ArrowRight from '/arrow-right.svg';
@@ -16,8 +18,8 @@ const ServiceCard = (props: CardProps) => {
     return (
         <>
             {props.children}
-            <h3 className="service-card__title">{props.title}</h3>
-            <p className="service-card__text">{props.text}</p>
+            <Title level={3}>{props.title}</Title>
+            <Text size="medium" className="mgb16">{props.text}</Text>
             <ButtonSecondary iconUrl={ArrowRight} to={props.to} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
         </>
     );
