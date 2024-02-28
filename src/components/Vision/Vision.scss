@@ -34,7 +34,6 @@
             .vision__text {
                 @include tablet {text-align: right;}
             }
-            
         }
     }
     &__card {
@@ -54,11 +53,6 @@
         width: 96px;
         height: 96px;
         cursor: pointer;
-    }
-    &__text {
-        font-size: $font-size-500;
-        line-height: 2rem;
-        color: $lightGray;
     }
     &__illustration {
         @include absolute-center;

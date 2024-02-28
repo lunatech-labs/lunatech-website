@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Title from '@components/Title/Title';
+import Text from '@components/Text/Text';
 import ArrowChevronRight from '/arrow-chevron-right.svg';
 import "./Collapse.scss";
 
@@ -18,13 +20,13 @@ const Collapse = (props: CollapseProps) => {
     return (
         <div className="collapse" onClick={toggleCollapse}>
             <div className="collapse__top">
-                <h3>{props.title}</h3>
+                <Title level={3}>{props.title}</Title>
                 <div className="collapse__icon">
                     <img src={ArrowChevronRight} alt="Collapse Arrow" />
                 </div>
             </div>
             {isOpen &&
-                <div className="collapse__text">{props.text}</div>
+                <Text size="medium" className="mgt24">{props.text}</Text>
             }
         </div>
     )

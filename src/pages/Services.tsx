@@ -30,7 +30,7 @@ const Services = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Breadcrumbs />
-                            <h1 className="hero__title"><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></h1>
+                            <Title level={1}><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></Title>
                         </div>
                         <div className="col-lg-6">
                             <img className="hero__moon" src={Moon} alt="Moon" />
@@ -70,7 +70,7 @@ const Services = () => {
                     <div className="mgb64 dflex fd-c">
                         <Category content={<Trans i18nKey="services.subtitle1" />} />
                         <Title className="ta-c" level={2}><span>Lunatech</span> can help you with the following</Title>
-                        <Text className="ta-c">{<Trans i18nKey="service.text2" />}</Text>
+                        <Text size="large" className="ta-c">{<Trans i18nKey="service.text2" />}</Text>
                     </div>
                     <Spotlight className="spotlight__layout">
                         <SpotlightCard>

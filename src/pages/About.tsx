@@ -31,7 +31,7 @@ const About = () => {
                     <Grid>
                         <div className="col-lg-6">
                             <Breadcrumbs />
-                            <h1 className="hero__title"><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></h1>
+                            <Title level={1}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
                         </div>
                         <div className="col-lg-6">
                             <img className="hero__moon" src={Moon} alt="Moon" />
@@ -49,7 +49,7 @@ const About = () => {
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="about.subtitle2" />} />
                             <Title level={2}>Close to customers across <span>Europe</span></Title>
-                            <Text className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
+                            <Text size="large" className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
                             <div className="mgt64">
                                 <Grid>
                                     <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
@@ -76,7 +76,7 @@ const About = () => {
                         <div className="col-lg-6">
                             <Category content={<Trans i18nKey="about.subtitle4" />} />
                             <Title level={2}><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></Title>
-                            <Text className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
+                            <Text size="large" className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
                         </div>
                         <div className="col-lg-6">
                             <img className="w100" src={AboutUs2} alt="" />

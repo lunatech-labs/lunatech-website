@@ -1,7 +1,15 @@
 @import "/src/styles/Variables.scss";
 
-.text {
-    font-size: $font-size-500;
-    line-height: 2rem;
+.text-small {
+    font-size: $font-size-16;
     color: $lightGray;
 }
+.text-medium {
+    font-size: $font-size-18;
+    color: $lightGray;
+}
+.text-large {
+    font-size: $font-size-22;
+    color: $lightGray;
+}
+
