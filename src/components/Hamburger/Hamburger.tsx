@@ -7,19 +7,15 @@ interface HamburgerProps {
 
 const Hamburger: React.FC<HamburgerProps> = ({onClick}) => {
     return (
-        <div className="hamburger">
-            <p className="hamburger__text">menu</p>
-            <button className="hamburger__icon" onClick={onClick}>
+        <button className="hamburger" onClick={onClick}>
+            <p className="hamburger__text">MENU</p>
+            <div className="hamburger__icon">
                 <span className="hamburger__dot"> </span>
                 <span className="hamburger__dot"> </span>
                 <span className="hamburger__dot"> </span>
-            </button>
-        </div>
+            </div>
+        </button>
     );
 }
 
 export default Hamburger;
-
-
-
-
