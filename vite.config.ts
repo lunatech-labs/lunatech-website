@@ -1,20 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import path from 'path';
-import copy from 'vite-plugin-copy';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/',
-  plugins: [
-    react(),
-    copy({
-      targets: [
-        { src: '.htaccess', dest: '/var/www/bas/site/public/' }
-      ],
-      hook: 'writeBundle' // Use the appropriate hook to ensure it happens at the right time
-    })
-  ],
+  plugins: [react()],
   build: {
     outDir: '/var/www/bas/site/public/',
   },
@@ -29,4 +20,4 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
     }
   }
-});
+})
