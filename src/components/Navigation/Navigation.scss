@@ -80,6 +80,10 @@
             &:hover {
                 color: white;
             }
+            @include phone-portrait {
+                font-size: $font-size-800;
+                line-height: 4.5rem;
+            }
         }
     }
     &__footer {
@@ -93,6 +97,9 @@
         padding: 0 64px;
         height: 100%;
         @include flexbox;
+        @include phone-portrait {
+            width: 50%;
+        }
     }
     &__right {
         padding: 0 64px;
