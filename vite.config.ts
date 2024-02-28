@@ -1,13 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path';
+import path from 'path'
+import dotenv from 'dotenv'
 
 // https://vitejs.dev/config/
+
+dotenv.config()
+
+const outDir = process.env.VITE_BUILD_OUTDIR || 'dist'
+
 export default defineConfig({
   base: '/',
   plugins: [react()],
   build: {
-    outDir: '/var/www/bas/site/public/',
+    outDir: outDir,
   },
   server: {
     host: '0.0.0.0',
