@@ -77,7 +77,7 @@
         "subtitle": "Contact",
         "title": "Let's work ",
         "titleColor": "together",
-        "text": "Let us help you become even greater at what you do.  Fill out the following form and we will get back to you.",
+        "text": "Let us help you become even greater at what you do. Fill out the following form and we will get back to you.",
         "label":
         {
             "fullName": "What's your name?",
@@ -115,7 +115,10 @@
         "copyright": "All rights reserved.",
         "terms": "Terms of Services",
         "title1": "Plan",
-        "title2": "Get connected"
+        "title2": "Get connected",
+        "blog": "Blog",
+        "careers": "Careers",
+        "contact": "Contact"
     },
     "serviceSoftwareDefinedVehicle": {
         "title": "Software Defined Vehicle"

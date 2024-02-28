@@ -49,9 +49,9 @@ const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
                             <div className="footer__category">
                                 <p className="footer__title"><Trans i18nKey="footer.title2" /></p>
                                 <ul className="footer__list">
-                                    <li className="footer__item"><a href="https://blog.lunatech.com/" target="_blank">Blog</a></li>
-                                    <li className="footer__item"><a href="https://recruitment.lunatech.com/" target="_blank">Careers</a></li>
-                                    <li className="footer__item"><a href="/contact">Contact</a></li>
+                                    <li className="footer__item"><a href="https://blog.lunatech.com/" target="_blank"><Trans i18nKey="footer.blog" /></a></li>
+                                    <li className="footer__item"><a href="https://recruitment.lunatech.com/" target="_blank"><Trans i18nKey="footer.careers" /></a></li>
+                                    <li className="footer__item"><a href="/contact"><Trans i18nKey="footer.contact" /></a></li>
                                 </ul>
                             </div>
                         </div>
