@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc && vite build && echo 'Build complete. Serve the /dist directory with Apache.'",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && shx cp .htaccess var/www/bas/site/public/'",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 8080"
   },
