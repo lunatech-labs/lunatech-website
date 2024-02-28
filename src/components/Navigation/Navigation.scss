@@ -67,6 +67,9 @@
             width: 100%;
             padding-top: 100px;
         }
+        @include custom-height {
+            padding: 64px 64px 0 32px;
+        }
     }
     &__menu-item {
         a {
@@ -83,6 +86,11 @@
             @include phone-portrait {
                 font-size: $font-size-800;
                 line-height: 4.5rem;
+            }
+
+            @include custom-height {
+                font-size: $font-size-700;
+                line-height: 0;
             }
         }
     }

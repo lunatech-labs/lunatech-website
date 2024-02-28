@@ -4,6 +4,9 @@
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 // @media (max-width: 1399.98px) { ... }
 // ... { ... }
+@mixin custom-height {
+    @media (max-height: 800px) {@content;}
+}
 
 // `xxl` applies to very large devices (desktops-up, less than 1560px)
 @mixin desktop-up {
