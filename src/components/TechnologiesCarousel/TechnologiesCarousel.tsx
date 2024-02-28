@@ -49,7 +49,7 @@ const TechnologiesCarousel = () => {
                 <Category content={<Trans i18nKey="technologies.category2" />} />
                 <Title level={2}>Browse our <span>tech services</span></Title>
                 <Text size="large" className="mgb32">With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.</Text>
-                <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
+                <ButtonSecondary iconUrl={ArrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
             <div className='technologies-carousel__content'>
                 <div className="technologies-carousel__slider" ref={wrapperRef}>
