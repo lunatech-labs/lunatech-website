@@ -7,7 +7,7 @@ import Linkedin from '/linkedin.svg';
 import Twitter from '/twitter.svg';
 
 import "./Navigation.scss";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface NavigationProps {
     onClick: (event: React.MouseEvent<HTMLLIElement>) => void;
@@ -32,13 +32,6 @@ const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
     const parts = pathDesc.split(" ");
     const lastWord = parts.pop();
     const initialText = parts.join(" ");
-
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = '';
-        };
-    }, []);
     
     return (
         <div className="navigation">
