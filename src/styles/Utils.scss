@@ -21,6 +21,9 @@
         grid-column: span 6;
         @include phone-landscape {grid-column: span 12;}
     }
+    .col-md-12 {
+        grid-column: span 12;
+    }
 }
 /* --------------- Colors --------------- */
 .bg-bgMediumBlue {background: $bgMediumBlue;}

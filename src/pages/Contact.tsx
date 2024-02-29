@@ -133,7 +133,7 @@ const Contact = () => {
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</Title>
                             <Text size="large"><Trans i18nKey="contact.text" /></Text>

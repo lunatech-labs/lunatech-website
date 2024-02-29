@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 br {
-    @include phone-landscape {
+    @include tablet {
         display: none;
     }
 }

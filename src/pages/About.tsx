@@ -30,13 +30,11 @@ const About = () => {
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
                         </div>
-                        <div className="col-lg-6">
-                            <img className="hero__moon" src={Moon} alt="Moon" />
-                        </div>
+                        <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
                 </Container>
             </Section>
@@ -78,12 +76,12 @@ const About = () => {
             <Section className="bg-bgMediumBlue">
                 <Container>
                     <Grid className="ai-c">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Category content={<Trans i18nKey="about.subtitle4" />} />
                             <Title level={2}><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></Title>
                             <Text size="large" className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <img className="w100" src={AboutUs2} alt="" />
                         </div>
                     </Grid>
