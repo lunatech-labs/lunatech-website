@@ -13,15 +13,10 @@ const TechnologieCardCarousel = (props: CardProps) => {
     return (
         <div className={`technologie-card-carousel ${props.className}`}>
             {props.children}
-            <Title level={3}>{props.title}</Title>
-            <Text size="medium" className="mgb16">{props.text}</Text>
+            <Title level={4}>{props.title}</Title>
+            <Text size="small" className="mgb16">{props.text}</Text>
         </div>
     );
 };
 
 export default TechnologieCardCarousel;
-
-
-
-
-
