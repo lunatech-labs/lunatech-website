@@ -1,5 +1,4 @@
 import { Trans } from 'react-i18next';
-import Section from '@components/Section/Section';
 import Container from "@components/Container/Container";
 import Title from '@components/Title/Title';
 import Text from "@components/Text/Text";
@@ -8,7 +7,7 @@ import HomeIcon from '/home.svg';
 
 const NotFound = () => {
     return (
-        <Section>
+        <div className="dflex mh100">
             <Container>
                 <div className="not-found">
                     <p className="not-found__title">404</p>
@@ -27,7 +26,7 @@ const NotFound = () => {
                 <div className="circle__single"></div>
                 <div className="circle__single"></div>
             </div>
-        </Section>
+        </div>
     );
 };
 

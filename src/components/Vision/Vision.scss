@@ -20,7 +20,7 @@
             flex-direction: column;
             align-items: flex-end;
             @include tablet {align-items: initial;}
-            .vision__text {
+            p {
                 text-align: right;
                 @include tablet {text-align: initial;}
             }
@@ -31,7 +31,7 @@
                 flex-direction: column;
                 align-items: flex-end;
             }
-            .vision__text {
+            p {
                 @include tablet {text-align: right;}
             }
         }

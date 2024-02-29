@@ -6,10 +6,12 @@
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 24px;
+    @include desktop {grid-template-columns: 50% 50%;}
     &__buttons {
         display: flex;
         justify-content: flex-end;
         gap: 16px;
+        margin-right: 24px;
         button {
             width: 64px;
             height: 64px;
@@ -39,6 +41,12 @@
         gap: 24px;
         margin-bottom: 64px;
         scrollbar-width: none;
+        > div > div {
+            width: 424px;
+            @include phone-portrait {
+                width: 290px;
+            }
+        }
         @include phone-portrait {
             flex-direction: column;
         }

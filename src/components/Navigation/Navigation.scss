@@ -14,6 +14,11 @@
     transform: translateY(-110%);
     transition: transform .3s .1s ease-in-out;
     pointer-events: auto;
+    @include phone-landscape {
+        @include flexbox;
+        justify-content: space-between;
+        flex-direction: column;
+    }
     &--active {
         transform: translateX(0px);
     }
@@ -21,8 +26,10 @@
         @include flexbox;
         justify-content: space-between;
         height: calc(100% - 96px);
-        @include phone-portrait {
-            flex-direction: column-reverse;
+        @include phone-landscape {
+            flex-direction: column;
+            height: initial;
+            width: 100%;
         }
     }
     &__social {
@@ -33,27 +40,34 @@
         border-right: 1px solid (rgb(255 255 255 / 25%));
         height: 100%;
         width: 384px;
-        @include phone-portrait {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
+        @include tablet {
+            padding: 32px;
             border-right: none;
-            width: 100%;
         }
         @include phone-landscape {
-            width: 290px;
+            display: none;
         }
     }
     &__social-item {
         &:not(:last-child) {
             margin-bottom: 24px;
         }
+        @include phone-landscape {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+        @include phone-landscape {
+            &:not(:last-child) {
+                margin-bottom: -18px;;
+            }
+        }
         img {
             margin-right: 16px;
         }
         a {
             @include flexbox;
-            font-size: $font-size-24;
+            font-size: $font-size-21;
             color: white;
         }
     }
@@ -63,34 +77,32 @@
         display: flex;
         flex-direction: column;
         align-items: end;
-        @include phone-portrait {
+        @include tablet {padding: 32px;}
+        @include phone-landscape {
+            padding-top: 0;
             width: 100%;
-            padding-top: 100px;
         }
-        @include custom-height {
-            padding: 64px 64px 0 32px;
+        @include phone-landscape {
+            padding-top: 100px;
         }
     }
     &__menu-item {
+        @include phone-landscape {
+            margin-bottom: -20px;
+        }
         a {
             font-size: $font-size-64;
             color: $lightGray;
             line-height: 5.5rem;
             font-weight: 700;
-            &.active {
-                @include red-title;
+            &.active {@include red-title;}
+            &:hover {color: white;}
+            @include phone-landscape {
+                font-size: 3rem;
+                line-height: initial;
             }
-            &:hover {
-                color: white;
-            }
-            @include phone-portrait {
-                font-size: $font-size-40;
-                line-height: 4.5rem;
-            }
-
-            @include custom-height {
-                font-size: $font-size-24;
-                line-height: 0;
+            @include phone-landscape {
+                font-size: 2rem;
             }
         }
     }
@@ -98,6 +110,12 @@
         @include flexbox;
         border-top: 1px solid (rgb(255 255 255 / 25%));
         height: 96px;
+        @include tablet {
+            justify-content: space-between;
+        }
+        @include phone-landscape {
+            width: 100%;
+        }
     }
     &__left {
         border-right: 1px solid (rgb(255 255 255 / 25%));
@@ -105,8 +123,12 @@
         padding: 0 64px;
         height: 100%;
         @include flexbox;
-        @include phone-portrait {
-            width: 50%;
+        @include tablet {
+            border-right: none;
+            width: 25%;
+        }
+        @include phone-landscape {
+            width: 100%;
         }
     }
     &__right {
@@ -115,10 +137,9 @@
         width: calc(100% - 384px);
         @include flexbox;
         justify-content: flex-end;
+        @include tablet {width: 75%;}
         @include phone-landscape {
-            padding: 0;
-            width: 100%;
-            justify-content: center;
+            display: none;
         }
     }
     &__way {
@@ -143,4 +164,3 @@
         -webkit-text-fill-color: transparent;
     }
 }
-
