@@ -20,8 +20,6 @@ br {
     }
 }
 
-
-
 /* ------------- HEADER BLOCK ------------- */
 nav {
     height: 4em;
@@ -159,6 +157,10 @@ nav.nav-bar--hidden {
     background: $bgMediumBlue;
     border-radius: 16px;
     @include tablet {padding: 80px;}
+    @include phone-landscape {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     @include phone-portrait {
         flex-direction: column;
         align-items: flex-start;
@@ -194,7 +196,7 @@ nav.nav-bar--hidden {
         @include dark-gradient;
         padding: 80px;
         @include tablet {padding: 64px;}
-        @include phone-portrait {padding: 24px;}
+        @include phone-landscape {padding: 24px;}
         &:not(:last-child) {margin-bottom: 24px;}
         .blog__left {
             @include tablet {order: 2;}

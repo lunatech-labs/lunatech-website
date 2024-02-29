@@ -113,7 +113,7 @@ const About = () => {
             <Section>
                 <Container>
                     <div className="contact">
-                        <div>
+                        <div className="mgb32-sp">
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>

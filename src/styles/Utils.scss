@@ -25,6 +25,9 @@
         grid-column: span 12;
     }
 }
+@include phone-landscape {
+    .mgb32-sp {margin-bottom: 32px;}
+}
 /* --------------- Colors --------------- */
 .bg-bgMediumBlue {background: $bgMediumBlue;}
 .bg-bgDarkBlue {background: $bgDarkBlue;}
