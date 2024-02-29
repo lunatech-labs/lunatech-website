@@ -15,7 +15,6 @@
     transition: transform .3s .1s ease-in-out;
     pointer-events: auto;
     @include phone-landscape {
-        height: initial;
         @include flexbox;
         justify-content: space-between;
         flex-direction: column;
@@ -46,9 +45,7 @@
             border-right: none;
         }
         @include phone-landscape {
-            width: 100%;
-            order: 2;
-            align-items: flex-end;
+            display: none;
         }
     }
     &__social-item {
@@ -60,7 +57,7 @@
                 margin-bottom: 0;
             }
         }
-        @include phone-portrait {
+        @include phone-landscape {
             &:not(:last-child) {
                 margin-bottom: -18px;;
             }
@@ -85,9 +82,12 @@
             padding-top: 0;
             width: 100%;
         }
+        @include phone-landscape {
+            padding-top: 100px;
+        }
     }
     &__menu-item {
-        @include phone-portrait {
+        @include phone-landscape {
             margin-bottom: -20px;
         }
         a {
@@ -101,7 +101,7 @@
                 font-size: 3rem;
                 line-height: initial;
             }
-            @include phone-portrait {
+            @include phone-landscape {
                 font-size: 2rem;
             }
         }
@@ -126,6 +126,9 @@
         @include tablet {
             border-right: none;
             width: 25%;
+        }
+        @include phone-landscape {
+            width: 100%;
         }
     }
     &__right {
