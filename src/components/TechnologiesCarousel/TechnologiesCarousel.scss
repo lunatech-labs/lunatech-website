@@ -40,7 +40,10 @@
         margin-bottom: 64px;
         scrollbar-width: none;
         > div > div {
-            min-width: 424px;
+            width: 424px;
+            @include phone-portrait {
+                width: 290px;
+            }
         }
         @include phone-portrait {
             flex-direction: column;
