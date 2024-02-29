@@ -6,6 +6,7 @@ import Header from "@components/Header/Header";
 import Footer from '@components/Footer/Footer';
 import RoutesMap from './RoutesMap';
 import "./App.scss";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     const { i18n } = useTranslation();
@@ -27,6 +28,7 @@ function App() {
 
     return (
         <>
+            <ScrollToTop />
             <nav className={navClassList.join(" ")}>
                 <Header changeLanguage={changeLanguage} />
             </nav>
