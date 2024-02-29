@@ -30,6 +30,7 @@
 .w100 {width: 100%;}
 .mw424 {min-width: 424px;}
 .mwidthI {min-width: initial;}
+.mh100 {min-height: 100vh;}
 
 
 /* --------------- Margin --------------- */
@@ -67,9 +68,7 @@
 .pad48 {padding: 48px;}
 .pad96 {
     padding: 96px;
-    @include phone-landscape {
-        padding: 48px;
-    }
+    @include tablet {padding: 48px;}
 }
 .pad48-16 {padding: 48px 16px 16px 16px;}
 .pdt256 {padding-top: 256px;}

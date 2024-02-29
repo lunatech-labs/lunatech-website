@@ -43,11 +43,9 @@ const About = () => {
 
             <Section>
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6">
-                            <img className="w100" src={AboutUs} alt="" />
-                        </div>
-                        <div className="col-lg-6">
+                    <div className="about">
+                        <img className="about__img" src={AboutUs} alt="" />
+                        <div className="about__content">
                             <Category content={<Trans i18nKey="about.subtitle2" />} />
                             <Title level={2}>Close to customers across <span>Europe</span></Title>
                             <Text size="large" className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
@@ -71,7 +69,7 @@ const About = () => {
                                 </Spotlight>
                             </div>
                         </div>
-                    </Grid>
+                    </div>
                 </Container>
             </Section>
 

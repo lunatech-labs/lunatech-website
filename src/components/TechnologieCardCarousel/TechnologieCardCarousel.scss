@@ -4,6 +4,7 @@
 
 .technologie-card-carousel {
     text-align: left;
+    width: 100%;
     @include phone-portrait {
         min-width: 50%;
         min-height: 50%;

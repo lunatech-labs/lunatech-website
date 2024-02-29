@@ -33,6 +33,10 @@
         border-right: 1px solid (rgb(255 255 255 / 25%));
         height: 100%;
         width: 384px;
+        @include tablet {
+            padding: 32px;
+            border-right: none;
+        }
         @include phone-portrait {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -53,7 +57,7 @@
         }
         a {
             @include flexbox;
-            font-size: $font-size-24;
+            font-size: $font-size-21;
             color: white;
         }
     }
@@ -63,12 +67,10 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+        @include tablet {padding: 32px;}
         @include phone-portrait {
             width: 100%;
             padding-top: 100px;
-        }
-        @include custom-height {
-            padding: 64px 64px 0 32px;
         }
     }
     &__menu-item {
@@ -87,17 +89,15 @@
                 font-size: $font-size-40;
                 line-height: 4.5rem;
             }
-
-            @include custom-height {
-                font-size: $font-size-24;
-                line-height: 0;
-            }
         }
     }
     &__footer {
         @include flexbox;
         border-top: 1px solid (rgb(255 255 255 / 25%));
         height: 96px;
+        @include tablet {
+            justify-content: space-between;
+        }
     }
     &__left {
         border-right: 1px solid (rgb(255 255 255 / 25%));
@@ -105,8 +105,9 @@
         padding: 0 64px;
         height: 100%;
         @include flexbox;
-        @include phone-portrait {
-            width: 50%;
+        @include tablet {
+            border-right: none;
+            width: 25%;
         }
     }
     &__right {
@@ -115,6 +116,7 @@
         width: calc(100% - 384px);
         @include flexbox;
         justify-content: flex-end;
+        @include tablet {width: 75%;}
         @include phone-landscape {
             padding: 0;
             width: 100%;

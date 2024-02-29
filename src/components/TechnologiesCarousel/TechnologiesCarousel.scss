@@ -6,13 +6,12 @@
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 24px;
-    @include tablet {
-        grid-template-columns: 50% 50%;
-    }
+    @include desktop {grid-template-columns: 50% 50%;}
     &__buttons {
         display: flex;
         justify-content: flex-end;
         gap: 16px;
+        margin-right: 24px;
         button {
             width: 64px;
             height: 64px;

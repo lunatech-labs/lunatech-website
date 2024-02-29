@@ -72,6 +72,7 @@ nav.nav-bar--hidden {
         width: 220px;
         right: 295px;
         top: 92px;
+        @include desktop {right: 124px;}
         @include phone-portrait {
             top: initial;
             right: 24px;
@@ -99,15 +100,13 @@ nav.nav-bar--hidden {
     &__img {
         grid-column: span 5;
         width: 100%;
-        @include phone-portrait {
-            grid-column: span 12;
-        }
+        @include desktop {grid-column: span 4;}
+        @include tablet {grid-column: span 12;}
     }
     &__content {
         grid-column: 7 / 13;
-        @include phone-portrait {
-            grid-column: span 12;
-        }
+        @include desktop {grid-column: span 8;}
+        @include tablet {grid-column: span 12;}
     }
 }
 
@@ -159,7 +158,7 @@ nav.nav-bar--hidden {
     margin-bottom: 128px;
     background: $bgMediumBlue;
     border-radius: 16px;
-    @include phone-landscape {padding: 80px;}
+    @include tablet {padding: 80px;}
     @include phone-portrait {
         flex-direction: column;
         align-items: flex-start;
@@ -182,7 +181,6 @@ nav.nav-bar--hidden {
     }
     
 }
-
 .blog {
     &__top {
         text-align: center;
@@ -195,30 +193,22 @@ nav.nav-bar--hidden {
         @include grid;
         @include dark-gradient;
         padding: 80px;
-        @include phone-portrait {
-            padding: 24px;
-        }
-        &:not(:last-child) {
-            margin-bottom: 24px;
-        }
+        @include tablet {padding: 64px;}
+        @include phone-portrait {padding: 24px;}
+        &:not(:last-child) {margin-bottom: 24px;}
         .blog__left {
-            &.image-left {
-                order: 2;
-            }
+            @include tablet {order: 2;}
+            &.image-left {order: 2;}
         }
         &:first-child {
             .blog__left {
-                @include phone-portrait {
-                    order: 1;
-                }
+                @include phone-portrait {order: 1;}
             }
         }
     }
     &__left {
         grid-column: span 6;
-        @include phone-portrait {
-            grid-column: span 12;
-        }
+        @include tablet {grid-column: span 12;}
     }
     &__category {
         @include flexbox;
@@ -235,9 +225,9 @@ nav.nav-bar--hidden {
         letter-spacing: 4px;
     }
     &__img {
-        grid-column: span 5;
+        grid-column: span 6;
         width: 100%;
-        @include phone-portrait {
+        @include tablet {
             grid-column: span 12;
         }
     }
