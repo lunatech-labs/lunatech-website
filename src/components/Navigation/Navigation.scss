@@ -31,9 +31,6 @@
             flex-direction: column;
             height: initial;
         }
-        @include phone-portrait {
-            flex-direction: column-reverse;
-        }
     }
     &__social {
         display: flex;
@@ -51,13 +48,6 @@
             width: 100%;
             order: 2;
             align-items: flex-end;
-        }
-        @include phone-portrait {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            border-right: none;
-            width: 100%;
         }
     }
     &__social-item {
@@ -86,6 +76,7 @@
         align-items: end;
         @include tablet {padding: 32px;}
         @include phone-landscape {
+            padding: 0;
             width: 100%;
         }
         @include phone-portrait {
