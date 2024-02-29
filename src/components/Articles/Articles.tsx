@@ -50,7 +50,7 @@ const Articles = () => {
         <ul>
             {articles.map((article, index) => (
                 <Spotlight className="spotlight__layout">
-                    <SpotlightCard>
+                    <SpotlightCard padding="pad80">
                         <li key={article.slug} className="article">
                             <div className="blog__content">
                                 <div className={`blog__left ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
