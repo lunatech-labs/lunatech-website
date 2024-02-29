@@ -73,22 +73,22 @@ const Services = () => {
                         <Text size="large" className="ta-c">{<Trans i18nKey="service.text2" />}</Text>
                     </div>
                     <Spotlight className="spotlight__layout">
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/software-defined-vehicle' title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={Scala} />
                             </ServiceCard>
                         </SpotlightCard>
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/custom-software-development' title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={CustomSoftware} />
                             </ServiceCard>
                         </SpotlightCard>
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/system-integration' title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={SystemIntegration} />
                             </ServiceCard>
                         </SpotlightCard>
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/legacy-transformation' title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={LegacyTransformation} />
                             </ServiceCard>

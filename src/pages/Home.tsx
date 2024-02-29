@@ -92,17 +92,23 @@ const Home = () => {
                             <Text size="large" className="mgb32"><Trans i18nKey="about.text" /></Text>
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
-                                <Grid>
-                                    <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                        <Icon imageUrl={Buildings1} size="medium" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                        <Icon imageUrl={Buildings2} size="medium" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                        <Icon imageUrl={Buildings3} size="medium" />
-                                    </OfficeCard>
-                                </Grid>
+                                <Spotlight className="spotlight__layout">
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
+                                            <Icon imageUrl={Buildings1} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
+                                            <Icon imageUrl={Buildings2} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
+                                            <Icon imageUrl={Buildings3} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                </Spotlight>
                             </div>
                         </div>
                     </div>
@@ -124,24 +130,23 @@ const Home = () => {
                             </div>
                             <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                         </div>
-                            
                         <Spotlight className="spotlight__layout">
-                            <SpotlightCard>
+                            <SpotlightCard className="col-lg-6" padding="pad96">
                                 <ServiceCard to='/services/software-defined-vehicle' title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={SdvIcon} />
                                 </ServiceCard>
                             </SpotlightCard>
-                            <SpotlightCard>
+                            <SpotlightCard className="col-lg-6" padding="pad96">
                                 <ServiceCard to='/services/custom-software-development' title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={CustomSoftware} />
                                 </ServiceCard>
                             </SpotlightCard>
-                            <SpotlightCard>
+                            <SpotlightCard className="col-lg-6" padding="pad96">
                                 <ServiceCard to='/services/system-integration' title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={SystemIntegration} />
                                 </ServiceCard>
                             </SpotlightCard>
-                            <SpotlightCard>
+                            <SpotlightCard className="col-lg-6" padding="pad96">
                                 <ServiceCard to='/services/legacy-transformation' title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                     <IconRounded imageUrl={LegacyTransformation} />
                                 </ServiceCard>
