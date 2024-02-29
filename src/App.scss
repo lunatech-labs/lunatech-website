@@ -7,9 +7,6 @@
 @import "./styles/Utils.scss";
 
 // ----------------------- General -----------------------
-html {
-    font-size: calc(9.25px + 0.390625vw);
-}
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -66,7 +63,7 @@ nav.nav-bar--hidden {
         flex-direction: column;
         justify-content: center;
         z-index: 3;
-        @include phone-portrait {
+        @include tablet {
             grid-column: span 12;
         }
     }

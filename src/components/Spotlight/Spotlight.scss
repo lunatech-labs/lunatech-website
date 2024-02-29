@@ -46,9 +46,6 @@
         z-index: 8;
         overflow: hidden;
         background: linear-gradient(to bottom, #0A1E50, #081A47);
-        @include phone-landscape {
-            padding: 48px;
-        }
     }
     &__gradient {
         position: absolute;

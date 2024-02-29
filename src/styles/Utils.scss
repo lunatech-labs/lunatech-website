@@ -65,6 +65,11 @@
 
 /* --------------- Padding --------------- */
 .pad48 {padding: 48px;}
-.pad96 {padding: 96px;}
+.pad96 {
+    padding: 96px;
+    @include phone-landscape {
+        padding: 48px;
+    }
+}
 .pad48-16 {padding: 48px 16px 16px 16px;}
 .pdt256 {padding-top: 256px;}

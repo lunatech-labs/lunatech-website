@@ -1,4 +1,5 @@
 import { Trans } from "react-i18next";
+import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Container from '@components/Container/Container';
 import Title from '@/components/Title/Title';
 import Text from '@components/Text/Text';
@@ -51,17 +52,23 @@ const About = () => {
                             <Title level={2}>Close to customers across <span>Europe</span></Title>
                             <Text size="large" className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
                             <div className="mgt64">
-                                <Grid>
-                                    <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                        <Icon imageUrl={Buildings1} size="medium" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                        <Icon imageUrl={Buildings2} size="medium" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                        <Icon imageUrl={Buildings3} size="medium" />
-                                    </OfficeCard>
-                                </Grid>
+                                <Spotlight className="spotlight__layout">
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
+                                            <Icon imageUrl={Buildings1} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
+                                            <Icon imageUrl={Buildings2} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
+                                            <Icon imageUrl={Buildings3} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                </Spotlight>
                             </div>
                         </div>
                     </Grid>

@@ -35,7 +35,7 @@ const OfficeCard = (props: CardProps) => {
             <div className="office-card">
                 <div className="dflex fd-c">
                     {props.children}
-                    <Title level={4}>{props.title}</Title>
+                    <Title level={3}>{props.title}</Title>
                 </div>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
