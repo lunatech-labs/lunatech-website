@@ -1,4 +1,5 @@
 import { Trans } from 'react-i18next';
+import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Container from '@components/Container/Container';
 import Section from '@components/Section/Section';
@@ -26,13 +27,11 @@ const Vision = () => {
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey="technologies.title" /> <span><Trans i18nKey="technologies.titleColor" /></span> <Trans i18nKey="technologies.title2" /></Title>
                         </div>
-                        <div className="col-lg-6">
-                            <img className="hero__moon" src={Moon} alt="Moon" />
-                        </div>
+                        <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
                 </Container>
             </Section>
@@ -40,12 +39,12 @@ const Vision = () => {
             <Section>
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Category content={<Trans i18nKey="technologies.category1" />} />
                             <Title level={2}>The sectors in which we <span>specialise</span></Title>
                             <img className="w100" src={TechnologiesIllustration} alt="" />
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <BusinessCard imageUrl={Automotive} title="Automotive" text="Providing innovative digital solutions to optimise vehicle performance and safety." />
                             <BusinessCard imageUrl={Entertainment} title="Entertainment" text="Developing interactive platforms to offer immersive entertainment experiences.." />
                             <BusinessCard imageUrl={Financial} title="Financial" text="Design advanced solutions for financial management and economic data analysis." />
@@ -63,17 +62,35 @@ const Vision = () => {
                     <Category content={<Trans i18nKey="technologies.category2" />} />
                         <Title className="ta-c" level={2}>Our <span>technologies</span> at the service of your product</Title>
                     </div>
-                    <Grid>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Devops" text="We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Scala" text="We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Java" text="We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Frontend" text="Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Big Data" text="We’re experts in handling large amounts of data. From processing, to storage and beyond."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Machine Learning" text="We design and implement intelligent systems that learn and improve over time."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="UX / UI" text="To Do Text"><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Test Automation" text="From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible."><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                        <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Agile Methodology" text="We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products"><Icon imageUrl={Insurance} size="small" /></TechnologieCardCarousel>
-                    </Grid>
+                    <Spotlight className="spotlight__layout">
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Devops" text="We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Scala" text="We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Java" text="We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Frontend" text="Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Big Data" text="We’re experts in handling large amounts of data. From processing, to storage and beyond."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Machine Learning" text="We design and implement intelligent systems that learn and improve over time."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="UX / UI" text="To Do Text"><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Test Automation" text="From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible."><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                        <SpotlightCard className="col-lg-4 col-md-6" padding="pad48">
+                            <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title="Agile Methodology" text="We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products"><Icon imageUrl={Insurance} size="medium" /></TechnologieCardCarousel>
+                        </SpotlightCard>
+                    </Spotlight>
                 </Container>
             </Section>
 
@@ -82,7 +99,7 @@ const Vision = () => {
             <Section>
                 <Container>
                     <div className="contact">
-                        <div>
+                        <div className="mgb32-sp">
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>

@@ -28,13 +28,11 @@ const Services = () => {
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey="services.title" /><span><Trans i18nKey="services.titleColor" /></span></Title>
                         </div>
-                        <div className="col-lg-6">
-                            <img className="hero__moon" src={Moon} alt="Moon" />
-                        </div>
+                        <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
                 </Container>
             </Section>
@@ -42,13 +40,13 @@ const Services = () => {
             <Section>
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Category content={<Trans i18nKey="services.category" />} />
                             <Title level={2}><span>Lunatech</span> can help you with the following</Title>
                         </div>
                     </Grid>
                     <Grid className="mgt64 ai-c">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Collapse title="Technology Planning" text={<p>Developing long-term IT strategies and roadmaps that support business goals.</p>} />
                             <Collapse title="Risk management" text={<p>Identifying and mitigating IT-related risks, such as security threats and data breaches.</p>} />
                             <Collapse title="Innovation" text={<p>Keeping abreast of emerging technologies and assessing their potential impact on the organization.</p>} />
@@ -56,7 +54,7 @@ const Services = () => {
                             <Collapse title="Change Management" text={<p>Implementing IT changes smoothly to minimize disruption.</p>} />
                             <Collapse title="Digital Transformation" text={<p>Leading efforts to transform traditional processes with digital technologies.</p>} />
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <img className="w100" src={ServiceIllustration} alt="" />
                         </div>
                     </Grid>
@@ -73,22 +71,22 @@ const Services = () => {
                         <Text size="large" className="ta-c">{<Trans i18nKey="service.text2" />}</Text>
                     </div>
                     <Spotlight className="spotlight__layout">
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/software-defined-vehicle' title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={Scala} />
                             </ServiceCard>
                         </SpotlightCard>
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/custom-software-development' title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={CustomSoftware} />
                             </ServiceCard>
                         </SpotlightCard>
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/system-integration' title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={SystemIntegration} />
                             </ServiceCard>
                         </SpotlightCard>
-                        <SpotlightCard>
+                        <SpotlightCard className="col-lg-6" padding="pad96">
                             <ServiceCard to='/services/legacy-transformation' title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                                 <IconRounded imageUrl={LegacyTransformation} />
                             </ServiceCard>
@@ -102,7 +100,7 @@ const Services = () => {
             <Section>
                 <Container>
                     <div className="contact">
-                        <div>
+                        <div className="mgb32-sp">
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>

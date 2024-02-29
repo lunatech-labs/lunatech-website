@@ -3,18 +3,8 @@
 @import "/src/styles/Responsive.scss";
 
 .technologie-card-carousel {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%));
-    min-width: 424px;
-    @include dark-gradient;
-    padding: 48px;
-    &__icon {
-        background: $blue;
-        color: #78B4D7;
-        margin-bottom: 32px;
-        padding: 24px;
-    }
+    text-align: left;
+    width: 100%;
     @include phone-portrait {
         min-width: 50%;
         min-height: 50%;

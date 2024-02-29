@@ -2,5 +2,6 @@
 
 .section {
     padding: 128px 0;
+    @include phone-landscape {padding: 96px 0;}
     @include phone-portrait {padding: 64px 0;}
 }
