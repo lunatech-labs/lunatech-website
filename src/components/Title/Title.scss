@@ -12,6 +12,10 @@ h1.titleh1 {
         font-size: 48px;
         line-height: 56px;
     }
+    @include phone-portrait {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 h2.titleh2 {
     font-size: $font-size-40;
@@ -22,6 +26,10 @@ h2.titleh2 {
     @include tablet {
         font-size: 40px;
         line-height: 48px;
+    }
+    @include phone-portrait {
+        font-size: 28px;
+        line-height: 36px;
     }
 }
 h3.titleh3 {
