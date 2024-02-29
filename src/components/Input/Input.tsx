@@ -83,7 +83,7 @@ const Input = (props: InputProps) => {
           </>
         ) : (
           <>
-            <input onChange={handleChange} value={formValue} type={type} id={name} name={name} placeholder={placeHolder} required={required} />
+            <input onChange={handleChange} value={formValue} type={type} id={name} name={name} placeholder={placeHolder} />
           </>
         )}
       </div>

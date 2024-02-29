@@ -58,40 +58,64 @@ const Contact = () => {
         setForm({ ...form, [name]: value });
     };
 
+    const checkValidity = () => {
+        const missingFields = [];
+        
+        if (form.fullName === "") {
+            missingFields.push(t('contact.label.fullName'));
+        }
+        if (form.email === "") {
+            missingFields.push(t('contact.label.email'));
+        }
+        if (form.services === "") {
+            missingFields.push(t('contact.label.services'));
+        }
+    
+        if (missingFields.length > 0) {
+            const missingFieldsString = missingFields.join(', ');
+            showToast(`Missing required fields: ${missingFieldsString}`, 'failure');
+            return false;
+        }
+        
+        return true;
+    }
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        setIsLoading(true);
 
-        emailjs.send(
-            'service_b48ltqk',
-            'template_7odrvlr', 
-            {
-                from_name: form.fullName,
-                from_email: form.email,
-                phone_number: form.phone,
-                company: form.company,
-                services: form.services,
-                project_description: form.projectDescription,
-                to_name: 'Lucas',
-                to_email: 'lleblanc.contact@gmail.com',
-            },
-            'gt3Zfth5Wt6lJOCcX')
-            .then(() => {
-                console.log('Email sent successfully')
-                showToast('Email sent successfully', 'success')
-            setForm({
-                fullName: "",
-                email: "",
-                phone: "",
-                company: "",
-                services: "",
-                projectDescription: ""
-            })
-            }, (error) => {
-                console.log("Email failed", error)
-                showToast('Email failed', 'failure')
-            }
-        ).finally(() => setIsLoading(false));
+        if(checkValidity() === true) {
+            setIsLoading(true);
+            emailjs.send(
+                'service_b48ltqk',
+                'template_7odrvlr', 
+                {
+                    from_name: form.fullName,
+                    from_email: form.email,
+                    phone_number: form.phone,
+                    company: form.company,
+                    services: form.services,
+                    project_description: form.projectDescription,
+                    to_name: 'Lucas',
+                    to_email: 'lleblanc.contact@gmail.com',
+                },
+                'gt3Zfth5Wt6lJOCcX')
+                .then(() => {
+                    console.log('Email sent successfully')
+                    showToast('Email sent successfully', 'success')
+                setForm({
+                    fullName: "",
+                    email: "",
+                    phone: "",
+                    company: "",
+                    services: "",
+                    projectDescription: ""
+                })
+                }, (error) => {
+                    console.log("Email failed", error)
+                    showToast('Email failed', 'failure')
+                }
+            ).finally(() => setIsLoading(false));
+        }
     }
 
     const { t } = useTranslation();
@@ -124,10 +148,10 @@ const Contact = () => {
                         <div className='contact__form'>
                             <form ref={formRef} onSubmit={handleSubmit}>
                                 <Input number='01' type='text' handleChange={handleChange} label={t('contact.label.fullName')} placeHolder={t('contact.placeHolder.fullName')} name='fullName' formValue={form.fullName} required/>
-                                <Input number='02' type='email' handleChange={handleChange} label={t('contact.label.email')} placeHolder='example@email.com' name='email' formValue={form.email}/>
+                                <Input number='02' type='email' handleChange={handleChange} label={t('contact.label.email')} placeHolder='example@email.com' name='email' formValue={form.email} required/>
                                 <Input number='03' type='text' handleChange={handleChange} label={t('contact.label.phone')} placeHolder='+11 2222 333344' name='phone' formValue={form.phone}/>
                                 <Input number='04' type='text' handleChange={handleChange} label={t('contact.label.company')} placeHolder={t('contact.placeHolder.company')} name='company' formValue={form.company}/>
-                                <Input number='05' type='options' handleChange={handleChange} options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' formValue={form.services}/>
+                                <Input number='05' type='options' handleChange={handleChange} options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' formValue={form.services} required/>
                                 <Input number='06' type='textarea' handleChange={handleChange} label={t('contact.label.project')} placeHolder={t('contact.placeHolder.project')} name='projectDescription' formValue={form.projectDescription}/>
                                 <ButtonPrimary animate={isLoading ? 'loading-icon' : ''} iconUrl={ArrowSend} type='submit' size="large" to="/">
                                     <span>{isLoading ? 'Sending...' : 'Send message'}</span>
