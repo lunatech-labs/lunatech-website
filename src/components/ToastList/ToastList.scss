@@ -1,0 +1,80 @@
+
+.toast-list {
+position: fixed;
+padding: var(1em);
+width: 100%;
+max-width: var(400px);
+max-height: 100vh;
+overflow: hidden auto;
+}
+
+.toast-list--top-left {
+top: 0;
+left: 0;
+}
+
+.toast-list--top-right {
+top: 0;
+right: 0;
+}
+
+.toast-list--bottom-left {
+bottom: 0;
+left: 0;
+}
+
+.toast-list--bottom-right {
+bottom: 0;
+right: 0;
+}
+
+.toast-list--top-left .toast,
+.toast-list--bottom-left .toast {
+animation: toast-in-left var(250ms);
+}
+
+.toast-list--top-right .toast,
+.toast-list--bottom-right .toast {
+animation: toast-in-right var(250ms);
+}
+
+.toast-list .toast {
+transition: transform var(250ms), opacity var(250ms),
+    box-shadow var(250ms) ease-in-out;
+}
+
+@keyframes toast-in-right {
+from {
+    transform: translateX(100%);
+}
+to {
+    transform: translateX(0);
+}
+}
+
+@keyframes toast-in-left {
+from {
+    transform: translateX(-100%);
+}
+to {
+    transform: translateX(0);
+}
+}
+
+.toast-list::-webkit-scrollbar {
+width: var(0.35em);
+}
+
+.toast-list::-webkit-scrollbar-track {
+background-color: hsl(var(--secondary-hue) 10% 75%);
+border-radius: var(0.35em);
+}
+
+.toast-list::-webkit-scrollbar-thumb {
+border-radius: var(0.35em);
+background-color: hsl(var(--secondary-hue) 10% 65%);
+}
+
+.toast-list::-webkit-scrollbar-thumb:window-inactive {
+background-color: hsl(var(--secondary-hue) 10% 50%);
+}

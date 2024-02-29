@@ -260,6 +260,24 @@ nav.nav-bar--hidden {
         a, button {
             margin: 55px 55px;
         }
+        @keyframes throwToTopRight {
+            0% {
+              transform: translate(0, 0) rotate(0deg);
+              opacity: 1;
+            }
+            50% {
+              transform: translate(50vw, -50vh) rotate(90deg);
+              opacity: 0.5;
+            }
+            100% {
+              transform: translate(100vw, -100vh) rotate(180deg);
+              opacity: 0;
+            }
+        }
+        
+        .loading-icon {
+        animation: throwToTopRight 2s forwards;
+        }
     }
     &__infos {
         grid-column: 10/13;
