@@ -8,9 +8,92 @@ import ArrowSend from '/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Section from '@components/Section/Section';
+import ToastList from '@/components/ToastList/ToastList';
 import { Trans, useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
+
+interface ToastData {
+    id: number;
+    message: string;
+    type: string;
+}  
 
 const Contact = () => {
+    const formRef = useRef<HTMLFormElement>(null);
+    const [toasts, setToasts] = useState<ToastData[]>([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [form, setForm] = useState({
+        fullName: "",
+        email: "",
+        phone: "",
+        company: "",
+        services: "",
+        projectDescription: ""
+    })
+
+    const showToast = (message: string, type: string) => {
+        const toast = {
+            id: Date.now(),
+            message,
+            type,
+        };
+
+        setToasts((prevToasts) => [...prevToasts, toast]);
+
+        setTimeout(() => {
+            removeToast(toast.id);
+        }, 2000);
+    }
+
+    const removeToast = (id: number) => {
+        setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id));
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const target = e.target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+        const { name, value } = target;
+        console.log(name, value)
+        
+        setForm({ ...form, [name]: value });
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        setIsLoading(true);
+
+        emailjs.send(
+            'service_b48ltqk',
+            'template_7odrvlr', 
+            {
+                from_name: form.fullName,
+                from_email: form.email,
+                phone_number: form.phone,
+                company: form.company,
+                services: form.services,
+                project_description: form.projectDescription,
+                to_name: 'Lucas',
+                to_email: 'lleblanc.contact@gmail.com',
+            },
+            'gt3Zfth5Wt6lJOCcX')
+            .then(() => {
+                console.log('Email sent successfully')
+                showToast('Email sent successfully', 'success')
+            setForm({
+                fullName: "",
+                email: "",
+                phone: "",
+                company: "",
+                services: "",
+                projectDescription: ""
+            })
+            }, (error) => {
+                console.log("Email failed", error)
+                showToast('Email failed', 'failure')
+            }
+        ).finally(() => setIsLoading(false));
+    }
+
     const { t } = useTranslation();
 
     const options = [
@@ -39,17 +122,17 @@ const Contact = () => {
                 <Container>
                     <Grid>
                         <div className='contact__form'>
-                            <form>
-                                <Input number='01' type='text' label={t('contact.label.fullName')} placeHolder={t('contact.placeHolder.fullName')} name='fullName' />
-                                <Input number='02' type='email' label={t('contact.label.email')} placeHolder='example@email.com' name='email' />
-                                <Input number='03' type='text' label={t('contact.label.phone')} placeHolder='+11 2222 333344' name='phoneNumber' />
-                                <Input number='04' type='text' label={t('contact.label.company')} placeHolder={t('contact.placeHolder.company')} name='company' />
-                                <Input number='05' type='options' options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' />
-                                <Input number='06' type='textarea' label={t('contact.label.project')} placeHolder={t('contact.placeHolder.project')} name='projectDescription' />
+                            <form ref={formRef} onSubmit={handleSubmit}>
+                                <Input number='01' type='text' handleChange={handleChange} label={t('contact.label.fullName')} placeHolder={t('contact.placeHolder.fullName')} name='fullName' formValue={form.fullName} required/>
+                                <Input number='02' type='email' handleChange={handleChange} label={t('contact.label.email')} placeHolder='example@email.com' name='email' formValue={form.email}/>
+                                <Input number='03' type='text' handleChange={handleChange} label={t('contact.label.phone')} placeHolder='+11 2222 333344' name='phone' formValue={form.phone}/>
+                                <Input number='04' type='text' handleChange={handleChange} label={t('contact.label.company')} placeHolder={t('contact.placeHolder.company')} name='company' formValue={form.company}/>
+                                <Input number='05' type='options' handleChange={handleChange} options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' formValue={form.services}/>
+                                <Input number='06' type='textarea' handleChange={handleChange} label={t('contact.label.project')} placeHolder={t('contact.placeHolder.project')} name='projectDescription' formValue={form.projectDescription}/>
+                                <ButtonPrimary animate={isLoading ? 'loading-icon' : ''} iconUrl={ArrowSend} type='submit' size="large" to="/">
+                                    <span>{isLoading ? 'Sending...' : 'Send message'}</span>
+                                </ButtonPrimary>
                             </form>
-                            <ButtonPrimary iconUrl={ArrowSend} type='submit' size="large" to="/">
-                                <span>Send message</span>
-                            </ButtonPrimary>
                         </div>
                         <div className="contact__infos">
                             <Address country='Netherlands' kind='Business development' mail='info@lunatech.nl' phone='+31 10 750 2600' street='Hofplein 20' city='3032 AC Rotterdam'/>
@@ -59,6 +142,7 @@ const Contact = () => {
                     </Grid>
                 </Container>
             </Section>
+            <ToastList data={toasts} removeToast={removeToast} />
         </>
     );
 };

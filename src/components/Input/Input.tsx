@@ -10,14 +10,17 @@ interface InputProps {
   type: string;
   options?: string[];
   key?: string;
+  required?: boolean;
+  handleChange?: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
+  formValue?: string;
 }
 
 const Input = (props: InputProps) => {
   const { t } = useTranslation();
 
-  const { number, label, placeHolder, name, type } = props;
+  const { number, label, placeHolder, name, type, handleChange, formValue, required } = props;
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(props.placeHolder);
+  const [selectedOption, setSelectedOption] = useState(props.formValue || props.placeHolder || "");
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggling = () => setIsOpen(!isOpen);
@@ -25,6 +28,12 @@ const Input = (props: InputProps) => {
   const onOptionClicked = (value: string) => {
     setSelectedOption(value);
     setIsOpen(false);
+    if(handleChange) {
+        const event = {
+            target: { name, value },
+        } as React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
+        handleChange(event);
+    }
   };
 
   useEffect(() => {
@@ -33,18 +42,21 @@ const Input = (props: InputProps) => {
         setIsOpen(false);
       }
     };
+    if (props.type === 'options') {
+      setSelectedOption(props.formValue || props.placeHolder || "");
+    }
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [dropdownRef]);
+  }, [dropdownRef, props.formValue, props.placeHolder, props.type]);
 
   return (
     <div className="question-content">
       <div className="question-number">{number}</div>
       <div className="question">
-        <label htmlFor={name}>{label}</label>
+        <label htmlFor={name}>{label}{required && '*'}</label>
         {type === "options" && props.options ? (    
           <div className="dropdown" ref={dropdownRef}>
             <div className={`dropdown-header ${selectedOption === t('contact.placeHolder.services') ? "default-prompt" : "selected-prompt"}`} onClick={toggling}>
@@ -66,13 +78,13 @@ const Input = (props: InputProps) => {
             )}
           </div>
         ) : type === "textarea" ? (
-        <>
-            <textarea id={name} name={name} placeholder={placeHolder} />
-        </>
+          <>
+            <textarea onChange={handleChange} value={formValue} id={name} name={name} placeholder={placeHolder} />
+          </>
         ) : (
-        <>
-            <input type={type} id={name} name={name} placeholder={placeHolder} />
-        </>
+          <>
+            <input onChange={handleChange} value={formValue} type={type} id={name} name={name} placeholder={placeHolder} required={required} />
+          </>
         )}
       </div>
     </div>
