@@ -10,7 +10,8 @@ import OfficeCard from '@components/OfficeCard/OfficeCard';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Address from '@components/Address/Address';
 import Icon from '@components/Icon/Icon';
-import Timeline from '@components/Timeline/Timeline';
+// import Timeline from '@components/Timeline/Timeline';
+import History from "@/components/Timeline2/Timeline2";
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Vision from '@components/Vision/Vision';
 
@@ -103,7 +104,8 @@ const About = () => {
                         <Category content={<Trans i18nKey="about.subtitle3" />} />
                         <Title level={2}>Lunatech's <span>evolution</span> over time</Title>
                     </div>
-                    <Timeline />     
+                    {/* <Timeline />     */}
+                    <History />
                 </Container>
             </Section>
 
