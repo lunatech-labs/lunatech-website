@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Icon from "@components/Icon/Icon";
 import "./Timeline.scss";
-import Buildings1 from '/buildings1.svg';
+import Buildings1 from '../../assets/netherlandsIcon.svg';
 import ArrowChevronLeft from '/arrow-chevron-left.svg';
 import ArrowChevronRight from '/arrow-chevron-right.svg';
 
