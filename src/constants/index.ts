@@ -3,6 +3,13 @@ import {
     linkedin,
     twitter,
     instagram,
+    netherlandsIcon,
+    franceIcon,
+    ukIcon,
+    sdvIcon,
+    customSoftwareIcon,
+    systemIntegrationIcon,
+    legacyTransformationIcon
 } from '@/assets'
 
 export const navLinks = [
@@ -93,6 +100,86 @@ export const socialLinks = [
         blank: true,
         alt: "Twitter logo",
         icon: twitter
+    }
+]
+
+export const officeBlock = [
+    {
+        country: "Netherlands",
+        developers: 55,
+        otherJobs: 6,
+        email: "infos@lunatech.nl",
+        careersEmail: 'employment@lunatech.nl',
+        phone: "+31 10 750 2600",
+        address: "Hofplein 20 - 3032 AC Rotterdam",
+        icon: [
+            {
+                title: "Netherlands",
+                imageUrl: netherlandsIcon,
+            }
+        ]
+    },
+    {
+        country: "France",
+        developers: 32,
+        otherJobs: 2,
+        email: "info@lunatech.fr",
+        phone: "+33 1 85 08 57 00",
+        address: "3 rue de la Galmy - 77700 Chessy",
+        icon: [
+            {
+                title: "France",
+                imageUrl: franceIcon,
+            }
+        ]
+    },
+    {
+        country: "Newcastle",
+        developers: 2,
+        otherJobs: 0,
+        email: "info@lunatech.uk",
+        phone: "+44 191 338 7220",
+        icon: [
+            {
+                title: "United Kingdom",
+                imageUrl: ukIcon,
+            }
+        ]
+    }
+]
+
+export const serviceBlock = [
+    {
+        title: "service.title",
+        titleColor: "service.titleColor",
+        subtitle: "service.subtitle",
+        text: "service.text",
+        cards: [
+            {
+                title: "Software Defined Vehicle",
+                text: "We help you to build the future of mobility.",
+                imageUrl: sdvIcon,
+                url: "/services/software-defined-vehicle"
+            },
+            {
+                title: "Custom Software Development",
+                text: "We help you to build the future of mobility.",
+                imageUrl: customSoftwareIcon,
+                url: "/services/custom-software-development"
+            },
+            {
+                title: "System Integration",
+                text: "We help you to build the future of mobility.",
+                imageUrl: systemIntegrationIcon,
+                url: "/services/system-integration"
+            },
+            {
+                title: "Legacy Transformation",
+                text: "We help you to build the future of mobility.",
+                imageUrl: legacyTransformationIcon,
+                url: "/services/legacy-transformation"
+            }
+        ]
     }
 ]
 
@@ -196,5 +283,79 @@ export const contactPage = [
         placeHolder: "contact.placeHolder.project",
         name: "projectDescription",
         type: "textarea"
+    }
+]
+
+export const footerLinks = [
+    {
+        title: "footer.title1",
+        links: [
+            {
+                title: "navigation.home",
+                url: "/"
+            },
+            {
+                title: "navigation.about",
+                url: "/about"
+            },
+            {
+                title: "Services",
+                url: "/services"
+            },
+            {
+                title: "Vision",
+                url: "/vision"
+            }
+        ]
+    },
+    {
+        title: "footer.title2",
+        links: [
+            {
+                title: "footer.blog",
+                url: "https://blog.lunatech.com/",
+                target: "_blank"
+            },
+            {
+                title: "footer.careers",
+                url: "https://recruitment.lunatech.com/",
+                target: "_blank"
+            },
+            {
+                title: "footer.contact",
+                url: "/contact"
+            }
+        ]
+    }
+]
+
+export const contactInfos = [
+    {
+        title: "address.countryNL",
+        subtitle: "address.subtitle1",
+        subtitle2: "address.subtitle2",
+        subtitle3: "address.subtitle3",
+        email: "info@lunatech.nl",
+        phone: "+31 10 750 2600",
+        careersEmail: "employment@lunatech.nl",
+        street: "Hofplein 20",
+        city: "3032 AC Rotterdam"
+    },
+    {
+        title: "address.countryFR",
+        subtitle: "address.subtitle1",
+        subtitle2: "address.subtitle2",
+        subtitle3: "address.subtitle3",
+        email: "info@lunatech.fr",
+        phone: "+33 1 82 88 56 64",
+        careersEmail: "employment@lunatech.fr",
+        street: "3 rue de la Galmy",
+        city: "77700 Chessy"
+    },
+    {
+        title: "address.countryEN",
+        subtitle: "address.subtitle1",
+        email: "info@lunatech.uk",
+        phone: "+44 (0) 7875 695 964",
     }
 ]

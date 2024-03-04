@@ -1,7 +1,7 @@
 import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
 import Input from '@components/Input/Input';
-import Address from '@components/Adress/Adress';
+import Address from '@/components/SideAddress/SideAddress';
 import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
 import ArrowSend from '/arrow-send.svg';
@@ -12,7 +12,7 @@ import ToastList from '@/components/ToastList/ToastList';
 import { Trans, useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import { contactPage } from '@/constants';
+import { contactPage, contactInfos } from '@/constants';
 
 interface ToastData {
     id: number;
@@ -149,9 +149,9 @@ const Contact = () => {
                             </form>
                         </div>
                         <div className="contact__infos">
-                            <Address country='Netherlands' kind='Business development' mail='info@lunatech.nl' phone='+31 10 750 2600' street='Hofplein 20' city='3032 AC Rotterdam'/>
-                            <Address country='France' kind='Business development' mail='info@lunatech.fr' phone='+33 1 82 88 56 64' street='3 rue de la Galmy' city='77700 Chessy'/>
-                            <Address country='United Kingdom' kind='Business development' mail='info@lunatech.uk'/>
+                            {contactInfos.map((contactInfo, index) => (
+                                <Address key={index} country={t(`${contactInfo.title}`)} kind={t(`${contactInfo.subtitle}`)} mail={contactInfo.email} phone={contactInfo.phone} street={contactInfo.street} city={contactInfo.city}/>
+                            ))}
                         </div>
                     </Grid>
                 </Container>

@@ -27,9 +27,6 @@ import Grass from '/grass.svg';
 import Telescope from '/telescope.svg';
 import Moon from '/moon.svg';
 
-import Buildings1 from '/buildings1.svg';
-import Buildings2 from '/buildings2.svg';
-import Buildings3 from '/buildings3.svg';
 import ArrowRight from '/arrow-right.svg';
 import Message from '/message.svg';
 
@@ -37,13 +34,11 @@ import AboutUs from '/about-us-illustration.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
-import SdvIcon from '/cpu-setting.svg';
-import CustomSoftware from '/custom-software.svg';
-import SystemIntegration from '/system-integration.svg';
-import LegacyTransformation from '/legacy-transformation.svg';
 import { Link } from 'react-router-dom';
 import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
 import Articles from '@components/Articles/Articles';
+
+import { officeBlock, serviceBlock } from '@/constants/index';
 
 
 const Home = () => {
@@ -93,21 +88,13 @@ const Home = () => {
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout">
-                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
-                                        <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                            <Icon imageUrl={Buildings1} size="medium" />
-                                        </OfficeCard>
-                                    </SpotlightCard>
-                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
-                                        <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                            <Icon imageUrl={Buildings2} size="medium" />
-                                        </OfficeCard>
-                                    </SpotlightCard>
-                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
-                                        <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                            <Icon imageUrl={Buildings3} size="medium" />
-                                        </OfficeCard>
-                                    </SpotlightCard>
+                                    {officeBlock.map((office, index) => (
+                                        <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
+                                            <OfficeCard title={office.country} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
+                                                <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
+                                            </OfficeCard>
+                                        </SpotlightCard>
+                                    ))}
                                 </Spotlight>
                             </div>
                         </div>
@@ -123,7 +110,7 @@ const Home = () => {
                         <div className="services__top">
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey="service.subtitle" />} />
-                                <Title level={2}>Meet your needs with our <span>enterprise services</span></Title>
+                                <Title level={2}><Trans i18nKey={serviceBlock[0].title} /> <span><Trans i18nKey={serviceBlock[0].titleColor} /></span></Title>
                                 <Text size="large">
                                     <Trans i18nKey="service.text" />
                                 </Text>
@@ -131,26 +118,13 @@ const Home = () => {
                             <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                         </div>
                         <Spotlight className="spotlight__layout">
-                            <SpotlightCard className="col-lg-6" padding="pad96">
-                                <ServiceCard to='/services/software-defined-vehicle' title="Software Defined Vehicle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                    <IconRounded imageUrl={SdvIcon} />
-                                </ServiceCard>
-                            </SpotlightCard>
-                            <SpotlightCard className="col-lg-6" padding="pad96">
-                                <ServiceCard to='/services/custom-software-development' title="Custom Software Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                    <IconRounded imageUrl={CustomSoftware} />
-                                </ServiceCard>
-                            </SpotlightCard>
-                            <SpotlightCard className="col-lg-6" padding="pad96">
-                                <ServiceCard to='/services/system-integration' title="System Integration" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                    <IconRounded imageUrl={SystemIntegration} />
-                                </ServiceCard>
-                            </SpotlightCard>
-                            <SpotlightCard className="col-lg-6" padding="pad96">
-                                <ServiceCard to='/services/legacy-transformation' title="Legacy Transformation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                                    <IconRounded imageUrl={LegacyTransformation} />
-                                </ServiceCard>
-                            </SpotlightCard>
+                            {serviceBlock[0].cards.map((card, index) => (
+                                <SpotlightCard key={index} className="col-lg-6" padding="pad96">
+                                    <ServiceCard to={card.url} title={card.title} text={card.text} >
+                                        <IconRounded imageUrl={card.imageUrl} />
+                                    </ServiceCard>
+                                </SpotlightCard>
+                            ))}
                         </Spotlight>
                     </div>
                 </Container>
