@@ -3,11 +3,9 @@ import Container from "@components/Container/Container";
 import Grid from "@components/Grid/Grid";
 import Language from "@components/Language/Language";
 import lunatechLogo from '/lunatech-logo.svg';
-import Github from '/github.svg';
-import Instagram from '/instagram.svg';
-import Linkedin from '/linkedin.svg';
-import Twitter from '/twitter.svg';
 import "./Footer.scss";
+import { footerLinks, socialLinks } from '@/constants/index';
+import { Link } from 'react-router-dom';
 
 interface FooterProps {
     changeLanguage: (lng: string) => void;
@@ -27,31 +25,29 @@ const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
                                 <p className="footer__text"><Trans i18nKey="footer.managed" /></p>
                             </div>
                             <div className="footer__social">
-                                <a href="https://github.com/lunatech-labs" target="_blank"><img src={Github} className="footer__icon" alt="Github logo" /></a>
-                                <a href="https://www.instagram.com/lunatech_nl/" target="_blank"><img src={Instagram} className="footer__icon" alt="Instagram logo" /></a>
-                                <a href="https://www.linkedin.com/company/lunatech-research" target="_blank"><img src={Linkedin} className="footer__icon" alt="Linkedin logo" /></a>
-                                <a href="https://twitter.com/lunatechlabs" target="_blank"><img src={Twitter} className="footer__icon" alt="Twitter logo" /></a>
+                                {socialLinks.map((link, index) => (
+                                    <a href={link.url} target="_blank" key={index}><img src={link.icon} className="footer__icon" alt={link.alt} /></a>
+                                ))}
                             </div>
                         </div>
                         <div className="footer__part">
                             <div className="footer__category">
-                                <p className="footer__title"><Trans i18nKey="footer.title1" /></p>
+                                <p className="footer__title"><Trans i18nKey={footerLinks[0].title} /></p>
                                 <ul className="footer__list">
-                                    <li className="footer__item"><a href="/"><Trans i18nKey="navigation.home" /></a></li>
-                                    <li className="footer__item"><a href="/about"><Trans i18nKey="navigation.about" /></a></li>
-                                    <li className="footer__item"><a href="/services">Services</a></li>
-                                    <li className="footer__item"><a href="/vision">Vision</a></li>
+                                    {footerLinks[0].links.map((link, index) => (
+                                        <li key={index} className="footer__item"><Link to={link.url} target={link.target}><Trans i18nKey={link.title} /></Link></li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
 
                         <div className="footer__part">
                             <div className="footer__category">
-                                <p className="footer__title"><Trans i18nKey="footer.title2" /></p>
+                                <p className="footer__title"><Trans i18nKey={footerLinks[1].title} /></p>
                                 <ul className="footer__list">
-                                    <li className="footer__item"><a href="https://blog.lunatech.com/" target="_blank"><Trans i18nKey="footer.blog" /></a></li>
-                                    <li className="footer__item"><a href="https://recruitment.lunatech.com/" target="_blank"><Trans i18nKey="footer.careers" /></a></li>
-                                    <li className="footer__item"><a href="/contact"><Trans i18nKey="footer.contact" /></a></li>
+                                    {footerLinks[1].links.map((link, index) => (
+                                        <li key={index} className="footer__item"><Link to={link.url} target={link.target}><Trans i18nKey={link.title} /></Link></li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
