@@ -7,7 +7,7 @@
     overflow-x: scroll;
     &__body {
         display: flex;
-        width: 4000px;
+        width: 2000px;
         padding-bottom: 40px;
     }
     &__lt-event {
@@ -30,6 +30,7 @@
         margin-right: 32px;
         &:last-child {margin-right: 0}
         div {
+            position: sticky;
             width: 32px;
             height: 32px;
             border-radius: 50%;
@@ -37,11 +38,11 @@
             background-color: $lightBlue;
             background-image: linear-gradient(to right, $lightBlue 50%, $mediumBlue 50%);
             background-size: 200% 100%;
-            background-position: 100% 0; // Start with the active color hidden to the left
+            background-position: 100% 0;
             transition: background-position 0.5s ease;
-        
+            z-index: 2;
             &.active {
-              background-position: 0 0; // End with the active color filling the circle
+              background-position: 0 0;
             }
         }
         p:nth-child(2) {
@@ -98,7 +99,7 @@
         background-size: 200% 100%;
         background-position: 100% 0;
         transition: background-position 0.5s ease;
-    
+        z-index: 2;
         &.active {
           background-position: 0 0;
         }
@@ -107,8 +108,9 @@
         position: absolute;
         height: 3px;
         background: $lightBlue;
-        width: 4000px;
+        width: 500px;
         top: 226px;
+        z-index: 1;
     }
     &__buttons {
         display: flex;
