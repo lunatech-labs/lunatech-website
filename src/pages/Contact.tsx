@@ -151,9 +151,6 @@ const Contact = () => {
                         <div className="contact__infos">
                             {contactInfos.map((contactInfo, index) => (
                                 <Address key={index} country={t(`${contactInfo.title}`)} kind={t(`${contactInfo.subtitle}`)} mail={contactInfo.email} phone={contactInfo.phone} street={contactInfo.street} city={contactInfo.city}/>
-                            // <Address country='Netherlands' kind='Business development' mail='info@lunatech.nl' phone='+31 10 750 2600' street='Hofplein 20' city='3032 AC Rotterdam'/>
-                            // <Address country='France' kind='Business development' mail='info@lunatech.fr' phone='+33 1 82 88 56 64' street='3 rue de la Galmy' city='77700 Chessy'/>
-                            // <Address country='United Kingdom' kind='Business development' mail='info@lunatech.uk'/>
                             ))}
                         </div>
                     </Grid>
