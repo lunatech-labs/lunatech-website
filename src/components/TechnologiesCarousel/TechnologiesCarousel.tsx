@@ -3,7 +3,7 @@ import { Trans } from "react-i18next";
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import TechnologieCardCarousel from "@/components/TechnologieCardCarousel/TechnologieCardCarousel";
 import Icon from "@components/Icon/Icon";
-import Buildings1 from '/buildings1.svg';
+import Buildings1 from '../../assets/netherlandsIcon.svg';
 import Category from "@components/Category/Category";
 import Text from "@components/Text/Text";
 import Title from "@components/Title/Title";

@@ -18,11 +18,10 @@ import Vision from '@components/Vision/Vision';
 
 import AboutUs from '/about-us-illustration.png';
 import AboutUs2 from '/about-us-illustration2.png';
-import Buildings1 from '/buildings1.svg';
-import Buildings2 from '/buildings2.svg';
-import Buildings3 from '/buildings3.svg';
 import Message from '/message.svg';
 import Moon from '/moon.svg';
+
+import { officeBlock } from '@/constants';
 
 
 const About = () => {
@@ -50,21 +49,13 @@ const About = () => {
                             <Text size="large" className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout">
-                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
-                                        <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                            <Icon imageUrl={Buildings1} size="medium" />
-                                        </OfficeCard>
-                                    </SpotlightCard>
-                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
-                                        <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                            <Icon imageUrl={Buildings2} size="medium" />
-                                        </OfficeCard>
-                                    </SpotlightCard>
-                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
-                                        <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                            <Icon imageUrl={Buildings3} size="medium" />
-                                        </OfficeCard>
-                                    </SpotlightCard>
+                                    {officeBlock.map((office, index) => (
+                                        <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
+                                            <OfficeCard title={office.country} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
+                                                <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
+                                            </OfficeCard>
+                                        </SpotlightCard>
+                                    ))}
                                 </Spotlight>
                             </div>
                         </div>
