@@ -14,14 +14,9 @@ const TechnologieCardCarousel = (props: CardProps) => {
         <div className={`technologie-card-carousel ${props.className}`}>
             {props.children}
             <Title level={3}>{props.title}</Title>
-            <Text size="medium" className="mgb16">{props.text}</Text>
+            <Text size="medium" className="mgb24">{props.text}</Text>
         </div>
     );
 };
 
 export default TechnologieCardCarousel;
-
-
-
-
-

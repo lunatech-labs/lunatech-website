@@ -12,6 +12,7 @@ import ToastList from '@/components/ToastList/ToastList';
 import { Trans, useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { contactPage } from '@/constants';
 
 interface ToastData {
     id: number;
@@ -120,20 +121,12 @@ const Contact = () => {
 
     const { t } = useTranslation();
 
-    const options = [
-        t("contact.options.softwareDefinedVehicle"),
-        t("contact.options.customSoftwareDevelopment"),
-        t("contact.options.systemIntegration"),
-        t("contact.options.legacyTransformation"),
-        t("contact.options.other")
-    ];
-
     return (
         <>
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</Title>
                             <Text size="large"><Trans i18nKey="contact.text" /></Text>
@@ -147,12 +140,9 @@ const Contact = () => {
                     <Grid>
                         <div className='contact__form'>
                             <form ref={formRef} onSubmit={handleSubmit}>
-                                <Input number='01' type='text' handleChange={handleChange} label={t('contact.label.fullName')} placeHolder={t('contact.placeHolder.fullName')} name='fullName' formValue={form.fullName} required/>
-                                <Input number='02' type='email' handleChange={handleChange} label={t('contact.label.email')} placeHolder='example@email.com' name='email' formValue={form.email} required/>
-                                <Input number='03' type='text' handleChange={handleChange} label={t('contact.label.phone')} placeHolder='+11 2222 333344' name='phone' formValue={form.phone}/>
-                                <Input number='04' type='text' handleChange={handleChange} label={t('contact.label.company')} placeHolder={t('contact.placeHolder.company')} name='company' formValue={form.company}/>
-                                <Input number='05' type='options' handleChange={handleChange} options={options} label={t('contact.label.services')} placeHolder={t('contact.placeHolder.services')} name='services' formValue={form.services} required/>
-                                <Input number='06' type='textarea' handleChange={handleChange} label={t('contact.label.project')} placeHolder={t('contact.placeHolder.project')} name='projectDescription' formValue={form.projectDescription}/>
+                                {contactPage.map((input, index) => (
+                                    <Input key={index} number={`0${index + 1}`} type={input.type} handleChange={handleChange} label={t(input.label)} placeHolder={t(input.placeHolder)} name={input.name} options={input.options} formValue={form[input.name as keyof typeof form]} required={input.required}/>
+                                ))}
                                 <ButtonPrimary animate={isLoading ? 'loading-icon' : ''} iconUrl={ArrowSend} type='submit' size="large" to="/">
                                     <span>{isLoading ? 'Sending...' : 'Send message'}</span>
                                 </ButtonPrimary>

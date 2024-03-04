@@ -1,4 +1,5 @@
 import { Trans } from "react-i18next";
+import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Container from '@components/Container/Container';
 import Title from '@/components/Title/Title';
 import Text from '@components/Text/Text';
@@ -10,8 +11,8 @@ import OfficeCard from '@components/OfficeCard/OfficeCard';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Address from '@components/Address/Address';
 import Icon from '@components/Icon/Icon';
-// import Timeline from '@components/Timeline/Timeline';
-import History from "@/components/Timeline2/Timeline2";
+import Timeline from '@components/Timeline/Timeline';
+// import Timeline2 from "@/components/Timeline2/Timeline2";
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Vision from '@components/Vision/Vision';
 
@@ -30,42 +31,44 @@ const About = () => {
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
                         </div>
-                        <div className="col-lg-6">
-                            <img className="hero__moon" src={Moon} alt="Moon" />
-                        </div>
+                        <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
                 </Container>
             </Section>
 
             <Section>
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6">
-                            <img className="w100" src={AboutUs} alt="" />
-                        </div>
-                        <div className="col-lg-6">
+                    <div className="about">
+                        <img className="about__img" src={AboutUs} alt="" />
+                        <div className="about__content">
                             <Category content={<Trans i18nKey="about.subtitle2" />} />
                             <Title level={2}>Close to customers across <span>Europe</span></Title>
                             <Text size="large" className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
                             <div className="mgt64">
-                                <Grid>
-                                    <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
-                                        <Icon imageUrl={Buildings1} size="medium" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
-                                        <Icon imageUrl={Buildings2} size="medium" />
-                                    </OfficeCard>
-                                    <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
-                                        <Icon imageUrl={Buildings3} size="medium" />
-                                    </OfficeCard>
-                                </Grid>
+                                <Spotlight className="spotlight__layout">
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Rotterdam" developers={55} otherJobs={6} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.nl' address='Hofplein 20 - 3032 AC Rotterdam' country='The Netherlands'>
+                                            <Icon imageUrl={Buildings1} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Paris" developers={32} otherJobs={2} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.fr' address='Hofplein 20 - 3032 AC Rotterdam' country='France'>
+                                            <Icon imageUrl={Buildings2} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                    <SpotlightCard className="col-lg-4" padding="pad48-16">
+                                        <OfficeCard title="Newcastle" developers={2} otherJobs={0} email='info@lunatech.nl' phone='+ 010 799 73 00' careersEmail='employment@lunatech.uk'>
+                                            <Icon imageUrl={Buildings3} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                </Spotlight>
                             </div>
                         </div>
-                    </Grid>
+                    </div>
                 </Container>
             </Section>
 
@@ -74,12 +77,12 @@ const About = () => {
             <Section className="bg-bgMediumBlue">
                 <Container>
                     <Grid className="ai-c">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <Category content={<Trans i18nKey="about.subtitle4" />} />
                             <Title level={2}><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></Title>
                             <Text size="large" className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-12">
                             <img className="w100" src={AboutUs2} alt="" />
                         </div>
                     </Grid>
@@ -104,15 +107,15 @@ const About = () => {
                         <Category content={<Trans i18nKey="about.subtitle3" />} />
                         <Title level={2}>Lunatech's <span>evolution</span> over time</Title>
                     </div>
-                    {/* <Timeline />     */}
-                    <History />
+                    <Timeline />    
+                    {/* <Timeline2 /> */}
                 </Container>
             </Section>
 
             <Section>
                 <Container>
                     <div className="contact">
-                        <div>
+                        <div className="mgb32-sp">
                             <Category content={<Trans i18nKey="contact.subtitle" />} />
                             <Title level={2}>Let's talk <span>together!</span></Title>
                         </div>

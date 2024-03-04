@@ -14,10 +14,6 @@
     border-radius: 16px;
     padding: 1px;
     overflow: hidden;
-    grid-column: span 6;
-    @include phone-portrait {
-        grid-column: span 12;
-    }
     &:before {
         @include spotlight;
         transform: translate(var(--mouse-x), var(--mouse-y)) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
@@ -46,14 +42,10 @@
         text-align: center;
         position: relative;
         height: 100%;
-        padding: 96px;
         border-radius: inherit;
         z-index: 8;
         overflow: hidden;
         background: linear-gradient(to bottom, #0A1E50, #081A47);
-        @include phone-landscape {
-            padding: 48px;
-        }
     }
     &__gradient {
         position: absolute;
@@ -75,7 +67,7 @@
     &__content {
         @include flexbox;
         flex-direction: column;
-        height: 100%;
+        width: 100%;
     }
     &__image {
         position: relative;

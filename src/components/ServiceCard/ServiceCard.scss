@@ -1,11 +1,3 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
 
-.service-card {
-    &__icon {
-        background: $blue;
-        color: #78B4D7;
-        margin-bottom: 32px;
-        padding: 24px;
-    }
-}

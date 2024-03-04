@@ -3,20 +3,13 @@
 @import "/src/styles/Responsive.scss";
 
 .office-card {
-    @include dark-gradient;
-    padding: 48px 16px 16px 16px;
-    grid-column: span 4;
+    @include flexbox;
     flex-direction: column;
-    position: relative;
-    &__icon {
-        background: $blue;
-        color: #78B4D7;
-        margin-bottom: 32px;
-        padding: 24px;
-    }
+    width: 100%;
     &__bottom {
         display: flex;
         justify-content: flex-end;
+        width: 100%;
     }
     &__button {
         width: 32px;

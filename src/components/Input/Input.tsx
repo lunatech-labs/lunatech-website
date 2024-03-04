@@ -9,7 +9,7 @@ interface InputProps {
   name: string;
   type: string;
   options?: string[];
-  key?: string;
+  key?: number;
   required?: boolean;
   handleChange?: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
   formValue?: string;
@@ -71,7 +71,7 @@ const Input = (props: InputProps) => {
                     onClick={() => onOptionClicked(option)} 
                     key={index}
                   >
-                    {option}
+                    {t(option)}
                   </li>
                 ))}
               </ul>

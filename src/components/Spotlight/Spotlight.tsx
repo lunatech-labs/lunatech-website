@@ -3,8 +3,8 @@ import MousePosition from './mouse-position';
 import "./Spotlight.scss";
 
 type SpotlightProps = {
-    children: React.ReactNode
-    className?: string
+    children: React.ReactNode;
+    className?: string;
 }
 
 export default function Spotlight({children, className = '',}: SpotlightProps) {
@@ -63,12 +63,16 @@ export default function Spotlight({children, className = '',}: SpotlightProps) {
     )
 }
 
-type SpotlightCardProps = {children: React.ReactNode, className?: string}
+type SpotlightCardProps = {
+    children: React.ReactNode;
+    className?: string;
+    padding: string;
+}
 
-export function SpotlightCard({children, className = ''}: SpotlightCardProps) {
+export function SpotlightCard({children, className = '', padding = ''}: SpotlightCardProps) {
     return (
         <div className={`spotlight ${className}`}>
-            <div className="spotlight__card">
+            <div className={`spotlight__card ${padding}`}>
                 <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
                 <div className="spotlight__content">
                     {children}

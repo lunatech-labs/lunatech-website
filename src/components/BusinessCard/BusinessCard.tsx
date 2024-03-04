@@ -15,8 +15,8 @@ const BusinessCard = (props: BusinessProps) => {
                 <img className="icon__img" src={props.imageUrl} alt="" />
             </div>
             <div className="businessCard__content">
-                <Title level={4}>{props.title}</Title>
-                <Text size="small">{props.text}</Text>
+                <Title level={3}>{props.title}</Title>
+                <Text size="medium">{props.text}</Text>
             </div>
         </div>
 

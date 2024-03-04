@@ -1,15 +1,21 @@
 @import "/src/styles/Variables.scss";
+@import "/src/styles/Responsive.scss";
 
 .text-small {
     font-size: $font-size-16;
     color: $lightGray;
 }
 .text-medium {
-    font-size: $font-size-18;
+    font-size: $font-size-17;
     color: $lightGray;
 }
 .text-large {
     font-size: $font-size-22;
+    line-height: 2.25rem;     /* 36px */
     color: $lightGray;
+    @include phone-portrait {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
