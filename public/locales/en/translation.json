@@ -90,6 +90,8 @@
         "placeHolder":
         {
             "fullName": "Type your full name",
+            "email": "example@mail.com",
+            "phone": "+11 2222 333344",
             "company": "Type your company/organization name",
             "services": "Choose from the list here",
             "project": "Please type your project description"
