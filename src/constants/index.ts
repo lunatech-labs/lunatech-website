@@ -17,49 +17,49 @@ export const navLinks = [
         title: "navigation.home",
         url: "/",
         mouseEnterTitle: "home",
-        mouseEnterDesc: "Return at the start",
+        mouseEnterDesc: "navigation.dymanicText.home",
         blank: false,
     },
     {
         title: "navigation.about",
         url: "/about",
         mouseEnterTitle: "about",
-        mouseEnterDesc: "About us page",
+        mouseEnterDesc: "navigation.dymanicText.aboutUs",
         blank: false
     },
     {
         title: "Services",
         url: "/services",
         mouseEnterTitle: "services",
-        mouseEnterDesc: "Services page",
+        mouseEnterDesc: "navigation.dymanicText.services",
         blank: false
     },
     {
         title: "Technologies",
         url: "/technologies",
         mouseEnterTitle: "technlogies",
-        mouseEnterDesc: "Technologies page",
+        mouseEnterDesc: "navigation.dymanicText.technologies",
         blank: false
     },
     {
         title: "Blog",
         url: "https://blog.lunatech.com/",
         mouseEnterTitle: "blog",
-        mouseEnterDesc: "Blog page",
+        mouseEnterDesc: "navigation.dymanicText.blog",
         blank: true
     },
     {
         title: "navigation.careers",
         url: "https://recruitment.lunatech.com/",
         mouseEnterTitle: "careers",
-        mouseEnterDesc: "Careers page",
+        mouseEnterDesc: "navigation.dymanicText.careers",
         blank: true
     },
     {
         title: "Contact",
         url: "/contact",
         mouseEnterTitle: "contact",
-        mouseEnterDesc: "Contact page",
+        mouseEnterDesc: "navigation.dymanicText.contact",
         blank: false
     }
 ]
@@ -69,43 +69,43 @@ export const socialLinks = [
         title: "Github",
         url: "https://github.com/lunatech-labs",
         mouseEnterTitle: "Github",
-        mouseEnterDesc: "Take a look at our work.",
+        mouseEnterDesc: "navigation.dymanicText.github",
         blank: true,
         alt: "Github logo",
-        icon: github
+        icon: github,
     },
     {
         title: "Instagram",
         url: "https://www.instagram.com/lunatech_nl/",
         mouseEnterTitle: "Instagram",
-        mouseEnterDesc: "Follow our news.",
+        mouseEnterDesc: "navigation.dymanicText.instagram",
         blank: true,
         alt: "Instagram logo",
-        icon: instagram
+        icon: instagram,
     },
     {
         title: "Linkedin",
         url: "https://www.linkedin.com/company/lunatech-research",
         mouseEnterTitle: "Linkedin",
-        mouseEnterDesc: "Follow our news.",
+        mouseEnterDesc: "navigation.dymanicText.linkedin",
         blank: true,
         alt: "Linkedin logo",
-        icon: linkedin
+        icon: linkedin,
     },
     {
         title: "X / Twitter",
         url: "https://twitter.com/lunatechlabs",
         mouseEnterTitle: "X / Twitter",
-        mouseEnterDesc: "Follow our news.",
+        mouseEnterDesc: "navigation.dymanicText.twitter",
         blank: true,
         alt: "Twitter logo",
-        icon: twitter
+        icon: twitter,
     }
 ]
 
-export const officeBlock = [
+export const officeCard = [
     {
-        country: "Netherlands",
+        country: "officeCard.netherlands.name",
         developers: 55,
         otherJobs: 6,
         email: "infos@lunatech.nl",
@@ -120,7 +120,7 @@ export const officeBlock = [
         ]
     },
     {
-        country: "France",
+        country: "officeCard.france.name",
         developers: 32,
         otherJobs: 2,
         email: "info@lunatech.fr",
@@ -134,7 +134,7 @@ export const officeBlock = [
         ]
     },
     {
-        country: "Newcastle",
+        country: "officeCard.newcastle.name",
         developers: 2,
         otherJobs: 0,
         email: "info@lunatech.uk",
@@ -150,8 +150,8 @@ export const officeBlock = [
 
 export const serviceBlock = [
     {
-        title: "service.title",
-        titleColor: "service.titleColor",
+        title: "services.title",
+        titleColor: "services.titleColor",
         subtitle: "service.subtitle",
         text: "service.text",
         cards: [
@@ -186,7 +186,32 @@ export const serviceBlock = [
 export const aboutPage = [
     {
         title: "about.title",
-        titleImp: "about.titleImp"
+        titleImp: "about.titleImp",
+        subtitle: "about.subtitle",
+        subtitleImp: "about.subtitleImp",
+        subtitle2: "about.title2",
+        subtitleImp2: "about.titleImp2",
+        desc2: "about.text3",
+        firstBlock: {
+            title: "about.firstBlock.title",
+            titleImp: "about.firstBlock.titleImp",
+            desc: "about.firstBlock.desc",
+        },
+        secondBlock: {
+            title: "about.secondBlock.title",
+            titleImp: "about.secondBlock.titleImp",
+            desc: "about.secondBlock.desc"
+        },
+        thirdBlock: {
+            title: "about.thirdBlock.title",
+            titleImp: "about.thirdBlock.titleImp",
+            title2: "about.thirdBlock.title2"
+        },
+        fourthBlock: {
+            title: "about.fourthBlock.title",
+            titleImp: "about.fourthBlock.titleImp",
+            title2: "about.fourthBlock.title2"
+        },
     }
 ]
 
@@ -235,6 +260,19 @@ export const timeline = [
         text: "Opening of the first office in Amsterdam",
         icon: "buildings1.svg",
         lt: true
+    }
+]
+
+export const contactBtn = [
+    {
+        title: "contactBtn.title"
+    }
+]
+
+export const contactBlock = [
+    {
+        title: "contactBlock.title",
+        titleImp: "contactBlock.titleImp"
     }
 ]
 
@@ -359,3 +397,11 @@ export const contactInfos = [
         phone: "+44 (0) 7875 695 964",
     }
 ]
+
+export const notFound = {
+    title: "404",
+    subTitle: "Look like you're lost in",
+    subTitleColor: "space!",
+    text: "Oops the spaceship left without you... The page you requested could not be found.",
+    button: "buttonHomePage"
+}

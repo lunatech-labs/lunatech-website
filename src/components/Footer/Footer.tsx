@@ -4,7 +4,7 @@ import Grid from "@components/Grid/Grid";
 import Language from "@components/Language/Language";
 import lunatechLogo from '/lunatech-logo.svg';
 import "./Footer.scss";
-import { footerLinks, socialLinks } from '@/constants/index';
+import { footerLinks, socialLinks } from '@/constants';
 import { Link } from 'react-router-dom';
 
 interface FooterProps {
