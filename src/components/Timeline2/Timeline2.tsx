@@ -1,5 +1,5 @@
 import "./Timeline2.scss";
-import { timeline } from "@/constants/index";
+import { timeline } from "@/constants";
 
 const Timeline2 = () => {
     return (

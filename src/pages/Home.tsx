@@ -38,7 +38,8 @@ import { Link } from 'react-router-dom';
 import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
 import Articles from '@components/Articles/Articles';
 
-import { officeBlock, serviceBlock } from '@/constants/index';
+import { officeCard, serviceBlock } from '@/constants';
+import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
 
 const Home = () => {
@@ -88,7 +89,7 @@ const Home = () => {
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout">
-                                    {officeBlock.map((office, index) => (
+                                    {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
                                             <OfficeCard title={office.country} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
                                                 <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
@@ -187,17 +188,7 @@ const Home = () => {
 
             <Section>
                 <Container>
-                    <div className="contact">
-                        <div className="mgb32-sp">
-                            <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title level={2}>Let's talk <span>together!</span></Title>
-                        </div>
-                        <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
-                            <span>
-                                Contact Us
-                            </span>
-                        </ButtonPrimary>
-                    </div>
+                    <ContactBlock />
                     <Address />
                 </Container>
             </Section>

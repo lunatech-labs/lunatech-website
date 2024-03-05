@@ -55,7 +55,7 @@ const Timeline = () => {
         <div className="timeline">
             <div className="timeline__body">
                 {eventsData.map((event, index) => (
-                    <div>
+                    <div key={index}>
                         <div className={`${event.lt ? 'timeline__lt-event' : 'timeline__event'}`} key={event.year}>
                                 <p className={`timeline__icon ${index <= activeIndex ? 'active' : ''}`}>
                                     {event.icon && (<Icon   imageUrl={event.icon} size="small" />)}

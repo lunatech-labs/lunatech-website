@@ -4,16 +4,17 @@ import Title from '@components/Title/Title';
 import Text from "@components/Text/Text";
 import ButtonPrimary from "@components/ButtonPrimary/ButtonPrimary";
 import HomeIcon from '/home.svg';
+import { notFound } from '@/constants';
 
 const NotFound = () => {
     return (
         <div className="dflex mh100">
             <Container>
-                <div className="not-found">
-                    <p className="not-found__title">404</p>
-                    <Title level={1}>Look like you're lost in <span>space!</span></Title>
-                    <Text size="large" className="mgb64">Oops the spaceship left without you...<br />The page you requested could not be found.</Text>
-                    <ButtonPrimary to={"/"} iconUrl={HomeIcon} size="large"><Trans i18nKey="buttonHomePage" /></ButtonPrimary>
+            <div className="not-found">
+                    <p className="not-found__title">{notFound.title}</p>
+                    <Title level={1}>{notFound.subTitle} <span>{notFound.subTitleColor}</span></Title>
+                    <Text size="large" className="mgb64">{notFound.text}</Text>
+                    <ButtonPrimary to={"/"} iconUrl={HomeIcon} size="large"><Trans i18nKey={notFound.button} /></ButtonPrimary>
                 </div>
             </Container>
             <div className="circle">

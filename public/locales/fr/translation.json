@@ -13,11 +13,25 @@
         "button1": "Contact",
         "button2": "A propos"
     },
-    "navigation":{
+    "navigation": {
         "home": "Accueil",
         "about": "A propos",
         "works": "Travaux",
-        "careers": "Carrières"
+        "careers": "Carrières",
+        "dymanicText" : {
+            "default": "Projets de Lunatech.",
+            "home": "Retour à la page principale.",
+            "aboutUs": "À propos de l'entreprise",
+            "services": "Nos services",
+            "technologies": "Nos technologies",
+            "blog": "Notre blog",
+            "careers": "Nos carrières",
+            "contact": "Nous contacter",
+            "github": "Take a look at our work.",
+            "instagram": "Follow our news.",
+            "linkedin": "Follow our news.",
+            "twitter": "Follow our news."
+        } 
     },
     "banner": {
         "first": "Années d'experience",
@@ -27,18 +41,34 @@
     },
     "about": {
         "subtitle1": "Notre histoire",
-        "subtitle2": "Nos bureaux",
-        "subtitle3": "Notre parcours",
-        "subtitle4": "Notre produit",
-        "subtitle5": "Notre vision",
+        "breadcrumb": "Nos bureaux",
+        "breadcrumb2": "Nos services",
+        "breadcrumb3": "Notre histoire",
+        "breadcrumb4": "Notre vision", 
+        "firstBlock": {
+            "title": "Proche des clients à travers ",
+            "titleImp": "l'Europe",
+            "desc": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle."
+        },
+        "secondBlock": {
+            "title": "Des produits personnalisés pour répondre à ",
+            "titleImp": "vos besoins",
+            "desc": "Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes.<br /><br />Chaque application est méticuleusement conçue pour répondre aux exigences spécifiques de nos clients."
+        },
+        "thirdBlock": {
+            "title": "Une ",
+            "titleImp": "évolution",
+            "title2": ", pas une révolution"
+        },
+        "fourthBlock": {
+            "title": "L'évolution de ",
+            "titleImp": "Lunatech",
+            "title2": " au fil du temps"
+        },
         "category": "A propos",
         "title": "Systèmes logiciels personnalisés depuis plus de",
         "titleImp": "30 ans",
-        "title2": "Des produits personnalisés pour répondre à",
-        "title2Imp": "vos besoins",
-        "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
-        "text2": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle.",
-        "text3": "Lunatech est spécialisée dans la conception, le développement, le déploiement et l'exploitation continue de logiciels personnalisés qui répondent à des défis complexes.<br /><br />Chaque application est méticuleusement conçue pour répondre aux exigences spécifiques de nos clients."
+        "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants."
     },
     "modal": {
         "category": "Nos bureaux",
@@ -72,6 +102,24 @@
     },
     "officeModal": {
         "subtitle": "Nos bureaux"
+    },
+    "officeCard": {
+        "netherlands": {
+            "name": "Pays-Bas"
+        },
+        "france": {
+            "name": "France"
+        },
+        "newcastle": {
+            "name": "Newcastle"
+        }
+    },
+    "contactBtn": {
+        "title": "Contactez-nous"
+    },
+    "contactBlock": {
+        "title": "Échangeons ",
+        "titleImp": "ensemble!"
     },
     "contact": {
         "subtitle": "Contact",
