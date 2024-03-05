@@ -13,9 +13,9 @@ interface NavigationProps {
 
 
 const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
-    useTranslation();
+    const { t } = useTranslation();
     const [pathTitle, setPathTitle] = useState('Case studies');
-    const [pathDesc, setPathDesc] = useState('Selected projects by Lunatech.')
+    const [pathDesc, setPathDesc] = useState("Lunatech project")
 
     const handleMouseEnter = (title: string,desc: string) => () => {
         setPathTitle(title);
@@ -26,7 +26,7 @@ const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
         setPathDesc('Selected projects by Lunatech.')
     };
 
-    const parts = pathDesc.split(" ");
+    const parts = t(pathDesc).split(" ");
     const lastWord = parts.pop();
     const initialText = parts.join(" ");
     
@@ -34,13 +34,13 @@ const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
         <div className="navigation">
             <div className="navigation__main">
                 <ul className="navigation__social">
-                    {socialLinks.map((link) => (
-                        <li onMouseEnter={handleMouseEnter(link.mouseEnterTitle, link.mouseEnterDesc)} className="navigation__social-item"><Link to={link.url} target={link.blank ? "_blank" : ""}><img src={link.icon} alt={link.alt} />{link.title}</Link></li>   
+                    {socialLinks.map((link, index) => (
+                        <li key={index} onMouseEnter={handleMouseEnter(link.mouseEnterTitle, link.mouseEnterDesc)} className="navigation__social-item"><Link to={link.url} target={link.blank ? "_blank" : ""}><img src={link.icon} alt={link.alt} />{link.title}</Link></li>   
                     ))}
                 </ul>
                 <ul className="navigation__menu">
-                    {navLinks.map((link) => (
-                        <li onClick={onClick} onMouseEnter={handleMouseEnter(link.mouseEnterTitle, link.mouseEnterDesc)} onMouseLeave={handleMouseLeave} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to={link.url}><Trans i18nKey={link.title} /></NavLink></li>
+                    {navLinks.map((link, index) => (
+                        <li key={index} onClick={onClick} onMouseEnter={handleMouseEnter(link.mouseEnterTitle, link.mouseEnterDesc)} onMouseLeave={handleMouseLeave} className="navigation__menu-item"><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to={link.url}><Trans i18nKey={link.title} /></NavLink></li>
                     ))}
                 </ul>
             </div>

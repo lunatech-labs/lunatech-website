@@ -8,7 +8,6 @@ import Category from '@components/Category/Category';
 import Grid from '@components/Grid/Grid';
 import Section from '@components/Section/Section';
 import OfficeCard from '@components/OfficeCard/OfficeCard';
-import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Address from '@components/Address/Address';
 import Icon from '@components/Icon/Icon';
 import Timeline from '@components/Timeline/Timeline';
@@ -18,10 +17,10 @@ import Vision from '@components/Vision/Vision';
 
 import AboutUs from '/about-us-illustration.png';
 import AboutUs2 from '/about-us-illustration2.png';
-import Message from '/message.svg';
 import Moon from '/moon.svg';
 
-import { officeBlock } from '@/constants';
+import { officeCard, aboutPage } from '@/constants';
+import ContactBlock from "@/components/ContactBlock/ContactBlock";
 
 
 const About = () => {
@@ -32,7 +31,7 @@ const About = () => {
                     <Grid>
                         <div className="col-lg-6 col-md-12">
                             <Breadcrumbs />
-                            <Title level={1}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
+                            <Title level={1}><Trans i18nKey={aboutPage[0].title} /> <span><Trans i18nKey={aboutPage[0].titleImp} /></span></Title>
                         </div>
                         <img className="hero__moon" src={Moon} alt="Moon" />
                     </Grid>
@@ -44,12 +43,12 @@ const About = () => {
                     <div className="about">
                         <img className="about__img" src={AboutUs} alt="" />
                         <div className="about__content">
-                            <Category content={<Trans i18nKey="about.subtitle2" />} />
-                            <Title level={2}>Close to customers across <span>Europe</span></Title>
-                            <Text size="large" className="mgb32">{<Trans i18nKey="about.text2" />}</Text>
+                            <Category content={<Trans i18nKey="about.breadcrumb" />} />
+                            <Title level={2}><Trans i18nKey={aboutPage[0].firstBlock.title} /> <span>Europe</span></Title>
+                            <Text size="large" className="mgb32">{<Trans i18nKey={aboutPage[0].firstBlock.desc} />}</Text>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout">
-                                    {officeBlock.map((office, index) => (
+                                    {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
                                             <OfficeCard title={office.country} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
                                                 <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
@@ -69,9 +68,9 @@ const About = () => {
                 <Container>
                     <Grid className="ai-c">
                         <div className="col-lg-6 col-md-12">
-                            <Category content={<Trans i18nKey="about.subtitle4" />} />
-                            <Title level={2}><Trans i18nKey="about.title2" /> <span><Trans i18nKey="about.title2Imp" /></span></Title>
-                            <Text size="large" className="mgb32">{<Trans i18nKey="about.text3" />}</Text>
+                            <Category content={<Trans i18nKey="about.breadcrumb2" />} />
+                            <Title level={2}><Trans i18nKey={aboutPage[0].secondBlock.title} /> <span><Trans i18nKey={aboutPage[0].secondBlock.titleImp} /></span></Title>
+                            <Text size="large" className="mgb32">{<Trans i18nKey={aboutPage[0].secondBlock.desc} />}</Text>
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <img className="w100" src={AboutUs2} alt="" />
@@ -85,8 +84,8 @@ const About = () => {
             <Section>
                 <Container>
                     <div className="ta-c">
-                        <Category content={<Trans i18nKey="about.subtitle4" />} />
-                        <Title level={2}>An <span>evolution</span>, not a revolution</Title>
+                        <Category content={<Trans i18nKey="about.breadcrumb3" />} />
+                        <Title level={2}><Trans i18nKey={aboutPage[0].thirdBlock.title} /><span><Trans i18nKey={aboutPage[0].thirdBlock.titleImp} /></span><Trans i18nKey={aboutPage[0].thirdBlock.title2} /></Title>
                     </div>
                     <Vision />
                 </Container>
@@ -95,8 +94,8 @@ const About = () => {
             <Section className="bg-bgMediumBlue">
                 <Container>
                     <div className="mgb128">
-                        <Category content={<Trans i18nKey="about.subtitle3" />} />
-                        <Title level={2}>Lunatech's <span>evolution</span> over time</Title>
+                        <Category content={<Trans i18nKey="about.breadcrumb4" />} />
+                        <Title level={2}><Trans i18nKey={aboutPage[0].fourthBlock.title} /> <span><Trans i18nKey={aboutPage[0].fourthBlock.titleImp} /></span><Trans i18nKey={aboutPage[0].fourthBlock.title2} /></Title>
                     </div>
                     <Timeline />    
                     {/* <Timeline2 /> */}
@@ -105,17 +104,7 @@ const About = () => {
 
             <Section>
                 <Container>
-                    <div className="contact">
-                        <div className="mgb32-sp">
-                            <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title level={2}>Let's talk <span>together!</span></Title>
-                        </div>
-                        <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
-                            <span>
-                                Contact Us
-                            </span>
-                        </ButtonPrimary>
-                    </div>
+                    <ContactBlock />
                     <Address />
                 </Container>
             </Section>
