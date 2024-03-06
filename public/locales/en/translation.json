@@ -39,6 +39,11 @@
         "third": "Other jobs",
         "fourth": "Different nationalities"
     },
+    "aboutBlock" : {
+        "title": "Close to customers across ",
+        "titleImp": "Europe",
+        "desc": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris and Newcastle."
+    },
     "about": {
         "subtitle1": "Our story",
         "breadcrumb": "Our offices",
@@ -65,19 +70,17 @@
             "titleImp": "evolution",
             "title2": " over time"
         },
-        "category": "About us",
-        "title": "Custom software systems for over",
-        "titleImp": "30 years",
-        "text": "Lunatech provides innovative solutions for the creation and modernisation of your digital enterprise services through the following services."
+        "category": "About us"
     },
     "modal": {
         "category": "Nos bureaux",
         "contactUsBtn": "Contact us"
     },
     "service": {
-        "subtitle": "Services",
+        "breadcrumb": "Services",
+        "title": "Custom software systems for over",
+        "titleImp": "30 years",
         "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
-        "text2": "Lunatech provides innovative solutions for the creation and/or modernisation <br />of your digital enterprise services through the following services.",
         "cards" : {
             "softwareDefinedVehicle" : {
                 "title": "Software Defined Vehicle",

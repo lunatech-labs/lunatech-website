@@ -103,6 +103,16 @@ export const socialLinks = [
     }
 ]
 
+export const homePage = [
+    {
+        aboutBlock : {
+            title: "aboutBlock.title",
+            titleImp: "aboutBlock.titleImp",
+            desc: "aboutBlock.desc",
+        },
+    }
+]
+
 export const officeCard = [
     {
         country: "officeCard.netherlands.name",
@@ -195,9 +205,9 @@ export const officeBlock = [
 
 export const serviceBlock = [
     {
+        breadcrumb: "service.breadcrumb",
         title: "service.title",
         titleImp: "service.titleImp",
-        subtitle: "service.subtitle",
         text: "service.text",
         cards: [
             {

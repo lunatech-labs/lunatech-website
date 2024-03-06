@@ -1,4 +1,4 @@
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import '../i18n';
 
 import Container from '@components/Container/Container';
@@ -38,11 +38,13 @@ import { Link } from 'react-router-dom';
 import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
 import Articles from '@components/Articles/Articles';
 
-import { officeCard, serviceBlock } from '@/constants';
+import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
 
 const Home = () => {
+    const { t } = useTranslation();
+    
     return (
         <>
             <section className="hero">
@@ -84,8 +86,8 @@ const Home = () => {
                         <img className="about__img" src={AboutUs} alt="Building" />
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.category" />} />
-                            <Title level={2}><Trans i18nKey="about.title" /> <span><Trans i18nKey="about.titleImp" /></span></Title>
-                            <Text size="large" className="mgb32"><Trans i18nKey="about.text" /></Text>
+                            <Title level={2}><Trans i18nKey={homePage[0].aboutBlock.title} /> <span><Trans i18nKey={homePage[0].aboutBlock.titleImp} /></span></Title>
+                            <Text size="large" className="mgb32"><Trans i18nKey={homePage[0].aboutBlock.desc} /></Text>
                             <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout">
@@ -110,7 +112,7 @@ const Home = () => {
                     <div className="services">
                         <div className="services__top">
                             <div className="services__desc">
-                                <Category content={<Trans i18nKey="service.subtitle" />} />
+                                <Category content={<Trans i18nKey={serviceBlock[0].breadcrumb} />} />
                                 <Title level={2}><Trans i18nKey={serviceBlock[0].title} /> <span><Trans i18nKey={serviceBlock[0].titleImp} /></span></Title>
                                 <Text size="large">
                                     <Trans i18nKey="service.text" />
@@ -121,7 +123,7 @@ const Home = () => {
                         <Spotlight className="spotlight__layout">
                             {serviceBlock[0].cards.map((card, index) => (
                                 <SpotlightCard key={index} className="col-lg-6" padding="pad96">
-                                    <ServiceCard to={card.url} title={card.title} text={card.text} >
+                                    <ServiceCard to={card.url} title={t(card.title)} text={t(card.text)} >
                                         <IconRounded imageUrl={card.imageUrl} />
                                     </ServiceCard>
                                 </SpotlightCard>

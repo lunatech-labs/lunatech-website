@@ -39,6 +39,11 @@
         "third": "Autres métiers",
         "fourth": "Nationalités différentes"
     },
+    "aboutBlock" : {
+        "title": "Proche des clients à travers ",
+        "titleImp": "l'Europe",
+        "desc": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle."
+    },
     "about": {
         "subtitle1": "Notre histoire",
         "breadcrumb": "Nos bureaux",
@@ -65,14 +70,17 @@
             "titleImp": "Lunatech",
             "title2": " au fil du temps"
         },
-        "category": "A propos"
+        "category": "A propos",
+        "title": "Systèmes logiciels personnalisés depuis plus de",
+        "titleImp": "30 ans",
+        "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants."
     },
     "modal": {
         "category": "Nos bureaux",
         "contactUsBtn": "Contactez-nous"
     },
     "service": {
-        "subtitle": "Services",
+        "breadcrumb": "Services",
         "title": "Systèmes logiciels personnalisés depuis plus de",
         "titleImp": "30 ans",
         "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
