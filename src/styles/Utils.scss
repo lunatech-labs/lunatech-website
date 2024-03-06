@@ -8,6 +8,10 @@
 .ai-c {align-items: center;}
 
 /* --------------- Grid --------------- */
+.col-lg-8 {
+    grid-column: span 8;
+    @include phone-landscape {grid-column: span 12;}
+}
 .col-lg-6 {
     grid-column: span 6;
     @include phone-landscape {grid-column: span 12;}
