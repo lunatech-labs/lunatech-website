@@ -111,7 +111,7 @@ const Home = () => {
                         <div className="services__top">
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey="service.subtitle" />} />
-                                <Title level={2}><Trans i18nKey={serviceBlock[0].title} /> <span><Trans i18nKey={serviceBlock[0].titleColor} /></span></Title>
+                                <Title level={2}><Trans i18nKey={serviceBlock[0].title} /> <span><Trans i18nKey={serviceBlock[0].titleImp} /></span></Title>
                                 <Text size="large">
                                     <Trans i18nKey="service.text" />
                                 </Text>

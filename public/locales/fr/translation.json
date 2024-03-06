@@ -65,10 +65,7 @@
             "titleImp": "Lunatech",
             "title2": " au fil du temps"
         },
-        "category": "A propos",
-        "title": "Systèmes logiciels personnalisés depuis plus de",
-        "titleImp": "30 ans",
-        "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants."
+        "category": "A propos"
     },
     "modal": {
         "category": "Nos bureaux",
@@ -76,15 +73,70 @@
     },
     "service": {
         "subtitle": "Services",
-        "text": "Lunatech fournit des solutions innovantes pour la création et/ou la modernisation de vos services numériques d'entreprise à travers les services suivants.",
-        "text2": "Lunatech fournit des solutions innovantes pour la création et/ou la modernisation <br />de vos services numériques d'entreprise à travers les services suivants."
+        "title": "Systèmes logiciels personnalisés depuis plus de",
+        "titleImp": "30 ans",
+        "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
+        "cards": {
+            "softwareDefinedVehicle" : {
+                "title": "Véhicules définis par logiciel",
+                "text": "Nous aidons les entreprises à créer des solutions de mobilité intelligentes et connectées."
+            },
+            "customSoftware" : {
+                "title": "Développement de logiciels sur mesure",
+                "text": "Nous développons des logiciels sur mesure pour répondre à vos besoins spécifiques."
+            },
+            "systemIntegration" : {
+                "title": "Intégration des systèmes",
+                "text": "Nous intégrons des systèmes existants et des applications tierces dans votre écosystème digital."
+            },
+            "legacyTransformation" : {
+                "title": "Transformation de l'héritage",
+                "text": "Nous modernisons les systèmes existants pour les rendre plus agiles et plus efficaces."
+            }
+        }
     },
-    "services": {
-        "title":"Répondre à vos besoins grâce à ",
-        "titleColor":"nos services",
-        "subtitle1": "Nos services",
-        "text": "Nous proposons une large gamme de services pour vous aider à répondre à vos besoins. Nous sommes experts dans les domaines suivants :",
-        "category": "Conseils stratégiques"
+    "servicesPage": {
+        "title": "Répondre à vos besoins grâce à ",
+        "titleImp": "nos services",
+        "text": "We provide a wide range of services to help you meet your needs. We are experts in the following areas:",
+        "category": "Strategic Advice",
+        "firstBlock": {
+            "breadcrumb": "Conseils stratégiques",
+            "title": "can help you with the following",
+            "titleImp": "Lunatech ",
+            "advices": {
+                "technoPlanning": {
+                  "title": "Planification technologique",
+                  "text": "Développement de stratégies et de feuilles de route informatiques à long terme qui soutiennent les objectifs commerciaux."
+                },
+                "riskManagement": {
+                  "title": "Gestion des risques",
+                  "text": "Identification et atténuation des risques liés à l'IT, tels que les menaces de sécurité et les violations de données"
+                },
+                "innovation": {
+                  "title": "Innovation",
+                  "text": "Se tenir informé des technologies émergentes et évaluer leur impact potentiel sur l'organisation."
+                },
+                "dataManagement": {
+                  "title": "Gestion des données",
+                  "text": "Assurer que les données sont gérées de manière sécurisée, conforme et utilisées de manière stratégique."
+                },
+                "changeManagement": {
+                  "title": "Gestion du changement",
+                  "text": "Mettre en œuvre des changements informatiques de manière fluide pour minimiser les perturbations."
+                },
+                "digitalTransformation": {
+                  "title": "Transformation numérique",
+                  "text": "Diriger les efforts pour transformer les processus traditionnels avec des technologies numériques."
+                }
+            }
+        },
+        "secondBlock" : {
+            "breadcrumb": "Nos services",
+            "titleImp": "Lunatech ",
+            "title": "peut vous aider avec les services suivants",
+            "text": "Lunatech fournit des solutions innovantes pour la création et/ou la modernisation de vos services numériques d'entreprise à travers les services suivants."
+        }
     },
     "technologies": {
         "title": "Nos",

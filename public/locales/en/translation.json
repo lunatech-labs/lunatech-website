@@ -77,14 +77,68 @@
     "service": {
         "subtitle": "Services",
         "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
-        "text2": "Lunatech provides innovative solutions for the creation and/or modernisation <br />of your digital enterprise services through the following services."
+        "text2": "Lunatech provides innovative solutions for the creation and/or modernisation <br />of your digital enterprise services through the following services.",
+        "cards" : {
+            "softwareDefinedVehicle" : {
+                "title": "Software Defined Vehicle",
+                "text": "We help companies create smart, connected mobility solutions."
+            },
+            "customSoftwareDevelopment" : {
+                "title": "Custom Software Development",
+                "text": "We develop custom software to meet your specific needs."
+            },
+            "systemIntegration" : {
+                "title": "System Integration",
+                "text": "We integrate existing systems and third-party applications into your digital ecosystem."
+            },
+            "legacyTransformation" : {
+                "title": "Legacy Transformation",
+                "text": "We modernise legacy systems to make them more agile and efficient."
+            }
+        }
     },
-    "services": {
-        "title": "Meet your needs with our",
-        "titleColor": "enterprise services",
-        "subtitle1": "Our services",
+    "servicesPage": {
+        "title": "Meet your needs with our ",
+        "titleImp": "enterprise services",
         "text": "We provide a wide range of services to help you meet your needs. We are experts in the following areas:",
-        "category": "Strategic Advice"
+        "category": "Strategic Advice",
+        "firstBlock": {
+            "breadcrumb": "Strategic advice",
+            "title": "can help you with the following",
+            "titleImp": "Lunatech ",
+            "advices": {
+                "technoPlanning": {
+                    "title": "Technology planning",
+                    "text": "Developing long-term IT strategies and roadmaps that support business goals."
+                },
+                "riskManagement": {
+                    "title": "Risk management",
+                    "text": "Identifying and mitigating IT-related risks, such as security threats and data breaches"
+                },
+                "innovation": {
+                    "title": "Innovation",
+                    "text": "Keeping abreast of emerging technologies and assessing their potential impact on the organization."
+                },
+                "dataManagement": {
+                    "title": "Data Management",
+                    "text": "Ensuring data is handled securely, compliantly, and used strategically."
+                },
+                "changeManagement": {
+                    "title": "Change Management",
+                    "text": "Implementing IT changes smoothly to minimize disruption."
+                },
+                "digitalTransformation": {
+                    "title": "Digital Transformation",
+                    "text": "Leading efforts to transform traditional processes with digital technologies."
+                }
+            }
+        },
+        "secondBlock" : {
+            "breadcrumb": "Our services",
+            "titleImp": "Lunatech ",
+            "title": "can help you with the following",
+            "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital business services through the following services."
+        }
     },
     "technologies": {
         "title": "Our",
