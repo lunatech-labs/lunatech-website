@@ -103,6 +103,16 @@ export const socialLinks = [
     }
 ]
 
+export const homePage = [
+    {
+        aboutBlock : {
+            title: "aboutBlock.title",
+            titleImp: "aboutBlock.titleImp",
+            desc: "aboutBlock.desc",
+        },
+    }
+]
+
 export const officeCard = [
     {
         country: "officeCard.netherlands.name",
@@ -143,41 +153,6 @@ export const officeCard = [
             {
                 title: "United Kingdom",
                 imageUrl: ukIcon,
-            }
-        ]
-    }
-]
-
-export const serviceBlock = [
-    {
-        title: "services.title",
-        titleColor: "services.titleColor",
-        subtitle: "service.subtitle",
-        text: "service.text",
-        cards: [
-            {
-                title: "Software Defined Vehicle",
-                text: "We help you to build the future of mobility.",
-                imageUrl: sdvIcon,
-                url: "/services/software-defined-vehicle"
-            },
-            {
-                title: "Custom Software Development",
-                text: "We help you to build the future of mobility.",
-                imageUrl: customSoftwareIcon,
-                url: "/services/custom-software-development"
-            },
-            {
-                title: "System Integration",
-                text: "We help you to build the future of mobility.",
-                imageUrl: systemIntegrationIcon,
-                url: "/services/system-integration"
-            },
-            {
-                title: "Legacy Transformation",
-                text: "We help you to build the future of mobility.",
-                imageUrl: legacyTransformationIcon,
-                url: "/services/legacy-transformation"
             }
         ]
     }
@@ -230,32 +205,32 @@ export const officeBlock = [
 
 export const serviceBlock = [
     {
+        breadcrumb: "service.breadcrumb",
         title: "service.title",
-        titleColor: "service.titleColor",
-        subtitle: "service.subtitle",
+        titleImp: "service.titleImp",
         text: "service.text",
         cards: [
             {
-                title: "Software Defined Vehicle",
-                text: "We help you to build the future of mobility.",
+                title: "service.cards.softwareDefinedVehicle.title",
+                text: "service.cards.softwareDefinedVehicle.text",
                 imageUrl: sdvIcon,
                 url: "/services/software-defined-vehicle"
             },
             {
-                title: "Custom Software Development",
-                text: "We help you to build the future of mobility.",
+                title: "service.cards.customSoftwareDevelopment.title",
+                text: "service.cards.customSoftwareDevelopment.text",
                 imageUrl: customSoftwareIcon,
                 url: "/services/custom-software-development"
             },
             {
-                title: "System Integration",
-                text: "We help you to build the future of mobility.",
+                title: "service.cards.systemIntegration.title",
+                text: "service.cards.systemIntegration.text",
                 imageUrl: systemIntegrationIcon,
                 url: "/services/system-integration"
             },
             {
-                title: "Legacy Transformation",
-                text: "We help you to build the future of mobility.",
+                title: "service.cards.legacyTransformation.title",
+                text: "service.cards.legacyTransformation.text",
                 imageUrl: legacyTransformationIcon,
                 url: "/services/legacy-transformation"
             }
@@ -353,6 +328,50 @@ export const contactBlock = [
     {
         title: "contactBlock.title",
         titleImp: "contactBlock.titleImp"
+    }
+]
+
+export const servicesPage = [
+    {
+        title: "servicesPage.title",
+        titleImp: "servicesPage.titleImp",
+        firstBlock : {
+            breadcrumb: "servicesPage.firstBlock.breadcrumb",
+            title: "servicesPage.firstBlock.title",
+            titleImp: "servicesPage.firstBlock.titleImp",
+            advices : [
+                {
+                    title: "servicesPage.firstBlock.advices.technoPlanning.title",
+                    text: "servicesPage.firstBlock.advices.technoPlanning.text"
+                },
+                {
+                    title: "servicesPage.firstBlock.advices.riskManagement.title",
+                    text: "servicesPage.firstBlock.advices.riskManagement.text"
+                },
+                {
+                    title: "servicesPage.firstBlock.advices.innovation.title",
+                    text: "servicesPage.firstBlock.advices.innovation.text"
+                },
+                {
+                    title: "servicesPage.firstBlock.advices.dataManagement.title",
+                    text: "servicesPage.firstBlock.advices.dataManagement.text"
+                },
+                {
+                    title: "servicesPage.firstBlock.advices.changeManagement.title",
+                    text: "servicesPage.firstBlock.advices.changeManagement.text"
+                },
+                {
+                    title: "servicesPage.firstBlock.advices.digitalTransformation.title",
+                    text: "servicesPage.firstBlock.advices.digitalTransformation.text"
+                }
+            ]
+        },
+        secondBlock: {
+            breadcrumb: "servicesPage.secondBlock.breadcrumb",
+            title: "servicesPage.secondBlock.title",
+            titleImp: "servicesPage.secondBlock.titleImp",
+            text: "servicesPage.secondBlock.text"
+        }
     }
 ]
 
