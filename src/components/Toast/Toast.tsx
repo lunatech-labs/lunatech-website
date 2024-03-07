@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import "./Toast.scss";
-import ArrowSend from '/arrow-send.svg';
 import CloseIcon from '/close-icon.svg';
+import { arrowSend } from "@/assets";
 
 const Toast = ({ message, type, onClose }: { message: string, type: string, onClose: () => void }) => {
 const iconMap: { [key: string]: JSX.Element } = {
-    success: <img src={ArrowSend} alt="" />,
+    success: <img src={arrowSend} alt="" />,
     failure: <img src={CloseIcon} alt="" />,
 };
 

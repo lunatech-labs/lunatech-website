@@ -3,7 +3,7 @@ import Title from "@components/Title/Title";
 import Text from '@components/Text/Text';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import "./ServiceCard.scss";
-import ArrowRight from '/arrow-right.svg';
+import { arrowRight } from '@/assets';
 
 interface CardProps {
     title: string;
@@ -20,7 +20,7 @@ const ServiceCard = (props: CardProps) => {
             {props.children}
             <Title level={3}>{props.title}</Title>
             <Text size="medium" className="mgb16">{props.text}</Text>
-            <ButtonSecondary iconUrl={ArrowRight} to={props.to} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+            <ButtonSecondary iconUrl={arrowRight} to={props.to} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
         </>
     );
 };

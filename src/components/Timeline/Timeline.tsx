@@ -2,8 +2,7 @@ import { useState } from 'react';
 import Icon from "@components/Icon/Icon";
 import "./Timeline.scss";
 import Buildings1 from '../../assets/netherlandsIcon.svg';
-import ArrowChevronLeft from '/arrow-chevron-left.svg';
-import ArrowChevronRight from '/arrow-chevron-right.svg';
+import { arrowChevronLeft, arrowChevronRight } from '@/assets';
 
 interface TimelineEvent {
   year: number;
@@ -78,8 +77,8 @@ const Timeline = () => {
             </div>
         </div>
         <div className='timeline__buttons'>
-            <button className={`${minMaxBtn == 'min' ? 'min' : ''}`} onClick={() => handleArrowClick('left')}><img src={ArrowChevronLeft} alt="Scroll Left" /></button>
-            <button className={`${minMaxBtn == 'max' ? 'max' : ''}`} onClick={() => handleArrowClick('right')}><img src={ArrowChevronRight} alt="Scroll Right" /></button>
+            <button className={`${minMaxBtn == 'min' ? 'min' : ''}`} onClick={() => handleArrowClick('left')}><img src={arrowChevronLeft} alt="Scroll Left" /></button>
+            <button className={`${minMaxBtn == 'max' ? 'max' : ''}`} onClick={() => handleArrowClick('right')}><img src={arrowChevronRight} alt="Scroll Right" /></button>
         </div>
     </div>
 

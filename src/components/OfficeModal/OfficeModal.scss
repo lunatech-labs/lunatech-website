@@ -50,11 +50,14 @@
             right: 16px;
             top: 16px;
         }
+        &:hover {
+            background: $pink;
+        }
     }
     &__image {
         display: flex;
         justify-content: center;
-        min-width: 342px;
+        max-width: 400px;
         height: 566px;
         border-radius: 16px;
         margin-right: 48px;

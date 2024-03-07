@@ -7,11 +7,9 @@ import Buildings1 from '../../assets/netherlandsIcon.svg';
 import Category from "@components/Category/Category";
 import Text from "@components/Text/Text";
 import Title from "@components/Title/Title";
-import ArrowChevronLeft from '/arrow-chevron-left.svg';
-import ArrowChevronRight from '/arrow-chevron-right.svg';
-import ArrowRight from '/arrow-right.svg';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import "./TechnologiesCarousel.scss";
+import { arrowChevronLeft, arrowChevronRight, arrowRight } from '@/assets';
 
 const TechnologiesCarousel = () => {
     const wrapperRef = useRef(null);
@@ -50,7 +48,7 @@ const TechnologiesCarousel = () => {
                 <Category content={<Trans i18nKey="technologies.category2" />} />
                 <Title level={2}>Browse our <span>tech services</span></Title>
                 <Text size="large" className="mgb32">With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.</Text>
-                <ButtonSecondary iconUrl={ArrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
+                <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
             <div className='technologies-carousel__content'>
                 <div className="technologies-carousel__slider" ref={wrapperRef}>
@@ -85,8 +83,8 @@ const TechnologiesCarousel = () => {
                     </Spotlight>
                 </div>
                 <div className='technologies-carousel__buttons'>
-                    <button className={`${isAtStart ? 'disabled' : ''}`} onClick={scrollLeft}><img src={ArrowChevronLeft} alt="Scroll Left" /></button>
-                    <button className={`${isAtEnd ? 'disabled' : ''}`} onClick={scrollRight}><img src={ArrowChevronRight} alt="Scroll Right" /></button>
+                    <button className={`${isAtStart ? 'disabled' : ''}`} onClick={scrollLeft}><img src={arrowChevronLeft} alt="Scroll Left" /></button>
+                    <button className={`${isAtEnd ? 'disabled' : ''}`} onClick={scrollRight}><img src={arrowChevronRight} alt="Scroll Right" /></button>
                 </div>
             </div>
         </div>

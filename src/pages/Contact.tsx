@@ -4,7 +4,6 @@ import Input from '@components/Input/Input';
 import Address from '@/components/SideAddress/SideAddress';
 import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
-import ArrowSend from '/arrow-send.svg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Section from '@components/Section/Section';
@@ -13,6 +12,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { contactPage, contactInfos } from '@/constants';
+import { arrowSend } from '@/assets';
 
 interface ToastData {
     id: number;
@@ -143,7 +143,7 @@ const Contact = () => {
                                 {contactPage.map((input, index) => (
                                     <Input key={index} number={`0${index + 1}`} type={input.type} handleChange={handleChange} label={t(input.label)} placeHolder={t(input.placeHolder)} name={input.name} options={input.options} formValue={form[input.name as keyof typeof form]} required={input.required}/>
                                 ))}
-                                <ButtonPrimary animate={isLoading ? 'loading-icon' : ''} iconUrl={ArrowSend} type='submit' size="large" to="/">
+                                <ButtonPrimary animate={isLoading ? 'loading-icon' : ''} iconUrl={arrowSend} type='submit' size="large" to="/">
                                     <span>{isLoading ? 'Sending...' : 'Send message'}</span>
                                 </ButtonPrimary>
                             </form>
