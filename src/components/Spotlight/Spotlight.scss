@@ -23,7 +23,7 @@
         height: 20rem;
         left: -10rem;
         top: -10rem;
-        z-index: 7;
+        // z-index: 2;
     }
     &:after {
         @include spotlight;
@@ -34,7 +34,7 @@
         height: 24rem;
         left: -12rem;
         top: -12rem;
-        z-index: 9;
+        // z-index: 4;
     }
     &__card {
         @include flexbox;
@@ -43,7 +43,7 @@
         position: relative;
         height: 100%;
         border-radius: inherit;
-        z-index: 8;
+        // z-index: 3;
         overflow: hidden;
         background: linear-gradient(to bottom, #0A1E50, #081A47);
     }
