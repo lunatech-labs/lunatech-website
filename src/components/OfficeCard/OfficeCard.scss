@@ -6,6 +6,7 @@
     @include flexbox;
     flex-direction: column;
     width: 100%;
+    cursor: pointer;
     &__bottom {
         display: flex;
         justify-content: flex-end;
@@ -23,7 +24,20 @@
             background: $pink;
         }
     }
+    &:hover {
+        .office-card__button {
+            background: $pink;
+        }
+    }
     button:hover {
         cursor: pointer;
+    }
+    @include phone-portrait {
+        cursor: default;
+        
+        &:hover {
+            background: inherit;
+            cursor: default;
+        }
     }
 }
