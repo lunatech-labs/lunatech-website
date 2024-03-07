@@ -1,5 +1,4 @@
 import { useTranslation, Trans } from "react-i18next";
-import NewCastleOffice from '/newcastle-office.jpg';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Message from '/message.svg';
 import Text from '@components/Text/Text';
@@ -16,6 +15,7 @@ import "./OfficeModal.scss";
 
 interface ModalProps {
     title: string;
+    image: string;
     developers?: number;
     otherJobs?: number;
     email?: string;
@@ -37,7 +37,7 @@ const OfficeModal = (props: ModalProps) => {
             <button className="office-modal__close-btn" type="button" onClick={props.handleClose}><img src={CloseIcon} alt="Add" /></button>
        
             <div className="office-modal__image">
-                <img src={NewCastleOffice} alt="" />
+                <img src={props.image} alt="" />
             </div>
 
             <div className="office-modal__body">
@@ -50,7 +50,7 @@ const OfficeModal = (props: ModalProps) => {
                 </div>
 
                 <div className="office-modal__image-sp">
-                    <img src={NewCastleOffice} alt="" />
+                    <img src={props.image} alt="" />
                 </div>
             
                 <div className='office-modal__info'>

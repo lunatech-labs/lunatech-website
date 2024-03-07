@@ -1,10 +1,10 @@
 import { useTranslation, Trans } from 'react-i18next';
 import "./Articles.scss";
 import { useEffect, useState } from "react";
-import ArrowRight from '/arrow-right.svg';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Text from '@components/Text/Text';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
+import { arrowRight } from '@/assets';
 
 interface BlogArticle {
     title: string;
@@ -60,7 +60,7 @@ const Articles = () => {
                                     </div>
                                     <p className="blog__title">{article.title}</p>
                                     <Text size="medium" className="mgb24">{truncateText(article.excerpt, 25)}</Text>
-                                    <ButtonSecondary iconUrl={ArrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+                                    <ButtonSecondary iconUrl={arrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={article.image_url} alt="Blog img" />
                             </div>
