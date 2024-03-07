@@ -187,6 +187,24 @@
         "title": "Let's ",
         "titleImp": "talk!"
     },
+    "officeCard": {
+        "netherlands": {
+            "name": "Netherlands"
+        },
+        "france": {
+            "name": "France"
+        },
+        "newcastle": {
+            "name": "Newcastle"
+        }
+    },
+    "contactBtn": {
+        "title": "Contact us"
+    },
+    "contactBlock": {
+        "title": "Let's ",
+        "titleImp": "talk!"
+    },
     "contact": {
         "subtitle": "Contact",
         "title": "Let's work ",

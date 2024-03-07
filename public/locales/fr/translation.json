@@ -187,6 +187,24 @@
         "title": "Échangeons ",
         "titleImp": "ensemble!"
     },
+    "officeCard": {
+        "netherlands": {
+            "name": "Pays-Bas"
+        },
+        "france": {
+            "name": "France"
+        },
+        "newcastle": {
+            "name": "Newcastle"
+        }
+    },
+    "contactBtn": {
+        "title": "Contactez-nous"
+    },
+    "contactBlock": {
+        "title": "Échangeons ",
+        "titleImp": "ensemble!"
+    },
     "contact": {
         "subtitle": "Contact",
         "title": "Travaillons ",
