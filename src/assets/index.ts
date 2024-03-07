@@ -9,6 +9,7 @@ import sdvIcon from "./cpu-setting.svg";
 import customSoftwareIcon from "./custom-software.svg";
 import systemIntegrationIcon from "./system-integration.svg";
 import legacyTransformationIcon from "./legacy-transformation.svg";
+import building1 from "./buildings.svg";
 
 export {
     instagram,
@@ -21,5 +22,6 @@ export {
     sdvIcon,
     customSoftwareIcon,
     systemIntegrationIcon,
-    legacyTransformationIcon
+    legacyTransformationIcon,
+    building1,
 }

@@ -9,7 +9,8 @@ import {
     sdvIcon,
     customSoftwareIcon,
     systemIntegrationIcon,
-    legacyTransformationIcon
+    legacyTransformationIcon,
+    building1
 } from '@/assets'
 
 export const navLinks = [
@@ -250,14 +251,14 @@ export const timeline = [
         year: 1990,
         title: "Lunatech is born",
         text: "Opening of the first office in Rotterdam",
-        icon: "buildings1.svg",
+        icon: building1,
         lt: true
     },
     {
         year: 1993,
         title: "Lunatech is born",
         text: "Opening of the first office in Paris",
-        icon: "buildings1.svg",
+        icon: building1,
         lt: true
     },
     {
@@ -268,7 +269,7 @@ export const timeline = [
         year: 1997,
         title: "Lunatech is born",
         text: "Opening of the first office in Amsterdam",
-        icon: "buildings1.svg",
+        icon: building1,
         lt: true
     }
 ]
