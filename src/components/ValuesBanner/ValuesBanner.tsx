@@ -13,8 +13,8 @@ const ValuesBanner = () => {
             <Container>
                 <Grid>
                     <Value number={30} content={<Trans i18nKey="banner.first" />} />
-                    <Value number={32} content={<Trans i18nKey="banner.second" />} />
-                    <Value number={80} content={<Trans i18nKey="banner.third" />} />
+                    <Value number={90} content={<Trans i18nKey="banner.second" />} />
+                    <Value number={10} content={<Trans i18nKey="banner.third" />} />
                     <Value number={25} content={<Trans i18nKey="banner.fourth" />} />
                 </Grid>
             </Container>
