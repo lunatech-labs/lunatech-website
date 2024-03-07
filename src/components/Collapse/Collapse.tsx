@@ -22,7 +22,7 @@ const Collapse = (props: CollapseProps) => {
             <div className="collapse__top">
                 <Title level={3}>{props.title}</Title>
                 <div className="collapse__icon">
-                    <img src={ArrowChevronRight} alt="Collapse Arrow" />
+                    <img src={ArrowChevronRight}  className={isOpen ? 'open' : ''} alt="Collapse Arrow" />
                 </div>
             </div>
             {isOpen &&

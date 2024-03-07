@@ -45,7 +45,7 @@ const OfficeModal = (props: ModalProps) => {
                     {props.children}
                     <div className="mgl24">
                         <Category content={<Trans i18nKey="officeModal.subtitle" />} />
-                        <Title level={2}><span>{props.title}</span> office</Title>
+                        <Title level={2}><span>{t(props.title)}</span></Title>
                     </div>
                 </div>
 
@@ -56,13 +56,13 @@ const OfficeModal = (props: ModalProps) => {
                 <div className='office-modal__info'>
                     <div>
                         <div className="office-modal__category">
-                                <Text size="large" className="mgb8">Employees</Text>
-                                <p className="office-modal__entry"><img src={PeopleIcon} alt="" />{props.developers} Software Developers</p>
-                                <p className="office-modal__entry"><img src={ProfileIcon} alt="" />{props.otherJobs} Other Jobs</p>
+                                <Text size="large" className="mgb8">{t('officeModal.employee')}</Text>
+                                <p className="office-modal__entry"><img src={PeopleIcon} alt="" />{props.developers} {t('officeModal.softwareDevelopers')}</p>
+                                <p className="office-modal__entry"><img src={ProfileIcon} alt="" />{props.otherJobs} {t('officeModal.otherJobs')}</p>
                             </div>  
                         {(props.email && props.phone) && (
                             <div className="office-modal__category">
-                                <Text size="large" className="mgb8">Business development</Text>
+                                <Text size="large" className="mgb8">{t('officeModal.business')}</Text>
                                 <p className="office-modal__entry">
                                     <img src={EmailIcon} alt="" />{props.email}
                                     <span>|</span>
@@ -72,15 +72,15 @@ const OfficeModal = (props: ModalProps) => {
                         )}
                         {(props.careersEmail) && (
                             <div className="office-modal__category">
-                                <Text size="large" className="mgb8">Careers</Text>
+                                <Text size="large" className="mgb8">{t('officeModal.careers')}</Text>
                                 <p className="office-modal__entry"><img src={EmailIcon} alt="" />{props.careersEmail}</p>
                             </div>  
                         )}
                         {(props.address && props.country) && (
                             <div className="office-modal__category">
-                                <Text size="large" className="mgb8">Address</Text>
+                                <Text size="large" className="mgb8">{t('officeModal.address')}</Text>
                                 <p className="office-modal__entry"><img src={HomeIcon} alt="" />{props.address}</p>
-                                <p className="office-modal__entry"><img src={FlagIcon} alt="" />{props.country}</p>
+                                <p className="office-modal__entry"><img src={FlagIcon} alt="" />{t(props.country)}</p>
                             </div>
                         )}
                     </div>

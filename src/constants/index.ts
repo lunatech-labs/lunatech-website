@@ -158,51 +158,6 @@ export const officeCard = [
     }
 ]
 
-export const officeBlock = [
-    {
-        country: "Netherlands",
-        developers: 55,
-        otherJobs: 6,
-        email: "infos@lunatech.nl",
-        careersEmail: 'employment@lunatech.nl',
-        phone: "+31 10 750 2600",
-        address: "Hofplein 20 - 3032 AC Rotterdam",
-        icon: [
-            {
-                title: "Netherlands",
-                imageUrl: netherlandsIcon,
-            }
-        ]
-    },
-    {
-        country: "France",
-        developers: 32,
-        otherJobs: 2,
-        email: "info@lunatech.fr",
-        phone: "+33 1 85 08 57 00",
-        address: "3 rue de la Galmy - 77700 Chessy",
-        icon: [
-            {
-                title: "France",
-                imageUrl: franceIcon,
-            }
-        ]
-    },
-    {
-        country: "Newcastle",
-        developers: 2,
-        otherJobs: 0,
-        email: "info@lunatech.uk",
-        phone: "+44 191 338 7220",
-        icon: [
-            {
-                title: "United Kingdom",
-                imageUrl: ukIcon,
-            }
-        ]
-    }
-]
-
 export const serviceBlock = [
     {
         breadcrumb: "service.breadcrumb",

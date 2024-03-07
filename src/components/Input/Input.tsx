@@ -60,7 +60,7 @@ const Input = (props: InputProps) => {
         {type === "options" && props.options ? (    
           <div className="dropdown" ref={dropdownRef}>
             <div className={`dropdown-header ${selectedOption === t('contact.placeHolder.services') ? "default-prompt" : "selected-prompt"}`} onClick={toggling}>
-              {selectedOption}
+              {t(selectedOption)}
               <span className={`arrow ${isOpen && "open"}`}></span>
             </div>
             {isOpen && (

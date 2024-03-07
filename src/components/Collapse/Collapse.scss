@@ -30,13 +30,15 @@
     }
     &.is-collapsed {
         @include border-gradient;
+        transition: transform 0.3s ease-in-out;
         height: 260px;
-        transition: all 0.3s ease-in-out;
-        .collapse__icon {
-            background-color: $blue;
-            img {
+    }
+    .collapse__icon {
+        background-color: $blue;
+        img {
+            transition: transform 0.1s ease-in-out;
+            &.open {
                 transform: rotate(90deg);
-                transition: all 0.3s ease-in-out;
             }
         }
     }
