@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 interface CardProps {
     title: string;
+    image: string;
     developers?: number;
     otherJobs?: number;
     email?: string;

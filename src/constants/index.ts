@@ -9,7 +9,14 @@ import {
     sdvIcon,
     customSoftwareIcon,
     systemIntegrationIcon,
-    legacyTransformationIcon
+    legacyTransformationIcon,
+    rotterdamOffice,
+    parisOffice,
+    newcastleOffice,
+    automotive,
+    entertainment,
+    financial,
+    insurance
 } from '@/assets'
 
 export const navLinks = [
@@ -116,6 +123,7 @@ export const homePage = [
 export const officeCard = [
     {
         country: "officeCard.netherlands.name",
+        image: rotterdamOffice,
         developers: 55,
         otherJobs: 6,
         email: "infos@lunatech.nl",
@@ -131,6 +139,7 @@ export const officeCard = [
     },
     {
         country: "officeCard.france.name",
+        image: parisOffice,
         developers: 32,
         otherJobs: 2,
         email: "info@lunatech.fr",
@@ -145,6 +154,7 @@ export const officeCard = [
     },
     {
         country: "officeCard.newcastle.name",
+        image: newcastleOffice,
         developers: 2,
         otherJobs: 0,
         email: "info@lunatech.uk",
@@ -327,6 +337,80 @@ export const servicesPage = [
             titleImp: "servicesPage.secondBlock.titleImp",
             text: "servicesPage.secondBlock.text"
         }
+    }
+]
+
+export const technologiesPage = [
+    {
+        firstBlock: [
+            {
+                title: "Automotive",
+                text: "Providing innovative digital solutions to optimise vehicle performance and safety.",
+                imageUrl: automotive,
+            },
+            {
+                title: "Entertainment",
+                text: "Developing interactive platforms to offer immersive entertainment experiences.",
+                imageUrl: entertainment,
+            },
+            {
+                title: "Financial",
+                text: "Design advanced solutions for financial management and economic data analysis.",
+                imageUrl: financial,
+            },
+            {
+                title: "Insurance",
+                text: "Creating digital data management and analysis products for the insurance industry.",
+                imageUrl: insurance,
+            }
+        ],
+        secondBlock: [
+            {
+                title: "Devops",
+                text: "We automate deployments and manage your software end to end, ensuring the quality you expect the entire way.",
+                imageUrl: insurance,
+            },
+            {
+                title: "Scala",
+                text: "We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community.",
+                imageUrl: insurance,
+            },
+            {
+                title: "Java",
+                text: "We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years.",
+                imageUrl: insurance
+            },
+            {
+                title: "Frontend",
+                text: "Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run.",
+                imageUrl: insurance
+            },
+            {
+                title: "Big Data",
+                text: "We’re experts in handling large amounts of data. From processing, to storage and beyond.",
+                imageUrl: insurance
+            },
+            {
+                title: "Machine Learning",
+                text: "We design and implement intelligent systems that learn and improve over time.",
+                imageUrl: insurance
+            },
+            {
+                title: "UX / UI",
+                text: "To Do Text",
+                imageUrl: insurance
+            },
+            {
+                title: "Test Automation",
+                text: "From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible.",
+                imageUrl: insurance
+            },
+            {
+                title: "Agile Methodology",
+                text: "We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products",
+                imageUrl: insurance
+            }
+        ],
     }
 ]
 
