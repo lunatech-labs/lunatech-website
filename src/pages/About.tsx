@@ -29,7 +29,7 @@ const About = () => {
             <Section className="pdt256">
                 <Container>
                     <Grid>
-                        <div className="col-lg-6 col-md-12">
+                        <div className="col-lg-8 col-md-12">
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey={aboutPage[0].title} /> <span><Trans i18nKey={aboutPage[0].titleImp} /></span></Title>
                         </div>

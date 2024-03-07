@@ -3,7 +3,7 @@ import Title from '@components/Title/Title';
 import OfficeModal from '@components/OfficeModal/OfficeModal';
 import Add from '/pixelarticons_add.svg';
 import "./OfficeCard.scss";
-import { Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 interface CardProps {
     title: string;
@@ -19,6 +19,7 @@ interface CardProps {
 
 const OfficeCard = (props: CardProps) => {
     const [showModal, setShowModal] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         document.body.style.overflow = showModal ? 'hidden' : 'unset';
@@ -35,7 +36,7 @@ const OfficeCard = (props: CardProps) => {
         <>
             <div className="office-card">
                 {props.children}
-                <Title level={3}><Trans i18nKey={props.title} /></Title>
+                <Title level={3}>{t(props.title)}</Title>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
                         <img src={Add} alt="Add" />

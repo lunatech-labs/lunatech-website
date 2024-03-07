@@ -46,6 +46,9 @@
     },
     "about": {
         "subtitle1": "Our story",
+        "title": "Custom software systems for over ",
+        "titleImp": "30 years",
+        "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
         "breadcrumb": "Our offices",
         "breadcrumb2": "Our services",
         "breadcrumb3": "Our history",
@@ -78,7 +81,7 @@
     },
     "service": {
         "breadcrumb": "Services",
-        "title": "Custom software systems for over",
+        "title": "Custom software systems for over ",
         "titleImp": "30 years",
         "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
         "cards" : {
@@ -158,7 +161,31 @@
         "text": "We help you to integrate your applications and data, whether they are on-premise or in the cloud, using the best open source technologies."
     },
     "officeModal": {
-        "subtitle": "Our offices"
+        "subtitle": "Our offices",
+        "softwareDevelopers": "Software developers",
+        "otherJobs": "Other jobs",
+        "employee": "Employees",
+        "business": "Business development",
+        "careers": "Careers",
+        "address": "Address"
+    },
+    "officeCard": {
+        "netherlands": {
+            "name": "Netherlands"
+        },
+        "france": {
+            "name": "France"
+        },
+        "newcastle": {
+            "name": "Newcastle"
+        }
+    },
+    "contactBtn": {
+        "title": "Contact us"
+    },
+    "contactBlock": {
+        "title": "Let's ",
+        "titleImp": "talk!"
     },
     "officeCard": {
         "netherlands": {
