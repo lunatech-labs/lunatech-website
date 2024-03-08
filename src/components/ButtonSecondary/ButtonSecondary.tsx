@@ -4,7 +4,7 @@ import "./ButtonSecondary.scss";
 interface ButtonProps {
     children: JSX.Element;
     iconUrl: string;
-    size: "small" | "large";
+    size: "small" | "medium" | "large";
     to: string;
     newPage?: boolean;
 }

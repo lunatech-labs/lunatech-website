@@ -1,5 +1,5 @@
 import { Trans } from 'react-i18next';
-import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
+import Spotlight from '@components/Spotlight/Spotlight';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Container from '@components/Container/Container';
 import Section from '@components/Section/Section';
@@ -7,17 +7,16 @@ import Grid from '@components/Grid/Grid';
 import Category from '@components/Category/Category';
 import Title from '@components/Title/Title';
 import BusinessCard from '@components/BusinessCard/BusinessCard';
-import TechnologieCardCarousel from '@/components/TechnologieCardCarousel/TechnologieCardCarousel';
 import Icon from '@components/Icon/Icon';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
-import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Address from '@components/Address/Address';
 
 import TechnologiesIllustration from '/technologies_illustration.png';
-import Message from '/message.svg';
 
 import { technologiesPage } from '@/constants';
 import { moon } from '@/assets';
+import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
+import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
 const Vision = () => {
     return (
@@ -61,9 +60,7 @@ const Vision = () => {
                     </div>
                     <Spotlight className="spotlight__layout">
                         {technologiesPage[0].secondBlock.map((technology, index) => 
-                            <SpotlightCard key={index} className="col-lg-4 col-md-6" padding="pad48">
-                                <TechnologieCardCarousel className="col-lg-4 col-md-6 mwidthI" title={technology.title} text={technology.text}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardCarousel>
-                            </SpotlightCard>
+                            <TechnologieCardFlip key={index} className="col-lg-4 col-md-6 mwidthI" title={technology.title} text={technology.text}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardFlip>
                         )}
                     </Spotlight>
                 </Container>
@@ -73,17 +70,7 @@ const Vision = () => {
 
             <Section>
                 <Container>
-                    <div className="contact">
-                        <div className="mgb32-sp">
-                            <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title level={2}>Let's talk <span>together!</span></Title>
-                        </div>
-                        <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
-                            <span>
-                                Contact Us
-                            </span>
-                        </ButtonPrimary>
-                    </div>
+                    <ContactBlock />
                     <Address />
                 </Container>
             </Section>

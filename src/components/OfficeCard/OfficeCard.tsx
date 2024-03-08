@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import Title from '@components/Title/Title';
 import OfficeModal from '@components/OfficeModal/OfficeModal';
-import Add from '/pixelarticons_add.svg';
 import "./OfficeCard.scss";
 import { useTranslation } from 'react-i18next';
+import { addIcon } from '@/assets';
 
 interface CardProps {
     title: string;
@@ -58,7 +58,7 @@ const OfficeCard = (props: CardProps) => {
                 <Title level={3}>{t(props.title)}</Title>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
-                        <img src={Add} alt="Add" />
+                        <img src={addIcon} alt="Add" />
                     </button>
                 </div>
             </div>

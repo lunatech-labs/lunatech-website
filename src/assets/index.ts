@@ -26,12 +26,29 @@ import arrowSend from "./buttons/arrow-send.svg";
 import aboutUsIllustration from "./about-us-illustration.png";
 import aboutUsIllustration2 from "./about-us-illustration2.png";
 
+import visionIllustration from "./about/vision-illustration.png";
+import visionIllustrationOpen from "./about/services_illustration_open.png";
+
 import automotive from "./technologies/automotive.svg";
 import financial from "./technologies/financial.svg";
 import entertainment from "./technologies/entertainment.svg";
 import insurance from "./technologies/insurance.svg";
+import dotIcon from "./buttons/dot-icon.svg";
+import closeIcon from "./buttons/close-icon.svg";
+import emailIcon from "./general/email-icon.svg";
+import peopleIcon from "./general/people.svg";
+import profileIcon from "./general/profile.svg";
+import phoneIcon from "./general/phone-icon.svg";
+import flagIcon from "./general/flag-icon.svg";
+import homeIcon from "./general/home-icon.svg";
+import officeIcon from "./general/office.svg";
+import messageIcon from "./general/message.svg";
+import addIcon from "./general/pixelarticons_add.svg";
+
+import lunatechLogo from "./general/lunatech-logo.svg";
 
 export {
+    lunatechLogo,
     instagram,
     twitter,
     linkedin,
@@ -61,5 +78,18 @@ export {
     automotive,
     financial,
     entertainment,
-    insurance
+    insurance,
+    visionIllustration,
+    visionIllustrationOpen,
+    dotIcon,
+    closeIcon,
+    emailIcon,
+    peopleIcon,
+    profileIcon,
+    phoneIcon,
+    flagIcon,
+    homeIcon,
+    officeIcon,
+    messageIcon,
+    addIcon
 }

@@ -20,8 +20,6 @@ import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 
-import Message from '/message.svg';
-
 import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
@@ -31,7 +29,7 @@ import Articles from '@components/Articles/Articles';
 
 import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
-import { aboutUsIllustration, arrowRight, clouds, grass, mist, moon, mountains, telescope } from '@/assets';
+import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
 
 
 const Home = () => {
@@ -55,7 +53,7 @@ const Home = () => {
                             <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
                             <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
-                                <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
+                                <ButtonPrimary to={"/contact"} iconUrl={messageIcon} size="large">
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
                                 <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={arrowRight} alt="Arrow" /></Link>
