@@ -16,7 +16,9 @@ import {
     automotive,
     entertainment,
     financial,
-    insurance
+    insurance,
+    visionIllustration,
+    visionIllustrationOpen
 } from '@/assets'
 
 export const navLinks = [
@@ -117,6 +119,25 @@ export const homePage = [
             titleImp: "aboutBlock.titleImp",
             desc: "aboutBlock.desc",
         },
+    }
+]
+
+export const valuesBanner = [
+    {
+        title: "banner.first",
+        number: 30
+    },
+    {
+        title: "banner.second",
+        number: 32
+    },
+    {
+        title: "banner.third",
+        number: 80
+    },
+    {
+        title: "banner.fourth",
+        number: 25
     }
 ]
 
@@ -225,7 +246,23 @@ export const aboutPage = [
         thirdBlock: {
             title: "about.thirdBlock.title",
             titleImp: "about.thirdBlock.titleImp",
-            title2: "about.thirdBlock.title2"
+            title2: "about.thirdBlock.title2",
+            img: visionIllustration,
+            imgOpen: visionIllustrationOpen,
+            vision: [
+                {
+                    text: "Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels."
+                },
+                {
+                    text: "Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme."
+                },
+                {
+                    text: "Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues."
+                },
+                {
+                    text: "Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité."
+                }
+            ]
         },
         fourthBlock: {
             title: "about.fourthBlock.title",

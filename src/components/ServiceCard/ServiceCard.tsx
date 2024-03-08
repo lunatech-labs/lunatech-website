@@ -20,7 +20,7 @@ const ServiceCard = (props: CardProps) => {
             {props.children}
             <Title level={3}>{props.title}</Title>
             <Text size="medium" className="mgb16">{props.text}</Text>
-            <ButtonSecondary iconUrl={arrowRight} to={props.to} size="small"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+            <ButtonSecondary iconUrl={arrowRight} to={props.to} size="medium"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
         </>
     );
 };

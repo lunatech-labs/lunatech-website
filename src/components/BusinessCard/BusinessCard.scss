@@ -6,8 +6,13 @@
     @include flexbox;
     padding: 48px;
     border: 1px solid transparent;
+    cursor: pointer;
     &:hover {
         @include dark-gradient;
+        .icon__img {
+            transform: scale(1.1);
+            animation: bounce 0.6s ease;
+        }
     }
     &__icon {
         @include flexbox;
@@ -20,7 +25,7 @@
         height: 96px;
         margin-right: 32px;
     }
-    &__img {
+    img {
         width: 32px;
         height: 32px;
     }
@@ -28,3 +33,30 @@
         width: calc(100% - 128px);
     }
 }
+
+@keyframes bounce {
+    0%, 100% {
+      transform: scale(1); // Start and end at normal size
+      animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    }
+    15% {
+      transform: scale(1.15); // Scale up more than we want to end on for the first bounce
+      animation-timing-function: cubic-bezier(0.5, 2, 1, 0.5);
+    }
+    30% {
+      transform: scale(0.95); // Scale down below normal size
+      animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    }
+    45%, 60% {
+      transform: scale(1.05); // Scale a little above normal size
+      animation-timing-function: cubic-bezier(0.5, 2, 1, 0.5);
+    }
+    75% {
+      transform: scale(0.98); // Scale down a bit
+      animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    }
+    90% {
+      transform: scale(1.02); // Scale up a tiny bit
+      animation-timing-function: cubic-bezier(0.5, 2, 1, 0.5);
+    }
+  }

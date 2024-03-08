@@ -2,10 +2,10 @@ import { useTranslation, Trans } from 'react-i18next';
 import Container from "@components/Container/Container";
 import Grid from "@components/Grid/Grid";
 import Language from "@components/Language/Language";
-import lunatechLogo from '/lunatech-logo.svg';
 import "./Footer.scss";
 import { footerLinks, socialLinks } from '@/constants/index';
 import { Link } from 'react-router-dom';
+import { lunatechLogo } from '@/assets';
 
 interface FooterProps {
     changeLanguage: (lng: string) => void;
