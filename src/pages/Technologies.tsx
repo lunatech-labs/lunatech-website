@@ -11,10 +11,8 @@ import Icon from '@components/Icon/Icon';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Address from '@components/Address/Address';
 
-import TechnologiesIllustration from '/technologies_illustration.png';
-
 import { technologiesPage } from '@/constants';
-import { moon } from '@/assets';
+import { moon, technologyIllustration } from '@/assets';
 import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
@@ -39,7 +37,7 @@ const Vision = () => {
                         <div className="col-lg-6 col-md-12">
                             <Category content={<Trans i18nKey="technologies.category1" />} />
                             <Title level={2}>The sectors in which we <span>specialise</span></Title>
-                            <img className="w100" src={TechnologiesIllustration} alt="" />
+                            <img className="w100" src={technologyIllustration} alt="" />
                         </div>
                         <div className="col-lg-6 col-md-12">
                             {technologiesPage[0].firstBlock.map((business, index) => (

@@ -25,9 +25,10 @@ import arrowSend from "./buttons/arrow-send.svg";
 
 import aboutUsIllustration from "./about-us-illustration.png";
 import aboutUsIllustration2 from "./about-us-illustration2.png";
-
+import serviceIllustration from "./general/services_illustration.png";
 import visionIllustration from "./about/vision-illustration.png";
 import visionIllustrationOpen from "./about/services_illustration_open.png";
+import technologyIllustration from "./general/technologies_illustration.png";
 
 import automotive from "./technologies/automotive.svg";
 import financial from "./technologies/financial.svg";
@@ -91,5 +92,7 @@ export {
     homeIcon,
     officeIcon,
     messageIcon,
-    addIcon
+    addIcon,
+    serviceIllustration,
+    technologyIllustration
 }
