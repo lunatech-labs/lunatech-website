@@ -10,7 +10,7 @@
         @include phone-landscape {grid-column: span 12;}
     }
     &__title {
-        font-size: $font-size-21;
+        font-size: $font-size-24;
         margin-bottom: 32px;
         @include phone-landscape {
             margin-bottom: 16px;

@@ -55,7 +55,7 @@ const OfficeCard = (props: CardProps) => {
         <>
             <div className="office-card" onClick={handleCardClick}>
                 {props.children}
-                <Title level={3}>{t(props.title)}</Title>
+                <Title level={4}>{t(props.title)}</Title>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
                         <img src={addIcon} alt="Add" />
