@@ -40,9 +40,7 @@ const Vision = () => {
                             <img className="w100" src={technologyIllustration} alt="" />
                         </div>
                         <div className="col-lg-6 col-md-12">
-                            {technologiesPage[0].firstBlock.map((business, index) => (
-                                <BusinessCard key={index} title={business.title} text={business.text} imageUrl={business.imageUrl} />
-                            ))}
+                            <BusinessCard />
                         </div>
                     </Grid>
                 </Container>

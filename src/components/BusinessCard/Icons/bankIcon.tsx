@@ -1,0 +1,17 @@
+const bankIcon = () => {
+    return (
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="bankRoofTop" d="M16.4933 2.86711L28.4933 7.66708C28.96 7.85374 29.3333 8.41373 29.3333 8.90707V13.3337C29.3333 14.0671 28.7333 14.6671 28 14.6671H3.99996C3.26663 14.6671 2.66663 14.0671 2.66663 13.3337V8.90707C2.66663 8.41373 3.03997 7.85374 3.50663 7.66708L15.5066 2.86711C15.7733 2.76044 16.2266 2.76044 16.4933 2.86711Z" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M29.3333 29.3333H2.66663V25.3333C2.66663 24.6 3.26663 24 3.99996 24H28C28.7333 24 29.3333 24.6 29.3333 25.3333V29.3333Z" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path id="bankPillar" d="M5.33337 24.0003V14.667" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path id="bankPillar" d="M10.6666 24.0003V14.667" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path id="bankPillar" d="M16 24.0003V14.667" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path id="bankPillar" d="M21.3334 24.0003V14.667" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path id="bankPillar" d="M26.6666 24.0003V14.667" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M1.33337 29.333H30.6667" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path id="bankCoin" d="M16 11.333C17.1046 11.333 18 10.4376 18 9.33301C18 8.22844 17.1046 7.33301 16 7.33301C14.8954 7.33301 14 8.22844 14 9.33301C14 10.4376 14.8954 11.333 16 11.333Z" stroke="#78B4D7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+    )
+}
+
+export default bankIcon
