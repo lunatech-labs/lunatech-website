@@ -30,9 +30,6 @@ import visionIllustration from "./about/vision-illustration.png";
 import visionIllustrationOpen from "./about/services_illustration_open.png";
 import technologyIllustration from "./general/technologies_illustration.png";
 
-import visionIllustration from "./about/vision-illustration.png";
-import visionIllustrationOpen from "./about/services_illustration_open.png";
-
 import automotive from "./technologies/automotive.svg";
 import financial from "./technologies/financial.svg";
 import entertainment from "./technologies/entertainment.svg";

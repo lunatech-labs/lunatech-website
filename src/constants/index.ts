@@ -13,13 +13,15 @@ import {
     rotterdamOffice,
     parisOffice,
     newcastleOffice,
-    automotive,
-    entertainment,
-    financial,
-    insurance,
     visionIllustration,
-    visionIllustrationOpen
+    visionIllustrationOpen,
+    insurance,
 } from '@/assets'
+
+import carIcon from '@/components/BusinessCard/Icons/carIcon'
+import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
+import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
+import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 
 export const navLinks = [
     {
@@ -406,22 +408,22 @@ export const technologiesPage = [
             {
                 title: "Automotive",
                 text: "Providing innovative digital solutions to optimise vehicle performance and safety.",
-                imageUrl: automotive,
+                image: carIcon,
             },
             {
                 title: "Entertainment",
                 text: "Developing interactive platforms to offer immersive entertainment experiences.",
-                imageUrl: entertainment,
+                image: buildingIcon,
             },
             {
                 title: "Financial",
                 text: "Design advanced solutions for financial management and economic data analysis.",
-                imageUrl: financial,
+                image: bankIcon,
             },
             {
                 title: "Insurance",
                 text: "Creating digital data management and analysis products for the insurance industry.",
-                imageUrl: insurance,
+                image: shieldIcon,
             }
         ],
         secondBlock: [
