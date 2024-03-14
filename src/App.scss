@@ -36,13 +36,36 @@ nav.nav-bar--hidden {
 }
 
 /* ------------- HERO BLOCK ------------- */
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+    display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	// background-size: auto 1038px;
+	background-repeat: repeat-x;
+    height: 160vh;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	// position: fixed;
+}
+
 .hero {
     position: relative;
     height: 100vh;
     background: linear-gradient(#061C45, #062149, #063256, #064E6C, #06748A, #068A9C);
     &__background {
         img {
-            position: absolute;
+            // position: absolute;
             bottom: 0;
             z-index: 2;
             width: 100%;

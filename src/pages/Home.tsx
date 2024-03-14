@@ -30,6 +30,7 @@ import Articles from '@components/Articles/Articles';
 import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 
 const Home = () => {
@@ -39,31 +40,53 @@ const Home = () => {
         <>
             <section className="hero">
                 <div className="hero__background">
-                    <img src={mist} className="" alt="Mist" />
+                    <Parallax pages={2} style={{ top: '0', left: '0' }} className="animation">
+                        <ParallaxLayer offset={0} speed={0.3}>
+                            <img className="animation_layer parallax" src={mist} alt="Mist" />
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={0} speed={-0.1}>
+                            <img src={clouds} className="animation_layer parallax" alt="Clouds" />
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={0} speed={0.30}>
+                            <img src={mountains} className="animation_layer parallax" alt="Mountains" />
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={0} speed={0.35}>
+                            <img src={grass} className="animation_layer parallax" alt="Grass" />
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={0} speed={0.5}>
+                            <img src={telescope} className="animation_layer parallax" alt="Telescope" />
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={0} speed={0.7}>
+                            <MouseScroll />
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={0} speed={0.6}>
+                            <div className="hero__content">
+                                <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
+                                <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
+                                <div className="dflex">
+                                    <ButtonPrimary to={"/contact"} iconUrl={messageIcon} size="large">
+                                        <Trans i18nKey="hero.button1" />
+                                    </ButtonPrimary>
+                                    <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={arrowRight} alt="Arrow" /></Link>
+                                </div>
+                            </div>
+                        </ParallaxLayer>
+                    </Parallax>
+                    {/* <img src={mist} className="" alt="Mist" />
                     <img src={clouds} className="" alt="Clouds" />
                     <img src={mountains} className="" alt="Mountains" />
                     <img src={grass} className="" alt="Grass" />
-                    <img src={telescope} className="" alt="Telescope" />
+                    <img src={telescope} className="" alt="Telescope" /> */}
                     <Stars />
                 </div>
                 
                 <Container>
                     <Grid>
-                        <div className="hero__content">
-                            <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
-                            <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
-                            <div className="dflex">
-                                <ButtonPrimary to={"/contact"} iconUrl={messageIcon} size="large">
-                                    <Trans i18nKey="hero.button1" />
-                                </ButtonPrimary>
-                                <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={arrowRight} alt="Arrow" /></Link>
-                            </div>
-                        </div>
                         <img className="hero__moon" src={moon} alt="Moon" />
                     </Grid>
                 </Container>
                 <Sphere />
-                <MouseScroll />
+               
             </section>
 
             <ValuesBanner />
