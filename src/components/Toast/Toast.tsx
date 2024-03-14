@@ -1,12 +1,11 @@
 import PropTypes from "prop-types";
 import "./Toast.scss";
-import ArrowSend from '/arrow-send.svg';
-import CloseIcon from '/close-icon.svg';
+import { arrowSend, closeIcon } from "@/assets";
 
 const Toast = ({ message, type, onClose }: { message: string, type: string, onClose: () => void }) => {
 const iconMap: { [key: string]: JSX.Element } = {
-    success: <img src={ArrowSend} alt="" />,
-    failure: <img src={CloseIcon} alt="" />,
+    success: <img src={arrowSend} alt="" />,
+    failure: <img src={closeIcon} alt="" />,
 };
 
 const toastIcon = iconMap[type] || null;
@@ -21,7 +20,7 @@ const toastIcon = iconMap[type] || null;
       </div>
       <button className="toast__close-btn" onClick={onClose}>
         <span className="closeIcon">
-          <img src={CloseIcon} alt="" />
+          <img src={closeIcon} alt="" />
         </span>
       </button>
     </div>

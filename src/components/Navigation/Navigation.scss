@@ -67,12 +67,12 @@
         }
         a {
             @include flexbox;
-            font-size: $font-size-21;
+            font-size: $font-size-24;
             color: white;
         }
     }
     &__menu {
-        padding: 64px;
+        padding: 20vh 64px 64px 0;
         width: calc(100% - 384px);
         display: flex;
         flex-direction: column;
@@ -91,9 +91,9 @@
             margin-bottom: -20px;
         }
         a {
-            font-size: $font-size-64;
+            font-size: 5vh;
             color: $lightGray;
-            line-height: 5.5rem;
+            line-height: 8.5vh;
             font-weight: 700;
             &.active {@include red-title;}
             &:hover {color: white;}

@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import Title from '@components/Title/Title';
 import OfficeModal from '@components/OfficeModal/OfficeModal';
-import Add from '/pixelarticons_add.svg';
 import "./OfficeCard.scss";
 import { useTranslation } from 'react-i18next';
+import { addIcon } from '@/assets';
 
 interface CardProps {
     title: string;
+    image: string;
     developers?: number;
     otherJobs?: number;
     email?: string;
@@ -17,8 +18,24 @@ interface CardProps {
     children: JSX.Element;
 }
 
+const useWindowSize = () => {
+    const [size, setSize] = useState([0, 0]);
+
+    useEffect(() => {
+        const updateSize = () => {
+            setSize([window.innerWidth, window.innerHeight]);
+        };
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
+
+    return size;
+};
+
 const OfficeCard = (props: CardProps) => {
     const [showModal, setShowModal] = useState(false);
+    const [width] = useWindowSize();
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -28,24 +45,27 @@ const OfficeCard = (props: CardProps) => {
         };
     }, [showModal]);
 
-    const handleClose = () => {
-        setShowModal(false);
+    const handleCardClick = () => {
+        if (width > 575.98) {
+            setShowModal(true);
+        }
     };
 
     return (
         <>
-            <div className="office-card">
+            <div className="office-card" onClick={handleCardClick}>
                 {props.children}
-                <Title level={3}>{t(props.title)}</Title>
+                <Title level={4}>{t(props.title)}</Title>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
-                        <img src={Add} alt="Add" />
+                        <img src={addIcon} alt="Add" />
                     </button>
                 </div>
             </div>
-            {showModal && <OfficeModal {...props} handleClose={handleClose} />}
+            {showModal && <OfficeModal {...props} handleClose={() => setShowModal(false)} />}
         </>
     );
 };
 
 export default OfficeCard;
+

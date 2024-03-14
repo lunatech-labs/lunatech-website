@@ -10,8 +10,19 @@ import {
     customSoftwareIcon,
     systemIntegrationIcon,
     legacyTransformationIcon,
-    building1
+    rotterdamOffice,
+    parisOffice,
+    newcastleOffice,
+    visionIllustration,
+    visionIllustrationOpen,
+    insurance,
+    officeIcon
 } from '@/assets'
+
+import carIcon from '@/components/BusinessCard/Icons/carIcon'
+import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
+import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
+import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 
 export const navLinks = [
     {
@@ -114,9 +125,29 @@ export const homePage = [
     }
 ]
 
+export const valuesBanner = [
+    {
+        title: "banner.first",
+        number: 30
+    },
+    {
+        title: "banner.second",
+        number: 32
+    },
+    {
+        title: "banner.third",
+        number: 80
+    },
+    {
+        title: "banner.fourth",
+        number: 25
+    }
+]
+
 export const officeCard = [
     {
         country: "officeCard.netherlands.name",
+        image: rotterdamOffice,
         developers: 55,
         otherJobs: 6,
         email: "infos@lunatech.nl",
@@ -132,6 +163,7 @@ export const officeCard = [
     },
     {
         country: "officeCard.france.name",
+        image: parisOffice,
         developers: 32,
         otherJobs: 2,
         email: "info@lunatech.fr",
@@ -146,6 +178,7 @@ export const officeCard = [
     },
     {
         country: "officeCard.newcastle.name",
+        image: newcastleOffice,
         developers: 2,
         otherJobs: 0,
         email: "info@lunatech.uk",
@@ -158,6 +191,29 @@ export const officeCard = [
         ]
     }
 ]
+
+export const visionCards = [
+    {
+        id: 1,
+        column: "left",
+        text: "Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels.",
+    },
+    {
+        id: 2,
+        column: "right",
+        text: "Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme.",
+    },
+    {
+        id: 3,
+        column: "left",
+        text: "Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues.",
+    },
+    {
+        id: 4,
+        column: "right",
+        text: "Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité.",
+    },
+];
 
 export const serviceBlock = [
     {
@@ -216,7 +272,23 @@ export const aboutPage = [
         thirdBlock: {
             title: "about.thirdBlock.title",
             titleImp: "about.thirdBlock.titleImp",
-            title2: "about.thirdBlock.title2"
+            title2: "about.thirdBlock.title2",
+            img: visionIllustration,
+            imgOpen: visionIllustrationOpen,
+            vision: [
+                {
+                    text: "Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels."
+                },
+                {
+                    text: "Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme."
+                },
+                {
+                    text: "Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues."
+                },
+                {
+                    text: "Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité."
+                }
+            ]
         },
         fourthBlock: {
             title: "about.fourthBlock.title",
@@ -251,14 +323,14 @@ export const timeline = [
         year: 1990,
         title: "Lunatech is born",
         text: "Opening of the first office in Rotterdam",
-        icon: building1,
+        icon: officeIcon,
         lt: true
     },
     {
         year: 1993,
         title: "Lunatech is born",
         text: "Opening of the first office in Paris",
-        icon: building1,
+        icon: officeIcon,
         lt: true
     },
     {
@@ -269,7 +341,7 @@ export const timeline = [
         year: 1997,
         title: "Lunatech is born",
         text: "Opening of the first office in Amsterdam",
-        icon: building1,
+        icon: officeIcon,
         lt: true
     }
 ]
@@ -328,6 +400,80 @@ export const servicesPage = [
             titleImp: "servicesPage.secondBlock.titleImp",
             text: "servicesPage.secondBlock.text"
         }
+    }
+]
+
+export const technologiesPage = [
+    {
+        firstBlock: [
+            {
+                title: "Automotive",
+                text: "Providing innovative digital solutions to optimise vehicle performance and safety.",
+                image: carIcon,
+            },
+            {
+                title: "Entertainment",
+                text: "Developing interactive platforms to offer immersive entertainment experiences.",
+                image: buildingIcon,
+            },
+            {
+                title: "Financial",
+                text: "Design advanced solutions for financial management and economic data analysis.",
+                image: bankIcon,
+            },
+            {
+                title: "Insurance",
+                text: "Creating digital data management and analysis products for the insurance industry.",
+                image: shieldIcon,
+            }
+        ],
+        secondBlock: [
+            {
+                title: "Devops",
+                text: "We automate deployments and manage your software end to end, ensuring the quality you expect the entire way.",
+                imageUrl: insurance,
+            },
+            {
+                title: "Scala",
+                text: "We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community.",
+                imageUrl: insurance,
+            },
+            {
+                title: "Java",
+                text: "We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years.",
+                imageUrl: insurance
+            },
+            {
+                title: "Frontend",
+                text: "Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run.",
+                imageUrl: insurance
+            },
+            {
+                title: "Big Data",
+                text: "We’re experts in handling large amounts of data. From processing, to storage and beyond.",
+                imageUrl: insurance
+            },
+            {
+                title: "Machine Learning",
+                text: "We design and implement intelligent systems that learn and improve over time.",
+                imageUrl: insurance
+            },
+            {
+                title: "UX / UI",
+                text: "To Do Text",
+                imageUrl: insurance
+            },
+            {
+                title: "Test Automation",
+                text: "From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible.",
+                imageUrl: insurance
+            },
+            {
+                title: "Agile Methodology",
+                text: "We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products",
+                imageUrl: insurance
+            }
+        ],
     }
 ]
 

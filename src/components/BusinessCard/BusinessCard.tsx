@@ -1,26 +1,23 @@
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
 import "./BusinessCard.scss";
+import { technologiesPage } from "@/constants";
 
-interface BusinessProps {
-    imageUrl: string;
-    title: string;
-    text: string;
-}
-
-const BusinessCard = (props: BusinessProps) => {
+const BusinessCard = () => {
     return (
-        <div className="businessCard">
-            <div className="businessCard__icon">
-                <img className="icon__img" src={props.imageUrl} alt="" />
-            </div>
-            <div className="businessCard__content">
-                <Title level={3}>{props.title}</Title>
-                <Text size="medium">{props.text}</Text>
-            </div>
-        </div>
-
-        
+    <>
+        {technologiesPage[0].firstBlock.map((business, index) => (
+                <div key={index} className="businessCard">
+                    <div className="businessCard__icon">
+                        {business.image()}
+                    </div>
+                    <div className="businessCard__content">
+                        <Title level={3}>{business.title}</Title>
+                        <Text size="medium">{business.text}</Text>
+                    </div>
+                </div>
+            ))}
+    </>
     )
 }
 

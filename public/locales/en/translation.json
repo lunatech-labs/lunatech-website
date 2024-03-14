@@ -50,9 +50,9 @@
         "titleImp": "30 years",
         "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
         "breadcrumb": "Our offices",
-        "breadcrumb2": "Our services",
-        "breadcrumb3": "Our history",
-        "breadcrumb4": "Our vision",
+        "breadcrumb2": "Our philosophy",
+        "breadcrumb3": "Our vision",
+        "breadcrumb4": "Our journey",
         "firstBlock": {
             "title": "Close to customers across ",
             "titleImp": "Europe",
@@ -246,7 +246,7 @@
     },
     "footer": {
         "managed": "Managed by Lunatech Labs.",
-        "copyright": "All rights reserved.",
+        "copyright": "© 2023 Lunatech. All rights reserved.",
         "terms": "Terms of Services",
         "title1": "Plan",
         "title2": "Get connected",

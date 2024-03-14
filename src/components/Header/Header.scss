@@ -4,7 +4,7 @@
 .header {
     @include flexbox;
     justify-content: space-between;
-    padding: 64px;
+    padding: 4vh;
     pointer-events: none;
     @include desktop {padding: 32px;}
     @include phone-landscape {padding: 24px;}

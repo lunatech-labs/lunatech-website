@@ -50,9 +50,9 @@
         "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
         "subtitle1": "Notre histoire",
         "breadcrumb": "Nos bureaux",
-        "breadcrumb2": "Nos services",
-        "breadcrumb3": "Notre histoire",
-        "breadcrumb4": "Notre vision", 
+        "breadcrumb2": "Notre philosophie",
+        "breadcrumb3": "Notre vision", 
+        "breadcrumb4": "Notre parcours",
         "firstBlock": {
             "title": "Proche des clients à travers ",
             "titleImp": "l'Europe",
@@ -243,7 +243,7 @@
     },
     "footer": {
         "managed": "Dirigé par Lunatech Labs.",
-        "copyright": "Tous droits réservés.",
+        "copyright": "© 2023 Lunatech. Tous droits réservés.",
         "terms": "Conditions de service",
         "title1": "Plan",
         "title2": "Rejoignez-nous",

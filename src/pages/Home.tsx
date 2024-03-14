@@ -20,17 +20,6 @@ import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 
-import Mist from '/mist.svg';
-import Clouds from '/clouds.svg';
-import Mountains from '/mountains.svg';
-import Grass from '/grass.svg';
-import Telescope from '/telescope.svg';
-import Moon from '/moon.svg';
-
-import ArrowRight from '/arrow-right.svg';
-import Message from '/message.svg';
-
-import AboutUs from '/about-us-illustration.png';
 import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
@@ -40,6 +29,7 @@ import Articles from '@components/Articles/Articles';
 
 import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
 
 
 const Home = () => {
@@ -49,11 +39,11 @@ const Home = () => {
         <>
             <section className="hero">
                 <div className="hero__background">
-                    <img src={Mist} className="" alt="Mist" />
-                    <img src={Clouds} className="" alt="Clouds" />
-                    <img src={Mountains} className="" alt="Mountains" />
-                    <img src={Grass} className="" alt="Grass" />
-                    <img src={Telescope} className="" alt="Telescope" />
+                    <img src={mist} className="" alt="Mist" />
+                    <img src={clouds} className="" alt="Clouds" />
+                    <img src={mountains} className="" alt="Mountains" />
+                    <img src={grass} className="" alt="Grass" />
+                    <img src={telescope} className="" alt="Telescope" />
                     <Stars />
                 </div>
                 
@@ -63,13 +53,13 @@ const Home = () => {
                             <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
                             <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
-                                <ButtonPrimary to={"/contact"} iconUrl={Message} size="large">
+                                <ButtonPrimary to={"/contact"} iconUrl={messageIcon} size="large">
                                     <Trans i18nKey="hero.button1" />
                                 </ButtonPrimary>
-                                <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={ArrowRight} alt="Arrow" /></Link>
+                                <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={arrowRight} alt="Arrow" /></Link>
                             </div>
                         </div>
-                        <img className="hero__moon" src={Moon} alt="Moon" />
+                        <img className="hero__moon" src={moon} alt="Moon" />
                     </Grid>
                 </Container>
                 <Sphere />
@@ -83,17 +73,17 @@ const Home = () => {
             <Section>
                 <Container>
                     <div className="about">
-                        <img className="about__img" src={AboutUs} alt="Building" />
+                        <img className="about__img" src={aboutUsIllustration} alt="Building" />
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.category" />} />
                             <Title level={2}><Trans i18nKey={homePage[0].aboutBlock.title} /> <span><Trans i18nKey={homePage[0].aboutBlock.titleImp} /></span></Title>
                             <Text size="large" className="mgb32"><Trans i18nKey={homePage[0].aboutBlock.desc} /></Text>
-                            <ButtonSecondary iconUrl={ArrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
+                            <ButtonSecondary iconUrl={arrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout">
                                     {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
-                                            <OfficeCard title={office.country} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
+                                            <OfficeCard title={office.country} image={office.image} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
                                                 <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
                                             </OfficeCard>
                                         </SpotlightCard>
@@ -118,7 +108,7 @@ const Home = () => {
                                     <Trans i18nKey="service.text" />
                                 </Text>
                             </div>
-                            <ButtonSecondary iconUrl={ArrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
+                            <ButtonSecondary iconUrl={arrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                         </div>
                         <Spotlight className="spotlight__layout">
                             {serviceBlock[0].cards.map((card, index) => (
@@ -159,7 +149,7 @@ const Home = () => {
                                     </div>
                                     <Title level={3}>Semantic Kernel SDK and Quarkus</Title>
                                     <Text size="medium" className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary to={""} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+                                    <ButtonSecondary to={""} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
@@ -171,13 +161,13 @@ const Home = () => {
                                     </div>
                                     <Title level={3}>Semantic Kernel SDK and Quarkus</Title>
                                     <Text size="medium" className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary to={""} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
+                                    <ButtonSecondary to={""} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
                                 <img className="blog__img" src={BlogImg} alt="Blog img" />
                             </div>
                         </div>
                         <div className="blog__action">
-                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={ArrowRight} size="large"><Trans i18nKey="buttonMoreArticles" /></ButtonSecondary>
+                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonMoreArticles" /></ButtonSecondary>
                         </div>
                     </div>
                     <div className='blogFinal'>

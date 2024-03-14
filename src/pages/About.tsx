@@ -10,18 +10,13 @@ import Section from '@components/Section/Section';
 import OfficeCard from '@components/OfficeCard/OfficeCard';
 import Address from '@components/Address/Address';
 import Icon from '@components/Icon/Icon';
-// import Timeline from '@components/Timeline/Timeline';
-// import Timeline2 from "@/components/Timeline2/Timeline2";
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Vision from '@components/Vision/Vision';
 
-import AboutUs from '/about-us-illustration.png';
-import AboutUs2 from '/about-us-illustration2.png';
-import Moon from '/moon.svg';
-
 import { officeCard, aboutPage } from '@/constants';
 import ContactBlock from "@/components/ContactBlock/ContactBlock";
-import Timeline3 from "@/components/Timeline3/TImeline3";
+import { aboutUsIllustration, aboutUsIllustration2, moon } from "@/assets";
+import Timeline from "@/components/Timeline/Timeline";
 
 
 const About = () => {
@@ -34,7 +29,7 @@ const About = () => {
                             <Breadcrumbs />
                             <Title level={1}><Trans i18nKey={aboutPage[0].title} /> <span><Trans i18nKey={aboutPage[0].titleImp} /></span></Title>
                         </div>
-                        <img className="hero__moon" src={Moon} alt="Moon" />
+                        <img className="hero__moon" src={moon} alt="Moon" />
                     </Grid>
                 </Container>
             </Section>
@@ -42,7 +37,7 @@ const About = () => {
             <Section>
                 <Container>
                     <div className="about">
-                        <img className="about__img" src={AboutUs} alt="" />
+                        <img className="about__img" src={aboutUsIllustration} alt="" />
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.breadcrumb" />} />
                             <Title level={2}><Trans i18nKey={aboutPage[0].firstBlock.title} /> <span>Europe</span></Title>
@@ -51,7 +46,7 @@ const About = () => {
                                 <Spotlight className="spotlight__layout">
                                     {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
-                                            <OfficeCard title={office.country} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
+                                            <OfficeCard title={office.country} image={office.image} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
                                                 <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
                                             </OfficeCard>
                                         </SpotlightCard>
@@ -74,7 +69,7 @@ const About = () => {
                             <Text size="large" className="mgb32">{<Trans i18nKey={aboutPage[0].secondBlock.desc} />}</Text>
                         </div>
                         <div className="col-lg-6 col-md-12">
-                            <img className="w100" src={AboutUs2} alt="" />
+                            <img className="w100" src={aboutUsIllustration2} alt="" />
                         </div>
                     </Grid>
                 </Container>
@@ -98,9 +93,7 @@ const About = () => {
                         <Category content={<Trans i18nKey="about.breadcrumb4" />} />
                         <Title level={2}><Trans i18nKey={aboutPage[0].fourthBlock.title} /> <span><Trans i18nKey={aboutPage[0].fourthBlock.titleImp} /></span><Trans i18nKey={aboutPage[0].fourthBlock.title2} /></Title>
                     </div>
-                    {/* <Timeline />    
-                    <Timeline2 /> */}
-                    <Timeline3 />
+                    <Timeline />
                 </Container>
             </Section>
 

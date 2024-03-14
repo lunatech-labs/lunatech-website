@@ -15,24 +15,26 @@
     &__part {
         display: flex;
         justify-content: space-between;
-        .vision__card:first-child {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            @include tablet {align-items: initial;}
-            p {
-                text-align: right;
-                @include tablet {text-align: initial;}
-            }
-        }
-        .vision__card:last-child {
-            @include tablet {
+        .vision__card {
+            &.left {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                @include tablet {align-items: initial;}
+                p {
+                    text-align: right;
+                    @include tablet {text-align: initial;}
+                }
             }
-            p {
-                @include tablet {text-align: right;}
+            &.right {
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+                p {
+                    @include tablet {text-align: right;}
+                }
             }
         }
     }
@@ -51,14 +53,16 @@
         border: 1px solid transparent;
         border-radius: 16px;
         width: 96px;
-        height: 96px;
+        min-height: 96px;
         cursor: pointer;
     }
     &__illustration {
         @include absolute-center;
         top: 36%;
         @include desktop {top: 38%;}
-        @include phone-landscape {top: 39%;}
+        @include phone-landscape {
+            top: 50%;
+        }
     }
     &__image {
         width: 500px; 
@@ -99,18 +103,6 @@
             }
         }
         &:nth-child(3) {
-            top: -213px;
-            left: -94px;
-            @include desktop {
-                top: -177px;
-                left: -79px;
-            }
-            @include phone-portrait {
-                top: -119px;
-                left: -53px;
-            }
-        }
-        &:nth-child(4) {
             top: -286px;
             left: -221px;
             @include desktop {
@@ -120,6 +112,18 @@
             @include phone-portrait {
                 top: -160px;
                 left: -124px;
+            }
+        }
+        &:nth-child(4) {
+            top: -213px;
+            left: -94px;
+            @include desktop {
+                top: -177px;
+                left: -79px;
+            }
+            @include phone-portrait {
+                top: -119px;
+                left: -53px;
             }
         }
     }

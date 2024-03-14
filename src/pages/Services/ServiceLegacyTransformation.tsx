@@ -4,12 +4,10 @@ import Container from "@components/Container/Container";
 import Grid from "@components/Grid/Grid";
 import Breadcrumbs from "@components/Breacrumb/Breadcrumb";
 import BorderEffect from '@components/BorderEffect/BorderEffect';
-import Category from '@components/Category/Category';
 import Title from '@components/Title/Title';
-import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Address from '@components/Address/Address';
 
-import Message from '/message.svg';
+import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
 const ServiceLegacyTransformation = () => {
     return (
@@ -29,17 +27,7 @@ const ServiceLegacyTransformation = () => {
 
             <Section>
                 <Container>
-                    <div className="contact">
-                        <div>
-                            <Category content={<Trans i18nKey="contact.subtitle" />} />
-                            <Title level={2}>Let's talk <span>together!</span></Title>
-                        </div>
-                        <ButtonPrimary iconUrl={Message} size='large' to='/contact'>
-                            <span>
-                                Contact Us
-                            </span>
-                        </ButtonPrimary>
-                    </div>
+                    <ContactBlock />
                     <Address />
                 </Container>
             </Section>

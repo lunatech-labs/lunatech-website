@@ -25,6 +25,14 @@
     width: 24px;
     height: 24px;
 }
+.button-secondary-medium {
+    padding: 0 24px;
+    height: 56px;
+}
+.button-secondary-medium .button-secondary__img {
+    width: 20px;
+    height: 20px;
+}
 .button-secondary-small {
     font-size: $font-size-12;
     padding: 0 16px;
