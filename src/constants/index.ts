@@ -16,11 +16,13 @@ import {
     visionIllustration,
     visionIllustrationOpen,
     insurance,
-    carIcon,
-    buildingIcon,
-    bankIcon,
-    shieldIcon
+    officeIcon
 } from '@/assets'
+
+import carIcon from '@/components/BusinessCard/Icons/carIcon'
+import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
+import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
+import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 
 export const navLinks = [
     {
@@ -321,14 +323,14 @@ export const timeline = [
         year: 1990,
         title: "Lunatech is born",
         text: "Opening of the first office in Rotterdam",
-        icon: "buildings1.svg",
+        icon: officeIcon,
         lt: true
     },
     {
         year: 1993,
         title: "Lunatech is born",
         text: "Opening of the first office in Paris",
-        icon: "buildings1.svg",
+        icon: officeIcon,
         lt: true
     },
     {
@@ -339,7 +341,7 @@ export const timeline = [
         year: 1997,
         title: "Lunatech is born",
         text: "Opening of the first office in Amsterdam",
-        icon: "buildings1.svg",
+        icon: officeIcon,
         lt: true
     }
 ]

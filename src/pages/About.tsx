@@ -10,14 +10,13 @@ import Section from '@components/Section/Section';
 import OfficeCard from '@components/OfficeCard/OfficeCard';
 import Address from '@components/Address/Address';
 import Icon from '@components/Icon/Icon';
-import Timeline from '@components/Timeline/Timeline';
-// import Timeline2 from "@/components/Timeline2/Timeline2";
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Vision from '@components/Vision/Vision';
 
 import { officeCard, aboutPage } from '@/constants';
 import ContactBlock from "@/components/ContactBlock/ContactBlock";
 import { aboutUsIllustration, aboutUsIllustration2, moon } from "@/assets";
+import Timeline from "@/components/Timeline/Timeline";
 
 
 const About = () => {
@@ -94,8 +93,7 @@ const About = () => {
                         <Category content={<Trans i18nKey="about.breadcrumb4" />} />
                         <Title level={2}><Trans i18nKey={aboutPage[0].fourthBlock.title} /> <span><Trans i18nKey={aboutPage[0].fourthBlock.titleImp} /></span><Trans i18nKey={aboutPage[0].fourthBlock.title2} /></Title>
                     </div>
-                    <Timeline />    
-                    {/* <Timeline2 /> */}
+                    <Timeline />
                 </Container>
             </Section>
 
