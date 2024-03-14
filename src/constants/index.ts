@@ -16,6 +16,7 @@ import {
     visionIllustration,
     visionIllustrationOpen,
     insurance,
+    officeIcon
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -322,14 +323,14 @@ export const timeline = [
         year: 1990,
         title: "Lunatech is born",
         text: "Opening of the first office in Rotterdam",
-        icon: "buildings1.svg",
+        icon: officeIcon,
         lt: true
     },
     {
         year: 1993,
         title: "Lunatech is born",
         text: "Opening of the first office in Paris",
-        icon: "buildings1.svg",
+        icon: officeIcon,
         lt: true
     },
     {
@@ -340,7 +341,7 @@ export const timeline = [
         year: 1997,
         title: "Lunatech is born",
         text: "Opening of the first office in Amsterdam",
-        icon: "buildings1.svg",
+        icon: officeIcon,
         lt: true
     }
 ]
