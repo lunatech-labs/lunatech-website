@@ -16,21 +16,27 @@
     "navigation": {
         "home": "Home",
         "about": "About us",
+        "services": "Services",
+        "vision": "Vision",
         "works": "Works",
+        "technologies": "Technologies",
+        "blog": "Blog",
         "careers": "Careers",
+        "contact": "Contact",
         "dymanicText" : {
-            "default": "Selected projects by Lunatech.",
-            "home": "Retour à la page principale.",
-            "aboutUs": "À propos de l'entreprise",
-            "services": "Nos services",
-            "technologies": "Nos technologies",
-            "blog": "Notre blog",
-            "careers": "Nos carrières",
-            "contact": "Nous contacter",
+            "defaultTitle": "Case studies",
+            "defaultDesc": "Selected projects by Lunatech.",
+            "home": "Back to the main page.",
+            "aboutUs": "About the company",
+            "services": "Our services",
+            "technologies": "Our technologies",
+            "blog": "Our blog",
+            "careers": "Our careers",
+            "contact": "Contact us",
             "github": "Take a look at our work.",
             "instagram": "Follow our news.",
             "linkedin": "Follow our news.",
-            "X / Twitter": "Follow our news."
+            "twitter": "Follow our news."
         } 
     },
     "banner": {

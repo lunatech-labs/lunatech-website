@@ -16,12 +16,11 @@ import {
     visionIllustration,
     visionIllustrationOpen,
     insurance,
+    carIcon,
+    buildingIcon,
+    bankIcon,
+    shieldIcon
 } from '@/assets'
-
-import carIcon from '@/components/BusinessCard/Icons/carIcon'
-import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
-import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
-import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 
 export const navLinks = [
     {
@@ -39,21 +38,21 @@ export const navLinks = [
         blank: false
     },
     {
-        title: "Services",
+        title: "navigation.services",
         url: "/services",
         mouseEnterTitle: "services",
         mouseEnterDesc: "navigation.dymanicText.services",
         blank: false
     },
     {
-        title: "Technologies",
+        title: "navigation.technologies",
         url: "/technologies",
         mouseEnterTitle: "technlogies",
         mouseEnterDesc: "navigation.dymanicText.technologies",
         blank: false
     },
     {
-        title: "Blog",
+        title: "navigation.blog",
         url: "https://blog.lunatech.com/",
         mouseEnterTitle: "blog",
         mouseEnterDesc: "navigation.dymanicText.blog",
@@ -67,7 +66,7 @@ export const navLinks = [
         blank: true
     },
     {
-        title: "Contact",
+        title: "navigation.contact",
         url: "/contact",
         mouseEnterTitle: "contact",
         mouseEnterDesc: "navigation.dymanicText.contact",
@@ -537,11 +536,11 @@ export const footerLinks = [
                 url: "/about"
             },
             {
-                title: "Services",
+                title: "navigation.services",
                 url: "/services"
             },
             {
-                title: "Vision",
+                title: "navigation.vision",
                 url: "/vision"
             }
         ]

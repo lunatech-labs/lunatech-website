@@ -14,16 +14,16 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
     const { t } = useTranslation();
-    const [pathTitle, setPathTitle] = useState('Case studies');
-    const [pathDesc, setPathDesc] = useState("Lunatech project")
+    const [pathTitle, setPathTitle] = useState(t("navigation.dymanicText.defaultTitle"));
+    const [pathDesc, setPathDesc] = useState("navigation.dymanicText.defaultDesc");
 
     const handleMouseEnter = (title: string,desc: string) => () => {
         setPathTitle(title);
         setPathDesc(desc);
     };
     const handleMouseLeave = () => {
-        setPathTitle('Case studies');
-        setPathDesc('Selected projects by Lunatech.')
+        setPathTitle(t("navigation.dymanicText.defaultTitle"));
+        setPathDesc("navigation.dymanicText.defaultDesc");
     };
 
     const parts = t(pathDesc).split(" ");
@@ -35,7 +35,7 @@ const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
             <div className="navigation__main">
                 <ul className="navigation__social">
                     {socialLinks.map((link, index) => (
-                        <li key={index} onMouseEnter={handleMouseEnter(link.mouseEnterTitle, link.mouseEnterDesc)} className="navigation__social-item"><Link to={link.url} target={link.blank ? "_blank" : ""}><img src={link.icon} alt={link.alt} />{link.title}</Link></li>   
+                        <li key={index} onMouseEnter={handleMouseEnter(link.mouseEnterTitle, link.mouseEnterDesc)} onMouseLeave={handleMouseLeave} className="navigation__social-item"><Link to={link.url} target={link.blank ? "_blank" : ""}><img src={link.icon} alt={link.alt} />{link.title}</Link></li>   
                     ))}
                 </ul>
                 <ul className="navigation__menu">
@@ -45,7 +45,7 @@ const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
                 </ul>
             </div>
             <div className="navigation__footer">
-                <div className="navigation__left">
+                <div onMouseLeave={handleMouseLeave} className="navigation__left">
                     <Language changeLanguage={changeLanguage} />
                 </div>
                 <div className="navigation__right">

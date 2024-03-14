@@ -16,10 +16,16 @@
     "navigation": {
         "home": "Accueil",
         "about": "A propos",
+        "services": "Services",
+        "vision": "Vision",
         "works": "Travaux",
+        "technologies": "Technologies",
+        "blog": "Blog",
         "careers": "Carrières",
+        "contact": "Contact",
         "dymanicText" : {
-            "default": "Projets de Lunatech.",
+            "defaultTitle": "Sujets",
+            "defaultDesc": "Projets de Lunatech.",
             "home": "Retour à la page principale.",
             "aboutUs": "À propos de l'entreprise",
             "services": "Nos services",

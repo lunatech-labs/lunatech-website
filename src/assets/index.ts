@@ -30,9 +30,6 @@ import visionIllustration from "./about/vision-illustration.png";
 import visionIllustrationOpen from "./about/services_illustration_open.png";
 import technologyIllustration from "./general/technologies_illustration.png";
 
-import visionIllustration from "./about/vision-illustration.png";
-import visionIllustrationOpen from "./about/services_illustration_open.png";
-
 import automotive from "./technologies/automotive.svg";
 import financial from "./technologies/financial.svg";
 import entertainment from "./technologies/entertainment.svg";
@@ -50,6 +47,10 @@ import messageIcon from "./general/message.svg";
 import addIcon from "./general/pixelarticons_add.svg";
 
 import lunatechLogo from "./general/lunatech-logo.svg";
+import carIcon from '@/components/BusinessCard/Icons/carIcon'
+import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
+import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
+import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 
 export {
     lunatechLogo,
@@ -97,5 +98,9 @@ export {
     messageIcon,
     addIcon,
     serviceIllustration,
-    technologyIllustration
+    technologyIllustration,
+    carIcon,
+    buildingIcon,
+    bankIcon,
+    shieldIcon
 }
