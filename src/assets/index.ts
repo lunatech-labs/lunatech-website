@@ -47,6 +47,10 @@ import messageIcon from "./general/message.svg";
 import addIcon from "./general/pixelarticons_add.svg";
 
 import lunatechLogo from "./general/lunatech-logo.svg";
+import carIcon from '@/components/BusinessCard/Icons/carIcon'
+import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
+import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
+import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 
 export {
     lunatechLogo,
@@ -94,5 +98,9 @@ export {
     messageIcon,
     addIcon,
     serviceIllustration,
-    technologyIllustration
+    technologyIllustration,
+    carIcon,
+    buildingIcon,
+    bankIcon,
+    shieldIcon
 }
