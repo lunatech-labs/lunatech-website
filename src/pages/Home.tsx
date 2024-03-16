@@ -1,35 +1,27 @@
 import { Trans, useTranslation } from 'react-i18next';
 import '../i18n';
-
+import Parallax from '@/components/Parallax/Parallax';
 import Container from '@components/Container/Container';
-import Grid from '@components/Grid/Grid';
-import Stars from '@components/Stars/Stars';
 import Category from '@components/Category/Category';
 import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
 import OfficeCard from '@components/OfficeCard/OfficeCard';
 import Icon from '@components/Icon/Icon';
 import IconRounded from '@components/IconRounded/IconRounded';
-import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
-import Sphere from '@components/Sphere/Sphere';
-import MouseScroll from '@components/MouseScroll/MouseScroll';
+import PreLoader from '@/components/PreLoader/PreLoader';
 import ValuesBanner from '@components/ValuesBanner/ValuesBanner';
 import Section from '@components/Section/Section';
 import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
-
 import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
-
-import { Link } from 'react-router-dom';
-import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
+import TechnologiesCarousel from '@components/TechnologiesCarousel/TechnologiesCarousel';
 import Articles from '@components/Articles/Articles';
-
 import { homePage, officeCard, serviceBlock } from '@/constants';
-import ContactBlock from '@/components/ContactBlock/ContactBlock';
-import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
+import ContactBlock from '@components/ContactBlock/ContactBlock';
+import { aboutUsIllustration, arrowRight } from '@/assets';
 
 
 const Home = () => {
@@ -37,34 +29,9 @@ const Home = () => {
     
     return (
         <>
-            <section className="hero">
-                <div className="hero__background">
-                    <img src={mist} className="" alt="Mist" />
-                    <img src={clouds} className="" alt="Clouds" />
-                    <img src={mountains} className="" alt="Mountains" />
-                    <img src={grass} className="" alt="Grass" />
-                    <img src={telescope} className="" alt="Telescope" />
-                    <Stars />
-                </div>
-                
-                <Container>
-                    <Grid>
-                        <div className="hero__content">
-                            <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
-                            <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
-                            <div className="dflex">
-                                <ButtonPrimary to={"/contact"} iconUrl={messageIcon} size="large">
-                                    <Trans i18nKey="hero.button1" />
-                                </ButtonPrimary>
-                                <Link className="hero__link" to="/about"><Trans i18nKey="hero.button2" /><img src={arrowRight} alt="Arrow" /></Link>
-                            </div>
-                        </div>
-                        <img className="hero__moon" src={moon} alt="Moon" />
-                    </Grid>
-                </Container>
-                <Sphere />
-                <MouseScroll />
-            </section>
+            <PreLoader />
+
+            <Parallax />
 
             <ValuesBanner />
 

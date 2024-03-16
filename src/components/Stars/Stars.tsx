@@ -1,6 +1,12 @@
+import { useRef, useEffect, useState } from "react";
+import { backgroundHero } from "../../animations";
 import "./Stars.scss";
 
 const Stars = () => {
+    useEffect(() => {
+        backgroundHero();
+    }, []);
+
     return (
         <div className="stars-bg">
             <svg className="stars" width="100%" height="100%" preserveAspectRatio="none">
