@@ -29,7 +29,7 @@ const Home = () => {
     
     return (
         <>
-            <PreLoader />
+            {sessionStorage.getItem('preloader') !== 'true' ? <PreLoader /> : null}
 
             <Parallax />
 

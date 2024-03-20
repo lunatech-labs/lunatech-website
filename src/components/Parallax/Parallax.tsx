@@ -1,6 +1,4 @@
-import { useRef, useEffect, useState } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useRef, useState } from "react";
 import { Trans } from 'react-i18next';
 import '../../i18n';
 import MouseScroll from '@components/MouseScroll/MouseScroll';
@@ -11,10 +9,9 @@ import Title from "../Title/Title";
 import Text from "../Text/Text";
 import { Link } from "react-router-dom";
 import { arrowRight, messageIcon } from '@/assets';
-import { preLoaderAnim } from "../../animations";
 
 const Parallax = () => {
-    const [background, setBackground] = useState(20)
+    const [background] = useState(20)
     const parallaxRef = useRef(null);
     const telescope = useRef(null);
     const grass = useRef(null);
@@ -22,7 +19,6 @@ const Parallax = () => {
     const cloudsBottom = useRef(null);
     const cloudsLeft = useRef(null);
     const cloudsRight = useRef(null);
-    const stars = useRef(null);
     const moon = useRef(null);
     const copy = useRef(null);
     const btn = useRef(null);

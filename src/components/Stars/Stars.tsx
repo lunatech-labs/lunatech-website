@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect } from "react";
 import { backgroundHero } from "../../animations";
 import "./Stars.scss";
 
