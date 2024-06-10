@@ -42,7 +42,7 @@
     "aboutBlock" : {
         "title": "Proche des clients à travers ",
         "titleImp": "l'Europe",
-        "desc": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle."
+        "desc": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris."
     },
     "about": {
         "title": "Systèmes logiciels personnalisés depuis plus de ",
@@ -56,7 +56,7 @@
         "firstBlock": {
             "title": "Proche des clients à travers ",
             "titleImp": "l'Europe",
-            "desc": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris et Newcastle."
+            "desc": "Fondée en 1993, Lunatech est une société de conseil en développement de logiciels. Lunatech emploie environ 100 personnes et opère à partir de son siège à Rotterdam ainsi que de ses bureaux à Paris."
         },
         "secondBlock": {
             "title": "Des produits personnalisés pour répondre à ",
@@ -175,9 +175,6 @@
         },
         "france": {
             "name": "France"
-        },
-        "newcastle": {
-            "name": "Newcastle"
         }
     },
     "contactBtn": {
@@ -193,9 +190,6 @@
         },
         "france": {
             "name": "France"
-        },
-        "newcastle": {
-            "name": "Newcastle"
         }
     },
     "contactBtn": {
