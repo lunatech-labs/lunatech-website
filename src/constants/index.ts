@@ -5,14 +5,12 @@ import {
     instagram,
     netherlandsIcon,
     franceIcon,
-    ukIcon,
     sdvIcon,
     customSoftwareIcon,
     systemIntegrationIcon,
     legacyTransformationIcon,
     rotterdamOffice,
     parisOffice,
-    newcastleOffice,
     visionIllustration,
     visionIllustrationOpen,
     insurance,
@@ -132,11 +130,11 @@ export const valuesBanner = [
     },
     {
         title: "banner.second",
-        number: 32
+        number: 90
     },
     {
         title: "banner.third",
-        number: 80
+        number: 10
     },
     {
         title: "banner.fourth",
@@ -173,20 +171,6 @@ export const officeCard = [
             {
                 title: "France",
                 imageUrl: franceIcon,
-            }
-        ]
-    },
-    {
-        country: "officeCard.newcastle.name",
-        image: newcastleOffice,
-        developers: 2,
-        otherJobs: 0,
-        email: "info@lunatech.uk",
-        phone: "+44 191 338 7220",
-        icon: [
-            {
-                title: "United Kingdom",
-                imageUrl: ukIcon,
             }
         ]
     }

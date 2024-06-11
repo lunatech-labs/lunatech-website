@@ -11,7 +11,6 @@ import systemIntegrationIcon from "./system-integration.svg";
 import legacyTransformationIcon from "./legacy-transformation.svg";
 import parisOffice from "./offices/paris-office.jpg";
 import rotterdamOffice from "./offices/rotterdam-office.jpg";
-import newcastleOffice from "./offices/newcastle-office.jpg";
 import grass from "./background/grass.svg";
 import mist from "./background/mist.svg";
 import mountains from "./background/mountains.svg";
@@ -63,7 +62,6 @@ export {
     legacyTransformationIcon,
     parisOffice,
     rotterdamOffice,
-    newcastleOffice,
     grass,
     mist,
     mountains,

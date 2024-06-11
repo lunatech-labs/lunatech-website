@@ -42,7 +42,7 @@
     "aboutBlock" : {
         "title": "Close to customers across ",
         "titleImp": "Europe",
-        "desc": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris and Newcastle."
+        "desc": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris."
     },
     "about": {
         "subtitle1": "Our story",
@@ -56,7 +56,7 @@
         "firstBlock": {
             "title": "Close to customers across ",
             "titleImp": "Europe",
-            "desc": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris and Newcastle."
+            "desc": "Founded in 1993, Lunatech is a software development consultancy. Lunatech employs around 100 people and operates from its headquarters in Rotterdam as well as offices in Paris."
         },
         "secondBlock": {
             "title": "Customised products to meet your ",
@@ -175,9 +175,6 @@
         },
         "france": {
             "name": "France"
-        },
-        "newcastle": {
-            "name": "Newcastle"
         }
     },
     "contactBtn": {
@@ -193,9 +190,6 @@
         },
         "france": {
             "name": "France"
-        },
-        "newcastle": {
-            "name": "Newcastle"
         }
     },
     "contactBtn": {
