@@ -68,7 +68,7 @@ nav.nav-bar--hidden {
     &__moon {
         position: absolute;
         width: 220px;
-        right: 295px;
+        left: 295px;
         top: 92px;
         @include desktop {right: 124px;}
         @include phone-portrait {
@@ -331,3 +331,104 @@ nav.nav-bar--hidden {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stars-bg, .telescope, .grass, .mountains, .moon, .clouds-bottom, .clouds-left, .clouds-right {opacity: 0;}
+
+
+
+.parallax-outer {overflow: hidden; height: 100vh;}
+.parallax {
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    > img {position: absolute;}
+}
+.telescope, .grass, .mountains, .clouds-bottom {width: 100%;}
+.telescope {
+    bottom: -100px;
+    z-index: 3;
+}
+.mountains {
+    bottom: -100px;
+    z-index: 1;
+}
+.grass {
+    bottom: -100px;
+    z-index: 2;
+}
+.moon {
+    position: absolute;
+    width: 220px;
+    right: 295px;
+    top: 92px;
+    @include desktop {right: 124px;}
+    @include phone-portrait {
+        top: initial;
+        right: 24px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: none;
+    }
+}
+.clouds-left, .clouds-right {
+    top: 0;
+    width: 20%;
+}
+.clouds-left {left: 0;}
+.clouds-right {right: 0;}
+.clouds-bottom {bottom: 0px;}
+.copy {
+    position: absolute;
+    bottom: 15%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 6;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing__main {
+    font-size: $font-size-64;
+    line-height: 5rem;     /* 80px */
+    font-weight: 700;
+    margin-bottom: 32px;
+    .text:nth-child(n+15) {@include red-title;}
+    .text:nth-child(n+43) {
+        background: -webkit-linear-gradient(white, white);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
