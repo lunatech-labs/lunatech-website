@@ -4,6 +4,7 @@ import OfficeModal from '@components/OfficeModal/OfficeModal';
 import "./OfficeCard.scss";
 import { useTranslation } from 'react-i18next';
 import { addIcon } from '@/assets';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface CardProps {
     title: string;
@@ -58,7 +59,7 @@ const OfficeCard = (props: CardProps) => {
                 <Title level={4}>{t(props.title)}</Title>
                 <div className='office-card__bottom'>
                     <button type="button" className="office-card__button" onClick={() => setShowModal(true)}>
-                        <img src={addIcon} alt="Add" />
+                        <LazyLoadImage src={addIcon} alt="Add" />
                     </button>
                 </div>
             </div>
