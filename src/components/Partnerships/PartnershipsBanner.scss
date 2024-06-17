@@ -1,0 +1,24 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+
+.partnership {
+    &__banner {
+        background-color: white;
+        height: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+
+        img {
+            height: 50px;
+            width: 100px;
+            object-fit: contain;
+            margin: 20px 0;
+        }
+    }
+    &__partners {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

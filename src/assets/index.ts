@@ -44,6 +44,12 @@ import homeIcon from "./general/home-icon.svg";
 import officeIcon from "./general/office.svg";
 import messageIcon from "./general/message.svg";
 import addIcon from "./general/pixelarticons_add.svg";
+import awsIcon from "./partners/awsIcon.svg";
+import cleverIcon from "./partners/cleverCloudIcon.svg";
+import cloudIcon from "./partners/cloudIcon.svg";
+import lightbendIcon from "./partners/lightbendIcon.svg";
+import redHatIcon from "./partners/redHatIcon.svg";
+import scalaCenterIcon from "./partners/scalaCenterIcon.png";
 
 import lunatechLogo from "./general/lunatech-logo.svg";
 
@@ -92,5 +98,11 @@ export {
     messageIcon,
     addIcon,
     serviceIllustration,
-    technologyIllustration
+    technologyIllustration,
+    awsIcon,
+    cleverIcon,
+    cloudIcon,
+    lightbendIcon,
+    redHatIcon,
+    scalaCenterIcon,
 }

@@ -1,0 +1,42 @@
+// ----------------------- Imports -----------------------
+@import "../../styles/Responsive.scss";
+
+// ----------------------- General -----------------------
+
+.detailService {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 32px;
+
+        &.reverse {
+            flex-direction: row-reverse;
+            @include phone-portrait {
+                flex-direction: column;
+            }
+        }
+
+        @include phone-portrait {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        img {
+            width: 40vh;
+            @include phone-portrait {
+                width: 20vh;
+                margin: auto;
+            }
+        }
+    }
+}
