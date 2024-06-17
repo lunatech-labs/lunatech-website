@@ -5,10 +5,7 @@
         padding: 64px 32px;
     }
     &__card {
-        grid-column: span 3;
-        @include desktop {
-            grid-column: span 6;
-        }
+        grid-column: span 6;
         &:first-child {
             @include desktop {
                 margin-bottom: 64px;
