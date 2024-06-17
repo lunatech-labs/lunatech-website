@@ -1,5 +1,5 @@
 .office {
-    min-height: 1120px;
+    min-height: 768px;
     background: var(--bg);
     @include desktop {
         min-height: initial;
@@ -12,16 +12,15 @@
         height: initial;
     }
     &__part {
-        width: 25%;
+        width: 50%;
         @include flexbox;
         border-right: $border;
         flex-direction: column;
         justify-content: center;
-        height: 1120px;
+        height: 768px;
         transition: 1s;
         background-position: 60%;
         @include desktop {
-            width: 50%;
             height: 740px;
         }
         @include tablet {
