@@ -14,7 +14,13 @@ import {
     visionIllustration,
     visionIllustrationOpen,
     insurance,
-    officeIcon
+    officeIcon,
+    awsIcon,
+    cleverIcon,
+    cloudIcon,
+    lightbendIcon,
+    redHatIcon,
+    scalaCenterIcon,
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -50,13 +56,6 @@ export const navLinks = [
         mouseEnterTitle: "technlogies",
         mouseEnterDesc: "navigation.dymanicText.technologies",
         blank: false
-    },
-    {
-        title: "Blog",
-        url: "https://blog.lunatech.com/",
-        mouseEnterTitle: "blog",
-        mouseEnterDesc: "navigation.dymanicText.blog",
-        blank: true
     },
     {
         title: "navigation.careers",
@@ -139,6 +138,27 @@ export const valuesBanner = [
     {
         title: "banner.fourth",
         number: 25
+    }
+]
+
+export const partnershipsBanner = [
+    {
+        icon: awsIcon,
+    },
+    {
+        icon: cleverIcon,
+    },
+    {
+        icon: cloudIcon,
+    },
+    {
+        icon: lightbendIcon,
+    },
+    {
+        icon: redHatIcon,
+    },
+    {
+        icon: scalaCenterIcon,
     }
 ]
 

@@ -1,0 +1,89 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+.technologies-carousel {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    @include phone-portrait {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    &__img{
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+    }
+    &__carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: 0;
+        scroll-behavior: smooth;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 50px;
+        &.active {
+            cursor: grab;
+            user-select: none;
+        }
+    }
+    &__carousel::-webkit-scrollbar {
+        display: none;
+    }
+    &__carousel.active {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+    &__carousel.no-transition {
+        scroll-behavior: auto;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__card {
+        background: linear-gradient(to bottom, #0A1E50, #081A47);
+        scroll-snap-align: start;
+        height: 100%;
+        width: 424px;
+        padding: 40px;
+        list-style: none;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+
+        @include phone-portrait {
+            width: 290px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+        margin-right: 24px;
+        button {
+            width: 64px;
+            height: 64px;
+            background: $blue;
+            border-radius: 5rem;
+            @include flexbox;
+            justify-content: center;
+        }
+
+        .disabled {
+            opacity: .5;
+        }
+
+        @include phone-portrait {
+            display: none;
+        }
+    }
+}

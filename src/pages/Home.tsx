@@ -24,12 +24,14 @@ import BlogImg from '/blog.png';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
 
 import { Link } from 'react-router-dom';
-import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
+// import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
 import Articles from '@components/Articles/Articles';
 
 import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
+import Carousel from '@/components/Carousel/Carousel';
+import PartnershipsBanner from '@/components/Partnerships/PartnershipsBanner';
 
 
 const Home = () => {
@@ -67,6 +69,8 @@ const Home = () => {
             </section>
 
             <ValuesBanner />
+
+            <PartnershipsBanner />
 
             <Container><BorderEffect /></Container>
 
@@ -127,7 +131,8 @@ const Home = () => {
 
             <Section>
                 <Container>
-                    <TechnologiesCarousel></TechnologiesCarousel>
+                    {/* <TechnologiesCarousel></TechnologiesCarousel> */}
+                    <Carousel></Carousel>
                 </Container>
             </Section>
 
