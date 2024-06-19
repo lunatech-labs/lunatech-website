@@ -24,10 +24,12 @@ class Header extends Component<HeaderProps, HeaderState> {
     }
 
     toggleScroll() {
+        const hamburger = document.querySelector('.hamburger');
+
         this.setState(prevState => ({
             isScrollBlocked: !prevState.isScrollBlocked
         }), () => {
-            if (this.state.isScrollBlocked) {
+            if (this.state.isScrollBlocked && hamburger?.classList.contains('hamburger--active')) {
                 document.body.style.overflow = 'hidden';
             } else {
                 document.body.style.overflow = '';
