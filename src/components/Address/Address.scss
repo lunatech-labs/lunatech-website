@@ -4,6 +4,7 @@
 
 .address {
     @include grid;
+    grid-template-columns: repeat(8, 1fr);
     &__card {
         grid-column: span 4;
         @include tablet {grid-column: span 6;}

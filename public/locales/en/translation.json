@@ -29,7 +29,7 @@
             "github": "Take a look at our work.",
             "instagram": "Follow our news.",
             "linkedin": "Follow our news.",
-            "X / Twitter": "Follow our news."
+            "twitter": "Follow our news."
         } 
     },
     "banner": {
@@ -147,10 +147,74 @@
     },
     "technologies": {
         "title": "Our",
-        "titleColor": "technologies",
+        "titleColor": "technologies ",
+        "sectorTitle": "The sectors in which we",
+        "sectorTitleImp": "specialise",
         "title2": "to meet your requirements",
+        "title3": "at the service of your product",
         "category1": "Business Sectors",
-        "category2": "Technical Expertises"
+        "category2": "Technical Expertises",
+        "carouselTitle": "Browse our ",
+        "carouselTitleImp": "tech services",
+        "carouselText": "With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.",
+        "page": {
+            "firstBlock": {
+                "automotive": {
+                    "title": "Automotive",
+                    "text": "We help companies create smart, connected mobility solutions."
+                },
+                "entertainment": {
+                    "title": "Entertainment",
+                    "text": "Developing interactive platforms to offer immersive entertainment experiences."
+                },
+                "finance": {
+                    "title": "Financial",
+                    "text": "We help companies create smart, connected mobility solutions."
+                },
+                "insurance": {
+                    "title": "Insurance",
+                    "text": "Creating digital data management and analysis products for the insurance industry."
+                }
+            },
+            "secondBlock": {
+                "devops": {
+                    "title": "Devops",
+                    "text": "We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."
+                },
+                "scala": {
+                    "title": "Scala",
+                    "text": "We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community."
+                },
+                "java": {
+                    "title": "Java",
+                    "text": "We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years."
+                },
+                "frontend": {
+                    "title": "Frontend",
+                    "text": "Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run."
+                },
+                "bigData": {
+                    "title": "Big Data",
+                    "text": "We’re experts in handling large amounts of data. From processing, to storage and beyond."
+                },
+                "machineLearning": {
+                    "title": "Machine Learning",
+                    "text": "We design and implement intelligent systems that learn and improve over time."
+                },
+                "uxUi": {
+                    "title": "UX / UI",
+                    "text": "To Do Text"
+                },
+                "testAutomation": {
+                    "title": "Test Automation",
+                    "text": "From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible."
+                },
+                "agileMethodology": {
+                    "title": "Agile Methodology",
+                    "text": "We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products"
+                }
+            }
+        }
     },
     "articles": {
         "subtitle": "Articles"
@@ -203,6 +267,7 @@
         "title": "Let's work ",
         "titleColor": "together",
         "text": "Let us help you become even greater at what you do. Fill out the following form and we will get back to you.",
+        "missing": "Please fill in all mandatory fields. Such as:",
         "label":
         {
             "fullName": "What's your name?",

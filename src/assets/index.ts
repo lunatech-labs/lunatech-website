@@ -46,7 +46,7 @@ import messageIcon from "./general/message.svg";
 import addIcon from "./general/pixelarticons_add.svg";
 import awsIcon from "./partners/awsIcon.svg";
 import cleverIcon from "./partners/cleverCloudIcon.svg";
-import cloudIcon from "./partners/cloudIcon.svg";
+import googleCloudIcon from "./partners/googleCloudIcon.svg";
 import lightbendIcon from "./partners/lightbendIcon.svg";
 import redHatIcon from "./partners/redHatIcon.svg";
 import scalaCenterIcon from "./partners/scalaCenterIcon.png";
@@ -101,7 +101,7 @@ export {
     technologyIllustration,
     awsIcon,
     cleverIcon,
-    cloudIcon,
+    googleCloudIcon,
     lightbendIcon,
     redHatIcon,
     scalaCenterIcon,

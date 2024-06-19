@@ -14,7 +14,7 @@ const TechnologieCardFlip = (props: CardProps) => {
         <div className={`technologie-card-flip ${props.className}`}>
             <div className="front">
                 {props.children}
-                <Title level={3}>{props.title} back</Title>
+                <Title level={3}>{props.title}</Title>
             </div>
             <div className="back">
                 <Text size="medium" className="mgb24">{props.text}</Text>

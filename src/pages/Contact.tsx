@@ -74,7 +74,7 @@ const Contact = () => {
     
         if (missingFields.length > 0) {
             const missingFieldsString = missingFields.join(', ');
-            showToast(`Missing required fields: ${missingFieldsString}`, 'failure');
+            showToast(`${t('contact.missing')} ${missingFieldsString}`, 'failure');
             return false;
         }
         
