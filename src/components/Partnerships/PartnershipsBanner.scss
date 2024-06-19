@@ -1,3 +1,5 @@
+@import "/src/styles/Responsive.scss";
+
 .partnership {
     &__title {
         color: black;
@@ -22,6 +24,14 @@
             "logo2 logo3";
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+
+        @include phone-portrait {
+            grid-template-areas: 
+                "logo1"
+                "logo2"
+                "logo3";
+            grid-template-columns: 1fr;
+        }
     }
     &__partner--logo1 {
         grid-area: logo1;
