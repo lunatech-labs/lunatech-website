@@ -17,10 +17,10 @@ import {
     officeIcon,
     awsIcon,
     cleverIcon,
-    cloudIcon,
-    lightbendIcon,
-    redHatIcon,
-    scalaCenterIcon,
+    googleCloudIcon,
+    // lightbendIcon,
+    // redHatIcon,
+    // scalaCenterIcon,
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -129,7 +129,7 @@ export const valuesBanner = [
     },
     {
         title: "banner.second",
-        number: 90
+        number: 60
     },
     {
         title: "banner.third",
@@ -149,25 +149,25 @@ export const partnershipsBanner = [
         icon: cleverIcon,
     },
     {
-        icon: cloudIcon,
+        icon: googleCloudIcon,
     },
-    {
-        icon: lightbendIcon,
-    },
-    {
-        icon: redHatIcon,
-    },
-    {
-        icon: scalaCenterIcon,
-    }
+    // {
+    //     icon: lightbendIcon,
+    // },
+    // {
+    //     icon: redHatIcon,
+    // },
+    // {
+    //     icon: scalaCenterIcon,
+    // }
 ]
 
 export const officeCard = [
     {
         country: "officeCard.netherlands.name",
         image: rotterdamOffice,
-        developers: 55,
-        otherJobs: 6,
+        developers: 35,
+        otherJobs: 5,
         email: "infos@lunatech.nl",
         careersEmail: 'employment@lunatech.nl',
         phone: "+31 10 750 2600",
@@ -182,8 +182,8 @@ export const officeCard = [
     {
         country: "officeCard.france.name",
         image: parisOffice,
-        developers: 32,
-        otherJobs: 2,
+        developers: 24,
+        otherJobs: 4,
         email: "info@lunatech.fr",
         phone: "+33 1 85 08 57 00",
         address: "3 rue de la Galmy - 77700 Chessy",
@@ -411,70 +411,70 @@ export const technologiesPage = [
     {
         firstBlock: [
             {
-                title: "Automotive",
-                text: "Providing innovative digital solutions to optimise vehicle performance and safety.",
+                title: "technologies.page.firstBlock.automotive.title",
+                text: "technologies.page.firstBlock.automotive.text",
                 image: carIcon,
             },
             {
-                title: "Entertainment",
-                text: "Developing interactive platforms to offer immersive entertainment experiences.",
+                title: "technologies.page.firstBlock.entertainment.title",
+                text: "technologies.page.firstBlock.entertainment.text",
                 image: buildingIcon,
             },
             {
-                title: "Financial",
-                text: "Design advanced solutions for financial management and economic data analysis.",
+                title: "technologies.page.firstBlock.finance.title",
+                text: "technologies.page.firstBlock.finance.text",
                 image: bankIcon,
             },
             {
-                title: "Insurance",
-                text: "Creating digital data management and analysis products for the insurance industry.",
+                title: "technologies.page.firstBlock.insurance.title",
+                text: "technologies.page.firstBlock.insurance.text",
                 image: shieldIcon,
             }
         ],
         secondBlock: [
             {
-                title: "Devops",
-                text: "We automate deployments and manage your software end to end, ensuring the quality you expect the entire way.",
+                title: "technologies.page.secondBlock.devops.title",
+                text: "technologies.page.secondBlock.devops.text",
                 imageUrl: insurance,
             },
             {
-                title: "Scala",
-                text: "We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community.",
+                title: "technologies.page.secondBlock.scala.title",
+                text: "technologies.page.secondBlock.scala.text",
                 imageUrl: insurance,
             },
             {
-                title: "Java",
-                text: "We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years.",
+                title: "technologies.page.secondBlock.java.title",
+                text: "technologies.page.secondBlock.java.text",
                 imageUrl: insurance
             },
             {
-                title: "Frontend",
-                text: "Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run.",
+                title: "technologies.page.secondBlock.frontend.title",
+                text: "technologies.page.secondBlock.frontend.text",
                 imageUrl: insurance
             },
             {
-                title: "Big Data",
-                text: "We’re experts in handling large amounts of data. From processing, to storage and beyond.",
+                title: "technologies.page.secondBlock.bigData.title",
+                text: "technologies.page.secondBlock.bigData.text",
                 imageUrl: insurance
             },
             {
-                title: "Machine Learning",
-                text: "We design and implement intelligent systems that learn and improve over time.",
+                title: "technologies.page.secondBlock.machineLearning.title",
+                text: "technologies.page.secondBlock.machineLearning.text",
                 imageUrl: insurance
             },
             {
-                title: "UX / UI",
-                text: "To Do Text",
+                title: "technologies.page.secondBlock.uxUi.title",
+                text: "technologies.page.secondBlock.uxUi.text",
                 imageUrl: insurance
             },
             {
-                title: "Test Automation",
-                text: "From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible.",
+                title: "technologies.page.secondBlock.testAutomation.title",
+                text: "technologies.page.secondBlock.testAutomation.text",
                 imageUrl: insurance
             },
             {
-                title: "Agile Methodology",
-                text: "We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products",
+                title: "technologies.page.secondBlock.agileMethodology.title",
+                text: "technologies.page.secondBlock.agileMethodology.text",
                 imageUrl: insurance
             }
         ],
@@ -594,12 +594,6 @@ export const contactInfos = [
         careersEmail: "employment@lunatech.fr",
         street: "3 rue de la Galmy",
         city: "77700 Chessy"
-    },
-    {
-        title: "address.countryEN",
-        subtitle: "address.subtitle1",
-        email: "info@lunatech.uk",
-        phone: "+44 (0) 7875 695 964",
     }
 ]
 

@@ -6,16 +6,15 @@ import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 
 const Carousel = () => {   
-    const wrapper = document.querySelector('.technologies-carousel__wrapper');
     const carousel = document.querySelector('.technologies-carousel__carousel');
     const arrowBtns = document.querySelectorAll('.technologies-carousel__buttons button');
     const firstCardWidth = carousel?.querySelector('.technologies-carousel__card')?.clientWidth ?? 0;
 
-    let isDragging = false, startX: number, startLeftScroll: number, timeOutId: ReturnType<typeof setTimeout> | undefined;
+    let isDragging = false, startX: number, startLeftScroll: number;
 
     if (carousel) {
         const changeButtonColor = () => {
@@ -60,17 +59,6 @@ const Carousel = () => {
         isDragging = false;
         carousel?.classList.remove('active');
     }
-
-    const autoPlay = (): void => {
-        if (window.innerWidth < 768) {
-            timeOutId = setTimeout(() => {
-                if (carousel) {
-                    carousel.scrollLeft += firstCardWidth;
-                }
-            }, 2500);
-        }
-    }
-    autoPlay();
     
     if (carousel) {
         carousel.addEventListener('mousedown', (e) => dragStart(e as MouseEvent));
@@ -78,26 +66,23 @@ const Carousel = () => {
         carousel.addEventListener('mouseup', () => isDragging = false);
         carousel.addEventListener('mouseleave', () => isDragging = false);
         document.addEventListener('mouseup', dragStop);
-        wrapper?.addEventListener("mouseenter", () => clearTimeout(timeOutId));
-        wrapper?.addEventListener("mouseleave", autoPlay);
     }
 
-    clearTimeout(timeOutId);
-    if(!wrapper?.matches(":hover")) autoPlay();
+    const { t } = useTranslation();
     
     return (
         <div className="technologies-carousel">
             <div className='technologies-carousel__desc'>
                 <Category content={<Trans i18nKey="technologies.category2" />} />
-                <Title level={2}>Browse our <span>tech services</span></Title>
-                <Text size="large" className="mgb32">With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.</Text>
+                <Title level={2}>{t('technologies.carouselTitle')}<span>{t('technologies.carouselTitleImp')}</span></Title>
+                <Text size="large" className="mgb32">{t('technologies.carouselText')}</Text>
                 <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
             <div className="technologies-carousel__wrapper">
                 <ul className="technologies-carousel__carousel">
                     {technologiesPage[0].secondBlock.map((technology, index) =>
                         <li className="technologies-carousel__card" key={index}>
-                            <TechnologieCardCarousel title={technology.title} text={technology.text}>
+                            <TechnologieCardCarousel title={t(technology.title)} text={t(technology.text)}>
                                 <Icon imageUrl={technology.imageUrl} size="medium" />
                             </TechnologieCardCarousel>
                         </li>

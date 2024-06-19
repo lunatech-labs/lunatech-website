@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from 'react-i18next';
+import { useRef } from 'react';
 import '../i18n';
 
 import Container from '@components/Container/Container';
@@ -33,9 +34,9 @@ import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon
 import Carousel from '@/components/Carousel/Carousel';
 import PartnershipsBanner from '@/components/Partnerships/PartnershipsBanner';
 
-
 const Home = () => {
     const { t } = useTranslation();
+    const aboutRef = useRef<HTMLDivElement | null>(null);
     
     return (
         <>
@@ -65,13 +66,14 @@ const Home = () => {
                     </Grid>
                 </Container>
                 <Sphere />
-                <MouseScroll />
+                <MouseScroll  onClick={
+                    () => {
+                        aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }/>
             </section>
-
+            <div ref={aboutRef} />
             <ValuesBanner />
-
-            <PartnershipsBanner />
-
             <Container><BorderEffect /></Container>
 
             <Section>
@@ -182,8 +184,9 @@ const Home = () => {
             </Section>
 
             <Container><BorderEffect /></Container>
-
+            <PartnershipsBanner />  
             <Section>
+                
                 <Container>
                     <ContactBlock />
                     <Address />

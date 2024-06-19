@@ -146,11 +146,75 @@
         }
     },
     "technologies": {
-        "title": "Nos",
-        "titleColor": "technologies",
+        "title": "Nos ",
+        "titleColor": "technologies ",
+        "sectorTitle": "Les secteurs dans lesquels nous",
+        "sectorTitleImp": "opérons",
         "title2": "pour répondre à vos besoins",
+        "title3": "au service de votre produit",
         "category1": "Secteurs d'activité",
-        "category2": "Expertises techniques"
+        "category2": "Expertises techniques",
+        "carouselTitle": "Parcourez nos ",
+        "carouselTitleImp": "services technologiques",
+        "carouselText": "Avec 30 ans d'expérience en conseil en informatique, nous proposons une gamme de technologies pour répondre à vos besoins immédiats et soutenir votre croissance future.",
+        "page": {
+            "firstBlock": {
+                "automotive": {
+                    "title": "Automobile",
+                    "text": "Nous aidons les entreprises à créer des solutions de mobilité intelligentes et connectées."
+                },
+                "entertainment": {
+                    "title" : "Divertissement",
+                    "text": "Développer des plateformes interactives pour offrir des expériences de divertissement immersives."
+                },
+                "finance": {
+                    "title": "Finance",
+                    "text": "Concevoir des solutions avancées pour la gestion financière et l'analyse des données économiques."
+                },
+                "insurance": {
+                    "title": "Assurance",
+                    "text": "Créer des produits de gestion et d'analyse de données numériques pour l'industrie de l'assurance."
+                }
+            },
+            "secondBlock": {
+                "devops": {
+                    "title": "Devops",
+                    "text": "Nous automatisons les déploiements et gérons votre logiciel de bout en bout, garantissant la qualité que vous attendez tout au long du processus."
+                },
+                "scala": {
+                    "title": "Scala",
+                    "text": "Nous sommes des experts en Scala et travaillons avec Scala et les technologies connexes depuis des années. Nous sommes également actifs dans la communauté open source Scala."
+                },
+                "java": {
+                    "title": "Java",
+                    "text": "Nous sommes des experts en Java et travaillons avec Java depuis des décennies. Nous avons été une partie active de la communauté open source Java pendant des années."
+                },
+                "frontend": {
+                    "title": "Frontend",
+                    "text": "La visualisation et l'interaction sont essentielles pour les systèmes performants. Nous construisons des tableaux de bord personnalisés, des sites Web et des applications Web réactives pour obtenir des informations sur les grands systèmes que vous exécutez."
+                },
+                "bigData": {
+                    "title": "Big Data",
+                    "text": "Nous sommes des experts dans le traitement de grandes quantités de données. Du traitement au stockage et au-delà."
+                },
+                "machineLearning": {
+                    "title": "Machine Learning",
+                    "text": "Nous concevons et mettons en œuvre des systèmes intelligents qui apprennent et s'améliorent avec le temps."
+                },
+                "uxUi": {
+                    "title": "UX / UI",
+                    "text": "Nous concevons des interfaces utilisateur intuitives et attrayantes pour les applications que nous construisons."
+                },
+                "testAutomation": {
+                    "title": "Automatisation des tests",
+                    "text": "De la conception à l'automatisation de vos scénarios de test, nous nous assurons que vos applications sont couvertes et performantes, en automatisant autant que possible."
+                },
+                "agileMethodology": {
+                    "title": "Méthode Agile",
+                    "text": "Nous utilisons des méthodes agiles pour garantir que nous livrons des logiciels de qualité à nos clients, rapidement et de manière itérative."
+                }
+            }
+        }
     },
     "articles": {
         "subtitle": "Articles"
@@ -203,6 +267,7 @@
         "title": "Travaillons ",
         "titleColor": "ensemble",
         "text": "Laissez-nous vous aider à devenir encore plus performant dans ce que vous faites. Remplissez le formulaire suivant et nous vous contacterons.",
+        "missing": "Veuillez remplir tous les champs obligatoires. Tel que:",
         "label":
         {
             "fullName": "Quel est votre nom complet ?",
@@ -229,7 +294,6 @@
     "address": {
         "countryNL": "Pays-Bas",
         "countryFR": "France",
-        "countryEN": "Royaume-Uni",
         "subtitle1": "Développement de l'activité",
         "subtitle2": "Carrières",
         "subtitle3": "Adresse"

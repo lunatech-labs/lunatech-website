@@ -1,24 +1,35 @@
-@import "/src/styles/Variables.scss";
-@import "/src/styles/Mixins.scss";
-@import "/src/styles/Responsive.scss";
-
-
 .partnership {
+    &__title {
+        color: black;
+        text-align: center;
+    }
     &__banner {
         background-color: white;
-        height: 100px;
         white-space: nowrap;
         overflow: hidden;
+        padding: 20px;
 
         img {
-            height: 50px;
-            width: 100px;
+            height: 70px;
             object-fit: contain;
-            margin: 20px 0;
+            margin: auto;
         }
     }
     &__partners {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "logo1 logo1"
+            "logo2 logo3";
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    &__partner--logo1 {
+        grid-area: logo1;
+    }
+    &__partner--logo2 {
+        grid-area: logo2;
+    }
+    &__partner--logo3 {
+        grid-area: logo3;
     }
 }

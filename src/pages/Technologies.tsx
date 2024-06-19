@@ -1,4 +1,4 @@
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import Spotlight from '@components/Spotlight/Spotlight';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Container from '@components/Container/Container';
@@ -17,6 +17,8 @@ import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCar
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
 const Vision = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <Section className="pdt256">
@@ -36,7 +38,7 @@ const Vision = () => {
                     <Grid>
                         <div className="col-lg-6 col-md-12">
                             <Category content={<Trans i18nKey="technologies.category1" />} />
-                            <Title level={2}>The sectors in which we <span>specialise</span></Title>
+                            <Title level={2}>{t("technologies.sectorTitle")} <span>{t("technologies.sectorTitleImp")}</span></Title>
                             <img className="w100" src={technologyIllustration} alt="" />
                         </div>
                         <div className="col-lg-6 col-md-12">
@@ -52,11 +54,11 @@ const Vision = () => {
                 <Container>
                     <div className="mgb64 dflex fd-c">
                     <Category content={<Trans i18nKey="technologies.category2" />} />
-                        <Title className="ta-c" level={2}>Our <span>technologies</span> at the service of your product</Title>
+                        <Title className="ta-c" level={2}>{t("technologies.title")}<span>technologies</span>{t("technologies.title3")}</Title>
                     </div>
                     <Spotlight className="spotlight__layout">
                         {technologiesPage[0].secondBlock.map((technology, index) => 
-                            <TechnologieCardFlip key={index} className="col-lg-4 col-md-6 mwidthI" title={technology.title} text={technology.text}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardFlip>
+                            <TechnologieCardFlip key={index} className="col-lg-4 col-md-6 mwidthI" title={t(technology.title)} text={t(technology.text)}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardFlip>
                         )}
                     </Spotlight>
                 </Container>
