@@ -126,6 +126,7 @@ nav.nav-bar--hidden {
         margin-bottom: 64px;
         @include phone-portrait {
             flex-direction: column;
+            gap: 30px;
         }
     }
     &__desc {

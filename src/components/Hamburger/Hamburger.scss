@@ -20,7 +20,7 @@
         background: white;
         background-size: 200% auto;
         background-clip: text;
-        text-fill-color: transparent;
+        text-emphasis-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: background 1s linear, color 0.5s linear;
@@ -92,14 +92,5 @@
         opacity: 1;
         // width: 2rem;
         // height: 2rem;
-    }
-}
-
-@keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 50% 100%;
     }
 }
