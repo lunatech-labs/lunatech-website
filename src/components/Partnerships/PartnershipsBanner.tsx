@@ -11,20 +11,22 @@ const PartnershipsBanner = () => {
     return (
         <div className="partnership__banner">
             <Container>
-                <Title className='partnership__title' level={2}>Our partners</Title>
-                <div className="partnership__partners">
-                    {partnershipsBanner.map((value, index) => {
-                        let logoClass = "";
-                        if (index === 0) {
-                            logoClass = "partnership__partner--logo1";
-                        } else if (index === 1) {
-                            logoClass = "partnership__partner--logo2";
-                        } else if (index === 2) {
-                            logoClass = "partnership__partner--logo3";
-                        }
+                <div className='partnership__container'>
+                    <Title className='partnership__title' level={2}>Our partners</Title>
+                    <div className="partnership__partners">
+                        {partnershipsBanner.map((value, index) => {
+                            let logoClass = "";
+                            if (index === 0) {
+                                logoClass = "partnership__partner--logo1";
+                            } else if (index === 1) {
+                                logoClass = "partnership__partner--logo2";
+                            } else if (index === 2) {
+                                logoClass = "partnership__partner--logo3";
+                            }
 
-                        return <img key={index} src={value.icon} className={logoClass} />;
-                    })}
+                            return <img key={index} src={value.icon} className={logoClass} />;
+                        })}
+                    </div>
                 </div>
             </Container>
         </div>
