@@ -150,7 +150,7 @@ const Contact = () => {
                         </div>
                         <div className="contact__infos">
                             {contactInfos.map((contactInfo, index) => (
-                                <Address key={index} country={t(`${contactInfo.title}`)} kind={t(`${contactInfo.subtitle}`)} mail={contactInfo.email} phone={contactInfo.phone} street={contactInfo.street} city={contactInfo.city}/>
+                                <Address key={index} country={t(`${contactInfo.title}`)} kind={t(`${contactInfo.subtitle}`)} mail={contactInfo.email} phone={contactInfo.phone} street={contactInfo.street} city={contactInfo.city} mapUrl={contactInfo.mapUrl}/>
                             ))}
                         </div>
                     </Grid>
