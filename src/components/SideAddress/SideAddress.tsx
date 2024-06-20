@@ -15,7 +15,7 @@ const Address = (props: AddressProps) => {
         <div className="country">
           <p className="countryName">{country}</p>
           <p className="kind">{kind}</p>
-          <p><span className="infos">{mail}</span> | <span className="infos">{phone}</span></p>
+          <p><span className="infos"><a href={"mailto:" + mail}>{mail}</a></span> | <span className="infos"><a href={"tel:" + phone}>{phone}</a></span></p>
           {street && city && (
             <>
               <p className="kind">Address</p>

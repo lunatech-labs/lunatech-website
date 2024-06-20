@@ -329,5 +329,9 @@
     },
     "serviceEvolutiveMaintenance": {
         "title": "Evolutive Maintenance"
-    }
+    },
+    "partners": {
+        "title": "Our ",
+        "titleImp": "partners"
+    }  
 }
