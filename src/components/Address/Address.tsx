@@ -26,8 +26,8 @@ const Address = () => {
                                 <a className="address__link" href={`mailto:${contactInfo.careersEmail}`}>{contactInfo.careersEmail}</a>
                             </div>
                             <div className="address__part">
+                                <p className="address__subtitle">{t(`${contactInfo.subtitle3}`)}</p>
                                 <a href={contactInfo.mapUrl}>
-                                    <p className="address__subtitle">{t(`${contactInfo.subtitle3}`)}</p>
                                     <p className="address__text">{contactInfo.street}</p>
                                     <p className="address__text">{contactInfo.city}</p>
                                 </a>

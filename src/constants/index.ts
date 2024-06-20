@@ -583,7 +583,7 @@ export const contactInfos = [
         careersEmail: "employment@lunatech.nl",
         street: "Hofplein 20",
         city: "3032 AC Rotterdam",
-        mapUrl: "https://maps.apple.com/?address=Hofplein%2020,%203032%20AC%20Rotterdam,%20Netherlands&auid=8428292756301486212&ll=51.925154,4.478120&lsp=9902&q=Lunatech"
+        mapUrl: "http://maps.apple.com/?q=51.925154,4.478120"
     },
     {
         title: "address.countryFR",
@@ -595,7 +595,7 @@ export const contactInfos = [
         careersEmail: "employment@lunatech.fr",
         street: "3 rue de la Galmy",
         city: "77700 Chessy",
-        mapUrl: "https://maps.apple.com/?address=3%20Rue%20de%20la%20Galmy,%2077700%20Chessy,%20France&auid=8145836750571957785&ll=48.856190,2.771435&lsp=9902&q=Lunatech"
+        mapUrl: "http://maps.apple.com/?q=48.856190,2.771435"
     }
 ]
 
