@@ -319,5 +319,9 @@
     },
     "serviceLegacyTransformation": {
         "title": "Transformation de l'héritage"
-    }
+    },
+    "partners": {
+        "title": "Nos ",
+        "titleImp": "partenaires"
+    }  
 }

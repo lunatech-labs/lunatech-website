@@ -59,7 +59,7 @@ const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
                 </div>
                 
                 <div className="footer__bottom">
-                    <p>© 2023 Lunatech. <Trans i18nKey="footer.copyright" /></p>
+                    <p><Trans i18nKey="footer.copyright" /></p>
                     <a href="/Lunatech-General_Terms_and_Conditions.pdf" target="_blank"><Trans i18nKey="footer.terms" /></a>
                 </div>
             </Container>

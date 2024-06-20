@@ -6,13 +6,13 @@ import "./PartnershipsBanner.scss";
 import Title from '@components/Title/Title';
 
 const PartnershipsBanner = () => {
-    useTranslation();
+    const { t } = useTranslation();
 
     return (
         <div className="partnership__banner">
             <Container>
                 <div className='partnership__container'>
-                    <Title className='partnership__title' level={2}>Our partners</Title>
+                    <Title className='partnership__title' level={2}>{t("partners.title")}<span>{t("partners.titleImp")}</span></Title>
                     <div className="partnership__partners">
                         {partnershipsBanner.map((value, index) => {
                             let logoClass = "";

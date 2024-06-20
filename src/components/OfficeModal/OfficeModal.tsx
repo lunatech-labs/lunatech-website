@@ -57,16 +57,16 @@ const OfficeModal = (props: ModalProps) => {
                             <div className="office-modal__category">
                                 <Text size="large" className="mgb8">{t('officeModal.business')}</Text>
                                 <p className="office-modal__entry">
-                                    <img src={emailIcon} alt="" />{props.email}
+                                    <img src={emailIcon} alt="" /><a href={"mailto:" + props.email}>{props.email}</a>
                                     <span>|</span>
-                                    <img src={phoneIcon} alt="" />{props.phone}
+                                    <img src={phoneIcon} alt="" /><a href={"tel:" + props.phone}>{props.phone}</a>
                                 </p>
                             </div>
                         )}
                         {(props.careersEmail) && (
                             <div className="office-modal__category">
                                 <Text size="large" className="mgb8">{t('officeModal.careers')}</Text>
-                                <p className="office-modal__entry"><img src={emailIcon} alt="" />{props.careersEmail}</p>
+                                <p className="office-modal__entry"><img src={emailIcon} alt="" /><a href={"mailto:" + props.careersEmail}>{props.careersEmail}</a></p>
                             </div>  
                         )}
                         {(props.address && props.country) && (
