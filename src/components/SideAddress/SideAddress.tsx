@@ -19,8 +19,8 @@ const Address = (props: AddressProps) => {
           <p><span className="infos"><a href={"mailto:" + mail}>{mail}</a></span> | <span className="infos"><a href={"tel:" + phone}>{phone}</a></span></p>
           {street && city && mapUrl && (
             <>
+            <p className="kind">Address</p>
             <a href={mapUrl}>
-              <p className="kind">Address</p>
               <p className="infos">{street}</p>
               <p className="infos">{city}</p>
             </a>
