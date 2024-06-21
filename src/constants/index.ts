@@ -546,8 +546,8 @@ export const footerLinks = [
                 url: "/services"
             },
             {
-                title: "Vision",
-                url: "/vision"
+                title: "Technologies",
+                url: "/technologies"
             }
         ]
     },

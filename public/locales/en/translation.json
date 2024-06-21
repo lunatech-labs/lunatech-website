@@ -146,7 +146,7 @@
         }
     },
     "technologies": {
-        "title": "Our",
+        "title": "Our ",
         "titleColor": "technologies ",
         "sectorTitle": "The sectors in which we",
         "sectorTitleImp": "specialise",
@@ -275,7 +275,7 @@
             "phone": "What's your phone number?",
             "company": "What's your company/organization name?",
             "services": "What's services are you looking for?",
-            "project": "Tell us about your project"
+            "project": "Do you have a question or remark to add?"
         },
         "placeHolder":
         {
@@ -284,7 +284,7 @@
             "phone": "+11 2222 333344",
             "company": "Type your company/organization name",
             "services": "Choose from the list here",
-            "project": "Please type your project description"
+            "project": "Do you have a question or remark to add?"
         },
         "options": {
             "softwareDefinedVehicle": "Software Defined Vehicle",
