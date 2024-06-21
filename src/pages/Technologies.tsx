@@ -54,7 +54,7 @@ const Vision = () => {
                 <Container>
                     <div className="mgb64 dflex fd-c">
                     <Category content={<Trans i18nKey="technologies.category2" />} />
-                        <Title className="ta-c" level={2}>{t("technologies.title")}<span>technologies</span>{t("technologies.title3")}</Title>
+                        <Title className="ta-c" level={2}>{t("technologies.title")}<span>technologies </span>{t("technologies.title3")}</Title>
                     </div>
                     <Spotlight className="spotlight__layout">
                         {technologiesPage[0].secondBlock.map((technology, index) => 

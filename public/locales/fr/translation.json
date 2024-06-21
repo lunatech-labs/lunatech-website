@@ -85,7 +85,7 @@
         "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
         "cards": {
             "softwareDefinedVehicle" : {
-                "title": "Véhicules définis par logiciel",
+                "title": "SDV",
                 "text": "Nous aidons les entreprises à créer des solutions de mobilité intelligentes et connectées."
             },
             "customSoftware" : {
@@ -97,7 +97,7 @@
                 "text": "Nous intégrons des systèmes existants et des applications tierces dans votre écosystème digital."
             },
             "legacyTransformation" : {
-                "title": "Transformation de l'héritage",
+                "title": "Legacy Transformation",
                 "text": "Nous modernisons les systèmes existants pour les rendre plus agiles et plus efficaces."
             }
         }
@@ -275,13 +275,13 @@
             "phone": "Quel est votre numéro de téléphone ?",
             "company": "Quel est le nom de votre entreprise/organisation ?",
             "services": "Quels services vous intéressent ?",
-            "project": "Parlez-nous de votre projet"
+            "project": "Avez-vous une question ou une remarque à ajouter ?"
         },
         "placeHolder": {
             "fullName": "Écrivez votre nom complet",
             "company": "Écrivez le nom de votre entreprise/organisation",
             "services": "Sélectionnez le service qui vous intéresse",
-            "project": "Parlez-nous de votre projet"
+            "project": "Avez-vous une question ou une remarque à ajouter ?"
         },
         "options": {
             "softwareDefinedVehicle": "Véhicules définis par logiciel",
@@ -309,7 +309,7 @@
         "contact": "Contact"
     },
     "serviceSoftwareDefinedVehicle": {
-        "title": "Véhicules définis par logiciel"
+        "title": "SDV"
     },
     "serviceCustomSoftwareDevelopment": {
         "title": "Développement de logiciels sur mesure"
@@ -318,7 +318,7 @@
         "title": "Intégration des systèmes"
     },
     "serviceLegacyTransformation": {
-        "title": "Transformation de l'héritage"
+        "title": "Legacy Transformation"
     },
     "partners": {
         "title": "Nos ",
