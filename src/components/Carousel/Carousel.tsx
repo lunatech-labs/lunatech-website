@@ -79,10 +79,6 @@ const Carousel = () => {
                 <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
             <div className="technologies-carousel__wrapper">
-                <div className='technologies-carousel__buttons'>
-                    <button id="left"><img src={arrowChevronLeft} alt="Scroll Left" /></button>
-                    <button id="right"><img src={arrowChevronRight} alt="Scroll Right" /></button>
-                </div>
                 <ul className="technologies-carousel__carousel">
                     {technologiesPage[0].secondBlock.map((technology, index) =>
                         <li className="technologies-carousel__card" key={index}>
@@ -92,6 +88,10 @@ const Carousel = () => {
                         </li>
                     )}
                 </ul>
+                <div className='technologies-carousel__buttons'>
+                    <button id="left"><img src={arrowChevronLeft} alt="Scroll Left" /></button>
+                    <button id="right"><img src={arrowChevronRight} alt="Scroll Right" /></button>
+                </div>
             </div>
         </div>
     );
