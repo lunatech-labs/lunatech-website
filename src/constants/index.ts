@@ -13,7 +13,6 @@ import {
     parisOffice,
     visionIllustration,
     visionIllustrationOpen,
-    insurance,
     officeIcon,
     awsIcon,
     cleverIcon,
@@ -233,8 +232,8 @@ export const serviceBlock = [
                 url: "/services/software-defined-vehicle"
             },
             {
-                title: "service.cards.customSoftwareDevelopment.title",
-                text: "service.cards.customSoftwareDevelopment.text",
+                title: "service.cards.customSoftware.title",
+                text: "service.cards.customSoftware.text",
                 imageUrl: customSoftwareIcon,
                 url: "/services/custom-software-development"
             },
@@ -435,47 +434,47 @@ export const technologiesPage = [
             {
                 title: "technologies.page.secondBlock.devops.title",
                 text: "technologies.page.secondBlock.devops.text",
-                imageUrl: insurance,
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.scala.title",
                 text: "technologies.page.secondBlock.scala.text",
-                imageUrl: insurance,
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.java.title",
                 text: "technologies.page.secondBlock.java.text",
-                imageUrl: insurance
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.frontend.title",
                 text: "technologies.page.secondBlock.frontend.text",
-                imageUrl: insurance
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.bigData.title",
                 text: "technologies.page.secondBlock.bigData.text",
-                imageUrl: insurance
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.machineLearning.title",
                 text: "technologies.page.secondBlock.machineLearning.text",
-                imageUrl: insurance
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.uxUi.title",
                 text: "technologies.page.secondBlock.uxUi.text",
-                imageUrl: insurance
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.testAutomation.title",
                 text: "technologies.page.secondBlock.testAutomation.text",
-                imageUrl: insurance
+                image: shieldIcon
             },
             {
                 title: "technologies.page.secondBlock.agileMethodology.title",
                 text: "technologies.page.secondBlock.agileMethodology.text",
-                imageUrl: insurance
+                image: shieldIcon
             }
         ],
     }
