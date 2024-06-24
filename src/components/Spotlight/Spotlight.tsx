@@ -7,6 +7,11 @@ type SpotlightProps = {
     className?: string;
 }
 
+const isSafari = () => {
+    const ua = navigator.userAgent.toLowerCase();
+    return ua.indexOf('safari') > -1 && ua.indexOf('chrome') === -1;
+}
+
 export default function Spotlight({children, className = '',}: SpotlightProps) {
     const containerRef = useRef<HTMLDivElement>(null)
     const mousePosition = MousePosition()
@@ -14,21 +19,24 @@ export default function Spotlight({children, className = '',}: SpotlightProps) {
     const containerSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 })
     const [boxes, setBoxes] = useState<Array<HTMLElement>>([])
 
-    useEffect(() => {    
-        containerRef.current && setBoxes(Array.from(containerRef.current.children).map((el) => el as HTMLElement))
+    useEffect(() => {  
+        if (!isSafari())
+            containerRef.current && setBoxes(Array.from(containerRef.current.children).map((el) => el as HTMLElement))
     }, [])
   
     useEffect(() => {    
-        initContainer()
-        window.addEventListener('resize', initContainer)
+        if (!isSafari())
+            initContainer()
+            window.addEventListener('resize', initContainer)
 
-        return () => {
-            window.removeEventListener('resize', initContainer)
-        }
+            return () => {
+                window.removeEventListener('resize', initContainer)
+            }
     }, [boxes])  
 
     useEffect(() => {
-        onMouseMove()
+        if (!isSafari())
+            onMouseMove()
     }, [mousePosition])
 
     const initContainer = () => {
@@ -71,7 +79,7 @@ type SpotlightCardProps = {
 
 export function SpotlightCard({children, className = '', padding = ''}: SpotlightCardProps) {
     return (
-        <div className={`spotlight ${className}`}>
+        <div className={isSafari() ? `spotlight disable-before-after ${className}` : `spotlight ${className}`}>
             <div className={`spotlight__card ${padding}`}>
                 <div className="spotlight__gradient" aria-hidden="true"><div></div></div>
                 <div className="spotlight__content">

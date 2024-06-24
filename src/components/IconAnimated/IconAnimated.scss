@@ -1,0 +1,59 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+.iconAnimated {
+    margin-bottom: 32px;
+    @include flexbox;
+    justify-content: center;
+    background: linear-gradient(to bottom, $blue, $blue) padding-box,
+                linear-gradient(to bottom, rgb(120 180 215 / 24%), rgb(10 50 105 / 24%)) border-box;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    @include phone-portrait {
+        margin-bottom: 16px;
+    }
+
+    &__image {
+        width: 50%;
+    }
+}
+.icon-small {
+    width: 64px;
+    height: 64px;
+}
+.icon-small .icon__img {
+    width: 24px;
+    height:24px;
+}
+.icon-medium {
+    width: 96px;
+    height: 96px;
+    @include phone-portrait {
+        width: 64px;
+        height: 64px;
+    }
+}
+.icon-medium .icon__img {
+    width: 48px;
+    height:48px;
+    @include phone-portrait {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+
+
+
+
+
+.icon-large {
+    width: 128px;
+    height: 128px;
+}
+.icon-large .icon__img {
+    width: 64px;
+    height: 64px;
+}

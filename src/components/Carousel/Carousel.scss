@@ -26,7 +26,7 @@
         scroll-behavior: smooth;
         display: grid;
         grid-auto-flow: column;
-        gap: 50px;
+        gap: 24px;
         &.active {
             cursor: grab;
             user-select: none;

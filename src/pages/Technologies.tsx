@@ -7,14 +7,15 @@ import Grid from '@components/Grid/Grid';
 import Category from '@components/Category/Category';
 import Title from '@components/Title/Title';
 import BusinessCard from '@components/BusinessCard/BusinessCard';
-import Icon from '@components/Icon/Icon';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Address from '@components/Address/Address';
 
 import { technologiesPage } from '@/constants';
 import { moon, technologyIllustration } from '@/assets';
-import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
+// import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import TechnologieCard from '@/components/TechnologieCard/TechnologieCard';
+import IconAnimated from '@/components/IconAnimated/IconAnimated';
 
 const Vision = () => {
     const { t } = useTranslation();
@@ -58,7 +59,8 @@ const Vision = () => {
                     </div>
                     <Spotlight className="spotlight__layout">
                         {technologiesPage[0].secondBlock.map((technology, index) => 
-                            <TechnologieCardFlip key={index} className="col-lg-4 col-md-6 mwidthI" title={t(technology.title)} text={t(technology.text)}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardFlip>
+                            // <TechnologieCardFlip key={index} className="col-lg-4 col-md-6 mwidthI" title={t(technology.title)} text={t(technology.text)}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardFlip>
+                            <TechnologieCard key={index} className="col-lg-4 col-md-6 mwidthI" title={t(technology.title)} text={t(technology.text)}><IconAnimated image={technology.image} size="medium" /></TechnologieCard>
                         )}
                     </Spotlight>
                 </Container>

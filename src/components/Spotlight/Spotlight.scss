@@ -5,6 +5,9 @@
 .spotlight__layout {
     @include grid;
 }
+.spotlight__layout-8 {
+    @include grid-8;
+}
 .spotlight__layout:hover .spotlight:before {opacity: 1;}
 .spotlight__layout:hover .spotlight:after {opacity: .1;}
 .spotlight {
@@ -35,6 +38,11 @@
         left: -12rem;
         top: -12rem;
         // z-index: 4;
+    }
+    &.disable-before-after {
+        &:before, &:after {
+            content: none;
+        }
     }
     &__card {
         @include flexbox;

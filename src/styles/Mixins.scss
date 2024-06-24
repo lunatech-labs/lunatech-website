@@ -8,6 +8,12 @@
     grid-gap: 24px;
     width: 100%;
 }
+@mixin grid-8 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 24px;
+    width: 100%;
+}
 @mixin light-gradient {
     background: linear-gradient(to bottom, #0A3269, rgb(18,35,85)) padding-box,
                 linear-gradient(to bottom, rgb(255 255 255 / 24%), rgb(120 180 215 / 24%)) border-box;
