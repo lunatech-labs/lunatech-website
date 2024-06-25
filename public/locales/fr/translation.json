@@ -65,7 +65,13 @@
         "thirdBlock": {
             "title": "Une ",
             "titleImp": "évolution",
-            "title2": ", pas une révolution"
+            "title2": ", pas une révolution",
+            "visions": {
+                "1": "Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels.",
+                "2": "Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme.",
+                "3": "Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues.",
+                "4": "Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité."
+            }
         },
         "fourthBlock": {
             "title": "L'évolution de ",

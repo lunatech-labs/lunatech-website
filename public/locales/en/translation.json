@@ -65,7 +65,13 @@
         "thirdBlock": {
             "title": "An ",
             "titleImp": "evolution",
-            "title2": ", not a revolution"
+            "title2": ", not a revolution",
+            "visions": {
+                "1": "Our work is characterised by a deep commitment to quality, underpinned by a methodical approach to software development.",
+                "2": "At the heart of Lunatech's ethos is a penchant for simplicity and pragmatism.",
+                "3": "This conviction is rooted in the notion that truly effective software is both intuitive and robust, devoid of superfluous complexities.",
+                "4": "Such an approach not only serves to bolster the software's reliability, but also enhances its adaptability and maintainability."
+            }
         },
         "fourthBlock": {
             "title": "Lunatech's ",
@@ -203,7 +209,7 @@
                 },
                 "uxUi": {
                     "title": "UX / UI",
-                    "text": "To Do Text"
+                    "text": "We design intuitive and attractive user interfaces for the applications we build."
                 },
                 "testAutomation": {
                     "title": "Test Automation",
@@ -313,19 +319,23 @@
         "contact": "Contact"
     },
     "serviceSoftwareDefinedVehicle": {
-        "title": "Software Defined Vehicle"
+        "title": "Software Defined Vehicle",
+        "text": "A Software-Defined Vehicle is any vehicle that manages its operations, adds functionality, and enables new features primarily or entirely through software. Software-Defined Vehicles are the next evolution of the automotive industry. Lunatech has been involved with Software Defined Vehicle since 2016 while the term did not exist. Lunatech together with large automobile manufacturers has been involved in processing car data at large scale and providing services for those vehicles. Lunatech is specialised in cloud middleware and processing data for software defined vehicles."
     },
     "serviceOpenSource": {
         "title": "Open Source"
     },
     "serviceCustomSoftwareDevelopment": {
-        "title": "Custom Software Development"
+        "title": "Custom Software Development",
+        "text": "Lunatech specializes in custom software development, offering tailored solutions to meet the specific needs of businesses and individuals. Their services encompass requirement analysis, design, development, testing, UX design, integration, deployment, training, maintenance, scalability, security, and managing cost and time considerations. This approach allows for addressing unique challenges and opportunities, ensuring software that is efficient, secure, and scalable, while requiring careful planning and skilled teams for successful implementation."
     },
     "serviceSystemIntegration": {
-        "title": "System Integration"
+        "title": "System Integration",
+        "text": "Lunatech excels in system integration, enhancing organizational IT by connecting disparate systems to improve efficiency and technology utilization. Utilizing Web APIs, middleware, and cloud solutions, they focus on security, compliance, and integrating legacy and new technologies. This approach makes IT environments more sustainable, agile, and cost-effective, driving better decision-making and customer experiences."
     },
     "serviceLegacyTransformation": {
-        "title": "Legacy Transformation"
+        "title": "Legacy Transformation",
+        "text": "Lunatech's Legacy Transformation Service modernizes outdated technology systems to align with current business needs and technology standards. This comprehensive service includes assessment and reverse engineering, business alignment, technology stack upgrade, data migration, system integration, UI modernization, testing, security enhancements, training, and change management. Aimed at improving efficiency, compatibility, and security. Lunatech adopts a phased or incremental approach to minimize disruption, ensuring a smooth transition to modern, agile systems that support organizational objectives effectively. Additionally, Lunatech ensures knowledge transfer and training for clients' teams, enabling them to manage the modernized application independently. This comprehensive approach helps businesses maximize their software investments without the need for costly redevelopment over multiple years."
     },
     "serviceEvolutiveMaintenance": {
         "title": "Evolutive Maintenance"
