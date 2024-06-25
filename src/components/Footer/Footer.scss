@@ -41,6 +41,9 @@
         }
     }
     &__brand {
+        a {
+            display: inline-block;
+        }
         margin-bottom: 64px;
         @include phone-portrait {
             margin-bottom: 32px;
@@ -69,10 +72,21 @@
             width: 64px;
             @include flexbox;
             justify-content: center;
+            
             &:not(:last-child) {
                 margin-right: 8px;
             }
-        }
+            
+            img {
+                transition: filter 0.3s ease; // Add transition here
+            }
+            
+            &:hover {
+                img {
+                    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(290deg) brightness(90%);
+                }
+            }
+        }        
     }
     &__title {
         color: $lightGray;

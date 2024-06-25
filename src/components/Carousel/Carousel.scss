@@ -3,9 +3,6 @@
 @import "/src/styles/Responsive.scss";
 
 .technologies-carousel {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 40px;
 
     @include phone-portrait {
         display: flex;
@@ -13,12 +10,20 @@
         width: 100%;
         gap: 20px;
     }
+    &__desc {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
 
-    &__img{
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
+      .button-secondary {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include phone-portrait {
+        grid-template-columns: 1fr;
+      }
     }
+
     &__carousel {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -95,7 +100,7 @@
     }
     &__buttons {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         gap: 16px;
         button {
             width: 64px;

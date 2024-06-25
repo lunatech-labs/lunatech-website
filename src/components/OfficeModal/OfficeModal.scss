@@ -24,7 +24,7 @@
         padding: 80px;
         width: 80%;
         display: flex;
-        @include desktop-up {width: 95%;}
+        @include desktop-up {width: 60%;}
         @include tablet {
             top: initial;
             left: 50%;

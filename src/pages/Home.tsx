@@ -53,7 +53,7 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="hero__content">
-                            <Title level={1}><Trans i18nKey="hero.title1" /><span><Trans i18nKey="hero.titleImp" /></span><Trans i18nKey="hero.title2" /></Title>
+                            <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
                             <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
                                 <ButtonPrimary to={`mailto:employment@lunatech.nl`} iconUrl={messageIcon} size="large">
@@ -86,7 +86,7 @@ const Home = () => {
                             <Text size="large" className="mgb32"><Trans i18nKey={homePage[0].aboutBlock.desc} /></Text>
                             <ButtonSecondary iconUrl={arrowRight} size="large" to='/about'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                             <div className="mgt64">
-                                <Spotlight className="spotlight__layout">
+                                <Spotlight className="spotlight__layout grid-8">
                                     {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
                                             <OfficeCard title={office.country} image={office.image} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>

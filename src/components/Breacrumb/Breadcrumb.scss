@@ -1,5 +1,6 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "../../styles/Responsive.scss";
 
 .breadcrumb {
     display: flex;
@@ -26,5 +27,12 @@
             color: $pink;
             text-decoration: underline;
         }
+    }
+
+    @include phone-portrait {
+        font-size: 12px;
+        letter-spacing: 2px;
+        display: flex;
+        flex-direction: column;
     }
 }
