@@ -1,16 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { Trans } from "react-i18next";
-import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
-import TechnologieCardCarousel from "@/components/TechnologieCardCarousel/TechnologieCardCarousel";
-import Icon from "@components/Icon/Icon";
 import Category from "@components/Category/Category";
 import Text from "@components/Text/Text";
 import Title from "@components/Title/Title";
 import ButtonSecondary from '@components/ButtonSecondary/ButtonSecondary';
 import "./TechnologiesCarousel.scss";
 import { arrowChevronLeft, arrowChevronRight, arrowRight } from '@/assets';
-import { technologiesPage } from '@/constants';
-import IconAnimated from '../IconAnimated/IconAnimated';
+
 
 const TechnologiesCarousel = () => {
     const wrapperRef = useRef(null);
