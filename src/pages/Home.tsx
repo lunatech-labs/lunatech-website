@@ -53,7 +53,7 @@ const Home = () => {
                 <Container>
                     <Grid>
                         <div className="hero__content">
-                            <Title level={1}><Trans i18nKey="hero.title1" /> <br /><span><Trans i18nKey="hero.titleImp" /></span> <br /><Trans i18nKey="hero.title2" /></Title>
+                            <Title level={1}><Trans i18nKey="hero.title1" /><span><Trans i18nKey="hero.titleImp" /></span><Trans i18nKey="hero.title2" /></Title>
                             <Text size="large" className="mgb32"><Trans i18nKey="hero.text" /></Text>
                             <div className="dflex">
                                 <ButtonPrimary to={`mailto:employment@lunatech.nl`} iconUrl={messageIcon} size="large">
