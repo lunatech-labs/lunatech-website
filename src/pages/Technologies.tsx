@@ -1,5 +1,5 @@
 import { Trans, useTranslation } from 'react-i18next';
-import Spotlight from '@components/Spotlight/Spotlight';
+import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Container from '@components/Container/Container';
 import Section from '@components/Section/Section';
@@ -59,9 +59,10 @@ const Vision = () => {
                     </div>
                     <Spotlight className="spotlight__layout">
                         {technologiesPage[0].secondBlock.map((technology, index) => 
-                            // <TechnologieCardFlip key={index} className="col-lg-4 col-md-6 mwidthI" title={t(technology.title)} text={t(technology.text)}><Icon imageUrl={technology.imageUrl} size="medium" /></TechnologieCardFlip>
-                            <TechnologieCard key={index} className="col-lg-4 col-md-6 mwidthI" title={t(technology.title)} text={t(technology.text)}><IconAnimated image={technology.image} size="medium" /></TechnologieCard>
-                        )}
+                            <SpotlightCard key={index} className="col-lg-4">
+                                <TechnologieCard key={index} title={t(technology.title)} text={t(technology.text)}><IconAnimated image={technology.image} size="medium" /></TechnologieCard>
+                            </SpotlightCard>
+                         )}
                     </Spotlight>
                 </Container>
             </Section>

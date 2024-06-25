@@ -5,9 +5,8 @@
 .technologie-card {
     text-align: left;
     width: 100%;
-    border: solid 1px $lightGray;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 16px;
     height: 400px;
     position: relative;
 
@@ -22,8 +21,8 @@
         height: 100%;
         top: 0;
         left: 0;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: 16px;
+        padding: 48px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -69,8 +68,8 @@
     .toggle-button {
         position: absolute;
         z-index: 2;
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 32px;
+        right: 32px;
     }
 
     .icon-plus {

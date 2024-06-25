@@ -4,7 +4,6 @@ import Text from "@components/Text/Text";
 import "./TechnologieCard.scss";
 
 interface CardProps {
-    className?: string;
     title: string;
     text: string;
     children: JSX.Element;
@@ -18,7 +17,7 @@ const TechnologieCard = (props: CardProps) => {
     };
 
     return (
-        <div className={`technologie-card ${props.className}`} onClick={handleClick}>
+        <div className="technologie-card" onClick={handleClick}>
             <div className={`front ${isFrontVisible ? 'visible' : 'hidden'}`}>
                 {props.children}
                 <Title level={3}>{props.title}</Title>
@@ -27,11 +26,9 @@ const TechnologieCard = (props: CardProps) => {
                 <Text size="medium" className="mgb24">{props.text}</Text>
             </div>
             <div className="toggle-button">
-            <div className="icon-plus">
-                <div className={`icon-plus-bar ${isFrontVisible ? 'is-vertical' : 'is-vertical open'}`}>
-                </div>
-                <div className="icon-plus-bar">
-                </div>
+                <div className="icon-plus">
+                    <div className={`icon-plus-bar ${isFrontVisible ? 'is-vertical' : 'is-vertical open'}`}></div>
+                    <div className="icon-plus-bar"></div>
                 </div>
             </div>
         </div>
