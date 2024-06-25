@@ -1,6 +1,5 @@
 import { technologiesPage } from "@/constants";
 import TechnologieCardCarousel from "../TechnologieCardCarousel/TechnologieCardCarousel";
-import Icon from "../Icon/Icon";
 import "./Carousel.scss";
 import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
 import Category from "@components/Category/Category";
@@ -8,6 +7,7 @@ import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
 import { Trans, useTranslation } from "react-i18next";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
+import IconAnimated from "@components/IconAnimated/IconAnimated";
 
 const Carousel = () => {   
     const carousel = document.querySelector('.technologies-carousel__carousel');
@@ -83,7 +83,7 @@ const Carousel = () => {
                     {technologiesPage[0].secondBlock.map((technology, index) =>
                         <li className="technologies-carousel__card" key={index}>
                             <TechnologieCardCarousel title={t(technology.title)} text={t(technology.text)}>
-                                <Icon imageUrl={technology.imageUrl} size="medium" />
+                                <IconAnimated image={technology.image} size="medium" />
                             </TechnologieCardCarousel>
                         </li>
                     )}

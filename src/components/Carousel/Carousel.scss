@@ -54,15 +54,43 @@
         width: 424px;
         padding: 40px;
         list-style: none;
-        border-radius: 8px;
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         border-radius: 20px;
 
         @include phone-portrait {
             width: 290px;
+        }
+
+        &:hover {
+            #light {
+                animation: glowing 2s infinite;
+              }
+              #buildingRoof {
+                stroke-dasharray: 100;
+                stroke-dashoffset: 100;
+                animation: dash 1s linear forwards;
+              }
+              #carWaves, #buildingPillar, #bankPillar {
+                stroke-dasharray: 100;
+                stroke-dashoffset: 100;
+                animation: dash 2s linear forwards;
+              }
+              #buildingPillarExt {
+                stroke-dasharray: 100;
+                stroke-dashoffset: 100;
+                animation: dash 0.5s linear forwards;
+              }
+              #buildingFlag {
+                animation: putFlag 1s forwards;
+              }
+              #shield, #bankCoin {
+                animation: rotateShield 0.5s forwards;
+              }
+              #bankRoofTop{
+                animation: putFlag 1s forwards;
+              }
         }
     }
     &__buttons {
@@ -87,3 +115,49 @@
         }
     }
 }
+
+@keyframes putFlag {
+    0% {transform: translateY(-100%);}
+    25% {transform: translateY(-100%);}
+    50% {transform: translateY(-100%);}
+    80% {transform: translateY(0%);}
+    90% {transform: translateY(-10%);}
+    100% {transform: translateY(0%);}
+  }
+  
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes rotateShield {
+    from {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+  
+  @keyframes constructPillar {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  @keyframes glowing {
+    0%, 100% {
+      fill: #780000;
+      opacity: 0.5;
+    }
+    50% {
+      fill: #ff0000;
+      opacity: 1;
+    }
+  }
+  

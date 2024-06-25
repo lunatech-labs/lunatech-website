@@ -199,22 +199,22 @@ export const visionCards = [
     {
         id: 1,
         column: "left",
-        text: "Notre travail se caractérise par un engagement profond en faveur de la qualité, souligné par une approche méthodique du développement de logiciels.",
+        text: "about.thirdBlock.visions.1",
     },
     {
         id: 2,
         column: "right",
-        text: "Au cœur de l'éthique de Lunatech se trouve un penchant pour la simplicité et le pragmatisme.",
+        text: "about.thirdBlock.visions.2",
     },
     {
         id: 3,
         column: "left",
-        text: "Cette conviction est ancrée dans la notion que les logiciels véritablement efficaces sont à la fois intuitifs et résistants, dépourvus de complexités superflues.",
+        text: "about.thirdBlock.visions.3",
     },
     {
         id: 4,
         column: "right",
-        text: "Une telle approche permet non seulement de renforcer la fiabilité du logiciel, mais aussi d'améliorer son adaptabilité et sa maintenabilité.",
+        text: "about.thirdBlock.visions.4",
     },
 ];
 

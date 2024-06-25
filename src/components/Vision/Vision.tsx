@@ -3,6 +3,7 @@ import Text from "@components/Text/Text";
 import "./Vision.scss";
 import { visionCards } from "@/constants";
 import { dotIcon, visionIllustration, visionIllustrationOpen } from "@/assets";
+import { useTranslation } from "react-i18next";
 
 type VisionCard = {
     id: number;
@@ -26,6 +27,7 @@ const Vision = () => {
     };
 
     const visionCardChunks = chunk(visionCards, 2);
+    const { t } = useTranslation();
 
     return (
         <div className="vision">
@@ -40,7 +42,7 @@ const Vision = () => {
                                 <img src={dotIcon} alt="" />
                             </div>
                             <div style={{ display: visibleCard === card.id ? 'block' : 'none' }}>
-                                <Text size="medium">{card.text}</Text>
+                                <Text size="medium">{t(card.text)}</Text>
                             </div>
                         </div>
                     ))}
