@@ -41,9 +41,7 @@ const Vision = () => {
                             >
                                 <img src={dotIcon} alt="" />
                             </div>
-                            <div style={{ display: visibleCard === card.id ? 'block' : 'none' }}>
-                                <Text size="medium">{t(card.text)}</Text>
-                            </div>
+                            <Text size="medium">{t(card.text)}</Text>
                         </div>
                     ))}
                 </div>

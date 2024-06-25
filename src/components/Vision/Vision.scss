@@ -58,7 +58,6 @@
     }
     &__illustration {
         @include absolute-center;
-        top: 36%;
         @include desktop {top: 38%;}
         @include phone-landscape {
             top: 50%;
