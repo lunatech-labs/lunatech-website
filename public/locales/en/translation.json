@@ -259,21 +259,6 @@
         "title": "Let's ",
         "titleImp": "talk!"
     },
-    "officeCard": {
-        "netherlands": {
-            "name": "Netherlands"
-        },
-        "france": {
-            "name": "France"
-        }
-    },
-    "contactBtn": {
-        "title": "Contact us"
-    },
-    "contactBlock": {
-        "title": "Let's ",
-        "titleImp": "talk!"
-    },
     "contact": {
         "subtitle": "Contact",
         "title": "Let's work ",
@@ -348,6 +333,7 @@
     },
     "partners": {
         "title": "Our ",
-        "titleImp": "partners"
+        "titleImp": "partners",
+        "subtitle": "Partners"
     }  
 }

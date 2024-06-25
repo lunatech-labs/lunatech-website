@@ -32,7 +32,7 @@ import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
 import Carousel from '@/components/Carousel/Carousel';
-import PartnershipsBanner from '@/components/Partnerships/PartnershipsBanner';
+import Partnerships from '@/components/Partnerships/Partnerships';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -184,9 +184,16 @@ const Home = () => {
             </Section>
 
             <Container><BorderEffect /></Container>
-            <PartnershipsBanner />  
+
+            <Section className="bg-bgDarkBlue">
+                <Container>
+                    <Partnerships />  
+                </Container>
+            </Section>
+            
+            <Container><BorderEffect /></Container>
+            
             <Section>
-                
                 <Container>
                     <ContactBlock />
                     <Address />

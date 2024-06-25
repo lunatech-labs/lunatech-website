@@ -14,12 +14,13 @@ import {
     visionIllustration,
     visionIllustrationOpen,
     officeIcon,
-    awsIcon,
-    cleverIcon,
-    googleCloudIcon,
-    // lightbendIcon,
-    // redHatIcon,
-    // scalaCenterIcon,
+    awsLogo,
+    azulLogo,
+    cleverCloudLogo,
+    cloudBeesLogo,
+    googleCloudLogo,
+    lightbendLogo,
+    redHatLogo,
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -140,25 +141,28 @@ export const valuesBanner = [
     }
 ]
 
-export const partnershipsBanner = [
+export const partnerships = [
     {
-        icon: awsIcon,
+        icon: awsLogo,
     },
     {
-        icon: cleverIcon,
+        icon: azulLogo,
     },
     {
-        icon: googleCloudIcon,
+        icon: cleverCloudLogo,
     },
-    // {
-    //     icon: lightbendIcon,
-    // },
-    // {
-    //     icon: redHatIcon,
-    // },
-    // {
-    //     icon: scalaCenterIcon,
-    // }
+    {
+        icon: cloudBeesLogo,
+    },
+    {
+        icon: googleCloudLogo,
+    },
+    {
+        icon: lightbendLogo,
+    },
+    {
+        icon: redHatLogo,
+    }
 ]
 
 export const officeCard = [

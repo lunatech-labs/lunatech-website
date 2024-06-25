@@ -1,0 +1,22 @@
+@import "/src/styles/Responsive.scss";
+@import "/src/styles/Variables.scss";
+
+.partnership {
+    &__top {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__partners {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 40px;
+     }
+    &__logo {
+        height: 40px;
+    }
+}
+
+
+

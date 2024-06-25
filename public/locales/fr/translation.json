@@ -256,22 +256,7 @@
         "title": "Contactez-nous"
     },
     "contactBlock": {
-        "title": "Échangeons ",
-        "titleImp": "ensemble!"
-    },
-    "officeCard": {
-        "netherlands": {
-            "name": "Pays-Bas"
-        },
-        "france": {
-            "name": "France"
-        }
-    },
-    "contactBtn": {
-        "title": "Contactez-nous"
-    },
-    "contactBlock": {
-        "title": "Échangeons ",
+        "title": "Échangeons",
         "titleImp": "ensemble!"
     },
     "contact": {
@@ -334,6 +319,7 @@
     },
     "partners": {
         "title": "Nos ",
-        "titleImp": "partenaires"
+        "titleImp": "partenaires",
+        "subtitle": "Partenaires"
     }  
 }
