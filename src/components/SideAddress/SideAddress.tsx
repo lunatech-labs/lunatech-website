@@ -20,7 +20,7 @@ const Address = (props: AddressProps) => {
           {street && city && mapUrl && (
             <>
             <p className="kind">Address</p>
-            <a href={mapUrl}>
+            <a href={mapUrl} target="_blank">
               <p className="infos">{street}</p>
               <p className="infos">{city}</p>
             </a>

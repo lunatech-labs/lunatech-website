@@ -16,9 +16,9 @@ const Carousel = () => {
 
     let isDragging = false, startX: number, startLeftScroll: number;
 
-    if (carousel) {
-        const changeButtonColor = () => {
-            if (carousel?.scrollLeft === 0) {
+    const changeButtonColor = () => {
+        if (carousel) {
+            if (carousel.scrollLeft === 0) {
                 arrowBtns.forEach(arrowBtn => {
                     arrowBtn.id === 'left' ? arrowBtn.classList.add('disabled') : arrowBtn.classList.remove('disabled');
                 });
@@ -29,17 +29,19 @@ const Carousel = () => {
             } else {
                 arrowBtns.forEach(arrowBtn => arrowBtn.classList.remove('disabled'));
             }
-        };
-
-        arrowBtns.forEach(arrowBtn => {
-            arrowBtn.addEventListener('click', () => {
+        }
+    };
+    
+    arrowBtns.forEach(arrowBtn => {
+        arrowBtn.addEventListener('click', () => {
+            if (carousel) {
                 carousel.scrollLeft += arrowBtn.id === 'left' ? -firstCardWidth : firstCardWidth;
                 changeButtonColor();
-            });
+            }
         });
-    } else {
-        console.error('Carousel element not found');
-    }
+    });
+    
+
     
     const dragStart = (e: MouseEvent): void => {
         isDragging = true;
@@ -72,11 +74,13 @@ const Carousel = () => {
     
     return (
         <div className="technologies-carousel">
-            <div className='technologies-carousel__desc'>
+            <div>
                 <Category content={<Trans i18nKey="technologies.category2" />} />
                 <Title level={2}>{t('technologies.carouselTitle')}<span>{t('technologies.carouselTitleImp')}</span></Title>
-                <Text size="large" className="mgb32">{t('technologies.carouselText')}</Text>
-                <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
+                <div className='technologies-carousel__desc'>
+                    <Text size="large" className="mgb32">{t('technologies.carouselText')}</Text>
+                    <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
+                </div>
             </div>
             <div className="technologies-carousel__wrapper">
                 <ul className="technologies-carousel__carousel">

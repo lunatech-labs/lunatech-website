@@ -5,8 +5,10 @@
 .spotlight__layout {
     @include grid;
 }
-.spotlight__layout-8 {
-    @include grid-8;
+.spotlight__layout {
+    &.grid-8 {
+        @include grid-8;
+    }
 }
 .spotlight__layout:hover .spotlight:before {opacity: 1;}
 .spotlight__layout:hover .spotlight:after {opacity: .1;}

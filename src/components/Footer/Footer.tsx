@@ -21,8 +21,12 @@ const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
                     <Grid>
                         <div className="footer__part">
                             <div className="footer__brand">
-                                <a href="/" target="_blank"><img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" /></a>
-                                <p className="footer__text"><Trans i18nKey="footer.managed" /></p>
+                                <a href="/" target="_blank">
+                                    <img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" />
+                                </a>
+                                <p className="footer__text">
+                                    <Trans i18nKey="footer.managed" />
+                                </p>
                             </div>
                             <div className="footer__social">
                                 {socialLinks.map((link, index) => (

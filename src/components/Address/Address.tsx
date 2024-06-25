@@ -27,7 +27,7 @@ const Address = () => {
                             </div>
                             <div className="address__part">
                                 <p className="address__subtitle">{t(`${contactInfo.subtitle3}`)}</p>
-                                <a className="address__link" href={contactInfo.mapUrl}>
+                                <a className="address__link" href={contactInfo.mapUrl} target="_blank">
                                     <p>{contactInfo.street}</p>
                                     <p>{contactInfo.city}</p>
                                 </a>

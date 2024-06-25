@@ -5,6 +5,12 @@
     "buttonMoreArticles": "Plus d'articles",
     "buttonMoreCaseStudies": "Plus d'études de cas",
     "buttonHomePage": "Retour à l'accueil",
+    "breadcrumb": {
+        "Home": "Accueil",
+        "About": "A propos",
+        "Services": "Services",
+        "Technologies": "Technologies"
+    },
     "hero": {
         "title1": "Modernisez vos",
         "titleImp": "services d'entreprise numérique",
