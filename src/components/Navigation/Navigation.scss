@@ -6,8 +6,7 @@
 .navigation {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, #113e7d, #081639);
-    background-attachment: fixed;
+    background: $bgDarkBlue;
     position: absolute;
     top: 0;
     left: 0;

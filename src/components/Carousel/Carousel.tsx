@@ -74,23 +74,23 @@ const Carousel = () => {
     
     return (
         <div className="technologies-carousel">
-            <div>
-                <Category content={<Trans i18nKey="technologies.category2" />} />
-                <Title level={2}>{t('technologies.carouselTitle')}<span>{t('technologies.carouselTitleImp')}</span></Title>
-                <div className='technologies-carousel__desc'>
-                    <Text size="large" className="mgb32">{t('technologies.carouselText')}</Text>
-                    <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
+            <div className="technologies-carousel__top">
+                <div className="technologies-carousel__desc">
+                    <Category content={<Trans i18nKey="technologies.category2" />} />
+                    <Title level={2}>{t('technologies.carouselTitle')}<span>{t('technologies.carouselTitleImp')}</span></Title>
+                    <Text size="large">{t('technologies.carouselText')}</Text>
                 </div>
+                <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
             </div>
             <div className="technologies-carousel__wrapper">
                 <ul className="technologies-carousel__carousel">
-                    {technologiesPage[0].secondBlock.map((technology, index) =>
+                    {technologiesPage[0].secondBlock.map((technology, index) => (
                         <li className="technologies-carousel__card" key={index}>
                             <TechnologieCardCarousel title={t(technology.title)} text={t(technology.text)}>
                                 <IconAnimated image={technology.image} size="medium" />
                             </TechnologieCardCarousel>
                         </li>
-                    )}
+                    ))}
                 </ul>
                 <div className='technologies-carousel__buttons'>
                     <button id="left"><img src={arrowChevronLeft} alt="Scroll Left" /></button>

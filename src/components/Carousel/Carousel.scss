@@ -3,27 +3,36 @@
 @import "/src/styles/Responsive.scss";
 
 .technologies-carousel {
-
+    &__top {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 64px;
+        @include phone-portrait {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    &__desc {
+        h2 {
+            width: 80%;
+            @include desktop-up {width: 55%;}
+            @include desktop {width: 65%;}
+            @include tablet {width: 88%;}
+            @include phone-landscape {width: 100%;}
+        }
+        p:nth-child(3) {
+            width: 80%;
+            @include desktop-up {width: 72%;}
+            @include desktop {width: 87%;}
+            @include phone-landscape {width: 100%;}
+        }
+    }
     @include phone-portrait {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 20px;
     }
-    &__desc {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-
-      .button-secondary {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      @include phone-portrait {
-        grid-template-columns: 1fr;
-      }
-    }
-
     &__carousel {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -50,7 +59,7 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 64px;
     }
     &__card {
         background: linear-gradient(to bottom, #0A1E50, #081A47);
@@ -63,39 +72,37 @@
         align-items: center;
         flex-direction: column;
         border-radius: 20px;
-
         @include phone-portrait {
             width: 290px;
         }
-
         &:hover {
             #light {
                 animation: glowing 2s infinite;
-              }
-              #buildingRoof {
+            }
+            #buildingRoof {
                 stroke-dasharray: 100;
                 stroke-dashoffset: 100;
                 animation: dash 1s linear forwards;
-              }
-              #carWaves, #buildingPillar, #bankPillar {
+            }
+            #carWaves, #buildingPillar, #bankPillar {
                 stroke-dasharray: 100;
                 stroke-dashoffset: 100;
                 animation: dash 2s linear forwards;
-              }
-              #buildingPillarExt {
+            }
+            #buildingPillarExt {
                 stroke-dasharray: 100;
                 stroke-dashoffset: 100;
                 animation: dash 0.5s linear forwards;
-              }
-              #buildingFlag {
+            }
+            #buildingFlag {
                 animation: putFlag 1s forwards;
-              }
-              #shield, #bankCoin {
+            }
+            #shield, #bankCoin {
                 animation: rotateShield 0.5s forwards;
-              }
-              #bankRoofTop{
+            }
+            #bankRoofTop{
                 animation: putFlag 1s forwards;
-              }
+            }
         }
     }
     &__buttons {
@@ -110,11 +117,9 @@
             @include flexbox;
             justify-content: center;
         }
-
         .disabled {
             opacity: .5;
         }
-
         @include phone-portrait {
             display: none;
         }
@@ -128,41 +133,36 @@
     80% {transform: translateY(0%);}
     90% {transform: translateY(-10%);}
     100% {transform: translateY(0%);}
-  }
-  
-  
-  @keyframes dash {
+}
+@keyframes dash {
     to {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
-  
-  @keyframes rotateShield {
+}
+@keyframes rotateShield {
     from {
-      transform: rotate3d(0, 1, 0, 0deg);
+        transform: rotate3d(0, 1, 0, 0deg);
     }
     to {
-      transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotate3d(0, 1, 0, 360deg);
     }
-  }
-  
-  @keyframes constructPillar {
+}
+@keyframes constructPillar {
     0% {
-      transform: scaleY(0);
+        transform: scaleY(0);
     }
     100% {
-      transform: scaleY(1);
+        transform: scaleY(1);
     }
-  }
-  
-  @keyframes glowing {
+}
+@keyframes glowing {
     0%, 100% {
-      fill: #780000;
-      opacity: 0.5;
+        fill: #780000;
+        opacity: 0.5;
     }
     50% {
-      fill: #ff0000;
-      opacity: 1;
+        fill: #ff0000;
+        opacity: 1;
     }
-  }
+}
   

@@ -25,14 +25,12 @@ const ServiceSoftwareDefinedVehicle = () => {
                     </Grid>
                 </Container>
                 <Container>
-                    <div className='servicdetailService__contentRow'>
-                        <Grid>
-                            <div className="col-lg-6">
-                                <Text size="medium" className="mgb24"><Trans i18nKey="serviceSoftwareDefinedVehicle.text" /></Text>
-                            </div>
-                            <img className="about__img" src={aboutUsIllustration} alt="Building" />
-                        </Grid>
-                    </div>
+                    <Grid>
+                        <div className="col-lg-6">
+                            <Text size="medium" className="mgb24"><Trans i18nKey="serviceSoftwareDefinedVehicle.text" /></Text>
+                        </div>
+                        <img className="about__img" src={aboutUsIllustration} alt="Building" />
+                    </Grid>
                 </Container>
             </Section>
 

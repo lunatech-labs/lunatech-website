@@ -2,7 +2,6 @@ import { useTranslation, Trans } from 'react-i18next';
 import Title from "@components/Title/Title";
 import Text from '@components/Text/Text';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
-import "./ServiceCard.scss";
 import { arrowRight } from '@/assets';
 
 interface CardProps {

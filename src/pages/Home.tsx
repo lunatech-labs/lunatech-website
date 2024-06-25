@@ -110,9 +110,7 @@ const Home = () => {
                             <div className="services__desc">
                                 <Category content={<Trans i18nKey={serviceBlock[0].breadcrumb} />} />
                                 <Title level={2}><Trans i18nKey={serviceBlock[0].title} /> <span><Trans i18nKey={serviceBlock[0].titleImp} /></span></Title>
-                                <Text size="large">
-                                    <Trans i18nKey="service.text" />
-                                </Text>
+                                <Text size="large"><Trans i18nKey="service.text" /></Text>
                             </div>
                             <ButtonSecondary iconUrl={arrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
                         </div>
@@ -192,7 +190,7 @@ const Home = () => {
             </Section>
             
             <Container><BorderEffect /></Container>
-            
+
             <Section>
                 <Container>
                     <ContactBlock />
