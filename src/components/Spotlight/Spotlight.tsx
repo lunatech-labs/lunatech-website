@@ -74,7 +74,7 @@ export default function Spotlight({children, className = '',}: SpotlightProps) {
 type SpotlightCardProps = {
     children: React.ReactNode;
     className?: string;
-    padding: string;
+    padding?: string;
 }
 
 export function SpotlightCard({children, className = '', padding = ''}: SpotlightCardProps) {
