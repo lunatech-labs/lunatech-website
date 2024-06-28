@@ -9,7 +9,11 @@
         "Home": "Accueil",
         "About": "A propos",
         "Services": "Services",
-        "Technologies": "Technologies"
+        "Technologies": "Technologies",
+        "Software defined vehicle": "SDV",
+        "Custom software development": "Développement de logiciels sur mesure",
+        "System integration": "Intégration des systèmes",
+        "Legacy transformation": "Legacy Transformation"
     },
     "hero": {
         "title1": "Modernisez vos",
@@ -20,10 +24,14 @@
         "button2": "A propos"
     },
     "navigation": {
+        "project": "Les projets de Lunatech",
         "home": "Accueil",
         "about": "A propos",
         "works": "Travaux",
         "careers": "Carrières",
+        "contact": "Contact",
+        "services": "Services",
+        "technologies": "Technologies",
         "dymanicText" : {
             "default": "Projets de Lunatech.",
             "home": "Retour à la page principale.",
@@ -92,7 +100,7 @@
     },
     "service": {
         "breadcrumb": "Services",
-        "title": "Systèmes logiciels personnalisés depuis plus de",
+        "title": "Systèmes logiciels personnalisés depuis plus de ",
         "titleImp": "30 ans",
         "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
         "cards": {
@@ -256,7 +264,7 @@
         "title": "Contactez-nous"
     },
     "contactBlock": {
-        "title": "Échangeons",
+        "title": "Échangeons ",
         "titleImp": "ensemble!"
     },
     "contact": {

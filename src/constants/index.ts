@@ -3,12 +3,6 @@ import {
     linkedin,
     twitter,
     instagram,
-    netherlandsIcon,
-    franceIcon,
-    sdvIcon,
-    customSoftwareIcon,
-    systemIntegrationIcon,
-    legacyTransformationIcon,
     rotterdamOffice,
     parisOffice,
     visionIllustration,
@@ -27,6 +21,12 @@ import carIcon from '@/components/BusinessCard/Icons/carIcon'
 import buildingIcon from '@/components/BusinessCard/Icons/buildingIcon'
 import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
 import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
+import netherlandIcon from '@/components/OfficeCard/Icons/netherlandIcon'
+import parisIcon from '@/components/OfficeCard/Icons/parisIcon'
+import sdvIcon from '@/components/ServiceCard/Icons/sdvIcon'
+import customSoftwareIcon from '@/components/ServiceCard/Icons/customSoftwareIcon'
+import systemIntegrationIcon from '@/components/ServiceCard/Icons/systemIntegrationIcon'
+import legacyTransformationIcon from '@/components/ServiceCard/Icons/legacyTransformationIcon'
 
 export const navLinks = [
     {
@@ -44,14 +44,14 @@ export const navLinks = [
         blank: false
     },
     {
-        title: "Services",
+        title: "navigation.services",
         url: "/services",
         mouseEnterTitle: "services",
         mouseEnterDesc: "navigation.dymanicText.services",
         blank: false
     },
     {
-        title: "Technologies",
+        title: "navigation.technologies",
         url: "/technologies",
         mouseEnterTitle: "technlogies",
         mouseEnterDesc: "navigation.dymanicText.technologies",
@@ -65,7 +65,7 @@ export const navLinks = [
         blank: true
     },
     {
-        title: "Contact",
+        title: "navigation.contact",
         url: "/contact",
         mouseEnterTitle: "contact",
         mouseEnterDesc: "navigation.dymanicText.contact",
@@ -178,7 +178,7 @@ export const officeCard = [
         icon: [
             {
                 title: "Netherlands",
-                imageUrl: netherlandsIcon,
+                imageUrl: netherlandIcon,
             }
         ]
     },
@@ -193,7 +193,7 @@ export const officeCard = [
         icon: [
             {
                 title: "France",
-                imageUrl: franceIcon,
+                imageUrl: parisIcon,
             }
         ]
     }
@@ -232,25 +232,25 @@ export const serviceBlock = [
             {
                 title: "service.cards.softwareDefinedVehicle.title",
                 text: "service.cards.softwareDefinedVehicle.text",
-                imageUrl: sdvIcon,
+                imageIcon: sdvIcon,
                 url: "/services/software-defined-vehicle"
             },
             {
                 title: "service.cards.customSoftware.title",
                 text: "service.cards.customSoftware.text",
-                imageUrl: customSoftwareIcon,
+                imageIcon: customSoftwareIcon,
                 url: "/services/custom-software-development"
             },
             {
                 title: "service.cards.systemIntegration.title",
                 text: "service.cards.systemIntegration.text",
-                imageUrl: systemIntegrationIcon,
+                imageIcon: systemIntegrationIcon,
                 url: "/services/system-integration"
             },
             {
                 title: "service.cards.legacyTransformation.title",
                 text: "service.cards.legacyTransformation.text",
-                imageUrl: legacyTransformationIcon,
+                imageIcon: legacyTransformationIcon,
                 url: "/services/legacy-transformation"
             }
         ]
@@ -545,11 +545,11 @@ export const footerLinks = [
                 url: "/about"
             },
             {
-                title: "Services",
+                title: "navigation.services",
                 url: "/services"
             },
             {
-                title: "Technologies",
+                title: "navigation.technologies",
                 url: "/technologies"
             }
         ]

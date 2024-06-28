@@ -90,7 +90,7 @@ const Home = () => {
                                     {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
                                             <OfficeCard title={office.country} image={office.image} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
-                                                <Icon imageUrl={office.icon[0].imageUrl} size="medium" />
+                                                <Icon image={office.icon[0].imageUrl} size="medium" />
                                             </OfficeCard>
                                         </SpotlightCard>
                                     ))}
@@ -118,7 +118,7 @@ const Home = () => {
                             {serviceBlock[0].cards.map((card, index) => (
                                 <SpotlightCard key={index} className="col-lg-6" padding="pad96">
                                     <ServiceCard to={card.url} title={t(card.title)} text={t(card.text)} >
-                                        <IconRounded imageUrl={card.imageUrl} />
+                                        <IconRounded image={card.imageIcon} />
                                     </ServiceCard>
                                 </SpotlightCard>
                             ))}

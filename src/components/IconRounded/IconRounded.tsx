@@ -1,7 +1,7 @@
 import "./IconRounded.scss";
 
 interface IconRoundedProps {
-    imageUrl: string;
+    image: string | (() => JSX.Element);
 }
 
 const IconRounded = (props: IconRoundedProps) => {
@@ -10,7 +10,13 @@ const IconRounded = (props: IconRoundedProps) => {
             <div className="icon-rounded__ext">
                 <div className="icon-rounded__mdl">
                     <div className="icon-rounded__sml">
-                        <img className="icon-rounded__img" src={props.imageUrl} alt="Scala" />
+                        {
+                            typeof props.image === 'string' ? (
+                                <img className="icon-rounded__img" src={props.image} alt="icon" />
+                            ) : (
+                                props.image()
+                            )
+                        }
                     </div>
                 </div>
             </div>

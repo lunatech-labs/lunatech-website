@@ -5,6 +5,7 @@ import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Text from '@components/Text/Text';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import { arrowRight } from '@/assets';
+import Title from '../Title/Title';
 
 interface BlogArticle {
     title: string;
@@ -49,16 +50,16 @@ const Articles = () => {
     <div>
         <ul>
             {articles.map((article, index) => (
-                <Spotlight className="spotlight__layout">
+                <Spotlight key={article.slug} className="spotlight__layout">
                     <SpotlightCard padding="pad80">
-                        <li key={article.slug} className="article">
+                        <li className="article">
                             <div className="blog__content">
                                 <div className={`blog__left ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
-                                    <div className="dflex">
+                                    <div className="dflex blog-header">
                                         <p className="blog__category">{article.tags.length > 0 ? article.tags[0].charAt(0).toUpperCase() + article.tags[0].slice(1).toLowerCase() : ''}</p>
                                         <p className="blog__date">{article.publication_date}</p>
                                     </div>
-                                    <p className="blog__title">{article.title}</p>
+                                    <Title level={3} className="mgb16">{article.title}</Title>
                                     <Text size="medium" className="mgb24">{truncateText(article.excerpt, 25)}</Text>
                                     <ButtonSecondary iconUrl={arrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>

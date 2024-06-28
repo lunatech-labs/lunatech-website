@@ -9,15 +9,16 @@
     letter-spacing: 4px;
     margin-bottom: 8px;
     color: rgba(255, 255, 255, 0.5);
+    &__part {
+        display: flex;
+    }
     &__slash--double {
         color: $pink;
         opacity: 1;
     }
     &__link {
         &__current {
-            span {
                 color: rgba(255, 255, 255, 1);
-            }
         }
         &:hover {
             color: $pink;
