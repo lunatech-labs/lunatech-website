@@ -1,13 +1,14 @@
 import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
 import Input from '@components/Input/Input';
-import Address from '@/components/SideAddress/SideAddress';
+import Address from '@components/SideAddress/SideAddress';
 import Container from '@components/Container/Container';
 import Grid from '@components/Grid/Grid';
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Section from '@components/Section/Section';
-import ToastList from '@/components/ToastList/ToastList';
+import HeaderPage from '@components/HeaderPage/HeaderPage';
+import ToastList from '@components/ToastList/ToastList';
 import { Trans, useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
@@ -125,15 +126,14 @@ const Contact = () => {
         <>
             <Section className="pdt256">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6 col-md-12">
-                            <Breadcrumbs />
-                            <Title level={1}><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</Title>
-                            <Text size="large"><Trans i18nKey="contact.text" /></Text>
-                        </div>
-                    </Grid>
+                    <HeaderPage>
+                        <Breadcrumbs />
+                        <Title level={1}><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</Title>
+                        <Text size="large"><Trans i18nKey="contact.text" /></Text>
+                    </HeaderPage>
                 </Container>
             </Section>
+           
 
             <Section>
                 <Container>

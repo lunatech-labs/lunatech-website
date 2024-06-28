@@ -1,9 +1,9 @@
 import { Trans } from "react-i18next";
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Container from '@components/Container/Container';
-import Title from '@/components/Title/Title';
+import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
-import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
+import Breadcrumbs from "@components/Breacrumb/Breadcrumb";
 import Category from '@components/Category/Category';
 import Grid from '@components/Grid/Grid';
 import Section from '@components/Section/Section';
@@ -12,10 +12,10 @@ import Address from '@components/Address/Address';
 import Icon from '@components/Icon/Icon';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Vision from '@components/Vision/Vision';
-
+import HeaderPage from "@components/HeaderPage/HeaderPage";
 import { officeCard, aboutPage } from '@/constants';
 import ContactBlock from "@/components/ContactBlock/ContactBlock";
-import { aboutUsIllustration, aboutUsIllustration2, moon } from "@/assets";
+import { aboutUsIllustration, aboutUsIllustration2 } from "@/assets";
 import Timeline from "@/components/Timeline/Timeline";
 
 
@@ -24,13 +24,10 @@ const About = () => {
         <>
             <Section className="pdt256">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-8 col-md-12">
-                            <Breadcrumbs />
-                            <Title level={1}><Trans i18nKey={aboutPage[0].title} /> <span><Trans i18nKey={aboutPage[0].titleImp} /></span></Title>
-                        </div>
-                        <img className="hero__moon" src={moon} alt="Moon" />
-                    </Grid>
+                    <HeaderPage>
+                        <Breadcrumbs />
+                        <Title level={1}><Trans i18nKey={aboutPage[0].title} /> <span><Trans i18nKey={aboutPage[0].titleImp} /></span></Title>
+                    </HeaderPage>
                 </Container>
             </Section>
 
@@ -96,6 +93,8 @@ const About = () => {
                     <Timeline />
                 </Container>
             </Section>
+
+            <Container><BorderEffect /></Container>
 
             <Section>
                 <Container>

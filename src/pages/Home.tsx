@@ -20,9 +20,10 @@ import Section from '@components/Section/Section';
 import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
+import ServicesPart from '@components/ServicesPart/ServicesPart';
+import ServiceCard from '@components/ServiceCard/ServiceCard';
 
 import BlogImg from '/blog.png';
-import ServiceCard from '@components/ServiceCard/ServiceCard';
 
 import { Link } from 'react-router-dom';
 // import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
@@ -105,15 +106,7 @@ const Home = () => {
 
             <Section className="bg-bgMediumBlue">
                 <Container>
-                    <div className="services">
-                        <div className="services__top">
-                            <div className="services__desc">
-                                <Category content={<Trans i18nKey={serviceBlock[0].breadcrumb} />} />
-                                <Title level={2}><Trans i18nKey={serviceBlock[0].title} /> <span><Trans i18nKey={serviceBlock[0].titleImp} /></span></Title>
-                                <Text size="large"><Trans i18nKey="service.text" /></Text>
-                            </div>
-                            <ButtonSecondary iconUrl={arrowRight} size='large' to='/services'><Trans i18nKey="buttonDetails" /></ButtonSecondary>
-                        </div>
+                    <ServicesPart>
                         <Spotlight className="spotlight__layout">
                             {serviceBlock[0].cards.map((card, index) => (
                                 <SpotlightCard key={index} className="col-lg-6" padding="pad96">
@@ -123,7 +116,7 @@ const Home = () => {
                                 </SpotlightCard>
                             ))}
                         </Spotlight>
-                    </div>
+                    </ServicesPart>
                 </Container>
             </Section>
 

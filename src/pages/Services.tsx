@@ -14,10 +14,11 @@ import Category from '@components/Category/Category';
 import Address from '@components/Address/Address';
 import Section from '@components/Section/Section';
 import Grid from '@components/Grid/Grid';
+import HeaderPage from '@components/HeaderPage/HeaderPage';
 
 import { serviceBlock, servicesPage } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
-import { moon, serviceIllustration } from '@/assets';
+import { serviceIllustration } from '@/assets';
 
 const Services = () => {
     const { t } = useTranslation();
@@ -26,13 +27,10 @@ const Services = () => {
         <>
             <Section className="pdt256">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-8 col-md-12">
-                            <Breadcrumbs />
-                            <Title level={1}><Trans i18nKey={servicesPage[0].title} /><span><Trans i18nKey={servicesPage[0].titleImp} /></span></Title>
-                        </div>
-                        <img className="hero__moon" src={moon} alt="Moon" />
-                    </Grid>
+                    <HeaderPage>
+                        <Breadcrumbs />
+                        <Title level={1}><Trans i18nKey={servicesPage[0].title} /><span><Trans i18nKey={servicesPage[0].titleImp} /></span></Title>
+                    </HeaderPage>
                 </Container>
             </Section>
 

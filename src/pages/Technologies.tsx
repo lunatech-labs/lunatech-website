@@ -9,9 +9,10 @@ import Title from '@components/Title/Title';
 import BusinessCard from '@components/BusinessCard/BusinessCard';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Address from '@components/Address/Address';
+import HeaderPage from '@components/HeaderPage/HeaderPage';
 
 import { technologiesPage } from '@/constants';
-import { moon, technologyIllustration } from '@/assets';
+import { technologyIllustration } from '@/assets';
 // import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import TechnologieCard from '@/components/TechnologieCard/TechnologieCard';
@@ -24,13 +25,10 @@ const Vision = () => {
         <>
             <Section className="pdt256">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6 col-md-12">
-                            <Breadcrumbs />
-                            <Title level={1}><Trans i18nKey="technologies.title" /> <span><Trans i18nKey="technologies.titleColor" /></span> <Trans i18nKey="technologies.title2" /></Title>
-                        </div>
-                        <img className="hero__moon" src={moon} alt="Moon" />
-                    </Grid>
+                    <HeaderPage>
+                        <Breadcrumbs />
+                        <Title level={1}><Trans i18nKey="technologies.title" /> <span><Trans i18nKey="technologies.titleColor" /></span> <Trans i18nKey="technologies.title2" /></Title>
+                    </HeaderPage>
                 </Container>
             </Section>
 

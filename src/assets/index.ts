@@ -17,6 +17,7 @@ import mountains from "./background/mountains.svg";
 import telescope from "./background/telescope.svg";
 import clouds from "./background/clouds.svg";
 import moon from "./background/moon.svg";
+import moonFullEffect from "./background/moon-full-effect.png";
 import arrowChevronLeft from "./buttons/arrow-chevron-left.svg";
 import arrowChevronRight from "./buttons/arrow-chevron-right.svg";
 import arrowRight from "./buttons/arrow-right.svg";
@@ -75,6 +76,7 @@ export {
     telescope,
     clouds,
     moon,
+    moonFullEffect,
     arrowChevronLeft,
     arrowChevronRight,
     arrowRight,
