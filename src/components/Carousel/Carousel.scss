@@ -41,6 +41,11 @@
         display: grid;
         grid-auto-flow: column;
         gap: 24px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        ::-webkit-scrollbar {
+            display: none;
+        }
         &.active {
             cursor: grab;
             user-select: none;
@@ -116,8 +121,13 @@
             border-radius: 5rem;
             @include flexbox;
             justify-content: center;
+
+            &:hover:not(.disabled) {
+                background: $pink;
+            }
         }
         .disabled {
+            cursor: not-allowed;
             opacity: .5;
         }
         @include phone-portrait {

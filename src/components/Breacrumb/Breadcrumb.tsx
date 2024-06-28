@@ -23,7 +23,7 @@ const Breadcrumbs = () => {
                         breadcrumbText = '';
 
                     return (
-                        <div key={match.pathname}>
+                        <div className="breadcrumb__part" key={match.pathname}>
                             <span className={index === 0 ? "breadcrumb__slash--double" : "breadcrumb__slash"}>
                                 {index === 0 ? ' // ' : ' / '}
                             </span>

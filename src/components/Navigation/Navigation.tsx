@@ -15,7 +15,7 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
     const { t } = useTranslation();
     const [pathTitle, setPathTitle] = useState('Case studies');
-    const [pathDesc, setPathDesc] = useState("Lunatech project")
+    const [pathDesc, setPathDesc] = useState('navigation.project')
 
     const handleMouseEnter = (title: string,desc: string) => () => {
         setPathTitle(title);

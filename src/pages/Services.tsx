@@ -70,7 +70,7 @@ const Services = () => {
                         {serviceBlock[0].cards.map((card, index) => (
                             <SpotlightCard key={index} className="col-lg-6" padding="pad96">
                                 <ServiceCard to={card.url} title={t(card.title)} text={t(card.text)} >
-                                    <IconRounded imageUrl={card.imageUrl} />
+                                    <IconRounded image={card.imageIcon} />
                                 </ServiceCard>
                             </SpotlightCard>
                         ))}

@@ -9,7 +9,11 @@
         "Home": "Home",
         "About": "About us",
         "Services": "Services",
-        "Technologies": "Technologies"
+        "Technologies": "Technologies",
+        "Software defined vehicle": "Software Defined Vehicle",
+        "Custom software development": "Custom Software Development",
+        "System integration": "System Integration",
+        "Legacy transformation": "Legacy Transformation"
     },
     "hero": {
         "title1": "Modernise your",
@@ -20,10 +24,14 @@
         "button2": "About us"
     },
     "navigation": {
+        "project": "Lunatech projects",
         "home": "Home",
         "about": "About us",
         "works": "Works",
         "careers": "Careers",
+        "contact": "Contact",
+        "services": "Services",
+        "technologies": "Technologies",
         "dymanicText" : {
             "default": "Selected projects by Lunatech.",
             "home": "Go back to the homepage.",

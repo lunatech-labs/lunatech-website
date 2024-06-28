@@ -15,7 +15,7 @@ import { moon, technologyIllustration } from '@/assets';
 // import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import TechnologieCard from '@/components/TechnologieCard/TechnologieCard';
-import IconAnimated from '@/components/IconAnimated/IconAnimated';
+import Icon from '@/components/Icon/Icon';
 
 const Vision = () => {
     const { t } = useTranslation();
@@ -60,7 +60,7 @@ const Vision = () => {
                     <Spotlight className="spotlight__layout">
                         {technologiesPage[0].secondBlock.map((technology, index) => 
                             <SpotlightCard key={index} className="col-lg-4">
-                                <TechnologieCard key={index} title={t(technology.title)} text={t(technology.text)}><IconAnimated image={technology.image} size="medium" /></TechnologieCard>
+                                <TechnologieCard key={index} title={t(technology.title)} text={t(technology.text)}><Icon image={technology.image} size="medium" /></TechnologieCard>
                             </SpotlightCard>
                          )}
                     </Spotlight>
