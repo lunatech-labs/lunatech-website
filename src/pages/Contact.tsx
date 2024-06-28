@@ -26,12 +26,8 @@ const Contact = () => {
     const [toasts, setToasts] = useState<ToastData[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [form, setForm] = useState({
-        fullName: "",
-        email: "",
-        phone: "",
-        company: "",
-        services: "",
-        projectDescription: ""
+        object: "",
+        message: "",
     })
 
     const showToast = (message: string, type: string) => {
@@ -63,14 +59,11 @@ const Contact = () => {
     const checkValidity = () => {
         const missingFields = [];
         
-        if (form.fullName === "") {
-            missingFields.push(t('contact.label.fullName'));
+        if (form.object === "") {
+            missingFields.push(t('contact.label.object'));
         }
-        if (form.email === "") {
-            missingFields.push(t('contact.label.email'));
-        }
-        if (form.services === "") {
-            missingFields.push(t('contact.label.services'));
+        if (form.message === "") {
+            missingFields.push(t('contact.label.message'));
         }
     
         if (missingFields.length > 0) {
@@ -91,12 +84,8 @@ const Contact = () => {
                 'service_b48ltqk',
                 'template_7odrvlr', 
                 {
-                    from_name: form.fullName,
-                    from_email: form.email,
-                    phone_number: form.phone,
-                    company: form.company,
-                    services: form.services,
-                    project_description: form.projectDescription,
+                    object: form.object,
+                    message: form.message,
                     to_name: 'Lucas',
                     to_email: 'lleblanc.contact@gmail.com',
                 },
@@ -105,12 +94,8 @@ const Contact = () => {
                     console.log('Email sent successfully')
                     showToast('Email sent successfully', 'success')
                 setForm({
-                    fullName: "",
-                    email: "",
-                    phone: "",
-                    company: "",
-                    services: "",
-                    projectDescription: ""
+                    object: "",
+                    message: "",
                 })
                 }, (error) => {
                     console.log("Email failed", error)
@@ -141,7 +126,7 @@ const Contact = () => {
                         <div className='contact__form'>
                             <form ref={formRef} onSubmit={handleSubmit}>
                                 {contactPage.map((input, index) => (
-                                    <Input key={index} number={`0${index + 1}`} type={input.type} handleChange={handleChange} label={t(input.label)} placeHolder={t(input.placeHolder)} name={input.name} options={input.options} formValue={form[input.name as keyof typeof form]} required={input.required}/>
+                                    <Input key={index} number={`0${index + 1}`} type={input.type} handleChange={handleChange} label={t(input.label)} placeHolder={t(input.placeHolder)} name={input.name} formValue={form[input.name as keyof typeof form]} required={input.required}/>
                                 ))}
                                 <ButtonPrimary animate={isLoading ? 'loading-icon' : ''} iconUrl={arrowSend} type='submit' size="large" to="/">
                                     <span>{isLoading ? 'Sending...' : 'Send message'}</span>

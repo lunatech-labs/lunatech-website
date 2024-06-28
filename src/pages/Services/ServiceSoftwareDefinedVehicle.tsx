@@ -19,7 +19,7 @@ const ServiceSoftwareDefinedVehicle = () => {
                 <Container>
                     <HeaderPage>
                         <Breadcrumbs />
-                        <Title level={1}><Trans i18nKey="serviceSoftwareDefinedVehicle.title" /></Title>
+                        <Title level={1}><span><Trans i18nKey="serviceSoftwareDefinedVehicle.titleImp" /></span><Trans i18nKey="serviceSoftwareDefinedVehicle.title" /></Title>
                     </HeaderPage>
                 </Container>
             </Section>
