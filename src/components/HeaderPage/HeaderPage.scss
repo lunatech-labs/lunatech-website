@@ -1,5 +1,6 @@
 @import "/src/styles/Variables.scss";
 @import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
 
 .header-page {
     position: relative;
@@ -7,9 +8,15 @@
     padding: 96px;
     border-radius: 24px;
     @include flexbox;
+    @include phone-portrait {
+        padding: 220px 24px 24px 24px;
+    }
     justify-content: space-between;
     &__content {
         width: 70%;
+        @include phone-portrait {
+            width: 100%;
+        }
     }
     &__img {
         width: 440px;

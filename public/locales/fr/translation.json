@@ -13,7 +13,8 @@
         "Software defined vehicle": "SDV",
         "Custom software development": "Développement de logiciels sur mesure",
         "System integration": "Intégration des systèmes",
-        "Legacy transformation": "Legacy Transformation"
+        "Legacy transformation": "Legacy Transformation",
+        "Contact": "Contact"
     },
     "hero": {
         "title1": "Modernisez vos",
@@ -275,25 +276,12 @@
         "missing": "Veuillez remplir tous les champs obligatoires. Tel que:",
         "label":
         {
-            "fullName": "Quel est votre nom complet ?",
-            "email": "Quel est votre adresse e-mail ?",
-            "phone": "Quel est votre numéro de téléphone ?",
-            "company": "Quel est le nom de votre entreprise/organisation ?",
-            "services": "Quels services vous intéressent ?",
-            "project": "Avez-vous une question ou une remarque à ajouter ?"
+            "object": "Objet de votre message",
+            "message": "Votre message"
         },
         "placeHolder": {
-            "fullName": "Écrivez votre nom complet",
-            "company": "Écrivez le nom de votre entreprise/organisation",
-            "services": "Sélectionnez le service qui vous intéresse",
-            "project": "Avez-vous une question ou une remarque à ajouter ?"
-        },
-        "options": {
-            "softwareDefinedVehicle": "Véhicules définis par logiciel",
-            "customSoftwareDevelopment": "Développement de logiciels sur mesure",
-            "systemIntegration": "Intégration des systèmes",
-            "legacyTransformation": "Transformation de l'héritage",
-            "other": "Autres"
+            "object": "Résumé de votre demande",
+            "message": "Écrivez votre message ici. Soyez aussi précis que possible."
         }
     },
     "address": {
@@ -314,16 +302,24 @@
         "contact": "Contact"
     },
     "serviceSoftwareDefinedVehicle": {
-        "title": "SDV"
+        "title": "",
+        "titleImp": "SDV",
+        "text": "Un véhicule défini par logiciel est un véhicule qui gère ses opérations, ajoute des fonctionnalités et permet de nouvelles fonctionnalités principalement ou entièrement par le biais de logiciels. Les véhicules définis par logiciel sont la prochaine évolution de l'industrie automobile. Lunatech est impliqué dans les véhicules définis par logiciel depuis 2016 alors que le terme n'existait pas. Lunatech, en collaboration avec de grands constructeurs automobiles, a participé au traitement des données des voitures à grande échelle et à la fourniture de services pour ces véhicules. Lunatech est spécialisé dans les middleware cloud et le traitement des données pour les véhicules définis par logiciel."
     },
     "serviceCustomSoftwareDevelopment": {
-        "title": "Développement de logiciels sur mesure"
+        "title": "Développement de logiciels ",
+        "titleImp": "sur mesure",
+        "text": "Lunatech est spécialisé dans le développement de logiciels sur mesure, offrant des solutions adaptées pour répondre aux besoins spécifiques des entreprises et des particuliers. Leurs services englobent l'analyse des besoins, la conception, le développement, les tests, la conception UX, l'intégration, le déploiement, la formation, la maintenance, la scalabilité, la sécurité, et la gestion des considérations de coût et de temps. Cette approche permet de relever des défis et des opportunités uniques, garantissant un logiciel efficace, sécurisé et évolutif, tout en nécessitant une planification minutieuse et des équipes qualifiées pour une mise en œuvre réussie."
     },
     "serviceSystemIntegration": {
-        "title": "Intégration des systèmes"
+        "title": "Intégration des ",
+        "titleImp": "systèmes",
+        "text": "Lunatech excelle dans l'intégration des systèmes, améliorant l'informatique organisationnelle en connectant des systèmes disparates pour améliorer l'efficacité et l'utilisation de la technologie. En utilisant des API Web, des middleware et des solutions cloud, ils se concentrent sur la sécurité, la conformité et l'intégration des technologies héritées et nouvelles. Cette approche rend les environnements informatiques plus durables, agiles et rentables, favorisant une meilleure prise de décision et des expériences client."
     },
     "serviceLegacyTransformation": {
-        "title": "Legacy Transformation"
+        "title": "Legacy ",
+        "titleImp": "Transformation",
+        "text": "Le service de transformation de l'héritage de Lunatech modernise les systèmes technologiques obsolètes pour les aligner sur les besoins commerciaux et les normes technologiques actuelles. Ce service complet comprend l'évaluation et l'ingénierie inverse, l'alignement commercial, la mise à niveau de la pile technologique, la migration des données, l'intégration des systèmes, la modernisation de l'interface utilisateur, les tests, les améliorations de la sécurité, la formation et la gestion du changement. Visant à améliorer l'efficacité, la compatibilité et la sécurité. Lunatech adopte une approche par phases ou incrémentielle pour minimiser les perturbations, garantissant une transition en douceur vers des systèmes modernes et agiles qui soutiennent efficacement les objectifs organisationnels. De plus, Lunatech assure le transfert de connaissances et la formation des équipes des clients, leur permettant de gérer l'application modernisée de manière indépendante. Cette approche globale aide les entreprises à maximiser leurs investissements logiciels sans avoir besoin d'une refonte coûteuse sur plusieurs années."
     },
     "partners": {
         "title": "Nos ",

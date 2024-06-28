@@ -7,6 +7,10 @@ import Title from '@components/Title/Title';
 import Address from '@components/Address/Address';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ContactBlock from '@components/ContactBlock/ContactBlock';
+import Grid from '@components/Grid/Grid';
+import Text from '@components/Text/Text';
+
+import { aboutUsIllustration } from '@/assets';
 
 const ServiceCustomSoftwareDevelopment = () => {
     return (
@@ -15,14 +19,19 @@ const ServiceCustomSoftwareDevelopment = () => {
                 <Container>
                     <HeaderPage>
                         <Breadcrumbs />
-                        <Title level={1}><Trans i18nKey="serviceCustomSoftwareDevelopment.title" /></Title>
+                        <Title level={1}><Trans i18nKey="serviceCustomSoftwareDevelopment.title" /><span><Trans i18nKey="serviceCustomSoftwareDevelopment.titleImp" /></span></Title>
                     </HeaderPage>
                 </Container>
             </Section>
 
             <Section className="bg-bgMediumBlue">
                 <Container>
-                    <div>Content Here</div>
+                    <Grid>
+                        <div className="col-lg-6">
+                            <Text size="medium" className="mgb24"><Trans i18nKey="serviceCustomSoftwareDevelopment.text" /></Text>
+                        </div>
+                        <img className="about__img" src={aboutUsIllustration} alt="Building" />
+                    </Grid>
                 </Container>
             </Section>
 

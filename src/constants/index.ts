@@ -486,49 +486,18 @@ export const technologiesPage = [
 
 export const contactPage = [
     {
-        label: "contact.label.fullName",
-        placeHolder: "contact.placeHolder.fullName",
-        name: "fullName",
+        label: "contact.label.object",
+        placeHolder: "contact.placeHolder.object",
+        name: "object",
         type: "text",
         required: true
     },
     {
-        label: "contact.label.email",
-        placeHolder: "contact.placeHolder.email",
-        name: "email",
-        type: "email",
+        label: "contact.label.message",
+        placeHolder: "contact.placeHolder.message",
+        name: "message",
+        type: "textarea",
         required: true
-    },
-    {
-        label: "contact.label.phone",
-        placeHolder: "contact.placeHolder.phone",
-        name: "phone",
-        type: "tel"
-    },
-    {
-        label: "contact.label.company",
-        placeHolder: "contact.placeHolder.company",
-        name: "company",
-        type: "text"
-    },
-    {
-        label: "contact.label.services",
-        placeHolder: "contact.placeHolder.services",
-        name: "services",
-        type: "options",
-        options: [
-            "contact.options.softwareDefinedVehicle",
-            "contact.options.customSoftwareDevelopment",
-            "contact.options.systemIntegration",
-            "contact.options.legacyTransformation",
-            "contact.options.other"
-        ]
-    },
-    {
-        label: "contact.label.project",
-        placeHolder: "contact.placeHolder.project",
-        name: "projectDescription",
-        type: "textarea"
     }
 ]
 
