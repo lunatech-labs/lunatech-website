@@ -7,8 +7,8 @@ import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Title from '@components/Title/Title';
 import Address from '@components/Address/Address';
 import Text from '@components/Text/Text';
+import HeaderPage from '@/components/HeaderPage/HeaderPage';
 import { aboutUsIllustration } from '@/assets';
-import "./Services.scss";
 
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 
@@ -17,13 +17,14 @@ const ServiceSoftwareDefinedVehicle = () => {
         <>
             <Section className="pdt256">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6">
-                            <Breadcrumbs />
-                            <Title level={1}><Trans i18nKey="serviceSoftwareDefinedVehicle.title" /></Title>
-                        </div>
-                    </Grid>
+                    <HeaderPage>
+                        <Breadcrumbs />
+                        <Title level={1}><Trans i18nKey="serviceSoftwareDefinedVehicle.title" /></Title>
+                    </HeaderPage>
                 </Container>
+            </Section>
+
+            <Section className="bg-bgMediumBlue">
                 <Container>
                     <Grid>
                         <div className="col-lg-6">

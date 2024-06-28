@@ -1,0 +1,20 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+
+.header-page {
+    position: relative;
+    background: $bgMediumBlue;
+    padding: 96px;
+    border-radius: 24px;
+    @include flexbox;
+    justify-content: space-between;
+    &__content {
+        width: 70%;
+    }
+    &__img {
+        width: 440px;
+        position: absolute;
+        right: 100px;
+        top: -200px;
+    }
+}
