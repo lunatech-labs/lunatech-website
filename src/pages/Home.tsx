@@ -32,7 +32,7 @@ import Articles from '@components/Articles/Articles';
 import { homePage, officeCard, serviceBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
-import Carousel from '@/components/Carousel/Carousel';
+import TechnologieCarousel from '@/components/TechnologieCarousel/TechnologieCarousel';
 import Partnerships from '@/components/Partnerships/Partnerships';
 
 const Home = () => {
@@ -90,7 +90,7 @@ const Home = () => {
                                 <Spotlight className="spotlight__layout grid-8">
                                     {officeCard.map((office, index) => (
                                         <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
-                                            <OfficeCard title={office.country} image={office.image} developers={office.developers} otherJobs={office.otherJobs} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
+                                            <OfficeCard title={office.country} image={office.image} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
                                                 <Icon image={office.icon[0].imageUrl} size="medium" />
                                             </OfficeCard>
                                         </SpotlightCard>
@@ -124,8 +124,7 @@ const Home = () => {
 
             <Section>
                 <Container>
-                    {/* <TechnologiesCarousel></TechnologiesCarousel> */}
-                    <Carousel></Carousel>
+                    <TechnologieCarousel />
                 </Container>
             </Section>
 

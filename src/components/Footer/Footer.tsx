@@ -24,9 +24,6 @@ const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
                                 <a href="/" target="_blank">
                                     <img src={lunatechLogo} className="footer__logo" alt="Lunatech logo" />
                                 </a>
-                                <p className="footer__text">
-                                    <Trans i18nKey="footer.managed" />
-                                </p>
                             </div>
                             <div className="footer__social">
                                 {socialLinks.map((link, index) => (

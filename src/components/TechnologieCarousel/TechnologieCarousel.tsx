@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { technologiesPage } from "@/constants";
 import TechnologieCardCarousel from "../TechnologieCardCarousel/TechnologieCardCarousel";
-import "./Carousel.scss";
+import "./TechnologieCarousel.scss";
 import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
@@ -10,7 +10,7 @@ import { Trans, useTranslation } from "react-i18next";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Icon from "@components/Icon/Icon";
 
-const Carousel = () => {
+const TechnologieCarousel = () => {
     const { t } = useTranslation();
     const [isStart, setIsStart] = useState(true);
 
@@ -88,4 +88,4 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default TechnologieCarousel;

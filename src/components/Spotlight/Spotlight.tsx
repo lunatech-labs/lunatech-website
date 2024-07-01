@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import MousePosition from './mouse-position';
 import "./Spotlight.scss";
+import "./Animations.scss";
 
 type SpotlightProps = {
     children: React.ReactNode;

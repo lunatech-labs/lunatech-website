@@ -1,4 +1,6 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import '../../i18n';
 import "./Language.scss";
 
@@ -8,9 +10,25 @@ interface LanguageProps {
 
 const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
     const { i18n } = useTranslation();
+    const navigate = useNavigate();
 
     const isActiveLanguage = (lng: string) => {
         return i18n.language.startsWith(lng);
+    };
+
+    const handleLanguageChange = (lng: string) => {
+        changeLanguage(lng);
+
+        const currentPath = window.location.pathname;
+        let newUrl = '';
+
+        if (lng === 'fr') {
+            newUrl = currentPath.replace('.com', '.fr');
+        } else {
+            newUrl = currentPath.replace('.fr', '.com');
+        }
+
+        navigate(newUrl);
     };
 
     return (
@@ -18,7 +36,7 @@ const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
             <button
                 type="button"
                 className={`language__text${isActiveLanguage('en') ? '__active' : ''}`}
-                onClick={() => changeLanguage('en')}
+                onClick={() => handleLanguageChange('en')}
             >
                 en
             </button>
@@ -26,12 +44,12 @@ const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
             <button
                 type="button"
                 className={`language__text${isActiveLanguage('fr') ? '__active' : ''}`}
-                onClick={() => changeLanguage('fr')}
+                onClick={() => handleLanguageChange('fr')}
             >
                 fr
             </button>
         </div>
-    )
+    );
 }
 
 export default Language;

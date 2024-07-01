@@ -33,42 +33,42 @@ export const navLinks = [
         title: "navigation.home",
         url: "/",
         mouseEnterTitle: "home",
-        mouseEnterDesc: "navigation.dymanicText.home",
+        mouseEnterDesc: "navigation.dynamicText.home",
         blank: false,
     },
     {
         title: "navigation.about",
         url: "/about",
         mouseEnterTitle: "about",
-        mouseEnterDesc: "navigation.dymanicText.aboutUs",
+        mouseEnterDesc: "navigation.dynamicText.aboutUs",
         blank: false
     },
     {
         title: "navigation.services",
         url: "/services",
         mouseEnterTitle: "services",
-        mouseEnterDesc: "navigation.dymanicText.services",
+        mouseEnterDesc: "navigation.dynamicText.services",
         blank: false
     },
     {
         title: "navigation.technologies",
         url: "/technologies",
         mouseEnterTitle: "technlogies",
-        mouseEnterDesc: "navigation.dymanicText.technologies",
+        mouseEnterDesc: "navigation.dynamicText.technologies",
         blank: false
     },
     {
         title: "navigation.careers",
         url: "https://recruitment.lunatech.com/",
         mouseEnterTitle: "careers",
-        mouseEnterDesc: "navigation.dymanicText.careers",
+        mouseEnterDesc: "navigation.dynamicText.careers",
         blank: true
     },
     {
         title: "navigation.contact",
         url: "/contact",
         mouseEnterTitle: "contact",
-        mouseEnterDesc: "navigation.dymanicText.contact",
+        mouseEnterDesc: "navigation.dynamicText.contact",
         blank: false
     }
 ]
@@ -78,7 +78,7 @@ export const socialLinks = [
         title: "Github",
         url: "https://github.com/lunatech-labs",
         mouseEnterTitle: "Github",
-        mouseEnterDesc: "navigation.dymanicText.github",
+        mouseEnterDesc: "navigation.dynamicText.github",
         blank: true,
         alt: "Github logo",
         icon: github,
@@ -87,7 +87,7 @@ export const socialLinks = [
         title: "Instagram",
         url: "https://www.instagram.com/lunatech_nl/",
         mouseEnterTitle: "Instagram",
-        mouseEnterDesc: "navigation.dymanicText.instagram",
+        mouseEnterDesc: "navigation.dynamicText.instagram",
         blank: true,
         alt: "Instagram logo",
         icon: instagram,
@@ -96,7 +96,7 @@ export const socialLinks = [
         title: "Linkedin",
         url: "https://www.linkedin.com/company/lunatech-research",
         mouseEnterTitle: "Linkedin",
-        mouseEnterDesc: "navigation.dymanicText.linkedin",
+        mouseEnterDesc: "navigation.dynamicText.linkedin",
         blank: true,
         alt: "Linkedin logo",
         icon: linkedin,
@@ -105,7 +105,7 @@ export const socialLinks = [
         title: "X / Twitter",
         url: "https://twitter.com/lunatechlabs",
         mouseEnterTitle: "X / Twitter",
-        mouseEnterDesc: "navigation.dymanicText.twitter",
+        mouseEnterDesc: "navigation.dynamicText.twitter",
         blank: true,
         alt: "Twitter logo",
         icon: twitter,
@@ -129,11 +129,7 @@ export const valuesBanner = [
     },
     {
         title: "banner.second",
-        number: 60
-    },
-    {
-        title: "banner.third",
-        number: 10
+        number: 100
     },
     {
         title: "banner.fourth",
@@ -169,8 +165,6 @@ export const officeCard = [
     {
         country: "officeCard.netherlands.name",
         image: rotterdamOffice,
-        developers: 35,
-        otherJobs: 5,
         email: "infos@lunatech.nl",
         careersEmail: 'employment@lunatech.nl',
         phone: "+31 10 750 2600",
@@ -185,8 +179,6 @@ export const officeCard = [
     {
         country: "officeCard.france.name",
         image: parisOffice,
-        developers: 24,
-        otherJobs: 4,
         email: "info@lunatech.fr",
         phone: "+33 1 85 08 57 00",
         address: "3 rue de la Galmy - 77700 Chessy",
