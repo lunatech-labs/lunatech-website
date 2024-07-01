@@ -45,7 +45,7 @@ const Services = () => {
                     <Grid className="mgt64 ai-c">
                         <div className="col-lg-6 col-md-12">
                             {servicesPage[0].firstBlock.advices.map((advice, index) => (
-                                <Collapse key={index} title={t(advice.title)} text={<p>{t(advice.text)}</p>} />
+                                <Collapse key={index} title={t(advice.title)} text={<span>{t(advice.text)}</span>} />
                             ))}
                         </div>
                         <div className="col-lg-6 col-md-12">

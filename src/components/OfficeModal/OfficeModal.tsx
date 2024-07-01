@@ -4,7 +4,7 @@ import Text from '@components/Text/Text';
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import "./OfficeModal.scss";
-import { closeIcon, emailIcon, flagIcon, homeIcon, messageIcon, peopleIcon, phoneIcon, profileIcon } from "@/assets";
+import { closeIcon, emailIcon, flagIcon, homeIcon, messageIcon, phoneIcon } from "@/assets";
 
 interface ModalProps {
     title: string;
@@ -48,11 +48,6 @@ const OfficeModal = (props: ModalProps) => {
             
                 <div className='office-modal__info'>
                     <div>
-                        <div className="office-modal__category">
-                                <Text size="large" className="mgb8">{t('officeModal.employee')}</Text>
-                                <p className="office-modal__entry"><img src={peopleIcon} alt="" />{props.developers} {t('officeModal.softwareDevelopers')}</p>
-                                <p className="office-modal__entry"><img src={profileIcon} alt="" />{props.otherJobs} {t('officeModal.otherJobs')}</p>
-                            </div>  
                         {(props.email && props.phone) && (
                             <div className="office-modal__category">
                                 <Text size="large" className="mgb8">{t('officeModal.business')}</Text>

@@ -37,6 +37,7 @@
         line-height: 2.25rem;
     }
     &__link {
+        display: inline-block;
         line-height: 2.25rem;
         transition-duration: .3s;
         &:hover {

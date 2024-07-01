@@ -3,13 +3,17 @@
 @import "/src/styles/Responsive.scss";
 
 .value {
-    grid-column: span 3;
+    grid-column: span 4;
+    justify-content: center;
     @include flexbox;
     @include tablet {
         flex-direction: column;
     }
     @include phone-portrait {
         grid-column: span 6;
+        &:nth-child(n + 3) {
+            grid-column: span 12;
+        }
     }
     &__number {
         font-size: $font-size-40;

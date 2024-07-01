@@ -14,16 +14,16 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
     const { t } = useTranslation();
-    const [pathTitle, setPathTitle] = useState('Case studies');
-    const [pathDesc, setPathDesc] = useState('navigation.project')
+    const [pathTitle, setPathTitle] = useState('Lunatech');
+    const [pathDesc, setPathDesc] = useState('navigation.dynamicText.default')
 
     const handleMouseEnter = (title: string,desc: string) => () => {
         setPathTitle(title);
         setPathDesc(desc);
     };
     const handleMouseLeave = () => {
-        setPathTitle('Case studies');
-        setPathDesc('Selected projects by Lunatech.')
+        setPathTitle('Lunatech');
+        setPathDesc('navigation.dynamicText.default')
     };
 
     const parts = t(pathDesc).split(" ");
