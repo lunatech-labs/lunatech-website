@@ -1,10 +1,11 @@
 import { NavLink, Link } from 'react-router-dom';
 import { Trans, useTranslation } from 'react-i18next';
+import { useState } from 'react';
+
 import Language from '@components/Language/Language';
+import { navLinks, socialLinks } from '@/constants';
 
 import "./Navigation.scss";
-import { useState } from 'react';
-import { navLinks, socialLinks } from '@/constants';
 
 interface NavigationProps {
     onClick: (event: React.MouseEvent<HTMLLIElement>) => void;

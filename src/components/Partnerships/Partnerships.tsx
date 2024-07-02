@@ -1,9 +1,10 @@
 import { useTranslation, Trans } from 'react-i18next';
-import { partnerships } from '@/constants';
-import "./Partnerships.scss";
-import Category from '../Category/Category';
-import Title from '@components/Title/Title';
 
+import Category from '@components/Category/Category';
+import Title from '@components/Title/Title';
+import { partnerships } from '@/constants';
+
+import "./Partnerships.scss";
 
 const Partnerships = () => {
     const { t } = useTranslation();

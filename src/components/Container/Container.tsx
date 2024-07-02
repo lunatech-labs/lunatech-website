@@ -1,4 +1,5 @@
-import React from "react"; // Import React
+import React from "react";
+
 import "./Container.scss";
 
 interface ContainerProps {

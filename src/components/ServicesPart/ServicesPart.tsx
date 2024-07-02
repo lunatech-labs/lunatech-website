@@ -1,10 +1,12 @@
 import { Trans } from 'react-i18next';
+
 import { serviceBlock } from '@/constants';
-import Category from "../Category/Category";
-import Title from "../Title/Title";
-import Text from "../Text/Text";
-import ButtonSecondary from "../ButtonSecondary/ButtonSecondary";
+import Category from "@components/Category/Category";
+import Title from "@components/Title/Title";
+import Text from "@components/Text/Text";
+import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import { arrowRight } from '@/assets';
+
 import "./ServicesPart.scss";
 
 interface ServicesPartProps {

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import "./Hamburger.scss";
 
 interface HamburgerProps {

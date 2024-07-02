@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
-import "./BusinessCard.scss";
 import { technologiesPage } from "@/constants";
-import { useTranslation } from "react-i18next";
+
+import "./BusinessCard.scss";
 
 const BusinessCard = () => {
     const { t } = useTranslation();

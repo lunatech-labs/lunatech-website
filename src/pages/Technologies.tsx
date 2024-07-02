@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from 'react-i18next';
+
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Container from '@components/Container/Container';
@@ -10,10 +11,8 @@ import BusinessCard from '@components/BusinessCard/BusinessCard';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Address from '@components/Address/Address';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
-
 import { technologiesPage } from '@/constants';
 import { technologyIllustration } from '@/assets';
-// import TechnologieCardFlip from '@/components/TechnologieCardFlip/TechnologieCardFlip';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import TechnologieCard from '@/components/TechnologieCard/TechnologieCard';
 import Icon from '@/components/Icon/Icon';

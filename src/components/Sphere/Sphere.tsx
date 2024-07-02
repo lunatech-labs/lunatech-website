@@ -1,9 +1,10 @@
+import { useMemo, useRef } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { useMemo, useRef } from "react";
 import * as THREE from "three";
-import './Sphere.scss';
 import { Points } from 'three';
+
+import './Sphere.scss';
 
 interface CustomGeometryParticlesProps {
   count: number;

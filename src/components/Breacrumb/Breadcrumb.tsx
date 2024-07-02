@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import useBreadcrumbs from "use-react-router-breadcrumbs";
-import "./Breadcrumb.scss";
 import { useTranslation } from "react-i18next";
+import useBreadcrumbs from "use-react-router-breadcrumbs";
+
+import "./Breadcrumb.scss";
 
 const Breadcrumbs = () => {
     const breadcrumbs = useBreadcrumbs();

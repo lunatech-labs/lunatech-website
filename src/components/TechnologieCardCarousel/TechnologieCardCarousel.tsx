@@ -1,5 +1,6 @@
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
+
 import "./TechnologieCardCarousel.scss";
 
 interface CardProps {

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
-import "./Toast.scss";
+
 import { arrowSend, closeIcon } from "@/assets";
+
+import "./Toast.scss";
 
 const Toast = ({ message, type, onClose }: { message: string, type: string, onClose: () => void }) => {
 const iconMap: { [key: string]: JSX.Element } = {

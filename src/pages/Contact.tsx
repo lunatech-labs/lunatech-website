@@ -1,3 +1,7 @@
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { Trans, useTranslation } from 'react-i18next';
+
 import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
 import Input from '@components/Input/Input';
@@ -9,9 +13,6 @@ import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Section from '@components/Section/Section';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ToastList from '@components/ToastList/ToastList';
-import { Trans, useTranslation } from 'react-i18next';
-import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
 import { contactPage, contactInfos } from '@/constants';
 import { arrowSend } from '@/assets';
 

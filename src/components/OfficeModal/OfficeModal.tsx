@@ -1,10 +1,13 @@
 import { useTranslation, Trans } from "react-i18next";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Text from '@components/Text/Text';
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
-import "./OfficeModal.scss";
 import { closeIcon, emailIcon, flagIcon, homeIcon, messageIcon, phoneIcon } from "@/assets";
+
+import "./OfficeModal.scss";
 
 interface ModalProps {
     title: string;
@@ -30,7 +33,15 @@ const OfficeModal = (props: ModalProps) => {
             <button className="office-modal__close-btn" type="button" onClick={props.handleClose}><img src={closeIcon} alt="Add" /></button>
        
             <div className="office-modal__image">
-                <img src={props.image} alt="" />
+                {/* <img src={props.image} alt="" /> */}
+                <LazyLoadImage
+                    alt={props.title}
+                    src={props.image}
+                    height={'100%'}
+                    width={'100%'}
+                    placeholderSrc={props.image}
+                    effect="blur"
+                />
             </div>
 
             <div className="office-modal__body">

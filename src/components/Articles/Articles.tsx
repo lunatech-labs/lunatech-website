@@ -1,11 +1,13 @@
 import { useTranslation, Trans } from 'react-i18next';
-import "./Articles.scss";
 import { useEffect, useState } from "react";
+
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
+import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import { arrowRight } from '@/assets';
-import Title from '../Title/Title';
+
+import "./Articles.scss";
 
 interface BlogArticle {
     title: string;

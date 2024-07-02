@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import "./ToastList.scss";
+
 import Toast from "@/components/Toast/Toast";
+
+import "./ToastList.scss";
 
 interface ToastData {
     id: number;

@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from 'react-i18next';
+
 import { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Container from '@components/Container/Container';
 import Collapse from '@components/Collapse/Collapse';
@@ -6,7 +7,6 @@ import ServiceCard from '@components/ServiceCard/ServiceCard';
 import Spotlight from '@components/Spotlight/Spotlight';
 import Text from '@components/Text/Text';
 import IconRounded from '@components/IconRounded/IconRounded';
-
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import BorderEffect from '@/components/BorderEffect/BorderEffect';
 import Title from '@components/Title/Title';
@@ -15,9 +15,8 @@ import Address from '@components/Address/Address';
 import Section from '@components/Section/Section';
 import Grid from '@components/Grid/Grid';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
-
-import { serviceBlock, servicesPage } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import { serviceBlock, servicesPage } from '@/constants';
 import { serviceIllustration } from '@/assets';
 
 const Services = () => {
