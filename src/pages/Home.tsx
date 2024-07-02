@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from 'react-i18next';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import '../i18n';
 
 import Container from '@components/Container/Container';
@@ -22,18 +23,15 @@ import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import ServicesPart from '@components/ServicesPart/ServicesPart';
 import ServiceCard from '@components/ServiceCard/ServiceCard';
+import Articles from '@components/Articles/Articles';
+import { homePage, officeCard, serviceBlock } from '@/constants';
+import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import TechnologieCarousel from '@/components/TechnologieCarousel/TechnologieCarousel';
+import Partnerships from '@/components/Partnerships/Partnerships';
 
 import BlogImg from '/blog.png';
 
-import { Link } from 'react-router-dom';
-// import TechnologiesCarousel from '@/components/TechnologiesCarousel/TechnologiesCarousel';
-import Articles from '@components/Articles/Articles';
-
-import { homePage, officeCard, serviceBlock } from '@/constants';
-import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
-import TechnologieCarousel from '@/components/TechnologieCarousel/TechnologieCarousel';
-import Partnerships from '@/components/Partnerships/Partnerships';
 
 const Home = () => {
     const { t } = useTranslation();

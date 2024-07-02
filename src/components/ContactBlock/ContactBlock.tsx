@@ -1,8 +1,10 @@
 import { Trans } from "react-i18next";
-import Category from "../Category/Category";
-import Title from "../Title/Title";
-import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+
+import Category from "@components/Category/Category";
+import Title from "@components/Title/Title";
+import ButtonPrimary from "@components/ButtonPrimary/ButtonPrimary";
 import { contactBlock, contactBtn } from "@/constants";
+
 import { messageIcon } from "@/assets";
 
 const ContactBlock= () => {

@@ -1,4 +1,5 @@
 import { Trans } from 'react-i18next';
+
 import Container from "@components/Container/Container";
 import Title from '@components/Title/Title';
 import Text from "@components/Text/Text";

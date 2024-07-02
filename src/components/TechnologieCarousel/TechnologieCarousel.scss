@@ -41,14 +41,11 @@
         display: grid;
         grid-auto-flow: column;
         gap: 24px;
+        user-select: none;
         -ms-overflow-style: none;
         scrollbar-width: none;
         ::-webkit-scrollbar {
             display: none;
-        }
-        &.active {
-            cursor: grab;
-            user-select: none;
         }
     }
     &__carousel::-webkit-scrollbar {
@@ -70,7 +67,7 @@
         background: linear-gradient(to bottom, #0A1E50, #081A47);
         scroll-snap-align: start;
         height: 100%;
-        width: 424px;
+        width: 400px;
         padding: 40px;
         list-style: none;
         display: flex;

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import "./Input.scss";
 import { useTranslation } from 'react-i18next';
+
+import "./Input.scss";
 
 interface InputProps {
   number?: string;

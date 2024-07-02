@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import '../../i18n';
-import "./Address.scss";
+
 import { contactInfos } from '@/constants';
+import '../../i18n';
+
+import "./Address.scss";
 
 const Address = () => {
     const { t } = useTranslation();

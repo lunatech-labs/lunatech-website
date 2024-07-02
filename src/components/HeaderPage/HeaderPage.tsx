@@ -1,4 +1,5 @@
 import { moonFullEffect } from "@/assets";
+
 import "./HeaderPage.scss";
 
 interface HeaderPageProps {

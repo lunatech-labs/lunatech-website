@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Title from '@components/Title/Title';
 import OfficeModal from '@components/OfficeModal/OfficeModal';
-import "./OfficeCard.scss";
-import { useTranslation } from 'react-i18next';
 import { addIcon } from '@/assets';
+
+import "./OfficeCard.scss";
 
 interface CardProps {
     title: string;

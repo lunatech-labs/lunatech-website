@@ -1,5 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
+
 import MousePosition from './mouse-position';
+
 import "./Spotlight.scss";
 import "./Animations.scss";
 

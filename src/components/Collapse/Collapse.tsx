@@ -1,8 +1,10 @@
 import { useState } from 'react';
+
 import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
-import "./Collapse.scss";
 import { arrowChevronRight } from '@/assets';
+
+import "./Collapse.scss";
 
 interface CollapseProps {
   title: string;

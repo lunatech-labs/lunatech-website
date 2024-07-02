@@ -1,23 +1,26 @@
 import { useEffect, useState } from 'react';
+import { Trans, useTranslation } from "react-i18next";
+
+import TechnologieCardCarousel from "@components/TechnologieCardCarousel/TechnologieCardCarousel";
 import { technologiesPage } from "@/constants";
-import TechnologieCardCarousel from "../TechnologieCardCarousel/TechnologieCardCarousel";
-import "./TechnologieCarousel.scss";
-import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
-import { Trans, useTranslation } from "react-i18next";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Icon from "@components/Icon/Icon";
+import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
+
+import "./TechnologieCarousel.scss";
 
 const TechnologieCarousel = () => {
     const { t } = useTranslation();
     const [isStart, setIsStart] = useState(true);
+    const carousel = document.querySelector('.technologies-carousel__carousel');
+    const arrowBtns = document.querySelectorAll('.technologies-carousel__buttons button');
+    const firstCardWidth = carousel?.querySelector('.technologies-carousel__card')?.clientWidth ?? 0;
 
     useEffect(() => {
-        const carousel = document.querySelector('.technologies-carousel__carousel');
-        const arrowBtns = document.querySelectorAll('.technologies-carousel__buttons button');
-        const firstCardWidth = carousel?.querySelector('.technologies-carousel__card')?.clientWidth ?? 0;
+
 
         const updateButtonStatus = () => {
             if (carousel) {

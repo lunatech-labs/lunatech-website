@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import Hamburger from '@components/Hamburger/Hamburger';
 import Navigation from '@components/Navigation/Navigation';
-import "./Header.scss";
-import { Link } from 'react-router-dom';
 import { lunatechLogo } from '@/assets';
+
+import "./Header.scss";
 
 interface HeaderProps {
     changeLanguage: (lng: string) => void;

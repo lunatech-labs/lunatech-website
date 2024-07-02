@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import useScrollListener from "@components/Header/useScrollListener";
 import { useTranslation } from 'react-i18next';
 
 import Header from "@components/Header/Header";
 import Footer from '@components/Footer/Footer';
+import useScrollListener from "@components/Header/useScrollListener";
 import RoutesMap from './RoutesMap';
+import ScrollToTop from "@components/ScrollToTop";
+
 import "./App.scss";
-import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     const { i18n } = useTranslation();

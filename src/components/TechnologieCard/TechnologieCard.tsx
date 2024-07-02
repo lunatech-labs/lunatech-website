@@ -1,6 +1,8 @@
 import { useState } from "react";
+
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
+
 import "./TechnologieCard.scss";
 
 interface CardProps {

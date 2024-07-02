@@ -1,7 +1,8 @@
 import React from 'react';
+import '../../i18n';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import '../../i18n';
+
 import "./Language.scss";
 
 interface LanguageProps {
@@ -23,9 +24,9 @@ const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
         let newUrl = '';
 
         if (lng === 'fr') {
-            newUrl = currentPath.replace('.com', '.fr');
+            newUrl = currentPath.replace('myapp1', 'myapp2');
         } else {
-            newUrl = currentPath.replace('.fr', '.com');
+            newUrl = currentPath.replace('myapp2', 'myapp1');
         }
 
         navigate(newUrl);

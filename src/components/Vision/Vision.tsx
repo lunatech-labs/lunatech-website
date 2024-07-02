@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import Text from "@components/Text/Text";
-import "./Vision.scss";
 import { visionCards } from "@/constants";
 import { dotIcon, visionIllustration, visionIllustrationOpen } from "@/assets";
-import { useTranslation } from "react-i18next";
+
+import "./Vision.scss";
 
 type VisionCard = {
     id: number;
