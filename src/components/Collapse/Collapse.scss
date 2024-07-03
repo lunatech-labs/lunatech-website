@@ -4,7 +4,7 @@
 
 .collapse {
     @include dark-gradient;
-    padding: 40px;
+    padding: 35px;
     grid-column: span 4;
     flex-direction: column;
     cursor: pointer;
@@ -13,6 +13,10 @@
     overflow: hidden;
     &.open {
         max-height: 260px;
+        h3 {
+            color: $pink;
+            transition: color 0.3s ease; 
+        }
     }
     &:not(:last-child) {
         margin-bottom: 24px;

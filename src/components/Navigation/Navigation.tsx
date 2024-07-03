@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Language from '@components/Language/Language';
 import { navLinks, socialLinks } from '@/constants';
+import { moonFullEffect } from "@/assets";
 
 import "./Navigation.scss";
 
@@ -57,6 +58,7 @@ const Navigation: React.FC<NavigationProps> = ({ onClick, changeLanguage }) => {
                     </div>
                 </div>
             </div>
+            <img className="navigation__img" src={moonFullEffect} alt="Moon" />
       </div>
     )
   }

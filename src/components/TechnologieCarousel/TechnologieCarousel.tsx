@@ -1,26 +1,26 @@
 import { useEffect, useState } from 'react';
 import { Trans, useTranslation } from "react-i18next";
 
-import TechnologieCardCarousel from "@components/TechnologieCardCarousel/TechnologieCardCarousel";
 import { technologiesPage } from "@/constants";
+import TechnologieCardCarousel from "@components/TechnologieCardCarousel/TechnologieCardCarousel";
+import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import Icon from "@components/Icon/Icon";
-import { arrowChevronLeft, arrowChevronRight, arrowRight } from "@/assets";
 
 import "./TechnologieCarousel.scss";
+import Container from '../Container/Container';
 
 const TechnologieCarousel = () => {
     const { t } = useTranslation();
     const [isStart, setIsStart] = useState(true);
-    const carousel = document.querySelector('.technologies-carousel__carousel');
-    const arrowBtns = document.querySelectorAll('.technologies-carousel__buttons button');
-    const firstCardWidth = carousel?.querySelector('.technologies-carousel__card')?.clientWidth ?? 0;
 
     useEffect(() => {
-
+        const carousel = document.querySelector('.technologies-carousel__carousel');
+        const arrowBtns = document.querySelectorAll('.technologies-carousel__buttons button');
+        const firstCardWidth = carousel?.querySelector('.technologies-carousel__card')?.clientWidth ?? 0;
 
         const updateButtonStatus = () => {
             if (carousel) {
@@ -64,14 +64,16 @@ const TechnologieCarousel = () => {
 
     return (
         <div className="technologies-carousel">
-            <div className="technologies-carousel__top">
-                <div className="technologies-carousel__desc">
-                    <Category content={<Trans i18nKey="technologies.category2" />} />
-                    <Title level={2}>{t('technologies.carouselTitle')}<span>{t('technologies.carouselTitleImp')}</span></Title>
-                    <Text size="large">{t('technologies.carouselText')}</Text>
+            <Container>
+                <div className="technologies-carousel__top">
+                    <div className="technologies-carousel__desc">
+                        <Category content={<Trans i18nKey="technologies.category2" />} />
+                        <Title level={2}>{t('technologies.carouselTitle')}<span>{t('technologies.carouselTitleImp')}</span></Title>
+                        <Text size="large">{t('technologies.carouselText')}</Text>
+                    </div>
+                    <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
                 </div>
-                <ButtonSecondary iconUrl={arrowRight} size='large' to='/technologies'>{<Trans i18nKey="buttonDetails" />}</ButtonSecondary>
-            </div>
+            </Container>
             <div className="technologies-carousel__wrapper">
                 <ul className="technologies-carousel__carousel">
                     {technologiesPage[0].secondBlock.map((technology, index) => (

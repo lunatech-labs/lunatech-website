@@ -121,9 +121,7 @@ const Home = () => {
             <Container><BorderEffect /></Container>
 
             <Section>
-                <Container>
                     <TechnologieCarousel />
-                </Container>
             </Section>
 
             <Container><BorderEffect /></Container>

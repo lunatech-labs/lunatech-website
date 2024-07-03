@@ -2,6 +2,9 @@
 
 .country {
     margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     &:last-child {
         margin-bottom: 0;
     }
