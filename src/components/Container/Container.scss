@@ -7,4 +7,8 @@
     margin-left: auto;
     @include desktop-up {padding: 0 32px;}
     @include phone-landscape {padding: 0 24px;}
+
+    &__no-margin {
+        margin: 0;
+    }
 }

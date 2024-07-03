@@ -62,18 +62,28 @@
         display: flex;
         flex-direction: column;
         gap: 64px;
+        margin-left: 300px;
+        @include desktop-up {padding: 0 32px;}
+        @include phone-landscape {
+            padding: 0 24px;
+            margin-left: 0;
+        }
     }
     &__card {
         background: linear-gradient(to bottom, #0A1E50, #081A47);
         scroll-snap-align: start;
         height: 100%;
-        width: 400px;
+        width: 380px;
         padding: 40px;
         list-style: none;
         display: flex;
         align-items: center;
-        flex-direction: column;
         border-radius: 20px;
+        border: 1px solid $blue;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        &:last-child {
+            margin-right: 20px;
+        }
         @include phone-portrait {
             width: 290px;
         }

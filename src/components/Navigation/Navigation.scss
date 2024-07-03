@@ -20,6 +20,10 @@
     }
     &--active {
         transform: translateX(0px);
+        img {
+            opacity: 1;
+            transition: opacity .3s .3s ease-in-out;
+        }
     }
     &__main {
         @include flexbox;
@@ -161,5 +165,26 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    &__img {
+        opacity: 0;
+        position: absolute;
+        width: 1000px;
+        right: 300px;
+        top: 200px;
+        z-index: -1;
+        animation: rotate 100s linear infinite;
+        @include phone-landscape {
+            display: none;
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
