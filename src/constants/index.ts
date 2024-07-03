@@ -222,6 +222,12 @@ export const serviceBlock = [
         text: "service.text",
         cards: [
             {
+                title: "service.cards.strategicExpertise.title",
+                text: "service.cards.strategicExpertise.text",
+                imageIcon: sdvIcon,
+                url: "/services/software-defined-vehicle"
+            },
+            {
                 title: "service.cards.softwareDefinedVehicle.title",
                 text: "service.cards.softwareDefinedVehicle.text",
                 imageIcon: sdvIcon,
@@ -244,6 +250,18 @@ export const serviceBlock = [
                 text: "service.cards.legacyTransformation.text",
                 imageIcon: legacyTransformationIcon,
                 url: "/services/legacy-transformation"
+            },
+            {
+                title: "service.cards.technicalExpertise.title",
+                text: "service.cards.technicalExpertise.text",
+                imageIcon: sdvIcon,
+                url: "/services/software-defined-vehicle"
+            },
+            {
+                title: "service.cards.openSource.title",
+                text: "service.cards.openSource.text",
+                imageIcon: sdvIcon,
+                url: "/services/software-defined-vehicle"
             }
         ]
     }

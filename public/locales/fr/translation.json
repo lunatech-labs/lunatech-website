@@ -103,21 +103,33 @@
         "titleImp": "30 ans",
         "text": "Lunatech fournit des solutions innovantes pour la création et la modernisation de vos services d'entreprise numériques à travers les services suivants.",
         "cards": {
-            "softwareDefinedVehicle" : {
+            "strategicExpertise": {
+                "title": "Expertise stratégique",
+                "text": "Nous aidons les entreprises à élaborer des stratégies informatiques qui soutiennent leurs objectifs commerciaux."
+            },
+            "softwareDefinedVehicle": {
                 "title": "SDV",
                 "text": "Nous aidons les entreprises à créer des solutions de mobilité intelligentes et connectées."
             },
-            "customSoftware" : {
+            "customSoftware": {
                 "title": "Développement de logiciels sur mesure",
                 "text": "Nous développons des logiciels sur mesure pour répondre à vos besoins spécifiques."
             },
-            "systemIntegration" : {
+            "systemIntegration": {
                 "title": "Intégration des systèmes",
                 "text": "Nous intégrons des systèmes existants et des applications tierces dans votre écosystème digital."
             },
-            "legacyTransformation" : {
+            "legacyTransformation": {
                 "title": "Legacy Transformation",
                 "text": "Nous modernisons les systèmes existants pour les rendre plus agiles et plus efficaces."
+            },
+            "technicalExpertise": {
+                "title": "Expertise technique",
+                "text": "Nous fournissons des solutions techniques pour répondre à vos besoins immédiats et futurs."
+            },
+            "openSource": {
+                "title": "Open Source",
+                "text": "Nous utilisons des technologies open source pour garantir la pérennité de vos solutions."
             }
         }
     },
