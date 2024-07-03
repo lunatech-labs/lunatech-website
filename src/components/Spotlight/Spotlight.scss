@@ -4,8 +4,6 @@
 
 .spotlight__layout {
     @include grid;
-}
-.spotlight__layout {
     &.grid-8 {
         @include grid-8;
     }

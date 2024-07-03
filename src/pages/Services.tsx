@@ -65,7 +65,7 @@ const Services = () => {
                     </div>
                     <Spotlight className="spotlight__layout">
                         {serviceBlock[0].cards.map((card, index) => (
-                            <SpotlightCard key={index} className="col-lg-6" padding="pad96">
+                            <SpotlightCard key={index} className="col-lg-4" padding="pad64">
                                 <ServiceCard to={card.url} title={t(card.title)} text={t(card.text)} >
                                     <IconRounded image={card.imageIcon} />
                                 </ServiceCard>
