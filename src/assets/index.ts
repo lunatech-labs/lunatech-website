@@ -4,11 +4,11 @@ import linkedin from "./socials/linkedin.svg";
 import github from "./socials/github.svg";
 import netherlandsIcon from "./netherlandsIcon.svg";
 import franceIcon from "./franceIcon.svg";
-import ukIcon from "./ukIcon.svg";
 import sdvIcon from "./cpu-setting.svg";
-import customSoftwareIcon from "./custom-software.svg";
+import softwareProjectDeliveryIcon from "./software-project-delivery.svg";
+import strategicExpertiseIcon from "./software-project-delivery.svg";
 import systemIntegrationIcon from "./system-integration.svg";
-import legacyTransformationIcon from "./legacy-transformation.svg";
+import legacyModernisationIcon from "./legacy-modernisation.svg";
 import parisOffice from "./offices/paris-office.jpg";
 import rotterdamOffice from "./offices/rotterdam-office.jpg";
 import grass from "./background/grass.svg";
@@ -25,7 +25,7 @@ import arrowSend from "./buttons/arrow-send.svg";
 
 import aboutUsIllustration from "./about-us-illustration.png";
 import aboutUsIllustration2 from "./about-us-illustration2.png";
-import serviceIllustration from "./general/services_illustration.png";
+import expertiseIllustration from "./general/services_illustration.png";
 import visionIllustration from "./about/vision-illustration.png";
 import visionIllustrationOpen from "./about/services_illustration_open.png";
 import technologyIllustration from "./general/technologies_illustration.png";
@@ -63,11 +63,11 @@ export {
     github,
     netherlandsIcon,
     franceIcon,
-    ukIcon,
     sdvIcon,
-    customSoftwareIcon,
+    softwareProjectDeliveryIcon,
+    strategicExpertiseIcon,
     systemIntegrationIcon,
-    legacyTransformationIcon,
+    legacyModernisationIcon,
     parisOffice,
     rotterdamOffice,
     grass,
@@ -100,7 +100,7 @@ export {
     officeIcon,
     messageIcon,
     addIcon,
-    serviceIllustration,
+    expertiseIllustration,
     technologyIllustration,
     awsLogo,
     azulLogo,

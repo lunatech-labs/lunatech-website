@@ -41,10 +41,10 @@
         }
     }
     &__brand {
+        margin-bottom: 64px;
         a {
             display: inline-block;
         }
-        margin-bottom: 64px;
         @include phone-portrait {
             margin-bottom: 32px;
         }

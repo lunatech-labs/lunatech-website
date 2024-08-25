@@ -1,4 +1,4 @@
-const legacyTransformationIcon = () => {
+const legacyModernisationIcon = () => {
     return (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M36.6654 21.6663V14.9997C36.6654 6.66634 33.332 3.33301 24.9987 3.33301H14.9987C6.66536 3.33301 3.33203 6.66634 3.33203 14.9997V24.9997C3.33203 33.333 6.66536 36.6663 14.9987 36.6663H24.9987" stroke="#78B4D7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -10,4 +10,4 @@ const legacyTransformationIcon = () => {
     )
 }
 
-export default legacyTransformationIcon
+export default legacyModernisationIcon

@@ -5,16 +5,16 @@ import Text from '@components/Text/Text';
 import ButtonSecondary from "@components/ButtonSecondary/ButtonSecondary";
 import { arrowRight } from '@/assets';
 
-import "./ServiceCard.scss";
+import "./ExpertiseCard.scss";
 
-interface CardProps {
+interface ExpertiseProps {
     title: string;
     text: string;
     children: JSX.Element;
     to: string;
 }
 
-const ServiceCard = (props: CardProps) => {
+const ExpertiseCard = (props: ExpertiseProps) => {
     useTranslation();
 
     return (
@@ -27,7 +27,7 @@ const ServiceCard = (props: CardProps) => {
     );
 };
 
-export default ServiceCard;
+export default ExpertiseCard;
 
 
 

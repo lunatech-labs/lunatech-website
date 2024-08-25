@@ -13,7 +13,7 @@ interface CollapseProps {
 }
 
 const Collapse = (props: CollapseProps) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const toggleCollapse = () => {
         setIsOpen(!isOpen);

@@ -8,12 +8,14 @@
     "breadcrumb": {
         "Home": "Home",
         "About": "About us",
-        "Services": "Services",
+        "Expertises": "Expertises",
         "Technologies": "Technologies",
         "Software defined vehicle": "Software Defined Vehicle",
-        "Custom software development": "Custom Software Development",
+        "Software project delivery": "Software Project Delivery",
         "System integration": "System Integration",
-        "Legacy transformation": "Legacy Transformation",
+        "Strategic expertise": "Strategic Expertise",
+        "Legacy modernisation": "Legacy Modernisation",
+        "Open source": "Open Source",
         "Contact": "Contact"
     },
     "hero": {
@@ -27,17 +29,20 @@
     "navigation": {
         "home": "Home",
         "about": "About us",
-        "works": "Works",
         "careers": "Careers",
         "contact": "Contact",
-        "services": "Services",
-        "technologies": "Technologies",
+        "expertises": "Our Expertises",
+        "opensource": "Open Source",
+        "partners" : "Our Partners",
+        "technologies": "Our Technologies",
         "dynamicText" : {
             "default": "Selected projects",
             "home": "Go back to the homepage.",
             "aboutUs": "Learn more about Lunatech.",
-            "services": "Our services",
+            "expertises": "Our expertises",
             "technologies": "Our technologies",
+            "partners": "Our partners",
+            "opensource": "Open Source",
             "careers": "Want to join us?",
             "contact": "Want to contact us?",
             "github": "Take a look at our work.",
@@ -97,8 +102,8 @@
         "category": "Nos bureaux",
         "contactUsBtn": "Contact us"
     },
-    "service": {
-        "breadcrumb": "Services",
+    "expertise": {
+        "breadcrumb": "Expertises",
         "title": "Custom software systems for over ",
         "titleImp": "30 years",
         "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital enterprise services through the following services.",
@@ -111,32 +116,28 @@
                 "title": "Software Defined Vehicle",
                 "text": "We help companies create smart, connected mobility solutions."
             },
-            "customSoftware": {
-                "title": "Custom Software Development",
+            "softwareProjectDelivery": {
+                "title": "Software Project Delivery",
                 "text": "We develop custom software to meet your specific needs."
             },
             "systemIntegration": {
                 "title": "System Integration",
                 "text": "We integrate existing systems and third-party applications into your digital ecosystem."
             },
-            "legacyTransformation": {
-                "title": "Legacy Transformation",
-                "text": "We modernise legacy systems to make them more agile and efficient."
+            "legacyModernisation": {
+                "title": "Legacy Modernisation",
+                "text": "We modernise legacy systems to make them more secure, agile and efficient."
             },
             "technicalExpertise": {
                 "title": "Technical Expertise",
-                "text": "We provide a wide range of technical services to help you meet your needs."
-            },
-            "openSource": {
-                "title": "Open Source",
-                "text": "We help companies leverage open source technologies to drive innovation."
+                "text": "We provide a wide range of technical expertises to help you meet your needs."
             }
         }
     },
-    "servicesPage": {
+    "expertisesPage": {
         "title": "Meet your needs with our ",
         "titleImp": "enterprise services",
-        "text": "We provide a wide range of services to help you meet your needs. We are experts in the following areas:",
+        "text": "We provide a wide range of expertises to help you meet your needs. We are experts in the following areas:",
         "category": "Strategic Advice",
         "firstBlock": {
             "breadcrumb": "Strategic advice",
@@ -170,7 +171,7 @@
             }
         },
         "secondBlock" : {
-            "breadcrumb": "Our services",
+            "breadcrumb": "Our Expertises",
             "titleImp": "Lunatech ",
             "title": "can help you with the following",
             "text": "Lunatech provides innovative solutions for the creation and/or modernisation of your digital business services through the following services."
@@ -279,30 +280,11 @@
         "subtitle": "Contact",
         "title": "Let's work ",
         "titleColor": "together",
-        "text": "Let us help you become even greater at what you do. Fill out the following form and we will get back to you.",
-        "missing": "Please fill in all mandatory fields. Such as:",
-        "label":
-        {
-            "object": "Subject of your message",
-            "message": "Your message"
-        },
-        "placeHolder":
-        {
-            "object": "Summary of your message",
-            "message": "Write your message here. Be as specific as possible."
-        },
-        "options": {
-            "softwareDefinedVehicle": "Software Defined Vehicle",
-            "customSoftwareDevelopment": "Custom Software Development",
-            "systemIntegration": "System Integration",
-            "legacyTransformation": "Legacy Transformation",
-            "other": "Other"
-        }
+        "text": "Let us help you become even greater at what you do. Send us an email so we know more."
     },
     "address": {
         "countryNL": "Netherlands",
         "countryFR": "France",
-        "countryEN": "United Kingdom",
         "subtitle1": "Business development",
         "subtitle2": "Careers",
         "subtitle3": "Address"
@@ -316,25 +298,30 @@
         "careers": "Careers",
         "contact": "Contact"
     },
-    "serviceSoftwareDefinedVehicle": {
+    "expertiseSoftwareDefinedVehicle": {
         "title": "Defined Vehicle",
         "titleImp": "Software ",
         "text": "A Software Defined Vehicle is any vehicle that manages its operations, adds functionality and enables new features primarily or entirely through software. Software Defined Vehicles are the next evolution of the automotive industry. Lunatech has been involved with Software Defined Vehicle since 2016 while the term did not exist yet. Lunatech, together with large automobile manufacturers has been involved in processing car data at a large scale and providing services for those vehicles. Lunatech specialises in cloud middleware and processing data for software-defined vehicles."
     },
-    "serviceCustomSoftwareDevelopment": {
-        "title": "Custom Software ",
-        "titleImp": "Development",
+    "expertiseSoftwareProjectDelivery": {
+        "title": "Project Delivery ",
+        "titleImp": "Software",
         "text": "Lunatech specializes in custom software development, offering tailored solutions to meet the specific needs of businesses and individuals. Their services encompass requirement analysis, design, development, testing, UX design, integration, deployment, training, maintenance, scalability, security, and managing cost and time considerations. This approach allows for addressing unique challenges and opportunities, ensuring that the software is efficient, secure and scalable while requiring careful planning and skilled teams for successful implementation."
     },
-    "serviceSystemIntegration": {
+    "expertiseSystemIntegration": {
         "title": "System ",
         "titleImp": "Integration",
         "text": "Lunatech excels in system integration, enhancing organizational IT by connecting disparate systems to improve efficiency and technology utilization. Utilizing Web APIs, middleware, and cloud solutions, they focus on security, compliance, and integrating legacy and new technologies. This approach makes IT environments more sustainable, agile, and cost-effective, driving better decision-making and customer experiences."
     },
-    "serviceLegacyTransformation": {
+    "expertiseLegacyModernisation": {
         "title": "Legacy ",
-        "titleImp": "Transformation",
+        "titleImp": "Modernisation",
         "text": "Lunatech's Legacy Transformation Service modernizes outdated technology systems to align with current business needs and technology standards. This comprehensive service includes assessment and reverse engineering, business alignment, technology stack upgrade, data migration, system integration, UI modernization, testing, security enhancements, training and change management. Aimed at improving efficiency, compatibility and security. Lunatech adopts a phased or incremental approach to minimize disruption, ensuring a smooth transition to modern, agile systems that support organizational objectives effectively. Additionally, Lunatech ensures knowledge transfer and training for clients' teams, enabling them to manage the modernized application independently. This comprehensive approach helps businesses maximize their software investments without the need for costly redevelopment over multiple years."
+    },
+    "expertiseStrategicExpertise": {
+        "title": "Strategic ",
+        "titleImp": "Expertise",
+        "text": "bla bla kbkakb bkak <br/> <br/> vla bla"
     },
     "partners": {
         "title": "Our ",

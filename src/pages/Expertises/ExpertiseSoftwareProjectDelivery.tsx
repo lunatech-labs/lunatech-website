@@ -13,14 +13,14 @@ import Text from '@components/Text/Text';
 
 import { aboutUsIllustration } from '@/assets';
 
-const ServiceLegacyTransformation = () => {
+const ExpertiseProjectDelivery = () => {
     return (
         <>
             <Section className="pdt256">
                 <Container>
                     <HeaderPage>
                         <Breadcrumbs />
-                        <Title level={1}><Trans i18nKey="serviceLegacyTransformation.title" /><span><Trans i18nKey="serviceLegacyTransformation.titleImp" /></span></Title>
+                        <Title level={1}><Trans i18nKey="expertiseProjectDelivery.title" /><span><Trans i18nKey="expertiseProjectDelivery.titleImp" /></span></Title>
                     </HeaderPage>
                 </Container>
             </Section>
@@ -29,13 +29,13 @@ const ServiceLegacyTransformation = () => {
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
-                            <Text size="medium" className="mgb24"><Trans i18nKey="serviceLegacyTransformation.text" /></Text>
+                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseProjectDelivery.text" /></Text>
                         </div>
                         <img className="about__img" src={aboutUsIllustration} alt="Building" />
                     </Grid>
                 </Container>
             </Section>
-            
+
             <Container><BorderEffect /></Container>
 
             <Section>
@@ -48,4 +48,4 @@ const ServiceLegacyTransformation = () => {
     )
 }
 
-export default ServiceLegacyTransformation;
+export default ExpertiseProjectDelivery;

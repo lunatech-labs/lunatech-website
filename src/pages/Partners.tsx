@@ -17,7 +17,7 @@ import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import TechnologieCard from '@/components/TechnologieCard/TechnologieCard';
 import Icon from '@/components/Icon/Icon';
 
-const Technologies = () => {
+const Partners = () => {
     const { t } = useTranslation();
 
     return (
@@ -76,4 +76,4 @@ const Technologies = () => {
     )
 }
 
-export default Technologies;
+export default Partners;

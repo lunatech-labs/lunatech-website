@@ -23,10 +23,11 @@ import bankIcon from '@/components/BusinessCard/Icons/bankIcon'
 import shieldIcon from '@/components/BusinessCard/Icons/shieldIcon'
 import netherlandIcon from '@/components/OfficeCard/Icons/netherlandIcon'
 import parisIcon from '@/components/OfficeCard/Icons/parisIcon'
-import sdvIcon from '@/components/ServiceCard/Icons/sdvIcon'
-import customSoftwareIcon from '@/components/ServiceCard/Icons/customSoftwareIcon'
-import systemIntegrationIcon from '@/components/ServiceCard/Icons/systemIntegrationIcon'
-import legacyTransformationIcon from '@/components/ServiceCard/Icons/legacyTransformationIcon'
+import sdvIcon from '@/components/ExpertisesCard/Icons/sdvIcon'
+import softwareProjectDeliveryIcon from '@/components/ExpertisesCard/Icons/softwareProjectDeliveryIcon'
+import systemIntegrationIcon from '@/components/ExpertisesCard/Icons/systemIntegrationIcon'
+import legacyModernisationIcon from '@/components/ExpertisesCard/Icons/legacyModernisationIcon'
+import strategicExpertiseIcon from '@/components/ExpertisesCard/Icons/strategicExpertiseIcon'
 
 export const navLinks = [
     {
@@ -37,17 +38,10 @@ export const navLinks = [
         blank: false,
     },
     {
-        title: "navigation.about",
-        url: "/about",
-        mouseEnterTitle: "about",
-        mouseEnterDesc: "navigation.dynamicText.aboutUs",
-        blank: false
-    },
-    {
-        title: "navigation.services",
-        url: "/services",
-        mouseEnterTitle: "services",
-        mouseEnterDesc: "navigation.dynamicText.services",
+        title: "navigation.expertises",
+        url: "/expertises",
+        mouseEnterTitle: "expertises",
+        mouseEnterDesc: "navigation.dynamicText.expertises",
         blank: false
     },
     {
@@ -55,6 +49,27 @@ export const navLinks = [
         url: "/technologies",
         mouseEnterTitle: "technlogies",
         mouseEnterDesc: "navigation.dynamicText.technologies",
+        blank: false
+    },
+    {
+        title: "navigation.opensource",
+        url: "/open-source",
+        mouseEnterTitle: "opensouce",
+        mouseEnterDesc: "navigation.dynamicText.opensource",
+        blank: false
+    },
+    {
+        title: "navigation.partners",
+        url: "/partners",
+        mouseEnterTitle: "partners",
+        mouseEnterDesc: "navigation.dynamicText.partners",
+        blank: false
+    },
+    {
+        title: "navigation.about",
+        url: "/about",
+        mouseEnterTitle: "about",
+        mouseEnterDesc: "navigation.dynamicText.aboutUs",
         blank: false
     },
     {
@@ -214,54 +229,42 @@ export const visionCards = [
     },
 ];
 
-export const serviceBlock = [
+export const expertiseBlock = [
     {
-        breadcrumb: "service.breadcrumb",
-        title: "service.title",
-        titleImp: "service.titleImp",
-        text: "service.text",
+        breadcrumb: "expertise.breadcrumb",
+        title: "expertise.title",
+        titleImp: "expertise.titleImp",
+        text: "expertise.text",
         cards: [
             {
-                title: "service.cards.strategicExpertise.title",
-                text: "service.cards.strategicExpertise.text",
+                title: "expertise.cards.strategicExpertise.title",
+                text: "expertise.cards.strategicExpertise.text",
+                imageIcon: strategicExpertiseIcon,
+                url: "/expertises/strategic-expertise"
+            },
+            {
+                title: "expertise.cards.softwareDefinedVehicle.title",
+                text: "expertise.cards.softwareDefinedVehicle.text",
                 imageIcon: sdvIcon,
-                url: "/services/software-defined-vehicle"
+                url: "/expertises/software-defined-vehicle"
             },
             {
-                title: "service.cards.softwareDefinedVehicle.title",
-                text: "service.cards.softwareDefinedVehicle.text",
-                imageIcon: sdvIcon,
-                url: "/services/software-defined-vehicle"
+                title: "expertise.cards.softwareProjectDelivery.title",
+                text: "expertise.cards.softwareProjectDelivery.text",
+                imageIcon: softwareProjectDeliveryIcon,
+                url: "/expertises/software-project-delivery"
             },
             {
-                title: "service.cards.customSoftware.title",
-                text: "service.cards.customSoftware.text",
-                imageIcon: customSoftwareIcon,
-                url: "/services/custom-software-development"
-            },
-            {
-                title: "service.cards.systemIntegration.title",
-                text: "service.cards.systemIntegration.text",
+                title: "expertise.cards.systemIntegration.title",
+                text: "expertise.cards.systemIntegration.text",
                 imageIcon: systemIntegrationIcon,
-                url: "/services/system-integration"
+                url: "/expertises/system-integration"
             },
             {
-                title: "service.cards.legacyTransformation.title",
-                text: "service.cards.legacyTransformation.text",
-                imageIcon: legacyTransformationIcon,
-                url: "/services/legacy-transformation"
-            },
-            {
-                title: "service.cards.technicalExpertise.title",
-                text: "service.cards.technicalExpertise.text",
-                imageIcon: sdvIcon,
-                url: "/services/software-defined-vehicle"
-            },
-            {
-                title: "service.cards.openSource.title",
-                text: "service.cards.openSource.text",
-                imageIcon: sdvIcon,
-                url: "/services/software-defined-vehicle"
+                title: "expertise.cards.legacyModernisation.title",
+                text: "expertise.cards.legacyModernisation.text",
+                imageIcon: legacyModernisationIcon,
+                url: "/expertises/legacy-modernisation"
             }
         ]
     }
@@ -376,46 +379,46 @@ export const contactBlock = [
     }
 ]
 
-export const servicesPage = [
+export const expertisesPage = [
     {
-        title: "servicesPage.title",
-        titleImp: "servicesPage.titleImp",
+        title: "expertisesPage.title",
+        titleImp: "expertisesPage.titleImp",
         firstBlock : {
-            breadcrumb: "servicesPage.firstBlock.breadcrumb",
-            title: "servicesPage.firstBlock.title",
-            titleImp: "servicesPage.firstBlock.titleImp",
+            breadcrumb: "expertisesPage.firstBlock.breadcrumb",
+            title: "expertisesPage.firstBlock.title",
+            titleImp: "sexpertisesPage.firstBlock.titleImp",
             advices : [
                 {
-                    title: "servicesPage.firstBlock.advices.technoPlanning.title",
-                    text: "servicesPage.firstBlock.advices.technoPlanning.text"
+                    title: "expertisesPage.firstBlock.advices.technoPlanning.title",
+                    text: "expertisesPage.firstBlock.advices.technoPlanning.text"
                 },
                 {
-                    title: "servicesPage.firstBlock.advices.riskManagement.title",
-                    text: "servicesPage.firstBlock.advices.riskManagement.text"
+                    title: "expertisesPage.firstBlock.advices.riskManagement.title",
+                    text: "expertisesPage.firstBlock.advices.riskManagement.text"
                 },
                 {
-                    title: "servicesPage.firstBlock.advices.innovation.title",
-                    text: "servicesPage.firstBlock.advices.innovation.text"
+                    title: "expertisesPage.firstBlock.advices.innovation.title",
+                    text: "expertisesPage.firstBlock.advices.innovation.text"
                 },
                 {
-                    title: "servicesPage.firstBlock.advices.dataManagement.title",
-                    text: "servicesPage.firstBlock.advices.dataManagement.text"
+                    title: "expertisesPage.firstBlock.advices.dataManagement.title",
+                    text: "expertisesPage.firstBlock.advices.dataManagement.text"
                 },
                 {
-                    title: "servicesPage.firstBlock.advices.changeManagement.title",
-                    text: "servicesPage.firstBlock.advices.changeManagement.text"
+                    title: "expertisesPage.firstBlock.advices.changeManagement.title",
+                    text: "expertisesPage.firstBlock.advices.changeManagement.text"
                 },
                 {
-                    title: "servicesPage.firstBlock.advices.digitalTransformation.title",
-                    text: "servicesPage.firstBlock.advices.digitalTransformation.text"
+                    title: "expertisesPage.firstBlock.advices.digitalTransformation.title",
+                    text: "expertisesPage.firstBlock.advices.digitalTransformation.text"
                 }
             ]
         },
         secondBlock: {
-            breadcrumb: "servicesPage.secondBlock.breadcrumb",
-            title: "servicesPage.secondBlock.title",
-            titleImp: "servicesPage.secondBlock.titleImp",
-            text: "servicesPage.secondBlock.text"
+            breadcrumb: "expertisesPage.secondBlock.breadcrumb",
+            title: "expertisesPage.secondBlock.title",
+            titleImp: "expertisesPage.secondBlock.titleImp",
+            text: "expertisesPage.secondBlock.text"
         }
     }
 ]
@@ -524,12 +527,20 @@ export const footerLinks = [
                 url: "/about"
             },
             {
-                title: "navigation.services",
-                url: "/services"
+                title: "navigation.expertises",
+                url: "/expertises"
             },
             {
                 title: "navigation.technologies",
                 url: "/technologies"
+            },
+            {
+                title: "navigation.opensource",
+                url: "/open-source"
+            },
+            {
+                title: "navigation.partners",
+                url: "/partners"
             }
         ]
     },

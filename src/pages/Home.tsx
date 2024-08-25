@@ -21,10 +21,10 @@ import Section from '@components/Section/Section';
 import Address from '@components/Address/Address';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import BorderEffect from '@components/BorderEffect/BorderEffect';
-import ServicesPart from '@components/ServicesPart/ServicesPart';
-import ServiceCard from '@components/ServiceCard/ServiceCard';
+import ExpertisesPart from '@/components/ExpertisesPart/ExpertisesPart';
+import ExpertiseCard from '@/components/ExpertisesCard/ExpertiseCard';
 import Articles from '@components/Articles/Articles';
-import { homePage, officeCard, serviceBlock } from '@/constants';
+import { homePage, officeCard, expertiseBlock } from '@/constants';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import TechnologieCarousel from '@/components/TechnologieCarousel/TechnologieCarousel';
 import Partnerships from '@/components/Partnerships/Partnerships';
@@ -104,17 +104,17 @@ const Home = () => {
 
             <Section className="bg-bgMediumBlue">
                 <Container>
-                    <ServicesPart>
+                    <ExpertisesPart>
                         <Spotlight className="spotlight__layout">
-                            {serviceBlock[0].cards.map((card, index) => (
+                            {expertiseBlock[0].cards.map((card, index) => (
                                 <SpotlightCard key={index} className="col-lg-6" padding="pad96">
-                                    <ServiceCard to={card.url} title={t(card.title)} text={t(card.text)} >
+                                    <ExpertiseCard to={card.url} title={t(card.title)} text={t(card.text)} >
                                         <IconRounded image={card.imageIcon} />
-                                    </ServiceCard>
+                                    </ExpertiseCard>
                                 </SpotlightCard>
                             ))}
                         </Spotlight>
-                    </ServicesPart>
+                    </ExpertisesPart>
                 </Container>
             </Section>
 
