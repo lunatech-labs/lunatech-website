@@ -1,11 +1,10 @@
 import { useTranslation, Trans } from "react-i18next";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
 import Text from '@components/Text/Text';
 import Category from "@components/Category/Category";
 import Title from "@components/Title/Title";
-import { closeIcon, emailIcon, flagIcon, homeIcon, messageIcon, phoneIcon } from "@/assets";
+import { closeIcon, emailIcon, flagIcon, homeIcon, phoneIcon } from "@/assets";
 
 import "./OfficeModal.scss";
 

@@ -16,6 +16,7 @@
         "Strategic expertise": "Strategic Expertise",
         "Legacy modernisation": "Legacy Modernisation",
         "Open source": "Open Source",
+        "Partners": "Partners", 
         "Contact": "Contact"
     },
     "hero": {
@@ -382,6 +383,7 @@
     "partners": {
         "title": "Our ",
         "titleImp": "partners",
-        "subtitle": "Partners"
+        "subtitle": "Partners",
+        "text" : "At Lunatech, we recognize the value of strategic alliances and collaboration in driving innovation and delivering top-notch solutions. Our partnerships with industry-leading technology providers and open-source communities enable us to leverage cutting-edge technologies and offer comprehensive, tailored solutions to meet our clients' diverse needs. Discover our key partnerships below."
     }  
 }

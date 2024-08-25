@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 import Title from '@components/Title/Title';
 import Text from '@components/Text/Text';
@@ -10,7 +10,7 @@ import Section from '@components/Section/Section';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Icon from '@components/Icon/Icon';
-import { officeCard, contactPage } from '@/constants';
+import { officeCard } from '@/constants';
 
 const Contact = () => {
 
