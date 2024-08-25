@@ -10,8 +10,7 @@ import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { partnerships } from '@/constants';
 
 const Partners = () => {
-    const { t } = useTranslation();
-
+    
     return (
         <>
             <Section className="pdt256">

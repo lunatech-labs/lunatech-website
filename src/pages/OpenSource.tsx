@@ -8,7 +8,6 @@ import Title from '@components/Title/Title';
 import Address from '@components/Address/Address';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ContactBlock from '@components/ContactBlock/ContactBlock';
-import Grid from '@components/Grid/Grid';
 import Text from '@components/Text/Text';
 
 import { aboutUsIllustration } from '@/assets';
@@ -20,19 +19,18 @@ const OpenSource = () => {
                 <Container>
                     <HeaderPage>
                         <Breadcrumbs />
-                        <Title level={1}><Trans i18nKey="expertiseStrategicExpertise.title" /><span><Trans i18nKey="expertiseStrategicExpertise.titleImp" /></span></Title>
+                        <Title level={1}><Trans i18nKey="opensource.title" /><span><Trans i18nKey="opensource.titleImp" /></span></Title>
                     </HeaderPage>
                 </Container>
             </Section>
 
             <Section className="bg-bgMediumBlue">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6">
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseStrategicExpertise.text" /></Text>
+                        <img className="opensource__img" src={aboutUsIllustration} alt="Building" />
+                        <div >
+                            <Text size="medium" className="mgb24 opensource__text"><Trans i18nKey="opensource.text" /></Text>
                         </div>
-                        <img className="about__img" src={aboutUsIllustration} alt="Building" />
-                    </Grid>
+                       
                 </Container>
             </Section>
 
