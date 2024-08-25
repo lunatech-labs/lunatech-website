@@ -82,14 +82,7 @@ const OfficeModal = (props: ModalProps) => {
                                 <p className="office-modal__entry"><img src={flagIcon} alt="" />{t(props.country)}</p>
                             </div>
                         )}
-                    </div>
-                    <div className="office-modal__contact-btn">
-                        <ButtonPrimary iconUrl={messageIcon} size='large' to='/contact'>
-                                <span>
-                                    {t('modal.contactUsBtn')}
-                                </span>
-                        </ButtonPrimary>
-                    </div>
+                    </div>       
                 </div>
             </div>
         </div>
