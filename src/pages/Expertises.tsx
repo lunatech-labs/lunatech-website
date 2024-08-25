@@ -14,6 +14,9 @@ import Address from '@components/Address/Address';
 import Section from '@components/Section/Section';
 import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import Grid from '@components/Grid/Grid';
+import BusinessCard from '@components/BusinessCard/BusinessCard';
+import { technologyIllustration } from '@/assets';
 import { expertiseBlock, expertisesPage } from '@/constants';
 
 const Expertises = () => {
@@ -48,6 +51,21 @@ const Expertises = () => {
                             </SpotlightCard>
                         ))}
                     </Spotlight>
+                </Container>
+            </Section>
+
+            <Section>
+                <Container>
+                    <Grid>
+                        <div className="col-lg-6 col-md-12">
+                            <Category content={<Trans i18nKey="technologies.category1" />} />
+                            <Title level={2}>{t("technologies.sectorTitle")} <span>{t("technologies.sectorTitleImp")}</span></Title>
+                            <img className="w100" src={technologyIllustration} alt="" />
+                        </div>
+                        <div className="col-lg-6 col-md-12">
+                            <BusinessCard />
+                        </div>
+                    </Grid>
                 </Container>
             </Section>
 

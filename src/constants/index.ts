@@ -447,12 +447,9 @@ export const technologiesPage = [
                 image: shieldIcon,
             }
         ],
+
+
         secondBlock: [
-            {
-                title: "technologies.page.secondBlock.devops.title",
-                text: "technologies.page.secondBlock.devops.text",
-                image: shieldIcon
-            },
             {
                 title: "technologies.page.secondBlock.scala.title",
                 text: "technologies.page.secondBlock.scala.text",
@@ -464,36 +461,97 @@ export const technologiesPage = [
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.frontend.title",
-                text: "technologies.page.secondBlock.frontend.text",
+                title: "technologies.page.secondBlock.kotlin.title",
+                text: "technologies.page.secondBlock.kotlin.text",
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.bigData.title",
-                text: "technologies.page.secondBlock.bigData.text",
+                title: "technologies.page.secondBlock.typescript.title",
+                text: "technologies.page.secondBlock.typescript.text",
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.machineLearning.title",
-                text: "technologies.page.secondBlock.machineLearning.text",
+                title: "technologies.page.secondBlock.typescript.title",
+                text: "technologies.page.secondBlock.typescript.text",
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.uxUi.title",
-                text: "technologies.page.secondBlock.uxUi.text",
+                title: "technologies.page.secondBlock.aws.title",
+                text: "technologies.page.secondBlock.aws.text",
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.testAutomation.title",
-                text: "technologies.page.secondBlock.testAutomation.text",
+                title: "technologies.page.secondBlock.googlecloud.title",
+                text: "technologies.page.secondBlock.googlecloud.text",
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.agileMethodology.title",
-                text: "technologies.page.secondBlock.agileMethodology.text",
+                title: "technologies.page.secondBlock.azure.title",
+                text: "technologies.page.secondBlock.azure.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.openshift.title",
+                text: "technologies.page.secondBlock.openshift.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.webapi.title",
+                text: "technologies.page.secondBlock.webapi.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.akka.title",
+                text: "technologies.page.secondBlock.akka.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.esb.title",
+                text: "technologies.page.secondBlock.esb.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.jwt.title",
+                text: "technologies.page.secondBlock.jwt.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.gitlab.title",
+                text: "technologies.page.secondBlock.gitlab.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.cloudbees.title",
+                text: "technologies.page.secondBlock.cloudbees.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.jenkins.title",
+                text: "technologies.page.secondBlock.jenkins.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.playframework.title",
+                text: "technologies.page.secondBlock.playframework.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.spring.title",
+                text: "technologies.page.secondBlock.spring.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.quarkus.title",
+                text: "technologies.page.secondBlock.quarkus.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.jakartaee.title",
+                text: "technologies.page.secondBlock.jakartaee.text",
                 image: shieldIcon
             }
-        ],
+           
+        ]
     }
 ]
 

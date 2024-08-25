@@ -18,10 +18,6 @@
 }
 .col-lg-4 {
     grid-column: span 4;
-    &:last-child {
-        grid-column-start: 5;
-        grid-column-end: 9;
-    }
     @include phone-landscape {grid-column: span 12;}
 }
 @include tablet {

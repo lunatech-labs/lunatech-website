@@ -127,10 +127,6 @@
             "legacyModernisation": {
                 "title": "Legacy Modernisation",
                 "text": "We modernise legacy systems to make them more secure, agile and efficient."
-            },
-            "technicalExpertise": {
-                "title": "Technical Expertise",
-                "text": "We provide a wide range of technical expertises to help you meet your needs."
             }
         }
     },
@@ -185,9 +181,9 @@
         "title2": "to meet your requirements",
         "title3": "at the service of your product",
         "category1": "Business Sectors",
-        "category2": "Technical Expertises",
+        "category2": "Our technologies",
         "carouselTitle": "Browse our ",
-        "carouselTitleImp": "tech services",
+        "carouselTitleImp": "technologies",
         "carouselText": "With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.",
         "page": {
             "firstBlock": {
@@ -209,41 +205,101 @@
                 }
             },
             "secondBlock": {
-                "devops": {
-                    "title": "Devops",
-                    "text": "We automate deployments and manage your software end to end, ensuring the quality you expect the entire way."
-                },
-                "scala": {
+                "scala" : {
                     "title": "Scala",
-                    "text": "We are Scala experts and have been working with Scala and related technologies for years. We’re also active in the Scala open-source community."
+                    "text": "Scala’s blend of functional and object-oriented programming makes it ideal for developing complex, high-performance applications. Lunatech’s expertise in Scala ensures that we can deliver software solutions that are both powerful and maintainable, supporting your long-term business objectives."
                 },
-                "java": {
+                "java" : {
                     "title": "Java",
-                    "text": "We are Java experts and have been working with it for decades. We’ve been an active part of the Java open source-community for years."
+                    "text": "Java is a foundational language for enterprise-level software development. At Lunatech, we use Java to build robust, scalable, and secure applications that can be deployed across various platforms. Our deep expertise in Java allows us to deliver solutions that meet your business’s most demanding requirements."
                 },
-                "frontend": {
-                    "title": "Frontend",
-                    "text": "Providing visualisation and interaction is key to performing systems. We build custom dashboards, websites and responsive web applications to get insights into the large systems you run."
+                "kotlin" : {
+                    "title": "Kotlin",
+                    "text": "Kotlin is a modern programming language that offers enhanced productivity, safety, and interoperability with Java. We use Kotlin to develop backend services, and full-stack solutions, providing you with modern, efficient, and high-quality software."
                 },
-                "bigData": {
-                    "title": "Big Data",
-                    "text": "We’re experts in handling large amounts of data. From processing, to storage and beyond."
+                "typescript" : {
+                    "title": "Typescript",
+                    "text": "technologies.page.secondBlock.typescript.text"
                 },
-                "machineLearning": {
-                    "title": "Machine Learning",
-                    "text": "We design and implement intelligent systems that learn and improve over time."
+                "aws" : {
+                    "title": "AWS",
+                    "text": "AWS is a comprehensive and widely adopted cloud platform that offers over 200 fully-featured services from data centers globally. We use AWS to build scalable, secure, and resilient applications that can handle your business's most demanding workloads. Our expertise ensures that your cloud infrastructure is optimized for performance, cost-efficiency, and security."
                 },
-                "uxUi": {
-                    "title": "UX / UI",
-                    "text": "We design intuitive and attractive user interfaces for the applications we build."
+                "googlecloud" : {
+                    "title": "Google Cloud",
+                    "text": "Google Cloud provides powerful tools for data analytics, machine learning, and application deployment. Lunatech leverages these capabilities to create high-performance solutions that enable data-driven decision-making and foster innovation within your organization. Our deep knowledge of Google Cloud services ensures seamless integration with your existing infrastructure and operations."
                 },
-                "testAutomation": {
-                    "title": "Test Automation",
-                    "text": "From designing to automating your test scenarios we make sure your applications are covered and performant, automating as much as possible."
+                "azure" : {
+                    "title": "Azure",
+                    "text": "As a leading cloud platform, Azure offers a broad range of services to support application development, data storage, and AI-driven insights. Our proficiency in Azure allows us to deliver tailored cloud solutions that enhance productivity, drive digital transformation, and scale with your business. We ensure that your applications are efficiently deployed and managed in the Azure environment, providing a robust foundation for your digital initiatives."
                 },
-                "agileMethodology": {
-                    "title": "Agile Methodology",
-                    "text": "We understand and speak Scrum, SAFe, Agile, etc… We help our customers with their product vision and to be agile with their products"
+                "openshift" : {
+                    "title": "Openshift",
+                    "text": "Red Hat OpenShift is a powerful container orchestration platform based on Kubernetes, enabling the development, deployment, and management of containerized applications. At Lunatech, we use OpenShift to help businesses streamline their development processes, improve application portability, and achieve greater agility in their IT operations. Our expertise ensures that your containerized applications are scalable, secure, and easy to manage."
+                },
+                "api" : {
+                    "title": "Web API",
+                    "text": "technologies.page.secondBlock.webapi.text"
+                },
+                "akka" : {
+                    "title": "Akka",
+                    "text": "technologies.page.secondBlock.akka.text"
+                },
+                "esb" : {
+                    "title": "ESB",
+                    "text": "technologies.page.secondBlock.esb.text"
+                },
+                "jwt" : {
+                    "title": "JWT",
+                    "text": "technologies.page.secondBlock.jwt.text"
+                },
+                "gitlab" : {
+                    "title": "Gitlab",
+                    "text": "technologies.page.secondBlock.gitlab.text"
+                },
+                "cloudbees" : {
+                    "title": "Cloudbees",
+                    "text": "technologies.page.secondBlock.cloudbees.text"
+                },
+                "github" : {
+                    "title": "Github Actions",
+                    "text": "technologies.page.secondBlock.github.text"
+                },
+                "jenkins" : {
+                    "title": "Jenkins",
+                    "text": "technologies.page.secondBlock.jenkins.text"
+                },
+                "playframework" : {
+                    "title": "Play framework!",
+                    "text": "technologies.page.secondBlock.playframework.text"
+                },
+                "spring" : {
+                    "title": "Spring framework",
+                    "text": "technologies.page.secondBlock.spring.text"
+                },
+                "quarkus" : {
+                    "title": "Quarkus",
+                    "text": "technologies.page.secondBlock.quarkus.text"
+                },
+                "jakartaee" : {
+                    "title": "JakartaEE",
+                    "text": "technologies.page.secondBlock.jakartaee.text"
+                },
+                "reactjs" : {
+                    "title": "technologies.page.secondBlock.reactjs.title",
+                    "text": "technologies.page.secondBlock.reactjs.text"
+                },
+                "nextjs" : {
+                    "title": "technologies.page.secondBlock.nextjs.title",
+                    "text": "technologies.page.secondBlock.nextjs.text"
+                },
+                "angularjs" : {
+                    "title": "technologies.page.secondBlock.angularjs.title",
+                    "text": "technologies.page.secondBlock.angularjs.text"
+                },
+                "figma" : {
+                    "title": "technologies.page.secondBlock.figma.title",
+                    "text": "technologies.page.secondBlock.figma.text"
                 }
             }
         }
