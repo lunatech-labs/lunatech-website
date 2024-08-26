@@ -108,6 +108,40 @@ nav.nav-bar--hidden {
     }
 }
 
+/* ------------- OPEN SOURCE BLOCK ------------- */
+.opensource {
+    @include grid;
+    align-items: start;
+    &__img {
+        grid-column: span 5;
+        width: 100%;
+        @include desktop {grid-column: span 4;}
+        @include tablet {grid-column: span 12;}
+    }
+    &__content {
+        grid-column: 6 / 13;
+        @include desktop {grid-column: span 8;}
+        @include tablet {grid-column: span 12;}
+    }
+    &__partners {
+      text-align: justify;
+      li {
+        margin: 20px;
+        }
+        em {
+            font-weight: bold;
+        }
+    }
+    &__content2 {
+        grid-column: 1 / 13;
+    }
+    li {
+        margin: 20px;
+    }
+    em {
+        font-weight: bold;
+    }
+}
 /* ------------- CONTACT BLOCK ------------- */
 .contact {
     @include flexbox;
