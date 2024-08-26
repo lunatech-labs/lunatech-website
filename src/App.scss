@@ -118,6 +118,14 @@ nav.nav-bar--hidden {
     }
 }
 
+/* ------------- PROJECT DELIVERY BLOCK ------------- */
+.expertiseSoftwareProjectDelivery {
+    h3, h4 {
+        margin-top: 20pt;
+        color: $pink;
+    }
+}
+
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {
     @include grid;

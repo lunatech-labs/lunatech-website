@@ -360,11 +360,6 @@
         "titleImp": "Software ",
         "text": "A Software Defined Vehicle is any vehicle that manages its operations, adds functionality and enables new features primarily or entirely through software. Software Defined Vehicles are the next evolution of the automotive industry. Lunatech has been involved with Software Defined Vehicle since 2016 while the term did not exist yet. Lunatech, together with large automobile manufacturers has been involved in processing car data at a large scale and providing services for those vehicles. Lunatech specialises in cloud middleware and processing data for software-defined vehicles."
     },
-    "expertiseSoftwareProjectDelivery": {
-        "title": "Project Delivery ",
-        "titleImp": "Software",
-        "text": "Lunatech specializes in custom software development, offering tailored solutions to meet the specific needs of businesses and individuals. Their services encompass requirement analysis, design, development, testing, UX design, integration, deployment, training, maintenance, scalability, security, and managing cost and time considerations. This approach allows for addressing unique challenges and opportunities, ensuring that the software is efficient, secure and scalable while requiring careful planning and skilled teams for successful implementation."
-    },
     "expertiseSystemIntegration": {
         "title": "System ",
         "titleImp": "Integration",
@@ -450,6 +445,67 @@
         "conclusion" : {
             "title" : "Transform Your Vehicles with Lunatech",
             "text" : "As the automotive industry shifts towards software-defined vehicles, having the right backend systems is crucial for success. Lunatech is your trusted partner in this transformation, offering advanced backend solutions that power the next generation of connected, autonomous, and intelligent vehicles. Contact us today to learn more about how we can help you build and manage the backend systems that drive your SDV initiatives."
+        }
+    },
+ 
+    "expertiseSoftwareProjectDelivery": {
+        "title": "Project Delivery ",
+        "titleImp": "Software",
+        "title2" : "Tailored Solutions for Your Unique Business Needs",
+        "description" : "At Lunatech, we understand that every business is unique, with its own set of challenges and goals. Off-the-shelf software solutions often fall short of meeting specific business requirements, which is why we specialize in custom software development. Our team of experienced developers works closely with you to create software solutions that are precisely tailored to your needs, ensuring that your business can operate more efficiently, innovate faster, and achieve its strategic objectives.",
+        "title3": "Our Custom Software Development Services",
+        "paragraphes[0]" : {
+            "title" : "End-to-End Development",
+            "text": "We offer comprehensive software development services that cover the entire project lifecycle. From initial consultation and requirements gathering to design, development, testing, and deployment, we manage every aspect of the development process. This end-to-end approach ensures that your software solution is delivered on time, within budget, and to the highest quality standards."
+        },
+        "paragraphes[1]" : {
+            "title" : "Business Analysis and Requirements Gathering",
+            "text": "Whether you need a customer-facing web application, an internal business tool, or a complex enterprise system, our team has the expertise to deliver. We build web applications that are secure, scalable, and tailored to your specific use case. Our developers are skilled in the latest web technologies and frameworks, ensuring that your application is modern, responsive, and easy to maintain."
+        },
+        "paragraphes[2]" : {
+            "title" : "Custom Web Applications",
+            "text": "To manage the complexity of SDV backend systems, Lunatech employs a microservices architecture. This approach allows us to develop and deploy individual components independently, making the system more flexible, scalable, and easier to maintain. Our microservices-based backend systems enable faster development cycles, easier updates, and better fault isolation, ensuring that your SDV systems remain agile and resilient."
+        },
+        "paragraphes[3]" : {
+            "title" : "Legacy System Modernization",
+            "text": "If you’re dealing with outdated legacy systems that are holding your business back, Lunatech can help. We specialize in modernizing legacy applications, making them more efficient, secure, and compatible with today’s technology standards. Our modernization services include re-engineering legacy systems, migrating data, and updating user interfaces to create a more intuitive and powerful solution"
+        },
+        "paragraphes[4]" : {
+            "title" : "Integration with Existing Systems",
+            "text": "A new software solution must work harmoniously with your existing IT infrastructure. Lunatech ensures seamless integration of new applications with your current systems, databases, and third-party services. Our integration expertise allows us to create solutions that enhance your business processes without disrupting your operations."
+        },
+        "paragraphes[5]" : {
+            "title" : "Agile Development and Continuous Delivery",
+            "text": "At Lunatech, we follow agile development methodologies, allowing us to be flexible and responsive to your changing needs throughout the development process. We prioritize frequent communication and iteration, ensuring that the final product aligns perfectly with your vision. Our continuous delivery approach means that new features and updates can be deployed rapidly, keeping your software current and competitive."        
+        },
+        "paragraphes[6]" : {
+            "title" : "Rigorous Testing and Quality Assurance",
+            "text": "Quality is at the core of everything we do. Our dedicated QA team rigorously tests your software throughout the development process to identify and resolve any issues before launch. This includes functional testing, performance testing, security testing, and user acceptance testing (UAT), ensuring that your software is reliable, secure, and ready for deployment."        
+        },
+        "paragraphes[7]" : {
+            "title" : "Post-Launch Support and Maintenance",
+            "text": "Our commitment to your success doesn’t end with the deployment of your software. Lunatech provides ongoing support and maintenance services to ensure your application continues to operate smoothly and security patches are applied continuously. We offer a range of support options, from troubleshooting and bug fixes to regular updates and enhancements, helping you keep your software in peak condition."
+        },
+        "title4": "Why Choose Lunatech for Custom Software Development?",
+        "paragraphes[8]" : {
+            "title" : "Deep Technical Expertise",
+            "text": "Our team consists of seasoned developers with extensive experience across a wide range of technologies, ensuring that we can deliver high-quality solutions tailored to your specific needs."
+        },
+        "paragraphes[9]" : {
+            "title" : "Client-Centered Approach",
+            "text": "We place a strong emphasis on collaboration and communication, working closely with you at every stage of the project to ensure that the final product exceeds your expectations."        
+        },
+        "paragraphes[10]" : {
+            "title" : "Proven Track Record",
+            "text": "With years of experience delivering successful projects across various industries, Lunatech has a proven track record of helping businesses achieve their goals through custom software solutions."
+        },
+        "paragraphes[11]" : {
+            "title" : "Scalable Solutions",
+            "text": "We build software that grows with your business, ensuring that your solution remains relevant and effective as your needs evolve over time."        
+        },
+        "paragraphes[12]" : {
+            "title" : "Commitment to Quality",
+            "text": " From the initial concept to post-launch support, we are committed to delivering software that is reliable, secure, and of the highest quality." 
         }
     },
 
