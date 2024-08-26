@@ -471,11 +471,6 @@ export const technologiesPage = [
                 image: shieldIcon
             },
             {
-                title: "technologies.page.secondBlock.typescript.title",
-                text: "technologies.page.secondBlock.typescript.text",
-                image: shieldIcon
-            },
-            {
                 title: "technologies.page.secondBlock.aws.title",
                 text: "technologies.page.secondBlock.aws.text",
                 image: shieldIcon
@@ -549,8 +544,27 @@ export const technologiesPage = [
                 title: "technologies.page.secondBlock.jakartaee.title",
                 text: "technologies.page.secondBlock.jakartaee.text",
                 image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.reactjs.title",
+                text: "technologies.page.secondBlock.reactjs.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.nextjs.title",
+                text: "technologies.page.secondBlock.nextjs.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.angularjs.title",
+                text: "technologies.page.secondBlock.angularjs.text",
+                image: shieldIcon
+            },
+            {
+                title: "technologies.page.secondBlock.figma.title",
+                text: "technologies.page.secondBlock.figma.text",
+                image: shieldIcon
             }
-           
         ]
     }
 ]

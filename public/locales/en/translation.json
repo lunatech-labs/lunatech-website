@@ -220,7 +220,7 @@
                 },
                 "typescript" : {
                     "title": "Typescript",
-                    "text": "technologies.page.secondBlock.typescript.text"
+                    "text": "TypeScript is a statically typed superset of JavaScript that adds optional types, enabling error detection at compile time. Developed by Microsoft, it enhances JavaScript with strong typing, classes, and interfaces, making it ideal for building large, maintainable applications. TypeScript compiles to JavaScript, ensuring compatibility with existing code and modern browsers."
                 },
                 "aws" : {
                     "title": "AWS",
@@ -238,69 +238,69 @@
                     "title": "Openshift",
                     "text": "Red Hat OpenShift is a powerful container orchestration platform based on Kubernetes, enabling the development, deployment, and management of containerized applications. At Lunatech, we use OpenShift to help businesses streamline their development processes, improve application portability, and achieve greater agility in their IT operations. Our expertise ensures that your containerized applications are scalable, secure, and easy to manage."
                 },
-                "api" : {
+                "webapi" : {
                     "title": "Web API",
-                    "text": "technologies.page.secondBlock.webapi.text"
+                    "text": "A Web API (Application Programming Interface) enables software applications to communicate over the internet using HTTP requests. It allows developers to access and interact with a web service's functionality or data, facilitating system integration and enabling client-side applications to use server-side resources."
                 },
                 "akka" : {
-                    "title": "Akka",
-                    "text": "technologies.page.secondBlock.akka.text"
+                    "title": "Akka/Pekko",
+                    "text": "Akka is a powerful toolkit for building highly concurrent, distributed, and resilient systems. At Lunatech, we use Akka to develop applications that can handle large volumes of data and high levels of concurrency while maintaining responsiveness and reliability. This is particularly useful for building real-time applications and microservices architectures."
                 },
                 "esb" : {
                     "title": "ESB",
-                    "text": "technologies.page.secondBlock.esb.text"
+                    "text": "ESBs centralize and streamline communication between various enterprise systems, reducing the complexity of integration. Lunatech implements ESB solutions to facilitate the integration of disparate systems, ensuring that your business processes are efficient, flexible, and scalable. Our expertise in ESBs allows us to create a unified IT environment that supports your business goals."
                 },
                 "jwt" : {
                     "title": "JWT",
-                    "text": "technologies.page.secondBlock.jwt.text"
+                    "text": "JWT (JSON Web Token) is a compact, secure token format used for transmitting information between parties, often for authentication and authorization in web apps. It contains user data in a JSON object, is signed for integrity, and allows servers to verify identity without storing session data."
                 },
                 "gitlab" : {
                     "title": "Gitlab",
-                    "text": "technologies.page.secondBlock.gitlab.text"
+                    "text": "GitLab is a web-based DevOps platform offering tools for version control, CI/CD, and project management. It allows teams to collaborate on code, automate testing and deployment, and manage projects in one place, supporting both public and private repositories."
                 },
                 "cloudbees" : {
                     "title": "Cloudbees",
-                    "text": "technologies.page.secondBlock.cloudbees.text"
+                    "text": "CloudBees is an enterprise software platform focused on automating and optimizing software delivery through continuous integration/continuous deployment (CI/CD). Built on Jenkins, it provides advanced tools for managing, scaling, and securing the CI/CD pipeline, making it ideal for large organizations looking to streamline and accelerate their software development processes."
                 },
                 "github" : {
                     "title": "Github Actions",
-                    "text": "technologies.page.secondBlock.github.text"
+                    "text": "GitHub Actions is an automation platform within GitHub that enables CI/CD workflows. It allows developers to automate tasks like testing and deployment directly from their repositories using YAML-defined workflows triggered by events such as commits or pull requests."
                 },
                 "jenkins" : {
                     "title": "Jenkins",
-                    "text": "technologies.page.secondBlock.jenkins.text"
+                    "text": "Jenkins is an open-source automation server that facilitates continuous integration and continuous delivery (CI/CD). It enables developers to automate the building, testing, and deployment of software by managing and running automated workflows, helping streamline the development process and improve code quality."
                 },
                 "playframework" : {
                     "title": "Play framework!",
-                    "text": "technologies.page.secondBlock.playframework.text"
+                    "text": "Play Framework is an open-source web application framework for Java and Scala that simplifies the development of scalable and reactive web applications. It provides built-in support for asynchronous programming, RESTful APIs, and a reactive model, allowing developers to build high-performance, modern web applications with ease."
                 },
                 "spring" : {
                     "title": "Spring framework",
-                    "text": "technologies.page.secondBlock.spring.text"
+                    "text": "Spring Framework is an open-source framework for building enterprise-level Java applications. It provides comprehensive infrastructure support for developing robust, scalable applications through features like dependency injection, aspect-oriented programming, and transaction management. Spring simplifies application development and enhances modularity by offering a flexible, lightweight container and a suite of tools for web, data, and messaging services."
                 },
                 "quarkus" : {
                     "title": "Quarkus",
-                    "text": "technologies.page.secondBlock.quarkus.text"
+                    "text": "Quarkus is a Kubernetes-native Java framework designed for building efficient, high-performance microservices and cloud-native applications. It optimizes Java for containerized environments by providing fast startup times, low memory usage, and seamless integration with popular tools and technologies, making it ideal for modern, scalable, and reactive applications in cloud environments."
                 },
                 "jakartaee" : {
                     "title": "JakartaEE",
-                    "text": "technologies.page.secondBlock.jakartaee.text"
+                    "text": "Jakarta EE (formerly Java EE) is a set of specifications for enterprise Java development, providing a robust, scalable framework for building multi-tiered, distributed applications. It includes APIs for web services, dependency injection, persistence, and more, enabling developers to create reliable, portable, and high-performance applications across various environments. Jakarta EE aims to streamline enterprise development by offering standardized, modular components that integrate seamlessly with each other."
                 },
                 "reactjs" : {
-                    "title": "technologies.page.secondBlock.reactjs.title",
-                    "text": "technologies.page.secondBlock.reactjs.text"
+                    "title": "ReactJS",
+                    "text": "ReactJS is a popular open-source JavaScript library for building user interfaces, particularly single-page applications. Developed by Facebook, it allows developers to create reusable UI components and manage the state of web applications efficiently. React’s virtual DOM and component-based architecture enhance performance and facilitate the development of dynamic, interactive user experiences."
                 },
                 "nextjs" : {
-                    "title": "technologies.page.secondBlock.nextjs.title",
-                    "text": "technologies.page.secondBlock.nextjs.text"
+                    "title": "NextJS",
+                    "text": "Next.js is a popular open-source framework for React that enables server-side rendering and static site generation, improving performance and SEO for web applications. It simplifies the development of React-based applications by providing features like automatic code splitting, optimized performance, and built-in routing. Next.js allows developers to build scalable, high-performance web applications with minimal configuration."
                 },
                 "angularjs" : {
-                    "title": "technologies.page.secondBlock.angularjs.title",
-                    "text": "technologies.page.secondBlock.angularjs.text"
+                    "title": "AngularJS",
+                    "text": "AngularJS is a JavaScript framework developed by Google for building dynamic, single-page web applications. It provides features like two-way data binding, dependency injection, and directives to simplify the development of complex, data-driven interfaces. AngularJS enables developers to create modular, maintainable code and facilitates the development of rich, interactive user experiences."
                 },
                 "figma" : {
-                    "title": "technologies.page.secondBlock.figma.title",
-                    "text": "technologies.page.secondBlock.figma.text"
+                    "title": "Figma",
+                    "text": "Figma is a cloud-based design tool used for creating user interfaces, prototypes, and design systems. It offers real-time collaboration, allowing multiple users to work on the same design simultaneously. Figma's vector-based design capabilities, along with features like interactive prototyping and design systems, make it a popular choice for UI/UX design, enabling teams to streamline their design workflows and enhance collaboration."
                 }
             }
         }
