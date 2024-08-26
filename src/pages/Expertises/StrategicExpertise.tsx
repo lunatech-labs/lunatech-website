@@ -44,9 +44,8 @@ const ExpertiseStrategicExpertise = () => {
                 </Container>
               
                 <Container>
-                
+                    <Title level={2}><Trans i18nKey="expertiseStrategicExpertise.title2" /></Title>
                     <Grid className="mgt64 ai-c">
-                    
                        <div className="col-lg-6 col-md-12">
                             {expertisesPage[0].firstBlock.advices.map((advice, index) => (
                                 <Collapse key={index} title={t(advice.title)} text={<span>{t(advice.text)}</span>} />

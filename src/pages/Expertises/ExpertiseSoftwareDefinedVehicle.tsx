@@ -1,4 +1,4 @@
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import Section from "@components/Section/Section";
 import Container from "@components/Container/Container";
@@ -9,11 +9,12 @@ import Title from '@components/Title/Title';
 import Address from '@components/Address/Address';
 import Text from '@components/Text/Text';
 import HeaderPage from '@/components/HeaderPage/HeaderPage';
-import { aboutUsIllustration } from '@/assets';
 
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import { softwareDefinedVehicule } from '@/constants';
 
 const ExpertiseSoftwareDefinedVehicle = () => {
+    const { t } = useTranslation();
     return (
         <>
             <Section className="pdt256">
@@ -21,20 +22,63 @@ const ExpertiseSoftwareDefinedVehicle = () => {
                     <HeaderPage>
                         <Breadcrumbs />
                         <Title level={1}><span><Trans i18nKey="expertiseSoftwareDefinedVehicle.titleImp" /></span><Trans i18nKey="expertiseSoftwareDefinedVehicle.title" /></Title>
+
+                        <Title level={2}><Trans i18nKey="softwareDefinedVehicule.title" /></Title>
+                        <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.description" /></Text>
+              
                     </HeaderPage>
                 </Container>
             </Section>
 
-            <Section className="bg-bgMediumBlue">
+            <Section className="softwareDefinedVehicule">
                 <Container>
-                    <Grid>
-                        <div className="col-lg-6">
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSoftwareDefinedVehicle.text" /></Text>
+                    <Title level={2}><Trans i18nKey="softwareDefinedVehicule.title2" /></Title>
+                       
+                    <div className="col-lg-6 col-md-12">
+        
+                            {
+                                softwareDefinedVehicule.paragraphes.map(
+                                    (p, index) => (
+                                        <div>
+                                            <Title level={3}>{t(p.title)}</Title>
+                                            <Text size="medium" className="mgt24">{t(p.text)}</Text>
+                                
+                                        </div>
+                                    )
+                                )
+                            }
+                            
                         </div>
-                        <img className="about__img" src={aboutUsIllustration} alt="Building" />
-                    </Grid>
                 </Container>
             </Section>
+            <Container><BorderEffect /></Container>
+
+            <Section className="bg-bgMediumBlue softwareDefinedVehicule">
+                <Container>
+                    <Title level={2}><Trans i18nKey="softwareDefinedVehicule.advantages.title" /></Title>
+                   
+                    <div className="col-lg-6 col-md-12">
+        
+                            {
+                                softwareDefinedVehicule.advantages.paragraphes.map(
+                                    (p, index) => (
+                                        <div>
+                                            <Title level={3}>{t(p.title)}</Title>
+                                            <Text size="medium" className="mgt24">{t(p.text)}</Text>
+                                
+                                        </div>
+                                    )
+                                )
+                            }
+                            
+                        </div>
+                </Container>
+                <Container>
+                    <Title level={2}><Trans i18nKey="softwareDefinedVehicule.conclusion.title" /></Title>
+                    <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.conclusion.text" /></Text>
+                </Container>
+            </Section>
+
 
             <Container><BorderEffect /></Container>
 

@@ -405,6 +405,61 @@ export const expertiseStrategicExpertise = {
     ]
 }
 
+export const softwareDefinedVehicule = {
+    "title" : "softwareDefinedVehicule.title",
+    "description" : "softwareDefinedVehicule.description",
+    "title2" : "softwareDefinedVehicule.title2",
+    "paragraphes" : [{
+        "title" : "softwareDefinedVehicule.paragraphes[0].title",
+        "text": "softwareDefinedVehicule.paragraphes[0].text"
+    },
+    {
+        "title" : "softwareDefinedVehicule.paragraphes[1].title",
+        "text" : "softwareDefinedVehicule.paragraphes[1].text"    
+    },
+    {
+        "title" : "softwareDefinedVehicule.paragraphes[2].title",
+        "text" : "softwareDefinedVehicule.paragraphes[2].text"    
+    },
+    {
+        "title" : "softwareDefinedVehicule.paragraphes[3].title",
+        "text" : "softwareDefinedVehicule.paragraphes[3].text"    
+    },
+    {
+        "title" : "softwareDefinedVehicule.paragraphes[4].title",
+        "text" : "softwareDefinedVehicule.paragraphes[4].text"    
+    }
+    ],
+    "advantages" : {
+        "title" : "softwareDefinedVehicule.advantages.title",
+        "paragraphes" : [{
+            "title" : "softwareDefinedVehicule.advantages.paragraphes[0].title",
+            "text": "softwareDefinedVehicule.advantages.paragraphes[0].text"
+        },
+        {
+            "title" : "softwareDefinedVehicule.advantages.paragraphes[1].title",
+            "text": "softwareDefinedVehicule.advantages.paragraphes[1].text"
+        },
+        {
+            "title" : "softwareDefinedVehicule.advantages.paragraphes[2].title",
+            "text": "softwareDefinedVehicule.advantages.paragraphes[2].text"
+        },
+        {
+            "title" : "softwareDefinedVehicule.advantages.paragraphes[3].title",
+            "text": "softwareDefinedVehicule.advantages.paragraphes[3].text"
+        },
+        {
+            "title" : "softwareDefinedVehicule.advantages.paragraphes[4].title",
+            "text": "softwareDefinedVehicule.advantages.paragraphes[4].text"
+        }
+        ]
+    },
+    "conclusion" : {
+        "title" : "softwareDefinedVehicule.conclusion.title",
+        "text" : "softwareDefinedVehicule.conclusion.text"
+    }
+}
+
 export const expertisesPage = [
     {
         title: "expertisesPage.title",

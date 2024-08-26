@@ -92,6 +92,9 @@ nav.nav-bar--hidden {
 }
 /* ------------- STRATEGIC EXPERTISE ---------*/
 .strategy { 
+    h2 {
+        margin: 40pt;
+    }
     h3 {
         margin-top: 20pt;
         color: $pink;
@@ -100,7 +103,7 @@ nav.nav-bar--hidden {
 
 /* ------------- ABOUT US BLOCK ------------- */
 .about {
-    @include grid;
+   
     align-items: start;
     &__img {
         grid-column: span 5;
@@ -117,12 +120,12 @@ nav.nav-bar--hidden {
 
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {
+    @include grid;
+    align-items: start;
     h3 {
         margin-top: 20pt;
         color: $pink;
     }
-    @include grid;
-    align-items: start;
     &__img {
         grid-column: span 5;
         width: 100%;
@@ -157,6 +160,17 @@ nav.nav-bar--hidden {
         font-weight: bold;
     }
 }
+
+/* ------------- SDV BLOCK ------------- */
+.softwareDefinedVehicule {
+    h2,h3 {
+        margin-top: 20pt;
+    }
+    h3 {
+        color: $pink;
+    }
+}
+
 /* ------------- CONTACT BLOCK ------------- */
 .contact {
     @include flexbox;
