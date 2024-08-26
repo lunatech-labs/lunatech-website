@@ -103,7 +103,7 @@ nav.nav-bar--hidden {
 
 /* ------------- ABOUT US BLOCK ------------- */
 .about {
-   
+    @include grid;
     align-items: start;
     &__img {
         grid-column: span 5;
