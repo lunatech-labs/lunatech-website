@@ -16,7 +16,6 @@ import HeaderPage from "@components/HeaderPage/HeaderPage";
 import { officeCard, aboutPage } from '@/constants';
 import ContactBlock from "@/components/ContactBlock/ContactBlock";
 import { aboutUsIllustration, aboutUsIllustration2 } from "@/assets";
-import Timeline from "@/components/Timeline/Timeline";
 
 
 const About = () => {
@@ -82,16 +81,6 @@ const About = () => {
                         <Title level={2}><Trans i18nKey={aboutPage[0].thirdBlock.title} /><span><Trans i18nKey={aboutPage[0].thirdBlock.titleImp} /></span><Trans i18nKey={aboutPage[0].thirdBlock.title2} /></Title>
                     </div>
                     <Vision />
-                </Container>
-            </Section>
-
-            <Section className="bg-bgMediumBlue">
-                <Container>
-                    <div className="mgb128">
-                        <Category content={<Trans i18nKey="about.breadcrumb4" />} />
-                        <Title level={2}><Trans i18nKey={aboutPage[0].fourthBlock.title} /> <span><Trans i18nKey={aboutPage[0].fourthBlock.titleImp} /></span><Trans i18nKey={aboutPage[0].fourthBlock.title2} /></Title>
-                    </div>
-                    <Timeline />
                 </Container>
             </Section>
 

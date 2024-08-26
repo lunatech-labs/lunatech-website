@@ -15,6 +15,7 @@ import {
     googleCloudLogo,
     lightbendLogo,
     redHatLogo,
+    lunatechLogo,
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -316,54 +317,6 @@ export const aboutPage = [
             titleImp: "about.fourthBlock.titleImp",
             title2: "about.fourthBlock.title2"
         },
-    }
-]
-
-export const timeline = [
-    {
-        year: 1980,
-        title: "IBM PC",
-    },
-    {
-        year: 1981,
-        title: "MS DOS Client Apps",
-    },
-    {
-        year: 1982,
-        title: "Windows 3",
-    },
-    {
-        year: 1983,
-        title: "Desktop Apps",
-    },
-    {
-        year: 1988,
-        title: "World Wide Web",
-    },
-    {
-        year: 1990,
-        title: "Lunatech is born",
-        text: "Opening of the first office in Rotterdam",
-        icon: officeIcon,
-        lt: true
-    },
-    {
-        year: 1993,
-        title: "Lunatech is born",
-        text: "Opening of the first office in Paris",
-        icon: officeIcon,
-        lt: true
-    },
-    {
-        year: 1995,
-        title: "Lunatech conf",
-    },
-    {
-        year: 1997,
-        title: "Lunatech is born",
-        text: "Opening of the first office in Amsterdam",
-        icon: officeIcon,
-        lt: true
     }
 ]
 
