@@ -28,7 +28,7 @@ const ExpertiseStrategicExpertise = () => {
                         <div className="col-lg-6 col-md-12">
                             {
                                 expertiseStrategicExpertise.paragraphes.map(
-                                    (p, index) => (
+                                    (p) => (
                                         <div>
                                             <Title level={3}>{t(p.title)}</Title>
                                             <Text size="medium" className="mgt24">{t(p.text1)}</Text>
