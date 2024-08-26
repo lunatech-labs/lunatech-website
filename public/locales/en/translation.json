@@ -360,11 +360,6 @@
         "titleImp": "Software ",
         "text": "A Software Defined Vehicle is any vehicle that manages its operations, adds functionality and enables new features primarily or entirely through software. Software Defined Vehicles are the next evolution of the automotive industry. Lunatech has been involved with Software Defined Vehicle since 2016 while the term did not exist yet. Lunatech, together with large automobile manufacturers has been involved in processing car data at a large scale and providing services for those vehicles. Lunatech specialises in cloud middleware and processing data for software-defined vehicles."
     },
-    "expertiseSystemIntegration": {
-        "title": "System ",
-        "titleImp": "Integration",
-        "text": "Lunatech excels in system integration, enhancing organizational IT by connecting disparate systems to improve efficiency and technology utilization. Utilizing Web APIs, middleware, and cloud solutions, they focus on security, compliance, and integrating legacy and new technologies. This approach makes IT environments more sustainable, agile, and cost-effective, driving better decision-making and customer experiences."
-    },
     "expertiseLegacyModernisation": {
         "title": "Legacy ",
         "titleImp": "Systems Modernisation",
@@ -447,7 +442,66 @@
             "text" : "As the automotive industry shifts towards software-defined vehicles, having the right backend systems is crucial for success. Lunatech is your trusted partner in this transformation, offering advanced backend solutions that power the next generation of connected, autonomous, and intelligent vehicles. Contact us today to learn more about how we can help you build and manage the backend systems that drive your SDV initiatives."
         }
     },
- 
+    "expertiseSystemIntegration": {
+        "title": "System ",
+        "titleImp": "Integration",
+        "title2": "Seamless Integration for a Cohesive IT Environment",
+        "description" : "In today’s rapidly evolving digital landscape, businesses often rely on a complex mix of applications, systems, and platforms to support their operations. However, managing these disparate systems can lead to inefficiencies, data silos, and operational bottlenecks. Lunatech’s System Integration services are designed to overcome these challenges by connecting and streamlining your IT environment, enabling seamless data flow and efficient business processes.",
+        "title3": "Our System Integration Capabilities",
+        "paragraphes[0]" : {
+            "title" : "End-to-End Development",
+            "text": "We offer comprehensive software development services that cover the entire project lifecycle. From initial consultation and requirements gathering to design, development, testing, and deployment, we manage every aspect of the development process. This end-to-end approach ensures that your software solution is delivered on time, within budget, and to the highest quality standards."
+        },
+        "paragraphes[1]" : {
+            "title" : "Comprehensive API Integration",
+            "text": "APIs (Application Programming Interfaces) are the backbone of modern system integration, enabling different software applications to communicate and share data. Lunatech specializes in designing and implementing robust API integrations that connect your various applications, databases, and services. Whether it’s integrating third-party services or building custom APIs for internal systems, our team ensures that your IT environment operates as a unified whole."       
+        },
+        "paragraphes[2]" : {
+            "title" : "Middleware Solutions",
+            "text": "Middleware acts as a bridge between different systems, allowing them to communicate and work together effectively. Lunatech provides middleware solutions that facilitate the integration of complex systems, enabling you to connect legacy systems with modern applications, streamline data exchange, and enhance overall system performance. Our middleware expertise ensures that your integrated systems are scalable, reliable, and easy to manage."
+        },
+        "paragraphes[3]" : {
+            "title" : "Enterprise Service Bus (ESB) Implementation",
+            "text": "For organizations with a large number of interconnected systems, an Enterprise Service Bus (ESB) can provide a centralized integration platform. Lunatech offers ESB implementation services that help you manage and orchestrate interactions between different applications and services across your enterprise. Our ESB solutions enable real-time data exchange, reduce redundancy, and improve the agility of your IT infrastructure"        
+        },
+        "paragraphes[4]" : {
+            "title" : "Akka (or Pekko) for Distributed Systems",
+            "text": "When it comes to integrating distributed systems that require high scalability and fault tolerance, Lunatech leverages Akka (or Pekko), a powerful toolkit and runtime for building concurrent, distributed, and resilient message-driven applications. Akka( or Pekko) enables us to create systems that can handle a large number of transactions and users, ensuring that your business processes run smoothly even under heavy loads."
+        },
+        "paragraphes[5]" : {
+            "title" : "Data Integration and Management",
+            "text": "Effective system integration requires seamless data exchange between different applications and systems. Lunatech offers comprehensive data integration services, including data migration, data transformation, and data synchronization. We ensure that your data is accurate, consistent, and accessible across all integrated systems, supporting better decision-making and enhanced business intelligence."  
+        },
+        "paragraphes[6]" : {
+            "title" : "Legacy System Integration",
+            "text": "Integrating legacy systems with modern applications can be challenging, but it’s essential for maintaining operational continuity while embracing new technologies. Lunatech specializes in legacy system integration, enabling your existing systems to communicate with new platforms and applications. Our solutions extend the life of your legacy systems while ensuring they work in harmony with modern technologies."      
+        },
+        "paragraphes[7]" : {
+            "title" : "Cloud Integration Services",
+            "text": "As more businesses move to the cloud, integrating cloud-based applications and services with on-premises systems becomes crucial. Lunatech provides cloud integration services that connect your cloud applications with existing IT infrastructure, ensuring a seamless hybrid environment. Our expertise in cloud platforms such as AWS, Google Cloud, Microsoft Azure, and Red Hat OpenShift ensures that your cloud integration is secure, scalable, and efficient."
+        },
+        "title4": "The Benefits of System Integration",
+        "paragraphes[8]" : {
+            "title" : "Increased Efficiency",
+            "text": "By integrating your systems, you can automate workflows, reduce manual processes, and eliminate data silos, leading to more efficient operations."
+        },
+        "paragraphes[9]" : {
+            "title" : "Enhanced Data Accuracy:",
+            "text": "Integrated systems provide real-time data exchange, ensuring that your business has access to accurate and up-to-date information across all platforms."
+        },
+        "paragraphes[10]" : {
+            "title" : "Improved Decision-Making",
+            "text": "With a unified view of your data, your organization can make more informed decisions, driving better business outcomes."
+        },
+        "paragraphes[11]" : {
+            "title" : "Scalability",
+            "text": "Lunatech’s integration solutions are designed to scale with your business, allowing you to add new systems and applications as your needs evolve."
+        },
+        "paragraphes[12]" : {
+            "title" : "Cost Savings",
+            "text": "By integrating your systems, you can reduce the need for redundant software and hardware, leading to significant cost savings over time."        
+        }
+    },
     "expertiseSoftwareProjectDelivery": {
         "title": "Project Delivery ",
         "titleImp": "Software",
