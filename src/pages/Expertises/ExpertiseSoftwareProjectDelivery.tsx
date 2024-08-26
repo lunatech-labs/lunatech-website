@@ -22,7 +22,7 @@ const ExpertiseProjectDelivery = () => {
                         <Breadcrumbs />
                         <Title level={1}><Trans i18nKey="expertiseSoftwareProjectDelivery.title" /><span><Trans i18nKey="expertiseSoftwareProjectDelivery.titleImp" /></span></Title>
                         <Title level={2}><Trans i18nKey="expertiseSoftwareProjectDelivery.title2" /></Title>
-                        <Text size="large" className="mgt24"><Trans i18nKey="expertiseSoftwareProjectDelivery.description" /></Text>
+                        <Text size="large" className="mgt32"><Trans i18nKey="expertiseSoftwareProjectDelivery.description" /></Text>
                     </HeaderPage>
                 </Container>
             </Section>
