@@ -1,5 +1,4 @@
 import { Trans } from "react-i18next";
-
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Container from '@components/Container/Container';
 import Title from '@components/Title/Title';
@@ -39,7 +38,8 @@ const About = () => {
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.breadcrumb" />} />
                             <Title level={2}><Trans i18nKey={aboutPage[0].firstBlock.title} /> <span>Europe</span></Title>
-                            <Text size="large" className="mgb32">{<Trans i18nKey={aboutPage[0].firstBlock.desc} />}</Text>
+                            <Text size="large" className="mgb32">
+                                {<Trans i18nKey={aboutPage[0].firstBlock.desc} />}</Text>
                             <div className="mgt64">
                                 <Spotlight className="spotlight__layout grid-8">
                                     {officeCard.map((office, index) => (

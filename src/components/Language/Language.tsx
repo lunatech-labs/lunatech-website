@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../i18n';
-import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
+//import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 import "./Language.scss";
@@ -10,7 +10,6 @@ interface LanguageProps {
 }
 
 const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
-    const { i18n } = useTranslation();
     const navigate = useNavigate();
 
     const isActiveLanguage = (lng: string) => {

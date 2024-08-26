@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
 import { contactInfos } from '@/constants';
-import '../../i18n';
 
 import "./Address.scss";
 

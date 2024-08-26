@@ -8,9 +8,9 @@ interface TextProps {
 
 const Text = (props: TextProps) => {
     return (
-        <p className={`text-${props.size} ${props.className}`}>
+        <div className={`text-${props.size} ${props.className}`}>
             {props.children}
-        </p>
+        </div>
     );
 };
 
