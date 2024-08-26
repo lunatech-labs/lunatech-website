@@ -430,34 +430,35 @@ export const softwareDefinedVehicule = {
         "text" : "softwareDefinedVehicule.paragraphes[4].text"    
     }
     ],
-    "advantages" : {
-        "title" : "softwareDefinedVehicule.advantages.title",
-        "paragraphes" : [{
-            "title" : "softwareDefinedVehicule.advantages.paragraphes[0].title",
-            "text": "softwareDefinedVehicule.advantages.paragraphes[0].text"
-        },
-        {
-            "title" : "softwareDefinedVehicule.advantages.paragraphes[1].title",
-            "text": "softwareDefinedVehicule.advantages.paragraphes[1].text"
-        },
-        {
-            "title" : "softwareDefinedVehicule.advantages.paragraphes[2].title",
-            "text": "softwareDefinedVehicule.advantages.paragraphes[2].text"
-        },
-        {
-            "title" : "softwareDefinedVehicule.advantages.paragraphes[3].title",
-            "text": "softwareDefinedVehicule.advantages.paragraphes[3].text"
-        },
-        {
-            "title" : "softwareDefinedVehicule.advantages.paragraphes[4].title",
-            "text": "softwareDefinedVehicule.advantages.paragraphes[4].text"
-        }
-        ]
-    },
     "conclusion" : {
         "title" : "softwareDefinedVehicule.conclusion.title",
         "text" : "softwareDefinedVehicule.conclusion.text"
     }
+}
+
+export const advantages = {
+    "title" : "advantages.title",
+    "paragraphes" : [{
+        "title" : "advantages.paragraphes[0].title",
+        "text": "advantages.paragraphes[0].text"
+    },
+    {
+        "title" : "advantages.paragraphes[1].title",
+        "text": "advantages.paragraphes[1].text"
+    },
+    {
+        "title" : "advantages.paragraphes[2].title",
+        "text": "advantages.paragraphes[2].text"
+    },
+    {
+        "title" : "advantages.paragraphes[3].title",
+        "text": "advantages.paragraphes[3].text"
+    },
+    {
+        "title" : "advantages.paragraphes[4].title",
+        "text": "advantages.paragraphes[4].text"
+    }
+    ]
 }
 
 export const expertisesPage = [

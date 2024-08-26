@@ -124,6 +124,9 @@ nav.nav-bar--hidden {
         margin-top: 20pt;
         color: $pink;
     }
+    h2 {
+        margin-top: 30pt;
+    }
 }
 
 /* ------------- SYSTEM INTEGRATION BLOCK ------------- */
@@ -132,7 +135,35 @@ nav.nav-bar--hidden {
         margin-top: 20pt;
         color: $pink;
     }
+    h2 {
+        margin-top: 30pt;
+    }
 }
+
+
+/* ------------- LEGACY MODERNISATION BLOCK ------------- */
+.expertiseLegacyModernisation {
+    h3, h4 {
+        margin-top: 20pt;
+        color: $pink;
+    }
+    h2 {
+        margin-top: 30pt;
+    }
+}
+
+
+/* ------------- SDV BLOCK ------------- */
+.softwareDefinedVehicule {
+    h3,h4 {
+        margin-top: 20pt;
+        color: $pink;
+    }
+    h2 {
+        margin-top: 30pt;
+    }
+}
+
 
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {
@@ -174,16 +205,6 @@ nav.nav-bar--hidden {
     }
     em {
         font-weight: bold;
-    }
-}
-
-/* ------------- SDV BLOCK ------------- */
-.softwareDefinedVehicule {
-    h2,h3 {
-        margin-top: 20pt;
-    }
-    h3 {
-        color: $pink;
     }
 }
 

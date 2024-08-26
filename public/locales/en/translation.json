@@ -360,11 +360,7 @@
         "titleImp": "Software ",
         "text": "A Software Defined Vehicle is any vehicle that manages its operations, adds functionality and enables new features primarily or entirely through software. Software Defined Vehicles are the next evolution of the automotive industry. Lunatech has been involved with Software Defined Vehicle since 2016 while the term did not exist yet. Lunatech, together with large automobile manufacturers has been involved in processing car data at a large scale and providing services for those vehicles. Lunatech specialises in cloud middleware and processing data for software-defined vehicles."
     },
-    "expertiseLegacyModernisation": {
-        "title": "Legacy ",
-        "titleImp": "Systems Modernisation",
-        "text": "Lunatech's Legacy Modernisation Service modernizes outdated technology systems to align with current business needs and technology standards. This comprehensive service includes assessment and reverse engineering, business alignment, technology stack upgrade, data migration, system integration, UI modernisation, testing, security enhancements, training and change management. Aimed at improving efficiency, compatibility and security. Lunatech adopts a phased or incremental approach to minimize disruption, ensuring a smooth transition to modern, agile systems that support organizational objectives effectively. Additionally, Lunatech ensures knowledge transfer and training for clients' teams, enabling them to manage the modernized application independently. This comprehensive approach helps businesses maximize their software investments without the need for costly redevelopment over multiple years."
-    },
+
     "expertiseStrategicExpertise": {
         "title": "Strategic ",
         "titleImp": "Expertise",
@@ -414,34 +410,104 @@
             "title" : "API Management and Integration",
             "text": "SDV backend systems often need to interact with various third-party services, such as navigation providers, payment systems, and cloud-based services. Lunatech offers comprehensive API management and integration services that enable seamless communication between your SDV systems and external platforms. Our API solutions are designed to be secure, scalable, and easy to manage, allowing for the rapid integration of new services and features."
         },
-        "advantages" : {
-            "title" : "The Lunatech Advantage",
-            "paragraphes[0]" : {
-                "title" : "Expertise in Automotive and IT",
-                "text": "Lunatech brings together deep expertise in both the automotive industry and IT, enabling us to deliver backend solutions that are perfectly aligned with the unique needs of SDVs."
-            },
-            "paragraphes[1]" : {
-                "title" : "Tailored Solutions",
-                "text": "We understand that every automotive company has different requirements. That’s why we offer customized backend solutions that meet your specific needs, whether you’re developing autonomous vehicles, connected cars, or electric vehicles."
-            },
-            "paragraphes[2]" : {
-                "title" : "End-to-End Service",
-                "text": "From initial consultation and design to development, deployment, and ongoing support, Lunatech provides end-to-end services that ensure the success of your SDV initiatives." 
-            },
-            "paragraphes[3]" : {
-                "title" : "Cutting-Edge Technology",
-                "text": "We leverage the latest technologies and best practices in cloud computing, data management, and cybersecurity to deliver backend systems that are robust, scalable, and future-proof."
-            },
-            "paragraphes[4]" : {
-                "title" : "Commitment to Innovation",
-                "text": "At Lunatech, we are committed to driving innovation in the automotive industry. We continuously invest in research and development to stay at the forefront of SDV technology, ensuring that our clients benefit from the latest advancements."
-            }
-        },
         "conclusion" : {
             "title" : "Transform Your Vehicles with Lunatech",
             "text" : "As the automotive industry shifts towards software-defined vehicles, having the right backend systems is crucial for success. Lunatech is your trusted partner in this transformation, offering advanced backend solutions that power the next generation of connected, autonomous, and intelligent vehicles. Contact us today to learn more about how we can help you build and manage the backend systems that drive your SDV initiatives."
         }
     },
+    "advantages" : {
+        "title" : "The Lunatech Advantage",
+        "paragraphes[0]" : {
+            "title" : "Expertise in Automotive and IT",
+            "text": "Lunatech brings together deep expertise in both the automotive industry and IT, enabling us to deliver backend solutions that are perfectly aligned with the unique needs of SDVs."
+        },
+        "paragraphes[1]" : {
+            "title" : "Tailored Solutions",
+            "text": "We understand that every automotive company has different requirements. That’s why we offer customized backend solutions that meet your specific needs, whether you’re developing autonomous vehicles, connected cars, or electric vehicles."
+        },
+        "paragraphes[2]" : {
+            "title" : "End-to-End Service",
+            "text": "From initial consultation and design to development, deployment, and ongoing support, Lunatech provides end-to-end services that ensure the success of your SDV initiatives." 
+        },
+        "paragraphes[3]" : {
+            "title" : "Cutting-Edge Technology",
+            "text": "We leverage the latest technologies and best practices in cloud computing, data management, and cybersecurity to deliver backend systems that are robust, scalable, and future-proof."
+        },
+        "paragraphes[4]" : {
+            "title" : "Commitment to Innovation",
+            "text": "At Lunatech, we are committed to driving innovation in the automotive industry. We continuously invest in research and development to stay at the forefront of SDV technology, ensuring that our clients benefit from the latest advancements."
+        }
+    },
+    "expertiseLegacyModernisation": {
+        "title": "Legacy ",
+        "titleImp": "Systems Modernisation",
+        "title2": "Transforming Your Legacy Systems for the Future",
+        "description": "In today’s fast-paced digital landscape, outdated legacy systems can become a significant obstacle to business growth and innovation. These systems, while critical to your operations, often lack the flexibility, efficiency, and scalability required to meet current and future business needs. Lunatech’s Legacy Modernization Services are designed to transform your aging IT infrastructure into modern, agile systems that align with your strategic objectives and leverage the latest technologies.",
+        "title3" : "Why Modernize Your Legacy Systems?",
+        "description2": "Legacy systems, though reliable, can hinder your organization in several ways:",
+        "paragraphes[0]" : {
+            "title" : "High Maintenance Costs",
+            "text": "Older systems are often expensive to maintain, with increasing costs for support, updates, and repairs."        
+        },
+        "paragraphes[1]" : {
+            "title" : "Limited Scalability",
+            "text": "Legacy systems may struggle to scale in response to growing business demands, leading to performance bottlenecks"        
+        },
+        "paragraphes[2]" : {
+            "title" : "Integration Challenges",
+            "text": "Connecting legacy systems with modern applications and platforms can be difficult, leading to inefficiencies and data silos."
+                },
+        "paragraphes[3]" : {
+            "title" : "Security Risks:",
+            "text": "Legacy systems may lack the necessary security features to protect against modern cyber threats, putting your organization at risk."
+         },
+        "paragraphes[4]" : {
+            "title" : "Inflexibility",
+            "text": "Legacy systems are often rigid, making it hard to implement new features or adapt to changing business needs."        
+        },
+        "conclusion" : "Modernizing these systems can help your business overcome these challenges, reduce costs, and unlock new opportunities for innovation and growth.",
+        "title4" : "Our Legacy Modernization Services",
+        "paragraphes[5]" : {
+            "title" : "Comprehensive Assessment and Strategy",
+            "text": "Lunatech begins every modernization project with a thorough assessment of your existing legacy systems. We analyze their current state, evaluate their alignment with your business goals, and identify areas for improvement. Based on this assessment, we develop a tailored modernization strategy that addresses your specific needs, whether it’s a full system overhaul, incremental upgrades, or targeted enhancements."        
+        },
+        "paragraphes[6]" : {
+            "title" : "Reverse Engineering and Documentation",
+            "text": "Understanding the intricacies of legacy systems is crucial for a successful modernization project. Lunatech employs reverse engineering techniques to deconstruct your legacy systems, documenting their functionality, architecture, and dependencies. This detailed documentation serves as a blueprint for the modernization process, ensuring that critical business functions are preserved and enhanced during the transition."        
+        },
+        "paragraphes[7]" : {
+            "title" : "Technology Stack Upgrade",
+            "text": "Modernizing your legacy systems often involves upgrading to a more current and powerful technology stack. Lunatech helps you select and implement the right technologies—such as modern programming languages, frameworks, and cloud platforms—to replace outdated components. This upgrade not only improves system performance but also enhances compatibility with new technologies and standards."        
+        },
+        "paragraphes[8]" : {
+            "title" : "Data Migration and Integration",
+            "text": "Migrating data from legacy systems to modern platforms is a critical aspect of the modernization process. Lunatech ensures a seamless and secure data migration, preserving data integrity and minimizing downtime. We also provide integration services to connect your modernized systems with other applications, ensuring a cohesive and unified IT environment."        
+        },
+        "paragraphes[9]" : {
+            "title" : "UI/UX Modernization",
+            "text": "Legacy systems often feature outdated user interfaces that can hinder productivity and user satisfaction. Lunatech offers UI/UX modernization services to redesign your system’s interface, making it more intuitive, user-friendly, and visually appealing. By enhancing the user experience, we help improve adoption rates and overall system efficiency."        
+        },
+        "paragraphes[10]" : {
+            "title" : "Security Enhancements",
+            "text": "Security is a top priority in any modernization project. Lunatech enhances the security of your modernized systems by implementing the latest security protocols, encryption methods, and compliance measures. We ensure that your systems are protected against modern cyber threats, safeguarding your data and maintaining regulatory compliance."        
+        },
+        "paragraphes[11]" : {
+            "title" : "Testing and Quality Assurance",
+            "text": "To ensure that your modernized systems function as intended, Lunatech conducts rigorous testing and quality assurance processes. We test for functionality, performance, security, and usability, identifying and resolving any issues before the system goes live. Our comprehensive QA process ensures a smooth transition to the new system with minimal disruption to your operations."        
+        },
+        "paragraphes[12]" : {
+            "title" : "Training and Knowledge Transfer",
+            "text": "Modernizing legacy systems often involves a steep learning curve for your team. Lunatech provides training and knowledge transfer services to ensure that your staff is fully equipped to manage and operate the modernized systems. We offer hands-on training sessions, detailed documentation, and ongoing support to help your team adapt to the new technology seamlessly."        
+        },
+        "paragraphes[13]" : {
+            "title" : "Change Management",
+            "text": "Successful modernization requires effective change management. Lunatech works closely with your organization to manage the transition from legacy to modern systems, ensuring that all stakeholders are informed, engaged, and supportive of the change. Our change management services help minimize resistance, foster adoption, and ensure the long-term success of the modernization project."        
+        },
+        "title5" : "Transform Your Legacy Systems with Lunatech",
+        "description3" : "Ready to bring your legacy systems into the future? Lunatech’s Legacy Modernization Services provide the expertise, technology, and support you need to transform your IT infrastructure. Contact us today to learn how we can help you modernize your legacy systems, reduce costs, and drive innovation."
+
+    },
+
     "expertiseSystemIntegration": {
         "title": "System ",
         "titleImp": "Integration",

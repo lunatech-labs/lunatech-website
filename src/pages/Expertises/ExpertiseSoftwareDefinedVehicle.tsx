@@ -11,6 +11,7 @@ import HeaderPage from '@/components/HeaderPage/HeaderPage';
 
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import { softwareDefinedVehicule } from '@/constants';
+import { advantages } from '@/constants';
 
 const ExpertiseSoftwareDefinedVehicle = () => {
     const { t } = useTranslation();
@@ -53,15 +54,15 @@ const ExpertiseSoftwareDefinedVehicle = () => {
 
             <Section className="bg-bgMediumBlue softwareDefinedVehicule">
                 <Container>
-                    <Title level={2}><Trans i18nKey="softwareDefinedVehicule.advantages.title" /></Title>
+                    <Title level={3}><Trans i18nKey="advantages.title" /></Title>
                    
                     <div className="col-lg-6 col-md-12">
         
                             {
-                                softwareDefinedVehicule.advantages.paragraphes.map(
+                                advantages.paragraphes.map(
                                     (p) => (
                                         <div>
-                                            <Title level={3}>{t(p.title)}</Title>
+                                            <Title level={4}>{t(p.title)}</Title>
                                             <Text size="medium" className="mgt24">{t(p.text)}</Text>
                                 
                                         </div>
