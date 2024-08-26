@@ -14,7 +14,7 @@
         "Software project delivery": "Software Project Delivery",
         "System integration": "System Integration",
         "Strategic expertise": "Strategic Expertise",
-        "Legacy modernisation": "Legacy Modernisation",
+        "Legacy modernisation": "Legacy Systems Modernisation",
         "Open source": "Open Source",
         "Partners": "Partners", 
         "Contact": "Contact"
@@ -126,7 +126,7 @@
                 "text": "We integrate existing systems and third-party applications into your digital ecosystem."
             },
             "legacyModernisation": {
-                "title": "Legacy Modernisation",
+                "title": "Legacy Systems Modernisation",
                 "text": "We modernise legacy systems to make them more secure, agile and efficient."
             }
         }
@@ -372,8 +372,8 @@
     },
     "expertiseLegacyModernisation": {
         "title": "Legacy ",
-        "titleImp": "Modernisation",
-        "text": "Lunatech's Legacy Transformation Service modernizes outdated technology systems to align with current business needs and technology standards. This comprehensive service includes assessment and reverse engineering, business alignment, technology stack upgrade, data migration, system integration, UI modernization, testing, security enhancements, training and change management. Aimed at improving efficiency, compatibility and security. Lunatech adopts a phased or incremental approach to minimize disruption, ensuring a smooth transition to modern, agile systems that support organizational objectives effectively. Additionally, Lunatech ensures knowledge transfer and training for clients' teams, enabling them to manage the modernized application independently. This comprehensive approach helps businesses maximize their software investments without the need for costly redevelopment over multiple years."
+        "titleImp": "Systems Modernisation",
+        "text": "Lunatech's Legacy Modernisation Service modernizes outdated technology systems to align with current business needs and technology standards. This comprehensive service includes assessment and reverse engineering, business alignment, technology stack upgrade, data migration, system integration, UI modernisation, testing, security enhancements, training and change management. Aimed at improving efficiency, compatibility and security. Lunatech adopts a phased or incremental approach to minimize disruption, ensuring a smooth transition to modern, agile systems that support organizational objectives effectively. Additionally, Lunatech ensures knowledge transfer and training for clients' teams, enabling them to manage the modernized application independently. This comprehensive approach helps businesses maximize their software investments without the need for costly redevelopment over multiple years."
     },
     "expertiseStrategicExpertise": {
         "title": "Strategic ",
