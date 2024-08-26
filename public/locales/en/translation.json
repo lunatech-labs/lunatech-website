@@ -500,6 +500,27 @@
         "paragraphes[12]" : {
             "title" : "Cost Savings",
             "text": "By integrating your systems, you can reduce the need for redundant software and hardware, leading to significant cost savings over time."        
+        },
+        "title5": "Why Choose Lunatech for System Integration?",
+        "paragraphes[13]" : {
+            "title" : "Extensive Experience",
+            "text": "With years of experience in system integration, Lunatech has the expertise to handle complex integration projects across various industries." 
+        },
+        "paragraphes[14]" : {
+            "title" : "Custom Solutions:s",
+            "text": "We understand that every business is unique, which is why we offer tailored integration solutions that meet your specific needs and objectives."        
+        },
+        "paragraphes[15]" : {
+            "title" : "End-to-End Service",
+            "text": "From initial consultation and planning to implementation and ongoing support, Lunatech provides comprehensive integration services that ensure a smooth and successful integration process."
+        },
+        "paragraphes[16]" : {
+            "title" : "Proven Technologies",
+            "text": " We utilize the latest technologies and best practices in system integration, ensuring that your integrated systems are secure, reliable, and future-proof."        
+        },
+        "paragraphes[17]" : {
+            "title" : "Dedicated Support",
+            "text": "Our commitment to your success doesn’t end with the integration. We provide ongoing support and maintenance to ensure that your integrated systems continue to operate efficiently."        
         }
     },
     "expertiseSoftwareProjectDelivery": {

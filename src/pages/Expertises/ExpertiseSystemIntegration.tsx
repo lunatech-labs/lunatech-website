@@ -77,6 +77,27 @@ const ExpertiseSystemIntegration = () => {
                 </Container>
             </Section>
 
+
+            <Container><BorderEffect /></Container>
+
+            <Section className="expertiseSystemIntegration">
+                <Container>
+                    <Title level={2}><Trans i18nKey="expertiseSystemIntegration.title5" /></Title>
+
+                    <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[13].title" /></Title>
+                    <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[13].text" /></Text>
+                    <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[14].title" /></Title>
+                    <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[14].text" /></Text>
+                    <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[15].title" /></Title>
+                    <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[15].text" /></Text>
+                    <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[16].title" /></Title>
+                    <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[16].text" /></Text>
+                    <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[17].title" /></Title>
+                    <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[17].text" /></Text>
+                    
+                </Container>
+            </Section>
+
             <Section>
                 <Container>
                     <ContactBlock />
