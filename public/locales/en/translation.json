@@ -295,8 +295,8 @@
                     "text": "Next.js is a popular open-source framework for React that enables server-side rendering and static site generation, improving performance and SEO for web applications. It simplifies the development of React-based applications by providing features like automatic code splitting, optimized performance, and built-in routing. Next.js allows developers to build scalable, high-performance web applications with minimal configuration."
                 },
                 "angularjs" : {
-                    "title": "AngularJS",
-                    "text": "AngularJS is a JavaScript framework developed by Google for building dynamic, single-page web applications. It provides features like two-way data binding, dependency injection, and directives to simplify the development of complex, data-driven interfaces. AngularJS enables developers to create modular, maintainable code and facilitates the development of rich, interactive user experiences."
+                    "title": "Angular",
+                    "text": "Angular is a JavaScript framework developed by Google for building dynamic, single-page web applications. It provides features like two-way data binding, dependency injection, and directives to simplify the development of complex, data-driven interfaces. AngularJS enables developers to create modular, maintainable code and facilitates the development of rich, interactive user experiences."
                 },
                 "figma" : {
                     "title": "Figma",
