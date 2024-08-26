@@ -135,7 +135,7 @@
         "title": "Meet your needs with our ",
         "titleImp": "enterprise services",
         "text": "We provide a wide range of expertises to help you meet your needs. We are experts in the following areas:",
-        "category": "Strategic Advice",
+        "category": "Strategic Expertise",
         "firstBlock": {
             "breadcrumb": "Strategic advice",
             "title": "can help you with the following",
@@ -378,7 +378,29 @@
     "expertiseStrategicExpertise": {
         "title": "Strategic ",
         "titleImp": "Expertise",
-        "text": "bla bla kbkakb bkak <br/> <br/> vla bla"
+        "paragraphes[0]" : {
+            "title" : "Strategic Expertise: Crafting Synergy Between Digital and Business Strategy",
+            "text1": "In today’s fast-paced market environment, the ability to swiftly adapt to new trends and customer needs is crucial for maintaining a competitive edge. The question is: how can your organization stay ahead? The answer lies in creating a seamless integration between your digital strategy and business strategy, ensuring that both are not only aligned but also mutually reinforcing. This involves configuring your systems with flexibility, fostering a culture of continuous innovation, and responding to changes with agility and intelligence.",
+            "text2" : "A robust architecture plays a pivotal role in this integration by providing critical insights into how changes impact various aspects of your business. It serves as the blueprint for defining roadmaps that are in lockstep with your business objectives. By creating a comprehensive overview of the connections between business processes, organizational structures, and technology, architecture simplifies complexity and equips you with the tools to make informed, strategic decisions that drive your organization forward."
+        },
+        "paragraphes[1]" : {
+            "title" : "Implementation from Vision to Reality",
+            "text1": "At Lunatech, we believe in the power of simplicity, particularly when it comes to translating strategy into action. A well-defined architecture allows us to formulate a clear and actionable IT strategy that is not just aspirational but also achievable. Our approach is rooted in practicality; we immerse ourselves in your business environment to gain a deep understanding of your unique challenges and opportunities. By combining our technical expertise with domain-specific knowledge, we craft solutions that are tailored to your organization’s needs.",
+            "text2" : "Our involvement goes beyond the surface-level aspects of technology implementation. We provide comprehensive support across various critical areas, including change management, data governance, risk management, and the optimization of management processes. With a wealth of experience in digital transformation projects, we offer end-to-end support, guiding you from the initial stages of strategy development through to the final implementation. Our goal is to ensure that your technology infrastructure not only meets but exceeds your organization’s expectations in terms of functionality, availability, flexibility, and scalability. We move beyond theoretical strategies, bringing them to life in a way that offers tangible, lasting benefits to your organization."
+        },
+        "paragraphes[2]" : {
+            "title" : "Collaborative Innovation: A Partnership for Growth",
+            "text1": "Achieving a successful alignment of digital and business strategies is not a solitary endeavor; it requires close collaboration between our team and yours. We start by working together to define a clear objective, grounded in your organization’s mission and vision. We understand that the rapidly evolving landscape of technology can be overwhelming, and that you may not be familiar with all the possibilities it offers. That’s where our expertise comes in.",
+            "text2" : "Through a series of inspiration sessions, we explore the vast array of technological innovations that could propel your organization forward. Whether it’s adopting cutting-edge cloud solutions, leveraging artificial intelligence, implementing machine learning, or embracing continuous deployment practices, we guide you through the possibilities and help you envision what’s possible. But we don’t stop there. We believe in empowering your team, equipping your employees with the knowledge and skills to analyze and architect both business and information systems effectively. This education fosters an internal culture of innovation and agility, enabling your organization to stay ahead of the competition and continue evolving."
+        },
+        "paragraphes[3]" : {
+            "title" : "Sustained Success Through Strategic Insight",
+            "text1": "The outcome of this collaborative process is a digital strategy that is not just aligned with your business goals but is also a driving force for growth and innovation. With a strong architectural foundation, your organization gains the clarity needed to navigate complexity, the agility to adapt to change, and the strategic insight to make decisions that lead to sustained success. In a world where the only constant is change, our approach ensures that your organization remains not just responsive, but proactive—ready to seize new opportunities and overcome challenges with confidence.",
+            "text2" : "At Lunatech, we are not just consultants; we are your partners in realizing the full potential of your digital strategy. Together, we can create a future where technology and business strategy are in perfect harmony, driving your organization to new heights."
+        }
+        
+        
+       
     },
     "partners": {
         "title": "Our ",

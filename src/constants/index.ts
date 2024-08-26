@@ -29,6 +29,7 @@ import systemIntegrationIcon from '@/components/ExpertisesCard/Icons/systemInteg
 import legacyModernisationIcon from '@/components/ExpertisesCard/Icons/legacyModernisationIcon'
 import strategicExpertiseIcon from '@/components/ExpertisesCard/Icons/strategicExpertiseIcon'
 
+
 export const navLinks = [
     {
         title: "navigation.home",
@@ -378,6 +379,31 @@ export const contactBlock = [
         titleImp: "contactBlock.titleImp"
     }
 ]
+
+export const expertiseStrategicExpertise = {
+
+        "paragraphes" : [{
+            "title" : "expertiseStrategicExpertise.paragraphes[0].title",
+            "text1": "expertiseStrategicExpertise.paragraphes[0].text1",
+            "text2" : "expertiseStrategicExpertise.paragraphes[0].text2"      
+        },
+        {
+            "title" : "expertiseStrategicExpertise.paragraphes[1].title",
+            "text1": "expertiseStrategicExpertise.paragraphes[1].text1",
+            "text2" : "expertiseStrategicExpertise.paragraphes[1].text2"    
+        },
+        {
+            "title" : "expertiseStrategicExpertise.paragraphes[2].title",
+            "text1": "expertiseStrategicExpertise.paragraphes[2].text1",
+            "text2" : "expertiseStrategicExpertise.paragraphes[2].text2"    
+        },
+        {
+            "title" : "expertiseStrategicExpertise.paragraphes[3].title",
+            "text1": "expertiseStrategicExpertise.paragraphes[3].text1",
+            "text2" : "expertiseStrategicExpertise.paragraphes[3].text2"    
+        }
+    ]
+}
 
 export const expertisesPage = [
     {

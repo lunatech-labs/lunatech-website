@@ -90,6 +90,13 @@ nav.nav-bar--hidden {
         }
     }
 }
+/* ------------- STRATEGIC EXPERTISE ---------*/
+.strategy { 
+    h3 {
+        margin-top: 20pt;
+        color: $pink;
+    }
+}
 
 /* ------------- ABOUT US BLOCK ------------- */
 .about {
@@ -110,6 +117,10 @@ nav.nav-bar--hidden {
 
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {
+    h3 {
+        margin-top: 20pt;
+        color: $pink;
+    }
     @include grid;
     align-items: start;
     &__img {
@@ -125,6 +136,10 @@ nav.nav-bar--hidden {
     }
     &__partners {
       text-align: justify;
+      h3 {
+            margin-top: 20pt;
+            color: $pink;
+      }
       li {
         margin: 20px;
         }
