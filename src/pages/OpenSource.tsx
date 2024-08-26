@@ -16,7 +16,6 @@ const OpenSource = () => {
     const { t } = useTranslation();
     return (
         <>
-
             <Section className="pdt256">
                 <Container>
                     <HeaderPage>
