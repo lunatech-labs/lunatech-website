@@ -2,7 +2,6 @@ import { Trans, useTranslation } from 'react-i18next';
 
 import Section from "@components/Section/Section";
 import Container from "@components/Container/Container";
-import Grid from "@components/Grid/Grid";
 import Breadcrumbs from "@components/Breacrumb/Breadcrumb";
 import BorderEffect from '@components/BorderEffect/BorderEffect';
 import Title from '@components/Title/Title';
