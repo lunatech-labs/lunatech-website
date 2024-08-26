@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 import Breadcrumbs from '@components/Breacrumb/Breadcrumb';
 import Container from '@components/Container/Container';
