@@ -80,7 +80,7 @@ const ExpertiseSystemIntegration = () => {
 
             <Container><BorderEffect /></Container>
 
-            <Section className="expertiseSystemIntegration">
+            <Section className="bg-bgMediumBlue expertiseSystemIntegration">
                 <Container>
                     <Title level={2}><Trans i18nKey="expertiseSystemIntegration.title5" /></Title>
 
