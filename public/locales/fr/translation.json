@@ -133,28 +133,26 @@
     },
     "advantages": {
         "title": "L'Avantage Lunatech",
-        "paragraphes": [
-        {
+        "paragraphes[0]": {
             "title": "Expertise dans l'Automobile et l'Informatique",
             "text": "Lunatech rassemble une expertise approfondie à la fois dans l'industrie automobile et dans l'informatique, ce qui nous permet de fournir des solutions backend parfaitement alignées avec les besoins uniques des SDV."
         },
-        {
+        "paragraphes[1]": {
             "title": "Solutions Sur Mesure",
             "text": "Nous comprenons que chaque entreprise automobile a des besoins différents. C'est pourquoi nous offrons des solutions backend personnalisées qui répondent à vos besoins spécifiques, que vous développiez des véhicules autonomes, des voitures connectées ou des véhicules électriques."
         },
-        {
+        "paragraphes[2]": {
             "title": "Service de Bout en Bout",
             "text": "De la consultation initiale et de la conception au développement, au déploiement et au support continu, Lunatech fournit des services de bout en bout qui garantissent le succès de vos initiatives SDV."
         },
-        {
+        "paragraphes[3]": {
             "title": "Technologie de Pointe",
             "text": "Nous tirons parti des dernières technologies et des meilleures pratiques en matière de cloud computing, de gestion des données et de cybersécurité pour offrir des systèmes backend robustes, évolutifs et prêts pour l'avenir."
         },
-        {
+        "paragraphes[4]": {
             "title": "Engagement envers l'Innovation",
             "text": "Chez Lunatech, nous nous engageons à promouvoir l'innovation dans l'industrie automobile. Nous investissons continuellement dans la recherche et le développement pour rester à la pointe de la technologie SDV, garantissant à nos clients de bénéficier des dernières avancées."
         }
-        ]
     },
       
       
