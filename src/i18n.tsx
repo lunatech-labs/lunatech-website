@@ -18,8 +18,10 @@ languageDetector.addDetector({
         // In the browser, get the hostname from window.location.
         if (typeof window !== 'undefined' ) {
           // get the last part of the request 
-          let lastPartOfHostname = url.split("\.").pop();
+          let x = window.location.hostname.split("\.").pop();
+          let lastPartOfHostname =   x || "com" ;
           locale = domainLocaleMap[lastPartOfHostname];
+          
         }      
       return locale;
     }
