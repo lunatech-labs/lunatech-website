@@ -54,7 +54,7 @@ export const navLinks = [
     {
         title: "navigation.opensource",
         url: "/open-source",
-        mouseEnterTitle: "opensouce",
+        mouseEnterTitle: "opensource",
         mouseEnterDesc: "navigation.dynamicText.opensource",
         blank: false
     },
@@ -180,7 +180,7 @@ export const officeCard = [
     {
         country: "officeCard.netherlands.name",
         image: rotterdamOffice,
-        email: "infos@lunatech.nl",
+        email: "info@lunatech.nl",
         careersEmail: 'employment@lunatech.nl',
         phone: "+31 10 750 2600",
         address: "Hofplein 20 - 3032 AC Rotterdam",
