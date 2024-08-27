@@ -174,6 +174,119 @@
             "text": "Lunatech propose des solutions innovantes pour la création et/ou la modernisation de vos services numériques d'entreprise grâce aux services suivants."
         }
     },
+    
+    "partners": {
+        "title": "Nos ",
+        "titleImp": "partenaires",
+        "subtitle": "Partenaires",
+        "text": "Chez Lunatech, nous reconnaissons la valeur des alliances stratégiques et de la collaboration pour stimuler l'innovation et fournir des solutions de premier ordre. Nos partenariats avec des fournisseurs de technologies de pointe et des communautés open source nous permettent de tirer parti des technologies de pointe et d'offrir des solutions complètes et personnalisées pour répondre aux besoins diversifiés de nos clients. Découvrez nos partenariats clés ci-dessous.",
+        "title2": "Nos Partenariats Clés",
+        "paragraphes[0]": {
+            "title": "Redhat",
+            "subtitle": "Cloud Computing, Conteneurisation et Technologies Open Source",
+            "text": "Lunatech collabore avec Red Hat pour intégrer des solutions d'entreprise telles que Red Hat OpenShift avec notre expertise. Ce partenariat améliore nos projets de transformation numérique en fournissant des solutions cloud et de conteneurisation robustes, évolutives et sécurisées."
+        },
+        "paragraphes[1]": {
+            "title": "Amazon Web Services (AWS)",
+            "subtitle": "Infrastructure et Services Cloud",
+            "text": "Le partenariat avec AWS permet à Lunatech de tirer parti des services cloud évolutifs d'AWS pour soutenir le développement d'applications modernes. Cette collaboration nous permet de fournir une infrastructure cloud flexible et performante à nos clients."
+        },
+        "paragraphes[2]": {
+            "title": "Google Cloud",
+            "subtitle": "Cloud Computing et Analyse de Données",
+            "text": "Notre partenariat avec Google Cloud fournit des solutions cloud avancées, y compris des capacités d'analyse de données et d'apprentissage automatique. Cette collaboration soutient nos clients dans l'exploitation de la puissance du cloud computing et des insights basés sur les données."
+        },
+        "paragraphes[3]": {
+            "title": "Microsoft Azure",
+            "subtitle": "Services Cloud et Solutions d'Entreprise",
+            "text": "Le partenariat avec Microsoft Azure donne à Lunatech accès à un large éventail de services cloud évolutifs. Ce soutien aide à moderniser les environnements informatiques et à offrir des solutions flexibles adaptées aux besoins des clients."
+        },
+        "paragraphes[4]": {
+            "title": "Eclipse Foundation",
+            "subtitle": "Développement et Outils de Logiciels Open Source",
+            "text": "En tant que contributeur actif à la fondation Eclipse, Lunatech collabore sur divers projets open source. Cette implication soutient l'avancement de l'écosystème Eclipse et renforce nos capacités à développer des solutions open source."
+        },
+        "paragraphes[5]": {
+            "title": "Clever Cloud",
+            "subtitle": "Platform-as-a-Service (PaaS) pour le Déploiement et la Gestion d'Applications",
+            "text": "Notre partenariat avec Clever Cloud nous permet d'offrir des solutions PaaS avancées qui simplifient le déploiement, l'évolutivité et la gestion des applications. Cette collaboration soutient le développement natif cloud et fournit aux clients une gestion des applications efficace et évolutive."
+        },
+        "paragraphes[6]": {
+            "title": "Azul",
+            "subtitle": "Environnements d'Exécution Java et Optimisation des Performances",
+            "text": "Lunatech s'associe à Azul pour fournir des environnements d'exécution Java (JRE) et des solutions JVM haute performance. Ce partenariat nous aide à fournir des applications Java optimisées et fiables, soutenant nos clients dans l'obtention de performances et de scalabilité supérieures."
+        },
+        "paragraphes[7]": {
+            "title": "Cloudbees",
+            "subtitle": "Intégration Continue et Livraison Continue (CI/CD)",
+            "text": "Le partenariat avec CloudBees permet à Lunatech d'offrir des solutions CI/CD avancées qui rationalisent le cycle de vie du développement logiciel. Cette collaboration soutient une livraison de logiciels efficace, automatisée et évolutive, améliorant les processus de développement de nos clients et leur délai de mise sur le marché."
+        },
+        "paragraphes[8]": {
+            "title": "Lightbend",
+            "subtitle": "Intégration de Systèmes et Systèmes Réactifs",
+            "text": "Le partenariat de Lunatech avec Lightbend se concentre sur le développement de systèmes réactifs en utilisant des technologies comme Akka et Play Framework. Cette collaboration améliore les capacités de Lunatech à fournir des applications évolutives et résilientes, en leur offrant une formation avancée et un avantage concurrentiel dans la programmation réactive et l'architecture de microservices. Le partenariat renforce la position de Lunatech dans la fourniture de solutions d'entreprise haute performance."
+        }
+    },
+    "opensource": {
+        "title": "Open ",
+        "titleImp": "Source",
+        "text1": "Lunatech joue un rôle important dans la communauté open-source, démontrant un engagement croissant envers cette initiative. Sa participation active dans Quarkus, les conférences, ainsi que sa contribution au répertoire Dotty, témoignent de son vif intérêt pour le développement et la promotion des technologies open-source. Cette implication souligne non seulement l'expertise de Lunatech dans les technologies émergentes, mais contribue également à enrichir l'écosystème open-source, favorisant le partage des connaissances et l'innovation collaborative. Lunatech peut vous aider avec votre stratégie open source et connecter les logiciels open-source au sein de votre organisation. Les contributions open-source de Lunatech font partie intégrante de notre culture et de notre approche du développement logiciel. Ils développent régulièrement et publient des outils, bibliothèques et frameworks open-source qui répondent aux défis courants en ingénierie logicielle et en intégration de systèmes. Ces contributions ne soutiennent pas seulement leurs propres projets, mais aident également d'autres développeurs et organisations à relever des défis similaires. Voici quelques-uns des domaines où Lunatech contribue:",
+        "list1": {
+        "title": "Bibliothèques et Frameworks Open-Source",
+        "text": "Lunatech développe et maintient une variété de bibliothèques et de frameworks open-source utilisés par des développeurs du monde entier. Ces outils se concentrent souvent sur des domaines tels que le développement web, le traitement des données, l'intégration de systèmes et le DevOps, fournissant des solutions robustes et bien documentées qui peuvent être facilement intégrées dans d'autres projets."
+        },
+        "list2": {
+        "title": "Engagement Communautaire",
+        "text": "Lunatech encourage ses développeurs à participer activement à des projets open-source en dehors des initiatives de l'entreprise. Cela inclut la contribution de code à des projets existants, la correction de bugs, l'ajout de nouvelles fonctionnalités, et l'aide à la maintenance des projets. Nos membres d'équipe s'engagent souvent avec la communauté à travers des forums, des dépôts GitHub, et des listes de diffusion, où ils partagent leurs connaissances et collaborent avec d'autres développeurs."
+        },
+        "list3": {
+        "title": "Événements et Parrainage Open-Source",
+        "text": "Lunatech soutient et parraine des conférences, hackathons et ateliers open-source. Ces événements sont des occasions pour les développeurs de se rencontrer, d'apprendre les uns des autres, et de collaborer sur des projets open-source. En parrainant et en participant à ces événements, Lunatech aide à favoriser une communauté open-source dynamique et collaborative."
+        },
+        "list4": {
+        "title": "Ressources Éducatives",
+        "text": "Lunatech contribue également à l'écosystème open-source en créant et en partageant du contenu éducatif, tel que des tutoriels, des articles de blog, et de la documentation. Ces ressources sont conçues pour aider d'autres développeurs à apprendre à utiliser efficacement les outils open-source, et incluent souvent des exemples de la manière dont Lunatech a utilisé ces outils dans des projets concrets."
+        },
+        "list5": {
+        "title": "Projets Internes Publiés en Open-Source",
+        "text": "De nombreux projets internes de Lunatech, développés pour résoudre des problèmes spécifiques rencontrés dans notre travail, sont finalement publiés en tant que logiciels open-source. Cette approche ne met pas seulement en valeur notre expertise technique, mais permet également à d'autres organisations de bénéficier de nos innovations."
+        },
+        "list6": {
+        "title": "Engagement envers les Principes Open-Source",
+        "text": "L'implication de Lunatech dans l'open-source reflète un engagement plus large envers les principes de transparence, de collaboration, et de développement communautaire. En contribuant à des projets open-source, ils aident à faire progresser collectivement l'industrie logicielle, en veillant à ce que des outils et des technologies précieux soient accessibles à tous."
+        },
+        "text2": "À travers ces activités, Lunatech améliore non seulement ses propres capacités technologiques, mais contribue également à la communauté plus large du développement logiciel, aidant à repousser les limites de ce qui est possible avec les logiciels open-source.",
+        "text3": "Lunatech est également impliqué et fait partie des organisations suivantes:",
+        "list7": {
+        "title": "Eclipse Foundation",
+        "text": "La Fondation Eclipse est une organisation à but non lucratif qui soutient et régit une gamme diversifiée de projets logiciels open-source, notamment l'IDE Eclipse. Fondée en 2004, elle favorise le développement collaboratif en fournissant l'infrastructure et la gouvernance nécessaires à des projets open-source de haute qualité. La mission de la Fondation inclut la stimulation de l'innovation, l'intégration des outils logiciels, et la croissance d'un écosystème dynamique grâce à sa structure de gouvernance bien définie, son adhésion diversifiée, et son implication communautaire active. Elle héberge des projets significatifs comme Eclipse Che et Eclipse Vert.x, et organise des événements tels que EclipseCon pour promouvoir ses technologies et faciliter la collaboration."
+        },
+        "list8": {
+        "title": "SDV Eclipse",
+        "text": "Nous sommes membres du groupe de travail Eclipse Software Defined Vehicle (Eclipse SDV), une plateforme technologique ouverte dédiée à l'amélioration et au développement des technologies de véhicules définis par logiciel. En tant que membre actif du groupe Eclipse SDV, nous travaillons en étroite collaboration avec d'autres acteurs de l'industrie pour stimuler l'innovation et l'adoption de normes ouvertes dans le domaine des véhicules définis par logiciel. Cette collaboration nous permet de rester à la pointe des dernières avancées technologiques et de contribuer activement à façonner l'avenir de l'automobile."
+        },
+        "list9": {
+        "title": "Consortium EOS",
+        "text": "Le consortium EOS façonne un paysage numérique résilient, ouvert et collaboratif pour assurer le leadership de l'Europe dans l'innovation mondiale. Ensemble, des entreprises de premier plan construisent l'avenir numérique de l'Europe, façonnant un continent où les organisations atteignent la souveraineté numérique, se libèrent des dépendances technologiques propriétaires, favorisent l'innovation et renforcent les économies locales."
+        },
+        "list10": {
+        "title": "Écosystème Scala",
+        "text": "Lunatech a activement contribué à l'écosystème Scala en développant et en maintenant des bibliothèques, en améliorant des frameworks populaires comme Akka et Play, et en s'engageant avec la communauté Scala à travers des conférences et des ressources éducatives. Ils ont soutenu des projets open-source et fourni des perspectives et des améliorations précieuses aux technologies liées à Scala. De plus, Lunatech a été membre du Scala Center, une organisation dédiée au soutien et à l'avancement du langage de programmation Scala et de son écosystème."
+        },
+        "list11": {
+        "title": "Quarkus",
+        "text": "Lunatech contribue à Quarkus en améliorant les fonctionnalités du framework, en optimisant ses capacités d'intégration, et en résolvant divers problèmes pour garantir une expérience de développement robuste et efficace. Notre travail comprend la contribution de code, la correction de bugs, et le développement de fonctionnalités qui s'alignent sur les objectifs de Quarkus d'optimiser les applications Java pour Kubernetes et les environnements cloud-native. L'implication de Lunatech soutient la croissance et l'adoption du framework, aidant à faire progresser ses capacités et son soutien pour des applications modernes, évolutives et performantes."
+        },
+        "list12": {
+        "title": "Contribution au Play Framework",
+        "text": "Lunatech a apporté des contributions significatives au Play Framework, un framework web réactif populaire pour Java et Scala, en améliorant ses fonctionnalités de base et en étendant ses capacités. Notre implication comprend le développement de nouvelles fonctionnalités, la correction de bugs, et l'amélioration de l'intégration avec d'autres technologies, ce qui aide à maintenir le Play Framework en tant que choix de premier plan pour la création d'applications web évolutives et performantes. En participant activement à la communauté Play et en fournissant des retours précieux, Lunatech soutient l'évolution du framework et veille à ce qu'il continue de répondre aux besoins des développeurs modernes, contribuant à un outil plus robuste et efficace pour créer des applications web dynamiques."
+        },
+        "list13": {
+        "title": "Contribution à Akka",
+        "text": "Lunatech a été un contributeur proactif à Akka, la boîte à outils puissante pour la création d'applications concurrentes, distribuées et résilientes sur la JVM. Nos contributions incluent des améliorations aux bibliothèques de base d'Akka, des optimisations de performances, et le support de nouvelles fonctionnalités, ce qui aide à améliorer la fonctionnalité et la scalabilité du framework. En s'engageant avec la communauté Akka et en relevant les défis clés, Lunatech aide à faire progresser les capacités de la boîte à outils et veille à ce qu'elle reste une solution fiable et à la pointe pour les développeurs créant des systèmes complexes et distribués. Notre implication continue souligne notre engagement à soutenir et à faire évoluer les technologies open-source essentielles dans le domaine de l'informatique concurrente et distribuée."
+        },
+        "text4": "Lunatech démontre son engagement envers l'open-source en contribuant activement à une large gamme de projets à fort impact, y compris Scala, Akka, Play Framework, et Quarkus. En développant et en maintenant des bibliothèques, en améliorant des frameworks, et en participant à des communautés open-source clés, Lunatech améliore non seulement la fonctionnalité et l'utilisabilité de ces technologies, mais favorise également l'innovation et la collaboration au sein de l'écosystème open-source. Notre engagement s'étend au soutien et à la défense des pratiques open-source, au partage d'expertise à travers des ressources éducatives, et à la contribution à l'avancement d'outils et de solutions de pointe. Cette dévotion souligne le rôle de Lunatech en tant que soutien essentiel du logiciel open-source, favorisant le progrès et permettant à la communauté au sens large de bénéficier de notre expertise technique et de notre esprit collaboratif."
+    },
     "technologies": {
         "title": "Nos ",
         "titleColor": "technologies ",
