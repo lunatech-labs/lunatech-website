@@ -182,6 +182,44 @@ nav.nav-bar--hidden {
 }
 
 
+/* ------------- TECHNOLOGIES BLOCK ------------- */
+.technologies {
+    div.col-lg-6 {
+        grid-column: span 6;
+        padding: 20pt;
+    }
+    .content {
+        color: whitesmoke;
+    }
+    .expertise:before {
+        content: "Expertise: ";
+        color: $lightGray;
+        font-size: smaller;
+    }
+    .technologies:before {
+        content: "Technologies: ";
+        color: $lightGray;
+        font-size: smaller;
+    }
+    h3,h4 {
+        margin-top: 20pt;
+    }
+    h4 {
+        color: $white;
+    }
+    h3 {
+        font-size: 200%;
+        color: $pink;
+    }
+    h2 {
+        margin-top: 30pt;
+    }
+    .tech {
+        margin-top: 30pt;
+    }
+}
+
+
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {
     @include grid;

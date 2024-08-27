@@ -187,23 +187,63 @@
         "carouselTitleImp": "technologies",
         "carouselText": "With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.",
         "page": {
-            "firstBlock": {
-                "automotive": {
-                    "title": "Automotive",
-                    "text": "We help companies create smart, connected mobility solutions."
-                },
-                "entertainment": {
-                    "title": "Entertainment",
-                    "text": "Developing interactive platforms to offer immersive entertainment experiences."
-                },
-                "finance": {
-                    "title": "Financial",
-                    "text": "We help companies create smart, connected mobility solutions."
-                },
-                "insurance": {
-                    "title": "Insurance",
-                    "text": "Creating digital data management and analysis products for the insurance industry."
-                }
+            "paragraphes[0]": {
+                "title" : "Powering Innovation with Cutting-Edge Technology",
+                "text" : "At Lunatech, we leverage a diverse range of technologies to deliver innovative, scalable, and secure solutions tailored to meet the unique needs of our clients. Our deep technical expertise spans cloud computing, system integration, software development, data management, and more, enabling us to build and modernize IT infrastructures that drive business success. Here’s how our technologies align with the expertises we provide"
+            },
+            "paragraphes[1]": {
+                "title" : "Cloud Computing",
+                "technologies" : "AWS, Google Cloud, Microsoft Azure, Red Hat OpenShift, etc...",
+                "expertise" : "Strategic Expertise, Software Defined Vehicle (SDV), System Integration, Legacy Modernization",
+                "text" : "We utilize cloud platforms like AWS, Google Cloud, Microsoft Azure, and Red Hat OpenShift to provide scalable, reliable infrastructure for our clients. These technologies are central to our cloud-based solutions, ensuring flexibility, security, and cost-efficiency across various projects. Whether it's developing cloud-native applications, integrating cloud services with existing systems, or modernizing legacy applications, our cloud expertise is foundational to our success in these areas."
+            },
+            "paragraphes[2]": {
+                "title" : "System Integration & Middleware",
+                "technologies" : "APIs, Middleware, Kafka, Enterprise Service Buses (ESBs), etc...",
+                "expertise" : "System Integration, Software Defined Vehicle (SDV), Strategic Expertise",
+                "text" : "Effective system integration is crucial for creating cohesive IT environments. Our expertise in using APIs, middleware, Kafka, and ESBs allows us to connect disparate systems seamlessly. This is particularly important in our System Integration projects, where we ensure data flows efficiently between different platforms, and in SDV projects, where real-time data processing is essential. These technologies also support our Strategic Expertise by enabling the integration of new technologies with existing systems."
+            },
+            "paragraphes[3]": {
+                "title" : "Software Development Frameworks",
+                "expertise" : "Software Project Delivery, Legacy Modernization, Strategic Expertise",
+                "technologies" : "Java, Scala, Kotlin, Spring Framework, Hibernate, Quarkus, Play Framework, etc...",
+                "text" : "Our software development frameworks, including Java, Scala, Kotlin, Spring, Hibernate, Quarkus, and Play Framework, are the backbone of our Software Project Delivery expertise. These technologies allow us to build robust, scalable, and secure applications tailored to the unique needs of our clients. They also play a key role in Legacy Modernization, where we update and refactor older systems to meet modern standards, and in our Strategic Expertise, where we develop software solutions that align with broader business goals."
+            },
+            "paragraphes[4]": {
+                "title" : "Front-End Development",
+                "expertise" : "Software Project Delivery, Legacy Modernization",
+                "technologies" : "Typescript, Next.js, ReactJS, HTML, CSS, SASS, Figma, etc...",
+                "text" : "In today’s digital landscape, a compelling and responsive user interface is crucial. Our front-end development technologies—Next.js, ReactJS, HTML, CSS, and SASS—enable us to create user-friendly, visually appealing web applications. These are essential in Software Project Delivery, where we focus on creating intuitive interfaces, and in Legacy Modernization, where we refresh and modernize the user experience of older applications."
+            },
+            "paragraphes[5]": {
+                "title" : "Data Management & Analytics",
+                "expertise" : "System Integration, Strategic Expertise, Software Defined Vehicle (SDV)",
+                "technologies" : "PostgreSQL, Cassandra, MongoDB, Redis, MySQL, MariaDB, etc...",
+                "text" : "Data is at the heart of modern business operations. We use powerful databases like PostgreSQL, Cassandra, MongoDB, Redis, MySQL, and MariaDB to manage, store, and analyze large volumes of data. These technologies are crucial for System Integration projects, where they ensure seamless data exchange, and for SDV projects, where real-time data processing is critical. In our Strategic Expertise, data management technologies support informed decision-making and enhance overall business intelligence."
+            },
+            "paragraphes[6]": {
+                "title" : "DevOps & CI/CD",
+                "expertise" : "Software Project Delivery, Legacy Modernization, System Integration",
+                "technologies" : "Jenkins, GitLab CI, CloudBees, Bitbucket, GitHub Actions, Azure DevOps, etc...",
+                "text" : "DevOps practices are integral to modern software development, ensuring rapid, reliable, and repeatable deployment processes. We utilize Jenkins, GitLab CI, CloudBees, Bitbucket, GitHub Actions, and Azure DevOps to automate and streamline the software development lifecycle. These tools are vital in Software Project Delivery, where they enable continuous integration and delivery, and in Legacy Modernization, where they help manage the transition from legacy to modern systems. In System Integration, these tools ensure that new integrations are deployed smoothly and efficiently."
+            },
+            "paragraphes[7]": {
+                "title" : "Infrastructure & Orchestration",
+                "expertise" : "System Integration, Software Defined Vehicle (SDV), Legacy Modernization",
+                "technologies" : "Docker, Kubernetes, Terraform, Ansible, Bash, Linux, Python, etc...",
+                "text" : "Efficient infrastructure management is key to supporting scalable, resilient applications. We use Docker, Kubernetes, Terraform, Ansible, Bash, and Linux to automate and orchestrate infrastructure deployment and management. These technologies are essential in System Integration, where they enable the seamless deployment of integrated systems, and in SDV projects, where they support the complex infrastructure needs of modern vehicles. In Legacy Modernization, they help transition legacy systems to modern, cloud-based environments."
+            },
+            "paragraphes[8]": {
+                "title" : "Security & Identity Management",
+                "expertise" : "Strategic Expertise, System Integration",
+                "technologies" : "Keycloak, SSO ForgeRock, SAML, etc...",
+                "text" : "Security is paramount in all our projects. We utilize Keycloak and SSO ForgeRock to manage user identities, authenticate users, and ensure secure access to applications. These technologies are crucial in our Strategic Expertise, where we design secure systems that protect sensitive data, and in System Integration, where they ensure that integrated systems maintain robust security protocols."
+            },
+            "paragraphes[9]": {
+                "title" : "Legacy Systems Modernization",
+                "expertise" : "",
+                "technologies" : "Flyway, Quarkus, Akka, Migration Tools (Terraform, Ansible), etc...",
+                "text" : "Modernizing legacy systems is a complex but necessary process for businesses looking to stay competitive. We use Flyway, Quarkus, Akka, and other migration tools like Terraform and Ansible to update and revitalize outdated systems. These technologies ensure that legacy systems are brought up to date with modern standards, making them more secure, efficient, and scalable. This is central to our Legacy Modernization expertise, where we breathe new life into old systems, and also plays a significant role in Software Project Delivery, ensuring that modernized systems are robust and future-proof."
             },
             "secondBlock": {
                 "scala" : {
