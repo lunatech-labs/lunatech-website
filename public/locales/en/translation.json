@@ -654,7 +654,54 @@
         "title": "Our ",
         "titleImp": "partners",
         "subtitle": "Partners",
-        "text" : "At Lunatech, we recognize the value of strategic alliances and collaboration in driving innovation and delivering top-notch solutions. Our partnerships with industry-leading technology providers and open-source communities enable us to leverage cutting-edge technologies and offer comprehensive, tailored solutions to meet our clients' diverse needs. Discover our key partnerships below."
+        "text" : "At Lunatech, we recognize the value of strategic alliances and collaboration in driving innovation and delivering top-notch solutions. Our partnerships with industry-leading technology providers and open-source communities enable us to leverage cutting-edge technologies and offer comprehensive, tailored solutions to meet our clients' diverse needs. Discover our key partnerships below.",
+        "title2" : "Our Key Partnerships",
+        "paragraphes[0]" : {
+            "title" : "Redhat",
+            "subtitle" : "Cloud Computing, Containerization, and Open-Source Technologies",
+            "text": "Lunatech collaborates with Red Hat to integrate enterprise solutions such as Red Hat OpenShift with our expertise. This partnership enhances our digital transformation projects by providing robust, scalable, and secure cloud and containerization solutions" 
+        },
+        "paragraphes[1]" : {
+            "title" : "Amazon Web Services (AWS)",
+            "subtitle" : "Cloud Infrastructure and Services",
+            "text": "Partnering with AWS allows Lunatech to leverage AWS’s scalable cloud services to support modern application development. This collaboration enables us to deliver flexible, high-performance cloud-based infrastructure to our clients." 
+        },
+        "paragraphes[2]" : {
+            "title" : "Google Cloud",
+            "subtitle" : "Cloud Computing and Data Analytics",
+            "text": "Our partnership with Google Cloud provides advanced cloud solutions, including data analytics and machine learning capabilities. This collaboration supports our clients in harnessing the power of cloud computing and data-driven insights." 
+        },
+        "paragraphes[3]" : {
+            "title" : "Microsoft Azure",
+            "subtitle" : "Cloud Services and Enterprise Solutions",
+            "text": "Partnering with Microsoft Azure gives Lunatech access to a broad range of scalable cloud services. This support aids in modernizing IT environments and offering flexible solutions tailored to client needs." 
+        },
+        "paragraphes[4]" : {
+            "title" : "Eclipse Foundation",
+            "subtitle" : "Open-Source Software Development and Tools",
+            "text": "As an active contributor to the Eclipse Foundation, Lunatech collaborates on various open-source projects. This involvement supports the advancement of the Eclipse ecosystem and enhances our capabilities in developing open-source solutions." 
+        },
+        "paragraphes[5]" : {
+            "title" : "Clever Cloud",
+            "subtitle" : "Platform-as-a-Service (PaaS) for Application Deployment and Management",
+            "text": "Our partnership with Clever Cloud allows us to offer advanced PaaS solutions that simplify application deployment, scaling, and management. This collaboration supports cloud-native development and provides clients with efficient and scalable application management." 
+        },
+        "paragraphes[6]" : {
+            "title" : "Azul",
+            "subtitle" : "Java Runtime Environments and Performance Optimization",
+            "text": "Lunatech partners with Azul to provide high-performance Java Runtime Environments (JRE) and JVM solutions. This partnership helps us deliver optimized and reliable Java applications, supporting our clients in achieving superior performance and scalability." 
+        },
+        "paragraphes[7]" : {
+            "title" : "Cloudbees",
+            "subtitle" : "Continuous Integration and Continuous Delivery (CI/CD)",
+            "text": "Partnering with CloudBees allows Lunatech to offer advanced CI/CD solutions that streamline the software development lifecycle. This collaboration supports efficient, automated, and scalable software delivery, enhancing our clients' development processes and time-to-market." 
+        },
+        "paragraphes[8]" : {
+            "title" : "Lightbend",
+            "subtitle" : "System Integration and reactive system",
+            "text": "Lunatech's partnership with Lightbend focuses on developing reactive systems using technologies like Akka and Play Framework. This collaboration enhances Lunatech’s capabilities in delivering scalable and resilient applications, providing them with advanced training and a competitive edge in reactive programming and microservices architecture. The partnership strengthens Lunatech's position in delivering high-performance enterprise solutions."
+        }
+
     },
     "opensource": {
         "title": "Open ",

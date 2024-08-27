@@ -7,7 +7,7 @@
         text-align: left;
     }
     &__top {
-        text-align: center;
+        text-align: start;
         margin-bottom: 64px;
     }
     &__partners {
@@ -15,10 +15,12 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        grid-gap: 40px;
+        grid-gap: 20%;
      }
     &__logo {
-        height: 40px;
+        height: 50pt;
+        display: block;
+        margin: 80pt 60pt;
     }
 }
 

@@ -164,6 +164,23 @@ nav.nav-bar--hidden {
     }
 }
 
+/* ------------- PARTNERS BLOCK ------------- */
+.partnership {
+    h3,h4 {
+        margin-top: 20pt;
+    }
+    h4 {
+        color: $white;
+    }
+    h3 {
+        font-size: 200%;
+        color: $pink;
+    }
+    h2 {
+        margin-top: 30pt;
+    }
+}
+
 
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {

@@ -649,8 +649,55 @@
     "partners": {
         "title": "Our ",
         "titleImp": "partners",
-        "subtitle": "Partenaires",
-        "text": "At Lunatech, we recognize the value of strategic alliances and collaboration in driving innovation and delivering top-notch solutions. Our partnerships with industry-leading technology providers and open-source communities enable us to leverage cutting-edge technologies and offer comprehensive, tailored solutions to meet our clients' diverse needs. Discover our key partnerships below."
+        "subtitle": "Partners",
+        "text" : "At Lunatech, we recognize the value of strategic alliances and collaboration in driving innovation and delivering top-notch solutions. Our partnerships with industry-leading technology providers and open-source communities enable us to leverage cutting-edge technologies and offer comprehensive, tailored solutions to meet our clients' diverse needs. Discover our key partnerships below.",
+        "title2" : "",
+        "paragraphes[0]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[1]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[2]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[3]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[4]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[5]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[6]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[7]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        },
+        "paragraphes[8]" : {
+            "title" : "",
+            "subtitle" : "",
+            "text": "" 
+        }
+
     },
     "opensource": {
         "title": "Open ",
