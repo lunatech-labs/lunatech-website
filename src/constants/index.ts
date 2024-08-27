@@ -7,7 +7,6 @@ import {
     parisOffice,
     visionIllustration,
     visionIllustrationOpen,
-    officeIcon,
     awsLogo,
     azulLogo,
     cleverCloudLogo,
@@ -15,7 +14,6 @@ import {
     googleCloudLogo,
     lightbendLogo,
     redHatLogo,
-    lunatechLogo,
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -319,6 +317,7 @@ export const aboutPage = [
         },
     }
 ]
+
 
 export const contactBtn = [
     {
