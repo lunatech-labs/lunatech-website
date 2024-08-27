@@ -11,6 +11,8 @@ import HeaderPage from '@components/HeaderPage/HeaderPage';
 import Spotlight, { SpotlightCard } from '@components/Spotlight/Spotlight';
 import Icon from '@components/Icon/Icon';
 import { officeCard } from '@/constants';
+import ButtonPrimary from '@components/ButtonPrimary/ButtonPrimary';
+import { messageIcon } from '@/assets';
 
 const Contact = () => {
 
@@ -23,7 +25,10 @@ const Contact = () => {
                     <HeaderPage>
                         <Breadcrumbs />
                         <Title level={1}><Trans i18nKey="contact.title" /><span><Trans i18nKey="contact.titleColor" /></span>!</Title>
-                        <Text size="large"><Trans i18nKey="contact.text" /></Text>
+                        <Text className="mgb24" size="large"><Trans i18nKey="contact.text" /></Text>
+                        <ButtonPrimary to={`mailto:info@lunatech.com`} iconUrl={messageIcon}  size="large">
+                            <Trans i18nKey="hero.button1" />
+                        </ButtonPrimary>
                     </HeaderPage>
                 </Container>
            
