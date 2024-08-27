@@ -7,8 +7,8 @@ import { initReactI18next } from 'react-i18next';
 const languageDetector = new LanguageDetector();
 const domainLocaleMap: Record<string, string>  = {
   'localhost': 'en',
-  'lunatech.com': 'en',
-  'lunatech.fr': 'fr'
+  'com': 'en',
+  'fr': 'fr'
 };
 
 languageDetector.addDetector({
@@ -17,7 +17,9 @@ languageDetector.addDetector({
         let locale = "en";
         // In the browser, get the hostname from window.location.
         if (typeof window !== 'undefined' ) {
-          locale = domainLocaleMap[window.location.hostname];
+          // get the last part of the request 
+          let lastPartOfHostname = url.split("\.").pop();
+          locale = domainLocaleMap[lastPartOfHostname];
         }      
       return locale;
     }
