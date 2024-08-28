@@ -14,7 +14,7 @@
         "Software project delivery": "Livraison de projet logiciel",
         "System integration": "Intégration de systèmes",
         "Strategic expertise": "Expertise stratégique",
-        "Legacy modernisation": "Modernisation des systèmes hérités",
+        "Legacy modernisation": "Modernisation des systèmes historique",
         "Open source": "Open Source",
         "Partners": "Partenaires", 
         "Contact": "Contact"
@@ -126,8 +126,8 @@
                 "text": "Nous intégrons les systèmes existants et les applications tierces dans votre écosystème numérique."
             },
             "legacyModernisation": {
-                "title": "Modernisation des systèmes hérités",
-                "text": "Nous modernisons les systèmes hérités pour les rendre plus sûrs, agiles et efficaces."
+                "title": "Modernisation des systèmes historique",
+                "text": "Nous modernisons les systèmes historique pour les rendre plus sûrs, agiles et efficaces."
             }
         }
     },
@@ -333,7 +333,7 @@
             "paragraphes[1]": {
                 "title": "Cloud Computing",
                 "technologies": "AWS, Google Cloud, Microsoft Azure, Red Hat OpenShift, etc...",
-                "expertise": "Expertise stratégique, Véhicule défini par logiciel (SDV), Intégration de systèmes, Modernisation des systèmes hérités",
+                "expertise": "Expertise stratégique, Véhicule défini par logiciel (SDV), Intégration de systèmes, Modernisation des systèmes historique",
                 "text": "Nous utilisons des plateformes cloud telles qu'AWS, Google Cloud, Microsoft Azure et Red Hat OpenShift pour fournir une infrastructure évolutive et fiable à nos clients. Ces technologies sont au cœur de nos solutions cloud, garantissant flexibilité, sécurité et rentabilité dans divers projets. Qu'il s'agisse de développer des applications natives cloud, d'intégrer des services cloud à des systèmes existants ou de moderniser des applications héritées, notre expertise cloud est essentielle à notre succès dans ces domaines."
             },
             "paragraphes[2]": {
@@ -344,15 +344,15 @@
             },
             "paragraphes[3]": {
                 "title": "Cadres de développement logiciel",
-                "expertise": "Livraison de projet logiciel, Modernisation des systèmes hérités, Expertise stratégique",
+                "expertise": "Livraison de projet logiciel, Modernisation des systèmes historique, Expertise stratégique",
                 "technologies": "Java, Scala, Kotlin, Spring Framework, Hibernate, Quarkus, Play Framework, etc...",
-                "text": "Nos cadres de développement logiciel, notamment Java, Scala, Kotlin, Spring, Hibernate, Quarkus et Play Framework, constituent l'épine dorsale de notre expertise en livraison de projets logiciels. Ces technologies nous permettent de créer des applications robustes, évolutives et sécurisées, adaptées aux besoins uniques de nos clients. Elles jouent également un rôle clé dans la modernisation des systèmes hérités, où nous mettons à jour et réussons les anciens systèmes pour répondre aux normes modernes, ainsi que dans notre expertise stratégique, où nous développons des solutions logicielles alignées sur les objectifs commerciaux plus larges."
+                "text": "Nos cadres de développement logiciel, notamment Java, Scala, Kotlin, Spring, Hibernate, Quarkus et Play Framework, constituent l'épine dorsale de notre expertise en livraison de projets logiciels. Ces technologies nous permettent de créer des applications robustes, évolutives et sécurisées, adaptées aux besoins uniques de nos clients. Elles jouent également un rôle clé dans la modernisation des systèmes historique, où nous mettons à jour et réussons les anciens systèmes pour répondre aux normes modernes, ainsi que dans notre expertise stratégique, où nous développons des solutions logicielles alignées sur les objectifs commerciaux plus larges."
             },
             "paragraphes[4]": {
                 "title": "Développement front-end",
-                "expertise": "Livraison de projet logiciel, Modernisation des systèmes hérités",
+                "expertise": "Livraison de projet logiciel, Modernisation des systèmes historique",
                 "technologies": "Typescript, Next.js, ReactJS, HTML, CSS, SASS, Figma, etc...",
-                "text": "Dans le paysage numérique d'aujourd'hui, une interface utilisateur convaincante et réactive est cruciale. Nos technologies de développement front-end - Next.js, ReactJS, HTML, CSS et SASS - nous permettent de créer des applications web conviviales et visuellement attrayantes. Elles sont essentielles dans la livraison de projets logiciels, où nous nous concentrons sur la création d'interfaces intuitives, et dans la modernisation des systèmes hérités, où nous actualisons et modernisons l'expérience utilisateur des anciennes applications."
+                "text": "Dans le paysage numérique d'aujourd'hui, une interface utilisateur convaincante et réactive est cruciale. Nos technologies de développement front-end - Next.js, ReactJS, HTML, CSS et SASS - nous permettent de créer des applications web conviviales et visuellement attrayantes. Elles sont essentielles dans la livraison de projets logiciels, où nous nous concentrons sur la création d'interfaces intuitives, et dans la modernisation des systèmes historique, où nous actualisons et modernisons l'expérience utilisateur des anciennes applications."
             },
             "paragraphes[5]": {
                 "title": "Gestion des données et analyses",
@@ -362,15 +362,15 @@
             },
             "paragraphes[6]": {
                 "title": "DevOps et CI/CD",
-                "expertise": "Livraison de projet logiciel, Modernisation des systèmes hérités, Intégration de systèmes",
+                "expertise": "Livraison de projet logiciel, Modernisation des systèmes historique, Intégration de systèmes",
                 "technologies": "Jenkins, GitLab CI, CloudBees, Bitbucket, GitHub Actions, Azure DevOps, etc...",
-                "text": "Les pratiques DevOps sont essentielles au développement logiciel moderne, garantissant des processus de déploiement rapides, fiables et reproductibles. Nous utilisons Jenkins, GitLab CI, CloudBees, Bitbucket, GitHub Actions et Azure DevOps pour automatiser et rationaliser le cycle de vie du développement logiciel. Ces outils sont essentiels dans la livraison de projets logiciels, où ils permettent une intégration et une livraison continues, et dans la modernisation des systèmes hérités, où ils aident à gérer la transition des systèmes hérités vers des systèmes modernes. Dans l'intégration des systèmes, ces outils garantissent que les nouvelles intégrations sont déployées de manière fluide et efficace."
+                "text": "Les pratiques DevOps sont essentielles au développement logiciel moderne, garantissant des processus de déploiement rapides, fiables et reproductibles. Nous utilisons Jenkins, GitLab CI, CloudBees, Bitbucket, GitHub Actions et Azure DevOps pour automatiser et rationaliser le cycle de vie du développement logiciel. Ces outils sont essentiels dans la livraison de projets logiciels, où ils permettent une intégration et une livraison continues, et dans la modernisation des systèmes historique, où ils aident à gérer la transition des systèmes historique vers des systèmes modernes. Dans l'intégration des systèmes, ces outils garantissent que les nouvelles intégrations sont déployées de manière fluide et efficace."
             },
             "paragraphes[7]": {
                 "title": "Infrastructure et orchestration",
-                "expertise": "Intégration de systèmes, Véhicule défini par logiciel (SDV), Modernisation des systèmes hérités",
+                "expertise": "Intégration de systèmes, Véhicule défini par logiciel (SDV), Modernisation des systèmes historique",
                 "technologies": "Docker, Kubernetes, Terraform, Ansible, Bash, Linux, Python, etc...",
-                "text": "Une gestion efficace de l'infrastructure est essentielle pour soutenir des applications évolutives et résilientes. Nous utilisons Docker, Kubernetes, Terraform, Ansible, Bash et Linux pour automatiser et orchestrer le déploiement et la gestion de l'infrastructure. Ces technologies sont essentielles dans l'intégration des systèmes, où elles permettent le déploiement fluide de systèmes intégrés, et dans les projets SDV, où elles soutiennent les besoins complexes en infrastructure des véhicules modernes. Dans la modernisation des systèmes hérités, elles aident à passer des systèmes hérités à des environnements modernes basés sur le cloud."
+                "text": "Une gestion efficace de l'infrastructure est essentielle pour soutenir des applications évolutives et résilientes. Nous utilisons Docker, Kubernetes, Terraform, Ansible, Bash et Linux pour automatiser et orchestrer le déploiement et la gestion de l'infrastructure. Ces technologies sont essentielles dans l'intégration des systèmes, où elles permettent le déploiement fluide de systèmes intégrés, et dans les projets SDV, où elles soutiennent les besoins complexes en infrastructure des véhicules modernes. Dans la modernisation des systèmes historique, elles aident à passer des systèmes historique à des environnements modernes basés sur le cloud."
             },
             "paragraphes[8]": {
                 "title": "Sécurité et gestion des identités",
@@ -379,10 +379,10 @@
                 "text": "La sécurité est primordiale dans tous nos projets. Nous utilisons Keycloak et SSO ForgeRock pour gérer les identités des utilisateurs, authentifier les utilisateurs et assurer un accès sécurisé aux applications. Ces technologies sont cruciales dans notre expertise stratégique, où nous concevons des systèmes sécurisés qui protègent les données sensibles, et dans l'intégration des systèmes, où elles garantissent que les systèmes intégrés maintiennent des protocoles de sécurité robustes."
             },
             "paragraphes[9]": {
-                "title": "Modernisation des systèmes hérités",
-                "Expertise": "Modernisation des systèmes hérités, Livraison de projet logiciel",
+                "title": "Modernisation des systèmes historique",
+                "Expertise": "Modernisation des systèmes historique, Livraison de projet logiciel",
                 "technologies": "Flyway, Quarkus, Akka, Outils de migration (Terraform, Ansible), etc...",
-                "text": "La modernisation des systèmes hérités est un processus complexe mais nécessaire pour les entreprises cherchant à rester compétitives. Nous utilisons Flyway, Quarkus, Akka et d'autres outils de migration tels que Terraform et Ansible pour mettre à jour et revitaliser les systèmes obsolètes. Ces technologies garantissent que les systèmes hérités sont mis à jour selon les normes modernes, les rendant plus sécurisés, efficaces et évolutifs. Cela est central à notre expertise en modernisation des systèmes hérités, où nous donnons une nouvelle vie aux anciens systèmes, et joue également un rôle significatif dans la livraison de projets logiciels, garantissant que les systèmes modernisés sont robustes et prêts pour l'avenir."
+                "text": "La modernisation des systèmes historique est un processus complexe mais nécessaire pour les entreprises cherchant à rester compétitives. Nous utilisons Flyway, Quarkus, Akka et d'autres outils de migration tels que Terraform et Ansible pour mettre à jour et revitaliser les systèmes obsolètes. Ces technologies garantissent que les systèmes historique sont mis à jour selon les normes modernes, les rendant plus sécurisés, efficaces et évolutifs. Cela est central à notre expertise en modernisation des systèmes historique, où nous donnons une nouvelle vie aux anciens systèmes, et joue également un rôle significatif dans la livraison de projets logiciels, garantissant que les systèmes modernisés sont robustes et prêts pour l'avenir."
             },
             "secondBlock": {
                 "scala": {
@@ -595,53 +595,53 @@
     },
     "expertiseLegacyModernisation": {
         "title": "Modernisation des ",
-        "titleImp": "Systèmes Hérités",
-        "title2": "Transformer Vos Systèmes Hérités pour l'Avenir",
-        "description": "Dans le paysage numérique rapide d'aujourd'hui, les systèmes hérités obsolètes peuvent devenir un obstacle important à la croissance et à l'innovation de l'entreprise. Ces systèmes, bien qu'essentiels à vos opérations, manquent souvent de la flexibilité, de l'efficacité et de l'évolutivité nécessaires pour répondre aux besoins actuels et futurs de l'entreprise. Les services de modernisation des systèmes hérités de Lunatech sont conçus pour transformer votre infrastructure informatique vieillissante en systèmes modernes et agiles qui s'alignent sur vos objectifs stratégiques et tirent parti des dernières technologies.",
-        "title3": "Pourquoi Moderniser Vos Systèmes Hérités?",
-        "description2": "Les systèmes hérités, bien que fiables, peuvent freiner votre organisation de plusieurs manières:",
+        "titleImp": "Systèmes historique",
+        "title2": "Transformer Vos Systèmes historique pour l'Avenir",
+        "description": "Dans le paysage numérique rapide d'aujourd'hui, les systèmes historique obsolètes peuvent devenir un obstacle important à la croissance et à l'innovation de l'entreprise. Ces systèmes, bien qu'essentiels à vos opérations, manquent souvent de la flexibilité, de l'efficacité et de l'évolutivité nécessaires pour répondre aux besoins actuels et futurs de l'entreprise. Les services de modernisation des systèmes historique de Lunatech sont conçus pour transformer votre infrastructure informatique vieillissante en systèmes modernes et agiles qui s'alignent sur vos objectifs stratégiques et tirent parti des dernières technologies.",
+        "title3": "Pourquoi Moderniser Vos Systèmes historique?",
+        "description2": "Les systèmes historique, bien que fiables, peuvent freiner votre organisation de plusieurs manières:",
         "paragraphes[0]": {
             "title": "Coûts de Maintenance Élevés",
             "text": "Les systèmes plus anciens sont souvent coûteux à maintenir, avec des coûts croissants pour le support, les mises à jour et les réparations."
         },
         "paragraphes[1]": {
             "title": "Évolutivité Limitée",
-            "text": "Les systèmes hérités peuvent avoir du mal à évoluer en réponse à la croissance des besoins de l'entreprise, entraînant des goulets d'étranglement en matière de performance."
+            "text": "Les systèmes historique peuvent avoir du mal à évoluer en réponse à la croissance des besoins de l'entreprise, entraînant des goulets d'étranglement en matière de performance."
         },
         "paragraphes[2]": {
             "title": "Défis d'Intégration",
-            "text": "Connecter des systèmes hérités à des applications et plateformes modernes peut être difficile, entraînant des inefficacités et des silos de données."
+            "text": "Connecter des systèmes historique à des applications et plateformes modernes peut être difficile, entraînant des inefficacités et des silos de données."
         },
         "paragraphes[3]": {
             "title": "Risques de Sécurité",
-            "text": "Les systèmes hérités peuvent manquer des fonctionnalités de sécurité nécessaires pour se protéger contre les menaces cybernétiques modernes, mettant votre organisation en danger."
+            "text": "Les systèmes historique peuvent manquer des fonctionnalités de sécurité nécessaires pour se protéger contre les menaces cybernétiques modernes, mettant votre organisation en danger."
         },
         "paragraphes[4]": {
             "title": "Inflexibilité",
-            "text": "Les systèmes hérités sont souvent rigides, rendant difficile l'implémentation de nouvelles fonctionnalités ou l'adaptation aux besoins changeants de l'entreprise."
+            "text": "Les systèmes historique sont souvent rigides, rendant difficile l'implémentation de nouvelles fonctionnalités ou l'adaptation aux besoins changeants de l'entreprise."
         },
         "conclusion": "La modernisation de ces systèmes peut aider votre entreprise à surmonter ces défis, à réduire les coûts et à débloquer de nouvelles opportunités d'innovation et de croissance.",
-        "title4": "Nos Services de Modernisation des Systèmes Hérités",
+        "title4": "Nos Services de Modernisation des Systèmes historique",
         "paragraphes[5]": 
         {
             "title": "Évaluation Complète et Stratégie",
-            "text": "Lunatech commence chaque projet de modernisation par une évaluation approfondie de vos systèmes hérités existants. Nous analysons leur état actuel, évaluons leur alignement avec vos objectifs commerciaux, et identifions les domaines à améliorer. Sur la base de cette évaluation, nous développons une stratégie de modernisation sur mesure qui répond à vos besoins spécifiques, qu'il s'agisse d'une refonte complète du système, de mises à niveau progressives ou d'améliorations ciblées."
+            "text": "Lunatech commence chaque projet de modernisation par une évaluation approfondie de vos systèmes historique existants. Nous analysons leur état actuel, évaluons leur alignement avec vos objectifs commerciaux, et identifions les domaines à améliorer. Sur la base de cette évaluation, nous développons une stratégie de modernisation sur mesure qui répond à vos besoins spécifiques, qu'il s'agisse d'une refonte complète du système, de mises à niveau progressives ou d'améliorations ciblées."
         },
         "paragraphes[6]": {
             "title": "Ingénierie Inverse et Documentation",
-            "text": "Comprendre les subtilités des systèmes hérités est crucial pour un projet de modernisation réussi. Lunatech utilise des techniques d'ingénierie inverse pour déconstruire vos systèmes hérités, documentant leur fonctionnalité, leur architecture et leurs dépendances. Cette documentation détaillée sert de plan directeur pour le processus de modernisation, garantissant que les fonctions commerciales critiques sont préservées et améliorées pendant la transition."
+            "text": "Comprendre les subtilités des systèmes historique est crucial pour un projet de modernisation réussi. Lunatech utilise des techniques d'ingénierie inverse pour déconstruire vos systèmes historique, documentant leur fonctionnalité, leur architecture et leurs dépendances. Cette documentation détaillée sert de plan directeur pour le processus de modernisation, garantissant que les fonctions commerciales critiques sont préservées et améliorées pendant la transition."
         },
         "paragraphes[7]": {
             "title": "Mise à Niveau de la Pile Technologique",
-            "text": "La modernisation de vos systèmes hérités implique souvent une mise à niveau vers une pile technologique plus actuelle et puissante. Lunatech vous aide à sélectionner et à mettre en œuvre les bonnes technologies, telles que des langages de programmation modernes, des frameworks et des plateformes cloud, pour remplacer les composants obsolètes. Cette mise à niveau améliore non seulement la performance du système, mais aussi la compatibilité avec les nouvelles technologies et les normes."
+            "text": "La modernisation de vos systèmes historique implique souvent une mise à niveau vers une pile technologique plus actuelle et puissante. Lunatech vous aide à sélectionner et à mettre en œuvre les bonnes technologies, telles que des langages de programmation modernes, des frameworks et des plateformes cloud, pour remplacer les composants obsolètes. Cette mise à niveau améliore non seulement la performance du système, mais aussi la compatibilité avec les nouvelles technologies et les normes."
         },
         "paragraphes[8]": {
             "title": "Migration et Intégration des Données",
-            "text": "La migration des données des systèmes hérités vers des plateformes modernes est un aspect critique du processus de modernisation. Lunatech garantit une migration des données fluide et sécurisée, préservant l'intégrité des données et minimisant les interruptions. Nous fournissons également des services d'intégration pour connecter vos systèmes modernisés à d'autres applications, assurant un environnement informatique cohérent et unifié."
+            "text": "La migration des données des systèmes historique vers des plateformes modernes est un aspect critique du processus de modernisation. Lunatech garantit une migration des données fluide et sécurisée, préservant l'intégrité des données et minimisant les interruptions. Nous fournissons également des services d'intégration pour connecter vos systèmes modernisés à d'autres applications, assurant un environnement informatique cohérent et unifié."
         },
         "paragraphes[9]": {
             "title": "Modernisation de l'UI/UX",
-            "text": "Les systèmes hérités présentent souvent des interfaces utilisateur obsolètes qui peuvent nuire à la productivité et à la satisfaction des utilisateurs. Lunatech propose des services de modernisation de l'UI/UX pour redessiner l'interface de votre système, la rendant plus intuitive, conviviale et esthétiquement agréable. En améliorant l'expérience utilisateur, nous contribuons à améliorer les taux d'adoption et l'efficacité globale du système."
+            "text": "Les systèmes historique présentent souvent des interfaces utilisateur obsolètes qui peuvent nuire à la productivité et à la satisfaction des utilisateurs. Lunatech propose des services de modernisation de l'UI/UX pour redessiner l'interface de votre système, la rendant plus intuitive, conviviale et esthétiquement agréable. En améliorant l'expérience utilisateur, nous contribuons à améliorer les taux d'adoption et l'efficacité globale du système."
         },
         "paragraphes[10]": {
             "title": "Améliorations de la Sécurité",
@@ -653,14 +653,14 @@
         },
         "paragraphes[12]": {
             "title": "Formation et Transfert de Connaissances",
-            "text": "La modernisation des systèmes hérités implique souvent une courbe d'apprentissage abrupte pour votre équipe. Lunatech propose des services de formation et de transfert de connaissances pour s'assurer que votre personnel est pleinement équipé pour gérer et exploiter les systèmes modernisés. Nous offrons des sessions de formation pratiques, une documentation détaillée et un support continu pour aider votre équipe à s'adapter sans heurt à la nouvelle technologie."
+            "text": "La modernisation des systèmes historique implique souvent une courbe d'apprentissage abrupte pour votre équipe. Lunatech propose des services de formation et de transfert de connaissances pour s'assurer que votre personnel est pleinement équipé pour gérer et exploiter les systèmes modernisés. Nous offrons des sessions de formation pratiques, une documentation détaillée et un support continu pour aider votre équipe à s'adapter sans heurt à la nouvelle technologie."
         },
         "paragraphes[13]": {
             "title": "Gestion du Changement",
-            "text": "Une modernisation réussie nécessite une gestion efficace du changement. Lunatech travaille en étroite collaboration avec votre organisation pour gérer la transition des systèmes hérités vers des systèmes modernes, en veillant à ce que toutes les parties prenantes soient informées, engagées et soutiennent le changement. Nos services de gestion du changement aident à minimiser la résistance, à favoriser l'adoption et à garantir le succès à long terme du projet de modernisation."
+            "text": "Une modernisation réussie nécessite une gestion efficace du changement. Lunatech travaille en étroite collaboration avec votre organisation pour gérer la transition des systèmes historique vers des systèmes modernes, en veillant à ce que toutes les parties prenantes soient informées, engagées et soutiennent le changement. Nos services de gestion du changement aident à minimiser la résistance, à favoriser l'adoption et à garantir le succès à long terme du projet de modernisation."
         },
-        "title5": "Transformez Vos Systèmes Hérités avec Lunatech",
-        "description3": "Prêt à faire entrer vos systèmes hérités dans le futur? Les services de modernisation des systèmes hérités de Lunatech vous apportent l'expertise, la technologie et le support nécessaires pour transformer votre infrastructure informatique. Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons vous aider à moderniser vos systèmes hérités, réduire les coûts et stimuler l'innovation."
+        "title5": "Transformez Vos Systèmes historique avec Lunatech",
+        "description3": "Prêt à faire entrer vos systèmes historique dans le futur? Les services de modernisation des systèmes historique de Lunatech vous apportent l'expertise, la technologie et le support nécessaires pour transformer votre infrastructure informatique. Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons vous aider à moderniser vos systèmes historique, réduire les coûts et stimuler l'innovation."
     },
     
     "expertiseSystemIntegration": {
@@ -680,7 +680,7 @@
         },
         "paragraphes[3]": {
             "title": "Solutions Middleware",
-            "text": "Le middleware agit comme un pont entre différents systèmes, leur permettant de communiquer et de travailler ensemble efficacement. Lunatech fournit des solutions middleware qui facilitent l'intégration de systèmes complexes, vous permettant de connecter des systèmes hérités à des applications modernes, de rationaliser l'échange de données et d'améliorer les performances globales du système. Notre expertise en middleware garantit que vos systèmes intégrés sont évolutifs, fiables et faciles à gérer."
+            "text": "Le middleware agit comme un pont entre différents systèmes, leur permettant de communiquer et de travailler ensemble efficacement. Lunatech fournit des solutions middleware qui facilitent l'intégration de systèmes complexes, vous permettant de connecter des systèmes historique à des applications modernes, de rationaliser l'échange de données et d'améliorer les performances globales du système. Notre expertise en middleware garantit que vos systèmes intégrés sont évolutifs, fiables et faciles à gérer."
         },
         "paragraphes[3]": {
             "title": "Mise en Œuvre d'un Bus de Services d'Entreprise (ESB)",
@@ -695,8 +695,8 @@
             "text": "Une intégration efficace des systèmes nécessite un échange fluide des données entre différentes applications et systèmes. Lunatech propose des services complets d'intégration des données, y compris la migration des données, la transformation des données et la synchronisation des données. Nous nous assurons que vos données sont précises, cohérentes et accessibles sur tous les systèmes intégrés, soutenant une meilleure prise de décision et une intelligence d'affaires améliorée."
         },
         "paragraphes[6]": {
-            "title": "Intégration des Systèmes Hérités",
-            "text": "L'intégration des systèmes hérités avec des applications modernes peut être un défi, mais elle est essentielle pour maintenir la continuité opérationnelle tout en adoptant de nouvelles technologies. Lunatech se spécialise dans l'intégration des systèmes hérités, permettant à vos systèmes existants de communiquer avec de nouvelles plateformes et applications. Nos solutions prolongent la durée de vie de vos systèmes hérités tout en s'assurant qu'ils fonctionnent en harmonie avec les technologies modernes."
+            "title": "Intégration des Systèmes historique",
+            "text": "L'intégration des systèmes historique avec des applications modernes peut être un défi, mais elle est essentielle pour maintenir la continuité opérationnelle tout en adoptant de nouvelles technologies. Lunatech se spécialise dans l'intégration des systèmes historique, permettant à vos systèmes existants de communiquer avec de nouvelles plateformes et applications. Nos solutions prolongent la durée de vie de vos systèmes historique tout en s'assurant qu'ils fonctionnent en harmonie avec les technologies modernes."
         },
         "paragraphes[7]": {
             "title": "Services d'Intégration Cloud",
@@ -767,8 +767,8 @@
             "text": "Pour gérer la complexité des systèmes backend SDV, Lunatech utilise une architecture microservices. Cette approche nous permet de développer et déployer des composants individuels de manière indépendante, rendant le système plus flexible, évolutif et facile à maintenir. Nos systèmes backend basés sur les microservices permettent des cycles de développement plus rapides, des mises à jour plus faciles et une meilleure isolation des défauts, garantissant que vos systèmes SDV restent agiles et résilients."
         },
         "paragraphes[3]": {
-            "title": "Modernisation des Systèmes Hérités",
-            "text": "Si vous faites face à des systèmes hérités obsolètes qui freinent votre entreprise, Lunatech peut vous aider. Nous nous spécialisons dans la modernisation des applications héritées, les rendant plus efficaces, sécurisées et compatibles avec les normes technologiques actuelles. Nos services de modernisation incluent la réingénierie des systèmes hérités, la migration des données et la mise à jour des interfaces utilisateur pour créer une solution plus intuitive et puissante."
+            "title": "Modernisation des Systèmes historique",
+            "text": "Si vous faites face à des systèmes historique obsolètes qui freinent votre entreprise, Lunatech peut vous aider. Nous nous spécialisons dans la modernisation des applications héritées, les rendant plus efficaces, sécurisées et compatibles avec les normes technologiques actuelles. Nos services de modernisation incluent la réingénierie des systèmes historique, la migration des données et la mise à jour des interfaces utilisateur pour créer une solution plus intuitive et puissante."
         },
         "paragraphes[4]": {
             "title": "Intégration avec les Systèmes Existants",
