@@ -241,7 +241,7 @@
             },
             "paragraphes[9]": {
                 "title" : "Legacy Systems Modernization",
-                "expertise" : "",
+                "expertise" : "Legacy Modernization, Software Project Delivery",
                 "technologies" : "Flyway, Quarkus, Akka, Migration Tools (Terraform, Ansible), etc...",
                 "text" : "Modernizing legacy systems is a complex but necessary process for businesses looking to stay competitive. We use Flyway, Quarkus, Akka, and other migration tools like Terraform and Ansible to update and revitalize outdated systems. These technologies ensure that legacy systems are brought up to date with modern standards, making them more secure, efficient, and scalable. This is central to our Legacy Modernization expertise, where we breathe new life into old systems, and also plays a significant role in Software Project Delivery, ensuring that modernized systems are robust and future-proof."
             },
