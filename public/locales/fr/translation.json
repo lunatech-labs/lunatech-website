@@ -326,6 +326,24 @@
         "carouselTitleImp": "technologies",
         "carouselText": "Avec 30 ans d'expérience en conseil informatique, nous offrons une gamme de technologies pour répondre à vos besoins immédiats et soutenir votre croissance future.",
         "page": {
+            "firstBlock": {
+                "automotive": {
+                "title": "Automobile",
+                "text": "Nous aidons les entreprises à créer des solutions de mobilité intelligentes et connectées."
+                },
+                "entertainment": {
+                "title": "Divertissement",
+                "text": "Développement de plateformes interactives pour offrir des expériences de divertissement immersives."
+                },
+                "finance": {
+                "title": "Finance",
+                "text": "Nous aidons les entreprises à créer des solutions de mobilité intelligentes et connectées."
+                },
+                "insurance": {
+                "title": "Assurance",
+                "text": "Création de produits de gestion et d'analyse des données numériques pour l'industrie de l'assurance."
+                }
+            }
             "paragraphes[0]": {
                 "title": "Favoriser l'innovation avec une technologie de pointe",
                 "text": "Chez Lunatech, nous exploitons une gamme diversifiée de technologies pour offrir des solutions innovantes, évolutives et sécurisées, adaptées aux besoins uniques de nos clients. Notre expertise technique couvre le cloud computing, l'intégration de systèmes, le développement de logiciels, la gestion des données et bien plus encore, ce qui nous permet de construire et de moderniser des infrastructures informatiques qui favorisent la réussite des entreprises. Voici comment nos technologies s'alignent sur les expertises que nous proposons."

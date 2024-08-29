@@ -187,6 +187,24 @@
         "carouselTitleImp": "technologies",
         "carouselText": "With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.",
         "page": {
+            "firstBlock": {
+                "automotive": {
+                    "title": "Automotive",
+                    "text": "We help companies create smart, connected mobility solutions."
+                },
+                "entertainment": {
+                    "title": "Entertainment",
+                    "text": "Developing interactive platforms to offer immersive entertainment experiences."
+                },
+                "finance": {
+                    "title": "Financial",
+                    "text": "We help companies create smart, connected mobility solutions."
+                },
+                "insurance": {
+                    "title": "Insurance",
+                    "text": "Creating digital data management and analysis products for the insurance industry."
+                },
+            },
             "paragraphes[0]": {
                 "title" : "Powering Innovation with Cutting-Edge Technology",
                 "text" : "At Lunatech, we leverage a diverse range of technologies to deliver innovative, scalable, and secure solutions tailored to meet the unique needs of our clients. Our deep technical expertise spans cloud computing, system integration, software development, data management, and more, enabling us to build and modernize IT infrastructures that drive business success. Here’s how our technologies align with the expertises we provide"
