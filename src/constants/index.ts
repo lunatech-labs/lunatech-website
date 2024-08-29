@@ -154,25 +154,58 @@ export const valuesBanner = [
 
 export const partnerships = [
     {
+        title: "partners.paragraphes[0].title",
+        subtitle: "partners.paragraphes[0].subtitle",
+        text: "partners.paragraphes[0].text",
+        icon: redHatLogo,
+    },
+    {
+        title: "partners.paragraphes[1].title",
+        subtitle: "partners.paragraphes[1].subtitle",
+        text: "partners.paragraphes[1].text",
         icon: awsLogo,
     },
     {
-        icon: azulLogo,
-    },
-    {
-        icon: cleverCloudLogo,
-    },
-    {
-        icon: cloudBeesLogo,
-    },
-    {
+        title: "partners.paragraphes[2].title",
+        subtitle: "partners.paragraphes[2].subtitle",
+        text: "partners.paragraphes[2].text",
         icon: googleCloudLogo,
     },
     {
-        icon: lightbendLogo,
+        title: "partners.paragraphes[3].title",
+        subtitle: "partners.paragraphes[3].subtitle",
+        text: "partners.paragraphes[3].text",
+        icon: googleCloudLogo,
     },
     {
-        icon: redHatLogo,
+        title: "partners.paragraphes[4].title",
+        subtitle: "partners.paragraphes[4].subtitle",
+        text: "partners.paragraphes[4].text",
+        icon: googleCloudLogo,
+    },
+    {
+        title: "partners.paragraphes[5].title",
+        subtitle: "partners.paragraphes[5].subtitle",
+        text: "partners.paragraphes[5].text",
+        icon: cleverCloudLogo,
+    },
+    {
+        title: "partners.paragraphes[6].title",
+        subtitle: "partners.paragraphes[6].subtitle",
+        text: "partners.paragraphes[6].text",
+        icon: azulLogo,
+    },
+    {
+        title: "partners.paragraphes[7].title",
+        subtitle: "partners.paragraphes[7].subtitle",
+        text: "partners.paragraphes[7].text",
+        icon: cloudBeesLogo,
+    },
+    {
+        title: "partners.paragraphes[8].title",
+        subtitle: "partners.paragraphes[8].subtitle",
+        text: "partners.paragraphes[8].text",
+        icon: lightbendLogo,
     }
 ]
 

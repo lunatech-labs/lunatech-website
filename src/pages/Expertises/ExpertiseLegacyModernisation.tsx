@@ -37,7 +37,7 @@ const ExpertiseLegacyModernisation= () => {
                 <Container>
                     <Grid>
                         <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseLegacyModernisation.title3" /></Title>
+                            <Title level={2}><Trans i18nKey="expertiseLegacyModernisation.title3" /></Title>
                             <Text size="large" className="mgt32"><Trans i18nKey="expertiseLegacyModernisation.description2" /></Text>
                 
                             <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[0].title" /></Title>
@@ -66,7 +66,7 @@ const ExpertiseLegacyModernisation= () => {
                         </div>
                        
                         <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseLegacyModernisation.title3" /></Title>
+                            <Title level={2}><Trans i18nKey="expertiseLegacyModernisation.title3" /></Title>
                            
                             <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[5].title" /></Title>
                             <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[5].text" /></Text>

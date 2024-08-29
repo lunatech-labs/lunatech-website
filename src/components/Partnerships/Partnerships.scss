@@ -2,27 +2,29 @@
 @import "/src/styles/Variables.scss";
 
 .partnership {
-    &__intro {
-        margin-bottom: 40pt;
-        text-align: left;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .partnership__partners {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .partnership__logo {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-    &__top {
-        text-align: start;
-        margin-bottom: 64px;
+    100% {
+      transform: translateX(-100%);
     }
-    &__partners {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        grid-gap: 20%;
-     }
-    &__logo {
-        height: 50pt;
-        display: block;
-        margin: 80pt 60pt;
-    }
-}
-
+  }
+  
 
 
