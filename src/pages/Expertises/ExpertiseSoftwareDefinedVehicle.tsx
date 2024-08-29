@@ -54,7 +54,7 @@ const ExpertiseSoftwareDefinedVehicle = () => {
 
             <Section className="bg-bgMediumBlue softwareDefinedVehicule">
                 <Container>
-                    <Title level={3}><Trans i18nKey="advantages.title" /></Title>
+                    <Title level={2}><Trans i18nKey="advantages.title" /></Title>
                    
                     <div className="col-lg-6 col-md-12">
         

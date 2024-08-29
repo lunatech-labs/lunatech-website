@@ -1,5 +1,4 @@
 import { useTranslation, Trans } from 'react-i18next';
-
 import Category from '@components/Category/Category';
 import Title from '@components/Title/Title';
 import { partnerships } from '@/constants';
@@ -17,12 +16,12 @@ const Partnerships = () => {
             </div>
             
             <div className="partnership__partners">
-                {partnerships.map((value, index) => (
-                    <img key={index} src={value.icon} className="partnership__logo" />
+                {partnerships.concat(partnerships).map((value, index) => (
+                    <img key={index} src={value.icon} className="partnership__logo" alt="Partner logo" />
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Partnerships;

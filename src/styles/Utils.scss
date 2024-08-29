@@ -41,6 +41,12 @@
 .mw424 {min-width: 424px;}
 .mwidthI {min-width: initial;}
 .mh100 {min-height: 100vh;}
+.line-clamp-5 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+  }
 
 
 /* --------------- Margin --------------- */

@@ -4,7 +4,7 @@
 
 .collapse {
     @include dark-gradient;
-    padding: 35px;
+    padding: 10px 35px 0px 35px;
     grid-column: span 4;
     flex-direction: column;
     cursor: pointer;
