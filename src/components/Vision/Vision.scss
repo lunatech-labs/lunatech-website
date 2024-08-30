@@ -126,5 +126,15 @@
             }
         }
     }
+    @include phone-portrait {
+        .vision__card:nth-of-type(even) .vision__text {
+            text-align: right;
+        }
+        .vision__card {
+            .vision__text {
+                max-width: 220px;
+            }
+        }
+    }
 }
 

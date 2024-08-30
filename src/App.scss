@@ -190,6 +190,7 @@ nav.nav-bar--hidden {
     }
     .content {
         color: whitesmoke;
+        text-align: justify;
     }
     .expertise:before {
         content: "Expertise: ";
@@ -216,6 +217,16 @@ nav.nav-bar--hidden {
     }
     .tech {
         margin-top: 30pt;
+    }
+    @include tablet {
+        div.col-lg-6 {
+            grid-column: span 12;
+        }
+    }
+    @include phone-portrait {
+        div.col-lg-6 {
+            grid-column: span 12;
+        }
     }
 }
 
