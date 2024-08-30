@@ -71,7 +71,7 @@
     &__card {
         background: linear-gradient(to bottom, #0A1E50, #081A47);
         scroll-snap-align: start;
-        height: 100%;
+        max-height: 380px;
         width: 380px;
         padding: 40px;
         list-style: none;

@@ -494,24 +494,58 @@ export const technologiesPage = [
     {
         firstBlock: [
             {
-                title: "technologies.page.firstBlock.automotive.title",
-                text: "technologies.page.firstBlock.automotive.text",
-                image: carIcon,
+                title: "technologies.page.paragraphes[1].title",
+                expertise: "technologies.page.paragraphes[1].expertise",
+                technologies: "technologies.page.paragraphes[1].technologies",
+                text: "technologies.page.paragraphes[1].text"
             },
             {
-                title: "technologies.page.firstBlock.entertainment.title",
-                text: "technologies.page.firstBlock.entertainment.text",
-                image: buildingIcon,
+                title: "technologies.page.paragraphes[2].title",
+                expertise: "technologies.page.paragraphes[2].expertise",
+                technologies: "technologies.page.paragraphes[2].technologies",
+                text: "technologies.page.paragraphes[2].text"
             },
             {
-                title: "technologies.page.firstBlock.finance.title",
-                text: "technologies.page.firstBlock.finance.text",
-                image: bankIcon,
+                title: "technologies.page.paragraphes[3].title",
+                expertise: "technologies.page.paragraphes[3].expertise",
+                technologies: "technologies.page.paragraphes[3].technologies",
+                text: "technologies.page.paragraphes[3].text"
             },
             {
-                title: "technologies.page.firstBlock.insurance.title",
-                text: "technologies.page.firstBlock.insurance.text",
-                image: shieldIcon,
+                title: "technologies.page.paragraphes[4].title",
+                expertise: "technologies.page.paragraphes[4].expertise",
+                technologies: "technologies.page.paragraphes[4].technologies",
+                text: "technologies.page.paragraphes[4].text"
+            },
+            {
+                title: "technologies.page.paragraphes[5].title",
+                expertise: "technologies.page.paragraphes[5].expertise",
+                technologies: "technologies.page.paragraphes[5].technologies",
+                text: "technologies.page.paragraphes[5].text"
+            },
+            {
+                title: "technologies.page.paragraphes[6].title",
+                expertise: "technologies.page.paragraphes[6].expertise",
+                technologies: "technologies.page.paragraphes[6].technologies",
+                text: "technologies.page.paragraphes[6].text"
+            },
+            {
+                title: "technologies.page.paragraphes[7].title",
+                expertise: "technologies.page.paragraphes[7].expertise",
+                technologies: "technologies.page.paragraphes[7].technologies",
+                text: "technologies.page.paragraphes[7].text"
+            },
+            {
+                title: "technologies.page.paragraphes[8].title",
+                expertise: "technologies.page.paragraphes[8].expertise",
+                technologies: "technologies.page.paragraphes[8].technologies",
+                text: "technologies.page.paragraphes[8].text"
+            },
+            {
+                title: "technologies.page.paragraphes[9].title",
+                expertise: "technologies.page.paragraphes[9].expertise",
+                technologies: "technologies.page.paragraphes[9].technologies",
+                text: "technologies.page.paragraphes[9].text"
             }
         ],
 
@@ -634,6 +668,67 @@ export const technologiesPage = [
             }
         ]
     }
+]
+
+export const openSourcePage = [
+    {
+        list: [
+            {
+                title: "opensource.list1.title",
+                text: "opensource.list1.text"
+            },
+            {
+                title: "opensource.list2.title",
+                text: "opensource.list2.text"
+            },
+            {
+                title: "opensource.list3.title",
+                text: "opensource.list3.text"
+            },
+            {
+                title: "opensource.list4.title",
+                text: "opensource.list4.text"
+            },
+            {
+                title: "opensource.list5.title",
+                text: "opensource.list5.text"
+            },
+            {
+                title: "opensource.list6.title",
+                text: "opensource.list6.text"
+            },
+            {
+                title: "opensource.list7.title",
+                text: "opensource.list7.text"
+            },
+            {
+                title: "opensource.list8.title",
+                text: "opensource.list8.text"
+            },
+            {
+                title: "opensource.list9.title",
+                text: "opensource.list9.text"
+            },
+            {
+                title: "opensource.list10.title",
+                text: "opensource.list10.text"
+            },
+            {
+                title: "opensource.list11.title",
+                text: "opensource.list11.text"
+            },
+            {
+                title: "opensource.list12.title",
+                text: "opensource.list12.text"
+            },
+            {
+                title: "opensource.list13.title",
+                text: "opensource.list13.text"
+            }
+        ],
+    }
+    
+    
 ]
 
 export const contactPage = [

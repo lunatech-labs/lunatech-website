@@ -11,6 +11,7 @@ import ContactBlock from '@components/ContactBlock/ContactBlock';
 import Text from '@components/Text/Text';
 import Grid from '@components/Grid/Grid';
 import { aboutUsIllustration } from '@/assets';
+import { openSourcePage } from '@/constants';
 
 const OpenSource = () => {
     const { t } = useTranslation();
@@ -36,31 +37,14 @@ const OpenSource = () => {
                         </div>
                         </div>
                         <Grid className='opensource'>
-                            <div className="col-lg-6 col-md-12 spotlight__card ">
-                                <Title level={3} className="title" >{t("opensource.list1.title")}</Title>
-                                <Trans i18nKey="opensource.list1.text" />
-                            </div>
-                            <div className="col-lg-6 col-md-12 spotlight__card ">
-                                <Title level={3} className="title" >{t("opensource.list2.title")}</Title>
-                                <Trans i18nKey="opensource.list2.text" />
-                            </div>
-                            <div className="col-lg-6 col-md-12 spotlight__card ">
-                                <Title level={3} className="title" >{t("opensource.list3.title")}</Title>
-                                <Trans i18nKey="opensource.list4.text" />
-                            </div>
-                            <div className="col-lg-6 col-md-12 spotlight__card ">
-                                <Title level={3} className="title" >{t("opensource.list4.title")}</Title>
-                                <Trans i18nKey="opensource.list4.text" />
-                            </div>
-                            <div className="col-lg-6 col-md-12 spotlight__card ">
-                                <Title level={3} className="title" >{t("opensource.list5.title")}</Title>
-                                <Trans i18nKey="opensource.list5.text" />
-                            </div>
-                            <div className="col-lg-6 col-md-12 spotlight__card ">
-                                <Title level={3} className="title" >{t("opensource.list6.title")}</Title>
-                                <Trans i18nKey="opensource.list6.text" />
-                            </div>
-
+                            {
+                                openSourcePage[0].list.slice(0, 6).map((item, index) => (
+                                    <div key={index} className="col-lg-6 spotlight__card ">
+                                    <Title level={3} className="title">{t(item.title)}</Title>
+                                    <Text size="medium" className="content mgt24">{t(item.text)}</Text>
+                                    </div>
+                                ))
+                            }
                         </Grid>
                         <Text size="large" className="mgt32">
                             <Trans i18nKey="opensource.text2" />
@@ -84,34 +68,14 @@ const OpenSource = () => {
                     <div className="opensource__partners">
                         <div className="opensource__partnersText">
                             <Grid className='opensource'>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list7.title")}</Title>
-                                    <Trans i18nKey="opensource.list7.text" />
-                                </div>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list8.title")}</Title>
-                                    <Trans i18nKey="opensource.list8.text" />
-                                </div>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list9.title")}</Title>
-                                    <Trans i18nKey="opensource.list9.text" />
-                                </div>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list10.title")}</Title>
-                                    <Trans i18nKey="opensource.list10.text" />
-                                </div>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list11.title")}</Title>
-                                    <Trans i18nKey="opensource.list11.text" />
-                                </div>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list12.title")}</Title>
-                                    <Trans i18nKey="opensource.list12.text" />
-                                </div>
-                                <div className="col-lg-6 col-md-12 spotlight__card ">
-                                    <Title level={3} className="title" >{t("opensource.list1.title")}</Title>
-                                    <Trans i18nKey="opensource.list13.text" />
-                                </div>
+                                {
+                                    openSourcePage[0].list.slice(6, 13).map((item, index) => (
+                                        <div key={index} className="col-lg-6 spotlight__card ">
+                                        <Title level={3} className="title">{t(item.title)}</Title>
+                                        <Text size="medium" className="content mgt24">{t(item.text)}</Text>
+                                        </div>
+                                    ))
+                                }
                             </Grid>
                        </div>
                     </div>

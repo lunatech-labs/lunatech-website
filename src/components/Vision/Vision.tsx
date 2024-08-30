@@ -43,7 +43,7 @@ const Vision = () => {
                             >
                                 <img src={dotIcon} alt="" />
                             </div>
-                            <Text size="medium">{t(card.text)}</Text>
+                            <Text className="vision__text" size="medium">{t(card.text)}</Text>
                         </div>
                     ))}
                 </div>
