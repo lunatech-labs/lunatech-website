@@ -670,6 +670,29 @@ export const technologiesPage = [
     }
 ]
 
+export const expertisePage = [
+    {
+        title: "technologies.page.firstBlock.automotive.title",
+        text: "technologies.page.firstBlock.automotive.text",
+        image: carIcon,
+    },
+    {
+        title: "technologies.page.firstBlock.entertainment.title",
+        text: "technologies.page.firstBlock.entertainment.text",
+        image: buildingIcon,
+    },
+    {
+        title: "technologies.page.firstBlock.finance.title",
+        text: "technologies.page.firstBlock.finance.text",
+        image: bankIcon,
+    },
+    {
+        title: "technologies.page.firstBlock.insurance.title",
+        text: "technologies.page.firstBlock.insurance.text",
+        image: shieldIcon,
+    }
+]
+
 export const openSourcePage = [
     {
         list: [

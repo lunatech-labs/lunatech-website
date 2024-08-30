@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import Title from "@components/Title/Title";
 import Text from "@components/Text/Text";
-import { technologiesPage } from "@/constants";
+import { expertisePage } from "@/constants";
 
 import "./BusinessCard.scss";
 
@@ -11,7 +11,7 @@ const BusinessCard = () => {
 
     return (
     <>
-        {technologiesPage[0].firstBlock.map((business, index) => (
+        {expertisePage.map((business, index) => (
                 <div key={index} className="businessCard">
                     <div className="businessCard__icon">
                         {business.image()}
