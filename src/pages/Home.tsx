@@ -28,8 +28,6 @@ import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import TechnologieCarousel from '@/components/TechnologieCarousel/TechnologieCarousel';
 import Partnerships from '@/components/Partnerships/Partnerships';
 
-import BlogImg from '/blog.png';
-
 import { aboutUsIllustration, arrowRight, clouds, grass, messageIcon, mist, moon, mountains, telescope } from '@/assets';
 
 const Home = () => {
