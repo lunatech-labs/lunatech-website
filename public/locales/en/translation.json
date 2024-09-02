@@ -211,7 +211,7 @@
             },
             "paragraphes[1]": {
                 "title" : "Cloud Computing",
-                "technologies" : "AWS, Google Cloud, Microsoft Azure, Red Hat OpenShift, etc...",
+                "technologies" : "AWS, Google Cloud, Microsoft Azure, etc...",
                 "expertise" : "Strategic Expertise, Software Defined Vehicle (SDV), System Integration, Legacy Modernization",
                 "text" : "We utilize cloud platforms like AWS, Google Cloud, Microsoft Azure, and Red Hat OpenShift to provide scalable, reliable infrastructure for our clients. These technologies are central to our cloud-based solutions, ensuring flexibility, security, and cost-efficiency across various projects. Whether it's developing cloud-native applications, integrating cloud services with existing systems, or modernizing legacy applications, our cloud expertise is foundational to our success in these areas."
             },
@@ -236,7 +236,7 @@
             "paragraphes[5]": {
                 "title" : "Data Management & Analytics",
                 "expertise" : "System Integration, Strategic Expertise, Software Defined Vehicle (SDV)",
-                "technologies" : "PostgreSQL, Cassandra, MongoDB, Redis, MySQL, MariaDB, etc...",
+                "technologies" : "PostgreSQL, Cassandra, MongoDB, MySQL, MariaDB, etc...",
                 "text" : "Data is at the heart of modern business operations. We use powerful databases like PostgreSQL, Cassandra, MongoDB, Redis, MySQL, and MariaDB to manage, store, and analyze large volumes of data. These technologies are crucial for System Integration projects, where they ensure seamless data exchange, and for SDV projects, where real-time data processing is critical. In our Strategic Expertise, data management technologies support informed decision-making and enhance overall business intelligence."
             },
             "paragraphes[6]": {
@@ -248,7 +248,7 @@
             "paragraphes[7]": {
                 "title" : "Infrastructure & Orchestration",
                 "expertise" : "System Integration, Software Defined Vehicle (SDV), Legacy Modernization",
-                "technologies" : "Docker, Kubernetes, Terraform, Ansible, Bash, Linux, Python, etc...",
+                "technologies" : "Docker, Kubernetes, Red Hat OpenShift, Terraform, Ansible, Bash, Linux, Python, etc...",
                 "text" : "Efficient infrastructure management is key to supporting scalable, resilient applications. We use Docker, Kubernetes, Terraform, Ansible, Bash, and Linux to automate and orchestrate infrastructure deployment and management. These technologies are essential in System Integration, where they enable the seamless deployment of integrated systems, and in SDV projects, where they support the complex infrastructure needs of modern vehicles. In Legacy Modernization, they help transition legacy systems to modern, cloud-based environments."
             },
             "paragraphes[8]": {

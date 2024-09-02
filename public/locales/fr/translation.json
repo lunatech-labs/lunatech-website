@@ -350,7 +350,7 @@
             },
             "paragraphes[1]": {
                 "title": "Cloud Computing",
-                "technologies": "AWS, Google Cloud, Microsoft Azure, Red Hat OpenShift, etc...",
+                "technologies": "AWS, Google Cloud, Microsoft Azure, etc...",
                 "expertise": "Expertise stratégique, Véhicule défini par logiciel (SDV), Intégration de systèmes, Modernisation des systèmes historique",
                 "text": "Nous utilisons des plateformes cloud telles qu'AWS, Google Cloud, Microsoft Azure et Red Hat OpenShift pour fournir une infrastructure évolutive et fiable à nos clients. Ces technologies sont au cœur de nos solutions cloud, garantissant flexibilité, sécurité et rentabilité dans divers projets. Qu'il s'agisse de développer des applications natives cloud, d'intégrer des services cloud à des systèmes existants ou de moderniser des applications héritées, notre expertise cloud est essentielle à notre succès dans ces domaines."
             },
@@ -375,7 +375,7 @@
             "paragraphes[5]": {
                 "title": "Gestion des données et analyses",
                 "expertise": "Intégration de systèmes, Expertise stratégique, Véhicule défini par logiciel (SDV)",
-                "technologies": "PostgreSQL, Cassandra, MongoDB, Redis, MySQL, MariaDB, etc...",
+                "technologies": "PostgreSQL, Cassandra, MongoDB, MySQL, MariaDB, etc...",
                 "text": "Les données sont au cœur des opérations commerciales modernes. Nous utilisons des bases de données puissantes telles que PostgreSQL, Cassandra, MongoDB, Redis, MySQL et MariaDB pour gérer, stocker et analyser de grands volumes de données. Ces technologies sont cruciales pour les projets d'intégration de systèmes, où elles assurent un échange de données fluide, et pour les projets SDV, où le traitement des données en temps réel est essentiel. Dans notre expertise stratégique, les technologies de gestion des données soutiennent la prise de décision éclairée et améliorent l'intelligence d'affaires globale."
             },
             "paragraphes[6]": {
@@ -387,7 +387,7 @@
             "paragraphes[7]": {
                 "title": "Infrastructure et orchestration",
                 "expertise": "Intégration de systèmes, Véhicule défini par logiciel (SDV), Modernisation des systèmes historique",
-                "technologies": "Docker, Kubernetes, Terraform, Ansible, Bash, Linux, Python, etc...",
+                "technologies": "Docker, Kubernetes, Red Hat OpenShift, Terraform, Ansible, Bash, Linux, Python, etc...",
                 "text": "Une gestion efficace de l'infrastructure est essentielle pour soutenir des applications évolutives et résilientes. Nous utilisons Docker, Kubernetes, Terraform, Ansible, Bash et Linux pour automatiser et orchestrer le déploiement et la gestion de l'infrastructure. Ces technologies sont essentielles dans l'intégration des systèmes, où elles permettent le déploiement fluide de systèmes intégrés, et dans les projets SDV, où elles soutiennent les besoins complexes en infrastructure des véhicules modernes. Dans la modernisation des systèmes historique, elles aident à passer des systèmes historique à des environnements modernes basés sur le cloud."
             },
             "paragraphes[8]": {
