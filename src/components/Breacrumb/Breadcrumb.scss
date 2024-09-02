@@ -33,7 +33,11 @@
     @include phone-portrait {
         font-size: 12px;
         letter-spacing: 2px;
-        display: flex;
-        flex-direction: column;
+        .breadcrumb__part:last-child a{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
+            width: 200px;
+        }
     }
 }

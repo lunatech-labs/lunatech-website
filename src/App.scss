@@ -190,7 +190,7 @@ nav.nav-bar--hidden {
     }
     .content {
         color: whitesmoke;
-        text-align: justify;
+        text-align: left;
     }
     .expertise:before {
         content: "Expertise: ";
@@ -251,7 +251,7 @@ nav.nav-bar--hidden {
         @include tablet {grid-column: span 12;}
     }
     &__partners {
-      text-align: justify;
+      text-align: left;
       h3 {
             margin-top: 20pt;
             color: $pink;
