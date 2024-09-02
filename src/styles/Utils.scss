@@ -18,6 +18,7 @@
 }
 .col-lg-4 {
     grid-column: span 4;
+    @include desktop {grid-column: span 6;}
     @include phone-landscape {grid-column: span 12;}
 }
 @include tablet {
