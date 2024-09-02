@@ -127,44 +127,12 @@ const Home = () => {
 
             <Section className="bg-bgMediumBlue">
                 <Container>
-                    <div className="blog">
-                        <div className="blog__top">
-                            <Category content={<Trans i18nKey="articles.subtitle" />} />
-                            <Title level={2}>Read the content from our <span>experts</span>.</Title>
-                        </div>
-                        <div className="blog__articles">
-                            <div className="blog__content">
-                                <div className="blog__left">
-                                    <div className="dflex mgb24">
-                                        <p className="blog__category">Marketing</p>
-                                        <p className="blog__date">September 1, 2022</p>
-                                    </div>
-                                    <Title level={3}>Semantic Kernel SDK and Quarkus</Title>
-                                    <Text size="medium" className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary to={""} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
-                                </div>
-                                <img className="blog__img" src={BlogImg} alt="Blog img" />
-                            </div>
-                            <div className="blog__content">
-                                <div className="blog__left">
-                                    <div className="dflex mgb24">
-                                        <p className="blog__category">Marketing</p>
-                                        <p className="blog__date">September 1, 2022</p>
-                                    </div>
-                                    <Title level={3}>Semantic Kernel SDK and Quarkus</Title>
-                                    <Text size="medium" className="mgb24">Tincidunt donec vulputate ipsum erat urna auctor. Eget phasellus ideirs.adipiscing elit. Tincidunt donec vulputate ipsum erat urna auctor.</Text>
-                                    <ButtonSecondary to={""} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
-                                </div>
-                                <img className="blog__img" src={BlogImg} alt="Blog img" />
-                            </div>
-                        </div>
-                        <div className="blog__action">
-                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonMoreArticles" /></ButtonSecondary>
-                        </div>
-                    </div>
-                    <div className='blogFinal'>
+                    <div className='blog blogFinal'>
                         <Articles></Articles>
                     </div>
+                    <div className="blog__action">
+                            <ButtonSecondary to='https://blog.lunatech.com/' newPage={true} iconUrl={arrowRight} size="large"><Trans i18nKey="buttonMoreArticles" /></ButtonSecondary>
+                        </div>
                 </Container>
             </Section>
 
