@@ -20,7 +20,7 @@ interface BlogArticle {
 }
 
 async function fetchBlogArticles(): Promise<BlogArticle[]> {
-    const response = await fetch('http://localhost:9000/posts/');
+    let response = await fetch('https://blog.lunatech.com/posts/');
     if (!response.ok) {
       throw new Error('Failed to fetch blog articles');
     }
