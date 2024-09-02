@@ -528,12 +528,12 @@
     },
     "contactBlock": {
         "title": "Discutons",
-        "titleImp": "ensemble!"
+        "titleImp": " ensemble!"
     },
     "contact": {
         "subtitle": "Contact",
         "title": "Travaillons",
-        "titleColor": "ensemble",
+        "titleColor": " ensemble",
         "text": "Laissez-nous vous aider à devenir encore meilleur dans ce que vous faites. Envoyez-nous un e-mail pour que nous en sachions plus."
     },
     "address": {
