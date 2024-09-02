@@ -144,7 +144,7 @@ export const valuesBanner = [
     },
     {
         title: "banner.second",
-        number: 100
+        number: 90
     },
     {
         title: "banner.fourth",
