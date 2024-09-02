@@ -12,6 +12,8 @@ import {
     cleverCloudLogo,
     cloudBeesLogo,
     googleCloudLogo,
+    eclipseLogo,
+    azureLogo,
     lightbendLogo,
     redHatLogo,
 } from '@/assets'
@@ -175,13 +177,13 @@ export const partnerships = [
         title: "partners.paragraphes[3].title",
         subtitle: "partners.paragraphes[3].subtitle",
         text: "partners.paragraphes[3].text",
-        icon: googleCloudLogo,
+        icon: azureLogo,
     },
     {
         title: "partners.paragraphes[4].title",
         subtitle: "partners.paragraphes[4].subtitle",
         text: "partners.paragraphes[4].text",
-        icon: googleCloudLogo,
+        icon: eclipseLogo,
     },
     {
         title: "partners.paragraphes[5].title",

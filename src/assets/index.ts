@@ -46,9 +46,11 @@ import officeIcon from "./general/office.svg";
 import messageIcon from "./general/message.svg";
 import addIcon from "./general/pixelarticons_add.svg";
 import awsLogo from "./partners/awsLogo.svg";
+import azureLogo from "./partners/azureLogo.svg";
 import azulLogo from "./partners/azulLogo.svg";
 import cleverCloudLogo from "./partners/cleverCloudLogo.svg";
 import cloudBeesLogo from "./partners/cloudBeesLogo.svg";
+import eclipseLogo from "./partners/eclipseLogo.svg";
 import googleCloudLogo from "./partners/googleCloudLogo.svg";
 import lightbendLogo from "./partners/lightbendLogo.svg";
 import redHatLogo from "./partners/redHatLogo.svg";
@@ -104,8 +106,10 @@ export {
     technologyIllustration,
     awsLogo,
     azulLogo,
+    azureLogo,
     cleverCloudLogo,
     cloudBeesLogo,
+    eclipseLogo,
     googleCloudLogo,
     lightbendLogo,
     redHatLogo,
