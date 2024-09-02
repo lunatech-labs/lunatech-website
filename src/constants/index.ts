@@ -16,6 +16,29 @@ import {
     azureLogo,
     lightbendLogo,
     redHatLogo,
+    awsIcon,
+    javaIcon,
+    scalaIcon,
+    angularIcon,
+    kotlinIcon,
+    typescriptIcon,
+    googlecloudIcon,
+    azureIcon,
+    openshiftIcon,
+    webapiIcon,
+    akkaIcon,
+    esbIcon,
+    jwtIcon,
+    gitlabIcon,
+    cloudbeesIcon,
+    jenkinsIcon,
+    playframeworkIcon,
+    springIcon,
+    quarkusIcon,
+    jakartaEEIcon,
+    reactjsIcon,
+    nextjsIcon,
+    figmaIcon
 } from '@/assets'
 
 import carIcon from '@/components/BusinessCard/Icons/carIcon'
@@ -556,117 +579,117 @@ export const technologiesPage = [
             {
                 title: "technologies.page.secondBlock.scala.title",
                 text: "technologies.page.secondBlock.scala.text",
-                image: shieldIcon
+                image: scalaIcon
             },
             {
                 title: "technologies.page.secondBlock.java.title",
                 text: "technologies.page.secondBlock.java.text",
-                image: shieldIcon
+                image: javaIcon
             },
             {
                 title: "technologies.page.secondBlock.kotlin.title",
                 text: "technologies.page.secondBlock.kotlin.text",
-                image: shieldIcon
+                image: kotlinIcon
             },
             {
                 title: "technologies.page.secondBlock.typescript.title",
                 text: "technologies.page.secondBlock.typescript.text",
-                image: shieldIcon
+                image: typescriptIcon
             },
             {
                 title: "technologies.page.secondBlock.aws.title",
                 text: "technologies.page.secondBlock.aws.text",
-                image: shieldIcon
+                image: awsIcon
             },
             {
                 title: "technologies.page.secondBlock.googlecloud.title",
                 text: "technologies.page.secondBlock.googlecloud.text",
-                image: shieldIcon
+                image: googlecloudIcon
             },
             {
                 title: "technologies.page.secondBlock.azure.title",
                 text: "technologies.page.secondBlock.azure.text",
-                image: shieldIcon
+                image: azureIcon
             },
             {
                 title: "technologies.page.secondBlock.openshift.title",
                 text: "technologies.page.secondBlock.openshift.text",
-                image: shieldIcon
+                image: openshiftIcon
             },
             {
                 title: "technologies.page.secondBlock.webapi.title",
                 text: "technologies.page.secondBlock.webapi.text",
-                image: shieldIcon
+                image: webapiIcon
             },
             {
                 title: "technologies.page.secondBlock.akka.title",
                 text: "technologies.page.secondBlock.akka.text",
-                image: shieldIcon
+                image: akkaIcon
             },
             {
                 title: "technologies.page.secondBlock.esb.title",
                 text: "technologies.page.secondBlock.esb.text",
-                image: shieldIcon
+                image: esbIcon
             },
             {
                 title: "technologies.page.secondBlock.jwt.title",
                 text: "technologies.page.secondBlock.jwt.text",
-                image: shieldIcon
+                image: jwtIcon
             },
             {
                 title: "technologies.page.secondBlock.gitlab.title",
                 text: "technologies.page.secondBlock.gitlab.text",
-                image: shieldIcon
+                image: gitlabIcon
             },
             {
                 title: "technologies.page.secondBlock.cloudbees.title",
                 text: "technologies.page.secondBlock.cloudbees.text",
-                image: shieldIcon
+                image: cloudbeesIcon
             },
             {
                 title: "technologies.page.secondBlock.jenkins.title",
                 text: "technologies.page.secondBlock.jenkins.text",
-                image: shieldIcon
+                image: jenkinsIcon
             },
             {
                 title: "technologies.page.secondBlock.playframework.title",
                 text: "technologies.page.secondBlock.playframework.text",
-                image: shieldIcon
+                image: playframeworkIcon
             },
             {
                 title: "technologies.page.secondBlock.spring.title",
                 text: "technologies.page.secondBlock.spring.text",
-                image: shieldIcon
+                image: springIcon
             },
             {
                 title: "technologies.page.secondBlock.quarkus.title",
                 text: "technologies.page.secondBlock.quarkus.text",
-                image: shieldIcon
+                image: quarkusIcon
             },
             {
                 title: "technologies.page.secondBlock.jakartaee.title",
                 text: "technologies.page.secondBlock.jakartaee.text",
-                image: shieldIcon
+                image: jakartaEEIcon
             },
             {
                 title: "technologies.page.secondBlock.reactjs.title",
                 text: "technologies.page.secondBlock.reactjs.text",
-                image: shieldIcon
+                image: reactjsIcon
             },
             {
                 title: "technologies.page.secondBlock.nextjs.title",
                 text: "technologies.page.secondBlock.nextjs.text",
-                image: shieldIcon
+                image: nextjsIcon
             },
             {
                 title: "technologies.page.secondBlock.angularjs.title",
                 text: "technologies.page.secondBlock.angularjs.text",
-                image: shieldIcon
+                image: angularIcon
             },
             {
                 title: "technologies.page.secondBlock.figma.title",
                 text: "technologies.page.secondBlock.figma.text",
-                image: shieldIcon
+                image: figmaIcon
             }
         ]
     }

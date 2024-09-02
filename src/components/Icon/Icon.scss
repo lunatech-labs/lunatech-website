@@ -30,7 +30,7 @@
         height: 64px;
     }
 }
-.icon-medium .icon__img, .icon-medium svg {
+.icon-medium svg {
     width: 48px;
     height:48px;
     @include phone-portrait {

@@ -40,7 +40,7 @@
         }
     }
     &:hover {
-        #shield, #bankCoin {
+        .icon__img, #shield, #bankCoin {
             animation: rotateShield 0.5s forwards;
         }
         .icon-plus {

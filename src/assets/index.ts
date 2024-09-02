@@ -55,9 +55,56 @@ import googleCloudLogo from "./partners/googleCloudLogo.svg";
 import lightbendLogo from "./partners/lightbendLogo.svg";
 import redHatLogo from "./partners/redHatLogo.svg";
 
+import javaIcon from "./technologies/technology-logo-java.svg"
+import scalaIcon from "./technologies/technology-logo-scala.svg"
+import awsIcon from "./technologies/technology-logo-aws.svg"
+import angularIcon from "./technologies/technology-logo-angular-js.svg"
+import kotlinIcon from  "./technologies/technology-logo-kotlin.svg"
+import typescriptIcon from "./technologies/technology-logo-typescript.svg"
+import googlecloudIcon from "./technologies/technology-logo-google-cloud.svg"
+import azureIcon from "./technologies/technology-logo-microsoft-azure.svg"
+import openshiftIcon from "./technologies/technology-logo-openshift.svg"
+import webapiIcon from "./technologies/technology-logo-web-api.svg"
+import akkaIcon from "./technologies/technology-logo-apache-pekko-akka.svg"
+import esbIcon from "./technologies/technology-logo-elastic-search.svg"
+import jwtIcon from "./technologies/technology-logo-jwt-token.svg"
+import gitlabIcon from "./technologies/technology-logo-gitlab.svg"
+import cloudbeesIcon from "./technologies/technology-logo-cloudbees.svg"
+import jenkinsIcon from "./technologies/technology-logo-cloudbees.svg"
+import playframeworkIcon from "./technologies/technology-logo-play-framework.svg"
+import springIcon from "./technologies/technology-logo-spring-framework.svg"
+import quarkusIcon from "./technologies/technology-logo-quarkus.svg"
+import jakartaEEIcon from "./technologies/technology-logo-jakarta-ee.svg"
+import reactjsIcon from "./technologies/technology-logo-react-js.svg"
+import nextjsIcon from "./technologies/technology-logo-next-js.svg"
+import figmaIcon from "./technologies/technology-logo-figma-ux-ui.svg"
+
 import lunatechLogo from "./general/lunatech-logo.svg";
 
 export {
+    javaIcon,
+    scalaIcon,
+    awsIcon,
+    kotlinIcon,
+    angularIcon,
+    typescriptIcon,
+    googlecloudIcon,
+    azureIcon,
+    openshiftIcon,
+    webapiIcon,
+    akkaIcon,
+    esbIcon,
+    jwtIcon,
+    gitlabIcon,
+    cloudbeesIcon,
+    jenkinsIcon,
+    playframeworkIcon,
+    springIcon,
+    quarkusIcon,
+    jakartaEEIcon,
+    reactjsIcon,
+    nextjsIcon,
+    figmaIcon,
     lunatechLogo,
     instagram,
     twitter,
