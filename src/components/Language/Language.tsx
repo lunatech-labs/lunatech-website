@@ -10,8 +10,7 @@ interface LanguageProps {
 }
 
 const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
-    const navigate = useNavigate();
-
+    
     const isActiveLanguage = (lng: string) => {
         return i18n.language.startsWith(lng);
     };
