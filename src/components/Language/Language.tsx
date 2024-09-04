@@ -1,7 +1,7 @@
 import React from 'react';
 import i18n from '../../i18n';
 //import { useTranslation } from 'react-i18next';
-import { redirect } from 'react-router-dom';
+import { redirect, redirectDocument, replace } from 'react-router-dom';
 
 import "./Language.scss";
 
@@ -20,14 +20,13 @@ const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
 
         const currentPath = window.location.href;
         let newUrl = '';
-
+        
         if (lng === 'en') {
-            newUrl = currentPath.replace('\.fr', '\.com');
+            newUrl = currentPath.replace('\.fr', '.com');
         } else {
-            newUrl = currentPath.replace('\.com', '\.fr');
+            newUrl = currentPath.replace('\.com', '.fr');
         }
-
-        redirect(newUrl);
+        window.location.href = newUrl;
     };
 
     return (
