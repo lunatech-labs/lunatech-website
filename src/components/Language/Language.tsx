@@ -1,7 +1,6 @@
 import React from 'react';
 import i18n from '../../i18n';
 //import { useTranslation } from 'react-i18next';
-import { redirect, redirectDocument, replace } from 'react-router-dom';
 
 import "./Language.scss";
 
