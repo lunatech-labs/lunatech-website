@@ -21,7 +21,7 @@ const Language: React.FC<LanguageProps> = ({ changeLanguage }) => {
         const currentPath = window.location.href;
         let newUrl = '';
 
-        if (lng === 'fr') {
+        if (lng === 'en') {
             newUrl = currentPath.replace('\.fr', '\.com');
         } else {
             newUrl = currentPath.replace('\.com', '\.fr');
