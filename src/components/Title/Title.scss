@@ -36,7 +36,7 @@ h3.titleh3 {
     font-size: $font-size-24;
     line-height: 2rem;     /* 32px */
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     @include tablet {
         font-size: 21px;
         line-height: 32px;

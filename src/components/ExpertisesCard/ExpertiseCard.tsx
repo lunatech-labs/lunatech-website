@@ -21,7 +21,7 @@ const ExpertiseCard = (props: ExpertiseProps) => {
         <>
             {props.children}
             <Title level={3}>{props.title}</Title>
-            <Text size="medium" className="mgb16">{props.text}</Text>
+            <Text size="medium" className="mgb24 ta-c">{props.text}</Text>
             <ButtonSecondary iconUrl={arrowRight} to={props.to} size="medium"><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
         </>
     );

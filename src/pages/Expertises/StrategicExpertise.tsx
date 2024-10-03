@@ -19,30 +19,38 @@ const ExpertiseStrategicExpertise = () => {
     const { t } = useTranslation();
     return (
         <>
-            <Section className="pdt256 strategy">
+            <Section className="pdt256">
                 <Container>
                     <HeaderPage>
                         <Breadcrumbs />
                         <Title level={1}><Trans i18nKey="expertiseStrategicExpertise.title" /><span><Trans i18nKey="expertiseStrategicExpertise.titleImp" /></span></Title>
-
-                        <div className="col-lg-6 col-md-12">
-                            {
-                                expertiseStrategicExpertise.paragraphes.map(
-                                    (p) => (
-                                        <div>
-                                            <Title level={3}>{t(p.title)}</Title>
-                                            <Text size="medium" className="mgt24">{t(p.text1)}</Text>
-                                            <Text size="medium" className="mgt24">{t(p.text2)}</Text>
-                                        </div>
-                                    )
-                                )
-                            }
-                            
-                        </div>
                     </HeaderPage>
-                  
                 </Container>
-              
+            </Section>
+
+            <Container><BorderEffect /></Container>
+
+            <Section className="bg-bgMediumBlue">
+                <Container>
+                    <Grid>
+                        {
+                            expertiseStrategicExpertise.paragraphes.map(
+                                (p) => (
+                                    <div className="col-lg-6">
+                                        <Title level={3}>{t(p.title)}</Title>
+                                        <Text size="medium" className="mgb24">{t(p.text1)}</Text>
+                                        <Text size="medium" className="mgb64">{t(p.text2)}</Text>
+                                    </div>
+                                )
+                            )
+                        }
+                    </Grid>
+                </Container>
+            </Section>
+
+            <Container><BorderEffect /></Container>
+
+            <Section>
                 <Container>
                     <Title level={2}><Trans i18nKey="expertiseStrategicExpertise.title2" /></Title>
                     <Grid className="mgt64 ai-c">

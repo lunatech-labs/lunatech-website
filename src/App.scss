@@ -95,10 +95,6 @@ nav.nav-bar--hidden {
     h2 {
         margin: 40pt;
     }
-    h3 {
-        margin-top: 20pt;
-        color: $pink;
-    }
 }
 
 /* ------------- ABOUT US BLOCK ------------- */
@@ -118,127 +114,15 @@ nav.nav-bar--hidden {
     }
 }
 
-/* ------------- PROJECT DELIVERY BLOCK ------------- */
-.expertiseSoftwareProjectDelivery {
-    h3, h4 {
-        margin-top: 20pt;
-        color: $pink;
-    }
-    h2 {
-        margin-top: 30pt;
-    }
-}
-
-/* ------------- SYSTEM INTEGRATION BLOCK ------------- */
-.expertiseSystemIntegration {
-    h3, h4 {
-        margin-top: 20pt;
-        color: $pink;
-    }
-    h2 {
-        margin-top: 30pt;
-    }
-}
-
-
-/* ------------- LEGACY MODERNISATION BLOCK ------------- */
-.expertiseLegacyModernisation {
-    h3, h4 {
-        margin-top: 20pt;
-        color: $pink;
-    }
-    h2 {
-        margin-top: 30pt;
-    }
-}
-
-
-/* ------------- SDV BLOCK ------------- */
-.softwareDefinedVehicule {
-    h3,h4 {
-        margin-top: 20pt;
-        color: $pink;
-    }
-    h2 {
-        margin-top: 30pt;
-    }
-}
-
-/* ------------- PARTNERS BLOCK ------------- */
-.partnership {
-    h3,h4 {
-        margin-top: 20pt;
-    }
-    h4 {
-        color: $white;
-    }
-    h3 {
-        font-size: 200%;
-        color: $pink;
-    }
-    h2 {
-        margin-top: 30pt;
-    }
-}
-
 
 /* ------------- TECHNOLOGIES BLOCK ------------- */
-.opensource, .technologies {
-    div.col-lg-6 {
-        grid-column: span 6;
-        padding: 20pt;
-    }
-    .content {
-        color: whitesmoke;
-        text-align: left;
-    }
-    .expertise:before {
-        content: "Expertise: ";
-        color: $lightGray;
-        font-size: smaller;
-    }
-    .technologies:before {
-        content: "Technologies: ";
-        color: $lightGray;
-        font-size: smaller;
-    }
-    h3,h4 {
-        margin-top: 20pt;
-    }
-    h4 {
-        color: $white;
-    }
-    h3 {
-        font-size: 200%;
-        color: $pink;
-    }
-    h2 {
-        margin-top: 30pt;
-    }
-    .tech {
-        margin-top: 30pt;
-    }
-    @include tablet {
-        div.col-lg-6 {
-            grid-column: span 12;
-        }
-    }
-    @include phone-portrait {
-        div.col-lg-6 {
-            grid-column: span 12;
-        }
-    }
-}
+
 
 
 /* ------------- OPEN SOURCE BLOCK ------------- */
 .opensource {
     @include grid;
-    align-items: start;
-    h3 {
-        margin-top: 20pt;
-        color: $pink;
-    }
+    align-items: center;
     &__img {
         grid-column: span 5;
         width: 100%;
@@ -252,10 +136,6 @@ nav.nav-bar--hidden {
     }
     &__partners {
       text-align: left;
-      h3 {
-            margin-top: 20pt;
-            color: $pink;
-      }
       li {
         margin: 20px;
         }

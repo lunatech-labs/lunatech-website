@@ -37,19 +37,19 @@ const About = () => {
                         <div className="about__content">
                             <Category content={<Trans i18nKey="about.breadcrumb" />} />
                             <Title level={2}><Trans i18nKey={aboutPage[0].firstBlock.title} /> <span>Europe</span></Title>
-                            <Text size="medium" className="mgb32">
-                                {<Trans i18nKey={aboutPage[0].firstBlock.desc} />}</Text>
-                            <div className="mgt64">
-                                <Spotlight className="spotlight__layout grid-8">
-                                    {officeCard.map((office, index) => (
-                                        <SpotlightCard key={index} className="col-lg-4" padding="pad48-16">
-                                            <OfficeCard title={office.country} image={office.image} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
-                                                <Icon image={office.icon[0].imageUrl} size="medium" />
-                                            </OfficeCard>
-                                        </SpotlightCard>
-                                    ))}
-                                </Spotlight>
-                            </div>
+                            <Text size="medium" className="mgb32">{<Trans i18nKey={aboutPage[0].firstBlock.desc} />}</Text>
+                        </div>
+                        <Text size="medium" className="mgb32 col-lg-6">{<Trans i18nKey={aboutPage[0].firstBlock.desc2} />}</Text>
+                        <div className="col-lg-6">
+                            <Spotlight className="spotlight__layout">
+                                {officeCard.map((office, index) => (
+                                    <SpotlightCard key={index} className="col-lg-6" padding="pad48-16">
+                                        <OfficeCard title={office.country} image={office.image} email={office.email} phone={office.phone} careersEmail={office.careersEmail} address={office.address} country={office.country}>
+                                            <Icon image={office.icon[0].imageUrl} size="medium" />
+                                        </OfficeCard>
+                                    </SpotlightCard>
+                                ))}
+                            </Spotlight>
                         </div>
                     </div>
                 </Container>

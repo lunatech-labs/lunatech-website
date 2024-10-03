@@ -32,10 +32,10 @@
         "about": "About us",
         "careers": "Careers",
         "contact": "Contact",
-        "expertises": "Our Expertises",
+        "expertises": "Expertises",
         "opensource": "Open Source",
-        "partners" : "Our Partners",
-        "technologies": "Our Technologies",
+        "partners" : "Partners",
+        "technologies": "Technologies",
         "dynamicText" : {
             "default": "Selected projects",
             "home": "Go back to the homepage.",
@@ -74,7 +74,8 @@
         "firstBlock": {
             "title": "Close to customers across ",
             "titleImp": "Europe",
-            "desc": "Lunatech was founded in 1993 as an IT consulting, product research and development team. As a team of adept self-managing programmers, working with a very experienced commercial team, Lunatech has a successful track record of implementing medium-sized to large systems. Our skills are best applied in designing and building back office systems whereby a web interface is just one of many external user- interfaces. Lunatech is an international company with offices in the Netherlands and France. With over 11+ revenue and 90+ people, Lunatech is growing organically. We excel at going into an organisation, analysing their requirements, and then - together with the customer - designing and building a system to meet their needs. Lunatech exists for more than 30 years and helped numerous customers. We work to an interactive development process. We build applications in a number of short iterations. This provides great visibility to the customer and it greatly improves the end result because the product and expectations can be adjusted along the way. With a proud record of providing professional IT services for large corporations, you’ll find us highly technical, very creative, and flexible. Lunatech is also NEN-4400-1 and TISAX certified, European Open Source consortium and Eclipse foundation member delivering on open source."
+            "desc": "Lunatech was founded in 1993 as an IT consulting, product research and development team. As a team of adept self-managing programmers, working with a very experienced commercial team, Lunatech has a successful track record of implementing medium-sized to large systems. Our skills are best applied in designing and building back office systems whereby a web interface is just one of many external user- interfaces. Lunatech is an international company with offices in the Netherlands and France. With over 11+ revenue and 90+ people, Lunatech is growing organically.",
+            "desc2": "We excel at going into an organisation, analysing their requirements, and then - together with the customer - designing and building a system to meet their needs. Lunatech exists for more than 30 years and helped numerous customers. We work to an interactive development process. We build applications in a number of short iterations. This provides great visibility to the customer and it greatly improves the end result because the product and expectations can be adjusted along the way. With a proud record of providing professional IT services for large corporations, you’ll find us highly technical, very creative, and flexible. Lunatech is also NEN-4400-1 and TISAX certified, European Open Source consortium and Eclipse foundation member delivering on open source."
         },
         "secondBlock": {
             "title": "Customised products to meet your ",
@@ -176,13 +177,17 @@
     },
     "technologies": {
         "title": "Our ",
+        "title3": "at your service",
+        "title4": "Powering Innovation",
+        "title5": "with Cutting-Edge Technology",
         "titleColor": "technologies ",
         "sectorTitle": "The sectors in which we",
         "sectorTitleImp": "specialise",
         "title2": "to meet your requirements",
-        "title3": "at your service",
+        
         "category1": "Business Sectors",
         "category2": "Our technologies",
+        "category3": "Our services",
         "carouselTitle": "Browse our ",
         "carouselTitleImp": "technologies",
         "carouselText": "With 30 years' experience in IT consulting, we offer a range of technologies to meet your immediate needs and support your future growth.",
@@ -445,9 +450,11 @@
         }
      },
      "softwareDefinedVehicule": {
-        "title": "Powering the Future of Mobility with Advanced Backend Solutions ",
+        "titlePink": "Powering the Future",
+        "title": "of Mobility with Advanced Backend Solutions ",
         "description" : "The automotive industry is undergoing a radical transformation with the advent of Software-Defined Vehicles (SDVs). As vehicles become more connected, autonomous, and intelligent, the need for robust, scalable, and secure backend systems becomes critical. Lunatech is at the forefront of this transformation, providing cutting-edge backend solutions that enable automotive manufacturers and suppliers to build, deploy, and manage SDVs effectively.",
-        "title2": "Our SDV Backend Systems Expertise",
+        "title2Pink": "Our SDV",
+        "title2": "Backend Systems Expertise",
         "paragraphes[0]" : {
             "title" : "Scalable Cloud Infrastructure",
             "text": "At the heart of every SDV is a powerful backend system that manages data, updates, and services in real time. Lunatech specializes in building scalable cloud infrastructures using leading platforms such as AWS, Google Cloud, Microsoft Azure, and Red Hat OpenShift. Our cloud solutions ensure that your backend systems can handle the massive amounts of data generated by SDVs, providing real-time processing, storage, and analytics capabilities."
@@ -469,12 +476,14 @@
             "text": "SDV backend systems often need to interact with various third-party services, such as navigation providers, payment systems, and cloud-based services. Lunatech offers comprehensive API management and integration services that enable seamless communication between your SDV systems and external platforms. Our API solutions are designed to be secure, scalable, and easy to manage, allowing for the rapid integration of new services and features."
         },
         "conclusion" : {
-            "title" : "Transform Your Vehicles with Lunatech",
+            "titlePink" : "Transform",
+            "title" : "Your Vehicles with Lunatech",
             "text" : "As the automotive industry shifts towards software-defined vehicles, having the right backend systems is crucial for success. Lunatech is your trusted partner in this transformation, offering advanced backend solutions that power the next generation of connected, autonomous, and intelligent vehicles. Contact us today to learn more about how we can help you build and manage the backend systems that drive your SDV initiatives."
         }
     },
     "advantages" : {
-        "title" : "The Lunatech Advantage",
+        "title" : "The Lunatech",
+        "titlePink" : "Advantage",
         "paragraphes[0]" : {
             "title" : "Expertise in Automotive and IT",
             "text": "Lunatech brings together deep expertise in both the automotive industry and IT, enabling us to deliver backend solutions that are perfectly aligned with the unique needs of SDVs."
@@ -499,9 +508,11 @@
     "expertiseLegacyModernisation": {
         "title": "Legacy ",
         "titleImp": "Systems Modernisation",
-        "title2": "Transforming Your Legacy Systems for the Future",
+        "title2Pink": "Transforming",
+        "title2": "Your Legacy Systems for the Future",
         "description": "In today’s fast-paced digital landscape, outdated legacy systems can become a significant obstacle to business growth and innovation. These systems, while critical to your operations, often lack the flexibility, efficiency, and scalability required to meet current and future business needs. Lunatech’s Legacy Modernization Services are designed to transform your aging IT infrastructure into modern, agile systems that align with your strategic objectives and leverage the latest technologies.",
-        "title3" : "Why Modernize Your Legacy Systems?",
+        "title3" : "Why Modernize",
+        "title3Pink" : "Legacy Systems?",
         "description2": "Legacy systems, though reliable, can hinder your organization in several ways:",
         "paragraphes[0]" : {
             "title" : "High Maintenance Costs",
@@ -561,7 +572,9 @@
             "title" : "Change Management",
             "text": "Successful modernization requires effective change management. Lunatech works closely with your organization to manage the transition from legacy to modern systems, ensuring that all stakeholders are informed, engaged, and supportive of the change. Our change management services help minimize resistance, foster adoption, and ensure the long-term success of the modernization project."        
         },
-        "title5" : "Transform Your Legacy Systems with Lunatech",
+        "title5" : "Transform Your",
+        "title5Pink" : "Legacy Systems",
+        "title5-2" : "with Lunatech",
         "description3" : "Ready to bring your legacy systems into the future? Lunatech’s Legacy Modernization Services provide the expertise, technology, and support you need to transform your IT infrastructure. Contact us today to learn how we can help you modernize your legacy systems, reduce costs, and drive innovation."
 
     },
@@ -569,7 +582,8 @@
     "expertiseSystemIntegration": {
         "title": "System ",
         "titleImp": "Integration",
-        "title2": "Seamless Integration for a Cohesive IT Environment",
+        "title2": "Seamless Integration for a",
+        "title2Pink": "Cohesive IT Environment",
         "description" : "In today’s rapidly evolving digital landscape, businesses often rely on a complex mix of applications, systems, and platforms to support their operations. However, managing these disparate systems can lead to inefficiencies, data silos, and operational bottlenecks. Lunatech’s System Integration services are designed to overcome these challenges by connecting and streamlining your IT environment, enabling seamless data flow and efficient business processes.",
         "title3": "Our System Integration Capabilities",
         "paragraphes[0]" : {
@@ -604,7 +618,8 @@
             "title" : "Cloud Integration Services",
             "text": "As more businesses move to the cloud, integrating cloud-based applications and services with on-premises systems becomes crucial. Lunatech provides cloud integration services that connect your cloud applications with existing IT infrastructure, ensuring a seamless hybrid environment. Our expertise in cloud platforms such as AWS, Google Cloud, Microsoft Azure, and Red Hat OpenShift ensures that your cloud integration is secure, scalable, and efficient."
         },
-        "title4": "The Benefits of System Integration",
+        "title4Pink": "The Benefits",
+        "title4": "of System Integration",
         "paragraphes[8]" : {
             "title" : "Increased Efficiency",
             "text": "By integrating your systems, you can automate workflows, reduce manual processes, and eliminate data silos, leading to more efficient operations."
@@ -625,7 +640,9 @@
             "title" : "Cost Savings",
             "text": "By integrating your systems, you can reduce the need for redundant software and hardware, leading to significant cost savings over time."        
         },
-        "title5": "Why Choose Lunatech for System Integration?",
+        "title5": "Why Choose",
+        "title5Pink": "Lunatech",
+        "title5-2": "for System Integration?",
         "paragraphes[13]" : {
             "title" : "Extensive Experience",
             "text": "With years of experience in system integration, Lunatech has the expertise to handle complex integration projects across various industries." 
@@ -650,7 +667,8 @@
     "expertiseSoftwareProjectDelivery": {
         "title": "Project Delivery ",
         "titleImp": "Software",
-        "title2" : "Tailored Solutions for Your Unique Business Needs",
+        "title2Pink" : "Tailored Solutions",
+        "title2" : "for Your Unique Business Needs",
         "description" : "At Lunatech, we understand that every business is unique, with its own set of challenges and goals. Off-the-shelf software solutions often fall short of meeting specific business requirements, which is why we specialize in custom software development. Our team of experienced developers works closely with you to create software solutions that are precisely tailored to your needs, ensuring that your business can operate more efficiently, innovate faster, and achieve its strategic objectives.",
         "title3": "Our Custom Software Development Services",
         "paragraphes[0]" : {
@@ -685,7 +703,9 @@
             "title" : "Post-Launch Support and Maintenance",
             "text": "Our commitment to your success doesn’t end with the deployment of your software. Lunatech provides ongoing support and maintenance services to ensure your application continues to operate smoothly and security patches are applied continuously. We offer a range of support options, from troubleshooting and bug fixes to regular updates and enhancements, helping you keep your software in peak condition."
         },
-        "title4": "Why Choose Lunatech for Custom Software Development?",
+        "title4": "Why Choose",
+        "title4Pink": "Lunatech",
+        "title4-2": "for Custom Software Development?",
         "paragraphes[8]" : {
             "title" : "Deep Technical Expertise",
             "text": "Our team consists of seasoned developers with extensive experience across a wide range of technologies, ensuring that we can deliver high-quality solutions tailored to your specific needs."
@@ -790,7 +810,8 @@
             "text" : "Lunatech’s involvement in open source reflects a broader commitment to the principles of transparency, collaboration, and community-driven development. By contributing to open-source projects, they help to drive the collective progress of the software industry, ensuring that valuable tools and technologies are available to all."
         },
         "text2" : "Through these activities, Lunatech not only enhances its own technological capabilities but also contributes to the broader software development community, helping to push the boundaries of what is possible with open-source software.",
-        "text3" : "Lunatech is also involved and part of the following organisations",
+        "text3" : "Lunatech is also involved and part of the",
+        "text5" : "following organisations:",
         "list7" : {
             "title" : "Eclipse Foundation ",
             "text" : "The Eclipse Foundation is a non-profit organization that supports and governs a diverse range of open-source software projects, most notably the Eclipse IDE. Established in 2004, it fosters collaborative development by providing the infrastructure and governance necessary for high-quality open-source projects. The Foundation’s mission includes driving innovation, integrating software tools, and growing a vibrant ecosystem through its well-defined governance structure, diverse membership, and active community involvement. It hosts significant projects like Eclipse Che and Eclipse Vert.x, and organizes events such as EclipseCon to promote its technologies and facilitate collaboration."

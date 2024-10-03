@@ -44,7 +44,7 @@ const Expertises = () => {
                     </div>
                     <Spotlight className="spotlight__layout">
                         {expertiseBlock[0].cards.map((card, index) => (
-                            <SpotlightCard key={index} className="col-lg-4" padding="pad64">
+                            <SpotlightCard key={index} className="col-lg-6" padding="pad64">
                                 <ExpertiseCard to={card.url} title={t(card.title)} text={t(card.text)} >
                                     <IconRounded image={card.imageIcon} />
                                 </ExpertiseCard>
@@ -53,6 +53,8 @@ const Expertises = () => {
                     </Spotlight>
                 </Container>
             </Section>
+
+            <Container><BorderEffect /></Container>
 
             <Section>
                 <Container>

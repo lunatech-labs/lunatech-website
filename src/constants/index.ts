@@ -63,6 +63,13 @@ export const navLinks = [
         blank: false,
     },
     {
+        title: "navigation.about",
+        url: "/about",
+        mouseEnterTitle: "about",
+        mouseEnterDesc: "navigation.dynamicText.aboutUs",
+        blank: false
+    },
+    {
         title: "navigation.expertises",
         url: "/expertises",
         mouseEnterTitle: "expertises",
@@ -81,20 +88,6 @@ export const navLinks = [
         url: "/open-source",
         mouseEnterTitle: "opensource",
         mouseEnterDesc: "navigation.dynamicText.opensource",
-        blank: false
-    },
-    {
-        title: "navigation.partners",
-        url: "/partners",
-        mouseEnterTitle: "partners",
-        mouseEnterDesc: "navigation.dynamicText.partners",
-        blank: false
-    },
-    {
-        title: "navigation.about",
-        url: "/about",
-        mouseEnterTitle: "about",
-        mouseEnterDesc: "navigation.dynamicText.aboutUs",
         blank: false
     },
     {
@@ -341,6 +334,7 @@ export const aboutPage = [
             title: "about.firstBlock.title",
             titleImp: "about.firstBlock.titleImp",
             desc: "about.firstBlock.desc",
+            desc2: "about.firstBlock.desc"
         },
         secondBlock: {
             title: "about.secondBlock.title",
