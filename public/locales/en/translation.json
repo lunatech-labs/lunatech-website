@@ -414,8 +414,8 @@
         "contact": "Contact"
     },
     "expertiseSoftwareDefinedVehicle": {
-        "title": "Defined Vehicle",
-        "titleImp": "Software ",
+        "title": "Software ",
+        "titleImp": "Defined Vehicle",
         "text": "A Software Defined Vehicle is any vehicle that manages its operations, adds functionality and enables new features primarily or entirely through software. Software Defined Vehicles are the next evolution of the automotive industry. Lunatech has been involved with Software Defined Vehicle since 2016 while the term did not exist yet. Lunatech, together with large automobile manufacturers has been involved in processing car data at a large scale and providing services for those vehicles. Lunatech specialises in cloud middleware and processing data for software-defined vehicles."
     },
 

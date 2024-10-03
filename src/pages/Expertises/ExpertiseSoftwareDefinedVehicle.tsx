@@ -21,7 +21,7 @@ const ExpertiseSoftwareDefinedVehicle = () => {
                 <Container>
                     <HeaderPage>
                         <Breadcrumbs />
-                        <Title level={1}><span><Trans i18nKey="expertiseSoftwareDefinedVehicle.titleImp" /></span><Trans i18nKey="expertiseSoftwareDefinedVehicle.title" /></Title>
+                        <Title level={1}><span><Trans i18nKey="expertiseSoftwareDefinedVehicle.title" /></span><Trans i18nKey="expertiseSoftwareDefinedVehicle.titleImp" /></Title>
                         <Title level={2}><Trans i18nKey="softwareDefinedVehicule.title" /></Title>
                         <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.description" /></Text>
                     </HeaderPage>
