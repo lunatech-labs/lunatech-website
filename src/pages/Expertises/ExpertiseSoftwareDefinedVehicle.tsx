@@ -8,8 +8,10 @@ import Title from '@components/Title/Title';
 import Address from '@components/Address/Address';
 import Text from '@components/Text/Text';
 import HeaderPage from '@/components/HeaderPage/HeaderPage';
-
+import Grid from '@/components/Grid/Grid';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
+import Spotlight from '@/components/Spotlight/Spotlight';
+import { SpotlightCard } from '@/components/Spotlight/Spotlight';
 import { softwareDefinedVehicule } from '@/constants';
 import { advantages } from '@/constants';
 
@@ -22,62 +24,68 @@ const ExpertiseSoftwareDefinedVehicle = () => {
                     <HeaderPage>
                         <Breadcrumbs />
                         <Title level={1}><span><Trans i18nKey="expertiseSoftwareDefinedVehicle.titleImp" /></span><Trans i18nKey="expertiseSoftwareDefinedVehicle.title" /></Title>
-                        <Title level={2}><Trans i18nKey="softwareDefinedVehicule.title" /></Title>
-                        <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.description" /></Text>
                     </HeaderPage>
                 </Container>
             </Section>
+
+            <Container><BorderEffect /></Container>
+
+            <Section className="bg-bgMediumBlue">
+                <Container>
+                    <Title level={2}><span><Trans i18nKey="softwareDefinedVehicule.titlePink" /></span> <Trans i18nKey="softwareDefinedVehicule.title" /></Title>
+                    <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.description" /></Text>
+                </Container>
+            </Section>
+
             <Container><BorderEffect /></Container>
 
             <Section className="softwareDefinedVehicule">
                 <Container>
-                    <Title level={2}><Trans i18nKey="softwareDefinedVehicule.title2" /></Title>
-                       
-                    <div className="col-lg-6 col-md-12">
-        
-                            {
-                                softwareDefinedVehicule.paragraphes.map(
-                                    (p) => (
-                                        <div>
-                                            <Title level={3}>{t(p.title)}</Title>
-                                            <Text size="medium" className="mgt24">{t(p.text)}</Text>
-                                
-                                        </div>
-                                    )
+                    <div className="mgb64">
+                        <Title level={2}><span><Trans i18nKey="softwareDefinedVehicule.title2Pink" /></span> <Trans i18nKey="softwareDefinedVehicule.title2" /></Title>
+                    </div>
+                    <Grid>
+                        {
+                            softwareDefinedVehicule.paragraphes.map(
+                                (p) => (
+                                    <div className="col-lg-6">
+                                        <Title level={3}>{t(p.title)}</Title>
+                                        <Text size="medium" className="mgt24">{t(p.text)}</Text>
+                                    </div>
                                 )
-                            }
-                            
-                        </div>
+                            )
+                        }
+                    </Grid>
                 </Container>
             </Section>
+
             <Container><BorderEffect /></Container>
 
             <Section className="bg-bgMediumBlue softwareDefinedVehicule">
                 <Container>
-                    <Title level={2}><Trans i18nKey="advantages.title" /></Title>
-                   
-                    <div className="col-lg-6 col-md-12">
-        
-                            {
-                                advantages.paragraphes.map(
-                                    (p) => (
-                                        <div>
-                                            <Title level={4}>{t(p.title)}</Title>
-                                            <Text size="medium" className="mgt24">{t(p.text)}</Text>
-                                
-                                        </div>
-                                    )
+                    <Title level={2}><Trans i18nKey="advantages.title" /> <span><Trans i18nKey="advantages.titlePink" /></span></Title>
+                    <Spotlight className="spotlight__layout mgt64">
+                        {advantages.paragraphes.map(
+                                (p) => (
+                                    <SpotlightCard className="col-lg-6" padding="pad64">
+                                        <Title level={4}>{t(p.title)}</Title>
+                                        <Text size="medium" className="mgt24">{t(p.text)}</Text>
+                                    </SpotlightCard>
                                 )
-                            }
-                            
-                        </div>
-                </Container>
-                <Container>
-                    <Title level={2}><Trans i18nKey="softwareDefinedVehicule.conclusion.title" /></Title>
-                    <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.conclusion.text" /></Text>
+                            )
+                        }
+                    </Spotlight>
                 </Container>
             </Section>
 
+            <Container><BorderEffect /></Container>
+
+            <Section>
+                <Container>
+                    <Title level={2}><span><Trans i18nKey="softwareDefinedVehicule.conclusion.titlePink" /></span> <Trans i18nKey="softwareDefinedVehicule.conclusion.title" /></Title>
+                    <Text size="large" className="mgt24"><Trans i18nKey="softwareDefinedVehicule.conclusion.text" /></Text>
+                </Container>
+            </Section>
 
             <Container><BorderEffect /></Container>
 

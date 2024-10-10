@@ -8,13 +8,13 @@
 }
 .text-medium {
     font-size: $font-size-17;
-    line-height: $font-size-24;
+    line-height: 1.8rem;
     color: $lightGray;
 }
 .text-large {
     font-size: $font-size-22;
     line-height: 2.25rem;     /* 36px */
-    color: $white;
+    color: $lightGray;
     @include phone-portrait {
         font-size: 20px;
         line-height: 28px;

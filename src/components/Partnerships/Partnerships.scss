@@ -10,11 +10,12 @@
     display: flex;
     align-items: center;
     animation: scroll 20s linear infinite;
+    margin: 64px 0;
   }
   
   .partnership__logo {
     flex-shrink: 0;
-    margin-right: 20px;
+    margin-right: 80px;
   }
   
   @keyframes scroll {

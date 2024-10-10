@@ -36,6 +36,7 @@
 /* --------------- Colors --------------- */
 .bg-bgMediumBlue {background: $bgMediumBlue;}
 .bg-bgDarkBlue {background: $bgDarkBlue;}
+.pink {color: $pink;}
 
 /* --------------- Others --------------- */
 .w100 {width: 100%;}
@@ -46,6 +47,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    line-clamp: 5;
     -webkit-line-clamp: 5;
   }
 
@@ -92,5 +94,6 @@
     padding: 96px;
     @include tablet {padding: 48px;}
 }
+.pad8-0 {padding: 8px 0;}
 .pad48-16 {padding: 48px 16px 16px 16px;}
 .pdt256 {padding-top: 256px;}
