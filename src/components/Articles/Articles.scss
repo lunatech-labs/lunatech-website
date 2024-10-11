@@ -15,14 +15,18 @@
                 padding-bottom: 32px;
             }
         }
-        &__img {
-            height: 100%;
-            background-size: cover;
-            border-radius: 10px;
-            grid-column: span 6;
-            @include tablet {grid-column: span 12;}
-            @include phone-portrait {
-                grid-column: span 12;
+        &__cover {
+            height: 320px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                grid-column: span 6;
+                @include tablet {grid-column: span 12;}
+                @include phone-portrait {
+                    grid-column: span 12;
+                }
             }
         }
     }
