@@ -34,3 +34,11 @@ export default {
 
 - npm install
 - npm run dev
+
+# Branch Promotion Workflow
+
+- Step 1: `branch` to `main` : PR
+
+- Step 2: `main` to `acceptance` : switch `acceptance` -> rebase `main` -> push to `acceptance`
+
+- Step 3: `acceptance` to `production` : switch `production` -> rebase `acceptance` -> push to `production`
