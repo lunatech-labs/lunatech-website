@@ -65,7 +65,7 @@ const Articles = () => {
                                     <Text size="medium" className="mgb24">{truncateText(article.excerpt, 25)}</Text>
                                     <ButtonSecondary iconUrl={arrowRight} newPage={true} size="large" to={"https://blog.lunatech.com" + article.slug}><Trans i18nKey="buttonReadMore" /></ButtonSecondary>
                                 </div>
-                                <div className='blog__cover'>
+                                <div className='blog__cover col-lg-6'>
                                     <img src={article.image_url} alt={article.title} />
                                 </div>
                             </div>
