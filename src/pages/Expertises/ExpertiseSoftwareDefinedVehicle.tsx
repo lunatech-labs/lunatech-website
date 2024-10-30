@@ -11,9 +11,9 @@ import HeaderPage from '@/components/HeaderPage/HeaderPage';
 import Grid from '@/components/Grid/Grid';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import Spotlight from '@/components/Spotlight/Spotlight';
+import FeatureBox from '@/components/FeatureBox/FeatureBox';
 import { SpotlightCard } from '@/components/Spotlight/Spotlight';
-import { softwareDefinedVehicule } from '@/constants';
-import { advantages } from '@/constants';
+import { softwareDefinedVehicule, advantages } from '@/constants';
 
 const ExpertiseSoftwareDefinedVehicle = () => {
     const { t } = useTranslation();
@@ -48,10 +48,7 @@ const ExpertiseSoftwareDefinedVehicle = () => {
                         {
                             softwareDefinedVehicule.paragraphes.map(
                                 (p) => (
-                                    <div className="col-lg-6">
-                                        <Title level={3}>{t(p.title)}</Title>
-                                        <Text size="medium" className="mgt24">{t(p.text)}</Text>
-                                    </div>
+                                    <FeatureBox key={p.title} title={t(p.title)} classNames="col-lg-6" text={<><Text size="medium" className="mgb24">{t(p.text)}</Text></>} />
                                 )
                             )
                         }

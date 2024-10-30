@@ -334,7 +334,7 @@ export const aboutPage = [
             title: "about.firstBlock.title",
             titleImp: "about.firstBlock.titleImp",
             desc: "about.firstBlock.desc",
-            desc2: "about.firstBlock.desc"
+            desc2: "about.firstBlock.desc2"
         },
         secondBlock: {
             title: "about.secondBlock.title",
@@ -384,6 +384,139 @@ export const contactBlock = [
     }
 ]
 
+export const expertiseSoftwareProjectDelivery = {
+    "paragraphes": [
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[0].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[0].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[1].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[1].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[2].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[2].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[3].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[3].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[4].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[4].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[5].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[5].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[6].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[6].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[7].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[7].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[8].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[8].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[9].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[9].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[10].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[10].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[11].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[11].text"
+        },
+        {
+            "title": "expertiseSoftwareProjectDelivery.paragraphes[12].title",
+            "text": "expertiseSoftwareProjectDelivery.paragraphes[12].text"
+        },
+    ]
+}
+
+export const expertiseSystemIntegration = {
+    "paragraphes": [{
+            "title": "expertiseSystemIntegration.paragraphes[0].title",
+            "text": "expertiseSystemIntegration.paragraphes[0].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[1].title",
+            "text": "expertiseSystemIntegration.paragraphes[1].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[2].title",
+            "text": "expertiseSystemIntegration.paragraphes[2].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[3].title",
+            "text": "expertiseSystemIntegration.paragraphes[3].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[4].title",
+            "text": "expertiseSystemIntegration.paragraphes[4].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[5].title",
+            "text": "expertiseSystemIntegration.paragraphes[5].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[6].title",
+            "text": "expertiseSystemIntegration.paragraphes[6].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[7].title",
+            "text": "expertiseSystemIntegration.paragraphes[7].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[8].title",
+            "text": "expertiseSystemIntegration.paragraphes[8].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[9].title",
+            "text": "expertiseSystemIntegration.paragraphes[9].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[10].title",
+            "text": "expertiseSystemIntegration.paragraphes[10].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[11].title",
+            "text": "expertiseSystemIntegration.paragraphes[11].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[12].title",
+            "text": "expertiseSystemIntegration.paragraphes[12].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[13].title",
+            "text": "expertiseSystemIntegration.paragraphes[13].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[14].title",
+            "text": "expertiseSystemIntegration.paragraphes[14].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[15].title",
+            "text": "expertiseSystemIntegration.paragraphes[15].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[16].title",
+            "text": "expertiseSystemIntegration.paragraphes[16].text"
+        },
+        {
+            "title": "expertiseSystemIntegration.paragraphes[17].title",
+            "text": "expertiseSystemIntegration.paragraphes[17].text"
+        }
+    ]
+}
+
 export const expertiseStrategicExpertise = {
 
         "paragraphes" : [{
@@ -405,6 +538,71 @@ export const expertiseStrategicExpertise = {
             "title" : "expertiseStrategicExpertise.paragraphes[3].title",
             "text1": "expertiseStrategicExpertise.paragraphes[3].text1",
             "text2" : "expertiseStrategicExpertise.paragraphes[3].text2"    
+        }
+    ]
+}
+
+export const expertiseLegacyModernisation = {
+    "paragraphes" : [
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[0].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[0].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[1].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[1].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[2].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[2].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[3].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[3].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[4].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[4].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.conclusion",
+            "text" : "expertiseLegacyModernisation.conclusion"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[5].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[5].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[6].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[6].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[7].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[7].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[8].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[8].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[9].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[9].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[10].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[10].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[11].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[11].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[12].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[12].text"
+        },
+        {
+            "title" : "expertiseLegacyModernisation.paragraphes[13].title",
+            "text" : "expertiseLegacyModernisation.paragraphes[13].text"
         }
     ]
 }

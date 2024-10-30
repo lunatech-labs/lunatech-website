@@ -1,4 +1,4 @@
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import Section from "@components/Section/Section";
 import Container from "@components/Container/Container";
@@ -10,10 +10,13 @@ import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ContactBlock from '@components/ContactBlock/ContactBlock';
 import Grid from '@components/Grid/Grid';
 import Text from '@components/Text/Text';
+import FeatureBox from '@/components/FeatureBox/FeatureBox';
 import Spotlight from '@/components/Spotlight/Spotlight';
 import { SpotlightCard } from '@/components/Spotlight/Spotlight';
+import { expertiseSystemIntegration } from '@/constants';
 
 const ExpertiseSystemIntegration = () => {
+    const { t } = useTranslation();
     return (
         <>
             <Section className="pdt256">
@@ -39,38 +42,13 @@ const ExpertiseSystemIntegration = () => {
             <Section>
                 <Container>
                     <Grid>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[0].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[0].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[1].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[1].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[2].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[2].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[3].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[3].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[4].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[4].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[5].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[5].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[6].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[6].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={3}><Trans i18nKey="expertiseSystemIntegration.paragraphes[7].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[7].text" /></Text>
-                        </div>
+                        {
+                            expertiseSystemIntegration.paragraphes.slice(0,8).map(
+                                (p) => (
+                                    <FeatureBox key={p.title} title={t(p.title)} classNames="col-lg-6" text={<><Text size="medium" className="mgb24">{t(p.text)}</Text></>} />
+                                )
+                            )
+                        }
                     </Grid>
                 </Container>
             </Section>
@@ -82,26 +60,16 @@ const ExpertiseSystemIntegration = () => {
                     <Title level={2}><span><Trans i18nKey="expertiseSystemIntegration.title4Pink" /></span> <Trans i18nKey="expertiseSystemIntegration.title4" /></Title>
 
                     <Spotlight className="spotlight__layout mgt64">
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[8].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[8].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[9].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[9].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[10].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[10].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[11].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[11].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[12].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[12].text" /></Text>
-                        </SpotlightCard>
+                        {
+                            expertiseSystemIntegration.paragraphes.slice(8,13).map(
+                                (p) => (
+                                    <SpotlightCard key={p.title} className="col-lg-6" padding="pad64">
+                                        <Title level={4}>{t(p.title)}</Title>
+                                        <Text size="medium" className="mgb24">{t(p.text)}</Text>
+                                    </SpotlightCard>
+                                )
+                            )
+                        }
                     </Spotlight>
                 </Container>
             </Section>
@@ -113,26 +81,16 @@ const ExpertiseSystemIntegration = () => {
                     <Title level={2}><Trans i18nKey="expertiseSystemIntegration.title5" /> <span><Trans i18nKey="expertiseSystemIntegration.title5Pink" /></span> <Trans i18nKey="expertiseSystemIntegration.title5-2" /></Title>
 
                     <Spotlight className="spotlight__layout mgt64">
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[13].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[13].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[14].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[14].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[15].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[15].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[16].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[16].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseSystemIntegration.paragraphes[17].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseSystemIntegration.paragraphes[17].text" /></Text>
-                        </SpotlightCard>
+                        {
+                            expertiseSystemIntegration.paragraphes.slice(13,18).map(
+                                (p) => (
+                                    <SpotlightCard key={p.title} className="col-lg-6" padding="pad64">
+                                        <Title level={4}>{t(p.title)}</Title>
+                                        <Text size="medium" className="mgb24">{t(p.text)}</Text>
+                                    </SpotlightCard>
+                                )
+                            )
+                        }
                     </Spotlight>
                 </Container>
             </Section>

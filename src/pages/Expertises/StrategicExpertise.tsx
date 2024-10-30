@@ -10,10 +10,9 @@ import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ContactBlock from '@components/ContactBlock/ContactBlock';
 import Grid from '@components/Grid/Grid';
 import Text from '@components/Text/Text';
-import Collapse from '@components/Collapse/Collapse';
+import FeatureBox from '@/components/FeatureBox/FeatureBox';
 import { expertiseIllustration } from '@/assets';
-import { expertisesPage } from '@/constants';
-import { expertiseStrategicExpertise } from '@/constants';
+import { expertisesPage, expertiseStrategicExpertise } from '@/constants';
 
 const ExpertiseStrategicExpertise = () => {
     const { t } = useTranslation();
@@ -36,11 +35,7 @@ const ExpertiseStrategicExpertise = () => {
                         {
                             expertiseStrategicExpertise.paragraphes.map(
                                 (p) => (
-                                    <div className="col-lg-6">
-                                        <Title level={3}>{t(p.title)}</Title>
-                                        <Text size="medium" className="mgb24">{t(p.text1)}</Text>
-                                        <Text size="medium" className="mgb64">{t(p.text2)}</Text>
-                                    </div>
+                                    <FeatureBox key={p.title} title={t(p.title)} classNames="col-lg-6" text={<><Text size="medium" className="mgb24">{t(p.text1)}</Text><Text size="medium" className="mgb64">{t(p.text2)}</Text></>} />
                                 )
                             )
                         }
@@ -56,7 +51,8 @@ const ExpertiseStrategicExpertise = () => {
                     <Grid className="mgt64 ai-c">
                        <div className="col-lg-6 col-md-12">
                             {expertisesPage[0].firstBlock.advices.map((advice, index) => (
-                                <Collapse key={index} title={t(advice.title)} text={<span>{t(advice.text)}</span>} />
+                                // <Collapse key={index} title={t(advice.title)} text={<span>{t(advice.text)}</span>} />
+                                <FeatureBox key={index} title={t(advice.title)} text={<span>{t(advice.text)}</span>} />
                             ))}
                         </div>
                         <div className="col-lg-6 col-md-12">
