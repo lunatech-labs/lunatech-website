@@ -1,0 +1,15 @@
+@import "/src/styles/Variables.scss";
+@import "/src/styles/Mixins.scss";
+@import "/src/styles/Responsive.scss";
+
+.featureBox {
+    @include dark-gradient;
+    padding: 20px 35px 25px 35px;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    h3 {
+        color: $pink;
+    }
+}

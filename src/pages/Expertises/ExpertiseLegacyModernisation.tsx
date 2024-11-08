@@ -11,8 +11,9 @@ import ContactBlock from '@components/ContactBlock/ContactBlock';
 import Grid from '@components/Grid/Grid';
 import Text from '@components/Text/Text';
 import Spotlight from '@/components/Spotlight/Spotlight';
+import FeatureBox from '@/components/FeatureBox/FeatureBox';
 import { SpotlightCard } from '@/components/Spotlight/Spotlight';
-import { advantages } from '@/constants';
+import { advantages, expertiseLegacyModernisation } from '@/constants';
 
 const ExpertiseLegacyModernisation= () => {
     const { t } = useTranslation();
@@ -44,26 +45,16 @@ const ExpertiseLegacyModernisation= () => {
                     <Title level={2}><Trans i18nKey="expertiseLegacyModernisation.title3" /> <span><Trans i18nKey="expertiseLegacyModernisation.title3Pink" /></span></Title>
                     <Text size="large" className="mgt32"><Trans i18nKey="expertiseLegacyModernisation.description2" /></Text>
                     <Spotlight className="spotlight__layout mgt64">
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[0].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[0].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[1].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[1].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[2].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[2].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[3].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[3].text" /></Text>
-                        </SpotlightCard>
-                        <SpotlightCard className="col-lg-6" padding="pad64">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[4].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[4].text" /></Text>
-                        </SpotlightCard>
+                        {
+                            expertiseLegacyModernisation.paragraphes.slice(0,5).map(
+                                (p) => (
+                                    <SpotlightCard className="col-lg-6" padding="pad64">
+                                        <Title level={4}>{t(p.title)}</Title>
+                                        <Text size="medium" className="mgt24">{t(p.text)}</Text>
+                                    </SpotlightCard>
+                                )
+                            )
+                        }
                     </Spotlight>
                        
                     <Text size="large" className="mgt32"><Trans i18nKey="expertiseLegacyModernisation.conclusion" /></Text>        
@@ -75,42 +66,13 @@ const ExpertiseLegacyModernisation= () => {
             <Section className="bg-bgMediumBlue">
                 <Container>
                     <Grid className="mgt64">
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[5].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[5].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[6].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[6].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[7].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[7].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[8].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[8].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[9].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[9].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[10].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[10].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[11].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[11].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[12].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[12].text" /></Text>
-                        </div>
-                        <div className="col-lg-6">
-                            <Title level={4}><Trans i18nKey="expertiseLegacyModernisation.paragraphes[13].title" /></Title>
-                            <Text size="medium" className="mgb24"><Trans i18nKey="expertiseLegacyModernisation.paragraphes[13].text" /></Text>
-                        </div>
+                        {
+                            expertiseLegacyModernisation.paragraphes.slice(6,15).map(
+                                (p) => (
+                                    <FeatureBox key={p.title} title={t(p.title)} classNames='col-lg-6' text={<><Text size="medium" className="mgb24">{t(p.text)}</Text></>} />
+                                )
+                            )
+                        }
                     </Grid>
                 </Container>
             </Section>
