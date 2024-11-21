@@ -2,6 +2,7 @@ import instagram from "./socials/instagram.svg";
 import twitter from "./socials/twitter.svg";
 import linkedin from "./socials/linkedin.svg";
 import github from "./socials/github.svg";
+import bluesky from "./socials/bluesky.svg";
 import netherlandsIcon from "./netherlandsIcon.svg";
 import franceIcon from "./franceIcon.svg";
 import sdvIcon from "./cpu-setting.svg";
@@ -110,6 +111,7 @@ export {
     twitter,
     linkedin,
     github,
+    bluesky,
     netherlandsIcon,
     franceIcon,
     sdvIcon,
