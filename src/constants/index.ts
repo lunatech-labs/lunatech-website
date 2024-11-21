@@ -3,6 +3,7 @@ import {
     linkedin,
     twitter,
     instagram,
+    bluesky,
     rotterdamOffice,
     parisOffice,
     visionIllustration,
@@ -142,6 +143,15 @@ export const socialLinks = [
         blank: true,
         alt: "Twitter logo",
         icon: twitter,
+    },
+    {
+        title: "Bluesky",
+        url: "https://bsky.app/profile/lunatech.com",
+        mouseEnterTitle: "Bluesky",
+        mouseEnterDesc: "navigation.dynamicText.bluesky",
+        blank: true,
+        alt: "Bluesky logo",
+        icon: bluesky,
     }
 ]
 
