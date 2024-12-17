@@ -15,7 +15,7 @@ import {
     googleCloudLogo,
     eclipseLogo,
     azureLogo,
-    lightbendLogo,
+    akkaLogo,
     redHatLogo,
     awsIcon,
     javaIcon,
@@ -233,7 +233,7 @@ export const partnerships = [
         title: "partners.paragraphes[8].title",
         subtitle: "partners.paragraphes[8].subtitle",
         text: "partners.paragraphes[8].text",
-        icon: lightbendLogo,
+        icon: akkaLogo,
     }
 ]
 
