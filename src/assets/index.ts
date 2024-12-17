@@ -53,7 +53,7 @@ import cleverCloudLogo from "./partners/cleverCloudLogo.svg";
 import cloudBeesLogo from "./partners/cloudBeesLogo.svg";
 import eclipseLogo from "./partners/eclipseLogo.svg";
 import googleCloudLogo from "./partners/googleCloudLogo.svg";
-import lightbendLogo from "./partners/lightbendLogo.svg";
+import akkaLogo from "./partners/akkaLogo.svg";
 import redHatLogo from "./partners/redHatLogo.svg";
 
 import javaIcon from "./technologies/technology-logo-java.svg"
@@ -160,6 +160,6 @@ export {
     cloudBeesLogo,
     eclipseLogo,
     googleCloudLogo,
-    lightbendLogo,
+    akkaLogo,
     redHatLogo,
 }

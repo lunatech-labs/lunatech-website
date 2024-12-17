@@ -775,9 +775,9 @@
             "text": "Partnering with CloudBees allows Lunatech to offer advanced CI/CD solutions that streamline the software development lifecycle. This collaboration supports efficient, automated, and scalable software delivery, enhancing our clients' development processes and time-to-market." 
         },
         "paragraphes[8]" : {
-            "title" : "Lightbend",
+            "title" : "Akka",
             "subtitle" : "System Integration and reactive system",
-            "text": "Lunatech's partnership with Lightbend focuses on developing reactive systems using technologies like Akka and Play Framework. This collaboration enhances Lunatech’s capabilities in delivering scalable and resilient applications, providing them with advanced training and a competitive edge in reactive programming and microservices architecture. The partnership strengthens Lunatech's position in delivering high-performance enterprise solutions."
+            "text": "Lunatech's partnership with Akka focuses on developing reactive systems using technologies like Akka and Play Framework. This collaboration enhances Lunatech’s capabilities in delivering scalable and resilient applications, providing them with advanced training and a competitive edge in reactive programming and microservices architecture. The partnership strengthens Lunatech's position in delivering high-performance enterprise solutions."
         }
 
     },
