@@ -13,6 +13,8 @@ interface FooterProps {
     changeLanguage: (lng: string) => void;
 }
 
+const currentYear = new Date().getFullYear();
+
 const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
     useTranslation();
 
@@ -62,7 +64,7 @@ const Footer: React.FC<FooterProps> = ({ changeLanguage }) => {
                 </div>
                 
                 <div className="footer__bottom">
-                    <p><Trans i18nKey="footer.copyright" /></p>
+                    <p>© {currentYear} Lunatech. <Trans i18nKey="footer.copyright" /></p>
                     <a href="/Lunatech-General_Terms_and_Conditions.pdf" target="_blank"><Trans i18nKey="footer.terms" /></a>
                 </div>
             </Container>
