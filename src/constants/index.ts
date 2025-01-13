@@ -119,7 +119,7 @@ export const socialLinks = [
     },
     {
         title: "Instagram",
-        url: "https://www.instagram.com/lunatech_nl/",
+        url: "https://www.instagram.com/lunatech_global/",
         mouseEnterTitle: "Instagram",
         mouseEnterDesc: "navigation.dynamicText.instagram",
         blank: true,
