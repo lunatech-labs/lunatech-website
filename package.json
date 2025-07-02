@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc && vite build",
     "dev": "vite",
-    "build": "tsc && vite build && shx cp .htaccess /var/www/bas/site/public/",
+    "build": "tsc && vite build && shx cp .htaccess /var/www/bas/site/public/ && shx cp -r .well-known/ /var/www/bas/site/public/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 8080",
     "typecheck": "tsc --noEmit"

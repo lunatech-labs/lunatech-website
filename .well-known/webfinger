@@ -1,0 +1,9 @@
+{
+  "subject": "acct:willem.jan.glerum@lunatech.nl",
+  "links": [
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://keycloak.lunatech.com/realms/lunatech"
+    }
+  ]
+}
