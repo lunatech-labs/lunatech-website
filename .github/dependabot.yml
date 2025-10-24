@@ -13,5 +13,7 @@ updates:
       timezone: "Europe/Amsterdam"
   - package-ecosystem: 'npm'
     directory: '/'
+    cooldown:
+      default-days: 7
     schedule:
       interval: 'weekly'
