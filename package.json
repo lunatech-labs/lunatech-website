@@ -42,7 +42,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.24",
     "sass": "^1.93.2",
-    "shx": "^0.3.4",
+    "shx": "^0.4.0",
     "typescript": "^5.9.3",
     "vite": "^7.1.11",
     "vite-plugin-copy": "^0.1.6"
