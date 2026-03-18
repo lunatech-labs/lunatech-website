@@ -17,7 +17,6 @@ import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import Grid from '@components/Grid/Grid';
 import BusinessCard from '@components/BusinessCard/BusinessCard';
 import {
-    automotiveSpiceLogo,
     isoWhiteLogo,
     technologyIllustration,
     tisaxWhiteLogo,
@@ -36,11 +35,6 @@ const Expertises = () => {
             logo: isoWhiteLogo,
             alt: 'ISO certification logo',
             label: 'ISO/IEC 27001:2022/AMD 1:2024 CERTIFIED',
-        },
-        {
-            logo: automotiveSpiceLogo,
-            alt: 'Automotive SPICE logo',
-            label: 'VDA ASPICE COMPLIANT',
         },
     ];
 
