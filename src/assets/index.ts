@@ -35,6 +35,8 @@ import automotive from "./technologies/automotive.svg";
 import financial from "./technologies/financial.svg";
 import entertainment from "./technologies/entertainment.svg";
 import insurance from "./technologies/insurance.svg";
+import tisaxWhiteLogo from "./technologies/tisax-white-logo.png";
+import isoWhiteLogo from "./technologies/iso-white-logo.png";
 import dotIcon from "./buttons/dot-icon.svg";
 import closeIcon from "./buttons/close-icon.svg";
 import emailIcon from "./general/email-icon.svg";
@@ -138,6 +140,8 @@ export {
     financial,
     entertainment,
     insurance,
+    tisaxWhiteLogo,
+    isoWhiteLogo,
     visionIllustration,
     visionIllustrationOpen,
     dotIcon,

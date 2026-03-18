@@ -116,6 +116,49 @@ nav.nav-bar--hidden {
 
 
 /* ------------- TECHNOLOGIES BLOCK ------------- */
+.certifications {
+    margin-top: 64px;
+    @include flexbox;
+    flex-direction: column;
+    &__header {
+        @include flexbox;
+        margin-bottom: 88px;
+        text-align: center;
+    }
+    &__flex {
+        @include flexbox;
+        justify-content: center;
+        margin-top: 64px;
+        @include phone-portrait {
+            flex-direction: column;
+            margin-top: 32px;
+            gap: 32px;
+        }
+    }
+    &__item {
+        @include flexbox;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        @include phone-portrait {
+           width: 100%;
+        }
+    }
+    &__logo-wrap {
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+    }
+    &__logo {
+        width: 148px;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-weight: 600;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+}
 
 
 

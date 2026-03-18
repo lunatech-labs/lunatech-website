@@ -16,11 +16,27 @@ import HeaderPage from '@components/HeaderPage/HeaderPage';
 import ContactBlock from '@/components/ContactBlock/ContactBlock';
 import Grid from '@components/Grid/Grid';
 import BusinessCard from '@components/BusinessCard/BusinessCard';
-import { technologyIllustration } from '@/assets';
+import {
+    isoWhiteLogo,
+    technologyIllustration,
+    tisaxWhiteLogo,
+} from '@/assets';
 import { expertiseBlock, expertisesPage } from '@/constants';
 
 const Expertises = () => {
     const { t } = useTranslation();
+    const certifications = [
+        {
+            logo: tisaxWhiteLogo,
+            alt: 'TISAX logo',
+            label: 'VDA TISAX CERTIFIED',
+        },
+        {
+            logo: isoWhiteLogo,
+            alt: 'ISO certification logo',
+            label: 'ISO/IEC 27001:2022/AMD 1:2024 CERTIFIED',
+        },
+    ];
 
     return (
         <>
@@ -30,6 +46,21 @@ const Expertises = () => {
                         <Breadcrumbs />
                         <Title level={1}><Trans i18nKey={expertisesPage[0].title} /><span><Trans i18nKey={expertisesPage[0].titleImp} /></span></Title>
                     </HeaderPage>
+
+                    <div className="certifications">
+                        <Category content={<span>We are <strong>certified</strong> with the following</span>} />
+                        <div className="certifications__flex">
+                            {certifications.map((certification) => (
+                                <div key={certification.label} className="certifications__item">
+                                    <div className="certifications__logo-wrap">
+                                        <img className="certifications__logo" src={certification.logo} alt={certification.alt} />
+                                    </div>
+                                    <p className="certifications__text">{certification.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>                 
+
                 </Container>
             </Section>
 
